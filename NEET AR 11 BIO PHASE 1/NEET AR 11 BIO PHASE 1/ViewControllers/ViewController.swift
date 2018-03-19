@@ -84,6 +84,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
             localmodel.modelimage = self.item["modelimage"] as! String
             localmodel.visiblename = self.item["visiblename"] as! String
             localmodel.isSurfaceEnabled = self.item["isSurfaceEnabled"] as! Bool
+            localmodel.isLighteningEnabled = self.item["isLighteningEnabled"] as! Bool
             localmodel.isZoomEnabled = self.item["isZoomEnabled"] as! Bool
             localmodel.isPartsAvailable = self.item["isPartsAvailable"] as! Bool
             localmodel.hints = self.item["hints"] as! [String]
@@ -113,6 +114,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                     submodel.modelimage = x["modelimage"] as! String
                     submodel.visiblename = x["visiblename"] as! String
                     submodel.isSurfaceEnabled = x["isSurfaceEnabled"] as! Bool
+                    submodel.isLighteningEnabled = x["isLighteningEnabled"] as! Bool
                     submodel.isZoomEnabled = x["isZoomEnabled"] as! Bool
                     submodel.isPartsAvailable = x["isPartsAvailable"] as! Bool
                     submodel.hints = x["hints"] as! [String]
@@ -176,6 +178,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
         
         self.LoadFromJSON {
           //  print("Loaded 3d model")
+            configureLighting()
         }
         
         initializeSceneView()
@@ -243,6 +246,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
         
         if self.isSessionPaused == true{
             self.reset()
+            configureLighting()
             initiateTracking()
             DispatchQueue.main.async {
                 self.resetButton.isEnabled = false
@@ -550,6 +554,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
             self.textManager.showMessage("Starting a new session")
             
             self.reset()
+            self.configureLighting()
             self.initiateTracking()
             
             // Disable Restart button for a while in order to give the session enough time to restart.
@@ -649,8 +654,18 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
         })
     }
     func configureLighting() {
+        if self.currentmodel == nil {
+            return
+        }
+       if(self.currentmodel.isLighteningEnabled == false){
+        sceneView.autoenablesDefaultLighting = false
+        sceneView.automaticallyUpdatesLighting = false
+        
+       }
+       else{
         sceneView.autoenablesDefaultLighting = true
         sceneView.automaticallyUpdatesLighting = true
+        }
     }
     
     func add3D(x: Float = 0, y: Float = 0, z: Float = -0.5){
