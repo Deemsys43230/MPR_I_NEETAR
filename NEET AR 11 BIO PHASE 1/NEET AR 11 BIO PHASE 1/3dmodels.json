@@ -112,7 +112,7 @@
             {
             "id":4,
             "modelname":"monocotleaf",
-            "visiblename":"Corn leaf",
+            "visiblename":"Banana leaf",
             "staticmodelpath":"art.scnassets/monocotleaf/monocotleaf.scn",
             "mtlmodelpath":null,
             "isSurfaceEnabled":false,
