@@ -78,7 +78,9 @@
                                       "6. Use ↻ button to clear model",
                                       "7. Use 🏠 button to go to Chapters list"
                                       ],
-                             "relatedids":[2]
+                             "relatedids":[
+                                           2
+                                           ]
                              }
                              ]
             },
@@ -106,8 +108,9 @@
                      "6. Use ↻ button to clear model",
                      "7. Use 🏠 button to go to Chapters list"
                      ],
-            "relatedids":[]
+            "relatedids":[
             
+            ]
             },
             {
             "id":4,
@@ -158,7 +161,9 @@
                                       "6. Use ↻ button to clear model",
                                       "7. Use 🏠 button to go to Chapters list"
                                       ],
-                             "relatedids":[4]
+                             "relatedids":[
+                                           4
+                                           ]
                              }
                              ]
             },
@@ -211,7 +216,417 @@
                                       "6. Use ↻ button to clear model",
                                       "7. Use 🏠 button to go to Chapters list"
                                       ],
-                             "relatedids":[5]
+                             "relatedids":[
+                                           5
+                                           ]
+                             }
+                             ]
+            }
+            ]
+  },
+  {
+  "name":"Structural organisation in animals",
+  "no_of_models":4,
+  "models":[
+            {
+            "id":1,
+            "modelname":"tissue",
+            "visiblename":"Connective tissue and blood",
+            "staticmodelpath":"art.scnassets/tissue/tissue.scn",
+            "mtlmodelpath":null,
+            "isSurfaceEnabled":false,
+            "isZoomEnabled":true,
+            "isLighteningEnabled":false,
+            "isPartsAvailable":true,
+            "partsname":"tissue_parts",
+            "partsmodelpath":"art.scnassets/tissue/tissue_parts.scn",
+            "scaleValue":0.1,
+            "canModifySurface":true,
+            "modelimage":"tissue",
+            "hints":[
+                     "1. Use yellow square/focus square to target the location",
+                     "2. Tap on the focus square to place object",
+                     "3. Try changing the position if object could not be placed",
+                     "4. Pinch to zoom In and Zoom Out an object",
+                     "5. Use ⚙ button to change 3D model settings",
+                     "6. Use ↻ button to clear model",
+                     "7. Use 🏠 button to go to Chapters list"
+                     ],
+            "relatedmodels":[]
+            },
+            {
+            "id":2,
+            "modelname":"typicalneuron",
+            "visiblename":"Typical neuron",
+            "staticmodelpath":"art.scnassets/typicalneuron/typicalneuron.scn",
+            "mtlmodelpath":null,
+            "isSurfaceEnabled":false,
+            "isLighteningEnabled":false,
+            "isZoomEnabled":true,
+            "isPartsAvailable":true,
+            "partsname":"typicalneuron_parts",
+            "partsmodelpath":"art.scnassets/typicalneuron/typicalneuron_parts.scn",
+            "scaleValue":0.1,
+            "canModifySurface":true,
+            "modelimage":"typicalneuron",
+            "hints":[
+                     "1. Use yellow square/focus square to target the location",
+                     "2. Tap on the focus square to place object",
+                     "3. Try changing the position if object could not be placed",
+                     "4. Pinch to zoom In and Zoom Out an object",
+                     "5. Use ⚙ button to change 3D model settings",
+                     "6. Use ↻ button to clear model",
+                     "7. Use 🏠 button to go to Chapters list"
+                     ],
+            "relatedmodels":[]
+            },
+            {
+            "id":3,
+            "visiblename":"Muscular tissue",
+            "modelname":"skeletolmuscle",
+            "staticmodelpath":"art.scnassets/skeletolmuscle/skeletolmuscle.scn",
+            "mtlmodelpath":null,
+            "isSurfaceEnabled":false,
+            "isLighteningEnabled":false,
+            "isZoomEnabled":true,
+            "isPartsAvailable":false,
+            "partsname":null,
+            "partsmodelpath":null,
+            "scaleValue":0.1,
+            "canModifySurface":true,
+            "modelimage":"skeletolmuscle",
+            "hints":[
+                     "1. Use yellow square/focus square to target the location",
+                     "2. Tap on the focus square to place object",
+                     "3. Try changing the position if object could not be placed",
+                     "4. Pinch to zoom In and Zoom Out an object",
+                     "5. Use ⚙ button to change 3D model settings",
+                     "6. Use ↻ button to clear model",
+                     "7. Use 🏠 button to go to Chapters list"
+                     ],
+            "relatedmodels":[
+                          {
+                          "id":31,
+                          "visiblename":"Cardiac muscle",
+                          "modelname":"cardiacmuscle",
+                          "staticmodelpath":"art.scnassets/cardiacmuscle/cardiacmuscle.scn",
+                          "mtlmodelpath":null,
+                          "isSurfaceEnabled":false,
+                          "isLighteningEnabled":false,
+                          "isZoomEnabled":true,
+                          "isPartsAvailable":false,
+                          "partsname":null,
+                          "partsmodelpath":null,
+                          "scaleValue":0.1,
+                          "canModifySurface":true,
+                          "modelimage":"cardiacmuscle",
+                          "hints":[
+                                   "1. Use yellow square/focus square to target the location",
+                                   "2. Tap on the focus square to place object",
+                                   "3. Try changing the position if object could not be placed",
+                                   "4. Pinch to zoom In and Zoom Out an object",
+                                   "5. Use ⚙ button to change 3D model settings",
+                                   "6. Use ↻ button to clear model",
+                                   "7. Use 🏠 button to go to Chapters list"
+                                   ],
+                          "relatedids":[
+                                        3,
+                                        32
+                                        ]
+                          },
+                          {
+                          "id":32,
+                          "visiblename":"Visceral muscle",
+                          "modelname":"visceralmuscle",
+                          "staticmodelpath":"art.scnassets/visceralmuscle/visceralmuscle.scn",
+                          "mtlmodelpath":null,
+                          "isSurfaceEnabled":false,
+                          "isLighteningEnabled":false,
+                          "isZoomEnabled":true,
+                          "isPartsAvailable":true,
+                          "partsname":"visceralmuscle_parts",
+                          "partsmodelpath":"art.scnassets/visceralmuscle/visceralmuscle_parts.scn",
+                          "scaleValue":0.1,
+                          "canModifySurface":true,
+                          "modelimage":"visceralmuscle",
+                          "hints":[
+                                   "1. Use yellow square/focus square to target the location",
+                                   "2. Tap on the focus square to place object",
+                                   "3. Try changing the position if object could not be placed",
+                                   "4. Pinch to zoom In and Zoom Out an object",
+                                   "5. Use ⚙ button to change 3D model settings",
+                                   "6. Use ↻ button to clear model",
+                                   "7. Use 🏠 button to go to Chapters list"
+                                   ],
+                          "relatedids":[
+                                        3,
+                                        31
+                                        ]
+                          }
+                          ]
+            },
+            {
+            "id":4,
+            "modelname":"simplesquamous",
+            "visiblename":"Epithelial tissue",
+            "staticmodelpath":"art.scnassets/simplesquamous/simplesquamous.scn",
+            "mtlmodelpath":null,
+            "isSurfaceEnabled":false,
+            "isLighteningEnabled":false,
+            "isZoomEnabled":true,
+            "isPartsAvailable":true,
+            "partsname":"simplesquamous_parts",
+            "partsmodelpath":"art.scnassets/simplesquamous/simplesquamous_parts.scn",
+            "scaleValue":0.1,
+            "canModifySurface":true,
+            "modelimage":"simplesquamous",
+            "hints":[
+                     "1. Use yellow square/focus square to target the location",
+                     "2. Tap on the focus square to place object",
+                     "3. Try changing the position if object could not be placed",
+                     "4. Pinch to zoom In and Zoom Out an object",
+                     "5. Use ⚙ button to change 3D model settings",
+                     "6. Use ↻ button to clear model",
+                     "7. Use 🏠 button to go to Chapters list"
+                     ],
+            "relatedmodels":[
+                             {
+                             "id":41,
+                             "visiblename":"Simple cuboidal",
+                             "modelname":"simplecuboidal",
+                             "staticmodelpath":"art.scnassets/simplecuboidal/simplecuboidal.scn",
+                             "mtlmodelpath":null,
+                             "isSurfaceEnabled":false,
+                             "isLighteningEnabled":false,
+                             "isZoomEnabled":true,
+                             "isPartsAvailable":true,
+                             "partsname":"simplecuboidal_parts",
+                             "partsmodelpath":"art.scnassets/simplecuboidal/simplecuboidal_parts.scn",
+                             "scaleValue":0.1,
+                             "canModifySurface":true,
+                             "modelimage":"simplecuboidal",
+                             "hints":[
+                                      "1. Use yellow square/focus square to target the location",
+                                      "2. Tap on the focus square to place object",
+                                      "3. Try changing the position if object could not be placed",
+                                      "4. Pinch to zoom In and Zoom Out an object",
+                                      "5. Use ⚙ button to change 3D model settings",
+                                      "6. Use ↻ button to clear model",
+                                      "7. Use 🏠 button to go to Chapters list"
+                                      ],
+                             "relatedids":[
+                                           4,
+                                           42,
+                                           43,
+                                           44,
+                                           45,
+                                           46,
+                                           47
+                                           ]
+                             },
+                             {
+                             "id":42,
+                             "visiblename":"Simple columnar",
+                             "modelname":"simplecolumnar",
+                             "staticmodelpath":"art.scnassets/simplecolumnar/simplecolumnar.scn",
+                             "mtlmodelpath":null,
+                             "isSurfaceEnabled":false,
+                             "isLighteningEnabled":false,
+                             "isZoomEnabled":true,
+                             "isPartsAvailable":true,
+                             "partsname":"simplecolumnar_parts",
+                             "partsmodelpath":"art.scnassets/simplecolumnar/simplecolumnar_parts.scn",
+                             "scaleValue":0.1,
+                             "canModifySurface":true,
+                             "modelimage":"simplecolumnar",
+                             "hints":[
+                                      "1. Use yellow square/focus square to target the location",
+                                      "2. Tap on the focus square to place object",
+                                      "3. Try changing the position if object could not be placed",
+                                      "4. Pinch to zoom In and Zoom Out an object",
+                                      "5. Use ⚙ button to change 3D model settings",
+                                      "6. Use ↻ button to clear model",
+                                      "7. Use 🏠 button to go to Chapters list"
+                                      ],
+                             "relatedids":[
+                                           4,
+                                           41,
+                                           43,
+                                           44,
+                                           45,
+                                           46,
+                                           47
+                                           ]
+                             },
+                             {
+                             "id":43,
+                             "visiblename":"Stratified squamous",
+                             "modelname":"stratifiedsquamous",
+                             "staticmodelpath":"art.scnassets/stratifiedsquamous/stratifiedsquamous.scn",
+                             "mtlmodelpath":null,
+                             "isSurfaceEnabled":false,
+                             "isLighteningEnabled":false,
+                             "isZoomEnabled":true,
+                             "isPartsAvailable":true,
+                             "partsname":"stratifiedsquamous_parts",
+                             "partsmodelpath":"art.scnassets/stratifiedsquamous/stratifiedsquamous_parts.scn",
+                             "scaleValue":0.1,
+                             "canModifySurface":true,
+                             "modelimage":"stratifiedsquamous",
+                             "hints":[
+                                      "1. Use yellow square/focus square to target the location",
+                                      "2. Tap on the focus square to place object",
+                                      "3. Try changing the position if object could not be placed",
+                                      "4. Pinch to zoom In and Zoom Out an object",
+                                      "5. Use ⚙ button to change 3D model settings",
+                                      "6. Use ↻ button to clear model",
+                                      "7. Use 🏠 button to go to Chapters list"
+                                      ],
+                             "relatedids":[
+                                           4,
+                                           41,
+                                           42,
+                                           44,
+                                           45,
+                                           46,
+                                           47
+                                           ]
+                             },
+                             {
+                             "id":44,
+                             "visiblename":"Stratified cuboidal",
+                             "modelname":"stratifiedcuboidal",
+                             "staticmodelpath":"art.scnassets/stratifiedcuboidal/stratifiedcuboidal.scn",
+                             "mtlmodelpath":null,
+                             "isSurfaceEnabled":false,
+                             "isLighteningEnabled":false,
+                             "isZoomEnabled":true,
+                             "isPartsAvailable":true,
+                             "partsname":"stratifiedcuboidal_parts",
+                             "partsmodelpath":"art.scnassets/stratifiedcuboidal/stratifiedcuboidal_parts.scn",
+                             "scaleValue":0.1,
+                             "canModifySurface":true,
+                             "modelimage":"stratifiedcuboidal",
+                             "hints":[
+                                      "1. Use yellow square/focus square to target the location",
+                                      "2. Tap on the focus square to place object",
+                                      "3. Try changing the position if object could not be placed",
+                                      "4. Pinch to zoom In and Zoom Out an object",
+                                      "5. Use ⚙ button to change 3D model settings",
+                                      "6. Use ↻ button to clear model",
+                                      "7. Use 🏠 button to go to Chapters list"
+                                      ],
+                             "relatedids":[
+                                           4,
+                                           41,
+                                           42,
+                                           43,
+                                           45,
+                                           46,
+                                           47
+                                           ]
+                             },
+                             {
+                             "id":45,
+                             "visiblename":"Stratified columnar",
+                             "modelname":"stratifiedcolumnar",
+                             "staticmodelpath":"art.scnassets/stratifiedcolumnar/stratifiedcolumnar.scn",
+                             "mtlmodelpath":null,
+                             "isSurfaceEnabled":false,
+                             "isLighteningEnabled":false,
+                             "isZoomEnabled":true,
+                             "isPartsAvailable":true,
+                             "partsname":"stratifiedcolumnar_parts",
+                             "partsmodelpath":"art.scnassets/stratifiedcolumnar/stratifiedcolumnar_parts.scn",
+                             "scaleValue":0.1,
+                             "canModifySurface":true,
+                             "modelimage":"stratifiedcolumnar",
+                             "hints":[
+                                      "1. Use yellow square/focus square to target the location",
+                                      "2. Tap on the focus square to place object",
+                                      "3. Try changing the position if object could not be placed",
+                                      "4. Pinch to zoom In and Zoom Out an object",
+                                      "5. Use ⚙ button to change 3D model settings",
+                                      "6. Use ↻ button to clear model",
+                                      "7. Use 🏠 button to go to Chapters list"
+                                      ],
+                             "relatedids":[
+                                           4,
+                                           41,
+                                           42,
+                                           43,
+                                           44,
+                                           46,
+                                           47
+                                           ]
+                             },
+                             {
+                             "id":46,
+                             "visiblename":"Pseudo stratified columnar",
+                             "modelname":"pseudocolumnar",
+                             "staticmodelpath":"art.scnassets/pseudocolumnar/pseudocolumnar.scn",
+                             "mtlmodelpath":null,
+                             "isSurfaceEnabled":false,
+                             "isLighteningEnabled":false,
+                             "isZoomEnabled":true,
+                             "isPartsAvailable":true,
+                             "partsname":"pseudocolumnar_parts",
+                             "partsmodelpath":"art.scnassets/pseudocolumnar/pseudocolumnar_parts.scn",
+                             "scaleValue":0.1,
+                             "canModifySurface":true,
+                             "modelimage":"pseudocolumnar",
+                             "hints":[
+                                      "1. Use yellow square/focus square to target the location",
+                                      "2. Tap on the focus square to place object",
+                                      "3. Try changing the position if object could not be placed",
+                                      "4. Pinch to zoom In and Zoom Out an object",
+                                      "5. Use ⚙ button to change 3D model settings",
+                                      "6. Use ↻ button to clear model",
+                                      "7. Use 🏠 button to go to Chapters list"
+                                      ],
+                             "relatedids":[
+                                           4,
+                                           41,
+                                           42,
+                                           43,
+                                           44,
+                                           45,
+                                           47
+                                           ]
+                             },
+                             {
+                             "id":47,
+                             "visiblename":"Transitional",
+                             "modelname":"transitionaltissue",
+                             "staticmodelpath":"art.scnassets/transitionaltissue/transitionaltissue.scn",
+                             "mtlmodelpath":null,
+                             "isSurfaceEnabled":false,
+                             "isLighteningEnabled":false,
+                             "isZoomEnabled":true,
+                             "isPartsAvailable":true,
+                             "partsname":"transitionaltissue_parts",
+                             "partsmodelpath":"art.scnassets/transitionaltissue/transitionaltissue_parts.scn",
+                             "scaleValue":0.1,
+                             "canModifySurface":true,
+                             "modelimage":"transitionaltissue",
+                             "hints":[
+                                      "1. Use yellow square/focus square to target the location",
+                                      "2. Tap on the focus square to place object",
+                                      "3. Try changing the position if object could not be placed",
+                                      "4. Pinch to zoom In and Zoom Out an object",
+                                      "5. Use ⚙ button to change 3D model settings",
+                                      "6. Use ↻ button to clear model",
+                                      "7. Use 🏠 button to go to Chapters list"
+                                      ],
+                             "relatedids":[
+                                           4,
+                                           41,
+                                           42,
+                                           43,
+                                           44,
+                                           45,
+                                           46
+                                           ]
                              }
                              ]
             }
