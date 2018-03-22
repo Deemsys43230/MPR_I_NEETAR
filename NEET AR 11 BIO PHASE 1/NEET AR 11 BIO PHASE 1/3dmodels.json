@@ -108,7 +108,7 @@
                      "6. Use ↻ button to clear model",
                      "7. Use 🏠 button to go to Chapters list"
                      ],
-            "relatedids":[
+            "relatedmodels":[
             
             ]
             },
@@ -372,7 +372,7 @@
             "staticmodelpath":"art.scnassets/simplesquamous/simplesquamous.scn",
             "mtlmodelpath":null,
             "isSurfaceEnabled":false,
-            "isLighteningEnabled":false,
+            "isLighteningEnabled":true,
             "isZoomEnabled":true,
             "isPartsAvailable":true,
             "partsname":"simplesquamous_parts",
@@ -397,7 +397,7 @@
                              "staticmodelpath":"art.scnassets/simplecuboidal/simplecuboidal.scn",
                              "mtlmodelpath":null,
                              "isSurfaceEnabled":false,
-                             "isLighteningEnabled":false,
+                             "isLighteningEnabled":true,
                              "isZoomEnabled":true,
                              "isPartsAvailable":true,
                              "partsname":"simplecuboidal_parts",
@@ -431,7 +431,7 @@
                              "staticmodelpath":"art.scnassets/simplecolumnar/simplecolumnar.scn",
                              "mtlmodelpath":null,
                              "isSurfaceEnabled":false,
-                             "isLighteningEnabled":false,
+                             "isLighteningEnabled":true,
                              "isZoomEnabled":true,
                              "isPartsAvailable":true,
                              "partsname":"simplecolumnar_parts",
@@ -465,7 +465,7 @@
                              "staticmodelpath":"art.scnassets/stratifiedsquamous/stratifiedsquamous.scn",
                              "mtlmodelpath":null,
                              "isSurfaceEnabled":false,
-                             "isLighteningEnabled":false,
+                             "isLighteningEnabled":true,
                              "isZoomEnabled":true,
                              "isPartsAvailable":true,
                              "partsname":"stratifiedsquamous_parts",
@@ -499,7 +499,7 @@
                              "staticmodelpath":"art.scnassets/stratifiedcuboidal/stratifiedcuboidal.scn",
                              "mtlmodelpath":null,
                              "isSurfaceEnabled":false,
-                             "isLighteningEnabled":false,
+                             "isLighteningEnabled":true,
                              "isZoomEnabled":true,
                              "isPartsAvailable":true,
                              "partsname":"stratifiedcuboidal_parts",
@@ -533,7 +533,7 @@
                              "staticmodelpath":"art.scnassets/stratifiedcolumnar/stratifiedcolumnar.scn",
                              "mtlmodelpath":null,
                              "isSurfaceEnabled":false,
-                             "isLighteningEnabled":false,
+                             "isLighteningEnabled":true,
                              "isZoomEnabled":true,
                              "isPartsAvailable":true,
                              "partsname":"stratifiedcolumnar_parts",
