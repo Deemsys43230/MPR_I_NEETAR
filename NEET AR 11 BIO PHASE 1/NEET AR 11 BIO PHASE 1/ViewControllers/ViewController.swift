@@ -183,8 +183,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
         
         initializeSceneView()
         addTapGestureToSceneView()
-        addPinchGestureToSceneView()
-        configureLighting()
+        addPinchGestureToSceneView()        
         initiateTracking()
         
         // Set the view's delegate
@@ -196,7 +195,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
         self.currentPage = 0
         self.loadNormalModel()
         self.loadPartsModel()
-        
+        configureLighting()
         UserDefaults.standard.set(currentmodel.canModifySurface, forKey: "canModifySurface")
         UserDefaults.standard.set(currentmodel.isSurfaceEnabled, forKey: "isSurfaceEnabled")
         UserDefaults.standard.set(currentmodel.scaleValue, forKey: "scaleValue")
