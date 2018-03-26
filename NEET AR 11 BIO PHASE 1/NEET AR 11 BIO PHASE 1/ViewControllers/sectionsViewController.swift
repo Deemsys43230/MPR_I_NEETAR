@@ -29,8 +29,15 @@ class sectionsViewController : UITableViewController{
         
         var item = self.sections[indexPath.row]
         let visiblename = item["visiblename"] as! String
-        cell.profileimage.image = UIImage(named: item["modelimage"] as! String)
         cell.title.text = visiblename
+        if visiblename == "Skeletal muscle"{
+            cell.title.text = "Muscular tissue"
+        }
+        else if visiblename == "Simple squamous"{
+            cell.title.text = "Epithelial tissue"
+        }
+        cell.profileimage.image = UIImage(named: item["modelimage"] as! String)
+        
         cell.profileimage.layer.cornerRadius = 5
         cell.profileimage.layer.borderWidth = 1
         cell.profileimage.layer.borderColor = Constants.appTheme.cgColor

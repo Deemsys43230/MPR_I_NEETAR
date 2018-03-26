@@ -282,7 +282,7 @@
             },
             {
             "id":3,
-            "visiblename":"Muscular tissue",
+            "visiblename":"Skeletal muscle",
             "modelname":"skeletolmuscle",
             "staticmodelpath":"art.scnassets/skeletolmuscle/skeletolmuscle.scn",
             "mtlmodelpath":null,
@@ -368,7 +368,7 @@
             {
             "id":4,
             "modelname":"simplesquamous",
-            "visiblename":"Epithelial tissue",
+            "visiblename":"Simple squamous",
             "staticmodelpath":"art.scnassets/simplesquamous/simplesquamous.scn",
             "mtlmodelpath":null,
             "isSurfaceEnabled":false,
