@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/deemsys/Documents/iOSProjects/11th Biology/Phase 3/MPR_I_NEETAR/NEET AR 11 BIO PHASE 1/NEET AR 11 BIO PHASE 1/art.scnassets">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
