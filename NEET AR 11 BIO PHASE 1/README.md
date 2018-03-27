@@ -1,12 +1,19 @@
-# NEET AR 11 BIO PHASE 1
+# NEET AR 11 BIO PHASE 3
 
-This application for learning 11th Standard Biology chapters using 3D model.
+This application for learning 11th Standard Biology chapters using 3D models.
 
 ## Overview
 
-- The Five Kingdom System of Classification
+- Cell theory and cell as the basic unit of life
 
-- Morphology of Flowering Plants 
+- Chemical constituents of living cells
+
+- Transport in plants
+
+- Digestion and Absorption
+
+- Breathing and Exchange of Gases
+
 
 
 

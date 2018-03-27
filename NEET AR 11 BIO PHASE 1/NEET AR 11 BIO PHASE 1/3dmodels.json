@@ -1,47 +1,22 @@
  [
   {
-  "name":"The Five Kingdom System of Classification",
-  "no_of_models":4,
+  "name":"Cell theory and cell as the basic unit of life",
+  "no_of_models":3,
   "models":[
             {
             "id":1,
-            "modelname":"tmvvirus",
-            "visiblename":"TMV virus",
-            "staticmodelpath":"art.scnassets/tmvvirus/tmvvirus.scn",
+            "modelname":"plantcell",
+            "visiblename":"Plant cell",
+            "staticmodelpath":"art.scnassets/plantcell/plantcell.scn",
             "mtlmodelpath":null,
             "isSurfaceEnabled":false,
             "isZoomEnabled":true,
             "isPartsAvailable":true,
-            "partsname":"tmvvirus_parts",
-            "partsmodelpath":"art.scnassets/tmvvirus/tmvvirus_parts.scn",
+            "partsname":"plantcell_parts",
+            "partsmodelpath":"art.scnassets/plantcell/plantcell_parts.scn",
             "scaleValue":0.1,
             "canModifySurface":true,
-            "modelimage":"tmvvirus",
-            "hints":[
-                     "1. Use yellow square/focus square to target the location",
-                     "2. Tap on the focus square to place object",
-                     "3. Try changing the position if object could not be placed",
-                     "4. Pinch to zoom In and Zoom Out an object",
-                     "5. Use ⚙ button to change 3D model settings",
-                     "6. Use ↻ button to clear model",
-                     "7. Use 🏠 button to go to Chapters list"
-                     ],
-            "relatedmodels":[]
-            },
-            {
-            "id":2,
-            "modelname":"bacteriophage",
-            "visiblename":"Bacteriophage",
-            "staticmodelpath":"art.scnassets/bacteriophage/bacteriophage.scn",
-            "mtlmodelpath":null,
-            "isSurfaceEnabled":false,
-            "isZoomEnabled":true,
-            "isPartsAvailable":true,
-            "partsname":"bacteriophage_parts",
-            "partsmodelpath":"art.scnassets/bacteriophage/bacteriophage_parts.scn",
-            "scaleValue":0.3,
-            "canModifySurface":true,
-            "modelimage":"bacteriophage",
+            "modelimage":"plantcell",
             "hints":[
                      "1. Use yellow square/focus square to target the location",
                      "2. Tap on the focus square to place object",
@@ -52,47 +27,50 @@
                      "7. Use 🏠 button to go to Chapters list"
                      ],
             "relatedmodels":[
-                             {
-                             "id":21,
-                             "visiblename":"Bacteriophage cross section",
-                             "modelname":"bacteriophage_cross",
-                             "staticmodelpath":"art.scnassets/bacteriophage_cross/bacteriophage_cross.scn",
-                             "mtlmodelpath":null,
-                             "isSurfaceEnabled":false,
-                             "isZoomEnabled":true,
-                             "isPartsAvailable":true,
-                             "partsname":"bacteriophage_cross_parts",
-                             "partsmodelpath":"art.scnassets/bacteriophage_cross/bacteriophage_cross_parts.scn",
-                             "scaleValue":0.3,
-                             "canModifySurface":true,
-                             "modelimage":"bacteriophage_cross",
-                             "hints":[
-                                      "1. Use yellow square/focus square to target the location",
-                                      "2. Tap on the focus square to place object",
-                                      "3. Try changing the position if object could not be placed",
-                                      "4. Pinch to zoom In and Zoom Out an object",
-                                      "5. Use ⚙ button to change 3D model settings",
-                                      "6. Use ↻ button to clear model",
-                                      "7. Use 🏠 button to go to Chapters list"
-                                      ],
-                             "relatedids":[2]
-                             }
-                             ]
+            
+            ]
+            },
+            {
+            "id":2,
+            "modelname":"animalcell",
+            "visiblename":"Animal cell",
+            "staticmodelpath":"art.scnassets/animalcell/animalcell.scn",
+            "mtlmodelpath":null,
+            "isSurfaceEnabled":false,
+            "isZoomEnabled":true,
+            "isPartsAvailable":true,
+            "partsname":"animalcell_parts",
+            "partsmodelpath":"art.scnassets/animalcell/animalcell_parts.scn",
+            "scaleValue":0.3,
+            "canModifySurface":true,
+            "modelimage":"animalcell",
+            "hints":[
+                     "1. Use yellow square/focus square to target the location",
+                     "2. Tap on the focus square to place object",
+                     "3. Try changing the position if object could not be placed",
+                     "4. Pinch to zoom In and Zoom Out an object",
+                     "5. Use ⚙ button to change 3D model settings",
+                     "6. Use ↻ button to clear model",
+                     "7. Use 🏠 button to go to Chapters list"
+                     ],
+            "relatedmodels":[
+            
+            ]
             },
             {
             "id":3,
-            "modelname":"influenzavirus",
-            "visiblename":"Influenza virus",
-            "staticmodelpath":"art.scnassets/influenzavirus/influenzavirus.scn",
+            "modelname":"eukaryoticcell",
+            "visiblename":"Eukaryotic cell",
+            "staticmodelpath":"art.scnassets/eukaryoticcell/eukaryoticcell.scn",
             "mtlmodelpath":null,
             "isSurfaceEnabled":false,
             "isZoomEnabled":true,
             "isPartsAvailable":true,
-            "partsname":"influenzavirus_parts",
-            "partsmodelpath":"art.scnassets/influenzavirus/influenzavirus_parts.scn",
+            "partsname":"eukaryoticcell_parts",
+            "partsmodelpath":"art.scnassets/eukaryoticcell/eukaryoticcell_parts.scn",
             "scaleValue":0.3,
             "canModifySurface":true,
-            "modelimage":"influenzavirus",
+            "modelimage":"eukaryoticcell",
             "hints":[
                      "1. Use yellow square/focus square to target the location",
                      "2. Tap on the focus square to place object",
@@ -102,53 +80,30 @@
                      "6. Use ↻ button to clear model",
                      "7. Use 🏠 button to go to Chapters list"
                      ],
-            "relatedmodels":[]
-            },
-            {
-            "id":4,
-            "modelname":"rodshapedbacterium",
-            "visiblename":"Rod shaped bacterium",
-            "staticmodelpath":"art.scnassets/rodshapedbacterium/rodshapedbacterium.scn",
-            "mtlmodelpath":null,
-            "isSurfaceEnabled":false,
-            "isZoomEnabled":true,
-            "isPartsAvailable":true,
-            "partsname":"rodshapedbacterium_parts",
-            "partsmodelpath":"art.scnassets/rodshapedbacterium/rodshapedbacterium_parts.scn",
-            "scaleValue":0.4,
-            "canModifySurface":true,
-            "modelimage":"rodshapedbacterium",
-            "hints":[
-                     "1. Use yellow square/focus square to target the location",
-                     "2. Tap on the focus square to place object",
-                     "3. Try changing the position if object could not be placed",
-                     "4. Pinch to zoom In and Zoom Out an object",
-                     "5. Use ⚙ button to change 3D model settings",
-                     "6. Use ↻ button to clear model",
-                     "7. Use 🏠 button to go to Chapters list"
-                     ],
-            "relatedmodels":[]
+            "relatedmodels":[
+            
+            ]
             }
             ]
   },
   {
-  "name":"Morphology of Flowering Plants",
-  "no_of_models":7,
+  "name":"Chemical constituents of living cells",
+  "no_of_models":3,
   "models":[
             {
             "id":1,
-            "modelname":"tomatoplant",
-            "visiblename":"Tomato flowering plant",
-            "staticmodelpath":"art.scnassets/tomatoplant/tomatoplant.scn",
+            "modelname":"mitosis",
+            "visiblename":"Mitosis",
+            "staticmodelpath":"art.scnassets/mitosis/mitosis.scn",
             "mtlmodelpath":null,
             "isSurfaceEnabled":false,
             "isZoomEnabled":true,
             "isPartsAvailable":true,
-            "partsname":"tomatoplant_parts",
-            "partsmodelpath":"art.scnassets/tomatoplant/tomatoplant_parts.scn",
+            "partsname":"mitosis_parts",
+            "partsmodelpath":"art.scnassets/mitosis/mitosis_parts.scn",
             "scaleValue":0.2,
             "canModifySurface":true,
-            "modelimage":"tomatoplant",
+            "modelimage":"mitosis",
             "hints":[
                      "1. Use yellow square/focus square to target the location",
                      "2. Tap on the focus square to place object",
@@ -158,22 +113,24 @@
                      "6. Use ↻ button to clear model",
                      "7. Use 🏠 button to go to Chapters list"
                      ],
-            "relatedmodels":[]
+            "relatedmodels":[
+            
+            ]
             },
             {
             "id":2,
-            "modelname":"tomatoroot",
-            "visiblename":"Tomato root",
-            "staticmodelpath":"art.scnassets/tomatoroot/tomatoroot.scn",
+            "modelname":"meiosis1",
+            "visiblename":"Meiosis I",
+            "staticmodelpath":"art.scnassets/meiosis1/meiosis1.scn",
             "mtlmodelpath":null,
             "isSurfaceEnabled":false,
             "isZoomEnabled":true,
             "isPartsAvailable":true,
-            "partsname":"tomatoroot_parts",
-            "partsmodelpath":"art.scnassets/tomatoroot/tomatoroot_parts.scn",
+            "partsname":"meiosis1_parts",
+            "partsmodelpath":"art.scnassets/meiosis1/meiosis1_parts.scn",
             "scaleValue":0.1,
             "canModifySurface":true,
-            "modelimage":"tomatoroot",
+            "modelimage":"meiosis1",
             "hints":[
                      "1. Use yellow square/focus square to target the location",
                      "2. Tap on the focus square to place object",
@@ -184,47 +141,23 @@
                      "7. Use 🏠 button to go to Chapters list"
                      ],
             "relatedmodels":[
-                             {
-                             "id":21,
-                             "visiblename":"Tomato root microscopic view",
-                             "modelname":"tomatoroot_mview",
-                             "staticmodelpath":"art.scnassets/tomatoroot_mview/tomatoroot_mview.scn",
-                             "mtlmodelpath":null,
-                             "isSurfaceEnabled":false,
-                             "isZoomEnabled":true,
-                             "isPartsAvailable":true,
-                             "partsname":"tomatoroot_mview_parts",
-                             "partsmodelpath":"art.scnassets/tomatoroot_mview/tomatoroot_mview_parts.scn",
-                             "scaleValue":0.1,
-                             "canModifySurface":true,
-                             "modelimage":"tomatoroot_mview",
-                             "hints":[
-                                      "1. Use yellow square/focus square to target the location",
-                                      "2. Tap on the focus square to place object",
-                                      "3. Try changing the position if object could not be placed",
-                                      "4. Pinch to zoom In and Zoom Out an object",
-                                      "5. Use ⚙ button to change 3D model settings",
-                                      "6. Use ↻ button to clear model",
-                                      "7. Use 🏠 button to go to Chapters list"
-                                      ],
-                             "relatedids":[2]
-                             }
-                             ]
+            
+            ]
             },
             {
             "id":3,
-            "modelname":"tomatostem",
-            "visiblename":"Tomato stem",
-            "staticmodelpath":"art.scnassets/tomatostem/tomatostem.scn",
+            "modelname":"meiosis2",
+            "visiblename":"Meiosis II",
+            "staticmodelpath":"art.scnassets/meiosis2/meiosis2.scn",
             "mtlmodelpath":null,
             "isSurfaceEnabled":false,
             "isZoomEnabled":true,
             "isPartsAvailable":true,
-            "partsname":"tomatostem_parts",
-            "partsmodelpath":"art.scnassets/tomatostem/tomatostem_parts.scn",
+            "partsname":"meiosis2_parts",
+            "partsmodelpath":"art.scnassets/meiosis2/meiosis2_parts.scn",
             "scaleValue":0.1,
             "canModifySurface":true,
-            "modelimage":"tomatostem",
+            "modelimage":"meiosis2",
             "hints":[
                      "1. Use yellow square/focus square to target the location",
                      "2. Tap on the focus square to place object",
@@ -235,47 +168,92 @@
                      "7. Use 🏠 button to go to Chapters list"
                      ],
             "relatedmodels":[
-                             {
-                             "id":31,
-                             "visiblename":"Tomato stem microscopic view",
-                             "modelname":"tomatostem_mview",
-                             "staticmodelpath":"art.scnassets/tomatostem_mview/tomatostem_mview.scn",
-                             "mtlmodelpath":null,
-                             "isSurfaceEnabled":false,
-                             "isZoomEnabled":true,
-                             "isPartsAvailable":true,
-                             "partsname":"tomatostem_mview_parts",
-                             "partsmodelpath":"art.scnassets/tomatostem_mview/tomatostem_mview_parts.scn",
-                             "scaleValue":0.1,
-                             "canModifySurface":true,
-                             "modelimage":"tomatostem_mview",
-                             "hints":[
-                                      "1. Use yellow square/focus square to target the location",
-                                      "2. Tap on the focus square to place object",
-                                      "3. Try changing the position if object could not be placed",
-                                      "4. Pinch to zoom In and Zoom Out an object",
-                                      "5. Use ⚙ button to change 3D model settings",
-                                      "6. Use ↻ button to clear model",
-                                      "7. Use 🏠 button to go to Chapters list"
-                                      ],
-                             "relatedids":[3]
-                             }
-                             ]
-            },
+            
+            ]
+            }
+            ]
+  },
+  {
+  "name":"Transport in plants",
+  "no_of_models":2,
+  "models":[
             {
-            "id":4,
-            "modelname":"mangofruit",
-            "visiblename":"Mango fruit",
-            "staticmodelpath":"art.scnassets/mangofruit/mangofruit.scn",
+            "id":1,
+            "modelname":"xylem",
+            "visiblename":"Xylem, Phloem, Cambium",
+            "staticmodelpath":"art.scnassets/xylem/xylem.scn",
             "mtlmodelpath":null,
             "isSurfaceEnabled":false,
             "isZoomEnabled":true,
-            "isPartsAvailable":false,
-            "partsname":null,
-            "partsmodelpath":null,
-            "scaleValue":0.2,
+            "isPartsAvailable":true,
+            "partsname":"xylem_parts",
+            "partsmodelpath":"art.scnassets/xylem/xylem_parts.scn",
+            "scaleValue":0.1,
             "canModifySurface":true,
-            "modelimage":"mangofruit",
+            "modelimage":"xylem",
+            "hints":[
+                     "1. Use yellow square/focus square to target the location",
+                     "2. Tap on the focus square to place object",
+                     "3. Try changing the position if object could not be placed",
+                     "4. Pinch to zoom In and Zoom Out an object",
+                     "5. Use ⚙ button to change 3D model settings",
+                     "6. Use ↻ button to clear model",
+                     "7. Use 🏠 button to go to Chapters list"
+                     ],
+            "relatedmodels":[
+            
+            ]
+            },
+            {
+            "id":2,
+            "modelname":"translocation",
+            "visiblename":"Plant cell",
+            "staticmodelpath":"art.scnassets/translocation/translocation.scn",
+            "mtlmodelpath":null,
+            "isSurfaceEnabled":false,
+            "isZoomEnabled":true,
+            "isPartsAvailable":true,
+            "partsname":"translocation_parts",
+            "partsmodelpath":"art.scnassets/translocation/translocation_parts.scn",
+            "scaleValue":0.1,
+            "canModifySurface":true,
+            "modelimage":"translocation",
+            "hints":[
+                     "1. Use yellow square/focus square to target the location",
+                     "2. Tap on the focus square to place object",
+                     "3. Try changing the position if object could not be placed",
+                     "4. Pinch to zoom In and Zoom Out an object",
+                     "5. Use ⚙ button to change 3D model settings",
+                     "6. Use ↻ button to clear model",
+                     "7. Use 🏠 button to go to Chapters list"
+                     ],
+            "relatedmodels":[
+            
+            ]
+            }
+            ]
+  },
+  {
+  "name":"Digestion and Absorption",
+  "no_of_models":1,
+  "models":[
+            {
+            "id":1,
+            "modelname":"stomach",
+            "visiblename":"Stomach",
+            "staticmodelpath":"art.scnassets/stomach/stomach.scn",
+            "mtlmodelpath":null,
+            "isSurfaceEnabled":false,
+            "isZoomEnabled":true,
+            "isPartsAvailable":true,
+            "partsname":"stomach_parts",
+            "partsmodelpath":"art.scnassets/stomach/stomach_parts.scn",
+            "isAnimationAvailable":true,
+            "animationname":"spider-1",
+            "animationpath":"art.scnassets/spider/spider",
+            "scaleValue":0.1,
+            "canModifySurface":true,
+            "modelimage":"stomach",
             "hints":[
                      "1. Use yellow square/focus square to target the location",
                      "2. Tap on the focus square to place object",
@@ -287,19 +265,19 @@
                      ],
             "relatedmodels":[
                              {
-                             "id":41,
-                             "visiblename":"Mango fruit cross section",
-                             "modelname":"mangofruit_cross",
-                             "staticmodelpath":"art.scnassets/mangofruit_cross/mangofruit_cross.scn",
+                             "id":11,
+                             "modelname":"stomachcross",
+                             "visiblename":"Stomach cross section",
+                             "staticmodelpath":"art.scnassets/stomachcross/stomachcross.scn",
                              "mtlmodelpath":null,
                              "isSurfaceEnabled":false,
                              "isZoomEnabled":true,
                              "isPartsAvailable":true,
-                             "partsname":"mangofruit_cross_parts",
-                             "partsmodelpath":"art.scnassets/mangofruit_cross/mangofruit_cross_parts.scn",
+                             "partsname":"stomachcross_parts",
+                             "partsmodelpath":"art.scnassets/stomachcross/stomachcross_parts.scn",
                              "scaleValue":0.1,
                              "canModifySurface":true,
-                             "modelimage":"mangofruit_cross",
+                             "modelimage":"stomachcross",
                              "hints":[
                                       "1. Use yellow square/focus square to target the location",
                                       "2. Tap on the focus square to place object",
@@ -310,25 +288,34 @@
                                       "7. Use 🏠 button to go to Chapters list"
                                       ],
                              "relatedids":[
-                                           4
-                                           ]
+                             
+                             ]
                              }
                              ]
-            },
+            }
+            ]
+  },
+  {
+  "name":"Breathing and Exchange of Gases",
+  "no_of_models":1,
+  "models":[
             {
-            "id":5,
-            "modelname":"tomatoleaf",
-            "visiblename":"Tomato leaf",
-            "staticmodelpath":"art.scnassets/tomatoleaf/tomatoleaf.scn",
+            "id":1,
+            "modelname":"lungs",
+            "visiblename":"Lungs",
+            "staticmodelpath":"art.scnassets/lungs/lungs.scn",
             "mtlmodelpath":null,
             "isSurfaceEnabled":false,
             "isZoomEnabled":true,
             "isPartsAvailable":true,
-            "partsname":"tomatoleaf_parts",
-            "partsmodelpath":"art.scnassets/tomatoleaf/tomatoleaf_parts.scn",
+            "partsname":"lungs_parts",
+            "partsmodelpath":"art.scnassets/lungs/lungs_parts.scn",
+            "isAnimationAvailable":true,
+            "animationname":"spider-1",
+            "animationpath":"art.scnassets/spider/spider",
             "scaleValue":0.1,
             "canModifySurface":true,
-            "modelimage":"tomatoleaf",
+            "modelimage":"lungs",
             "hints":[
                      "1. Use yellow square/focus square to target the location",
                      "2. Tap on the focus square to place object",
@@ -340,19 +327,19 @@
                      ],
             "relatedmodels":[
                              {
-                             "id":51,
-                             "visiblename":"Tomato leaf microscopic view",
-                             "modelname":"tomatoleaf_mview",
-                             "staticmodelpath":"art.scnassets/tomatoleaf_mview/tomatoleaf_mview.scn",
+                             "id":11,
+                             "modelname":"lungscross",
+                             "visiblename":"Lungs cross section",
+                             "staticmodelpath":"art.scnassets/lungscross/lungscross.scn",
                              "mtlmodelpath":null,
                              "isSurfaceEnabled":false,
                              "isZoomEnabled":true,
                              "isPartsAvailable":true,
-                             "partsname":"tomatoleaf_mview_parts",
-                             "partsmodelpath":"art.scnassets/tomatoleaf_mview/tomatoleaf_mview_parts.scn",
+                             "partsname":"lungscross_parts",
+                             "partsmodelpath":"art.scnassets/lungscross/lungscross_parts.scn",
                              "scaleValue":0.1,
                              "canModifySurface":true,
-                             "modelimage":"tomatoleaf_mview",
+                             "modelimage":"lungscross",
                              "hints":[
                                       "1. Use yellow square/focus square to target the location",
                                       "2. Tap on the focus square to place object",
@@ -362,109 +349,9 @@
                                       "6. Use ↻ button to clear model",
                                       "7. Use 🏠 button to go to Chapters list"
                                       ],
-                             "relatedids":[5]
-                             }
+                             "relatedids":[
+                             
                              ]
-            },
-            {
-            "id":6,
-            "modelname":"seed",
-            "visiblename":"Seed",
-            "staticmodelpath":"art.scnassets/seed/seed.scn",
-            "mtlmodelpath":null,
-            "isSurfaceEnabled":false,
-            "isZoomEnabled":true,
-            "isPartsAvailable":true,
-            "partsname":"seed_parts",
-            "partsmodelpath":"art.scnassets/seed/seed_parts.scn",
-            "scaleValue":0.2,
-            "canModifySurface":true,
-            "modelimage":"seed",
-            "hints":[
-                     "1. Use yellow square/focus square to target the location",
-                     "2. Tap on the focus square to place object",
-                     "3. Try changing the position if object could not be placed",
-                     "4. Pinch to zoom In and Zoom Out an object",
-                     "5. Use ⚙ button to change 3D model settings",
-                     "6. Use ↻ button to clear model",
-                     "7. Use 🏠 button to go to Chapters list"
-                     ],
-            "relatedmodels":[
-                             {
-                             "id":61,
-                             "visiblename":"Seed cross section",
-                             "modelname":"seed_cross",
-                             "staticmodelpath":"art.scnassets/seed_cross/seed_cross.scn",
-                             "mtlmodelpath":null,
-                             "isSurfaceEnabled":false,
-                             "isZoomEnabled":true,
-                             "isPartsAvailable":true,
-                             "partsname":"seed_cross_parts",
-                             "partsmodelpath":"art.scnassets/seed_cross/seed_cross_parts.scn",
-                             "scaleValue":0.2,
-                             "canModifySurface":true,
-                             "modelimage":"seed_cross",
-                             "hints":[
-                                      "1. Use yellow square/focus square to target the location",
-                                      "2. Tap on the focus square to place object",
-                                      "3. Try changing the position if object could not be placed",
-                                      "4. Pinch to zoom In and Zoom Out an object",
-                                      "5. Use ⚙ button to change 3D model settings",
-                                      "6. Use ↻ button to clear model",
-                                      "7. Use 🏠 button to go to Chapters list"
-                                      ],
-                             "relatedids":[6]
-                             }
-                             ]
-            },
-            {
-            "id":7,
-            "modelname":"hibiscus",
-            "visiblename":"Hibiscus flower",
-            "staticmodelpath":"art.scnassets/hibiscus/hibiscus.scn",
-            "mtlmodelpath":null,
-            "isSurfaceEnabled":false,
-            "isZoomEnabled":true,
-            "isPartsAvailable":true,
-            "partsname":"hibiscus_parts",
-            "partsmodelpath":"art.scnassets/hibiscus/hibiscus_parts.scn",
-            "scaleValue":0.1,
-            "canModifySurface":true,
-            "modelimage":"hibiscus",
-            "hints":[
-                     "1. Use yellow square/focus square to target the location",
-                     "2. Tap on the focus square to place object",
-                     "3. Try changing the position if object could not be placed",
-                     "4. Pinch to zoom In and Zoom Out an object",
-                     "5. Use ⚙ button to change 3D model settings",
-                     "6. Use ↻ button to clear model",
-                     "7. Use 🏠 button to go to Chapters list"
-                     ],
-            "relatedmodels":[
-                             {
-                             "id":71,
-                             "visiblename":"Hibiscus flower cross section",
-                             "modelname":"hibiscus_cross",
-                             "staticmodelpath":"art.scnassets/hibiscus_cross/hibiscus_cross.scn",
-                             "mtlmodelpath":null,
-                             "isSurfaceEnabled":false,
-                             "isZoomEnabled":true,
-                             "isPartsAvailable":true,
-                             "partsname":"hibiscus_cross_parts",
-                             "partsmodelpath":"art.scnassets/hibiscus_cross/hibiscus_cross_parts.scn",
-                             "scaleValue":0.1,
-                             "canModifySurface":true,
-                             "modelimage":"hibiscus_cross",
-                             "hints":[
-                                      "1. Use yellow square/focus square to target the location",
-                                      "2. Tap on the focus square to place object",
-                                      "3. Try changing the position if object could not be placed",
-                                      "4. Pinch to zoom In and Zoom Out an object",
-                                      "5. Use ⚙ button to change 3D model settings",
-                                      "6. Use ↻ button to clear model",
-                                      "7. Use 🏠 button to go to Chapters list"
-                                      ],
-                             "relatedids":[7]
                              }
                              ]
             }

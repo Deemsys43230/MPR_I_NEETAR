@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		001A574D205A7DD2004570A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A574C205A7DD2004570A5 /* AppDelegate.swift */; };
-		001A574F205A7DD2004570A5 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 001A574E205A7DD2004570A5 /* art.scnassets */; };
 		001A5754205A7DD2004570A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001A5752205A7DD2004570A5 /* Main.storyboard */; };
 		001A5756205A7DD2004570A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001A5755205A7DD2004570A5 /* Assets.xcassets */; };
 		001A5759205A7DD2004570A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001A5757205A7DD2004570A5 /* LaunchScreen.storyboard */; };
@@ -54,7 +53,6 @@
 /* Begin PBXFileReference section */
 		001A5749205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NEET AR 11 BIO PHASE 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		001A574C205A7DD2004570A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		001A574E205A7DD2004570A5 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		001A5753205A7DD2004570A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		001A5755205A7DD2004570A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		001A5758205A7DD2004570A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +80,7 @@
 		001A579A205A7EEC004570A5 /* sectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sectionsViewController.swift; sourceTree = "<group>"; };
 		001A579B205A7EEC004570A5 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		001A579C205A7EEC004570A5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		008BC37D206A1E8400FDAE2C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = "/Users/deemsys/Documents/iOSProjects/11th Biology/Phase 3/MPR_I_NEETAR/NEET AR 11 BIO PHASE 1/NEET AR 11 BIO PHASE 1/art.scnassets"; sourceTree = "<absolute>"; };
 		00D233C9205A848F00B2671D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +140,7 @@
 				001A5791205A7EAD004570A5 /* Model */,
 				001A5780205A7E7F004570A5 /* Utilities */,
 				001A577F205A7E7A004570A5 /* Carousel */,
-				001A574E205A7DD2004570A5 /* art.scnassets */,
+				008BC37D206A1E8400FDAE2C /* art.scnassets */,
 				001A5755205A7DD2004570A5 /* Assets.xcassets */,
 				001A5757205A7DD2004570A5 /* LaunchScreen.storyboard */,
 				001A575A205A7DD2004570A5 /* Info.plist */,
@@ -319,7 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00D233CA205A849000B2671D /* README.md in Resources */,
-				001A574F205A7DD2004570A5 /* art.scnassets in Resources */,
 				001A577D205A7E37004570A5 /* 3dmodels.json in Resources */,
 				001A5759205A7DD2004570A5 /* LaunchScreen.storyboard in Resources */,
 				001A5756205A7DD2004570A5 /* Assets.xcassets in Resources */,
@@ -535,7 +533,7 @@
 				INFOPLIST_FILE = "NEET AR 11 BIO PHASE 1/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.neetar11biophase1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.neetar11biophase3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -551,7 +549,7 @@
 				INFOPLIST_FILE = "NEET AR 11 BIO PHASE 1/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.neetar11biophase1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.neetar11biophase3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
