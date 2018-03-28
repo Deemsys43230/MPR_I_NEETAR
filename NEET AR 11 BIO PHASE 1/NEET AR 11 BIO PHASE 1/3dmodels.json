@@ -105,7 +105,7 @@
             "isPartsAvailable":true,
             "partsname":"mitosis_parts",
             "partsmodelpath":"art.scnassets/mitosis/mitosis_parts.scn",
-            "scaleValue":0.2,
+            "scaleValue":0.1,
             "canModifySurface":true,
             "modelimage":"mitosis",
             "hints":[
@@ -214,7 +214,7 @@
             {
             "id":2,
             "modelname":"translocation",
-            "visiblename":"Plant cell",
+            "visiblename":"Translocation",
             "staticmodelpath":"art.scnassets/translocation/translocation.scn",
             "mtlmodelpath":null,
             "isSurfaceEnabled":false,
