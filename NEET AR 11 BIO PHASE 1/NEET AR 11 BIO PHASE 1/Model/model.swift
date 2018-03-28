@@ -18,6 +18,7 @@ class model:NSObject
     var staticmodelname = ""
     var staticmodelpath = ""
     var modelimage = ""
+    var isLighteningEnabled:Bool = true
     var isSurfaceEnabled:Bool =  false
     var isZoomEnabled:Bool =  false
     var isPartsAvailable:Bool =  false

@@ -84,6 +84,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
             localmodel.modelimage = self.item["modelimage"] as! String
             localmodel.visiblename = self.item["visiblename"] as! String
             localmodel.isSurfaceEnabled = self.item["isSurfaceEnabled"] as! Bool
+            localmodel.isLighteningEnabled = self.item["isLighteningEnabled"] as! Bool
             localmodel.isZoomEnabled = self.item["isZoomEnabled"] as! Bool
             localmodel.isPartsAvailable = self.item["isPartsAvailable"] as! Bool
             localmodel.hints = self.item["hints"] as! [String]
@@ -113,6 +114,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                     submodel.modelimage = x["modelimage"] as! String
                     submodel.visiblename = x["visiblename"] as! String
                     submodel.isSurfaceEnabled = x["isSurfaceEnabled"] as! Bool
+                    submodel.isLighteningEnabled = x["isLighteningEnabled"] as! Bool
                     submodel.isZoomEnabled = x["isZoomEnabled"] as! Bool
                     submodel.isPartsAvailable = x["isPartsAvailable"] as! Bool
                     submodel.hints = x["hints"] as! [String]
@@ -160,7 +162,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        
         messagePanel.layer.cornerRadius = 3.0
         messagePanel.clipsToBounds = true
         messagePanel.isHidden = true
@@ -175,13 +177,13 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
         self.hintsViewSetup()
         
         self.LoadFromJSON {
-          //  print("Loaded 3d model")
+            //  print("Loaded 3d model")
+            configureLighting()
         }
         
         initializeSceneView()
         addTapGestureToSceneView()
         addPinchGestureToSceneView()
-        configureLighting()
         initiateTracking()
         
         // Set the view's delegate
@@ -193,7 +195,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
         self.currentPage = 0
         self.loadNormalModel()
         self.loadPartsModel()
-        
+        configureLighting()
         UserDefaults.standard.set(currentmodel.canModifySurface, forKey: "canModifySurface")
         UserDefaults.standard.set(currentmodel.isSurfaceEnabled, forKey: "isSurfaceEnabled")
         UserDefaults.standard.set(currentmodel.scaleValue, forKey: "scaleValue")
@@ -243,6 +245,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
         
         if self.isSessionPaused == true{
             self.reset()
+            configureLighting()
             initiateTracking()
             DispatchQueue.main.async {
                 self.resetButton.isEnabled = false
@@ -255,7 +258,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                 self.messagePanel.isHidden = false
                 self.messageLabel.isHidden = false
             }else{
-              //  print("variable not available")
+                //  print("variable not available")
             }
             self.textManager.showMessage("Initializing AR Session", autoHide: false)
         }
@@ -408,7 +411,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                     self.messagePanel.isHidden = false
                     self.messageLabel.isHidden = false
                 }else{
-                  //  print("variable not available")
+                    //  print("variable not available")
                 }
                 textManager.showMessage("Tap to place an object", autoHide: false)
                 
@@ -419,7 +422,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                     self.messagePanel.isHidden = false
                     self.messageLabel.isHidden = false
                 }else{
-                  //  print("variable not available")
+                    //  print("variable not available")
                 }
                 textManager.showMessage("Move camera to plane surface and hold on until we detect the plane", autoHide: false)
             }
@@ -438,7 +441,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
             self.messagePanel.isHidden = false
             self.messageLabel.isHidden = false
         }else{
-           // print("variable not available")
+            // print("variable not available")
         }
         textManager.showMessage("Resetting Session")
     }
@@ -545,11 +548,12 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                 self.messagePanel.isHidden = false
                 self.messageLabel.isHidden = false
             }else{
-//                print("variable not available")
+                //                print("variable not available")
             }
             self.textManager.showMessage("Starting a new session")
             
             self.reset()
+            self.configureLighting()
             self.initiateTracking()
             
             // Disable Restart button for a while in order to give the session enough time to restart.
@@ -649,8 +653,18 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
         })
     }
     func configureLighting() {
-        sceneView.autoenablesDefaultLighting = true
-        sceneView.automaticallyUpdatesLighting = true
+        if self.currentmodel == nil {
+            return
+        }
+        if(self.currentmodel.isLighteningEnabled == false){
+            sceneView.autoenablesDefaultLighting = false
+            sceneView.automaticallyUpdatesLighting = false
+            
+        }
+        else{
+            sceneView.autoenablesDefaultLighting = true
+            sceneView.automaticallyUpdatesLighting = true
+        }
     }
     
     func add3D(x: Float = 0, y: Float = 0, z: Float = -0.5){
@@ -1051,8 +1065,8 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                 
                 let cameraWorldPos = cameraTransform.translation
                 var cameraToPosition = position.translation - cameraWorldPos
-//                print(cameraToPosition)
-//                print(simd_length(cameraToPosition))
+                //                print(cameraToPosition)
+                //                print(simd_length(cameraToPosition))
                 if simd_length(cameraToPosition) < 0.5 {
                     
                     let alertPrompt = UIAlertController(title: Constants.alert.info.rawValue, message: "Object is very near to the camera. Shall we reposition it to recommended distance?", preferredStyle: .alert)
@@ -1072,7 +1086,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                         self.sceneNode.scale = self.currentmodel.scalePoints
                         self.sceneNode.name = self.currentmodel.modelname
                         self.serialQueue.async {
-                           // print("on surface scale \(self.sceneNode.scale)")
+                            // print("on surface scale \(self.sceneNode.scale)")
                             self.sceneView.scene.rootNode.addChildNode(self.sceneNode)
                         }
                         return
@@ -1106,7 +1120,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                 sceneNode.scale = self.currentmodel.scalePoints
                 sceneNode.name = self.currentmodel.modelname
                 serialQueue.async {
-                 //   print("on surface far distance \(self.sceneNode.scale)")
+                    //   print("on surface far distance \(self.sceneNode.scale)")
                     self.sceneView.scene.rootNode.addChildNode(self.sceneNode)
                 }
                 return
@@ -1119,7 +1133,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
             
             
             serialQueue.async {
-//                print("scale of new model \(self.sceneNode.scale)")
+                //                print("scale of new model \(self.sceneNode.scale)")
                 self.sceneView.scene.rootNode.addChildNode(self.sceneNode)
             }
         }
@@ -1149,7 +1163,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                     
                     let cameraWorldPos = cameraTransform.translation
                     var cameraToPosition = float3(position!) - cameraWorldPos
-//                    print(cameraToPosition)
+                    //                    print(cameraToPosition)
                     if simd_length(cameraToPosition) < 0.5 {
                         
                         let alertPrompt = UIAlertController(title: Constants.alert.info.rawValue, message: "Object is very near to the camera. Shall we reposition it to recommended distance?", preferredStyle: .alert)
@@ -1169,7 +1183,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                             self.sceneNode.scale = self.currentmodel.scalePoints
                             self.sceneNode.name = self.currentmodel.modelname
                             self.serialQueue.async {
-//                                print("on air of new model \(self.sceneNode.scale)")
+                                //                                print("on air of new model \(self.sceneNode.scale)")
                                 self.sceneView.scene.rootNode.addChildNode(self.sceneNode)
                             }
                             return
@@ -1201,7 +1215,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                     sceneNode.scale = self.currentmodel.scalePoints
                     sceneNode.name = self.currentmodel.modelname
                     serialQueue.async {
-//                        print("on air far of new model  scale \(self.sceneNode.scale)")
+                        //                        print("on air far of new model  scale \(self.sceneNode.scale)")
                         self.sceneView.scene.rootNode.addChildNode(self.sceneNode)
                     }
                     return;
@@ -1215,7 +1229,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                 return
             }
             
-//            print("Node Found on tap\(node.name)")
+            //            print("Node Found on tap\(node.name)")
             // Play animation on node selection
             //            if self.currentmodel.isAnimatable == true{
             //
@@ -1437,7 +1451,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate,UIGestureRecognizerD
                         
                     }
                 }else{
-//                    print("variable not available")
+                    //                    print("variable not available")
                 }
                 textManager.showMessage("Plane Detected, Tap on the plane to place an object", autoHide: false)
             }
