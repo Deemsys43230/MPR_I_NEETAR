@@ -256,32 +256,6 @@
             },
             {
             "id":2,
-            "modelname":"typicalneuron",
-            "visiblename":"Typical neuron",
-            "staticmodelpath":"art.scnassets/typicalneuron/typicalneuron.scn",
-            "mtlmodelpath":null,
-            "isSurfaceEnabled":false,
-            "isLighteningEnabled":false,
-            "isZoomEnabled":true,
-            "isPartsAvailable":true,
-            "partsname":"typicalneuron_parts",
-            "partsmodelpath":"art.scnassets/typicalneuron/typicalneuron_parts.scn",
-            "scaleValue":0.1,
-            "canModifySurface":true,
-            "modelimage":"typicalneuron",
-            "hints":[
-                     "1. Use yellow square/focus square to target the location",
-                     "2. Tap on the focus square to place object",
-                     "3. Try changing the position if object could not be placed",
-                     "4. Pinch to zoom In and Zoom Out an object",
-                     "5. Use ⚙ button to change 3D model settings",
-                     "6. Use ↻ button to clear model",
-                     "7. Use 🏠 button to go to Chapters list"
-                     ],
-            "relatedmodels":[]
-            },
-            {
-            "id":3,
             "visiblename":"Skeletal muscle",
             "modelname":"skeletolmuscle",
             "staticmodelpath":"art.scnassets/skeletolmuscle/skeletolmuscle.scn",
@@ -306,7 +280,7 @@
                      ],
             "relatedmodels":[
                           {
-                          "id":31,
+                          "id":21,
                           "visiblename":"Cardiac muscle",
                           "modelname":"cardiacmuscle",
                           "staticmodelpath":"art.scnassets/cardiacmuscle/cardiacmuscle.scn",
@@ -330,12 +304,12 @@
                                    "7. Use 🏠 button to go to Chapters list"
                                    ],
                           "relatedids":[
-                                        3,
-                                        32
+                                        2,
+                                        22
                                         ]
                           },
                           {
-                          "id":32,
+                          "id":22,
                           "visiblename":"Visceral muscle",
                           "modelname":"visceralmuscle",
                           "staticmodelpath":"art.scnassets/visceralmuscle/visceralmuscle.scn",
@@ -359,14 +333,14 @@
                                    "7. Use 🏠 button to go to Chapters list"
                                    ],
                           "relatedids":[
-                                        3,
-                                        31
+                                        2,
+                                        21
                                         ]
                           }
                           ]
             },
             {
-            "id":4,
+            "id":3,
             "modelname":"simplesquamous",
             "visiblename":"Simple squamous",
             "staticmodelpath":"art.scnassets/simplesquamous/simplesquamous.scn",
@@ -391,7 +365,7 @@
                      ],
             "relatedmodels":[
                              {
-                             "id":41,
+                             "id":31,
                              "visiblename":"Simple cuboidal",
                              "modelname":"simplecuboidal",
                              "staticmodelpath":"art.scnassets/simplecuboidal/simplecuboidal.scn",
@@ -415,17 +389,17 @@
                                       "7. Use 🏠 button to go to Chapters list"
                                       ],
                              "relatedids":[
-                                           4,
-                                           42,
-                                           43,
-                                           44,
-                                           45,
-                                           46,
-                                           47
+                                           3,
+                                           32,
+                                           33,
+                                           34,
+                                           35,
+                                           36,
+                                           37
                                            ]
                              },
                              {
-                             "id":42,
+                             "id":32,
                              "visiblename":"Simple columnar",
                              "modelname":"simplecolumnar",
                              "staticmodelpath":"art.scnassets/simplecolumnar/simplecolumnar.scn",
@@ -449,17 +423,17 @@
                                       "7. Use 🏠 button to go to Chapters list"
                                       ],
                              "relatedids":[
-                                           4,
-                                           41,
-                                           43,
-                                           44,
-                                           45,
-                                           46,
-                                           47
+                                           3,
+                                           31,
+                                           33,
+                                           34,
+                                           35,
+                                           36,
+                                           37
                                            ]
                              },
                              {
-                             "id":43,
+                             "id":33,
                              "visiblename":"Stratified squamous",
                              "modelname":"stratifiedsquamous",
                              "staticmodelpath":"art.scnassets/stratifiedsquamous/stratifiedsquamous.scn",
@@ -483,17 +457,17 @@
                                       "7. Use 🏠 button to go to Chapters list"
                                       ],
                              "relatedids":[
-                                           4,
-                                           41,
-                                           42,
-                                           44,
-                                           45,
-                                           46,
-                                           47
+                                           3,
+                                           31,
+                                           32,
+                                           34,
+                                           35,
+                                           36,
+                                           37
                                            ]
                              },
                              {
-                             "id":44,
+                             "id":34,
                              "visiblename":"Stratified cuboidal",
                              "modelname":"stratifiedcuboidal",
                              "staticmodelpath":"art.scnassets/stratifiedcuboidal/stratifiedcuboidal.scn",
@@ -517,17 +491,17 @@
                                       "7. Use 🏠 button to go to Chapters list"
                                       ],
                              "relatedids":[
-                                           4,
-                                           41,
-                                           42,
-                                           43,
-                                           45,
-                                           46,
-                                           47
+                                           3,
+                                           31,
+                                           32,
+                                           33,
+                                           35,
+                                           36,
+                                           37
                                            ]
                              },
                              {
-                             "id":45,
+                             "id":35,
                              "visiblename":"Stratified columnar",
                              "modelname":"stratifiedcolumnar",
                              "staticmodelpath":"art.scnassets/stratifiedcolumnar/stratifiedcolumnar.scn",
@@ -551,17 +525,17 @@
                                       "7. Use 🏠 button to go to Chapters list"
                                       ],
                              "relatedids":[
-                                           4,
-                                           41,
-                                           42,
-                                           43,
-                                           44,
-                                           46,
-                                           47
+                                           3,
+                                           31,
+                                           32,
+                                           33,
+                                           34,
+                                           36,
+                                           37
                                            ]
                              },
                              {
-                             "id":46,
+                             "id":36,
                              "visiblename":"Pseudo stratified columnar",
                              "modelname":"pseudocolumnar",
                              "staticmodelpath":"art.scnassets/pseudocolumnar/pseudocolumnar.scn",
@@ -585,17 +559,17 @@
                                       "7. Use 🏠 button to go to Chapters list"
                                       ],
                              "relatedids":[
-                                           4,
-                                           41,
-                                           42,
-                                           43,
-                                           44,
-                                           45,
-                                           47
+                                           3,
+                                           31,
+                                           32,
+                                           33,
+                                           34,
+                                           35,
+                                           37
                                            ]
                              },
                              {
-                             "id":47,
+                             "id":37,
                              "visiblename":"Transitional",
                              "modelname":"transitionaltissue",
                              "staticmodelpath":"art.scnassets/transitionaltissue/transitionaltissue.scn",
@@ -619,13 +593,13 @@
                                       "7. Use 🏠 button to go to Chapters list"
                                       ],
                              "relatedids":[
-                                           4,
-                                           41,
-                                           42,
-                                           43,
-                                           44,
-                                           45,
-                                           46
+                                           3,
+                                           31,
+                                           32,
+                                           33,
+                                           34,
+                                           35,
+                                           36
                                            ]
                              }
                              ]
