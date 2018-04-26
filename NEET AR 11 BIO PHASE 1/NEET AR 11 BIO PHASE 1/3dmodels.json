@@ -80,7 +80,7 @@
             "isAnimationAvailable":true,
             "animationname":"spider-1",
             "animationpath":"art.scnassets/spider/spider",
-            "scaleValue":0.1,
+            "scaleValue":0.2,
             "canModifySurface":true,
             "modelimage":"lungs",
             "hints":[
@@ -105,7 +105,7 @@
                              "isPartsAvailable":true,
                              "partsname":"lungscross_parts",
                              "partsmodelpath":"art.scnassets/lungscross/lungscross_parts.scn",
-                             "scaleValue":0.1,
+                             "scaleValue":0.2,
                              "canModifySurface":true,
                              "modelimage":"lungscross",
                              "hints":[
