@@ -10,9 +10,6 @@ This application for learning 11th Standard Biology chapters using 3D models.
 
 - Transport in plants
 
-- Digestion and Absorption
-
-- Breathing and Exchange of Gases
 
 
 

@@ -30,8 +30,8 @@
 		001A57A0205A7EEC004570A5 /* sectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A579A205A7EEC004570A5 /* sectionsViewController.swift */; };
 		001A57A1205A7EEC004570A5 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A579B205A7EEC004570A5 /* settingsViewController.swift */; };
 		001A57A2205A7EEC004570A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A579C205A7EEC004570A5 /* ViewController.swift */; };
+		007624AD2091ABB300ECCAC5 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 007624AC2091ABB200ECCAC5 /* art.scnassets */; };
 		00D233CA205A849000B2671D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 00D233C9205A848F00B2671D /* README.md */; };
-		00DE0B50206A570000406071 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 008BC37D206A1E8400FDAE2C /* art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +81,7 @@
 		001A579A205A7EEC004570A5 /* sectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sectionsViewController.swift; sourceTree = "<group>"; };
 		001A579B205A7EEC004570A5 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		001A579C205A7EEC004570A5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		008BC37D206A1E8400FDAE2C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = "/Users/deemsys/Documents/iOSProjects/11th Biology/Phase 3/MPR_I_NEETAR/NEET AR 11 BIO PHASE 1/NEET AR 11 BIO PHASE 1/art.scnassets"; sourceTree = "<absolute>"; };
+		007624AC2091ABB200ECCAC5 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		00D233C9205A848F00B2671D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +141,7 @@
 				001A5791205A7EAD004570A5 /* Model */,
 				001A5780205A7E7F004570A5 /* Utilities */,
 				001A577F205A7E7A004570A5 /* Carousel */,
-				008BC37D206A1E8400FDAE2C /* art.scnassets */,
+				007624AC2091ABB200ECCAC5 /* art.scnassets */,
 				001A5755205A7DD2004570A5 /* Assets.xcassets */,
 				001A5757205A7DD2004570A5 /* LaunchScreen.storyboard */,
 				001A575A205A7DD2004570A5 /* Info.plist */,
@@ -318,8 +318,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00DE0B50206A570000406071 /* art.scnassets in Resources */,
 				00D233CA205A849000B2671D /* README.md in Resources */,
+				007624AD2091ABB300ECCAC5 /* art.scnassets in Resources */,
 				001A577D205A7E37004570A5 /* 3dmodels.json in Resources */,
 				001A5759205A7DD2004570A5 /* LaunchScreen.storyboard in Resources */,
 				001A5756205A7DD2004570A5 /* Assets.xcassets in Resources */,
