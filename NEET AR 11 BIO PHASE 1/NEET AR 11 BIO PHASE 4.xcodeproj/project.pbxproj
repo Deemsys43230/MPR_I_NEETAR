@@ -30,8 +30,8 @@
 		001A57A0205A7EEC004570A5 /* sectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A579A205A7EEC004570A5 /* sectionsViewController.swift */; };
 		001A57A1205A7EEC004570A5 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A579B205A7EEC004570A5 /* settingsViewController.swift */; };
 		001A57A2205A7EEC004570A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A579C205A7EEC004570A5 /* ViewController.swift */; };
+		00B29D542091B34C0073CF3D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B29D532091B34C0073CF3D /* art.scnassets */; };
 		00D233CA205A849000B2671D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 00D233C9205A848F00B2671D /* README.md */; };
-		00DE0B50206A570000406071 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 008BC37D206A1E8400FDAE2C /* art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,16 +52,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		001A5749205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NEET AR 11 BIO PHASE 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		001A5749205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NEET AR 11 BIO PHASE 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		001A574C205A7DD2004570A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		001A5753205A7DD2004570A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		001A5755205A7DD2004570A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		001A5758205A7DD2004570A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		001A575A205A7DD2004570A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		001A575F205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NEET AR 11 BIO PHASE 3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		001A575F205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NEET AR 11 BIO PHASE 4Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		001A5763205A7DD2004570A5 /* NEET_AR_11_BIO_PHASE_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEET_AR_11_BIO_PHASE_1Tests.swift; sourceTree = "<group>"; };
 		001A5765205A7DD2004570A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		001A576A205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NEET AR 11 BIO PHASE 3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		001A576A205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NEET AR 11 BIO PHASE 4UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		001A576E205A7DD2004570A5 /* NEET_AR_11_BIO_PHASE_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEET_AR_11_BIO_PHASE_1UITests.swift; sourceTree = "<group>"; };
 		001A5770205A7DD2004570A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		001A577C205A7E37004570A5 /* 3dmodels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3dmodels.json; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		001A579A205A7EEC004570A5 /* sectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sectionsViewController.swift; sourceTree = "<group>"; };
 		001A579B205A7EEC004570A5 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		001A579C205A7EEC004570A5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		008BC37D206A1E8400FDAE2C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = "/Users/deemsys/Documents/iOSProjects/11th Biology/Phase 3/MPR_I_NEETAR/NEET AR 11 BIO PHASE 1/NEET AR 11 BIO PHASE 1/art.scnassets"; sourceTree = "<absolute>"; };
+		00B29D532091B34C0073CF3D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		00D233C9205A848F00B2671D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,9 +124,9 @@
 		001A574A205A7DD2004570A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				001A5749205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3.app */,
-				001A575F205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3Tests.xctest */,
-				001A576A205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3UITests.xctest */,
+				001A5749205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4.app */,
+				001A575F205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4Tests.xctest */,
+				001A576A205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,8 +141,8 @@
 				001A5791205A7EAD004570A5 /* Model */,
 				001A5780205A7E7F004570A5 /* Utilities */,
 				001A577F205A7E7A004570A5 /* Carousel */,
-				008BC37D206A1E8400FDAE2C /* art.scnassets */,
 				001A5755205A7DD2004570A5 /* Assets.xcassets */,
+				00B29D532091B34C0073CF3D /* art.scnassets */,
 				001A5757205A7DD2004570A5 /* LaunchScreen.storyboard */,
 				001A575A205A7DD2004570A5 /* Info.plist */,
 			);
@@ -214,9 +214,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		001A5748205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3 */ = {
+		001A5748205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 001A5773205A7DD3004570A5 /* Build configuration list for PBXNativeTarget "NEET AR 11 BIO PHASE 3" */;
+			buildConfigurationList = 001A5773205A7DD3004570A5 /* Build configuration list for PBXNativeTarget "NEET AR 11 BIO PHASE 4" */;
 			buildPhases = (
 				001A5745205A7DD2004570A5 /* Sources */,
 				001A5746205A7DD2004570A5 /* Frameworks */,
@@ -226,14 +226,14 @@
 			);
 			dependencies = (
 			);
-			name = "NEET AR 11 BIO PHASE 3";
+			name = "NEET AR 11 BIO PHASE 4";
 			productName = "NEET AR 11 BIO PHASE 1";
-			productReference = 001A5749205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3.app */;
+			productReference = 001A5749205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4.app */;
 			productType = "com.apple.product-type.application";
 		};
-		001A575E205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3Tests */ = {
+		001A575E205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 001A5776205A7DD3004570A5 /* Build configuration list for PBXNativeTarget "NEET AR 11 BIO PHASE 3Tests" */;
+			buildConfigurationList = 001A5776205A7DD3004570A5 /* Build configuration list for PBXNativeTarget "NEET AR 11 BIO PHASE 4Tests" */;
 			buildPhases = (
 				001A575B205A7DD2004570A5 /* Sources */,
 				001A575C205A7DD2004570A5 /* Frameworks */,
@@ -244,14 +244,14 @@
 			dependencies = (
 				001A5761205A7DD2004570A5 /* PBXTargetDependency */,
 			);
-			name = "NEET AR 11 BIO PHASE 3Tests";
+			name = "NEET AR 11 BIO PHASE 4Tests";
 			productName = "NEET AR 11 BIO PHASE 1Tests";
-			productReference = 001A575F205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3Tests.xctest */;
+			productReference = 001A575F205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		001A5769205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3UITests */ = {
+		001A5769205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 001A5779205A7DD3004570A5 /* Build configuration list for PBXNativeTarget "NEET AR 11 BIO PHASE 3UITests" */;
+			buildConfigurationList = 001A5779205A7DD3004570A5 /* Build configuration list for PBXNativeTarget "NEET AR 11 BIO PHASE 4UITests" */;
 			buildPhases = (
 				001A5766205A7DD2004570A5 /* Sources */,
 				001A5767205A7DD2004570A5 /* Frameworks */,
@@ -262,9 +262,9 @@
 			dependencies = (
 				001A576C205A7DD2004570A5 /* PBXTargetDependency */,
 			);
-			name = "NEET AR 11 BIO PHASE 3UITests";
+			name = "NEET AR 11 BIO PHASE 4UITests";
 			productName = "NEET AR 11 BIO PHASE 1UITests";
-			productReference = 001A576A205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3UITests.xctest */;
+			productReference = 001A576A205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -279,7 +279,7 @@
 				TargetAttributes = {
 					001A5748205A7DD2004570A5 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					001A575E205A7DD2004570A5 = {
 						CreatedOnToolsVersion = 9.2;
@@ -293,7 +293,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 001A5744205A7DD2004570A5 /* Build configuration list for PBXProject "NEET AR 11 BIO PHASE 3" */;
+			buildConfigurationList = 001A5744205A7DD2004570A5 /* Build configuration list for PBXProject "NEET AR 11 BIO PHASE 4" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -306,9 +306,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				001A5748205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3 */,
-				001A575E205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3Tests */,
-				001A5769205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3UITests */,
+				001A5748205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4 */,
+				001A575E205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4Tests */,
+				001A5769205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -318,8 +318,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00DE0B50206A570000406071 /* art.scnassets in Resources */,
 				00D233CA205A849000B2671D /* README.md in Resources */,
+				00B29D542091B34C0073CF3D /* art.scnassets in Resources */,
 				001A577D205A7E37004570A5 /* 3dmodels.json in Resources */,
 				001A5759205A7DD2004570A5 /* LaunchScreen.storyboard in Resources */,
 				001A5756205A7DD2004570A5 /* Assets.xcassets in Resources */,
@@ -389,12 +389,12 @@
 /* Begin PBXTargetDependency section */
 		001A5761205A7DD2004570A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 001A5748205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3 */;
+			target = 001A5748205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4 */;
 			targetProxy = 001A5760205A7DD2004570A5 /* PBXContainerItemProxy */;
 		};
 		001A576C205A7DD2004570A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 001A5748205A7DD2004570A5 /* NEET AR 11 BIO PHASE 3 */;
+			target = 001A5748205A7DD2004570A5 /* NEET AR 11 BIO PHASE 4 */;
 			targetProxy = 001A576B205A7DD2004570A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -530,13 +530,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
 				INFOPLIST_FILE = "NEET AR 11 BIO PHASE 1/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.neetar11biophase3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.neetar11biophase4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f2eb06d7-55c5-4e69-89e7-87d152e5996f";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -546,13 +548,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
 				INFOPLIST_FILE = "NEET AR 11 BIO PHASE 1/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.neetar11biophase3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.neetar11biophase4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f2eb06d7-55c5-4e69-89e7-87d152e5996f";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -571,7 +575,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEET AR 11 BIO PHASE 3.app/NEET AR 11 BIO PHASE 3";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEET AR 11 BIO PHASE 4.app/NEET AR 11 BIO PHASE 4";
 			};
 			name = Debug;
 		};
@@ -588,7 +592,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEET AR 11 BIO PHASE 3.app/NEET AR 11 BIO PHASE 3";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEET AR 11 BIO PHASE 4.app/NEET AR 11 BIO PHASE 4";
 			};
 			name = Release;
 		};
@@ -627,7 +631,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		001A5744205A7DD2004570A5 /* Build configuration list for PBXProject "NEET AR 11 BIO PHASE 3" */ = {
+		001A5744205A7DD2004570A5 /* Build configuration list for PBXProject "NEET AR 11 BIO PHASE 4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				001A5771205A7DD3004570A5 /* Debug */,
@@ -636,7 +640,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		001A5773205A7DD3004570A5 /* Build configuration list for PBXNativeTarget "NEET AR 11 BIO PHASE 3" */ = {
+		001A5773205A7DD3004570A5 /* Build configuration list for PBXNativeTarget "NEET AR 11 BIO PHASE 4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				001A5774205A7DD3004570A5 /* Debug */,
@@ -645,7 +649,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		001A5776205A7DD3004570A5 /* Build configuration list for PBXNativeTarget "NEET AR 11 BIO PHASE 3Tests" */ = {
+		001A5776205A7DD3004570A5 /* Build configuration list for PBXNativeTarget "NEET AR 11 BIO PHASE 4Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				001A5777205A7DD3004570A5 /* Debug */,
@@ -654,7 +658,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		001A5779205A7DD3004570A5 /* Build configuration list for PBXNativeTarget "NEET AR 11 BIO PHASE 3UITests" */ = {
+		001A5779205A7DD3004570A5 /* Build configuration list for PBXNativeTarget "NEET AR 11 BIO PHASE 4UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				001A577A205A7DD3004570A5 /* Debug */,
