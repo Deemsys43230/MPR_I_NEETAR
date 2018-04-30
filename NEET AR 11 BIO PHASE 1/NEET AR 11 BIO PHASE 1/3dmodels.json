@@ -10,7 +10,7 @@
             "staticmodelpath":"art.scnassets/plantcell/plantcell.scn",
             "mtlmodelpath":null,
             "isSurfaceEnabled":false,
-            "isLighteningEnabled":false,
+            "isLighteningEnabled":true,
             "isZoomEnabled":true,
             "isPartsAvailable":true,
             "partsname":"plantcell_parts",
