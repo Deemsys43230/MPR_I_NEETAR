@@ -43,7 +43,7 @@
                              "isPartsAvailable":true,
                              "partsname":"stomach_cross_parts",
                              "partsmodelpath":"art.scnassets/stomach_cross/stomach_cross_parts.scn",
-                             "scaleValue":0.2,
+                             "scaleValue":0.1,
                              "canModifySurface":true,
                              "modelimage":"stomach_cross",
                              "hints":[
