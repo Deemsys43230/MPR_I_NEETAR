@@ -11,6 +11,7 @@
     <customFonts key="customFonts">
         <array key="GillSans.ttc">
             <string>GillSans-Bold</string>
+            <string>GillSans-Italic</string>
         </array>
     </customFonts>
     <scenes>
@@ -22,8 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cZ-W0-rjC">
-                                <rect key="frame" x="132" y="293" width="111" height="81.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEET" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cZ-W0-rjC">
+                                <rect key="frame" x="83.5" y="273" width="208" height="81.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="70"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -31,11 +32,22 @@
                                     <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="80"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Augmented Reality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4OY-NT-VR5">
+                                <rect key="frame" x="71.5" y="354.5" width="231" height="38"/>
+                                <fontDescription key="fontDescription" name="GillSans-Italic" family="Gill Sans" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="GillSans-Italic" family="Gill Sans" pointSize="43"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1529411765" green="0.68235294120000001" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9cZ-W0-rjC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="TBu-sg-cCX"/>
+                            <constraint firstItem="4OY-NT-VR5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="30" id="5Ov-wh-vNQ"/>
+                            <constraint firstItem="4OY-NT-VR5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kxg-nL-9ll"/>
                             <constraint firstItem="9cZ-W0-rjC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="n8A-gb-lY2"/>
+                            <constraint firstItem="9cZ-W0-rjC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-30" id="nv7-GV-yvY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
