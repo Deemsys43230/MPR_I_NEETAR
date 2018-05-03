@@ -13,6 +13,7 @@
     <customFonts key="customFonts">
         <array key="GillSans.ttc">
             <string>GillSans</string>
+            <string>GillSans-Bold</string>
         </array>
     </customFonts>
     <scenes>
@@ -750,6 +751,31 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="title" destination="sUw-LN-rXM" id="rfu-kh-Ssz"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="staticcontent" id="6Fd-Uk-7gU" customClass="tableCell" customModule="NEET_AR_11_BIO_PHASE_1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Fd-Uk-7gU" id="YTE-Nf-woS">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GET NEET AR 11th Biology PHASE II" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mS-Wb-aRH">
+                                            <rect key="frame" x="5" y="5" width="331" height="33.5"/>
+                                            <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.44705882349999998" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6mS-Wb-aRH" firstAttribute="leading" secondItem="YTE-Nf-woS" secondAttribute="leading" constant="5" id="2jg-97-hGP"/>
+                                        <constraint firstAttribute="bottom" secondItem="6mS-Wb-aRH" secondAttribute="bottom" constant="5" id="f0s-EY-Jqh"/>
+                                        <constraint firstAttribute="trailing" secondItem="6mS-Wb-aRH" secondAttribute="trailing" constant="5" id="oCa-cy-Qjg"/>
+                                        <constraint firstItem="6mS-Wb-aRH" firstAttribute="top" secondItem="YTE-Nf-woS" secondAttribute="top" constant="5" id="sve-Sk-KRP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="title" destination="6mS-Wb-aRH" id="wxs-ey-RrL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

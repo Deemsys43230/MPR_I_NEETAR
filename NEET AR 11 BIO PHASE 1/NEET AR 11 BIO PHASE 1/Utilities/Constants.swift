@@ -49,7 +49,10 @@ class Constants {
     static let appTheme:UIColor = UIColor(red: 39/255, green: 174/255, blue: 65/255, alpha: 1.0)
  
   
-  
+    static let phase1:String = "https://itunes.apple.com/us/app/cyberhealths-coach/id1320849525?mt=8"
+    static let phase2:String = "https://itunes.apple.com/us/app/cyberhealths-coach/id1320849525?mt=8"
+    static let phase3:String = "https://itunes.apple.com/us/app/deemsys-gps/id906588887?mt=8"
+    static let phase4:String = "https://itunes.apple.com/us/app/cyberhealths-coach/id1320849525?mt=8"
    
     
    
