@@ -92,7 +92,7 @@ class chaptersViewController : UITableViewController{
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return self.chapters.count
+        return self.chapters.count+3
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row < self.chapters.count {
