@@ -43,16 +43,46 @@ class chaptersViewController : UITableViewController{
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "content") as! tableCell
-        
-        cell.tag = indexPath.row
-        
-        var item = self.chapters[indexPath.row]
-        
-        cell.title.text = item["name"] as! String
-        
-        
-        return cell
+        if indexPath.row < self.chapters.count {
+            
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "content") as! tableCell
+            
+            cell.tag = indexPath.row
+            
+            var item = self.chapters[indexPath.row]
+            
+            cell.title.text = item["name"] as! String
+            
+            
+            return cell
+        }
+        else if indexPath.row == self.chapters.count {
+            
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "staticcontent") as! tableCell
+            
+            cell.tag = indexPath.row
+            cell.title.text = "GET NEET AR 11th Biology PHASE I"
+            
+            return cell
+        }
+        else if indexPath.row == self.chapters.count + 1 {
+            
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "staticcontent") as! tableCell
+            
+            cell.tag = indexPath.row
+            cell.title.text = "GET NEET AR 11th Biology PHASE II"
+            
+            return cell
+        }
+        else {
+            
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "staticcontent") as! tableCell
+            
+            cell.tag = indexPath.row
+            cell.title.text = "GET NEET AR 11th Biology PHASE III"
+            
+            return cell
+        }
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 54
@@ -62,14 +92,38 @@ class chaptersViewController : UITableViewController{
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return self.chapters.count
+        return self.chapters.count+3
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row < self.chapters.count {
+            let item = self.chapters[indexPath.row]["models"] as! [[String:Any]]
+            let viewController = self.storyboard?.instantiateViewController(withIdentifier: "sectionsViewController") as! sectionsViewController
+            viewController.sections = item
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+        else if indexPath.row == self.chapters.count {
+            self.openurlwith(appStoreLink: Constants.phase1)
+        }
+        else if indexPath.row == self.chapters.count + 1 {
+            self.openurlwith(appStoreLink: Constants.phase2)
+        }
+        else {
+            self.openurlwith(appStoreLink: Constants.phase3)
+        }
         
-        let item = self.chapters[indexPath.row]["models"] as! [[String:Any]]
-        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "sectionsViewController") as! sectionsViewController
-        viewController.sections = item
-        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func openurlwith(appStoreLink:String){
+        
+        /* First create a URL, then check whether there is an installed app that can
+         open it on the device. */
+        if let url = URL(string: appStoreLink), UIApplication.shared.canOpenURL(url) {
+            // Attempt to open the URL.
+            UIApplication.shared.open(url, options: [:], completionHandler: {(success: Bool) in
+                if success {
+                    print("Launching \(url) was successful")
+                }})
+        }
     }
     
   

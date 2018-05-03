@@ -13,13 +13,14 @@
     <customFonts key="customFonts">
         <array key="GillSans.ttc">
             <string>GillSans</string>
+            <string>GillSans-Bold</string>
         </array>
     </customFonts>
     <scenes>
         <!--Augmented Reality-->
         <scene sceneID="72d-5B-lBd">
             <objects>
-                <viewController storyboardIdentifier="ARViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8bV-cS-CpM" customClass="ARViewController" customModule="ScanAR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ARViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8bV-cS-CpM" customClass="ARViewController" customModule="NEET_AR_11_BIO_PHASE_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f5O-Cj-ASN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -72,7 +73,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="6To-mh-Bbd"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Vr3-c8-reZ" customClass="UPCarouselFlowLayout" customModule="ScanAR" customModuleProvider="target">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Vr3-c8-reZ" customClass="UPCarouselFlowLayout" customModule="NEET_AR_11_BIO_PHASE_4" customModuleProvider="target">
                                     <size key="itemSize" width="100" height="115"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -90,7 +91,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarouselCollectionViewCell" id="s29-bO-MtO" customClass="CarouselCollectionViewCell" customModule="ScanAR" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarouselCollectionViewCell" id="s29-bO-MtO" customClass="CarouselCollectionViewCell" customModule="NEET_AR_11_BIO_PHASE_4" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="12.5" width="100" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -183,7 +184,7 @@
                                             <inset key="separatorInset" minX="15000" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <prototypes>
-                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="content" id="fR1-6b-4s0" customClass="tableCell" customModule="ScanAR" customModuleProvider="target">
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="content" id="fR1-6b-4s0" customClass="tableCell" customModule="NEET_AR_11_BIO_PHASE_4" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="28" width="209" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fR1-6b-4s0" id="jHs-K9-TxT">
@@ -318,7 +319,7 @@
         <!--Settings-->
         <scene sceneID="GhJ-UT-QAE">
             <objects>
-                <tableViewController id="Izl-T1-55y" customClass="settingsVC" customModule="ScanAR" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Izl-T1-55y" customClass="settingsVC" customModule="NEET_AR_11_BIO_PHASE_4" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="E5Q-Se-ZtV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -486,7 +487,7 @@
         <!--Scanner-->
         <scene sceneID="y37-eA-qij">
             <objects>
-                <viewController storyboardIdentifier="QRScannerController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NcD-mU-Rtc" customClass="QRScannerController" customModule="ScanAR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QRScannerController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NcD-mU-Rtc" customClass="QRScannerController" customModule="NEET_AR_11_BIO_PHASE_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dpj-wF-3UC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -542,7 +543,7 @@
                                             <inset key="separatorInset" minX="15000" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <prototypes>
-                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="content" id="WcI-vf-e6j" customClass="tableCell" customModule="ScanAR" customModuleProvider="target">
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="content" id="WcI-vf-e6j" customClass="tableCell" customModule="NEET_AR_11_BIO_PHASE_4" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="28" width="209" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WcI-vf-e6j" id="6q8-sC-9YH">
@@ -641,13 +642,13 @@
         <!--Help-->
         <scene sceneID="DxU-gT-ezN">
             <objects>
-                <tableViewController storyboardIdentifier="helpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5l2-0U-t3p" customClass="helpViewController" customModule="ScanAR" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="helpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5l2-0U-t3p" customClass="helpViewController" customModule="NEET_AR_11_BIO_PHASE_4" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YyQ-Ir-b5L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="content" rowHeight="56" id="ot0-XJ-Qeq" customClass="tableCell" customModule="ScanAR" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="content" rowHeight="56" id="ot0-XJ-Qeq" customClass="tableCell" customModule="NEET_AR_11_BIO_PHASE_4" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="56"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ot0-XJ-Qeq" id="gZG-Ud-7yz">
@@ -721,13 +722,13 @@
         <!--Chapters-->
         <scene sceneID="G6q-56-hwp">
             <objects>
-                <tableViewController storyboardIdentifier="chaptersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HAK-L8-WPn" customClass="chaptersViewController" customModule="ScanAR" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="chaptersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HAK-L8-WPn" customClass="chaptersViewController" customModule="NEET_AR_11_BIO_PHASE_4" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gPo-4I-GWc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="content" id="Faz-ro-KKw" customClass="tableCell" customModule="ScanAR" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="content" id="Faz-ro-KKw" customClass="tableCell" customModule="NEET_AR_11_BIO_PHASE_4" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Faz-ro-KKw" id="V8Q-3J-xp3">
@@ -752,6 +753,31 @@
                                     <outlet property="title" destination="sUw-LN-rXM" id="rfu-kh-Ssz"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="staticcontent" id="s5a-0g-52P" customClass="tableCell" customModule="NEET_AR_11_BIO_PHASE_1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s5a-0g-52P" id="Zyj-cb-0ZI">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GET NEET AR 11th Biology PHASE II" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpf-7P-lOm">
+                                            <rect key="frame" x="5" y="5" width="331" height="33.5"/>
+                                            <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.44705882349999998" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Kpf-7P-lOm" secondAttribute="trailing" constant="5" id="CXo-rQ-rMI"/>
+                                        <constraint firstAttribute="bottom" secondItem="Kpf-7P-lOm" secondAttribute="bottom" constant="5" id="Sgd-ai-D3I"/>
+                                        <constraint firstItem="Kpf-7P-lOm" firstAttribute="leading" secondItem="Zyj-cb-0ZI" secondAttribute="leading" constant="5" id="ge6-DV-eoE"/>
+                                        <constraint firstItem="Kpf-7P-lOm" firstAttribute="top" secondItem="Zyj-cb-0ZI" secondAttribute="top" constant="5" id="u18-hs-5jK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="title" destination="Kpf-7P-lOm" id="Gh7-Ly-8ex"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="HAK-L8-WPn" id="u9Z-mX-JMG"/>
@@ -774,13 +800,13 @@
         <!--Models-->
         <scene sceneID="eUr-pb-FFh">
             <objects>
-                <tableViewController storyboardIdentifier="sectionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ajt-hu-Z2r" customClass="sectionsViewController" customModule="ScanAR" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="sectionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ajt-hu-Z2r" customClass="sectionsViewController" customModule="NEET_AR_11_BIO_PHASE_4" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="G68-pq-OAR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="content" id="qQo-sf-5wh" customClass="tableCell" customModule="ScanAR" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="content" id="qQo-sf-5wh" customClass="tableCell" customModule="NEET_AR_11_BIO_PHASE_4" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qQo-sf-5wh" id="2T7-3A-5ZY">
