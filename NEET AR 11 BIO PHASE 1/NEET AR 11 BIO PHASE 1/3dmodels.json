@@ -71,11 +71,12 @@
                              "hints":[
                                       "1. Use yellow square/focus square to target the location",
                                       "2. Tap on the focus square to place object",
-                                      "3. Try changing the position if object could not be placed",
-                                      "4. Pinch to zoom In and Zoom Out an object",
-                                      "5. Use ⚙ button to change 3D model settings",
-                                      "6. Use ↻ button to clear model",
-                                      "7. Use 🏠 button to go to Chapters list"
+                                      "3. Make yellow marker steady before placing the model for perfect augmentation",
+                                      "4. Try changing the position if object could not be placed",
+                                      "5. Pinch to zoom In and Zoom Out an object",
+                                      "6. Use ⚙ button to change 3D model settings",
+                                      "7. Use ↻ button to clear model",
+                                      "8. Use 🏠 button to go to Chapters list"
                                       ],
                              "relatedids":[2]
                              }
