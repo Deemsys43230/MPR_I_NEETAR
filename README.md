@@ -7,11 +7,11 @@ PLATFORM SPECIFICATIONS:
 
 Platform: iOS
 
-Operating System: iOS 11.0 and later
+Operating System: iOS 11.3 and later
 
 Language: Swift 4
 
-Ide: XCode 9.2
+Ide: XCode 9.3
 
 Target Devices: 
 
