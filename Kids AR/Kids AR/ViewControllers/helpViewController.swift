@@ -29,9 +29,7 @@ class helpViewController : UIViewController, UITableViewDataSource, UITableViewD
 //       contentList.estimatedRowHeight = 50.0;
         
     }
-    override func viewWillAppear(_ animated: Bool) {
-        self.contentList.layoutSubviews()
-    }
+  
     
     @IBAction func backAction(sender: UIButton) {
         self.dismiss(animated: true, completion: nil)

@@ -12,16 +12,22 @@ import UIKit
 class NameViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var infoButton: UIButton!
-    
+    @IBOutlet var musicButton: UIButton!
+    @IBOutlet var musicImage: UIImageView!
     @IBOutlet var nameField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       
+        
         nameField.delegate = self
         
         infoButton.layer.cornerRadius = 5;
         infoButton.clipsToBounds = true;
+        
+        musicButton.layer.cornerRadius = 5;
+        musicButton.clipsToBounds = true;
         
         getStartedButton.layer.cornerRadius = 5;
         getStartedButton.clipsToBounds = true;
@@ -32,6 +38,7 @@ class NameViewController: UIViewController, UITextFieldDelegate {
         let paddingView: UIView = UIView.init(frame: CGRect(x: 0, y: 0, width: 10, height: 20))
         nameField.leftView = paddingView
         nameField.leftViewMode = .always
+        
         
         
 //        for family: String in UIFont.familyNames
@@ -51,8 +58,20 @@ class NameViewController: UIViewController, UITextFieldDelegate {
         centerAlignUsername.constant += view.bounds.width
         getStartedButton.alpha = 0.0
         
+       nameField.text = UserDefaults.standard.value(forKey: "KidName") as! String
+        
         if (nameField.text?.characters.count)! > 0{
             showButton()
+        }
+        
+        let music =   UserDefaults.standard.value(forKey: "isMusicOn") as! Bool
+        if music == false{
+            musicImage.image = #imageLiteral(resourceName: "audio-speaker-off")
+            
+        }
+        else{
+            musicImage.image = #imageLiteral(resourceName: "audio-speaker-on")
+            
         }
     }
     
@@ -124,7 +143,12 @@ class NameViewController: UIViewController, UITextFieldDelegate {
             }
             
         }*/
+        if nameField.text!.characters.count == 0{
+            return;
+        }
         
+        UserDefaults.standard.set(nameField.text!, forKey: "KidName")
+        UserDefaults.standard.synchronize()
         self.navigationController?.pushViewController((self.storyboard?.instantiateViewController(withIdentifier: "welcomeViewController"))!, animated: true)
     }
     
@@ -141,6 +165,31 @@ class NameViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func infoAction(_ sender: Any) {
+    }
+    
+    @IBAction func musicAction(_ sender: Any) {
+     let music =   UserDefaults.standard.value(forKey: "isMusicOn") as! Bool
+        if music == true{
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            
+            musicImage.image = #imageLiteral(resourceName: "audio-speaker-off")
+             UserDefaults.standard.set(false, forKey: "isMusicOn")
+            UserDefaults.standard.synchronize()
+            
+            appDelegate.stopSound()
+            
+        }
+        else{
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            
+            musicImage.image = #imageLiteral(resourceName: "audio-speaker-on")
+            UserDefaults.standard.set(true, forKey: "isMusicOn")
+            UserDefaults.standard.synchronize()
+            
+            appDelegate.playSound()
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {

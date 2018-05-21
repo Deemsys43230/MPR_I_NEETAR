@@ -15,5 +15,6 @@ class tableCell:UITableViewCell{
     @IBOutlet var title: UILabel!
     @IBOutlet var subTitle: UILabel!
     @IBOutlet var bimage: UIImageView!
-     
+    
+    @IBOutlet var musicON: UISwitch!
 }

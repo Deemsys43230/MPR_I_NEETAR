@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007C938C20B292AE00019114 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C938B20B292AE00019114 /* settingsViewController.swift */; };
+		007C938E20B2997900019114 /* tablecellEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C938D20B2997900019114 /* tablecellEmpty.swift */; };
+		007C939220B2B3BA00019114 /* privacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C938F20B2B3B900019114 /* privacyViewController.swift */; };
+		007C939320B2B3BA00019114 /* purchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C939020B2B3BA00019114 /* purchaseViewController.swift */; };
+		007C939420B2B3BA00019114 /* contactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C939120B2B3BA00019114 /* contactViewController.swift */; };
+		007C939620B2CB9800019114 /* slowbackgroundmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 007C939520B2CB9800019114 /* slowbackgroundmusic.mp3 */; };
 		008ADF1F20B0033E00E7A642 /* helpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008ADF1E20B0033E00E7A642 /* helpViewController.swift */; };
 		009B3A1420AD504000FA9BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1320AD504000FA9BC3 /* AppDelegate.swift */; };
 		009B3A1620AD504000FA9BC3 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1520AD504000FA9BC3 /* NameViewController.swift */; };
@@ -47,6 +53,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		007C938B20B292AE00019114 /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		007C938D20B2997900019114 /* tablecellEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tablecellEmpty.swift; sourceTree = "<group>"; };
+		007C938F20B2B3B900019114 /* privacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = privacyViewController.swift; sourceTree = "<group>"; };
+		007C939020B2B3BA00019114 /* purchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = purchaseViewController.swift; sourceTree = "<group>"; };
+		007C939120B2B3BA00019114 /* contactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactViewController.swift; sourceTree = "<group>"; };
+		007C939520B2CB9800019114 /* slowbackgroundmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slowbackgroundmusic.mp3; sourceTree = "<group>"; };
 		008ADF1E20B0033E00E7A642 /* helpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpViewController.swift; sourceTree = "<group>"; };
 		009B3A1020AD504000FA9BC3 /* Kids AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		009B3A1320AD504000FA9BC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +170,7 @@
 		009B3A4120AD5ECA00FA9BC3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				007C939520B2CB9800019114 /* slowbackgroundmusic.mp3 */,
 				009B3A5220AD64D800FA9BC3 /* unnamed.png */,
 				009B3A4220AD5EE800FA9BC3 /* background.jpg */,
 			);
@@ -197,10 +210,14 @@
 		009B3A6120ADA55200FA9BC3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				007C939120B2B3BA00019114 /* contactViewController.swift */,
+				007C938F20B2B3B900019114 /* privacyViewController.swift */,
+				007C939020B2B3BA00019114 /* purchaseViewController.swift */,
 				009B3A1520AD504000FA9BC3 /* NameViewController.swift */,
 				009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */,
 				009B3A1720AD504000FA9BC3 /* Main.storyboard */,
 				008ADF1E20B0033E00E7A642 /* helpViewController.swift */,
+				007C938B20B292AE00019114 /* settingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -209,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				009B3A6320ADBA2B00FA9BC3 /* tableCell.swift */,
+				007C938D20B2997900019114 /* tablecellEmpty.swift */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -324,6 +342,7 @@
 				009B3A5E20AD6F0500FA9BC3 /* design.graffiti.comicsansmsgras.ttf in Resources */,
 				009B3A5C20AD6F0500FA9BC3 /* comicz.ttf in Resources */,
 				009B3A5A20AD6F0500FA9BC3 /* comici.ttf in Resources */,
+				007C939620B2CB9800019114 /* slowbackgroundmusic.mp3 in Resources */,
 				009B3A1B20AD504F00FA9BC3 /* Assets.xcassets in Resources */,
 				009B3A5D20AD6F0500FA9BC3 /* design.graffiti.comicsansms.ttf in Resources */,
 				009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */,
@@ -353,11 +372,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				009B3A1620AD504000FA9BC3 /* NameViewController.swift in Sources */,
+				007C939220B2B3BA00019114 /* privacyViewController.swift in Sources */,
 				009B3A1420AD504000FA9BC3 /* AppDelegate.swift in Sources */,
+				007C939320B2B3BA00019114 /* purchaseViewController.swift in Sources */,
 				009B3A6020ADA54200FA9BC3 /* welcomeViewController.swift in Sources */,
 				008ADF1F20B0033E00E7A642 /* helpViewController.swift in Sources */,
+				007C939420B2B3BA00019114 /* contactViewController.swift in Sources */,
 				009B3A6420ADBA2B00FA9BC3 /* tableCell.swift in Sources */,
 				009B3A4620AD5FE600FA9BC3 /* Constants.swift in Sources */,
+				007C938E20B2997900019114 /* tablecellEmpty.swift in Sources */,
+				007C938C20B292AE00019114 /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +557,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
 				INFOPLIST_FILE = "Kids AR/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -553,6 +578,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
 				INFOPLIST_FILE = "Kids AR/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
