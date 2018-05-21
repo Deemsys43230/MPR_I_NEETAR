@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008ADF1F20B0033E00E7A642 /* helpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008ADF1E20B0033E00E7A642 /* helpViewController.swift */; };
 		009B3A1420AD504000FA9BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1320AD504000FA9BC3 /* AppDelegate.swift */; };
-		009B3A1620AD504000FA9BC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1520AD504000FA9BC3 /* ViewController.swift */; };
+		009B3A1620AD504000FA9BC3 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1520AD504000FA9BC3 /* NameViewController.swift */; };
 		009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1720AD504000FA9BC3 /* Main.storyboard */; };
 		009B3A1B20AD504F00FA9BC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1A20AD504F00FA9BC3 /* Assets.xcassets */; };
 		009B3A1E20AD504F00FA9BC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1C20AD504F00FA9BC3 /* LaunchScreen.storyboard */; };
 		009B3A2920AD505000FA9BC3 /* Kids_ARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A2820AD505000FA9BC3 /* Kids_ARTests.swift */; };
 		009B3A3420AD505000FA9BC3 /* Kids_ARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A3320AD505000FA9BC3 /* Kids_ARUITests.swift */; };
+		009B3A4320AD5EE900FA9BC3 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4220AD5EE800FA9BC3 /* background.jpg */; };
+		009B3A4620AD5FE600FA9BC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A4520AD5FE600FA9BC3 /* Constants.swift */; };
+		009B3A5320AD64D800FA9BC3 /* unnamed.png in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A5220AD64D800FA9BC3 /* unnamed.png */; };
+		009B3A5620AD65C600FA9BC3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009B3A5520AD65C500FA9BC3 /* QuartzCore.framework */; };
+		009B3A5920AD6EFE00FA9BC3 /* COMIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4920AD60F300FA9BC3 /* COMIC.TTF */; };
+		009B3A5A20AD6F0500FA9BC3 /* comici.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4A20AD60F300FA9BC3 /* comici.ttf */; };
+		009B3A5B20AD6F0500FA9BC3 /* ComicSansMS3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4B20AD60F400FA9BC3 /* ComicSansMS3.ttf */; };
+		009B3A5C20AD6F0500FA9BC3 /* comicz.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4C20AD60F400FA9BC3 /* comicz.ttf */; };
+		009B3A5D20AD6F0500FA9BC3 /* design.graffiti.comicsansms.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4D20AD60F500FA9BC3 /* design.graffiti.comicsansms.ttf */; };
+		009B3A5E20AD6F0500FA9BC3 /* design.graffiti.comicsansmsgras.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4820AD60F100FA9BC3 /* design.graffiti.comicsansmsgras.ttf */; };
+		009B3A6020ADA54200FA9BC3 /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */; };
+		009B3A6420ADBA2B00FA9BC3 /* tableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A6320ADBA2B00FA9BC3 /* tableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		008ADF1E20B0033E00E7A642 /* helpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpViewController.swift; sourceTree = "<group>"; };
 		009B3A1020AD504000FA9BC3 /* Kids AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		009B3A1320AD504000FA9BC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		009B3A1520AD504000FA9BC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		009B3A1520AD504000FA9BC3 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		009B3A1820AD504000FA9BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		009B3A1A20AD504F00FA9BC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		009B3A1D20AD504F00FA9BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +61,18 @@
 		009B3A2F20AD505000FA9BC3 /* Kids ARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kids ARUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		009B3A3320AD505000FA9BC3 /* Kids_ARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids_ARUITests.swift; sourceTree = "<group>"; };
 		009B3A3520AD505000FA9BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009B3A4220AD5EE800FA9BC3 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		009B3A4520AD5FE600FA9BC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		009B3A4820AD60F100FA9BC3 /* design.graffiti.comicsansmsgras.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = design.graffiti.comicsansmsgras.ttf; sourceTree = "<group>"; };
+		009B3A4920AD60F300FA9BC3 /* COMIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = COMIC.TTF; sourceTree = "<group>"; };
+		009B3A4A20AD60F300FA9BC3 /* comici.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comici.ttf; sourceTree = "<group>"; };
+		009B3A4B20AD60F400FA9BC3 /* ComicSansMS3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComicSansMS3.ttf; sourceTree = "<group>"; };
+		009B3A4C20AD60F400FA9BC3 /* comicz.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comicz.ttf; sourceTree = "<group>"; };
+		009B3A4D20AD60F500FA9BC3 /* design.graffiti.comicsansms.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = design.graffiti.comicsansms.ttf; sourceTree = "<group>"; };
+		009B3A5220AD64D800FA9BC3 /* unnamed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unnamed.png; sourceTree = "<group>"; };
+		009B3A5520AD65C500FA9BC3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
+		009B3A6320ADBA2B00FA9BC3 /* tableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009B3A5620AD65C600FA9BC3 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +108,7 @@
 				009B3A2720AD505000FA9BC3 /* Kids ARTests */,
 				009B3A3220AD505000FA9BC3 /* Kids ARUITests */,
 				009B3A1120AD504000FA9BC3 /* Products */,
+				009B3A5420AD65C500FA9BC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +125,11 @@
 		009B3A1220AD504000FA9BC3 /* Kids AR */ = {
 			isa = PBXGroup;
 			children = (
+				009B3A6220ADBA1C00FA9BC3 /* TableCells */,
+				009B3A6120ADA55200FA9BC3 /* ViewControllers */,
+				009B3A4420AD5FC000FA9BC3 /* Additional Resources */,
+				009B3A4120AD5ECA00FA9BC3 /* Images */,
 				009B3A1320AD504000FA9BC3 /* AppDelegate.swift */,
-				009B3A1520AD504000FA9BC3 /* ViewController.swift */,
-				009B3A1720AD504000FA9BC3 /* Main.storyboard */,
 				009B3A1A20AD504F00FA9BC3 /* Assets.xcassets */,
 				009B3A1C20AD504F00FA9BC3 /* LaunchScreen.storyboard */,
 				009B3A1F20AD505000FA9BC3 /* Info.plist */,
@@ -123,6 +153,64 @@
 				009B3A3520AD505000FA9BC3 /* Info.plist */,
 			);
 			path = "Kids ARUITests";
+			sourceTree = "<group>";
+		};
+		009B3A4120AD5ECA00FA9BC3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				009B3A5220AD64D800FA9BC3 /* unnamed.png */,
+				009B3A4220AD5EE800FA9BC3 /* background.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		009B3A4420AD5FC000FA9BC3 /* Additional Resources */ = {
+			isa = PBXGroup;
+			children = (
+				009B3A4720AD60D000FA9BC3 /* Fonts */,
+				009B3A4520AD5FE600FA9BC3 /* Constants.swift */,
+			);
+			path = "Additional Resources";
+			sourceTree = "<group>";
+		};
+		009B3A4720AD60D000FA9BC3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				009B3A4920AD60F300FA9BC3 /* COMIC.TTF */,
+				009B3A4A20AD60F300FA9BC3 /* comici.ttf */,
+				009B3A4B20AD60F400FA9BC3 /* ComicSansMS3.ttf */,
+				009B3A4C20AD60F400FA9BC3 /* comicz.ttf */,
+				009B3A4D20AD60F500FA9BC3 /* design.graffiti.comicsansms.ttf */,
+				009B3A4820AD60F100FA9BC3 /* design.graffiti.comicsansmsgras.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		009B3A5420AD65C500FA9BC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				009B3A5520AD65C500FA9BC3 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		009B3A6120ADA55200FA9BC3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				009B3A1520AD504000FA9BC3 /* NameViewController.swift */,
+				009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */,
+				009B3A1720AD504000FA9BC3 /* Main.storyboard */,
+				008ADF1E20B0033E00E7A642 /* helpViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		009B3A6220ADBA1C00FA9BC3 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				009B3A6320ADBA2B00FA9BC3 /* tableCell.swift */,
+			);
+			path = TableCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +318,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				009B3A1E20AD504F00FA9BC3 /* LaunchScreen.storyboard in Resources */,
+				009B3A4320AD5EE900FA9BC3 /* background.jpg in Resources */,
+				009B3A5920AD6EFE00FA9BC3 /* COMIC.TTF in Resources */,
+				009B3A5320AD64D800FA9BC3 /* unnamed.png in Resources */,
+				009B3A5E20AD6F0500FA9BC3 /* design.graffiti.comicsansmsgras.ttf in Resources */,
+				009B3A5C20AD6F0500FA9BC3 /* comicz.ttf in Resources */,
+				009B3A5A20AD6F0500FA9BC3 /* comici.ttf in Resources */,
 				009B3A1B20AD504F00FA9BC3 /* Assets.xcassets in Resources */,
+				009B3A5D20AD6F0500FA9BC3 /* design.graffiti.comicsansms.ttf in Resources */,
 				009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */,
+				009B3A5B20AD6F0500FA9BC3 /* ComicSansMS3.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +352,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				009B3A1620AD504000FA9BC3 /* ViewController.swift in Sources */,
+				009B3A1620AD504000FA9BC3 /* NameViewController.swift in Sources */,
 				009B3A1420AD504000FA9BC3 /* AppDelegate.swift in Sources */,
+				009B3A6020ADA54200FA9BC3 /* welcomeViewController.swift in Sources */,
+				008ADF1F20B0033E00E7A642 /* helpViewController.swift in Sources */,
+				009B3A6420ADBA2B00FA9BC3 /* tableCell.swift in Sources */,
+				009B3A4620AD5FE600FA9BC3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +537,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.deemsysinc.kidsar.Kids-AR";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.kidsar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f2eb06d7-55c5-4e69-89e7-87d152e5996f";
 				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development";
@@ -457,7 +557,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.deemsysinc.kidsar.Kids-AR";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.kidsar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f2eb06d7-55c5-4e69-89e7-87d152e5996f";
 				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development";
