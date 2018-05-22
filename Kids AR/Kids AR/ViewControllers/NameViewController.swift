@@ -149,7 +149,7 @@ class NameViewController: UIViewController, UITextFieldDelegate {
         
         UserDefaults.standard.set(nameField.text!, forKey: "KidName")
         UserDefaults.standard.synchronize()
-        self.navigationController?.pushViewController((self.storyboard?.instantiateViewController(withIdentifier: "welcomeViewController"))!, animated: true)
+        self.navigationController?.pushViewController((self.storyboard?.instantiateViewController(withIdentifier: "CRViewController"))!, animated: true)
     }
     
     func showButton(){

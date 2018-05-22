@@ -13,6 +13,9 @@
 		007C939320B2B3BA00019114 /* purchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C939020B2B3BA00019114 /* purchaseViewController.swift */; };
 		007C939420B2B3BA00019114 /* contactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C939120B2B3BA00019114 /* contactViewController.swift */; };
 		007C939620B2CB9800019114 /* slowbackgroundmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 007C939520B2CB9800019114 /* slowbackgroundmusic.mp3 */; };
+		007C939B20B2EB5700019114 /* CRPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007C939A20B2EB5700019114 /* CRPageViewController.m */; };
+		007C939E20B2EE1000019114 /* CRChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007C939D20B2EE1000019114 /* CRChildViewController.m */; };
+		007C93A420B2F94C00019114 /* CRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007C93A220B2F94C00019114 /* CRViewController.m */; };
 		008ADF1F20B0033E00E7A642 /* helpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008ADF1E20B0033E00E7A642 /* helpViewController.swift */; };
 		009B3A1420AD504000FA9BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1320AD504000FA9BC3 /* AppDelegate.swift */; };
 		009B3A1620AD504000FA9BC3 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1520AD504000FA9BC3 /* NameViewController.swift */; };
@@ -33,6 +36,9 @@
 		009B3A5E20AD6F0500FA9BC3 /* design.graffiti.comicsansmsgras.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4820AD60F100FA9BC3 /* design.graffiti.comicsansmsgras.ttf */; };
 		009B3A6020ADA54200FA9BC3 /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */; };
 		009B3A6420ADBA2B00FA9BC3 /* tableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A6320ADBA2B00FA9BC3 /* tableCell.swift */; };
+		00C5229420B3EFC100C38255 /* HSK_CFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5228F20B3EFC100C38255 /* HSK_CFUtilities.m */; };
+		00C5229520B3EFC100C38255 /* NSStream+SKPSMTPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5229120B3EFC100C38255 /* NSStream+SKPSMTPExtensions.m */; };
+		00C5229620B3EFC100C38255 /* SKPSMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5229320B3EFC100C38255 /* SKPSMTPMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,13 @@
 		007C939020B2B3BA00019114 /* purchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = purchaseViewController.swift; sourceTree = "<group>"; };
 		007C939120B2B3BA00019114 /* contactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactViewController.swift; sourceTree = "<group>"; };
 		007C939520B2CB9800019114 /* slowbackgroundmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slowbackgroundmusic.mp3; sourceTree = "<group>"; };
+		007C939820B2EB4C00019114 /* Kids AR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kids AR-Bridging-Header.h"; sourceTree = "<group>"; };
+		007C939920B2EB5500019114 /* CRPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPageViewController.h; sourceTree = "<group>"; };
+		007C939A20B2EB5700019114 /* CRPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPageViewController.m; sourceTree = "<group>"; };
+		007C939C20B2EE1000019114 /* CRChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRChildViewController.h; sourceTree = "<group>"; };
+		007C939D20B2EE1000019114 /* CRChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRChildViewController.m; sourceTree = "<group>"; };
+		007C93A220B2F94C00019114 /* CRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRViewController.m; sourceTree = "<group>"; };
+		007C93A320B2F94C00019114 /* CRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRViewController.h; sourceTree = "<group>"; };
 		008ADF1E20B0033E00E7A642 /* helpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpViewController.swift; sourceTree = "<group>"; };
 		009B3A1020AD504000FA9BC3 /* Kids AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		009B3A1320AD504000FA9BC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +98,12 @@
 		009B3A5520AD65C500FA9BC3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
 		009B3A6320ADBA2B00FA9BC3 /* tableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableCell.swift; sourceTree = "<group>"; };
+		00C5228E20B3EFC100C38255 /* HSK_CFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSK_CFUtilities.h; sourceTree = "<group>"; };
+		00C5228F20B3EFC100C38255 /* HSK_CFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSK_CFUtilities.m; sourceTree = "<group>"; };
+		00C5229020B3EFC100C38255 /* NSStream+SKPSMTPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStream+SKPSMTPExtensions.h"; sourceTree = "<group>"; };
+		00C5229120B3EFC100C38255 /* NSStream+SKPSMTPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStream+SKPSMTPExtensions.m"; sourceTree = "<group>"; };
+		00C5229220B3EFC100C38255 /* SKPSMTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPSMTPMessage.h; sourceTree = "<group>"; };
+		00C5229320B3EFC100C38255 /* SKPSMTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPSMTPMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +132,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		007C939720B2EAE400019114 /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				007C93A320B2F94C00019114 /* CRViewController.h */,
+				007C93A220B2F94C00019114 /* CRViewController.m */,
+				007C939920B2EB5500019114 /* CRPageViewController.h */,
+				007C939A20B2EB5700019114 /* CRPageViewController.m */,
+				007C939C20B2EE1000019114 /* CRChildViewController.h */,
+				007C939D20B2EE1000019114 /* CRChildViewController.m */,
+				007C939820B2EB4C00019114 /* Kids AR-Bridging-Header.h */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
 		009B3A0720AD504000FA9BC3 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +170,7 @@
 		009B3A1220AD504000FA9BC3 /* Kids AR */ = {
 			isa = PBXGroup;
 			children = (
+				007C939720B2EAE400019114 /* PageViewController */,
 				009B3A6220ADBA1C00FA9BC3 /* TableCells */,
 				009B3A6120ADA55200FA9BC3 /* ViewControllers */,
 				009B3A4420AD5FC000FA9BC3 /* Additional Resources */,
@@ -180,6 +214,7 @@
 		009B3A4420AD5FC000FA9BC3 /* Additional Resources */ = {
 			isa = PBXGroup;
 			children = (
+				00C5228D20B3EFC100C38255 /* SMTPLibrary */,
 				009B3A4720AD60D000FA9BC3 /* Fonts */,
 				009B3A4520AD5FE600FA9BC3 /* Constants.swift */,
 			);
@@ -229,6 +264,19 @@
 				007C938D20B2997900019114 /* tablecellEmpty.swift */,
 			);
 			path = TableCells;
+			sourceTree = "<group>";
+		};
+		00C5228D20B3EFC100C38255 /* SMTPLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				00C5228E20B3EFC100C38255 /* HSK_CFUtilities.h */,
+				00C5228F20B3EFC100C38255 /* HSK_CFUtilities.m */,
+				00C5229020B3EFC100C38255 /* NSStream+SKPSMTPExtensions.h */,
+				00C5229120B3EFC100C38255 /* NSStream+SKPSMTPExtensions.m */,
+				00C5229220B3EFC100C38255 /* SKPSMTPMessage.h */,
+				00C5229320B3EFC100C38255 /* SKPSMTPMessage.m */,
+			);
+			path = SMTPLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +347,7 @@
 				TargetAttributes = {
 					009B3A0F20AD504000FA9BC3 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					009B3A2320AD505000FA9BC3 = {
 						CreatedOnToolsVersion = 9.3;
@@ -371,6 +420,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C5229420B3EFC100C38255 /* HSK_CFUtilities.m in Sources */,
+				00C5229520B3EFC100C38255 /* NSStream+SKPSMTPExtensions.m in Sources */,
 				009B3A1620AD504000FA9BC3 /* NameViewController.swift in Sources */,
 				007C939220B2B3BA00019114 /* privacyViewController.swift in Sources */,
 				009B3A1420AD504000FA9BC3 /* AppDelegate.swift in Sources */,
@@ -378,9 +429,13 @@
 				009B3A6020ADA54200FA9BC3 /* welcomeViewController.swift in Sources */,
 				008ADF1F20B0033E00E7A642 /* helpViewController.swift in Sources */,
 				007C939420B2B3BA00019114 /* contactViewController.swift in Sources */,
+				007C93A420B2F94C00019114 /* CRViewController.m in Sources */,
+				00C5229620B3EFC100C38255 /* SKPSMTPMessage.m in Sources */,
 				009B3A6420ADBA2B00FA9BC3 /* tableCell.swift in Sources */,
+				007C939E20B2EE1000019114 /* CRChildViewController.m in Sources */,
 				009B3A4620AD5FE600FA9BC3 /* Constants.swift in Sources */,
 				007C938E20B2997900019114 /* tablecellEmpty.swift in Sources */,
+				007C939B20B2EB5700019114 /* CRPageViewController.m in Sources */,
 				007C938C20B292AE00019114 /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
 				INFOPLIST_FILE = "Kids AR/Info.plist";
@@ -562,10 +618,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.kidsar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f2eb06d7-55c5-4e69-89e7-87d152e5996f";
 				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "Kids AR/PageViewController/Kids AR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -575,6 +634,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
 				INFOPLIST_FILE = "Kids AR/Info.plist";
@@ -583,10 +643,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.kidsar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f2eb06d7-55c5-4e69-89e7-87d152e5996f";
 				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "Kids AR/PageViewController/Kids AR-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

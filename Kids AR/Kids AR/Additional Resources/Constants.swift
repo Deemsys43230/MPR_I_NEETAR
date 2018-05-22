@@ -56,6 +56,13 @@ class Constants {
     
     static let lockColor:UIColor = UIColor(red: 33/255, green: 117/255, blue: 155/255, alpha: 1.0)
     
+    static let fromEmail:String = "deemmobtest@gmail.com"
+    static let fromEmailPwd:String = "deemsys@123"
+    static let toEmail:String = "support@deemsysinc.com"
+    static let relayHost:String = "smtp.gmail.com"
+    static let emailSubject:String = "Kids AR - User query"
+    static let requiresAuth:Bool = true
+    static let wantsSecure:Bool = true
     
  
  static let helpArray = [
