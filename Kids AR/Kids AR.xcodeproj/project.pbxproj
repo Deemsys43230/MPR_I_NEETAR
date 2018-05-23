@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0061170820B54EB1008E4FB4 /* slowbackgroundmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0061170720B54EB1008E4FB4 /* slowbackgroundmusic.mp3 */; };
+		0061170A20B57C52008E4FB4 /* privacyPolicy.html in Resources */ = {isa = PBXBuildFile; fileRef = 0061170920B57C52008E4FB4 /* privacyPolicy.html */; };
 		007C938C20B292AE00019114 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C938B20B292AE00019114 /* settingsViewController.swift */; };
 		007C938E20B2997900019114 /* tablecellEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C938D20B2997900019114 /* tablecellEmpty.swift */; };
 		007C939220B2B3BA00019114 /* privacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C938F20B2B3B900019114 /* privacyViewController.swift */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		0061170720B54EB1008E4FB4 /* slowbackgroundmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slowbackgroundmusic.mp3; sourceTree = "<group>"; };
+		0061170920B57C52008E4FB4 /* privacyPolicy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = privacyPolicy.html; sourceTree = "<group>"; };
 		007C938B20B292AE00019114 /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		007C938D20B2997900019114 /* tablecellEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tablecellEmpty.swift; sourceTree = "<group>"; };
 		007C938F20B2B3B900019114 /* privacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = privacyViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			children = (
 				00C5229720B4369600C38255 /* appIcon.png */,
 				009B3A4220AD5EE800FA9BC3 /* background.jpg */,
+				0061170920B57C52008E4FB4 /* privacyPolicy.html */,
 				0061170720B54EB1008E4FB4 /* slowbackgroundmusic.mp3 */,
 			);
 			path = Images;
@@ -384,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0061170A20B57C52008E4FB4 /* privacyPolicy.html in Resources */,
 				009B3A1E20AD504F00FA9BC3 /* LaunchScreen.storyboard in Resources */,
 				009B3A4320AD5EE900FA9BC3 /* background.jpg in Resources */,
 				009B3A5920AD6EFE00FA9BC3 /* COMIC.TTF in Resources */,

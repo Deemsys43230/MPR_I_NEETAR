@@ -16,13 +16,22 @@ class privacyViewController : UIViewController, UIWebViewDelegate {
     
     @IBOutlet var copyright: UILabel!
     
+    @IBOutlet var webView: UIWebView!
     
     
     override func viewDidLoad() {
         
         self.copyright.text = Constants.copyright
+        webView.backgroundColor = .clear
+        webView.isOpaque = false
        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
         
+            let htmlFile = Bundle.main.path(forResource: "privacyPolicy", ofType: "html")
+            let html = try! String(contentsOfFile: htmlFile!, encoding: String.Encoding.utf8)
+       
+            self.webView.loadHTMLString(html, baseURL: nil)
+        }
     }
     
     
