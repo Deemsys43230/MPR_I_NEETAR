@@ -1,17 +1,27 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
+      "idiom" : "iphone",
       "filename" : "fruits.jpg",
       "scale" : "1x"
     },
     {
-      "idiom" : "universal",
+      "idiom" : "iphone",
       "scale" : "2x"
     },
     {
-      "idiom" : "universal",
+      "idiom" : "iphone",
       "scale" : "3x"
+    },
+    {
+      "idiom" : "ipad",
+      "filename" : "largefruits.jpg",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "filename" : "largefruits-1.jpg",
+      "scale" : "2x"
     }
   ],
   "info" : {

@@ -22,7 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         if UserDefaults.standard.object(forKey: "KidName") == nil{
             UserDefaults.standard.set("", forKey: "KidName")
-            
+        }
+        
+        if UserDefaults.standard.value(forKey: "KidName") as! String == "" {
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NameViewController") as! NameViewController
             let navigationController = UINavigationController(rootViewController: vc)
           navigationController.setNavigationBarHidden(true, animated: false)

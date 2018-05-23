@@ -192,9 +192,13 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         
-        let characterSet = CharacterSet.letters
+        if string == " " && range.location == 0{
+            return false
+        }
         
-        if string.rangeOfCharacter(from: characterSet.inverted) != nil {
+        let set = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLKMNOPQRSTUVWXYZ ")
+        
+        if string.rangeOfCharacter(from: set.inverted) != nil {
             return false
         }
         if let text = textField.text,

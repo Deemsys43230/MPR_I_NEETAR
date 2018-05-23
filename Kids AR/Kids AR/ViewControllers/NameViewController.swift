@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import QuartzCore
+import AVFoundation
 
-
-class NameViewController: UIViewController, UITextFieldDelegate {
+class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesizerDelegate {
     
     @IBOutlet var infoButton: UIButton!
     @IBOutlet var musicButton: UIButton!
     @IBOutlet var musicImage: UIImageView!
     @IBOutlet var nameField: UITextField!
+    
+    let speechSynthesizer = AVSpeechSynthesizer()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +42,8 @@ class NameViewController: UIViewController, UITextFieldDelegate {
         let paddingView: UIView = UIView.init(frame: CGRect(x: 0, y: 0, width: 10, height: 20))
         nameField.leftView = paddingView
         nameField.leftViewMode = .always
+        
+        speechSynthesizer.delegate = self
         
         
         
@@ -100,10 +106,13 @@ class NameViewController: UIViewController, UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
+        if string == " " && range.location == 0{
+            return false
+        }
         
-        let characterSet = CharacterSet.letters
+        let set = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLKMNOPQRSTUVWXYZ ")
         
-        if string.rangeOfCharacter(from: characterSet.inverted) != nil {
+        if string.rangeOfCharacter(from: set.inverted) != nil {
             return false
         }
         if let text = nameField.text,
@@ -146,7 +155,15 @@ class NameViewController: UIViewController, UITextFieldDelegate {
         if nameField.text!.characters.count == 0{
             return;
         }
-        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.pauseSound()
+        if !speechSynthesizer.isSpeaking {
+            let speechUtterance = AVSpeechUtterance(string: "Welcome \(nameField.text!)")
+            speechSynthesizer.speak(speechUtterance)
+        }
+        else{
+            speechSynthesizer.continueSpeaking()
+        }
         UserDefaults.standard.set(nameField.text!, forKey: "KidName")
         UserDefaults.standard.synchronize()
         self.navigationController?.pushViewController((self.storyboard?.instantiateViewController(withIdentifier: "CRViewController"))!, animated: true)
@@ -190,6 +207,12 @@ class NameViewController: UIViewController, UITextFieldDelegate {
             appDelegate.playSound()
         }
         
+    }
+    /// AVFoundation Completion handlers
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.playSound()
     }
     
     override func didReceiveMemoryWarning() {
