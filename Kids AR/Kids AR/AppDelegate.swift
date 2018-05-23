@@ -22,7 +22,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         if UserDefaults.standard.object(forKey: "KidName") == nil{
             UserDefaults.standard.set("", forKey: "KidName")
+            
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NameViewController") as! NameViewController
+            let navigationController = UINavigationController(rootViewController: vc)
+          navigationController.setNavigationBarHidden(true, animated: false)
+            self.window!.rootViewController = navigationController
+            self.window!.makeKeyAndVisible()
+            
+        }else{
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CRViewController") as! CRViewController
+            let navigationController = UINavigationController(rootViewController: vc)
+             navigationController.setNavigationBarHidden(true, animated: false)
+            self.window!.rootViewController = navigationController
+            self.window!.makeKeyAndVisible()
         }
+        
+        
+        
         
         // Override point for customization after application launch.
         return true

@@ -38,6 +38,9 @@ class helpViewController : UIViewController, UITableViewDataSource, UITableViewD
     
     // TableView Delegates
     
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
@@ -50,16 +53,22 @@ class helpViewController : UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        
-        // Content row
-        let cell:tableCell = (tableView.dequeueReusableCell(withIdentifier: "cell") as! tableCell?)!
-        cell.title.text = Constants.helpArray[indexPath.row]
-        // add border and color
-        cell.backgroundColor = UIColor.clear
-        
-        
-        return cell
-        
+            if indexPath.row == 8{
+                
+                // Content row
+                let cell:tableCell = (tableView.dequeueReusableCell(withIdentifier: "titlecell") as! tableCell?)!
+                cell.title.text = "How to use 3d models?"
+                // add border and color
+                cell.backgroundColor = UIColor.clear
+                return cell
+            }
+            
+            let cell:tableCell = (tableView.dequeueReusableCell(withIdentifier: "cell") as! tableCell?)!
+            cell.title.text = Constants.helpArray[indexPath.row]
+            // add border and color
+            cell.backgroundColor = UIColor.clear
+            return cell
+         
     }
     
     

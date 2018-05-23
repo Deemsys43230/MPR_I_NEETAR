@@ -14,12 +14,13 @@ class privacyViewController : UIViewController, UIWebViewDelegate {
     
     @IBOutlet var closeButton: UIButton!
     
-   
+    @IBOutlet var copyright: UILabel!
+    
     
     
     override func viewDidLoad() {
         
-        
+        self.copyright.text = Constants.copyright
        
         
     }

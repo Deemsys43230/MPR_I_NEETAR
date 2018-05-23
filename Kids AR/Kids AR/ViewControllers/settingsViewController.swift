@@ -46,12 +46,22 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row%2 != 0{
+            //print(UIDevice.current.model)
+            if UIDevice.current.model == "iPhone"{
             return 45;
+            }
+            return 55
         }
         else if indexPath.row == 0 || indexPath.row == 8{
-            return 40;
+            if UIDevice.current.model == "iPhone"{
+                return 40;
+            }
+            return 50
         }
-        return 20;
+        if UIDevice.current.model == "iPhone"{
+            return 20;
+        }
+        return 30
     }
     
     
@@ -203,7 +213,7 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
     func prepareAlert() {
         
         //set up the alertcontroller
-        let title = "Enter Your Name"
+        let title = "Please Enter Your Name"
         let message = ""
         let cancelButtonTitle = "Cancel"
         let otherButtonTitle = "Save"
@@ -214,7 +224,7 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
         alertController.addTextField { textField in
             //listen for changes
             textField.delegate = self
-            
+            textField.autocapitalizationType = UITextAutocapitalizationType.allCharacters
             NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification(notification:)), name: NSNotification.Name.UITextFieldTextDidChange, object: textField)
         }
         

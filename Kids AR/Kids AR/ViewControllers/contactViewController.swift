@@ -73,6 +73,14 @@ class contactViewController : UIViewController, UITextFieldDelegate, SKPSMTPMess
             self.present(alertController, animated: true, completion:nil)
             return
         }
+        if self.isBlank(string: self.queryField.text!) == true
+        {
+            let alertController = UIAlertController(title: Constants.alert.info.rawValue, message: "Enter query", preferredStyle: .alert)
+            let OKAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
+            alertController.addAction(OKAction)
+            self.present(alertController, animated: true, completion:nil)
+            return
+        }
         if self.validateEmail(enteredEmail: emailField.text!) == false{
             let alertController = UIAlertController(title: Constants.alert.info.rawValue, message: "Enter valid email id", preferredStyle: .alert)
             let OKAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
