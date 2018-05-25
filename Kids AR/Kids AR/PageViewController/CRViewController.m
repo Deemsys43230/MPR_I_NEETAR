@@ -108,7 +108,7 @@
         {
             if ([[UIScreen mainScreen] bounds].size.width == 320.0f)
             {
-                self.pageViewController.childVCSize = CGSizeMake(250, 500);
+                self.pageViewController.childVCSize = CGSizeMake(150, 400);
                 
             }
             else

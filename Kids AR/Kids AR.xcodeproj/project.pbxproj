@@ -36,6 +36,7 @@
 		009B3A5E20AD6F0500FA9BC3 /* design.graffiti.comicsansmsgras.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4820AD60F100FA9BC3 /* design.graffiti.comicsansmsgras.ttf */; };
 		009B3A6020ADA54200FA9BC3 /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */; };
 		009B3A6420ADBA2B00FA9BC3 /* tableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A6320ADBA2B00FA9BC3 /* tableCell.swift */; };
+		00B74E7F20B7FCA800EBF380 /* Rechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B74E7E20B7FCA800EBF380 /* Rechability.swift */; };
 		00C5229420B3EFC100C38255 /* HSK_CFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5228F20B3EFC100C38255 /* HSK_CFUtilities.m */; };
 		00C5229520B3EFC100C38255 /* NSStream+SKPSMTPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5229120B3EFC100C38255 /* NSStream+SKPSMTPExtensions.m */; };
 		00C5229620B3EFC100C38255 /* SKPSMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5229320B3EFC100C38255 /* SKPSMTPMessage.m */; };
@@ -99,6 +100,7 @@
 		009B3A5520AD65C500FA9BC3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
 		009B3A6320ADBA2B00FA9BC3 /* tableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableCell.swift; sourceTree = "<group>"; };
+		00B74E7E20B7FCA800EBF380 /* Rechability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rechability.swift; sourceTree = "<group>"; };
 		00C5228E20B3EFC100C38255 /* HSK_CFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSK_CFUtilities.h; sourceTree = "<group>"; };
 		00C5228F20B3EFC100C38255 /* HSK_CFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSK_CFUtilities.m; sourceTree = "<group>"; };
 		00C5229020B3EFC100C38255 /* NSStream+SKPSMTPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStream+SKPSMTPExtensions.h"; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				009B3A1720AD504000FA9BC3 /* Main.storyboard */,
 				008ADF1E20B0033E00E7A642 /* helpViewController.swift */,
 				007C938B20B292AE00019114 /* settingsViewController.swift */,
+				00B74E7E20B7FCA800EBF380 /* Rechability.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				007C939220B2B3BA00019114 /* privacyViewController.swift in Sources */,
 				009B3A1420AD504000FA9BC3 /* AppDelegate.swift in Sources */,
 				007C939320B2B3BA00019114 /* purchaseViewController.swift in Sources */,
+				00B74E7F20B7FCA800EBF380 /* Rechability.swift in Sources */,
 				009B3A6020ADA54200FA9BC3 /* welcomeViewController.swift in Sources */,
 				008ADF1F20B0033E00E7A642 /* helpViewController.swift in Sources */,
 				007C939420B2B3BA00019114 /* contactViewController.swift in Sources */,

@@ -60,7 +60,15 @@ class Constants {
     
     static let fromEmail:String = "deemmobtest@gmail.com"
     static let fromEmailPwd:String = "deemsys@123"
-    static let toEmail:String = "support@deemsysinc.com"
+    
+    
+    // Production
+    //static let toEmail:String = "incdeemsys@gmail.com"
+    
+    // Developement
+    static let toEmail:String = "deemmobtest@gmail.com"
+    
+    
     static let relayHost:String = "smtp.gmail.com"
     static let emailSubject:String = "Kids AR - User query"
     static let requiresAuth:Bool = true

@@ -57,9 +57,22 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
 //        }
     }
     
+    @IBOutlet var pleasetelluslabel: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if self.view.frame.width == 320{
+        logoTopHeight.constant = 30
+            labelTop.constant = 15
+            NSLayoutConstraint.deactivate([labelCenter])
+            self.view.layoutIfNeeded()
+        }else{ 
+              NSLayoutConstraint.deactivate([labelTop])
+            self.view.layoutIfNeeded()
+            
+        }
+        
         centerAlignUsernameLabel.constant += view.bounds.width
         centerAlignUsername.constant += view.bounds.width
         getStartedButton.alpha = 0.0
@@ -133,6 +146,13 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
     @IBOutlet weak var centerAlignUsernameLabel: NSLayoutConstraint!
     @IBOutlet weak var centerAlignUsername: NSLayoutConstraint!
     @IBOutlet weak var getStartedButton: UIButton!
+    
+    @IBOutlet var logoTopHeight: NSLayoutConstraint!
+    
+    
+    @IBOutlet var labelTop: NSLayoutConstraint!
+    
+    @IBOutlet var labelCenter: NSLayoutConstraint!
     
     var alert : UIAlertController!
     
