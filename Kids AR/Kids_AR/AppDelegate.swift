@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    var application: UIApplication?
+    
+    var isUnityRunning = false
+    
+    @objc var currentUnityController: UnityAppController!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         RunLoop.current.run(until: Date(timeIntervalSinceNow: 1))
         if UserDefaults.standard.object(forKey: "isMusicOn") == nil{
            UserDefaults.standard.set(true, forKey: "isMusicOn")
@@ -40,6 +47,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         
+        self.application = application
+        unity_init(CommandLine.argc, CommandLine.unsafeArgv)
+        
+        currentUnityController = UnityAppController()
+        currentUnityController.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        // first call to startUnity will do some init stuff, so just call it here and directly stop it again
+        startUnity()
+        stopUnity()
         
         
         // Override point for customization after application launch.
@@ -50,6 +66,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
         self.pauseSound()
+        if isUnityRunning {
+            currentUnityController.applicationWillResignActive(application)
+        }
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -57,23 +76,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
         
         self.pauseSound()
+        
+        if isUnityRunning {
+            currentUnityController.applicationDidEnterBackground(application)
+        }
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
         self.playSound()
+        
+        if isUnityRunning {
+            currentUnityController.applicationWillEnterForeground(application)
+        }
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         
         self.playSound()
+        
+        if isUnityRunning {
+            currentUnityController.applicationDidBecomeActive(application)
+        }
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         
         self.stopSound()
+        
+        if isUnityRunning {
+            currentUnityController.applicationWillTerminate(application)
+        }
+    }
+    func startUnity() {
+        if !isUnityRunning {
+            isUnityRunning = true
+            currentUnityController.applicationDidBecomeActive(application!)
+        }
+    }
+    
+    func stopUnity() {
+        if isUnityRunning {
+            currentUnityController.applicationWillResignActive(application!)
+            isUnityRunning = false
+        }
     }
 
     var player: AVAudioPlayer?
