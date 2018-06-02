@@ -78,7 +78,7 @@ class augmentViewController: UIViewController {
         // collection view appears
         
         
-        Toast.showPositiveMessage(message: "Hello!!!!!!!!!")
+        Toast.showPositiveMessage(message: "Collection view")
         
 //        if sender.tag == 1{
 //            UnityPostMessage("GameObject", "loadAlphabet", "A")

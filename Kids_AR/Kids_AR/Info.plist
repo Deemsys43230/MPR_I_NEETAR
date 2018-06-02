@@ -24,6 +24,8 @@
 	<true/>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>To save screenshots</string>
+	<key>NSCameraUsageDescription</key>
+	<string>To augment models</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>COMIC</string>

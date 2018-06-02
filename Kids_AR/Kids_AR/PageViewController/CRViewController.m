@@ -9,6 +9,7 @@
 #import "CRViewController.h"
 #import "CRPageViewController.h"
 #import "CRChildViewController.h"
+#import "Kids_AR-Swift.h"
 
 @interface CRViewController () <CRPageViewControllerDataSource>
 
@@ -30,6 +31,7 @@
 
 @end
 
+@class augmentViewController;
 @implementation CRViewController
 
 #pragma mark - life circle
@@ -54,6 +56,28 @@
 - (IBAction)playAction:(id)sender {
     
     NSLog(@"self.current VC NAME %@", self.curentVC.sourse[0]);
+    NSString *val = self.curentVC.sourse[0];
+    
+    augmentViewController * vc = (augmentViewController *)[[UIStoryboard storyboardWithName:@"UnityStoryboard" bundle:nil] instantiateInitialViewController];
+    
+    
+    if ([val isEqualToString:@"Play Puzzle"]){
+        //  vc.index = 0;
+    }
+    else if ([val isEqualToString:@"Learn Alphabets"]){
+        vc.index = 0;
+        [[self navigationController] pushViewController:vc animated:true];
+    }
+    else if ([val isEqualToString:@"Know about Animals"]){
+        vc.index = 1;
+        [[self navigationController] pushViewController:vc animated:true];
+    }
+    else if ([val isEqualToString:@"Learn Fruits & Vegetables"]){
+        vc.index = 2;
+        [[self navigationController] pushViewController:vc animated:true];
+    }
+    
+    
 }
 
 

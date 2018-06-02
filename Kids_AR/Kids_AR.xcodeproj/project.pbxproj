@@ -159,6 +159,10 @@
 		007AA14B20C264F100DB7112 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007AA14A20C264F000DB7112 /* MobileCoreServices.framework */; };
 		007AA14E20C2653E00DB7112 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 007AA14C20C2653E00DB7112 /* background.jpg */; };
 		007AA14F20C2653E00DB7112 /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 007AA14D20C2653E00DB7112 /* appIcon.png */; };
+		007AA15320C2700700DB7112 /* toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AA15020C2700600DB7112 /* toast.swift */; };
+		007AA15420C2700700DB7112 /* UnityStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007AA15120C2700600DB7112 /* UnityStoryboard.storyboard */; };
+		007AA15520C2700700DB7112 /* augmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AA15220C2700700DB7112 /* augmentViewController.swift */; };
+		007AA15720C27F9200DB7112 /* collectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AA15620C27F9200DB7112 /* collectionCell.swift */; };
 		007C938C20B292AE00019114 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C938B20B292AE00019114 /* settingsViewController.swift */; };
 		007C938E20B2997900019114 /* tablecellEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C938D20B2997900019114 /* tablecellEmpty.swift */; };
 		007C939220B2B3BA00019114 /* privacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C938F20B2B3B900019114 /* privacyViewController.swift */; };
@@ -835,6 +839,10 @@
 		007AA14A20C264F000DB7112 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		007AA14C20C2653E00DB7112 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		007AA14D20C2653E00DB7112 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
+		007AA15020C2700600DB7112 /* toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toast.swift; sourceTree = "<group>"; };
+		007AA15120C2700600DB7112 /* UnityStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UnityStoryboard.storyboard; sourceTree = "<group>"; };
+		007AA15220C2700700DB7112 /* augmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = augmentViewController.swift; sourceTree = "<group>"; };
+		007AA15620C27F9200DB7112 /* collectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionCell.swift; sourceTree = "<group>"; };
 		007C938B20B292AE00019114 /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		007C938D20B2997900019114 /* tablecellEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tablecellEmpty.swift; sourceTree = "<group>"; };
 		007C938F20B2B3B900019114 /* privacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = privacyViewController.swift; sourceTree = "<group>"; };
@@ -2380,6 +2388,9 @@
 		009B3A6120ADA55200FA9BC3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				007AA15220C2700700DB7112 /* augmentViewController.swift */,
+				007AA15020C2700600DB7112 /* toast.swift */,
+				007AA15120C2700600DB7112 /* UnityStoryboard.storyboard */,
 				007C939120B2B3BA00019114 /* contactViewController.swift */,
 				007C938F20B2B3B900019114 /* privacyViewController.swift */,
 				007C939020B2B3BA00019114 /* purchaseViewController.swift */,
@@ -2398,6 +2409,7 @@
 			children = (
 				009B3A6320ADBA2B00FA9BC3 /* tableCell.swift */,
 				007C938D20B2997900019114 /* tablecellEmpty.swift */,
+				007AA15620C27F9200DB7112 /* collectionCell.swift */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -2535,6 +2547,7 @@
 				009B3A1B20AD504F00FA9BC3 /* Assets.xcassets in Resources */,
 				0061170820B54EB1008E4FB4 /* slowbackgroundmusic.mp3 in Resources */,
 				007AA13820C2621C00DB7112 /* libil2cpp.def in Resources */,
+				007AA15420C2700700DB7112 /* UnityStoryboard.storyboard in Resources */,
 				009B3A5D20AD6F0500FA9BC3 /* design.graffiti.comicsansms.ttf in Resources */,
 				007AA14E20C2653E00DB7112 /* background.jpg in Resources */,
 				009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */,
@@ -2617,6 +2630,7 @@
 				00C5229520B3EFC100C38255 /* NSStream+SKPSMTPExtensions.m in Sources */,
 				007AA12D20C2621B00DB7112 /* MetalHelper.mm in Sources */,
 				007AA11B20C2621B00DB7112 /* UnityAppController+ViewHandling.mm in Sources */,
+				007AA15320C2700700DB7112 /* toast.swift in Sources */,
 				007AA0EC20C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_11Table.cpp in Sources */,
 				007AA10620C2621B00DB7112 /* Il2CppGenericMethodPointerTable.cpp in Sources */,
 				007AA0F120C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_16Table.cpp in Sources */,
@@ -2699,6 +2713,7 @@
 				007AA0CA20C2621B00DB7112 /* Bulk_mscorlib_5.cpp in Sources */,
 				007AA0C620C2621B00DB7112 /* Bulk_mscorlib_10.cpp in Sources */,
 				007AA0D720C2621B00DB7112 /* Bulk_UnityEngine.ImageConversionModule_0.cpp in Sources */,
+				007AA15720C27F9200DB7112 /* collectionCell.swift in Sources */,
 				007AA0FA20C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_3Table.cpp in Sources */,
 				007AA0EF20C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_14Table.cpp in Sources */,
 				007AA12B20C2621B00DB7112 /* GlesHelper.mm in Sources */,
@@ -2709,6 +2724,7 @@
 				007AA10120C2621B00DB7112 /* Il2CppCompilerCalculateTypeValuesTable.cpp in Sources */,
 				007AA10320C2621B00DB7112 /* Il2CppGenericComDefinitions0.cpp in Sources */,
 				007AA12A20C2621B00DB7112 /* FullScreenVideoPlayer.mm in Sources */,
+				007AA15520C2700700DB7112 /* augmentViewController.swift in Sources */,
 				007AA0C220C2621B00DB7112 /* Bulk_Mono.Security_0.cpp in Sources */,
 				007AA0D320C2621B00DB7112 /* Bulk_UnityEngine.AudioModule_0.cpp in Sources */,
 				008ADF1F20B0033E00E7A642 /* helpViewController.swift in Sources */,
