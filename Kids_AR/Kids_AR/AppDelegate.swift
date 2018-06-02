@@ -24,6 +24,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         RunLoop.current.run(until: Date(timeIntervalSinceNow: 1))
+        
+        self.application = application
+        unity_init(CommandLine.argc, CommandLine.unsafeArgv)
+        
+        currentUnityController = UnityAppController()
+        currentUnityController.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        // first call to startUnity will do some init stuff, so just call it here and directly stop it again
+        startUnity()
+        stopUnity()
+        
         if UserDefaults.standard.object(forKey: "isMusicOn") == nil{
            UserDefaults.standard.set(true, forKey: "isMusicOn")
         }
@@ -47,15 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         
-        self.application = application
-        unity_init(CommandLine.argc, CommandLine.unsafeArgv)
-        
-        currentUnityController = UnityAppController()
-        currentUnityController.application(application, didFinishLaunchingWithOptions: launchOptions)
-        
-        // first call to startUnity will do some init stuff, so just call it here and directly stop it again
-        startUnity()
-        stopUnity()
+       
         
         
         // Override point for customization after application launch.

@@ -8,3 +8,7 @@
 #import "SKPSMTPMessage.h"
 #import "HSK_CFUtilities.h"
 #import "NSStream+SKPSMTPExtensions.h"
+#import <UIKit/UIKit.h>
+#import "UnityUtils.h"
+#import "UnityAppController.h"
+#import "UnityInterface.h" 
