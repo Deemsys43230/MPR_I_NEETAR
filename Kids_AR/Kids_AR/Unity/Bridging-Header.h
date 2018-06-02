@@ -9,5 +9,11 @@
 #import "UnityUtils.h"
 #import "UnityAppController.h"
 #import "UnityInterface.h"
+#import "CRViewController.h"
+#import "CRPageViewController.h"
+#import "CRChildViewController.h"
+#import "SKPSMTPMessage.h"
+#import "HSK_CFUtilities.h"
+#import "NSStream+SKPSMTPExtensions.h"
 
 #endif /* BRIDGING_HEADER */

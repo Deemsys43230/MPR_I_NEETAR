@@ -10,7 +10,8 @@ LIBRARY_SEARCH_PATHS = $(inherited) "$(PRODUCT_NAME)/Unity/Libraries" "$(PRODUCT
 // If using .net 4.0 in Unity, append -DNET_4_0 to OTHER_CFLAGS
 OTHER_CFLAGS = $(inherited) -DINIT_SCRIPTING_BACKEND=1 -fno-strict-overflow -DRUNTIME_IL2CPP=1 -DTARGET_IPHONE_SIMULATOR=1 -DRUNTIME_IL2CPP=1 -fno-strict-overflow;
 
-OTHER_LDFLAGS = $(inherited) -framework Security -framework CoreText -weak-lSystem -weak_framework CoreMotion -weak_framework GameKit -weak_framework Metal -weak_framework iAd -framework AVFoundation -framework AudioToolbox -framework CFNetwork -framework CoreGraphics -framework CoreLocation -framework CoreMedia -framework CoreVideo -framework Foundation -framework MediaPlayer -framework MediaToolbox -framework Metal -framework OpenAL -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -framework Photos -framework MobileCoreServices -framework ImageIO -framework UIKit -liconv.2 -liPhone-lib -lil2cpp ${PODS_LIBRARIES};
+
+OTHER_LDFLAGS = $(inherited) -framework AudioToolBox -framework Security -framework CoreText -weak-lSystem -weak_framework CoreMotion -weak_framework GameKit -weak_framework Metal -weak_framework iAd -framework AVFoundation -framework AudioToolbox -framework CFNetwork -framework CoreGraphics -framework CoreLocation -framework CoreMedia -framework CoreVideo -framework Foundation -framework MediaPlayer -framework MediaToolbox -framework Metal -framework OpenAL -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -framework Photos -framework MobileCoreServices -framework ImageIO -framework UIKit -liconv.2 -liPhone-lib -lil2cpp ${PODS_LIBRARIES};
 
 SWIFT_OBJC_BRIDGING_HEADER = $(PRODUCT_NAME)/Unity/Bridging-Header.h;
 SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;

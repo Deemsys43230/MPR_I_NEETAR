@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fgl-8f-5xi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="design.graffiti.comicsansmsgras.ttf">
+            <string>ComicSansMS-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Augment View Controller-->
+        <scene sceneID="K7E-La-xG9">
+            <objects>
+                <viewController storyboardIdentifier="augmentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fgl-8f-5xi" customClass="augmentViewController" customModule="Kids_AR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fm3-72-9mB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qlD-Yf-fyU">
+                                <rect key="frame" x="0.0" y="0.0" width="1186" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits &amp; Vegetables" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQw-FK-mkD">
+                                <rect key="frame" x="40" y="32" width="295" height="36"/>
+                                <fontDescription key="fontDescription" name="ComicSansMS-Bold" family="Comic Sans MS" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="ComicSansMS-Bold" family="Comic Sans MS" pointSize="28"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09r-ig-Dih">
+                                <rect key="frame" x="8" y="35" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="CkL-lU-n83"/>
+                                    <constraint firstAttribute="height" constant="30" id="dMa-Qz-gyn"/>
+                                </constraints>
+                                <state key="normal" image="backButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backActionWithSender:" destination="fgl-8f-5xi" eventType="touchUpInside" id="jQ6-ke-VV4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPY-9e-VTP">
+                                <rect key="frame" x="337" y="35" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5PG-1n-kxt"/>
+                                    <constraint firstAttribute="width" constant="30" id="LKU-Lv-Fdw"/>
+                                </constraints>
+                                <state key="normal" image="collectionsplus">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlphabet:" destination="fgl-8f-5xi" eventType="touchUpInside" id="ls2-IH-hoy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="09r-ig-Dih" firstAttribute="leading" secondItem="Fm3-72-9mB" secondAttribute="leading" constant="8" id="1F2-wQ-qCS"/>
+                            <constraint firstItem="iPY-9e-VTP" firstAttribute="leading" secondItem="WQw-FK-mkD" secondAttribute="trailing" constant="2" id="ARl-ri-BQT"/>
+                            <constraint firstItem="WQw-FK-mkD" firstAttribute="leading" secondItem="09r-ig-Dih" secondAttribute="trailing" constant="2" id="Ev2-dg-YaE"/>
+                            <constraint firstItem="yfa-zE-zSO" firstAttribute="trailing" secondItem="iPY-9e-VTP" secondAttribute="trailing" constant="8" id="L46-3q-Cpg"/>
+                            <constraint firstItem="WQw-FK-mkD" firstAttribute="centerY" secondItem="09r-ig-Dih" secondAttribute="centerY" id="P1B-cs-KlP"/>
+                            <constraint firstItem="yfa-zE-zSO" firstAttribute="bottom" secondItem="qlD-Yf-fyU" secondAttribute="bottom" id="Q11-eM-cvd"/>
+                            <constraint firstItem="qlD-Yf-fyU" firstAttribute="leading" secondItem="Fm3-72-9mB" secondAttribute="leading" id="Ukt-gA-coi"/>
+                            <constraint firstItem="iPY-9e-VTP" firstAttribute="top" secondItem="09r-ig-Dih" secondAttribute="top" id="miz-FO-VXg"/>
+                            <constraint firstItem="09r-ig-Dih" firstAttribute="top" secondItem="Fm3-72-9mB" secondAttribute="top" constant="35" id="rTA-PB-xhn"/>
+                            <constraint firstItem="qlD-Yf-fyU" firstAttribute="top" secondItem="Fm3-72-9mB" secondAttribute="top" id="xjO-R4-z9b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yfa-zE-zSO"/>
+                    </view>
+                    <connections>
+                        <outlet property="modeltitle" destination="WQw-FK-mkD" id="KL3-kx-kJJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="coI-tB-AL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31.884057971014496" y="154.89130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backButton" width="512" height="512"/>
+        <image name="background.jpg" width="1186" height="667"/>
+        <image name="collectionsplus" width="512" height="512"/>
+    </resources>
+</document>

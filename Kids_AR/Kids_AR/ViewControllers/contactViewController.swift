@@ -190,7 +190,7 @@ class contactViewController : UIViewController, UITextFieldDelegate, SKPSMTPMess
     @IBAction func submitAction(_ sender: Any) {
         if self.isBlank(string: self.nameField.text!) == true
         {
-            let alertController = UIAlertController(title: Constants.alert.info.rawValue, message: "Enter name", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Info", message: "Enter name", preferredStyle: .alert)
             let OKAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
             alertController.addAction(OKAction)
             self.present(alertController, animated: true, completion:nil)
@@ -198,7 +198,7 @@ class contactViewController : UIViewController, UITextFieldDelegate, SKPSMTPMess
         }
         if self.isBlank(string: self.emailField.text!) == true
         {
-            let alertController = UIAlertController(title: Constants.alert.info.rawValue, message: "Enter email id", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Info", message: "Enter email id", preferredStyle: .alert)
             let OKAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
             alertController.addAction(OKAction)
             self.present(alertController, animated: true, completion:nil)
@@ -206,14 +206,14 @@ class contactViewController : UIViewController, UITextFieldDelegate, SKPSMTPMess
         }
         if self.isBlank(string: self.queryField.text!) == true
         {
-            let alertController = UIAlertController(title: Constants.alert.info.rawValue, message: "Enter query", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Info", message: "Enter query", preferredStyle: .alert)
             let OKAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
             alertController.addAction(OKAction)
             self.present(alertController, animated: true, completion:nil)
             return
         }
         if self.validateEmail(enteredEmail: emailField.text!) == false{
-            let alertController = UIAlertController(title: Constants.alert.info.rawValue, message: "Enter valid email id", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Info", message: "Enter valid email id", preferredStyle: .alert)
             let OKAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
             alertController.addAction(OKAction)
             self.present(alertController, animated: true, completion:nil)
@@ -280,14 +280,14 @@ class contactViewController : UIViewController, UITextFieldDelegate, SKPSMTPMess
     func messageSent(_ message: SKPSMTPMessage!) {
         self.indicator.stopAnimating()
         self.submitButton.isEnabled = true
-        let alertController = UIAlertController(title: Constants.alert.info.rawValue, message: "Query submitted", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Success", message: "Query submitted", preferredStyle: .alert)
         let OKAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
         alertController.addAction(OKAction)
         self.present(alertController, animated: true, completion:nil)
         
     }
     func messageFailed(_ message: SKPSMTPMessage!, error: Error!) {
-        let alertController = UIAlertController(title: Constants.alert.info.rawValue, message: "Sorry! We encountered a problem while submitting your query. Please try again later.", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Failure", message: "Sorry! We encountered a problem while submitting your query. Please try again later.", preferredStyle: .alert)
         let OKAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
         alertController.addAction(OKAction)
         self.present(alertController, animated: true, completion:nil)
