@@ -10,13 +10,17 @@ import Foundation
 import AVFoundation
 import UIKit
 
-class augmentViewController: UIViewController {
+class augmentViewController: UIViewController, popupDelegate {
+   
+    
     
     var unityView: UIView?
     
     @IBOutlet var modeltitle: UILabel!
     
     @objc public var index:Int = 0
+    
+    
     
     var viewname:[String] = ["alphabetsScene","animalsScene","fruitsScene"]
     
@@ -44,7 +48,8 @@ class augmentViewController: UIViewController {
             alert.addAction(UIAlertAction(title: Constants.alert.ok.rawValue, style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             break
-        case .authorized: break
+        case .authorized:
+            break
         case .restricted: break
             
         case .notDetermined:
@@ -60,12 +65,24 @@ class augmentViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             self.startUnity()
+            
         }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         UnityPostMessage("GameObject", "clearScene", "")
+    }
+    
+    func didSelectModel(withName: String, audioName: String, modelID: String) {
+    
+        
+        let c = withName.characters.first!
+        
+        UnityPostMessage("GameObject", "loadAlphabet", "\(c)")
+        
+        
+        
     }
     
     @IBAction func backAction(sender: UIButton) {
@@ -78,13 +95,16 @@ class augmentViewController: UIViewController {
         // collection view appears
         
         
-        Toast.showPositiveMessage(message: "Collection view")
+    //    Toast.showPositiveMessage(message: "Collection view")
         
-//        if sender.tag == 1{
-//            UnityPostMessage("GameObject", "loadAlphabet", "A")
-//            return
-//        }
-//        UnityPostMessage("GameObject", "loadAlphabet", "B")
+        let popOverVC = UIStoryboard(name: "UnityStoryboard", bundle: nil).instantiateViewController(withIdentifier: "PopUpViewController") as! PopUpViewController
+        popOverVC.index = self.index
+         popOverVC.delegate = self
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+        
         
     }
     
@@ -166,6 +186,15 @@ class augmentViewController: UIViewController {
             speakerButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -50),
             speakerButton.widthAnchor.constraint(equalToConstant: 50),
             speakerButton.heightAnchor.constraint(equalToConstant: 50)])
+        
+        
+        let popOverVC = UIStoryboard(name: "UnityStoryboard", bundle: nil).instantiateViewController(withIdentifier: "PopUpViewController") as! PopUpViewController
+        popOverVC.index = self.index
+        popOverVC.delegate = self
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
         
     }
     

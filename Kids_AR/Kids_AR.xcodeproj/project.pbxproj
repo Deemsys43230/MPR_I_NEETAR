@@ -14,6 +14,8 @@
 		006413B720C0298D000BEBC9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006413B620C0298D000BEBC9 /* AssetsLibrary.framework */; };
 		006413B920C02992000BEBC9 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006413B820C02992000BEBC9 /* ARKit.framework */; };
 		0064173B20C034BD000BEBC9 /* rsync_exclude in Resources */ = {isa = PBXBuildFile; fileRef = 0064173A20C034BD000BEBC9 /* rsync_exclude */; };
+		006DFE3820C50D3E005CC585 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006DFE3720C50D3E005CC585 /* PopUpViewController.swift */; };
+		006DFE3A20C51D84005CC585 /* kids.json in Resources */ = {isa = PBXBuildFile; fileRef = 006DFE3920C51D84005CC585 /* kids.json */; };
 		007AA0B720C2621B00DB7112 /* CrashReporter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 007A9DFE20C2621A00DB7112 /* CrashReporter.mm */; };
 		007AA0B820C2621B00DB7112 /* iPhone_Sensors.mm in Sources */ = {isa = PBXBuildFile; fileRef = 007A9E0020C2621A00DB7112 /* iPhone_Sensors.mm */; };
 		007AA0B920C2621B00DB7112 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 007A9E0120C2621A00DB7112 /* main.mm */; };
@@ -222,6 +224,8 @@
 		006413B620C0298D000BEBC9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		006413B820C02992000BEBC9 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		0064173A20C034BD000BEBC9 /* rsync_exclude */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = rsync_exclude; path = ../../../../../../../Desktop/testDemo/ios/iosDemo/iosDemo/Unity/rsync_exclude; sourceTree = "<group>"; };
+		006DFE3720C50D3E005CC585 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		006DFE3920C51D84005CC585 /* kids.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kids.json; sourceTree = "<group>"; };
 		007A9DFD20C2621A00DB7112 /* CrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporter.h; sourceTree = "<group>"; };
 		007A9DFE20C2621A00DB7112 /* CrashReporter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CrashReporter.mm; sourceTree = "<group>"; };
 		007A9DFF20C2621A00DB7112 /* iPhone_Sensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_Sensors.h; sourceTree = "<group>"; };
@@ -2303,6 +2307,7 @@
 		009B3A1220AD504000FA9BC3 /* Kids_AR */ = {
 			isa = PBXGroup;
 			children = (
+				006DFE3920C51D84005CC585 /* kids.json */,
 				006413AA20C027E1000BEBC9 /* Unity */,
 				007C939720B2EAE400019114 /* PageViewController */,
 				009B3A6220ADBA1C00FA9BC3 /* TableCells */,
@@ -2400,6 +2405,7 @@
 				008ADF1E20B0033E00E7A642 /* helpViewController.swift */,
 				007C938B20B292AE00019114 /* settingsViewController.swift */,
 				00B74E7E20B7FCA800EBF380 /* Rechability.swift */,
+				006DFE3720C50D3E005CC585 /* PopUpViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -2541,6 +2547,7 @@
 				007AA14F20C2653E00DB7112 /* appIcon.png in Resources */,
 				009B3A1E20AD504F00FA9BC3 /* LaunchScreen.storyboard in Resources */,
 				009B3A5920AD6EFE00FA9BC3 /* COMIC.TTF in Resources */,
+				006DFE3A20C51D84005CC585 /* kids.json in Resources */,
 				009B3A5E20AD6F0500FA9BC3 /* design.graffiti.comicsansmsgras.ttf in Resources */,
 				009B3A5C20AD6F0500FA9BC3 /* comicz.ttf in Resources */,
 				009B3A5A20AD6F0500FA9BC3 /* comici.ttf in Resources */,
@@ -2612,6 +2619,7 @@
 				007AA0BD20C2621B00DB7112 /* Bulk_Generics_0.cpp in Sources */,
 				007AA0B720C2621B00DB7112 /* CrashReporter.mm in Sources */,
 				007AA12220C2621B00DB7112 /* AVCapture.mm in Sources */,
+				006DFE3820C50D3E005CC585 /* PopUpViewController.swift in Sources */,
 				007AA0BF20C2621B00DB7112 /* Bulk_Generics_2.cpp in Sources */,
 				007AA13420C2621B00DB7112 /* UnityAppController+Rendering.mm in Sources */,
 				007AA12420C2621B00DB7112 /* CMVideoSampling.mm in Sources */,
