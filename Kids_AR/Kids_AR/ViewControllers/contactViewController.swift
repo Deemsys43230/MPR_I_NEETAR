@@ -139,6 +139,7 @@ class contactViewController : UIViewController, UITextFieldDelegate, SKPSMTPMess
     @IBOutlet var queryField: UITextView!
     @IBOutlet var submitButton: UIButton!
     
+    @IBOutlet var scrollView: UIScrollView!
     
     var devicename = ""
     var osversion = ""
@@ -180,7 +181,18 @@ class contactViewController : UIViewController, UITextFieldDelegate, SKPSMTPMess
         
         
     }
-   
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: .UIKeyboardWillShow, object: nil)
+//
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: .UIKeyboardWillHide, object: nil)
+//    }
+//
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//
+//        NotificationCenter.default.removeObserver(self)
+//    }
     
     @IBAction func backAction(sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
@@ -293,7 +305,19 @@ class contactViewController : UIViewController, UITextFieldDelegate, SKPSMTPMess
         self.present(alertController, animated: true, completion:nil)
         
     }
+    // MARK: UITextViewDelegate
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        let scrollPoint : CGPoint = CGPoint(x: 0, y: self.queryField.frame.origin.y-100)
+        self.scrollView.setContentOffset(scrollPoint, animated: true)
+    }
     
+    func textViewDidEndEditing(_ textView: UITextView) {
+        self.scrollView.setContentOffset(CGPoint.zero, animated: true)
+    }
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        self.queryField.resignFirstResponder()
+        return true
+    }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == nameField{
             nameField.resignFirstResponder()
@@ -311,6 +335,26 @@ class contactViewController : UIViewController, UITextFieldDelegate, SKPSMTPMess
         }
         return true
     }
+//    var kbHeight: CGFloat!
+//    @objc func keyboardWillShow(notification: NSNotification) {
+//        if let userInfo = notification.userInfo {
+//            if let keyboardSize =  (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+//                kbHeight = keyboardSize.height
+//                self.animateTextField(up: true)
+//            }
+//        }
+//    }
+//
+//    @objc func keyboardWillHide(notification: NSNotification) {
+//        self.animateTextField(up: false)
+//    }
+//    func animateTextField(up: Bool) {
+//        var movement = (up ? -kbHeight : kbHeight)
+//
+//        UIView.animate(withDuration: 0.3, animations: {
+//            self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement!)
+//        })
+//    }
 }
 
 

@@ -174,6 +174,12 @@
 		007C939E20B2EE1000019114 /* CRChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007C939D20B2EE1000019114 /* CRChildViewController.m */; };
 		007C93A420B2F94C00019114 /* CRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007C93A220B2F94C00019114 /* CRViewController.m */; };
 		008ADF1F20B0033E00E7A642 /* helpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008ADF1E20B0033E00E7A642 /* helpViewController.swift */; };
+		0095E54B20C6668D00E847BB /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095E54820C6668D00E847BB /* IAPHelper.swift */; };
+		0095E54E20C6726000E847BB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0095E54D20C6726000E847BB /* StoreKit.framework */; };
+		0095E55420C67EA800E847BB /* GothamRounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0095E55020C6794C00E847BB /* GothamRounded-Bold.otf */; };
+		0095E55520C67EAE00E847BB /* GothamRounded-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0095E55120C6794F00E847BB /* GothamRounded-Book.otf */; };
+		0095E55620C67EAE00E847BB /* GothamRounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0095E55220C6795000E847BB /* GothamRounded-Light.otf */; };
+		0095E55720C67EAE00E847BB /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0095E55320C6795100E847BB /* GothamRounded-Medium.otf */; };
 		009B3A1420AD504000FA9BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1320AD504000FA9BC3 /* AppDelegate.swift */; };
 		009B3A1620AD504000FA9BC3 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1520AD504000FA9BC3 /* NameViewController.swift */; };
 		009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1720AD504000FA9BC3 /* Main.storyboard */; };
@@ -183,12 +189,6 @@
 		009B3A3420AD505000FA9BC3 /* Kids_ARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A3320AD505000FA9BC3 /* Kids_ARUITests.swift */; };
 		009B3A4620AD5FE600FA9BC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A4520AD5FE600FA9BC3 /* Constants.swift */; };
 		009B3A5620AD65C600FA9BC3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009B3A5520AD65C500FA9BC3 /* QuartzCore.framework */; };
-		009B3A5920AD6EFE00FA9BC3 /* COMIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4920AD60F300FA9BC3 /* COMIC.TTF */; };
-		009B3A5A20AD6F0500FA9BC3 /* comici.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4A20AD60F300FA9BC3 /* comici.ttf */; };
-		009B3A5B20AD6F0500FA9BC3 /* ComicSansMS3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4B20AD60F400FA9BC3 /* ComicSansMS3.ttf */; };
-		009B3A5C20AD6F0500FA9BC3 /* comicz.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4C20AD60F400FA9BC3 /* comicz.ttf */; };
-		009B3A5D20AD6F0500FA9BC3 /* design.graffiti.comicsansms.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4D20AD60F500FA9BC3 /* design.graffiti.comicsansms.ttf */; };
-		009B3A5E20AD6F0500FA9BC3 /* design.graffiti.comicsansmsgras.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A4820AD60F100FA9BC3 /* design.graffiti.comicsansmsgras.ttf */; };
 		009B3A6020ADA54200FA9BC3 /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */; };
 		009B3A6420ADBA2B00FA9BC3 /* tableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A6320ADBA2B00FA9BC3 /* tableCell.swift */; };
 		00B74E7F20B7FCA800EBF380 /* Rechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B74E7E20B7FCA800EBF380 /* Rechability.swift */; };
@@ -860,6 +860,12 @@
 		007C93A220B2F94C00019114 /* CRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRViewController.m; sourceTree = "<group>"; };
 		007C93A320B2F94C00019114 /* CRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRViewController.h; sourceTree = "<group>"; };
 		008ADF1E20B0033E00E7A642 /* helpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpViewController.swift; sourceTree = "<group>"; };
+		0095E54820C6668D00E847BB /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		0095E54D20C6726000E847BB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0095E55020C6794C00E847BB /* GothamRounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Bold.otf"; sourceTree = "<group>"; };
+		0095E55120C6794F00E847BB /* GothamRounded-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Book.otf"; sourceTree = "<group>"; };
+		0095E55220C6795000E847BB /* GothamRounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Light.otf"; sourceTree = "<group>"; };
+		0095E55320C6795100E847BB /* GothamRounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Medium.otf"; sourceTree = "<group>"; };
 		009B3A1020AD504000FA9BC3 /* Kids_AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kids_AR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009B3A1320AD504000FA9BC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		009B3A1520AD504000FA9BC3 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
@@ -874,12 +880,6 @@
 		009B3A3320AD505000FA9BC3 /* Kids_ARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids_ARUITests.swift; sourceTree = "<group>"; };
 		009B3A3520AD505000FA9BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		009B3A4520AD5FE600FA9BC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		009B3A4820AD60F100FA9BC3 /* design.graffiti.comicsansmsgras.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = design.graffiti.comicsansmsgras.ttf; sourceTree = "<group>"; };
-		009B3A4920AD60F300FA9BC3 /* COMIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = COMIC.TTF; sourceTree = "<group>"; };
-		009B3A4A20AD60F300FA9BC3 /* comici.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comici.ttf; sourceTree = "<group>"; };
-		009B3A4B20AD60F400FA9BC3 /* ComicSansMS3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComicSansMS3.ttf; sourceTree = "<group>"; };
-		009B3A4C20AD60F400FA9BC3 /* comicz.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comicz.ttf; sourceTree = "<group>"; };
-		009B3A4D20AD60F500FA9BC3 /* design.graffiti.comicsansms.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = design.graffiti.comicsansms.ttf; sourceTree = "<group>"; };
 		009B3A5520AD65C500FA9BC3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
 		009B3A6320ADBA2B00FA9BC3 /* tableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableCell.swift; sourceTree = "<group>"; };
@@ -900,6 +900,7 @@
 				007AA14B20C264F100DB7112 /* MobileCoreServices.framework in Frameworks */,
 				007AA14920C264CE00DB7112 /* CoreMotion.framework in Frameworks */,
 				007AA14720C264A500DB7112 /* Photos.framework in Frameworks */,
+				0095E54E20C6726000E847BB /* StoreKit.framework in Frameworks */,
 				007AA14520C2646400DB7112 /* CoreLocation.framework in Frameworks */,
 				007AA14320C2641200DB7112 /* MediaPlayer.framework in Frameworks */,
 				007AA14120C262EB00DB7112 /* MediaToolbox.framework in Frameworks */,
@@ -2283,6 +2284,25 @@
 			path = PageViewController;
 			sourceTree = "<group>";
 		};
+		0095E54620C6667C00E847BB /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				0095E54820C6668D00E847BB /* IAPHelper.swift */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
+		0095E54F20C6793C00E847BB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0095E55020C6794C00E847BB /* GothamRounded-Bold.otf */,
+				0095E55120C6794F00E847BB /* GothamRounded-Book.otf */,
+				0095E55220C6795000E847BB /* GothamRounded-Light.otf */,
+				0095E55320C6795100E847BB /* GothamRounded-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		009B3A0720AD504000FA9BC3 = {
 			isa = PBXGroup;
 			children = (
@@ -2307,6 +2327,7 @@
 		009B3A1220AD504000FA9BC3 /* Kids_AR */ = {
 			isa = PBXGroup;
 			children = (
+				0095E54620C6667C00E847BB /* Purchase */,
 				006DFE3920C51D84005CC585 /* kids.json */,
 				006413AA20C027E1000BEBC9 /* Unity */,
 				007C939720B2EAE400019114 /* PageViewController */,
@@ -2354,29 +2375,17 @@
 		009B3A4420AD5FC000FA9BC3 /* Additional Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0095E54F20C6793C00E847BB /* Fonts */,
 				00C5228D20B3EFC100C38255 /* SMTPLibrary */,
-				009B3A4720AD60D000FA9BC3 /* Fonts */,
 				009B3A4520AD5FE600FA9BC3 /* Constants.swift */,
 			);
 			path = "Additional Resources";
 			sourceTree = "<group>";
 		};
-		009B3A4720AD60D000FA9BC3 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				009B3A4920AD60F300FA9BC3 /* COMIC.TTF */,
-				009B3A4A20AD60F300FA9BC3 /* comici.ttf */,
-				009B3A4B20AD60F400FA9BC3 /* ComicSansMS3.ttf */,
-				009B3A4C20AD60F400FA9BC3 /* comicz.ttf */,
-				009B3A4D20AD60F500FA9BC3 /* design.graffiti.comicsansms.ttf */,
-				009B3A4820AD60F100FA9BC3 /* design.graffiti.comicsansmsgras.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		009B3A5420AD65C500FA9BC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0095E54D20C6726000E847BB /* StoreKit.framework */,
 				007AA14A20C264F000DB7112 /* MobileCoreServices.framework */,
 				007AA14820C264CD00DB7112 /* CoreMotion.framework */,
 				007AA14620C264A400DB7112 /* Photos.framework */,
@@ -2504,6 +2513,11 @@
 					009B3A0F20AD504000FA9BC3 = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					009B3A2320AD505000FA9BC3 = {
 						CreatedOnToolsVersion = 9.3;
@@ -2544,21 +2558,19 @@
 				0064173B20C034BD000BEBC9 /* rsync_exclude in Resources */,
 				0061170A20B57C52008E4FB4 /* privacyPolicy.html in Resources */,
 				007AA13920C2621C00DB7112 /* libil2cpp.icalls in Resources */,
+				0095E55620C67EAE00E847BB /* GothamRounded-Light.otf in Resources */,
 				007AA14F20C2653E00DB7112 /* appIcon.png in Resources */,
 				009B3A1E20AD504F00FA9BC3 /* LaunchScreen.storyboard in Resources */,
-				009B3A5920AD6EFE00FA9BC3 /* COMIC.TTF in Resources */,
 				006DFE3A20C51D84005CC585 /* kids.json in Resources */,
-				009B3A5E20AD6F0500FA9BC3 /* design.graffiti.comicsansmsgras.ttf in Resources */,
-				009B3A5C20AD6F0500FA9BC3 /* comicz.ttf in Resources */,
-				009B3A5A20AD6F0500FA9BC3 /* comici.ttf in Resources */,
 				009B3A1B20AD504F00FA9BC3 /* Assets.xcassets in Resources */,
 				0061170820B54EB1008E4FB4 /* slowbackgroundmusic.mp3 in Resources */,
 				007AA13820C2621C00DB7112 /* libil2cpp.def in Resources */,
+				0095E55420C67EA800E847BB /* GothamRounded-Bold.otf in Resources */,
 				007AA15420C2700700DB7112 /* UnityStoryboard.storyboard in Resources */,
-				009B3A5D20AD6F0500FA9BC3 /* design.graffiti.comicsansms.ttf in Resources */,
+				0095E55520C67EAE00E847BB /* GothamRounded-Book.otf in Resources */,
+				0095E55720C67EAE00E847BB /* GothamRounded-Medium.otf in Resources */,
 				007AA14E20C2653E00DB7112 /* background.jpg in Resources */,
 				009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */,
-				009B3A5B20AD6F0500FA9BC3 /* ComicSansMS3.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2667,6 +2679,7 @@
 				007AA0C120C2621B00DB7112 /* Bulk_Generics_4.cpp in Sources */,
 				007AA10920C2621B00DB7112 /* Il2CppInvokerTable.cpp in Sources */,
 				007AA0BB20C2621B00DB7112 /* Bulk_Assembly-CSharp_0.cpp in Sources */,
+				0095E54B20C6668D00E847BB /* IAPHelper.swift in Sources */,
 				007AA0F020C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_15Table.cpp in Sources */,
 				007AA11D20C2621B00DB7112 /* UnityView+tvOS.mm in Sources */,
 				006413B020C027F8000BEBC9 /* UnityUtils.mm in Sources */,
@@ -2962,8 +2975,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.kidsar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f2eb06d7-55c5-4e69-89e7-87d152e5996f";
-				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development";
+				PROVISIONING_PROFILE = "52a3fe02-3c26-45bc-a8fa-f9efbe2b7f53";
+				PROVISIONING_PROFILE_SPECIFIER = "kids ar development provisioning profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "Kids_AR/PageViewController/Kids AR-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -2976,6 +2989,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
 				INFOPLIST_FILE = "$(SRCROOT)/Kids_AR/Info.plist";
@@ -2991,8 +3005,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.kidsar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f2eb06d7-55c5-4e69-89e7-87d152e5996f";
-				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development";
+				PROVISIONING_PROFILE = "a28b2143-2107-4397-8c7f-e109c980f220";
+				PROVISIONING_PROFILE_SPECIFIER = "kids ar distribution provisioning profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "Kids_AR/PageViewController/Kids AR-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

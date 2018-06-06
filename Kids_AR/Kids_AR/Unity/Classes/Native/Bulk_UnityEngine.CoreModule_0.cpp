@@ -459,6 +459,8 @@ struct IRenderPipeline_t857809005;
 struct IRenderPipelineAsset_t3275513850;
 // UnityEngine.Experimental.Rendering.SupportedRenderingFeatures
 struct SupportedRenderingFeatures_t353898663;
+// UnityEngine.GameObject[]
+struct GameObjectU5BU5D_t3328599146;
 // UnityEngine.Gradient
 struct Gradient_t3067099924;
 // UnityEngine.GUIElement
@@ -1392,6 +1394,7 @@ struct DisplayU5BU5D_t103034768;
 struct ParameterInfoU5BU5D_t390618515;
 struct ParameterModifierU5BU5D_t2943407543;
 struct PlayerLoopSystemU5BU5D_t1150299252;
+struct GameObjectU5BU5D_t3328599146;
 struct SphericalHarmonicsL2U5BU5D_t1321365442;
 struct Vector3U5BU5D_t1718750761;
 struct ByteU5BU5D_t4116647657;
@@ -17971,6 +17974,43 @@ public:
 		m_Items[index] = value;
 	}
 };
+// UnityEngine.GameObject[]
+struct GameObjectU5BU5D_t3328599146  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) GameObject_t1113636619 * m_Items[1];
+
+public:
+	inline GameObject_t1113636619 * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline GameObject_t1113636619 ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, GameObject_t1113636619 * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline GameObject_t1113636619 * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline GameObject_t1113636619 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, GameObject_t1113636619 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
 // UnityEngine.Rendering.SphericalHarmonicsL2[]
 struct SphericalHarmonicsL2U5BU5D_t1321365442  : public RuntimeArray
 {
@@ -29776,6 +29816,16 @@ extern "C"  String_t* GameObject_get_tag_m3951609671 (GameObject_t1113636619 * _
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (GameObject_get_tag_m3951609671_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::get_tag()");
 	String_t* retVal = _il2cpp_icall_func(__this);
+	return retVal;
+}
+// UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
+extern "C"  GameObjectU5BU5D_t3328599146* GameObject_FindGameObjectsWithTag_m2585173894 (RuntimeObject * __this /* static, unused */, String_t* ___tag0, const RuntimeMethod* method)
+{
+	typedef GameObjectU5BU5D_t3328599146* (*GameObject_FindGameObjectsWithTag_m2585173894_ftn) (String_t*);
+	static GameObject_FindGameObjectsWithTag_m2585173894_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameObject_FindGameObjectsWithTag_m2585173894_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::FindGameObjectsWithTag(System.String)");
+	GameObjectU5BU5D_t3328599146* retVal = _il2cpp_icall_func(___tag0);
 	return retVal;
 }
 // System.Void UnityEngine.GameObject::SendMessage(System.String,System.Object,UnityEngine.SendMessageOptions)

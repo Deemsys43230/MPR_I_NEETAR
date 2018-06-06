@@ -354,7 +354,7 @@
       {
         "modelId": "com.deemsysinc.kidsar.basicmodels",
         "modelName": "EGG FRUIT",
-        "modelImage": "dragonfruit",
+        "modelImage": "eggfruit",
         "audioName": "audio_fruit"
       },
       {
@@ -372,13 +372,13 @@
       {
         "modelId": "com.deemsysinc.kidsar.basicmodels",
         "modelName": "HONEYDEW MELON",
-        "modelImage": "grapes",
+        "modelImage": "honeydewmelon",
         "audioName": "audio_honeydrewmelon"
       },
       {
         "modelId": "com.deemsysinc.kidsar.basicmodels",
         "modelName": "IVY FRUIT",
-        "modelImage": "grapes",
+        "modelImage": "ivyfruit",
         "audioName": "audio_ivyfruit"
       },
       {
@@ -408,7 +408,7 @@
       {
         "modelId": "com.deemsysinc.kidsar.basicmodels",
         "modelName": "NECTARINE",
-        "modelImage": "mango",
+        "modelImage": "nectarine",
         "audioName": "audio_nectarine"
       },
       {
@@ -426,7 +426,7 @@
       {
         "modelId": "com.deemsysinc.kidsar.basicmodels",
         "modelName": "QUINCE",
-        "modelImage": "papaya",
+        "modelImage": "quince",
         "audioName": "audio_quince"
       },
       {
@@ -450,13 +450,13 @@
       {
         "modelId": "com.deemsysinc.kidsar.basicmodels",
         "modelName": "UGNI",
-        "modelImage": "tomato",
+        "modelImage": "ugni",
         "audioName": "audio_ugni"
       },
       {
         "modelId": "com.deemsysinc.kidsar.basicmodels",
         "modelName": "VELVET BEAN",
-        "modelImage": "tomato",
+        "modelImage": "velvetbean",
         "audioName": "audio_velvetbean"
       },
       {
@@ -468,19 +468,19 @@
       {
         "modelId": "com.deemsysinc.kidsar.basicmodels",
         "modelName": "XIMENIA",
-        "modelImage": "watermelon",
+        "modelImage": "ximenia",
         "audioName": "audio_ximenia"
       },
       {
         "modelId": "com.deemsysinc.kidsar.basicmodels",
         "modelName": "YAM",
-        "modelImage": "watermelon",
+        "modelImage": "yam",
         "audioName": "audio_yam"
       },
       {
         "modelId": "com.deemsysinc.kidsar.basicmodels",
         "modelName": "ZUCCHINI",
-        "modelImage": "watermelon",
+        "modelImage": "zucchini",
         "audioName": "audio_zucchini"
       }
     ]

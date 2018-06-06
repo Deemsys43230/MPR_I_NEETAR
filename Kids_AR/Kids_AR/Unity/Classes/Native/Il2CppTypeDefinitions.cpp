@@ -161,6 +161,7 @@ extern const Il2CppType Link_t1520180815_0_0_0;
 extern const Il2CppType Camera_t4157153871_0_0_0;
 extern const Il2CppType Display_t1387065949_0_0_0;
 extern const Il2CppType GameObject_GetComponents_m416107012_gp_0_0_0_0;
+extern const Il2CppType GameObject_t1113636619_0_0_0;
 extern const Il2CppType SphericalHarmonicsL2_t3220866195_0_0_0;
 extern const Il2CppType Keyframe_t4206410242_0_0_0;
 extern const Il2CppType Object_t631007953_0_0_0;
@@ -192,7 +193,6 @@ extern const Il2CppType ContactPoint_t3758755253_0_0_0;
 extern const Il2CppType ContentType_t1787303396_0_0_0;
 extern const Il2CppType UIVertex_t4057497605_0_0_0;
 extern const Il2CppType IndexedSet_1_t2120020791_gp_0_0_0_0;
-extern const Il2CppType GameObject_t1113636619_0_0_0;
 extern const Il2CppType ARReferenceImage_t2463148469_0_0_0;
 extern const Il2CppType UnityARSessionRunOption_t942967030_0_0_0;
 extern const Il2CppType UnityARAlignment_t3792119710_0_0_0;
@@ -383,6 +383,7 @@ extern const Il2CppGenericInst GenInst_Behaviour_t1437897464_0_0_0;
 extern const Il2CppGenericInst GenInst_Component_t1923634451_0_0_0;
 extern const Il2CppGenericInst GenInst_Object_t631007953_0_0_0;
 extern const Il2CppGenericInst GenInst_Display_t1387065949_0_0_0;
+extern const Il2CppGenericInst GenInst_GameObject_t1113636619_0_0_0;
 extern const Il2CppGenericInst GenInst_SphericalHarmonicsL2_t3220866195_0_0_0;
 extern const Il2CppGenericInst GenInst_Keyframe_t4206410242_0_0_0;
 extern const Il2CppGenericInst GenInst_Color32_t2600501292_0_0_0;
@@ -501,7 +502,6 @@ extern const Il2CppGenericInst GenInst_IMoveHandler_t933334182_0_0_0;
 extern const Il2CppGenericInst GenInst_ISubmitHandler_t2790798304_0_0_0;
 extern const Il2CppGenericInst GenInst_ICancelHandler_t3974364820_0_0_0;
 extern const Il2CppGenericInst GenInst_Transform_t3600365921_0_0_0;
-extern const Il2CppGenericInst GenInst_GameObject_t1113636619_0_0_0;
 extern const Il2CppGenericInst GenInst_BaseInput_t3630163547_0_0_0;
 extern const Il2CppGenericInst GenInst_Int32_t2950945753_0_0_0_PointerEventData_t3807901092_0_0_0;
 extern const Il2CppGenericInst GenInst_PointerEventData_t3807901092_0_0_0;
@@ -4384,6 +4384,28 @@ extern const RuntimeType IEnumerable_1_t366918838_0_0_0 = { &IEnumerable_1_t3669
 Il2CppGenericClass CastHelper_1_t2613165452_GenericClass = { 1382, { &GenInst_RuntimeObject_0_0_0, NULL }, NULL };
 extern const RuntimeType CastHelper_1_t2613165452_0_0_0 = { &CastHelper_1_t2613165452_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 
+Il2CppGenericClass IEnumerator_1_t1546207087_GenericClass = { 25, { &GenInst_GameObject_t1113636619_0_0_0, NULL }, NULL };
+extern const RuntimeType IEnumerator_1_t1546207087_0_0_0 = { &IEnumerator_1_t1546207087_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+extern const RuntimeType GameObject_t1113636619_0_0_0 = { (void*)1306, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType GameObject_t1113636619_1_0_0 = { (void*)1306, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const RuntimeType GameObject_t1113636619_0_0_6 = { (void*)1306, 6, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType GameObject_t1113636619_0_0_1 = { (void*)1306, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType GameObject_t1113636619_0_0_4112 = { (void*)1306, 4112, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType GameObject_t1113636619_0_0_17 = { (void*)1306, 17, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+
+Il2CppGenericClass InternalEnumerator_1_t2020700736_GenericClass = { 41, { &GenInst_GameObject_t1113636619_0_0_0, NULL }, NULL };
+extern const RuntimeType InternalEnumerator_1_t2020700736_0_0_0 = { &InternalEnumerator_1_t2020700736_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass IList_1_t2928956402_GenericClass = { 48, { &GenInst_GameObject_t1113636619_0_0_0, NULL }, NULL };
+extern const RuntimeType IList_1_t2928956402_0_0_0 = { &IList_1_t2928956402_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass ICollection_1_t3941788853_GenericClass = { 49, { &GenInst_GameObject_t1113636619_0_0_0, NULL }, NULL };
+extern const RuntimeType ICollection_1_t3941788853_0_0_0 = { &ICollection_1_t3941788853_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass IEnumerable_1_t93489508_GenericClass = { 29, { &GenInst_GameObject_t1113636619_0_0_0, NULL }, NULL };
+extern const RuntimeType IEnumerable_1_t93489508_0_0_0 = { &IEnumerable_1_t93489508_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
 Il2CppGenericClass IEnumerator_1_t3653436663_GenericClass = { 25, { &GenInst_SphericalHarmonicsL2_t3220866195_0_0_0, NULL }, NULL };
 extern const RuntimeType IEnumerator_1_t3653436663_0_0_0 = { &IEnumerator_1_t3653436663_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 
@@ -6809,28 +6831,6 @@ Il2CppGenericClass List_1_t2585711361_GenericClass = { 174, { &GenInst_GameObjec
 extern const RuntimeType List_1_t2585711361_0_0_0 = { &List_1_t2585711361_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 extern const RuntimeType List_1_t2585711361_0_0_6 = { &List_1_t2585711361_GenericClass, 6, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 extern const RuntimeType List_1_t2585711361_0_0_1 = { &List_1_t2585711361_GenericClass, 1, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
-
-extern const RuntimeType GameObject_t1113636619_0_0_0 = { (void*)1306, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType GameObject_t1113636619_1_0_0 = { (void*)1306, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-extern const RuntimeType GameObject_t1113636619_0_0_6 = { (void*)1306, 6, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType GameObject_t1113636619_0_0_1 = { (void*)1306, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType GameObject_t1113636619_0_0_4112 = { (void*)1306, 4112, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType GameObject_t1113636619_0_0_17 = { (void*)1306, 17, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-
-Il2CppGenericClass IEnumerator_1_t1546207087_GenericClass = { 25, { &GenInst_GameObject_t1113636619_0_0_0, NULL }, NULL };
-extern const RuntimeType IEnumerator_1_t1546207087_0_0_0 = { &IEnumerator_1_t1546207087_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
-
-Il2CppGenericClass InternalEnumerator_1_t2020700736_GenericClass = { 41, { &GenInst_GameObject_t1113636619_0_0_0, NULL }, NULL };
-extern const RuntimeType InternalEnumerator_1_t2020700736_0_0_0 = { &InternalEnumerator_1_t2020700736_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
-
-Il2CppGenericClass IList_1_t2928956402_GenericClass = { 48, { &GenInst_GameObject_t1113636619_0_0_0, NULL }, NULL };
-extern const RuntimeType IList_1_t2928956402_0_0_0 = { &IList_1_t2928956402_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
-
-Il2CppGenericClass ICollection_1_t3941788853_GenericClass = { 49, { &GenInst_GameObject_t1113636619_0_0_0, NULL }, NULL };
-extern const RuntimeType ICollection_1_t3941788853_0_0_0 = { &ICollection_1_t3941788853_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
-
-Il2CppGenericClass IEnumerable_1_t93489508_GenericClass = { 29, { &GenInst_GameObject_t1113636619_0_0_0, NULL }, NULL };
-extern const RuntimeType IEnumerable_1_t93489508_0_0_0 = { &IEnumerable_1_t93489508_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 
 Il2CppGenericClass ReadOnlyCollection_1_t2326212906_GenericClass = { 177, { &GenInst_GameObject_t1113636619_0_0_0, NULL }, NULL };
 extern const RuntimeType ReadOnlyCollection_1_t2326212906_0_0_0 = { &ReadOnlyCollection_1_t2326212906_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
@@ -15408,6 +15408,10 @@ extern const RuntimeType List_1_t320604525_0_0_0 = { &List_1_t320604525_GenericC
 
 extern const RuntimeType GameObject_GetComponentsInParent_m823960623_gp_0_0_0_0 = { (void*)154, 0, IL2CPP_TYPE_MVAR, 0, 0, 0 };
 
+extern const RuntimeType GameObjectU5BU5D_t3328599146_0_0_0 = { (void*)&GameObject_t1113636619_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
+extern const RuntimeType GameObjectU5BU5D_t3328599146_0_0_3 = { (void*)&GameObject_t1113636619_0_0_0, 3, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
+extern const RuntimeType GameObjectU5BU5D_t3328599146_0_0_6 = { (void*)&GameObject_t1113636619_0_0_0, 6, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
+
 extern const RuntimeType SendMessageOptions_t3580193095_0_0_0 = { (void*)1373, 0, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
 extern const RuntimeType SendMessageOptions_t3580193095_1_0_0 = { (void*)1373, 0, IL2CPP_TYPE_VALUETYPE, 0, 1, 0 };
 extern const RuntimeType SendMessageOptions_t3580193095_0_0_32854 = { (void*)1373, 32854, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
@@ -18023,8 +18027,6 @@ extern const RuntimeType ColorLabel_t2272707290_1_0_0 = { (void*)2141, 0, IL2CPP
 extern const RuntimeType ColorPresets_t2117877396_0_0_0 = { (void*)2143, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const RuntimeType ColorPresets_t2117877396_1_0_0 = { (void*)2143, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const RuntimeType GameObjectU5BU5D_t3328599146_0_0_6 = { (void*)&GameObject_t1113636619_0_0_0, 6, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-
 extern const RuntimeType ColorSlider_t2624382019_0_0_0 = { (void*)2144, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const RuntimeType ColorSlider_t2624382019_1_0_0 = { (void*)2144, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
@@ -18406,7 +18408,7 @@ extern const RuntimeType TimeSpanU5BU5D_t4291357516_0_0_0 = { (void*)&TimeSpan_t
 extern const RuntimeType TypeTagU5BU5D_t1563918664_0_0_0 = { (void*)&TypeTag_t3541821701_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
 
 extern const RuntimeType ITrackingHandlerU5BU5D_t3758023570_0_0_0 = { (void*)&ITrackingHandler_t1244553475_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const RuntimeType* const  g_Il2CppTypeTable[9618] = 
+extern const RuntimeType* const  g_Il2CppTypeTable[9620] = 
 {
 	&IEnumerator_1_t3512676632_0_0_0,
 	&RuntimeObject_0_0_0,
@@ -19517,6 +19519,12 @@ extern const RuntimeType* const  g_Il2CppTypeTable[9618] =
 	&ICollection_1_t4215218183_0_0_0,
 	&IEnumerable_1_t366918838_0_0_0,
 	&CastHelper_1_t2613165452_0_0_0,
+	&IEnumerator_1_t1546207087_0_0_0,
+	&GameObject_t1113636619_0_0_0,
+	&InternalEnumerator_1_t2020700736_0_0_0,
+	&IList_1_t2928956402_0_0_0,
+	&ICollection_1_t3941788853_0_0_0,
+	&IEnumerable_1_t93489508_0_0_0,
 	&IEnumerator_1_t3653436663_0_0_0,
 	&SphericalHarmonicsL2_t3220866195_0_0_0,
 	&InternalEnumerator_1_t4127930312_0_0_0,
@@ -20261,12 +20269,6 @@ extern const RuntimeType* const  g_Il2CppTypeTable[9618] =
 	&Enumerator_t2666717244_0_0_0,
 	&Comparison_1_t3375297100_0_0_0,
 	&List_1_t2585711361_0_0_0,
-	&GameObject_t1113636619_0_0_0,
-	&IEnumerator_1_t1546207087_0_0_0,
-	&InternalEnumerator_1_t2020700736_0_0_0,
-	&IList_1_t2928956402_0_0_0,
-	&ICollection_1_t3941788853_0_0_0,
-	&IEnumerable_1_t93489508_0_0_0,
 	&ReadOnlyCollection_1_t2326212906_0_0_0,
 	&Predicate_1_t1938930743_0_0_0,
 	&Enumerator_t179987942_0_0_0,
@@ -25274,6 +25276,7 @@ extern const RuntimeType* const  g_Il2CppTypeTable[9618] =
 	&GameObject_GetComponentsInChildren_m740063143_gp_0_0_0_0,
 	&List_1_t320604525_0_0_0,
 	&GameObject_GetComponentsInParent_m823960623_gp_0_0_0_0,
+	&GameObjectU5BU5D_t3328599146_0_0_0,
 	&SendMessageOptions_t3580193095_0_0_0,
 	&GameObject_AddComponent_m3361319759_gp_0_0_0_0,
 	&Gradient_t3067099924_0_0_0,
@@ -27477,6 +27480,7 @@ extern const RuntimeType* const  g_Il2CppTypeTable[9618] =
 	&AudioClip_t3680889665_0_0_1,
 	&U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444_0_0_0,
 	&U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444_1_0_0,
+	&GameObjectU5BU5D_t3328599146_0_0_3,
 	&ObjectPlacerAnimals_t560344624_0_0_0,
 	&ObjectPlacerAnimals_t560344624_1_0_0,
 	&U3CTakeScreenshotAndSaveU3Ec__Iterator0_t808000212_0_0_0,

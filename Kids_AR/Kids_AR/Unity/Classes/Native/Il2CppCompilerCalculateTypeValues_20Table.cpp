@@ -28,6 +28,8 @@ struct Texture2D_t3840446185;
 struct LeanFinger_t3506292858;
 // UnityEngine.LineRenderer
 struct LineRenderer_t3154350270;
+// UnityEngine.GameObject[]
+struct GameObjectU5BU5D_t3328599146;
 // System.Func`2<UnityEngine.UI.ILayoutElement,System.Single>
 struct Func_2_t235587086;
 // UnityEngine.Events.InvokableCallList
@@ -467,12 +469,18 @@ struct  U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444  : public RuntimeObj
 public:
 	// UnityEngine.Texture2D UnityEngine.XR.iOS.ObjectPlacerAlphabet/<TakeScreenshotAndSave>c__Iterator0::<ss>__0
 	Texture2D_t3840446185 * ___U3CssU3E__0_0;
+	// UnityEngine.GameObject[] UnityEngine.XR.iOS.ObjectPlacerAlphabet/<TakeScreenshotAndSave>c__Iterator0::<renderDisabled>__0
+	GameObjectU5BU5D_t3328599146* ___U3CrenderDisabledU3E__0_1;
+	// UnityEngine.GameObject[] UnityEngine.XR.iOS.ObjectPlacerAlphabet/<TakeScreenshotAndSave>c__Iterator0::$locvar0
+	GameObjectU5BU5D_t3328599146* ___U24locvar0_2;
+	// System.Int32 UnityEngine.XR.iOS.ObjectPlacerAlphabet/<TakeScreenshotAndSave>c__Iterator0::$locvar1
+	int32_t ___U24locvar1_3;
 	// System.Object UnityEngine.XR.iOS.ObjectPlacerAlphabet/<TakeScreenshotAndSave>c__Iterator0::$current
-	RuntimeObject * ___U24current_1;
+	RuntimeObject * ___U24current_4;
 	// System.Boolean UnityEngine.XR.iOS.ObjectPlacerAlphabet/<TakeScreenshotAndSave>c__Iterator0::$disposing
-	bool ___U24disposing_2;
+	bool ___U24disposing_5;
 	// System.Int32 UnityEngine.XR.iOS.ObjectPlacerAlphabet/<TakeScreenshotAndSave>c__Iterator0::$PC
-	int32_t ___U24PC_3;
+	int32_t ___U24PC_6;
 
 public:
 	inline static int32_t get_offset_of_U3CssU3E__0_0() { return static_cast<int32_t>(offsetof(U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444, ___U3CssU3E__0_0)); }
@@ -484,29 +492,55 @@ public:
 		Il2CppCodeGenWriteBarrier((&___U3CssU3E__0_0), value);
 	}
 
-	inline static int32_t get_offset_of_U24current_1() { return static_cast<int32_t>(offsetof(U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444, ___U24current_1)); }
-	inline RuntimeObject * get_U24current_1() const { return ___U24current_1; }
-	inline RuntimeObject ** get_address_of_U24current_1() { return &___U24current_1; }
-	inline void set_U24current_1(RuntimeObject * value)
+	inline static int32_t get_offset_of_U3CrenderDisabledU3E__0_1() { return static_cast<int32_t>(offsetof(U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444, ___U3CrenderDisabledU3E__0_1)); }
+	inline GameObjectU5BU5D_t3328599146* get_U3CrenderDisabledU3E__0_1() const { return ___U3CrenderDisabledU3E__0_1; }
+	inline GameObjectU5BU5D_t3328599146** get_address_of_U3CrenderDisabledU3E__0_1() { return &___U3CrenderDisabledU3E__0_1; }
+	inline void set_U3CrenderDisabledU3E__0_1(GameObjectU5BU5D_t3328599146* value)
 	{
-		___U24current_1 = value;
-		Il2CppCodeGenWriteBarrier((&___U24current_1), value);
+		___U3CrenderDisabledU3E__0_1 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CrenderDisabledU3E__0_1), value);
 	}
 
-	inline static int32_t get_offset_of_U24disposing_2() { return static_cast<int32_t>(offsetof(U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444, ___U24disposing_2)); }
-	inline bool get_U24disposing_2() const { return ___U24disposing_2; }
-	inline bool* get_address_of_U24disposing_2() { return &___U24disposing_2; }
-	inline void set_U24disposing_2(bool value)
+	inline static int32_t get_offset_of_U24locvar0_2() { return static_cast<int32_t>(offsetof(U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444, ___U24locvar0_2)); }
+	inline GameObjectU5BU5D_t3328599146* get_U24locvar0_2() const { return ___U24locvar0_2; }
+	inline GameObjectU5BU5D_t3328599146** get_address_of_U24locvar0_2() { return &___U24locvar0_2; }
+	inline void set_U24locvar0_2(GameObjectU5BU5D_t3328599146* value)
 	{
-		___U24disposing_2 = value;
+		___U24locvar0_2 = value;
+		Il2CppCodeGenWriteBarrier((&___U24locvar0_2), value);
 	}
 
-	inline static int32_t get_offset_of_U24PC_3() { return static_cast<int32_t>(offsetof(U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444, ___U24PC_3)); }
-	inline int32_t get_U24PC_3() const { return ___U24PC_3; }
-	inline int32_t* get_address_of_U24PC_3() { return &___U24PC_3; }
-	inline void set_U24PC_3(int32_t value)
+	inline static int32_t get_offset_of_U24locvar1_3() { return static_cast<int32_t>(offsetof(U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444, ___U24locvar1_3)); }
+	inline int32_t get_U24locvar1_3() const { return ___U24locvar1_3; }
+	inline int32_t* get_address_of_U24locvar1_3() { return &___U24locvar1_3; }
+	inline void set_U24locvar1_3(int32_t value)
 	{
-		___U24PC_3 = value;
+		___U24locvar1_3 = value;
+	}
+
+	inline static int32_t get_offset_of_U24current_4() { return static_cast<int32_t>(offsetof(U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444, ___U24current_4)); }
+	inline RuntimeObject * get_U24current_4() const { return ___U24current_4; }
+	inline RuntimeObject ** get_address_of_U24current_4() { return &___U24current_4; }
+	inline void set_U24current_4(RuntimeObject * value)
+	{
+		___U24current_4 = value;
+		Il2CppCodeGenWriteBarrier((&___U24current_4), value);
+	}
+
+	inline static int32_t get_offset_of_U24disposing_5() { return static_cast<int32_t>(offsetof(U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444, ___U24disposing_5)); }
+	inline bool get_U24disposing_5() const { return ___U24disposing_5; }
+	inline bool* get_address_of_U24disposing_5() { return &___U24disposing_5; }
+	inline void set_U24disposing_5(bool value)
+	{
+		___U24disposing_5 = value;
+	}
+
+	inline static int32_t get_offset_of_U24PC_6() { return static_cast<int32_t>(offsetof(U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444, ___U24PC_6)); }
+	inline int32_t get_U24PC_6() const { return ___U24PC_6; }
+	inline int32_t* get_address_of_U24PC_6() { return &___U24PC_6; }
+	inline void set_U24PC_6(int32_t value)
+	{
+		___U24PC_6 = value;
 	}
 };
 
@@ -7610,12 +7644,15 @@ extern const int32_t g_FieldOffsetTable2091[14] =
 	ObjectPlacerAlphabet_t987340441::get_offset_of_startFingerPos_15(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2092 = { sizeof (U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable2092[4] = 
+extern const int32_t g_FieldOffsetTable2092[7] = 
 {
 	U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444::get_offset_of_U3CssU3E__0_0(),
-	U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444::get_offset_of_U24current_1(),
-	U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444::get_offset_of_U24disposing_2(),
-	U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444::get_offset_of_U24PC_3(),
+	U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444::get_offset_of_U3CrenderDisabledU3E__0_1(),
+	U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444::get_offset_of_U24locvar0_2(),
+	U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444::get_offset_of_U24locvar1_3(),
+	U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444::get_offset_of_U24current_4(),
+	U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444::get_offset_of_U24disposing_5(),
+	U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444::get_offset_of_U24PC_6(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2093 = { sizeof (ObjectPlacerAnimals_t560344624), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable2093[14] = 

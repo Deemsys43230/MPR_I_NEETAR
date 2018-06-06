@@ -15,8 +15,10 @@ class Constants {
     
     //    MARK: - Fonts
     enum FontName: String {
-        case Bold = "ComicSansMS-Bold"
-        case Regular = "ComicSansMS"
+        case Bold = "GothamRounded-Bold"
+        case Regular = "GothamRounded-Book"
+        case Medium = "GothamRounded-Medium"
+        case Light = "GothamRounded-Light"
 //        case Bold = "GillSans-Bold"
 //        case BoldItalic = "GillSans-BoldItalic"
 //        case SemiBold = "GillSans-SemiBold"

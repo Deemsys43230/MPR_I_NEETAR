@@ -8224,6 +8224,7 @@ extern "C" void GameObject_SetActive_m796801857 ();
 extern "C" void GameObject_get_activeSelf_m1767405923 ();
 extern "C" void GameObject_get_activeInHierarchy_m2006396688 ();
 extern "C" void GameObject_get_tag_m3951609671 ();
+extern "C" void GameObject_FindGameObjectsWithTag_m2585173894 ();
 extern "C" void GameObject_SendMessage_m3720186693 ();
 extern "C" void GameObject_Internal_AddComponentWithType_m3797731663 ();
 extern "C" void GameObject_AddComponent_m136524825 ();
@@ -11929,8 +11930,10 @@ extern "C" void MarshalDirectionalLightEstimate_get_SphericalHarmonicCoefficient
 extern "C" void MarshalDirectionalLightEstimate_MarshalCoefficients_m3384462505_AdjustorThunk ();
 extern "C" void MarshalDirectionalLightEstimate_RotateForUnity_m1468552020_AdjustorThunk ();
 extern "C" void ObjectPlacerAlphabet__ctor_m4236843311 ();
+extern "C" void ObjectPlacerAlphabet__rp_UnityObjectPlaced_m2037501362 ();
 extern "C" void ObjectPlacerAlphabet_clearScene_m4092690208 ();
 extern "C" void ObjectPlacerAlphabet_restartMentionedScene_m288415601 ();
+extern "C" void ObjectPlacerAlphabet_postObjectStatus_m3610060007 ();
 extern "C" void ObjectPlacerAlphabet_loadAlphabet_m4264474965 ();
 extern "C" void ObjectPlacerAlphabet_chooseModel_m3114186432 ();
 extern "C" void ObjectPlacerAlphabet_captureScreen_m712754694 ();
@@ -11947,8 +11950,10 @@ extern "C" void U3CTakeScreenshotAndSaveU3Ec__Iterator0_System_Collections_IEnum
 extern "C" void U3CTakeScreenshotAndSaveU3Ec__Iterator0_Dispose_m317466848 ();
 extern "C" void U3CTakeScreenshotAndSaveU3Ec__Iterator0_Reset_m681126698 ();
 extern "C" void ObjectPlacerAnimals__ctor_m1678178496 ();
+extern "C" void ObjectPlacerAnimals__rp_UnityObjectPlaced_m3937459018 ();
 extern "C" void ObjectPlacerAnimals_clearScene_m1463859119 ();
 extern "C" void ObjectPlacerAnimals_restartMentionedScene_m1918883689 ();
+extern "C" void ObjectPlacerAnimals_postObjectStatus_m1386923332 ();
 extern "C" void ObjectPlacerAnimals_loadAlphabet_m4144843263 ();
 extern "C" void ObjectPlacerAnimals_chooseModel_m3209889911 ();
 extern "C" void ObjectPlacerAnimals_captureScreen_m1636088288 ();
@@ -11965,8 +11970,10 @@ extern "C" void U3CTakeScreenshotAndSaveU3Ec__Iterator0_System_Collections_IEnum
 extern "C" void U3CTakeScreenshotAndSaveU3Ec__Iterator0_Dispose_m4045266497 ();
 extern "C" void U3CTakeScreenshotAndSaveU3Ec__Iterator0_Reset_m3989207796 ();
 extern "C" void ObjectPlacerFruits__ctor_m327008083 ();
+extern "C" void ObjectPlacerFruits__rp_UnityObjectPlaced_m1307113282 ();
 extern "C" void ObjectPlacerFruits_clearScene_m2866353215 ();
 extern "C" void ObjectPlacerFruits_restartMentionedScene_m2439122886 ();
+extern "C" void ObjectPlacerFruits_postObjectStatus_m2626895925 ();
 extern "C" void ObjectPlacerFruits_loadAlphabet_m2547457502 ();
 extern "C" void ObjectPlacerFruits_chooseModel_m260450306 ();
 extern "C" void ObjectPlacerFruits_captureScreen_m789408083 ();
@@ -12355,7 +12362,7 @@ extern "C" void VideoFormatsExample_Start_m1615238214 ();
 extern "C" void VideoFormatsExample_OnDestroy_m541603283 ();
 extern "C" void VideoFormatsExample_PopulateVideoFormatButtons_m595526008 ();
 extern "C" void VideoFormatsExample_ExampletButtonPressed_m2588664126 ();
-extern const Il2CppMethodPointer g_MethodPointers[12336] = 
+extern const Il2CppMethodPointer g_MethodPointers[12343] = 
 {
 	Locale_GetText_m3374010885,
 	Locale_GetText_m1601577974,
@@ -20562,6 +20569,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12336] =
 	GameObject_get_activeSelf_m1767405923,
 	GameObject_get_activeInHierarchy_m2006396688,
 	GameObject_get_tag_m3951609671,
+	GameObject_FindGameObjectsWithTag_m2585173894,
 	GameObject_SendMessage_m3720186693,
 	GameObject_Internal_AddComponentWithType_m3797731663,
 	GameObject_AddComponent_m136524825,
@@ -24267,8 +24275,10 @@ extern const Il2CppMethodPointer g_MethodPointers[12336] =
 	MarshalDirectionalLightEstimate_MarshalCoefficients_m3384462505_AdjustorThunk,
 	MarshalDirectionalLightEstimate_RotateForUnity_m1468552020_AdjustorThunk,
 	ObjectPlacerAlphabet__ctor_m4236843311,
+	ObjectPlacerAlphabet__rp_UnityObjectPlaced_m2037501362,
 	ObjectPlacerAlphabet_clearScene_m4092690208,
 	ObjectPlacerAlphabet_restartMentionedScene_m288415601,
+	ObjectPlacerAlphabet_postObjectStatus_m3610060007,
 	ObjectPlacerAlphabet_loadAlphabet_m4264474965,
 	ObjectPlacerAlphabet_chooseModel_m3114186432,
 	ObjectPlacerAlphabet_captureScreen_m712754694,
@@ -24285,8 +24295,10 @@ extern const Il2CppMethodPointer g_MethodPointers[12336] =
 	U3CTakeScreenshotAndSaveU3Ec__Iterator0_Dispose_m317466848,
 	U3CTakeScreenshotAndSaveU3Ec__Iterator0_Reset_m681126698,
 	ObjectPlacerAnimals__ctor_m1678178496,
+	ObjectPlacerAnimals__rp_UnityObjectPlaced_m3937459018,
 	ObjectPlacerAnimals_clearScene_m1463859119,
 	ObjectPlacerAnimals_restartMentionedScene_m1918883689,
+	ObjectPlacerAnimals_postObjectStatus_m1386923332,
 	ObjectPlacerAnimals_loadAlphabet_m4144843263,
 	ObjectPlacerAnimals_chooseModel_m3209889911,
 	ObjectPlacerAnimals_captureScreen_m1636088288,
@@ -24303,8 +24315,10 @@ extern const Il2CppMethodPointer g_MethodPointers[12336] =
 	U3CTakeScreenshotAndSaveU3Ec__Iterator0_Dispose_m4045266497,
 	U3CTakeScreenshotAndSaveU3Ec__Iterator0_Reset_m3989207796,
 	ObjectPlacerFruits__ctor_m327008083,
+	ObjectPlacerFruits__rp_UnityObjectPlaced_m1307113282,
 	ObjectPlacerFruits_clearScene_m2866353215,
 	ObjectPlacerFruits_restartMentionedScene_m2439122886,
+	ObjectPlacerFruits_postObjectStatus_m2626895925,
 	ObjectPlacerFruits_loadAlphabet_m2547457502,
 	ObjectPlacerFruits_chooseModel_m260450306,
 	ObjectPlacerFruits_captureScreen_m789408083,

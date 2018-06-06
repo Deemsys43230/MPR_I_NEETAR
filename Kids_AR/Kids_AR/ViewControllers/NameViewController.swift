@@ -12,18 +12,38 @@ import AVFoundation
 
 class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesizerDelegate {
     
+    var kbHeight: CGFloat!
+    
+    @IBOutlet var logoView: UIView!
     @IBOutlet var infoButton: UIButton!
     @IBOutlet var musicButton: UIButton!
-    @IBOutlet var musicImage: UIImageView!
     @IBOutlet var nameField: UITextField!
     
+    @IBOutlet var muteLAbel: UILabel!
     let speechSynthesizer = AVSpeechSynthesizer()
     
+    
+    @IBOutlet var titleLabel1: UILabel!
+    @IBOutlet var titleLabel2: UILabel!
+    
+    @IBOutlet var detailLabel: UILabel!
+    @IBOutlet var pleasetelluslabel: UILabel!
+    @IBOutlet var nameLabel: UILabel!
+    
+     @IBOutlet weak var nameHeight: NSLayoutConstraint!
+    @IBOutlet weak var getStartedHeight: NSLayoutConstraint!
+     @IBOutlet weak var viewWidth: NSLayoutConstraint!
+    @IBOutlet weak var viewHeight: NSLayoutConstraint!
+     @IBOutlet weak var imageWidth: NSLayoutConstraint!
+    @IBOutlet weak var imageHeight: NSLayoutConstraint!
+    
+    @IBOutlet var getStartedBottom: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        logoView.layer.cornerRadius = 5;
+        logoView.clipsToBounds = true;
         
         nameField.delegate = self
         
@@ -44,8 +64,9 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
         nameField.leftViewMode = .always
         
         speechSynthesizer.delegate = self
+       
         
-        
+       
         
 //        for family: String in UIFont.familyNames
 //        {
@@ -55,24 +76,36 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
 //                print("== \(names)")
 //            }
 //        }
-    }
-    
-    @IBOutlet var pleasetelluslabel: UILabel!
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+//    }
+//
+//
+//
         
         if self.view.frame.width == 320{
-        logoTopHeight.constant = 30
-            labelTop.constant = 15
-            NSLayoutConstraint.deactivate([labelCenter])
-            self.view.layoutIfNeeded()
-        }else{ 
-              NSLayoutConstraint.deactivate([labelTop])
-            self.view.layoutIfNeeded()
+            titleLabel1.font = UIFont(name: titleLabel1.font.fontName, size:28)
+            titleLabel2.font = UIFont(name: titleLabel2.font.fontName, size:28)
+            detailLabel.font =  UIFont(name: detailLabel.font.fontName, size:13)
+            nameLabel.font =  UIFont(name: nameLabel.font.fontName, size:18)
+            nameHeight.constant = 30
+            getStartedHeight.constant = 35
+            viewWidth.constant = 120
+            viewHeight.constant = 120
+            getStartedBottom.constant = 10
             
+            
+            self.view.layoutIfNeeded()
+
+            
+            imageWidth.constant = 110
+            imageHeight.constant = 110
+            self.logoView.layoutIfNeeded()
         }
         
+        
+    }
+        override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+
         centerAlignUsernameLabel.constant += view.bounds.width
         centerAlignUsername.constant += view.bounds.width
         getStartedButton.alpha = 0.0
@@ -85,15 +118,25 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
         
         let music =   UserDefaults.standard.value(forKey: "isMusicOn") as! Bool
         if music == false{
-            musicImage.image = #imageLiteral(resourceName: "audio-speaker-off")
-            
+            musicButton.setImage(#imageLiteral(resourceName: "audio-speaker-off"), for: .normal)
+            muteLAbel.text = "Unmute"
         }
         else{
-            musicImage.image = #imageLiteral(resourceName: "audio-speaker-on")
+           musicButton.setImage(#imageLiteral(resourceName: "audio-speaker-on"), for: .normal)
+            muteLAbel.text = "Mute"
             
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: .UIKeyboardWillShow, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: .UIKeyboardWillHide, object: nil)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        NotificationCenter.default.removeObserver(self)
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -110,6 +153,26 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
         
        
         
+    }
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let userInfo = notification.userInfo {
+            if let keyboardSize =  (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+                kbHeight = keyboardSize.height
+                self.animateTextField(up: true)
+            }
+        }
+    }
+    
+   @objc func keyboardWillHide(notification: NSNotification) {
+        self.animateTextField(up: false)
+    }
+    
+    func animateTextField(up: Bool) {
+        var movement = (up ? -kbHeight : kbHeight)
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement!)
+        })
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -147,12 +210,12 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
     @IBOutlet weak var centerAlignUsername: NSLayoutConstraint!
     @IBOutlet weak var getStartedButton: UIButton!
     
-    @IBOutlet var logoTopHeight: NSLayoutConstraint!
-    
-    
-    @IBOutlet var labelTop: NSLayoutConstraint!
-    
-    @IBOutlet var labelCenter: NSLayoutConstraint!
+//    @IBOutlet var logoTopHeight: NSLayoutConstraint!
+//
+//
+//    @IBOutlet var labelTop: NSLayoutConstraint!
+//
+//    @IBOutlet var labelCenter: NSLayoutConstraint!
     
     var alert : UIAlertController!
     
@@ -186,7 +249,7 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
         }
         UserDefaults.standard.set(nameField.text!, forKey: "KidName")
         UserDefaults.standard.synchronize()
-        self.navigationController?.pushViewController((self.storyboard?.instantiateViewController(withIdentifier: "CRViewController"))!, animated: true)
+        self.navigationController?.pushViewController((self.storyboard?.instantiateViewController(withIdentifier: "welcomeViewController"))!, animated: true)
     }
     
     func showButton(){
@@ -210,7 +273,9 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
             
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             
-            musicImage.image = #imageLiteral(resourceName: "audio-speaker-off")
+          musicButton.setImage(#imageLiteral(resourceName: "audio-speaker-off"), for: .normal)
+            musicButton.setImage(#imageLiteral(resourceName: "audio-speaker-off"), for: .highlighted)
+            muteLAbel.text = "Unmute"
              UserDefaults.standard.set(false, forKey: "isMusicOn")
             UserDefaults.standard.synchronize()
             
@@ -220,7 +285,9 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
         else{
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             
-            musicImage.image = #imageLiteral(resourceName: "audio-speaker-on")
+            musicButton.setImage(#imageLiteral(resourceName: "audio-speaker-on"), for: .normal)
+            musicButton.setImage(#imageLiteral(resourceName: "audio-speaker-on"), for: .highlighted)
+            muteLAbel.text = "Mute"
             UserDefaults.standard.set(true, forKey: "isMusicOn")
             UserDefaults.standard.synchronize()
             
@@ -241,5 +308,21 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
     }
 
 
+}
+extension UIApplication {
+    class func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+        if let navigationController = controller as? UINavigationController {
+            return topViewController(controller: navigationController.visibleViewController)
+        }
+        if let tabController = controller as? UITabBarController {
+            if let selected = tabController.selectedViewController {
+                return topViewController(controller: selected)
+            }
+        }
+        if let presented = controller?.presentedViewController {
+            return topViewController(controller: presented)
+        }
+        return controller
+    }
 }
 

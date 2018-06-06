@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 protocol popupDelegate {
     
@@ -20,12 +21,18 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
     public var index:Int = 0
     var chapters:[String:Any] =  [:]
     
+    var selectedIndexPath:Int = 0
+    
     @IBOutlet var themeImage: UIImageView!
     @IBOutlet var menuView: UIView!
     @IBOutlet var colorView: UIView!
-    
+    var isPurchased:Bool =  false
     var delegate: popupDelegate?
+    let appdelegate = UIApplication.shared.delegate as! AppDelegate
     
+    var transactionInProgress = false
+    
+    let store = IAPHelper()
     
     @IBOutlet var viewHeight: NSLayoutConstraint!
     @IBOutlet var viewWidth: NSLayoutConstraint!
@@ -33,47 +40,86 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(purchaseViewController.handleNotification(_:)),
+                                               name: IAPHelper.IAPProductNotification,
+                                               object: nil) 
+        NotificationCenter.default.addObserver(self, selector: #selector(purchaseViewController.handleNotification(_:)),
+                                               name: IAPHelper.IAPTransactNotification,
+                                               object: nil)
+        
         switch index+1 {
         case 1:
             // Alphabets
             self.themeImage.image = #imageLiteral(resourceName: "alphabets_theme")
-            self.colorView.backgroundColor = UIColor.init(red: 195/255, green: 26/255, blue: 51/255, alpha: 0.5)
+            self.colorView.backgroundColor = UIColor.init(red: 57/255, green: 93/255, blue: 21/255, alpha: 0.5)
+            
             break
         case 2:
             // animals
             self.themeImage.image = #imageLiteral(resourceName: "animals_theme")
-            self.colorView.backgroundColor = UIColor.init(red: 39/255, green: 174/255, blue: 96/255, alpha: 0.6)
+            self.colorView.backgroundColor = UIColor.init(red: 124/255, green: 179/255, blue: 100/255, alpha: 0.5)
             break
         case 3:
             // fruits
             self.themeImage.image = #imageLiteral(resourceName: "veggs_theme")
-            self.colorView.backgroundColor = UIColor.init(red: 225/255, green: 205/255, blue: 180/255, alpha: 0.7)
+            self.colorView.backgroundColor = UIColor.init(red: 158/255, green: 158/255, blue: 158/255, alpha: 0.5)
             break
         default:
             break
         }
-    
+        if  index+1 == 1 || index+1 == 3 {
+            let purchased = UserDefaults.standard.bool(forKey: appdelegate.productIDs[0])
+            if purchased{
+                self.isPurchased = true
+            }else{
+                self.isPurchased = false
+            }
+        }
+        else{
+            let purchased = UserDefaults.standard.bool(forKey: appdelegate.productIDs[1])
+            if purchased{
+                self.isPurchased = true
+            }else{
+                self.isPurchased = false
+            }
+        }
+        
+        if self.isPurchased == false{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
+                
+                if self.checkNetworkConnection(showAlert: false) == true{
+                    self.store.requestProductInfo()
+                }
+            }
+        }
         
         if UIDevice.current.model == "iPhone"{
-        
-        if self.view.frame.width == 320{
-            viewWidth.constant = 300
-            viewHeight.constant = 415
-            self.menuView.layoutIfNeeded()
-        }else{
-            viewWidth.constant = 360
-            viewHeight.constant = 595
-            self.menuView.layoutIfNeeded()
             
-        }
+            if self.view.frame.width == 320{
+                viewWidth.constant = 300
+                viewHeight.constant = 495
+                self.menuView.layoutIfNeeded()
+            }else{
+                viewWidth.constant = 360
+                viewHeight.constant = 595
+                self.menuView.layoutIfNeeded()
+                
+            }
         }
         else{
             viewWidth.constant = 560
             viewHeight.constant = 795
             self.menuView.layoutIfNeeded()
         }
+        self.view.isUserInteractionEnabled = true
+        self.collectionView.reloadData()
     }
-    
+//    override func viewDidDisappear(_ animated: Bool) {
+//        
+//        super.viewDidDisappear(true)
+//        NotificationCenter.default.removeObserver(self, name: IAPHelper.IAPTransactNotification, object: nil) 
+//        NotificationCenter.default.removeObserver(self, name: IAPHelper.IAPProductNotification, object: nil)
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         loadJSONFile()
@@ -83,7 +129,7 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
         
         self.showAnimate()
         
-        // Do any additional setup after loading the view.
+        
     }
     
     func loadJSONFile(){
@@ -123,14 +169,33 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
         }
         
     }
-    
+    func checkNetworkConnection(showAlert:Bool)->Bool{
+        
+        let R:Reachability = Reachability()
+        
+        if R.isConnectedToNetwork() == true {
+            return true
+        } else {
+            if showAlert == false{
+                return false;
+            }
+          let  alertController = UIAlertController(title: "No Internet Connection!", message: "Make sure your device is connected to the internet.", preferredStyle: .alert)
+            let OKAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
+            alertController.addAction(OKAction)
+            self.present(alertController, animated: true, completion:nil)
+            return false;
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     @IBAction func closePopUp(_ sender: AnyObject) {
-        self.removeAnimate()
+        if transactionInProgress == false {
+            self.removeAnimate()
+            
+        }
         //self.view.removeFromSuperview()
     }
     
@@ -167,7 +232,7 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! collectionCell
         let model = self.chapters["models"] as! [[String:Any]]
-       let itemValues = model[indexPath.row]
+        let itemValues = model[indexPath.row]
         cell.label.text = itemValues["modelName"] as! String
         cell.imageView.image = UIImage(named: itemValues["modelImage"] as! String)
         cell.imageView.backgroundColor = UIColor.white.withAlphaComponent(0.8)
@@ -175,21 +240,51 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
         if indexPath.row == 0 || indexPath.row == 1{
             cell.lockIcon.isHidden = true
         }
+        else{
+            if self.isPurchased == true{
+                // purchased
+                cell.lockIcon.isHidden = true
+            }else{
+                // not purchased
+                cell.lockIcon.isHidden = false
+            }
+        }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-         let model = self.chapters["models"] as! [[String:Any]]
-         let itemValues = model[indexPath.row]
-        guard let cell:collectionCell = collectionView.cellForItem(at: indexPath) as! collectionCell else { return }
-        if cell.lockIcon.isHidden == true{
+        
+        
+        let model = self.chapters["models"] as! [[String:Any]]
+        let itemValues = model[indexPath.row]
+        
+        if self.isPurchased  == true || indexPath.row == 0 || indexPath.row == 1{
             // purchased
             self.removeAnimate()
             delegate?.didSelectModel(withName: itemValues["modelName"] as! String, audioName: itemValues["audioName"] as! String, modelID: itemValues["modelId"] as! String)
         }else{
-            // not purchased
+            
+            let alert:UIAlertController = UIAlertController(title: "Purchase", message: "Would you like to purchase this product?", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "No", style: .default, handler: { (action) in
+                
+            }))
+            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action) in
+                // MAKE PAYMENT
+                self.selectedIndexPath = indexPath.row
+                self.view.isUserInteractionEnabled = false
+                if self.index+1 == 1 || self.index+1 == 3{
+                    self.buy(itemIndex: 0)
+                }else{
+                    self.buy(itemIndex: 1)
+                }
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+            
         }
     }
+    
     
     /*    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
      super.traitCollectionDidChange(previousTraitCollection)
@@ -224,16 +319,99 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
             }
         })
     }
+    
+    
+    /// PAYMENT INTEGRATION
+    
+    @objc func buy(itemIndex: Int){
+        // CHECK INTERNET CONNECTION
+        if self.checkNetworkConnection(showAlert: true) == false{
+            return;
+        }
+        if(appdelegate.productsArray.count == 0){
+            return
+        }
+        if !transactionInProgress{
+            let product = appdelegate.productsArray[itemIndex]
+            self.transactionInProgress = true
+            self.store.buy(p: product!)
+        }
+        else{
+            self.view.isUserInteractionEnabled = true
+            let alertView = UIAlertController(title: "Warning!", message: "Please wait for the current transaction get complete.", preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(alertView, animated: true, completion: nil)
+        }
+    }
+    
+    
+    // Payment and product notifications
+    @objc func handleNotification(_ notification: Notification) {
+        
+        switch notification.name {
+        case IAPHelper.IAPProductNotification:
+            if notification.userInfo!["message"] as! String == "success"{
+                print(appdelegate.productIDs)
+                print(appdelegate.productsArray)
+            }
+            else if notification.userInfo!["message"] as! String == "incapable"{
+                self.view.isUserInteractionEnabled = true
+                let alertView = UIAlertController(title: "Error!", message: "Your device is not capable of making this purchase.", preferredStyle: .alert)
+                alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                present(alertView, animated: true, completion: nil)
+            }
+            else{
+                self.view.isUserInteractionEnabled = true
+                let alertView = UIAlertController(title: "Error!", message: notification.userInfo?["message"] as? String, preferredStyle: .alert)
+                alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                present(alertView, animated: true, completion: nil)
+            }
+        case IAPHelper.IAPTransactNotification:
+            transactionInProgress = false
+            if notification.userInfo!["message"] as! String == "success"{
+                if  index+1 == 1 || index+1 == 3 {
+                    let purchased = UserDefaults.standard.bool(forKey: appdelegate.productIDs[0])
+                    if purchased{
+                        self.isPurchased = true
+                    }else{
+                        self.isPurchased = false
+                    }
+                }
+                else{
+                    let purchased = UserDefaults.standard.bool(forKey: appdelegate.productIDs[1])
+                    if purchased{
+                        self.isPurchased = true
+                    }else{
+                        self.isPurchased = false
+                    }
+                }
+                self.view.isUserInteractionEnabled = true
+                self.collectionView.reloadData()
+//                let model = self.chapters["models"] as! [[String:Any]]
+//                let itemValues = model[self.selectedIndexPath]
+//                self.removeAnimate()
+//                delegate?.didSelectModel(withName: itemValues["modelName"] as! String, audioName: itemValues["audioName"] as! String, modelID: itemValues["modelId"] as! String)
+            }
+            else if notification.userInfo!["message"] as! String == "progress"{
+                print("Progressing")
+            }
+            else{
+                self.view.isUserInteractionEnabled = true
+                // self.indicator.stopAnimating()
+                collectionView.reloadData()
+            }
+            
+        default:
+            break
+        }
+        
+        
+        
+        
+        
+    }
 }
 
-//extension PopUpViewController: UICollectionViewDelegateFlowLayout {
-//
-//    func collectionView(_ collectionView: UICollectionView,
-//                        layout collectionViewLayout: UICollectionViewLayout,
-//                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-//
-//        return CGSize(width: collectionView.frame.size.width/3.0 - 8,
-//                      height: collectionView.frame.size.width/3.0 - 8)
-//    }
-//}
+
+
 

@@ -51,7 +51,10 @@ class Toast
             })
         })
     }
-    
+    class func showMessage(message:String)
+    {
+        showAlert(backgroundColor: UIColor.init(red: 122/255, green: 177/255, blue: 224/255, alpha: 0.7), textColor: UIColor.white, message: message)
+    }
     class func showPositiveMessage(message:String)
     {
         showAlert(backgroundColor: UIColor.green.withAlphaComponent(0.7), textColor: UIColor.white, message: message)

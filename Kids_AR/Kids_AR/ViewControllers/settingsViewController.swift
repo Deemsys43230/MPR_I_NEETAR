@@ -24,8 +24,8 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
         contentList.dataSource = self
         
         contentList.tableFooterView = UIView()
-        
         self.prepareAlert()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -228,6 +228,7 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
         alertController.addTextField { textField in
             //listen for changes
             textField.delegate = self
+            textField.text = UserDefaults.standard.value(forKey: "KidName") as! String
             textField.autocapitalizationType = UITextAutocapitalizationType.allCharacters
             NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification(notification:)), name: NSNotification.Name.UITextFieldTextDidChange, object: textField)
         }
@@ -296,7 +297,7 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
         
         
     }
-    fileprivate func openUrl(_ urlString:String) {
+    func openUrl(_ urlString:String) {
         let url = URL(string: urlString)!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)

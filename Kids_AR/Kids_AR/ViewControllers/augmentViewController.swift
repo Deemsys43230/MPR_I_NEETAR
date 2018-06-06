@@ -7,12 +7,10 @@
 //
 
 import Foundation
-import AVFoundation
 import UIKit
+import AVFoundation
 
 class augmentViewController: UIViewController, popupDelegate {
-   
-    
     
     var unityView: UIView?
     
@@ -20,12 +18,16 @@ class augmentViewController: UIViewController, popupDelegate {
     
     @objc public var index:Int = 0
     
-    
+    var speakerButton:UIButton!
+ var cameraButton:UIButton!
     
     var viewname:[String] = ["alphabetsScene","animalsScene","fruitsScene"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(showButtons(notfication:)), name: .postNotifi, object: nil)
+        
         
         if index == 0{
             self.modeltitle.text = "Alphabets"
@@ -65,56 +67,85 @@ class augmentViewController: UIViewController, popupDelegate {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             self.startUnity()
-            
         }
     }
-    
+  
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         UnityPostMessage("GameObject", "clearScene", "")
+        NotificationCenter.default.removeObserver(self, name: .postNotifi, object: nil)
     }
     
-    func didSelectModel(withName: String, audioName: String, modelID: String) {
     
+    @objc func showButtons(notfication: NSNotification) {
+        if self.cameraButton.isHidden == true {
+            self.cameraButton.isHidden = false
+        }
+        if self.speakerButton.isHidden == true {
+            self.speakerButton.isHidden = false
+        }
+    }
+    
+    
+    
+    func didSelectModel(withName: String, audioName: String, modelID: String) {
+        self.cameraButton.isHidden = true
+        self.speakerButton.isHidden = true
         
         let c = withName.characters.first!
-        
         UnityPostMessage("GameObject", "loadAlphabet", "\(c)")
-        
-        
-        
+        var val = UserDefaults.standard.value(forKey: "rateus") as! Int
+        val = val + 1
+        if val == 4 || val == 8 || val == 12{
+            // Show rate us alert
+            let alert:UIAlertController = UIAlertController(title: "Rate us", message: "Hope you enjoyed using our app! Would you like to rate us?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: Constants.alert.ok.rawValue, style: .default, handler: { (action) in
+                // redirect to appstore
+                settingsViewController().openUrl("itms-apps://itunes.apple.com/us/app/kids-alphabets-ar/id1387392682?ls=1&mt=8")
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+        if val <= 13{
+        UserDefaults.standard.set(val, forKey: "rateus")
+        UserDefaults.standard.synchronize()
+        }
     }
     
     @IBAction func backAction(sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
     
-    
-    @IBAction func showAlphabet(_ sender: UIButton) {
-      
-        // collection view appears
-        
-        
-    //    Toast.showPositiveMessage(message: "Collection view")
-        
+    func openCollections(){
         let popOverVC = UIStoryboard(name: "UnityStoryboard", bundle: nil).instantiateViewController(withIdentifier: "PopUpViewController") as! PopUpViewController
         popOverVC.index = self.index
-         popOverVC.delegate = self
+        popOverVC.delegate = self
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove(toParentViewController: self)
+    }
+    
+    @IBAction func showAlphabet(_ sender: UIButton) {
         
+        self.openCollections()
         
     }
     
     @IBAction func captureScreen(_ sender: Any) {
         
         UnityPostMessage("GameObject", "captureScreen", "")
+        Toast.showMessage(message: "Image saved! Tap the Photos icon to view the image")
     }
+    
     
     @IBAction func playMusic(_ sender: Any) {
         
+        // print(AVAudioSession.sharedInstance().outputVolume)
+        
+        if  AVAudioSession.sharedInstance().outputVolume == 0  {
+            Toast.showNegativeMessage(message: "For the application to work correctly, you must increase 'Media Volume'. If you did not, you can not hear the music.")
+        }
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         appDelegate.pauseSound()
@@ -129,7 +160,12 @@ class augmentViewController: UIViewController, popupDelegate {
     
     @objc  func startUnity() {
         
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        if let topController = UIApplication.topViewController(), !(topController is augmentViewController) {
+            return
+        }
         
         appDelegate.startUnity()
         
@@ -139,7 +175,7 @@ class augmentViewController: UIViewController, popupDelegate {
         
         
         if self.view == nil{
-            print("self.view is not null")
+            print("self.view is null")
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 self.startUnity()
             }
@@ -159,7 +195,7 @@ class augmentViewController: UIViewController, popupDelegate {
         view.addConstraints(w + h)
         
         
-        let speakerButton:UIButton = UIButton(type: .custom)
+        speakerButton = UIButton(type: .custom)
         speakerButton.backgroundColor = .clear
         speakerButton.setImage(#imageLiteral(resourceName: "speaker"), for: UIControlState.normal)
         speakerButton.addTarget(self, action:#selector(self.playMusic(_:)), for: .touchUpInside)
@@ -168,7 +204,7 @@ class augmentViewController: UIViewController, popupDelegate {
         speakerButton.translatesAutoresizingMaskIntoConstraints = false
         
         
-        let cameraButton:UIButton = UIButton(type: .custom)
+        cameraButton = UIButton(type: .custom)
         cameraButton.backgroundColor = .clear
         cameraButton.setImage(#imageLiteral(resourceName: "camera"), for: UIControlState.normal)
         cameraButton.addTarget(self, action:#selector(self.captureScreen(_:)), for: .touchUpInside)
@@ -187,32 +223,52 @@ class augmentViewController: UIViewController, popupDelegate {
             speakerButton.widthAnchor.constraint(equalToConstant: 50),
             speakerButton.heightAnchor.constraint(equalToConstant: 50)])
         
+        self.cameraButton.isHidden = true
+        self.speakerButton.isHidden = true
         
-        let popOverVC = UIStoryboard(name: "UnityStoryboard", bundle: nil).instantiateViewController(withIdentifier: "PopUpViewController") as! PopUpViewController
-        popOverVC.index = self.index
-        popOverVC.delegate = self
-        self.addChildViewController(popOverVC)
-        popOverVC.view.frame = self.view.frame
-        self.view.addSubview(popOverVC.view)
-        popOverVC.didMove(toParentViewController: self)
         
+        let instructionsShowed = UserDefaults.standard.value(forKey: "instructionsShowed") as! Bool
+        
+        
+        if instructionsShowed == true{
+            
+            self.openCollections()
+        }
+        else{
+            let alert:UIAlertController = UIAlertController(title: "Info", message: "Point your device to a surface with detailed texture.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: Constants.alert.ok.rawValue, style: .default, handler: { (action) in
+                // Collections  show
+                
+                self.openCollections()
+                UserDefaults.standard.set(true, forKey: "instructionsShowed")
+                UserDefaults.standard.synchronize()
+                
+            }))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
     }
     
     
     
-//    @IBAction func stopUnity(sender: AnyObject) {
-//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//        appDelegate.stopUnity()
-//        unityView!.removeFromSuperview()
-//    }
-//    @IBAction func pushnew(_ sender: Any) {
-//        let vcc =  self.storyboard?.instantiateViewController(withIdentifier: "tempVC")
-//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//        self.navigationController?.pushViewController(vcc!, animated: true)
-//
-//    }
-//
+    //    @IBAction func stopUnity(sender: AnyObject) {
+    //        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    //        appDelegate.stopUnity()
+    //        unityView!.removeFromSuperview()
+    //    }
+    //    @IBAction func pushnew(_ sender: Any) {
+    //        let vcc =  self.storyboard?.instantiateViewController(withIdentifier: "tempVC")
+    //        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    //        self.navigationController?.pushViewController(vcc!, animated: true)
+    //
+    //    }
+    //
     
+}
+
+
+extension Notification.Name {
+    static let postNotifi = Notification.Name("UnityObjectPlaced")
 }
 
 

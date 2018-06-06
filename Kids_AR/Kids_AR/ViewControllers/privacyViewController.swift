@@ -12,6 +12,7 @@ import UIKit
 class privacyViewController : UIViewController, UIWebViewDelegate {
     
     
+    @IBOutlet var indicator: UIActivityIndicatorView!
     @IBOutlet var closeButton: UIButton!
     
     @IBOutlet var copyright: UILabel!
@@ -24,9 +25,9 @@ class privacyViewController : UIViewController, UIWebViewDelegate {
         self.copyright.text = Constants.copyright
         webView.backgroundColor = .clear
         webView.isOpaque = false
-       
+       webView.delegate = self
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-        
+        self.indicator.startAnimating()
             let htmlFile = Bundle.main.path(forResource: "privacyPolicy", ofType: "html")
             let html = try! String(contentsOfFile: htmlFile!, encoding: String.Encoding.utf8)
        
@@ -39,7 +40,9 @@ class privacyViewController : UIViewController, UIWebViewDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
-   
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        self.indicator.stopAnimating()
+    }
     
     
 }

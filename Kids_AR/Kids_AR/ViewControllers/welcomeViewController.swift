@@ -9,93 +9,103 @@
 import UIKit
 
 
-class welcomeViewController: UIViewController, CRPageViewControllerDataSource {
+class welcomeCell: UITableViewCell {
+    @IBOutlet weak var productImage:UIImageView!
+}
+
+class welcomeViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
     
     
     
-@IBOutlet var settingsButton: UIButton!
+    @IBOutlet var settingsButton: UIButton!
     
-    var pageViewController:CRPageViewController!
-    var sourse:[CRChildViewController]!
-    var viewControllersNumber:NSNumber!
-    var    curentVC:CRChildViewController!
+    @IBOutlet var contentList: UITableView!
     
+    let delegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
-       
-        settingsButton.layer.cornerRadius = 5;
-        settingsButton.clipsToBounds = true;
+        contentList.delegate = self
+        contentList.dataSource = self
         
+        contentList.tableFooterView = UIView()
+        //            DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
+        //
+        //            }
         
-       
     }
     
+    // TableView Delegates
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if self.view.frame.width == 320{
+            return 200
+        }
+        else if UIDevice.current.model != "iPhone"{
+            return 300
+        }
+        return 250
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath) as! welcomeCell
+        
+        
+        switch indexPath.row {
+        case 0:
+            cell.productImage.image = #imageLiteral(resourceName: "alphabets_locked")
+            let purchased = UserDefaults.standard.bool(forKey: delegate.productIDs[0])
+            if purchased{
+                cell.productImage.image = #imageLiteral(resourceName: "alphabets_unlocked")
+            }
+            break
+        case 1:
+            cell.productImage.image = #imageLiteral(resourceName: "animals_locked")
+            let purchased = UserDefaults.standard.bool(forKey: delegate.productIDs[1])
+            if purchased{
+                cell.productImage.image = #imageLiteral(resourceName: "animals_unlocked")
+            }
+            break
+        case 2:
+            cell.productImage.image = #imageLiteral(resourceName: "fruits_locked")
+            let purchased = UserDefaults.standard.bool(forKey: delegate.productIDs[0])
+            if purchased{
+                cell.productImage.image = #imageLiteral(resourceName: "fruits_unlocked")
+            }
+            break
+        case 3:
+            cell.productImage.image = #imageLiteral(resourceName: "puzzle")
+            break
+        default:
+            break
+        }
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 3{
+            //puzzle
+            return;
+        }
+        let vc =  UIStoryboard.init(name: "UnityStoryboard", bundle: nil).instantiateInitialViewController() as! augmentViewController
+        vc.index = indexPath.row
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
- 
+        self.contentList.reloadData() 
     }
-   
     
-       @IBAction func settingsAction(sender: UIButton) {
     
-        
-    }
+    
     @IBAction func backAction(sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
-    
-    func pageViewController(_ pageViewController: CRPageViewController!, viewControllerAfter viewController: UIViewController!) -> UIViewController! {
-        
-        var i =  self.sourse.index(of: viewController as! CRChildViewController)! + 1
-        
-        if (i >= self.sourse.count) {
-            i = 0;
-        }
-        return self.sourse[i];
-    }
-    
-    func pageViewController(_ pageViewController: CRPageViewController!, viewControllerBefore viewController: UIViewController!) -> UIViewController! {
-        var i =  self.sourse.index(of: viewController as! CRChildViewController)! - 1
-        if (i < 0) {
-            i = self.sourse.count - 1;
-        }
-        return self.sourse[i];
-    }
-    func createViewControllerWithNumber(number:Float)->CRChildViewController{
-      let vc =  self.storyboard?.instantiateViewController(withIdentifier: "childVC") as! CRChildViewController
-        vc.sourse = []
-        return vc
-    }
-  
-    
-   
-   
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier != "CRPageViewControllerSegue"{
-            return
-        }
-        
-            self.pageViewController = CRPageViewController()
-            self.sourse = []
-            self.viewControllersNumber = 4;
-        
-        for i in 0..<4 {
-            self.sourse.append(createViewControllerWithNumber(number: Float(i)))
-            
-            }
-        self.pageViewController = segue.destination as! CRPageViewController;
-        self.pageViewController.countPageInController = self.viewControllersNumber as! Int;
-            self.pageViewController.childVCSize = CGSize(width: 250, height: 500)
-            self.pageViewController.sizeBetweenVC = 10;
-        self.pageViewController.offsetOfHeightCentralVC = 0;
-            self.pageViewController.animationSpeed = 0.5;
-            self.pageViewController.animation = .easeInOut;
-            self.pageViewController.viewControllers = []
-            self.pageViewController.dataSource = self;
-        
-            
-        
-    }
-    
 }
+
+

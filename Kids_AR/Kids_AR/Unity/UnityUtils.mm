@@ -35,8 +35,8 @@ extern "C" void UnityPostMessage(NSString* gameObject, NSString* methodName, NSS
 
 // The following functions are for demo purpose only.
 // You don't need them if your Unity code does not invoke them.
-extern "C" void UnityToggleRotation(bool isOn)
+extern "C" void _rp_UnityObjectPlaced()
 {
-    NSDictionary* dict = @{ @"isOn": @(isOn) };
-    [[NSNotificationCenter defaultCenter] postNotificationName: @"UnityToggleRotation" object:nil userInfo:dict];
+  //  NSDictionary* dict = @{ @"isOn": @(isOn) };
+    [[NSNotificationCenter defaultCenter] postNotificationName: @"UnityObjectPlaced" object:nil userInfo:nil];
 }

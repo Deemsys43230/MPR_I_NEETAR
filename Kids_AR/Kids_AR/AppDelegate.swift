@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import StoreKit
 import  AVFoundation
 
 @UIApplicationMain
@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var isUnityRunning = false
     
     @objc var currentUnityController: UnityAppController!
+    
+    let productIDs:Array<String> = ["com.deemsysinc.kidsar.basicmodels","com.deemsysinc.kidsar.premiummodel"]
+    var productsArray: Array<SKProduct?> = []
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -37,6 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if UserDefaults.standard.object(forKey: "isMusicOn") == nil{
            UserDefaults.standard.set(true, forKey: "isMusicOn")
+           UserDefaults.standard.set(false, forKey: "instructionsShowed")
+           UserDefaults.standard.set(0, forKey: "rateus")
         }
         if UserDefaults.standard.object(forKey: "KidName") == nil{
             UserDefaults.standard.set("", forKey: "KidName")
@@ -50,17 +55,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window!.makeKeyAndVisible()
             
         }else{
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CRViewController") as! CRViewController
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "welcomeViewController") as! welcomeViewController
             let navigationController = UINavigationController(rootViewController: vc)
              navigationController.setNavigationBarHidden(true, animated: false)
             self.window!.rootViewController = navigationController
             self.window!.makeKeyAndVisible()
         }
-        
-        
-       
-        
-        
+        for id in productIDs{
+            let status = UserDefaults.standard.bool(forKey: (id))
+            if !status{
+                UserDefaults.standard.set(false, forKey: id)
+            }
+        }
+        UserDefaults.standard.synchronize()
         // Override point for customization after application launch.
         return true
     }
