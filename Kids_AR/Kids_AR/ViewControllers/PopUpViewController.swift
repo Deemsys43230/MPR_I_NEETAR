@@ -367,8 +367,9 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
                 present(alertView, animated: true, completion: nil)
             }
         case IAPHelper.IAPTransactNotification:
-            transactionInProgress = false
+            
             if notification.userInfo!["message"] as! String == "success"{
+                transactionInProgress = false
                 if  index+1 == 1 || index+1 == 3 {
                     let purchased = UserDefaults.standard.bool(forKey: appdelegate.productIDs[0])
                     if purchased{
@@ -396,6 +397,7 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
                 print("Progressing")
             }
             else{
+                transactionInProgress = false
                 self.view.isUserInteractionEnabled = true
                 // self.indicator.stopAnimating()
                 collectionView.reloadData()

@@ -88,16 +88,19 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
             nameLabel.font =  UIFont(name: nameLabel.font.fontName, size:18)
             nameHeight.constant = 30
             getStartedHeight.constant = 35
-            viewWidth.constant = 120
-            viewHeight.constant = 120
+            viewWidth.constant = 110
+            viewHeight.constant = 110
             getStartedBottom.constant = 10
             
             
             self.view.layoutIfNeeded()
 
+            viewWidth.constant = 110
+            viewHeight.constant = 110 
+            self.view.layoutIfNeeded()
             
-            imageWidth.constant = 110
-            imageHeight.constant = 110
+            imageWidth.constant = 105
+            imageHeight.constant = 105
             self.logoView.layoutIfNeeded()
         }
         
@@ -109,9 +112,14 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
         centerAlignUsernameLabel.constant += view.bounds.width
         centerAlignUsername.constant += view.bounds.width
         getStartedButton.alpha = 0.0
+            
+         let nameval = UserDefaults.standard.value(forKey: "KidName") as! String
+            
+            if nameval.characters.count != 0{
+                nameField.text = nameval
+            }
         
-       nameField.text = UserDefaults.standard.value(forKey: "KidName") as! String
-        
+       
         if (nameField.text?.characters.count)! > 0{
             showButton()
         }
@@ -155,16 +163,21 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
         
     }
     @objc func keyboardWillShow(notification: NSNotification) {
-        if let userInfo = notification.userInfo {
-            if let keyboardSize =  (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-                kbHeight = keyboardSize.height
-                self.animateTextField(up: true)
+        if UIDevice.current.model == "iPhone" {
+            if let userInfo = notification.userInfo {
+                if let keyboardSize =  (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+                    kbHeight = keyboardSize.height
+                    self.animateTextField(up: true)
+                }
             }
+            
         }
     }
     
    @objc func keyboardWillHide(notification: NSNotification) {
+    if UIDevice.current.model == "iPhone" {
         self.animateTextField(up: false)
+    }
     }
     
     func animateTextField(up: Bool) {

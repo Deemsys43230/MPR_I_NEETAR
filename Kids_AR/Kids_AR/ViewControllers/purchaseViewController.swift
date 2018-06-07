@@ -184,7 +184,12 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
         }
         if !transactionInProgress{
             let product = delegate.productsArray[sender.tag]
-            showActions(p: product!)
+            if product != nil{
+                showActions(p: product!)
+            }
+            else{
+                print("product is empty")
+            }
         }
         else{
             let alertView = UIAlertController(title: "Warning!", message: "Please wait for the current transaction get complete.", preferredStyle: .alert)
@@ -196,7 +201,10 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
     
     // MARK: API Payment and In app purchase
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.store.emptyQueue()
+    }
     
     func showActions(p:SKProduct) {
         if transactionInProgress {
@@ -206,8 +214,10 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
         let actionSheetController = UIAlertController(title: p.localizedTitle, message: p.localizedDescription, preferredStyle: UIAlertControllerStyle.actionSheet)
         
         let buyAction = UIAlertAction(title: "Buy", style: UIAlertActionStyle.default) { (action) -> Void in
+            self.view.isUserInteractionEnabled = false
             self.transactionInProgress = true
             self.indicator.startAnimating()
+          //  print("namr \(p.localizedTitle) namr \(p.price)")
             self.store.buy(p: p)
         }
         
@@ -225,23 +235,28 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
     @objc func handleNotification(_ notification: Notification) {
         switch notification.name {
         case IAPHelper.IAPProductNotification:
+            self.view.isUserInteractionEnabled = true
             self.indicator.stopAnimating()
             if notification.userInfo!["message"] as! String == "success"{
                 contentList.reloadData()
             }
             else if notification.userInfo!["message"] as! String == "incapable"{
+                self.view.isUserInteractionEnabled = true
                 let alertView = UIAlertController(title: "Error!", message: "Your device is not capable of making this purchase.", preferredStyle: .alert)
                 alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                 present(alertView, animated: true, completion: nil)
             }
             else{
+                self.view.isUserInteractionEnabled = true
                 let alertView = UIAlertController(title: "Error!", message: notification.userInfo?["message"] as? String, preferredStyle: .alert)
                 alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                 present(alertView, animated: true, completion: nil)
             }
         case IAPHelper.IAPTransactNotification:
-            transactionInProgress = false
+            
             if notification.userInfo!["message"] as! String == "success"{
+                transactionInProgress = false
+                self.view.isUserInteractionEnabled = true
                 self.indicator.stopAnimating()
                 contentList.reloadData()
             }
@@ -249,12 +264,15 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
                 print("Progressing")
             }
             else{
+                self.view.isUserInteractionEnabled = true
+                transactionInProgress = false
                 self.indicator.stopAnimating()
                 contentList.reloadData()
             }
             
         case IAPHelper.IAPRestoreNotification:
             transactionInProgress = false
+            self.view.isUserInteractionEnabled = true
             self.indicator.stopAnimating()
             if notification.userInfo!["message"] as! String == "success"{
                 contentList.reloadData()

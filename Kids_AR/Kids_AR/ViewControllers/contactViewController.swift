@@ -307,15 +307,22 @@ class contactViewController : UIViewController, UITextFieldDelegate, SKPSMTPMess
     }
     // MARK: UITextViewDelegate
     func textViewDidBeginEditing(_ textView: UITextView) {
-        let scrollPoint : CGPoint = CGPoint(x: 0, y: self.queryField.frame.origin.y-100)
-        self.scrollView.setContentOffset(scrollPoint, animated: true)
+        if UIDevice.current.model == "iPhone" {
+            let scrollPoint : CGPoint = CGPoint(x: 0, y: self.queryField.frame.origin.y-100)
+            self.scrollView.setContentOffset(scrollPoint, animated: true)
+        }
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
-        self.scrollView.setContentOffset(CGPoint.zero, animated: true)
+        if UIDevice.current.model == "iPhone" {
+            self.scrollView.setContentOffset(CGPoint.zero, animated: true)
+        }
     }
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        self.queryField.resignFirstResponder()
+        if UIDevice.current.model == "iPhone" {
+             self.queryField.resignFirstResponder()
+        }
+       
         return true
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

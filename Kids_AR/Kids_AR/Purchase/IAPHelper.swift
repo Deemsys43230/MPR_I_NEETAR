@@ -29,7 +29,9 @@ class IAPHelper: NSObject {
             print("Cannot perform In App Purchases.")
         }
     }
-    
+    func emptyQueue(){
+        SKPaymentQueue.default().remove(self)
+    }
     // Initiate payment for a product
     func buy(p:SKProduct){
         let payment = SKPayment(product: p)
