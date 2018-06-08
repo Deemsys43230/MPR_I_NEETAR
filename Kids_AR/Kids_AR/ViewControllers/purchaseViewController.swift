@@ -180,6 +180,7 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
     @objc func buy(sender: UIButton){
         // CHECK INTERNET CONNECTION
         if self.checkNetworkConnection() == false{
+            self.view.isUserInteractionEnabled = true
             return;
         }
         if !transactionInProgress{
@@ -192,6 +193,7 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
             }
         }
         else{
+            self.view.isUserInteractionEnabled = true
             let alertView = UIAlertController(title: "Warning!", message: "Please wait for the current transaction get complete.", preferredStyle: .alert)
             alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             present(alertView, animated: true, completion: nil)

@@ -694,10 +694,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_Internal_AddComponentWithType();
 		Register_UnityEngine_GameObject_Internal_AddComponentWithType();
 
-		//UnityEngine.GameObject UnityEngine.GameObject::CreatePrimitive(UnityEngine.PrimitiveType)
-		void Register_UnityEngine_GameObject_CreatePrimitive();
-		Register_UnityEngine_GameObject_CreatePrimitive();
-
 		//UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
 		void Register_UnityEngine_GameObject_FindGameObjectsWithTag();
 		Register_UnityEngine_GameObject_FindGameObjectsWithTag();
@@ -896,14 +892,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.GUIUtility
 
-	//Start Registrations for type : UnityEngine.Handheld
-
-		//System.Boolean UnityEngine.Handheld::INTERNAL_CALL_PlayFullScreenMovie(System.String,UnityEngine.Color&,UnityEngine.FullScreenMovieControlMode,UnityEngine.FullScreenMovieScalingMode)
-		void Register_UnityEngine_Handheld_INTERNAL_CALL_PlayFullScreenMovie();
-		Register_UnityEngine_Handheld_INTERNAL_CALL_PlayFullScreenMovie();
-
-	//End Registrations for type : UnityEngine.Handheld
-
 	//Start Registrations for type : UnityEngine.ImageConversion
 
 		//System.Boolean UnityEngine.ImageConversion::LoadImage(UnityEngine.Texture2D,System.Byte[],System.Boolean)
@@ -1097,14 +1085,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Material::SetTextureImpl(System.Int32,UnityEngine.Texture)
 		void Register_UnityEngine_Material_SetTextureImpl();
 		Register_UnityEngine_Material_SetTextureImpl();
-
-		//System.Void UnityEngine.Material::set_shader(UnityEngine.Shader)
-		void Register_UnityEngine_Material_set_shader();
-		Register_UnityEngine_Material_set_shader();
-
-		//UnityEngine.Shader UnityEngine.Material::get_shader()
-		void Register_UnityEngine_Material_get_shader();
-		Register_UnityEngine_Material_get_shader();
 
 		//UnityEngine.Texture UnityEngine.Material::GetTextureImpl(System.Int32)
 		void Register_UnityEngine_Material_GetTextureImpl();
@@ -1730,17 +1710,9 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Shader
 
-		//System.Boolean UnityEngine.Shader::get_isSupported()
-		void Register_UnityEngine_Shader_get_isSupported();
-		Register_UnityEngine_Shader_get_isSupported();
-
 		//System.Int32 UnityEngine.Shader::PropertyToID(System.String)
 		void Register_UnityEngine_Shader_PropertyToID();
 		Register_UnityEngine_Shader_PropertyToID();
-
-		//UnityEngine.Shader UnityEngine.Shader::Find(System.String)
-		void Register_UnityEngine_Shader_Find();
-		Register_UnityEngine_Shader_Find();
 
 	//End Registrations for type : UnityEngine.Shader
 

@@ -12,6 +12,8 @@ import AVFoundation
 
 class augmentViewController: UIViewController, popupDelegate {
     
+    @IBOutlet var hintView: UIView!
+    @IBOutlet var hintSubView: UIView!
     var unityView: UIView?
     
     @IBOutlet var modeltitle: UILabel!
@@ -235,20 +237,31 @@ class augmentViewController: UIViewController, popupDelegate {
             self.openCollections()
         }
         else{
-            let alert:UIAlertController = UIAlertController(title: "Info", message: "Point your device to a surface with detailed texture.", preferredStyle: .alert)
+            showHintAlert()
+           /*let alert:UIAlertController = UIAlertController(title: "Info", message: "Point your device to a surface with detailed texture.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: Constants.alert.ok.rawValue, style: .default, handler: { (action) in
                 // Collections  show
                 
-                self.openCollections()
-                UserDefaults.standard.set(true, forKey: "instructionsShowed")
-                UserDefaults.standard.synchronize()
-                
             }))
-            self.present(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)*/
             
         }
     }
     
+    @IBAction func closeView(_ sender: Any) {
+            self.hintView.removeFromSuperview()
+        self.openCollections()
+        UserDefaults.standard.set(true, forKey: "instructionsShowed")
+        UserDefaults.standard.synchronize()
+    }
+    func showHintAlert(){
+        self.hintView.frame = self.view.frame
+        self.hintSubView.clipsToBounds = true
+        self.hintSubView.layer.cornerRadius = 5
+        
+        UIApplication.shared.keyWindow?.addSubview(self.hintView)
+         
+    }
     
     
     //    @IBAction func stopUnity(sender: AnyObject) {

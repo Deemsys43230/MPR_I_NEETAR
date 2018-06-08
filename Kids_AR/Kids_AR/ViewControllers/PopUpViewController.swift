@@ -326,9 +326,11 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
     @objc func buy(itemIndex: Int){
         // CHECK INTERNET CONNECTION
         if self.checkNetworkConnection(showAlert: true) == false{
+            self.view.isUserInteractionEnabled = true
             return;
         }
         if(appdelegate.productsArray.count == 0){
+            self.view.isUserInteractionEnabled = true
             return
         }
         if !transactionInProgress{

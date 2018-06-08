@@ -182,9 +182,9 @@
 		0095E55720C67EAE00E847BB /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0095E55320C6795100E847BB /* GothamRounded-Medium.otf */; };
 		009B3A1420AD504000FA9BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1320AD504000FA9BC3 /* AppDelegate.swift */; };
 		009B3A1620AD504000FA9BC3 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1520AD504000FA9BC3 /* NameViewController.swift */; };
-		009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1720AD504000FA9BC3 /* Main.storyboard */; };
+		009B3A1920AD504000FA9BC3 = {isa = PBXBuildFile; fileRef = 009B3A1720AD504000FA9BC3 /* Main.storyboard */; };
 		009B3A1B20AD504F00FA9BC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1A20AD504F00FA9BC3 /* Assets.xcassets */; };
-		009B3A1E20AD504F00FA9BC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1C20AD504F00FA9BC3 /* LaunchScreen.storyboard */; };
+		009B3A1E20AD504F00FA9BC3 = {isa = PBXBuildFile; fileRef = 009B3A1C20AD504F00FA9BC3 /* LaunchScreen.storyboard */; };
 		009B3A2920AD505000FA9BC3 /* Kids_ARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A2820AD505000FA9BC3 /* Kids_ARTests.swift */; };
 		009B3A3420AD505000FA9BC3 /* Kids_ARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A3320AD505000FA9BC3 /* Kids_ARUITests.swift */; };
 		009B3A4620AD5FE600FA9BC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A4520AD5FE600FA9BC3 /* Constants.swift */; };
@@ -2529,7 +2529,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Kids_AR" */;
+			buildConfigurationList = 009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Unity-iPhone" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -2538,7 +2538,7 @@
 				Base,
 			);
 			mainGroup = 009B3A0720AD504000FA9BC3;
-			productRefGroup = 009B3A1120AD504000FA9BC3 /* Products */;
+			productRefGroup = 009B3A1120AD504000FA9BC3;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -2560,7 +2560,7 @@
 				007AA13920C2621C00DB7112 /* libil2cpp.icalls in Resources */,
 				0095E55620C67EAE00E847BB /* GothamRounded-Light.otf in Resources */,
 				007AA14F20C2653E00DB7112 /* appIcon.png in Resources */,
-				009B3A1E20AD504F00FA9BC3 /* LaunchScreen.storyboard in Resources */,
+				009B3A1E20AD504F00FA9BC3,
 				006DFE3A20C51D84005CC585 /* kids.json in Resources */,
 				009B3A1B20AD504F00FA9BC3 /* Assets.xcassets in Resources */,
 				0061170820B54EB1008E4FB4 /* slowbackgroundmusic.mp3 in Resources */,
@@ -2570,7 +2570,7 @@
 				0095E55520C67EAE00E847BB /* GothamRounded-Book.otf in Resources */,
 				0095E55720C67EAE00E847BB /* GothamRounded-Medium.otf in Resources */,
 				007AA14E20C2653E00DB7112 /* background.jpg in Resources */,
-				009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */,
+				009B3A1920AD504000FA9BC3,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2837,7 +2837,7 @@
 /* Begin XCBuildConfiguration section */
 		009B3A3620AD505000FA9BC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 006413AD20C027F8000BEBC9 /* Unity.xcconfig */;
+			baseConfigurationReference = 006413AD20C027F8000BEBC9;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2900,7 +2900,7 @@
 		};
 		009B3A3720AD505000FA9BC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 006413AD20C027F8000BEBC9 /* Unity.xcconfig */;
+			baseConfigurationReference = 006413AD20C027F8000BEBC9;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -3094,7 +3094,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Kids_AR" */ = {
+		009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Unity-iPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				009B3A3620AD505000FA9BC3 /* Debug */,

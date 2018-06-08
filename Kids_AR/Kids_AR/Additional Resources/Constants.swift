@@ -58,7 +58,7 @@ class Constants {
     
     static let lockColor:UIColor = UIColor(red: 33/255, green: 117/255, blue: 155/255, alpha: 1.0)
     
-    static let copyright="Copyright © 2018 Deemsys Inc. All Right Reserved."
+    static let copyright="Copyright © 2018 Deemsys Inc. All Rights Reserved."
     
     static let fromEmail:String = "deemmobtest@gmail.com"
     static let fromEmailPwd:String = "deemsys@123"
