@@ -17763,6 +17763,7 @@ extern const RuntimeType LeanGesture_t1335127695_1_0_0 = { (void*)2081, 0, IL2CP
 
 extern const RuntimeType ObjectPlacerAlphabet_t987340441_0_0_0 = { (void*)2084, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const RuntimeType ObjectPlacerAlphabet_t987340441_1_0_0 = { (void*)2084, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const RuntimeType ObjectPlacerAlphabet_t987340441_0_0_3 = { (void*)2084, 3, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
 extern const RuntimeType ARPoint_t499615819_0_0_0 = { (void*)2195, 0, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
 extern const RuntimeType ARPoint_t499615819_1_0_0 = { (void*)2195, 0, IL2CPP_TYPE_VALUETYPE, 0, 1, 0 };
@@ -17773,12 +17774,14 @@ extern const RuntimeType U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444_1_0
 
 extern const RuntimeType ObjectPlacerAnimals_t560344624_0_0_0 = { (void*)2086, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const RuntimeType ObjectPlacerAnimals_t560344624_1_0_0 = { (void*)2086, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const RuntimeType ObjectPlacerAnimals_t560344624_0_0_3 = { (void*)2086, 3, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
 extern const RuntimeType U3CTakeScreenshotAndSaveU3Ec__Iterator0_t808000212_0_0_0 = { (void*)2087, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const RuntimeType U3CTakeScreenshotAndSaveU3Ec__Iterator0_t808000212_1_0_0 = { (void*)2087, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
 extern const RuntimeType ObjectPlacerFruits_t3154074181_0_0_0 = { (void*)2088, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const RuntimeType ObjectPlacerFruits_t3154074181_1_0_0 = { (void*)2088, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const RuntimeType ObjectPlacerFruits_t3154074181_0_0_3 = { (void*)2088, 3, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
 extern const RuntimeType U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1170549756_0_0_0 = { (void*)2089, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const RuntimeType U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1170549756_1_0_0 = { (void*)2089, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
@@ -18382,7 +18385,7 @@ extern const RuntimeType TimeSpanU5BU5D_t4291357516_0_0_0 = { (void*)&TimeSpan_t
 extern const RuntimeType TypeTagU5BU5D_t1563918664_0_0_0 = { (void*)&TypeTag_t3541821701_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
 
 extern const RuntimeType ITrackingHandlerU5BU5D_t3758023570_0_0_0 = { (void*)&ITrackingHandler_t1244553475_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const RuntimeType* const  g_Il2CppTypeTable[9601] = 
+extern const RuntimeType* const  g_Il2CppTypeTable[9604] = 
 {
 	&IEnumerator_1_t3512676632_0_0_0,
 	&RuntimeObject_0_0_0,
@@ -27431,19 +27434,23 @@ extern const RuntimeType* const  g_Il2CppTypeTable[9601] =
 	&ObjectPlacerAlphabet_t987340441_0_0_0,
 	&ObjectPlacerAlphabet_t987340441_1_0_0,
 	&ARPoint_t499615819_0_0_0,
+	&GameObjectU5BU5D_t3328599146_0_0_6,
 	&AudioClip_t3680889665_0_0_6,
 	&AudioClip_t3680889665_0_0_1,
 	&U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444_0_0_0,
 	&U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444_1_0_0,
 	&Texture2D_t3840446185_0_0_3,
+	&ObjectPlacerAlphabet_t987340441_0_0_3,
 	&ObjectPlacerAnimals_t560344624_0_0_0,
 	&ObjectPlacerAnimals_t560344624_1_0_0,
 	&U3CTakeScreenshotAndSaveU3Ec__Iterator0_t808000212_0_0_0,
 	&U3CTakeScreenshotAndSaveU3Ec__Iterator0_t808000212_1_0_0,
+	&ObjectPlacerAnimals_t560344624_0_0_3,
 	&ObjectPlacerFruits_t3154074181_0_0_0,
 	&ObjectPlacerFruits_t3154074181_1_0_0,
 	&U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1170549756_0_0_0,
 	&U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1170549756_1_0_0,
+	&ObjectPlacerFruits_t3154074181_0_0_3,
 	&ConnectionMessageIds_t1387126779_0_0_0,
 	&ConnectionMessageIds_t1387126779_1_0_0,
 	&SubMessageIds_t1008824323_0_0_0,
@@ -27593,7 +27600,6 @@ extern const RuntimeType* const  g_Il2CppTypeTable[9601] =
 	&HSVChangedEvent_t911780251_0_0_6,
 	&ColorPresets_t2117877396_0_0_0,
 	&ColorPresets_t2117877396_1_0_0,
-	&GameObjectU5BU5D_t3328599146_0_0_6,
 	&Image_t2670269651_0_0_6,
 	&ColorSlider_t2624382019_0_0_0,
 	&ColorSlider_t2624382019_1_0_0,

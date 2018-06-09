@@ -158,7 +158,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         guard let url = Bundle.main.url(forResource: "slowbackgroundmusic", withExtension: "mp3") else { return }
         
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategorySoloAmbient)
             try AVAudioSession.sharedInstance().setActive(true)
             
             

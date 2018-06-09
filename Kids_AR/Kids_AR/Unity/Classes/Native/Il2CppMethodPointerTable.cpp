@@ -11930,6 +11930,7 @@ extern "C" void ObjectPlacerAnimals_restartMentionedScene_m1918883689 ();
 extern "C" void ObjectPlacerAnimals_postObjectStatus_m1386923332 ();
 extern "C" void ObjectPlacerAnimals_loadAlphabet_m4144843263 ();
 extern "C" void ObjectPlacerAnimals_chooseModel_m3209889911 ();
+extern "C" void ObjectPlacerAnimals_onToggleplanes_m63671736 ();
 extern "C" void ObjectPlacerAnimals_captureScreen_m1636088288 ();
 extern "C" void ObjectPlacerAnimals_TakeScreenshotAndSave_m1454944245 ();
 extern "C" void ObjectPlacerAnimals_playMusic_m2572539234 ();
@@ -11950,6 +11951,7 @@ extern "C" void ObjectPlacerFruits_restartMentionedScene_m2439122886 ();
 extern "C" void ObjectPlacerFruits_postObjectStatus_m2626895925 ();
 extern "C" void ObjectPlacerFruits_loadAlphabet_m2547457502 ();
 extern "C" void ObjectPlacerFruits_chooseModel_m260450306 ();
+extern "C" void ObjectPlacerFruits_onToggleplanes_m24629263 ();
 extern "C" void ObjectPlacerFruits_captureScreen_m789408083 ();
 extern "C" void ObjectPlacerFruits_TakeScreenshotAndSave_m1420841685 ();
 extern "C" void ObjectPlacerFruits_playMusic_m1517551088 ();
@@ -12336,7 +12338,7 @@ extern "C" void VideoFormatsExample_Start_m1615238214 ();
 extern "C" void VideoFormatsExample_OnDestroy_m541603283 ();
 extern "C" void VideoFormatsExample_PopulateVideoFormatButtons_m595526008 ();
 extern "C" void VideoFormatsExample_ExampletButtonPressed_m2588664126 ();
-extern const Il2CppMethodPointer g_MethodPointers[12317] = 
+extern const Il2CppMethodPointer g_MethodPointers[12319] = 
 {
 	Locale_GetText_m3374010885,
 	Locale_GetText_m1601577974,
@@ -24249,6 +24251,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12317] =
 	ObjectPlacerAnimals_postObjectStatus_m1386923332,
 	ObjectPlacerAnimals_loadAlphabet_m4144843263,
 	ObjectPlacerAnimals_chooseModel_m3209889911,
+	ObjectPlacerAnimals_onToggleplanes_m63671736,
 	ObjectPlacerAnimals_captureScreen_m1636088288,
 	ObjectPlacerAnimals_TakeScreenshotAndSave_m1454944245,
 	ObjectPlacerAnimals_playMusic_m2572539234,
@@ -24269,6 +24272,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12317] =
 	ObjectPlacerFruits_postObjectStatus_m2626895925,
 	ObjectPlacerFruits_loadAlphabet_m2547457502,
 	ObjectPlacerFruits_chooseModel_m260450306,
+	ObjectPlacerFruits_onToggleplanes_m24629263,
 	ObjectPlacerFruits_captureScreen_m789408083,
 	ObjectPlacerFruits_TakeScreenshotAndSave_m1420841685,
 	ObjectPlacerFruits_playMusic_m1517551088,

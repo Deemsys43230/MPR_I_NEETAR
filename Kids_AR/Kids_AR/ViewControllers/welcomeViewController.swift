@@ -28,9 +28,9 @@ class welcomeViewController: UIViewController,UITableViewDataSource, UITableView
         contentList.dataSource = self
         
         contentList.tableFooterView = UIView()
-        //            DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
-        //
-        //            }
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.playSound()
         
     }
     
@@ -91,6 +91,9 @@ class welcomeViewController: UIViewController,UITableViewDataSource, UITableView
             //puzzle
             return;
         }
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate        
+        appDelegate.pauseSound() 
+        
         let vc =  UIStoryboard.init(name: "UnityStoryboard", bundle: nil).instantiateInitialViewController() as! augmentViewController
         vc.index = indexPath.row
         self.navigationController?.pushViewController(vc, animated: true)
@@ -101,6 +104,11 @@ class welcomeViewController: UIViewController,UITableViewDataSource, UITableView
         self.contentList.reloadData() 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.playSound()
+    }
     
     
     @IBAction func backAction(sender: UIButton) {

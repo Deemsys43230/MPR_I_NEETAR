@@ -45,7 +45,9 @@ class Constants {
         case internet_error_msg = "Please check your internet connection!"
         case timeout_msg = "Very slow internet connection. Please try again later!"
     }
-     
+    
+    
+    static let appurl = "itms-apps://itunes.apple.com/us/app/kids-alphabets-ar/id1387392682?ls=1&mt=8"
     
     //    MARK: - APP THEME COLOR
     static let appTheme:UIColor = UIColor(red: 39/255, green: 174/255, blue: 65/255, alpha: 1.0)

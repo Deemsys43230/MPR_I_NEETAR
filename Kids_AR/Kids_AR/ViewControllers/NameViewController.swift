@@ -311,8 +311,8 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
     /// AVFoundation Completion handlers
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.playSound()
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        appDelegate.playSound()
     }
     
     override func didReceiveMemoryWarning() {

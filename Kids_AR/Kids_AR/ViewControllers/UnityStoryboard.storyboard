@@ -25,16 +25,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="qlD-Yf-fyU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="color_header" translatesAutoresizingMaskIntoConstraints="NO" id="qlD-Yf-fyU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="7Q9-58-xJ3"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits &amp; Vegetables" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQw-FK-mkD">
-                                <rect key="frame" x="40" y="37" width="240" height="26"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRUITS" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQw-FK-mkD">
+                                <rect key="frame" x="40" y="38.5" width="240" height="23"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="28"/>
+                                    <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="25"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09r-ig-Dih">
@@ -74,7 +77,6 @@
                             <constraint firstAttribute="trailing" secondItem="qlD-Yf-fyU" secondAttribute="trailing" id="GQL-k8-BUU"/>
                             <constraint firstItem="yfa-zE-zSO" firstAttribute="trailing" secondItem="iPY-9e-VTP" secondAttribute="trailing" constant="8" id="L46-3q-Cpg"/>
                             <constraint firstItem="WQw-FK-mkD" firstAttribute="centerY" secondItem="09r-ig-Dih" secondAttribute="centerY" id="P1B-cs-KlP"/>
-                            <constraint firstItem="yfa-zE-zSO" firstAttribute="bottom" secondItem="qlD-Yf-fyU" secondAttribute="bottom" id="Q11-eM-cvd"/>
                             <constraint firstItem="qlD-Yf-fyU" firstAttribute="leading" secondItem="Fm3-72-9mB" secondAttribute="leading" id="Ukt-gA-coi"/>
                             <constraint firstItem="iPY-9e-VTP" firstAttribute="top" secondItem="09r-ig-Dih" secondAttribute="top" id="miz-FO-VXg"/>
                             <constraint firstItem="09r-ig-Dih" firstAttribute="top" secondItem="Fm3-72-9mB" secondAttribute="top" constant="35" id="rTA-PB-xhn"/>
@@ -83,6 +85,7 @@
                         <viewLayoutGuide key="safeArea" id="yfa-zE-zSO"/>
                     </view>
                     <connections>
+                        <outlet property="hintHeight" destination="GL9-JN-4I7" id="bob-Wu-O6F"/>
                         <outlet property="hintSubView" destination="Psv-l6-Cqm" id="X7r-AJ-tNZ"/>
                         <outlet property="hintView" destination="kPQ-K3-WXF" id="tb3-wa-Roi"/>
                         <outlet property="modeltitle" destination="WQw-FK-mkD" id="KL3-kx-kJJ"/>
@@ -140,7 +143,7 @@
                     <viewLayoutGuide key="safeArea" id="NEV-9x-ceI"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="-32.799999999999997" y="154.27286356821591"/>
+            <point key="canvasLocation" x="-33.75" y="154.22535211267606"/>
         </scene>
         <!--Pop Up View Controller-->
         <scene sceneID="B3f-JT-lkQ">
@@ -312,6 +315,7 @@
         <image name="backButton" width="512" height="512"/>
         <image name="collectionclose" width="512" height="512"/>
         <image name="collectionsplus" width="512" height="512"/>
+        <image name="color_header" width="1000" height="500"/>
         <image name="imageView:Is5-MM-FXm:image" width="852" height="480">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGUlNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
@@ -20914,7 +20918,6 @@ AAAAAABWAAAAAAAAAAAAAAAAABLZkg
         </image>
         <image name="padlock" width="512" height="512"/>
         <image name="texture" width="650" height="1000"/>
-        <image name="welcome" width="1242" height="2208"/>
     </resources>
     <color key="tintColor" red="0.47843137250000001" green="0.69411764710000001" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
 </document>

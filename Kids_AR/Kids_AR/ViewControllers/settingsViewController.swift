@@ -155,7 +155,7 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
         case 5:
             // "Rate us"
             
-            openUrl("itms-apps://itunes.apple.com/us/app/kids-alphabets-ar/id1387392682?ls=1&mt=8")
+            openUrl(Constants.appurl)
         
         
             break;

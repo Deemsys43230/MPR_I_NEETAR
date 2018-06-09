@@ -196,6 +196,8 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
             self.removeAnimate()
             
         }
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate        
+        appDelegate.pauseSound()
         //self.view.removeFromSuperview()
     }
     

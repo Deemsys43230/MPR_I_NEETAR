@@ -14,9 +14,15 @@ class augmentViewController: UIViewController, popupDelegate {
     
     @IBOutlet var hintView: UIView!
     @IBOutlet var hintSubView: UIView!
+    
     var unityView: UIView?
     
+    @IBOutlet var hintHeight: NSLayoutConstraint!
+    
+    
     @IBOutlet var modeltitle: UILabel!
+    
+    var isAudioPlayed:Bool = false;
     
     @objc public var index:Int = 0
     
@@ -30,15 +36,17 @@ class augmentViewController: UIViewController, popupDelegate {
         
         NotificationCenter.default.addObserver(self, selector: #selector(showButtons(notfication:)), name: .postNotifi, object: nil)
         
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.pauseSound()
         
         if index == 0{
             self.modeltitle.text = "Alphabets"
         }
         else if index == 1{
-            self.modeltitle.text = "Animals"
+            self.modeltitle.text = "ALLIGATOR"
         }
         else if index == 2{
-            self.modeltitle.text = "Fruits & Vegetables"
+            self.modeltitle.text = "APPLE"
         }
         
         
@@ -79,6 +87,7 @@ class augmentViewController: UIViewController, popupDelegate {
     }
     
     
+    
     @objc func showButtons(notfication: NSNotification) {
         if self.cameraButton.isHidden == true {
             self.cameraButton.isHidden = false
@@ -86,13 +95,27 @@ class augmentViewController: UIViewController, popupDelegate {
         if self.speakerButton.isHidden == true {
             self.speakerButton.isHidden = false
         }
+        if self.isAudioPlayed == false{
+            self.isAudioPlayed = true
+            self.playAudioSound()
+        }
     }
     
     
     
     func didSelectModel(withName: String, audioName: String, modelID: String) {
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.pauseSound()
+        
         self.cameraButton.isHidden = true
         self.speakerButton.isHidden = true
+        self.isAudioPlayed = false
+        
+        if index != 0{
+           
+            self.modeltitle.text = withName
+        }
         
         let c = withName.characters.first!
         UnityPostMessage("GameObject", "loadAlphabet", "\(c)")
@@ -104,7 +127,7 @@ class augmentViewController: UIViewController, popupDelegate {
             alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
             alert.addAction(UIAlertAction(title: Constants.alert.ok.rawValue, style: .default, handler: { (action) in
                 // redirect to appstore
-                settingsViewController().openUrl("itms-apps://itunes.apple.com/us/app/kids-alphabets-ar/id1387392682?ls=1&mt=8")
+                settingsViewController().openUrl(Constants.appurl)
             }))
             self.present(alert, animated: true, completion: nil)
         }
@@ -119,6 +142,10 @@ class augmentViewController: UIViewController, popupDelegate {
     }
     
     func openCollections(){
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate        
+        appDelegate.pauseSound()
+        
         let popOverVC = UIStoryboard(name: "UnityStoryboard", bundle: nil).instantiateViewController(withIdentifier: "PopUpViewController") as! PopUpViewController
         popOverVC.index = self.index
         popOverVC.delegate = self
@@ -142,24 +169,21 @@ class augmentViewController: UIViewController, popupDelegate {
     
     
     @IBAction func playMusic(_ sender: Any) {
+        self.playAudioSound()
+    }
+    func playAudioSound(){
         
         // print(AVAudioSession.sharedInstance().outputVolume)
         
         if  AVAudioSession.sharedInstance().outputVolume == 0  {
             Toast.showNegativeMessage(message: "For the application to work correctly, you must increase 'Media Volume'. If you did not, you can not hear the music.")
         }
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        
-        appDelegate.pauseSound()
-        
+       
         
         UnityPostMessage("GameObject", "playMusic", "")
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            appDelegate.playSound()
-        }
+        
     }
-    
     @objc  func startUnity() {
         
         
@@ -231,7 +255,6 @@ class augmentViewController: UIViewController, popupDelegate {
         
         let instructionsShowed = UserDefaults.standard.value(forKey: "instructionsShowed") as! Bool
         
-        
         if instructionsShowed == true{
             
             self.openCollections()
@@ -255,9 +278,19 @@ class augmentViewController: UIViewController, popupDelegate {
         UserDefaults.standard.synchronize()
     }
     func showHintAlert(){
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.pauseSound()
+        
         self.hintView.frame = self.view.frame
         self.hintSubView.clipsToBounds = true
         self.hintSubView.layer.cornerRadius = 5
+        if self.view.frame.width == 320{
+            self.hintHeight.constant = 350
+            self.hintSubView.layoutIfNeeded()
+            self.hintView.layoutIfNeeded()
+            
+        }
         
         UIApplication.shared.keyWindow?.addSubview(self.hintView)
          
