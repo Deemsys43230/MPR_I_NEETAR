@@ -15,5 +15,6 @@
 #import "SKPSMTPMessage.h"
 #import "HSK_CFUtilities.h"
 #import "NSStream+SKPSMTPExtensions.h"
+#import "UIView+DCAnimationKit.h"
 
 #endif /* BRIDGING_HEADER */

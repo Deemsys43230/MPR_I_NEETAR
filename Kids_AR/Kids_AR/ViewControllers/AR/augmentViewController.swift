@@ -36,9 +36,6 @@ class augmentViewController: UIViewController, popupDelegate {
         
         NotificationCenter.default.addObserver(self, selector: #selector(showButtons(notfication:)), name: .postNotifi, object: nil)
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.pauseSound()
-        
         if index == 0{
             self.modeltitle.text = "Alphabets"
         }
@@ -287,7 +284,7 @@ class augmentViewController: UIViewController, popupDelegate {
         self.hintSubView.layer.cornerRadius = 5
         if self.view.frame.width == 320{
             self.hintHeight.constant = 350
-            self.hintSubView.layoutIfNeeded()
+           // self.hintSubView.layoutIfNeeded()
             self.hintView.layoutIfNeeded()
             
         }

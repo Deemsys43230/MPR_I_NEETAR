@@ -89,6 +89,8 @@ class welcomeViewController: UIViewController,UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 3{
             //puzzle
+            let vc =  UIStoryboard.init(name: "puzzles", bundle: nil).instantiateViewController(withIdentifier: "puzzleList") as! puzzleList            
+            self.navigationController?.pushViewController(vc, animated: true)
             return;
         }
         let appDelegate = UIApplication.shared.delegate as! AppDelegate        

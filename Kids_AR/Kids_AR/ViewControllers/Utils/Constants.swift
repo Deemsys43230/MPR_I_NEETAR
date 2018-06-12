@@ -58,7 +58,7 @@ class Constants {
     
     static let titleColor:UIColor = UIColor.white
     
-    static let lockColor:UIColor = UIColor(red: 33/255, green: 117/255, blue: 155/255, alpha: 1.0)
+    static let lockColor:UIColor = UIColor(red: 247/255, green: 220/255, blue: 71/255, alpha: 1.0)
     
     static let copyright="Copyright © 2018 Deemsys Inc. All Rights Reserved."
     
@@ -70,7 +70,10 @@ class Constants {
     //static let toEmail:String = "incdeemsys@gmail.com"
     
     // Developement
-    static let toEmail:String = "deemmobtest@gmail.com"
+   // static let toEmail:String = "deemmobtest@gmail.com"
+    
+    // Testing
+    static let toEmail:String = "deemsystesting@gmail.com"
     
     
     static let relayHost:String = "smtp.gmail.com"

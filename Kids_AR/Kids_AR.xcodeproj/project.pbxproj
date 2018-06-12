@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0042343E20CFB313007E5B30 /* negativeTone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0042343C20CFB313007E5B30 /* negativeTone.mp3 */; };
+		0042343F20CFB313007E5B30 /* positiveTone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0042343D20CFB313007E5B30 /* positiveTone.mp3 */; };
+		0042344120CFB8D0007E5B30 /* kidsCheer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0042344020CFB8CF007E5B30 /* kidsCheer.mp3 */; };
 		0061170820B54EB1008E4FB4 /* slowbackgroundmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0061170720B54EB1008E4FB4 /* slowbackgroundmusic.mp3 */; };
 		0061170A20B57C52008E4FB4 /* privacyPolicy.html in Resources */ = {isa = PBXBuildFile; fileRef = 0061170920B57C52008E4FB4 /* privacyPolicy.html */; };
 		006413B020C027F8000BEBC9 /* UnityUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 006413AB20C027F7000BEBC9 /* UnityUtils.mm */; };
@@ -180,11 +183,22 @@
 		0095E55520C67EAE00E847BB /* GothamRounded-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0095E55120C6794F00E847BB /* GothamRounded-Book.otf */; };
 		0095E55620C67EAE00E847BB /* GothamRounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0095E55220C6795000E847BB /* GothamRounded-Light.otf */; };
 		0095E55720C67EAE00E847BB /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0095E55320C6795100E847BB /* GothamRounded-Medium.otf */; };
+		0099F9EF20CE852E00454DC1 /* puzzles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0099F9EE20CE852E00454DC1 /* puzzles.storyboard */; };
+		0099F9F520CE91D200454DC1 /* puzzleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099F9F420CE91D200454DC1 /* puzzleList.swift */; };
+		0099F9F720CE91DC00454DC1 /* puzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099F9F620CE91DC00454DC1 /* puzzleView.swift */; };
+		0099F9F920CE91E900454DC1 /* congratsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099F9F820CE91E900454DC1 /* congratsView.swift */; };
+		0099F9FC20CE927B00454DC1 /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099F9FB20CE927B00454DC1 /* SAConfettiView.swift */; };
+		0099FA0220CE92A300454DC1 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 0099F9FE20CE92A300454DC1 /* confetti.png */; };
+		0099FA0320CE92A300454DC1 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 0099F9FF20CE92A300454DC1 /* diamond.png */; };
+		0099FA0420CE92A300454DC1 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 0099FA0020CE92A300454DC1 /* star.png */; };
+		0099FA0520CE92A300454DC1 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0099FA0120CE92A300454DC1 /* triangle.png */; };
+		0099FA0920CE92BE00454DC1 /* UIView+DCAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0099FA0720CE92BE00454DC1 /* UIView+DCAnimationKit.m */; };
+		0099FA0B20CE932600454DC1 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099FA0A20CE932600454DC1 /* MyView.swift */; };
 		009B3A1420AD504000FA9BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1320AD504000FA9BC3 /* AppDelegate.swift */; };
 		009B3A1620AD504000FA9BC3 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1520AD504000FA9BC3 /* NameViewController.swift */; };
-		009B3A1920AD504000FA9BC3 = {isa = PBXBuildFile; fileRef = 009B3A1720AD504000FA9BC3 /* Main.storyboard */; };
+		009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1720AD504000FA9BC3 /* Main.storyboard */; };
 		009B3A1B20AD504F00FA9BC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1A20AD504F00FA9BC3 /* Assets.xcassets */; };
-		009B3A1E20AD504F00FA9BC3 = {isa = PBXBuildFile; fileRef = 009B3A1C20AD504F00FA9BC3 /* LaunchScreen.storyboard */; };
+		009B3A1E20AD504F00FA9BC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1C20AD504F00FA9BC3 /* LaunchScreen.storyboard */; };
 		009B3A2920AD505000FA9BC3 /* Kids_ARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A2820AD505000FA9BC3 /* Kids_ARTests.swift */; };
 		009B3A3420AD505000FA9BC3 /* Kids_ARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A3320AD505000FA9BC3 /* Kids_ARUITests.swift */; };
 		009B3A4620AD5FE600FA9BC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A4520AD5FE600FA9BC3 /* Constants.swift */; };
@@ -215,6 +229,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0042343C20CFB313007E5B30 /* negativeTone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = negativeTone.mp3; sourceTree = "<group>"; };
+		0042343D20CFB313007E5B30 /* positiveTone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = positiveTone.mp3; sourceTree = "<group>"; };
+		0042344020CFB8CF007E5B30 /* kidsCheer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kidsCheer.mp3; sourceTree = "<group>"; };
 		0061170720B54EB1008E4FB4 /* slowbackgroundmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slowbackgroundmusic.mp3; sourceTree = "<group>"; };
 		0061170920B57C52008E4FB4 /* privacyPolicy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = privacyPolicy.html; sourceTree = "<group>"; };
 		006413AB20C027F7000BEBC9 /* UnityUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UnityUtils.mm; sourceTree = "<group>"; };
@@ -866,6 +883,18 @@
 		0095E55120C6794F00E847BB /* GothamRounded-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Book.otf"; sourceTree = "<group>"; };
 		0095E55220C6795000E847BB /* GothamRounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Light.otf"; sourceTree = "<group>"; };
 		0095E55320C6795100E847BB /* GothamRounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Medium.otf"; sourceTree = "<group>"; };
+		0099F9EE20CE852E00454DC1 /* puzzles.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = puzzles.storyboard; sourceTree = "<group>"; };
+		0099F9F420CE91D200454DC1 /* puzzleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = puzzleList.swift; sourceTree = "<group>"; };
+		0099F9F620CE91DC00454DC1 /* puzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = puzzleView.swift; sourceTree = "<group>"; };
+		0099F9F820CE91E900454DC1 /* congratsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = congratsView.swift; sourceTree = "<group>"; };
+		0099F9FB20CE927B00454DC1 /* SAConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAConfettiView.swift; sourceTree = "<group>"; };
+		0099F9FE20CE92A300454DC1 /* confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confetti.png; sourceTree = "<group>"; };
+		0099F9FF20CE92A300454DC1 /* diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamond.png; sourceTree = "<group>"; };
+		0099FA0020CE92A300454DC1 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		0099FA0120CE92A300454DC1 /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle.png; sourceTree = "<group>"; };
+		0099FA0720CE92BE00454DC1 /* UIView+DCAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCAnimationKit.m"; sourceTree = "<group>"; };
+		0099FA0820CE92BE00454DC1 /* UIView+DCAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCAnimationKit.h"; sourceTree = "<group>"; };
+		0099FA0A20CE932600454DC1 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		009B3A1020AD504000FA9BC3 /* Kids_AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kids_AR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009B3A1320AD504000FA9BC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		009B3A1520AD504000FA9BC3 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
@@ -2287,6 +2316,7 @@
 		0095E54620C6667C00E847BB /* Purchase */ = {
 			isa = PBXGroup;
 			children = (
+				007C939020B2B3BA00019114 /* purchaseViewController.swift */,
 				0095E54820C6668D00E847BB /* IAPHelper.swift */,
 			);
 			path = Purchase;
@@ -2301,6 +2331,69 @@
 				0095E55320C6795100E847BB /* GothamRounded-Medium.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0099F9F020CE912500454DC1 /* puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				0099F9EE20CE852E00454DC1 /* puzzles.storyboard */,
+				0099FA0A20CE932600454DC1 /* MyView.swift */,
+				0099F9F420CE91D200454DC1 /* puzzleList.swift */,
+				0099F9F620CE91DC00454DC1 /* puzzleView.swift */,
+				0099F9F820CE91E900454DC1 /* congratsView.swift */,
+			);
+			path = puzzle;
+			sourceTree = "<group>";
+		};
+		0099F9F120CE914700454DC1 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				007AA15220C2700700DB7112 /* augmentViewController.swift */,
+				006DFE3720C50D3E005CC585 /* PopUpViewController.swift */,
+				007AA15120C2700600DB7112 /* UnityStoryboard.storyboard */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		0099F9F220CE916600454DC1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				007C938B20B292AE00019114 /* settingsViewController.swift */,
+				007C939120B2B3BA00019114 /* contactViewController.swift */,
+				007C938F20B2B3B900019114 /* privacyViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0099F9F320CE91A500454DC1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				009B3A4520AD5FE600FA9BC3 /* Constants.swift */,
+				007AA15020C2700600DB7112 /* toast.swift */,
+				00B74E7E20B7FCA800EBF380 /* Rechability.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0099F9FD20CE928A00454DC1 /* Confetti */ = {
+			isa = PBXGroup;
+			children = (
+				0099F9FB20CE927B00454DC1 /* SAConfettiView.swift */,
+				0099F9FE20CE92A300454DC1 /* confetti.png */,
+				0099F9FF20CE92A300454DC1 /* diamond.png */,
+				0099FA0020CE92A300454DC1 /* star.png */,
+				0099FA0120CE92A300454DC1 /* triangle.png */,
+			);
+			path = Confetti;
+			sourceTree = "<group>";
+		};
+		0099FA0620CE92AF00454DC1 /* DCAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0099FA0820CE92BE00454DC1 /* UIView+DCAnimationKit.h */,
+				0099FA0720CE92BE00454DC1 /* UIView+DCAnimationKit.m */,
+			);
+			path = DCAnimation;
 			sourceTree = "<group>";
 		};
 		009B3A0720AD504000FA9BC3 = {
@@ -2327,7 +2420,6 @@
 		009B3A1220AD504000FA9BC3 /* Kids_AR */ = {
 			isa = PBXGroup;
 			children = (
-				0095E54620C6667C00E847BB /* Purchase */,
 				006DFE3920C51D84005CC585 /* kids.json */,
 				006413AA20C027E1000BEBC9 /* Unity */,
 				007C939720B2EAE400019114 /* PageViewController */,
@@ -2367,6 +2459,9 @@
 				007AA14D20C2653E00DB7112 /* appIcon.png */,
 				007AA14C20C2653E00DB7112 /* background.jpg */,
 				0061170920B57C52008E4FB4 /* privacyPolicy.html */,
+				0042343C20CFB313007E5B30 /* negativeTone.mp3 */,
+				0042343D20CFB313007E5B30 /* positiveTone.mp3 */,
+				0042344020CFB8CF007E5B30 /* kidsCheer.mp3 */,
 				0061170720B54EB1008E4FB4 /* slowbackgroundmusic.mp3 */,
 			);
 			path = Images;
@@ -2375,9 +2470,10 @@
 		009B3A4420AD5FC000FA9BC3 /* Additional Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0099FA0620CE92AF00454DC1 /* DCAnimation */,
+				0099F9FD20CE928A00454DC1 /* Confetti */,
 				0095E54F20C6793C00E847BB /* Fonts */,
 				00C5228D20B3EFC100C38255 /* SMTPLibrary */,
-				009B3A4520AD5FE600FA9BC3 /* Constants.swift */,
 			);
 			path = "Additional Resources";
 			sourceTree = "<group>";
@@ -2402,19 +2498,15 @@
 		009B3A6120ADA55200FA9BC3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				007AA15220C2700700DB7112 /* augmentViewController.swift */,
-				007AA15020C2700600DB7112 /* toast.swift */,
-				007AA15120C2700600DB7112 /* UnityStoryboard.storyboard */,
-				007C939120B2B3BA00019114 /* contactViewController.swift */,
-				007C938F20B2B3B900019114 /* privacyViewController.swift */,
-				007C939020B2B3BA00019114 /* purchaseViewController.swift */,
+				0099F9F320CE91A500454DC1 /* Utils */,
+				0095E54620C6667C00E847BB /* Purchase */,
+				0099F9F120CE914700454DC1 /* AR */,
+				0099F9F220CE916600454DC1 /* Settings */,
 				009B3A1520AD504000FA9BC3 /* NameViewController.swift */,
 				009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */,
 				009B3A1720AD504000FA9BC3 /* Main.storyboard */,
 				008ADF1E20B0033E00E7A642 /* helpViewController.swift */,
-				007C938B20B292AE00019114 /* settingsViewController.swift */,
-				00B74E7E20B7FCA800EBF380 /* Rechability.swift */,
-				006DFE3720C50D3E005CC585 /* PopUpViewController.swift */,
+				0099F9F020CE912500454DC1 /* puzzle */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -2529,7 +2621,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Unity-iPhone" */;
+			buildConfigurationList = 009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Kids_AR" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -2538,7 +2630,7 @@
 				Base,
 			);
 			mainGroup = 009B3A0720AD504000FA9BC3;
-			productRefGroup = 009B3A1120AD504000FA9BC3;
+			productRefGroup = 009B3A1120AD504000FA9BC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -2557,20 +2649,28 @@
 				006413B220C027F8000BEBC9 /* Unity.xcconfig in Resources */,
 				0064173B20C034BD000BEBC9 /* rsync_exclude in Resources */,
 				0061170A20B57C52008E4FB4 /* privacyPolicy.html in Resources */,
+				0099FA0220CE92A300454DC1 /* confetti.png in Resources */,
 				007AA13920C2621C00DB7112 /* libil2cpp.icalls in Resources */,
 				0095E55620C67EAE00E847BB /* GothamRounded-Light.otf in Resources */,
+				0099FA0320CE92A300454DC1 /* diamond.png in Resources */,
+				0042343F20CFB313007E5B30 /* positiveTone.mp3 in Resources */,
 				007AA14F20C2653E00DB7112 /* appIcon.png in Resources */,
-				009B3A1E20AD504F00FA9BC3,
+				009B3A1E20AD504F00FA9BC3 /* LaunchScreen.storyboard in Resources */,
 				006DFE3A20C51D84005CC585 /* kids.json in Resources */,
 				009B3A1B20AD504F00FA9BC3 /* Assets.xcassets in Resources */,
+				0099FA0420CE92A300454DC1 /* star.png in Resources */,
 				0061170820B54EB1008E4FB4 /* slowbackgroundmusic.mp3 in Resources */,
+				0099F9EF20CE852E00454DC1 /* puzzles.storyboard in Resources */,
 				007AA13820C2621C00DB7112 /* libil2cpp.def in Resources */,
 				0095E55420C67EA800E847BB /* GothamRounded-Bold.otf in Resources */,
+				0042344120CFB8D0007E5B30 /* kidsCheer.mp3 in Resources */,
+				0042343E20CFB313007E5B30 /* negativeTone.mp3 in Resources */,
 				007AA15420C2700700DB7112 /* UnityStoryboard.storyboard in Resources */,
 				0095E55520C67EAE00E847BB /* GothamRounded-Book.otf in Resources */,
 				0095E55720C67EAE00E847BB /* GothamRounded-Medium.otf in Resources */,
+				0099FA0520CE92A300454DC1 /* triangle.png in Resources */,
 				007AA14E20C2653E00DB7112 /* background.jpg in Resources */,
-				009B3A1920AD504000FA9BC3,
+				009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2655,7 +2755,9 @@
 				007AA10620C2621B00DB7112 /* Il2CppGenericMethodPointerTable.cpp in Sources */,
 				007AA0F120C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_16Table.cpp in Sources */,
 				007AA0DB20C2621B00DB7112 /* Bulk_UnityEngine.PhysicsModule_0.cpp in Sources */,
+				0099F9F520CE91D200454DC1 /* puzzleList.swift in Sources */,
 				007AA11320C2621B00DB7112 /* LifeCycleListener.mm in Sources */,
+				0099FA0920CE92BE00454DC1 /* UIView+DCAnimationKit.m in Sources */,
 				007AA11420C2621B00DB7112 /* RenderPluginDelegate.mm in Sources */,
 				007AA0C320C2621B00DB7112 /* Bulk_Mono.Security_1.cpp in Sources */,
 				007AA0C520C2621B00DB7112 /* Bulk_mscorlib_1.cpp in Sources */,
@@ -2675,6 +2777,7 @@
 				007AA12620C2621B00DB7112 /* DeviceSettings.mm in Sources */,
 				007AA12E20C2621B00DB7112 /* OnDemandResources.mm in Sources */,
 				007AA10020C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_9Table.cpp in Sources */,
+				0099F9F720CE91DC00454DC1 /* puzzleView.swift in Sources */,
 				007AA12F20C2621B00DB7112 /* UnityReplayKit.mm in Sources */,
 				007AA0C120C2621B00DB7112 /* Bulk_Generics_4.cpp in Sources */,
 				007AA10920C2621B00DB7112 /* Il2CppInvokerTable.cpp in Sources */,
@@ -2695,6 +2798,7 @@
 				007AA11720C2621B00DB7112 /* Keyboard.mm in Sources */,
 				007AA13C20C2621C00DB7112 /* NativeGallery.mm in Sources */,
 				007AA12320C2621B00DB7112 /* CameraCapture.mm in Sources */,
+				0099F9F920CE91E900454DC1 /* congratsView.swift in Sources */,
 				009B3A1420AD504000FA9BC3 /* AppDelegate.swift in Sources */,
 				007AA11A20C2621B00DB7112 /* StoreReview.m in Sources */,
 				007AA0EA20C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_0Table.cpp in Sources */,
@@ -2723,6 +2827,7 @@
 				007AA0F920C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_2Table.cpp in Sources */,
 				009B3A6020ADA54200FA9BC3 /* welcomeViewController.swift in Sources */,
 				007AA0E520C2621B00DB7112 /* GenericMethods0.cpp in Sources */,
+				0099FA0B20CE932600454DC1 /* MyView.swift in Sources */,
 				007AA0E120C2621B00DB7112 /* Bulk_UnityEngine.UIModule_0.cpp in Sources */,
 				007AA0FB20C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_4Table.cpp in Sources */,
 				007AA11820C2621B00DB7112 /* OrientationSupport.mm in Sources */,
@@ -2735,6 +2840,7 @@
 				007AA0C620C2621B00DB7112 /* Bulk_mscorlib_10.cpp in Sources */,
 				007AA0D720C2621B00DB7112 /* Bulk_UnityEngine.ImageConversionModule_0.cpp in Sources */,
 				007AA15720C27F9200DB7112 /* collectionCell.swift in Sources */,
+				0099F9FC20CE927B00454DC1 /* SAConfettiView.swift in Sources */,
 				007AA0FA20C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_3Table.cpp in Sources */,
 				007AA0EF20C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_14Table.cpp in Sources */,
 				007AA12B20C2621B00DB7112 /* GlesHelper.mm in Sources */,
@@ -2837,7 +2943,7 @@
 /* Begin XCBuildConfiguration section */
 		009B3A3620AD505000FA9BC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 006413AD20C027F8000BEBC9;
+			baseConfigurationReference = 006413AD20C027F8000BEBC9 /* Unity.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2900,7 +3006,7 @@
 		};
 		009B3A3720AD505000FA9BC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 006413AD20C027F8000BEBC9;
+			baseConfigurationReference = 006413AD20C027F8000BEBC9 /* Unity.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -3094,7 +3200,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Unity-iPhone" */ = {
+		009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Kids_AR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				009B3A3620AD505000FA9BC3 /* Debug */,

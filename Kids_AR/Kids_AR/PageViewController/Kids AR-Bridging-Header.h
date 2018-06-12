@@ -11,4 +11,5 @@
 #import <UIKit/UIKit.h>
 #import "UnityUtils.h"
 #import "UnityAppController.h"
-#import "UnityInterface.h" 
+#import "UnityInterface.h"
+#import "UIView+DCAnimationKit.h"
