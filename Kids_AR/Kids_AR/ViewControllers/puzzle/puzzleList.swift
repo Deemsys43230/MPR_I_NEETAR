@@ -25,10 +25,15 @@ class puzzleList : UIViewController,UITableViewDataSource, UITableViewDelegate {
         contentList.dataSource = self
         
         contentList.tableFooterView = UIView()
+      
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.pausePlaying = true
         appDelegate.pauseSound()
-        
     }
     func showAnimate()
     {
@@ -64,7 +69,7 @@ class puzzleList : UIViewController,UITableViewDataSource, UITableViewDelegate {
             return 200
         }
         else if UIDevice.current.model != "iPhone"{
-            return 300
+            return 280
         }
         return 250
     }
@@ -77,14 +82,14 @@ class puzzleList : UIViewController,UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath) as! puzzleCell
-        
+        var imag:UIImage!
         
         switch indexPath.row {
         case 0:
-            cell.productImage.image = #imageLiteral(resourceName: "puzzles_fruits")
+            imag = #imageLiteral(resourceName: "puzzles_fruits")
             break
         case 1:
-            cell.productImage.image = #imageLiteral(resourceName: "puzzle_animals")
+            imag = #imageLiteral(resourceName: "puzzle_animals")
             break
         
         default:
@@ -93,9 +98,21 @@ class puzzleList : UIViewController,UITableViewDataSource, UITableViewDelegate {
             break
         }
         
-      cell.productImage.contentMode = .redraw
-        cell.productImage.clipsToBounds = true
-        cell.productImage.layer.cornerRadius = 8
+        if UIDevice.current.model == "iPhone"{
+            cell.productImage.contentMode = .redraw
+            cell.productImage.clipsToBounds = true
+            cell.productImage.layer.cornerRadius = 8
+            cell.productImage.image = imag
+        }else{
+            // iPAD
+            cell.productImage.contentMode = .scaleAspectFit
+            cell.productImage.backgroundColor = UIColor.clear
+            cell.productImage.image = self.generateRoundCornerImage(image: imag, radius: 13)
+ 
+        }
+        
+      
+        
       //  cell.productImage.layer.borderColor = UIColor.white.cgColor
        // cell.productImage.layer.borderWidth = 2
         
@@ -117,13 +134,52 @@ class puzzleList : UIViewController,UITableViewDataSource, UITableViewDelegate {
         
     }
     
-   
+    func generateRoundCornerImage(image : UIImage , radius : CGFloat) -> UIImage {
+        
+        let imageLayer = CALayer()
+        imageLayer.frame = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
+        imageLayer.contents = image.cgImage
+        imageLayer.masksToBounds = true
+        imageLayer.cornerRadius = radius
+        
+        UIGraphicsBeginImageContext(image.size)
+        imageLayer.render(in: UIGraphicsGetCurrentContext()!)
+        let roundedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return roundedImage!
+    }
     
     
     @IBAction func backAction(sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
 }
-
+extension UIImageView
+{
+    func roundCornersForAspectFit(radius: CGFloat)
+    {
+        if let image = self.image {
+            
+            //calculate drawingRect
+            let boundsScale = self.bounds.size.width / self.bounds.size.height
+            let imageScale = image.size.width / image.size.height
+            
+            var drawingRect : CGRect = self.bounds
+            
+            if boundsScale > imageScale {
+                drawingRect.size.width =  drawingRect.size.height * imageScale
+                drawingRect.origin.x = (self.bounds.size.width - drawingRect.size.width) / 2
+            }else {
+                drawingRect.size.height = drawingRect.size.width / imageScale
+                drawingRect.origin.y = (self.bounds.size.height - drawingRect.size.height) / 2
+            }
+            let path = UIBezierPath(roundedRect: drawingRect, cornerRadius: radius)
+            let mask = CAShapeLayer()
+            mask.path = path.cgPath
+            self.layer.mask = mask
+        }
+    }
+}
 
 

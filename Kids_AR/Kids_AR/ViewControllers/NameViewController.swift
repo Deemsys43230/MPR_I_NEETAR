@@ -252,6 +252,7 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
             return;
         }
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.pausePlaying = true
         appDelegate.pauseSound()
         if !speechSynthesizer.isSpeaking {
             let speechUtterance = AVSpeechUtterance(string: "Welcome \(nameField.text!)")
@@ -303,8 +304,8 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
             muteLAbel.text = "Mute"
             UserDefaults.standard.set(true, forKey: "isMusicOn")
             UserDefaults.standard.synchronize()
-            
-            appDelegate.playSound()
+            appDelegate.pausePlaying = false
+            appDelegate.playSound() 
         }
         
     }

@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var isUnityRunning = false
     
+    var pausePlaying = false
+    
     @objc var currentUnityController: UnityAppController!
     
     let productIDs:Array<String> = ["com.deemsysinc.kidsar.basicmodels","com.deemsysinc.kidsar.premiummodel"]
@@ -142,7 +144,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if music == false{
             return
         }
-        
+        if pausePlaying == true{
+            return
+        }
         if player != nil && player?.isPlaying == false{
 //            let shortStartDelay = 0.01;            // seconds
 //            let now = player?.deviceCurrentTime;

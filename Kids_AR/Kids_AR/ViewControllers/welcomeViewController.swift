@@ -30,8 +30,8 @@ class welcomeViewController: UIViewController,UITableViewDataSource, UITableView
         contentList.tableFooterView = UIView()
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.playSound()
-        
+        appDelegate.pausePlaying = false
+        appDelegate.playSound() 
     }
     
     // TableView Delegates
@@ -93,9 +93,9 @@ class welcomeViewController: UIViewController,UITableViewDataSource, UITableView
             self.navigationController?.pushViewController(vc, animated: true)
             return;
         }
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate        
-        appDelegate.pauseSound() 
-        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.pausePlaying = true
+        appDelegate.pauseSound()
         let vc =  UIStoryboard.init(name: "UnityStoryboard", bundle: nil).instantiateInitialViewController() as! augmentViewController
         vc.index = indexPath.row
         self.navigationController?.pushViewController(vc, animated: true)
@@ -109,7 +109,9 @@ class welcomeViewController: UIViewController,UITableViewDataSource, UITableView
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.pausePlaying = false
         appDelegate.playSound()
+        
     }
     
     

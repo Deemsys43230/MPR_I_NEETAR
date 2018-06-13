@@ -103,6 +103,7 @@ class augmentViewController: UIViewController, popupDelegate {
     func didSelectModel(withName: String, audioName: String, modelID: String) {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.pausePlaying = true
         appDelegate.pauseSound()
         
         self.cameraButton.isHidden = true
@@ -140,9 +141,9 @@ class augmentViewController: UIViewController, popupDelegate {
     
     func openCollections(){
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.pausePlaying = true
         appDelegate.pauseSound()
-        
         let popOverVC = UIStoryboard(name: "UnityStoryboard", bundle: nil).instantiateViewController(withIdentifier: "PopUpViewController") as! PopUpViewController
         popOverVC.index = self.index
         popOverVC.delegate = self
@@ -277,8 +278,8 @@ class augmentViewController: UIViewController, popupDelegate {
     func showHintAlert(){
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.pausePlaying = true
         appDelegate.pauseSound()
-        
         self.hintView.frame = self.view.frame
         self.hintSubView.clipsToBounds = true
         self.hintSubView.layer.cornerRadius = 5

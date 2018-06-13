@@ -286,7 +286,9 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             UserDefaults.standard.set(true, forKey: "isMusicOn")
             UserDefaults.standard.synchronize()
+            appDelegate.pausePlaying = false
             appDelegate.playSound()
+            
         }
         else{
             let appDelegate = UIApplication.shared.delegate as! AppDelegate

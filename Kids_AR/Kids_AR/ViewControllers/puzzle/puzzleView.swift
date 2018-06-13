@@ -129,35 +129,36 @@ class puzzleView : UIViewController, congratsDelegate{
         setupGestures()
          loadJSONFile()
     }
+    
+    @IBOutlet var puzzlebannertop: NSLayoutConstraint!
+    
+    @IBOutlet var bottomConstraint: NSLayoutConstraint!
     override func viewWillLayoutSubviews() {
         
         if UIDevice.current.model == "iPhone"{
             
             if self.view.frame.width == 320{
-                
-              //  self.topConstraint.constant = 20
-              //  self.widthCons.constant = 100
-              //  self.heightCons.constant = 100
-                self.dropwidthCons.constant = 100
-                self.dropheightCons.constant = 100
-              //  self.centerXLeft.constant = -50
-              // self.centerXRight.constant = 50
-              //  self.view.layoutIfNeeded()
+                self.puzzlebannertop.constant = 15
+                self.topConstraint.constant = 20
+                self.bottomConstraint.constant = 20
+                self.widthCons.constant = 100
+                self.heightCons.constant = 100
+                self.dropwidthCons.constant = 130
+                self.dropheightCons.constant = 130
+                self.centerXLeft.constant = -75
+               self.centerXRight.constant = 75
+                self.view.layoutIfNeeded()
                 self.dropView.superview?.layoutIfNeeded()
-               // self.view.superview?.layoutIfNeeded()
                 self.dropView.superview?.setNeedsLayout()
-               // self.dropView.superview?.layoutIfNeeded()
-            //    self.dragView1.layoutIfNeeded()
-            //    self.dragView2.layoutIfNeeded()
-             //   self.dragView3.layoutIfNeeded()
-             //   self.dragView4.layoutIfNeeded()
-             //   self.dropView.layoutIfNeeded()
-             //   self.view.layoutIfNeeded()
-             //   self.dragView1.layoutIfNeeded()
-              //  self.dragView2.layoutIfNeeded()
-             //   self.dragView3.layoutIfNeeded()
-             //   self.dragView4.layoutIfNeeded()
-//                self.dropView.layoutIfNeeded()
+                self.dragView1.layoutIfNeeded()
+                self.dragView1.superview?.setNeedsLayout()
+                self.dragView2.layoutIfNeeded()
+                self.dragView2.superview?.setNeedsLayout()
+                self.dragView3.layoutIfNeeded()
+                self.dragView3.superview?.setNeedsLayout()
+                self.dragView4.layoutIfNeeded()
+                self.dragView4.superview?.setNeedsLayout()
+           
             }
             }
 //                else{
@@ -236,14 +237,17 @@ class puzzleView : UIViewController, congratsDelegate{
                 //                }
                 if self.dropView.frame.contains(p) && selectedView?.tag == answerTag{
                     print("location in target")
-                    playSound(type: true)
                     self.dropView.expand(into: self.view, finished: nil)
                     showCongrats()
                 }else{
                     print("back to original")
-                    self.dropView.tada(nil)
-                    playSound(type: false)
+                    if self.dropView.frame.contains(p){
+                        playSound(type: false)
+                    }
+                    
+                    self.dropView.tada(nil)                    
                     selectedView?.center = originalPosition
+                    
                 }
                 
             }

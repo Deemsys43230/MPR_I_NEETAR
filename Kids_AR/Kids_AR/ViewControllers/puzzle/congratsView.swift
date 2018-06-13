@@ -46,7 +46,7 @@ class congratsView : UIViewController{
         
         // Create confetti view
         confettiView = SAConfettiView(frame: self.view.bounds)
-        
+        confettiView.isUserInteractionEnabled = false
         // Set colors (default colors are red, green and blue)
         confettiView.colors = [UIColor(red:0.95, green:0.40, blue:0.27, alpha:1.0),
                                UIColor(red:1.00, green:0.78, blue:0.36, alpha:1.0),
@@ -62,14 +62,11 @@ class congratsView : UIViewController{
         
         // For custom image
         // confettiView.type = .Image(UIImage(named: "diamond")!)
-       let x = Int((arc4random()%4))
+       let x = Int((arc4random()%3))
         if x == 0{
             self.greetMSG.image = #imageLiteral(resourceName: "greet1")
         }
         else if x == 1{
-            self.greetMSG.image = #imageLiteral(resourceName: "greet2")
-        }
-        else if x == 2{
             self.greetMSG.image = #imageLiteral(resourceName: "greet3")
         }else{
             self.greetMSG.image = #imageLiteral(resourceName: "greet4")
@@ -83,9 +80,6 @@ class congratsView : UIViewController{
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         self.showAnimate()
         
-        
-        self.view.bringSubview(toFront: self.closeButton)
-        self.view.bringSubview(toFront: self.playNextButton)
         }
     
     override func viewWillLayoutSubviews() {
