@@ -1048,7 +1048,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="23"/>
+                                                    <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="23"/>
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKJ-jL-cOq">
@@ -1057,7 +1057,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="23"/>
+                                                    <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="23"/>
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tHZ-aZ-xZ0">
@@ -1079,7 +1079,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="23"/>
+                                                    <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="23"/>
                                                 </variation>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nin-VE-Sxq">
