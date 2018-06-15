@@ -62,9 +62,17 @@ class helpViewController : UIViewController, UITableViewDataSource, UITableViewD
                 cell.backgroundColor = UIColor.clear
                 return cell
             }
+        if indexPath.row == Constants.helpArray.count - 1{
+            let cell:tableCell = (tableView.dequeueReusableCell(withIdentifier: "happycell") as! tableCell?)!
             
+            cell.title.text = Constants.helpArray[indexPath.row]
+            // add border and color
+            cell.backgroundColor = UIColor.clear
+            return cell
+        }
             let cell:tableCell = (tableView.dequeueReusableCell(withIdentifier: "cell") as! tableCell?)!
             cell.title.text = Constants.helpArray[indexPath.row]
+        cell.title.setLineSpacing()
             // add border and color
             cell.backgroundColor = UIColor.clear
             return cell
@@ -76,4 +84,26 @@ class helpViewController : UIViewController, UITableViewDataSource, UITableViewD
     
 }
 
-
+extension UILabel {
+    
+    func setLineSpacing(lineSpacing: CGFloat = 1.5, lineHeightMultiple: CGFloat = 1.3) {
+        
+        guard let labelText = self.text else { return }
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = lineSpacing
+        paragraphStyle.lineHeightMultiple = lineHeightMultiple
+        
+        let attributedString:NSMutableAttributedString
+        if let labelattributedText = self.attributedText {
+            attributedString = NSMutableAttributedString(attributedString: labelattributedText)
+        } else {
+            attributedString = NSMutableAttributedString(string: labelText)
+        }
+        
+        // Line spacing attribute
+        attributedString.addAttribute(NSAttributedStringKey.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+        
+        self.attributedText = attributedString
+    }
+}

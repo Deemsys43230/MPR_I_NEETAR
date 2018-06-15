@@ -29,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8El-gF-VU4">
-                                <rect key="frame" x="0.0" y="73.5" width="320" height="494.5"/>
+                                <rect key="frame" x="0.0" y="74" width="320" height="494"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="350" id="kkL-ka-K8D" customClass="puzzleCell" customModule="Kids_AR" customModuleProvider="target">
@@ -67,7 +67,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puzzles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHE-my-U7d">
-                                <rect key="frame" x="110" y="37.5" width="100" height="26"/>
+                                <rect key="frame" x="110" y="38" width="100" height="26"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -129,28 +129,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits &amp; Vegetables" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfG-6y-gcN">
-                                <rect key="frame" x="40" y="24.5" width="240" height="52"/>
+                                <rect key="frame" x="40" y="25" width="240" height="52"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="26"/>
-                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.015686274509803921" green="0.20000000000000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="28"/>
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFP-Uk-eC1" userLabel="BorderView3">
-                                <rect key="frame" x="20.5" y="554.5" width="119" height="119"/>
+                                <rect key="frame" x="20.5" y="555" width="119" height="119"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5X-U6-TCH" userLabel="BorderView1">
-                                <rect key="frame" x="20.5" y="404.5" width="119" height="119"/>
+                                <rect key="frame" x="20.5" y="405" width="119" height="119"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afJ-cp-AMi" userLabel="BorderView4">
-                                <rect key="frame" x="180.5" y="554.5" width="119" height="119"/>
+                                <rect key="frame" x="180.5" y="555" width="119" height="119"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wM-gN-fCf" userLabel="BorderView2">
-                                <rect key="frame" x="180.5" y="404.5" width="119" height="119"/>
+                                <rect key="frame" x="180.5" y="405" width="119" height="119"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4h-DV-rag">
@@ -168,11 +168,11 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQE-ni-TNL">
-                                <rect key="frame" x="70.5" y="184.5" width="179" height="179"/>
+                                <rect key="frame" x="70.5" y="185" width="179" height="179"/>
                                 <color key="backgroundColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOG-Jf-L3n" userLabel="DropView">
-                                <rect key="frame" x="72.5" y="186.5" width="175" height="175"/>
+                                <rect key="frame" x="72.5" y="187" width="175" height="175"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="34n-88-u0U">
                                         <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
@@ -194,7 +194,7 @@
                                 </constraints>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lb-fZ-waz" customClass="MyView" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="22.5" y="406.5" width="115" height="115"/>
+                                <rect key="frame" x="22.5" y="407" width="115" height="115"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A" translatesAutoresizingMaskIntoConstraints="NO" id="e0m-kF-LtW">
                                         <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
@@ -209,7 +209,7 @@
                                 </constraints>
                             </view>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofN-hr-a08" customClass="MyView" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="182.5" y="406.5" width="115" height="115"/>
+                                <rect key="frame" x="182.5" y="407" width="115" height="115"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B" translatesAutoresizingMaskIntoConstraints="NO" id="iAy-VW-bbD">
                                         <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
@@ -224,7 +224,7 @@
                                 </constraints>
                             </view>
                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvE-yt-KjU" customClass="MyView" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="22.5" y="556.5" width="115" height="115"/>
+                                <rect key="frame" x="22.5" y="557" width="115" height="115"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="R" translatesAutoresizingMaskIntoConstraints="NO" id="fju-Dz-WdF">
                                         <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
@@ -245,7 +245,7 @@
                                 </constraints>
                             </view>
                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkW-MI-a3i" customClass="MyView" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="182.5" y="556.5" width="115" height="115"/>
+                                <rect key="frame" x="182.5" y="557" width="115" height="115"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Z" translatesAutoresizingMaskIntoConstraints="NO" id="pwU-E7-lKk">
                                         <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
@@ -260,7 +260,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzles_title" translatesAutoresizingMaskIntoConstraints="NO" id="t0D-4Q-JkK">
-                                <rect key="frame" x="5" y="96.5" width="310" height="60"/>
+                                <rect key="frame" x="5" y="97" width="310" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3u0-LM-f67">
                                         <variation key="heightClass=regular-widthClass=regular" constant="75"/>
@@ -402,7 +402,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spa-RH-DqD">
-                                        <rect key="frame" x="16" y="50" width="278.5" height="33"/>
+                                        <rect key="frame" x="16.5" y="50" width="278.5" height="33"/>
                                         <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="33"/>
                                         <color key="textColor" red="0.96862745100000003" green="0.86274509799999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>

@@ -9194,6 +9194,7 @@ extern "C" void AudioSource_get_clip_m1234340632 ();
 extern "C" void AudioSource_set_clip_m31653938 ();
 extern "C" void AudioSource_Play_m3389845180 ();
 extern "C" void AudioSource_Play_m48294159 ();
+extern "C" void AudioSource_Stop_m2682712816 ();
 extern "C" void AudioSource_get_isPlaying_m1896551654 ();
 extern "C" void AudioSource_get_spatializeInternal_m2117549793 ();
 extern "C" void AudioSource_get_spatialize_m3609701298 ();
@@ -12338,7 +12339,7 @@ extern "C" void VideoFormatsExample_Start_m1615238214 ();
 extern "C" void VideoFormatsExample_OnDestroy_m541603283 ();
 extern "C" void VideoFormatsExample_PopulateVideoFormatButtons_m595526008 ();
 extern "C" void VideoFormatsExample_ExampletButtonPressed_m2588664126 ();
-extern const Il2CppMethodPointer g_MethodPointers[12319] = 
+extern const Il2CppMethodPointer g_MethodPointers[12320] = 
 {
 	Locale_GetText_m3374010885,
 	Locale_GetText_m1601577974,
@@ -21515,6 +21516,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12319] =
 	AudioSource_set_clip_m31653938,
 	AudioSource_Play_m3389845180,
 	AudioSource_Play_m48294159,
+	AudioSource_Stop_m2682712816,
 	AudioSource_get_isPlaying_m1896551654,
 	AudioSource_get_spatializeInternal_m2117549793,
 	AudioSource_get_spatialize_m3609701298,

@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import AVFoundation
+import QuartzCore
+
 
 class puzzleView : UIViewController, congratsDelegate{
     
@@ -46,6 +48,7 @@ class puzzleView : UIViewController, congratsDelegate{
     
      @IBOutlet var dropBorderView: UIView!
     
+     let speechSynthesizer = AVSpeechSynthesizer()
     
     @IBOutlet var backgroundImage: UIImageView!
     
@@ -179,6 +182,9 @@ class puzzleView : UIViewController, congratsDelegate{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    
+    
     
     func setupGestures() {
         let pan = UIPanGestureRecognizer(target:self, action:#selector(self.pan(_:)))
@@ -401,6 +407,17 @@ class puzzleView : UIViewController, congratsDelegate{
         default:
             break
         }
+        
+     //   DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            
+            if !self.speechSynthesizer.isSpeaking {
+                let speechUtterance = AVSpeechUtterance(string: "\(self.question.text!)")
+                self.speechSynthesizer.speak(speechUtterance)
+            }
+            else{
+                self.speechSynthesizer.continueSpeaking()
+            }
+      //  }
     }
     
     @IBAction func backAction(sender: UIButton) {

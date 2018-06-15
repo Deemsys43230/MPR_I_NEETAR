@@ -292,10 +292,14 @@ class contactViewController : UIViewController, UITextFieldDelegate, SKPSMTPMess
     func messageSent(_ message: SKPSMTPMessage!) {
         self.indicator.stopAnimating()
         self.submitButton.isEnabled = true
+        self.nameField.text = ""
+        self.emailField.text = ""
+        self.queryField.text = ""
         let alertController = UIAlertController(title: "Success", message: "Query submitted", preferredStyle: .alert)
         let OKAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
         alertController.addAction(OKAction)
         self.present(alertController, animated: true, completion:nil)
+        
         
     }
     func messageFailed(_ message: SKPSMTPMessage!, error: Error!) {
@@ -340,6 +344,22 @@ class contactViewController : UIViewController, UITextFieldDelegate, SKPSMTPMess
             textView.resignFirstResponder()
             return false
         }
+        return true
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+      if textField == nameField {
+        if string == " " && range.location == 0{
+            return false
+        }
+        
+        let set = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLKMNOPQRSTUVWXYZ ")
+        
+        if string.rangeOfCharacter(from: set.inverted) != nil {
+            return false
+        }
+        
+        }
+        
         return true
     }
 //    var kbHeight: CGFloat!

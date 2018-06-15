@@ -186,7 +186,11 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
         if !transactionInProgress{
             let product = delegate.productsArray[sender.tag]
             if product != nil{
-                showActions(p: product!)
+                self.view.isUserInteractionEnabled = false
+                self.transactionInProgress = true
+                self.indicator.startAnimating()
+                //  print("namr \(p.localizedTitle) namr \(p.price)")
+                self.store.buy(p: product!)
             }
             else{
                 print("product is empty")
