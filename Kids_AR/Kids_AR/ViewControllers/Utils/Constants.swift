@@ -60,7 +60,7 @@ class Constants {
     
     static let lockColor:UIColor = UIColor(red: 247/255, green: 220/255, blue: 71/255, alpha: 1.0)
     
-    static let copyright="Copyright © 2018 Deemsys Inc. All Rights Reserved."
+     
     
     static let fromEmail:String = "deemmobtest@gmail.com"
     static let fromEmailPwd:String = "deemsys@123"
@@ -83,20 +83,20 @@ class Constants {
     
  
  static let helpArray = [
-    "\n✣ Welcome to our augmented reality kids AR app.",
-    "\n✣ To get started, give your name on the welcome screen to explore the fun of augmented realities.",
-    "\n✣ Choose a category on your home screen to start.",
-    "\n✣ You will be given few models for free and you need to purchase locked models for using it.",
-    "\n✣ You can customize your app under settings button.",
-    "\n✣ For unlocking all models go to Settings -> Purchase -> click Buy",
-    "\n✣ For restoring your purchases on a new device or reinstalling app goto Settings -> Purchase -> click Restore.",
-    "\n✣ Any Queries? Please send us through Settings -> Contact us.\n",
-    "\nHow to use 3d models?",
-    "\n✣ To simulate a 3d model, press the menu button on top of your camera screen to choose a model from the list.",
-    "\n✣ Hold your camera still while we detect flat surfaces for placing models.",
-    "\n✣ Once you see surface detected, Tap on the surface to place your models.",
-    "\n✣ To zoom your models use two-finger pinch gesture.",
-    "\n✣ To rotate your models use the single finger and slide left or right.",
+    "Welcome to our augmented reality kids AR app.",
+    "To get started, give your name on the welcome screen to explore the fun of augmented realities.",
+    "Choose a category on your home screen to start.",
+    "You will be given few models for free and you need to purchase locked models for using it.",
+    "You can customize your app under settings button.",
+    "For unlocking all models go to Settings -> Purchase -> click Buy",
+    "For restoring your purchases on a new device or reinstalling app goto Settings -> Purchase -> click Restore.",
+    "Any Queries? Please send us through Settings -> Contact us.\n",
+    "How to use 3d models?",
+    "To simulate a 3d model, press the menu button on top of your camera screen to choose a model from the list.",
+    "Hold your camera still while we detect flat surfaces for placing models.",
+    "Once you see surface detected, Tap on the surface to place your models.",
+    "To zoom your models use two-finger pinch gesture.",
+    "To rotate your models use the single finger and slide left or right.",
     "\nHappy Learning!\n"
                    ]
   

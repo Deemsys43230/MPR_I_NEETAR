@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,25 +22,28 @@
             <objects>
                 <viewController storyboardIdentifier="puzzleList" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Ya-Lf-5ev" customClass="puzzleList" customModule="Kids_AR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VS1-y0-ZGm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="puzzle_background" translatesAutoresizingMaskIntoConstraints="NO" id="sXD-TT-eFl">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" insetsLayoutMarginsFromSafeArea="NO" image="puzzles_header" translatesAutoresizingMaskIntoConstraints="NO" id="sXD-TT-eFl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="ZHt-kG-Tt2"/>
+                                </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8El-gF-VU4">
-                                <rect key="frame" x="0.0" y="74" width="320" height="494"/>
+                                <rect key="frame" x="0.0" y="85" width="375" height="582"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="350" id="kkL-ka-K8D" customClass="puzzleCell" customModule="Kids_AR" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="350"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kkL-ka-K8D" id="nSr-Sw-vsw">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="349.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="349.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzle_animals" translatesAutoresizingMaskIntoConstraints="NO" id="zUI-98-vWV">
-                                                    <rect key="frame" x="15" y="5" width="290" height="329.5"/>
+                                                    <rect key="frame" x="15" y="5" width="345" height="329.5"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </imageView>
                                             </subviews>
@@ -67,7 +70,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puzzles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHE-my-U7d">
-                                <rect key="frame" x="110" y="38" width="100" height="26"/>
+                                <rect key="frame" x="137.5" y="37" width="100" height="26"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -92,16 +95,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8El-gF-VU4" firstAttribute="top" secondItem="KHE-my-U7d" secondAttribute="bottom" constant="10" id="0MH-VR-szC">
-                                <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                            </constraint>
                             <constraint firstItem="sXD-TT-eFl" firstAttribute="top" secondItem="VS1-y0-ZGm" secondAttribute="top" id="1QS-7f-l4D"/>
                             <constraint firstItem="KHE-my-U7d" firstAttribute="centerY" secondItem="YhI-hh-SNy" secondAttribute="centerY" id="1eF-8O-m0m"/>
                             <constraint firstItem="KHE-my-U7d" firstAttribute="centerX" secondItem="VS1-y0-ZGm" secondAttribute="centerX" id="DUL-6s-tCz"/>
+                            <constraint firstItem="8El-gF-VU4" firstAttribute="top" secondItem="sXD-TT-eFl" secondAttribute="bottom" id="N0b-ay-rih"/>
                             <constraint firstItem="F7r-kq-0Af" firstAttribute="trailing" secondItem="8El-gF-VU4" secondAttribute="trailing" id="XJV-mL-DTI"/>
                             <constraint firstItem="F7r-kq-0Af" firstAttribute="bottom" secondItem="8El-gF-VU4" secondAttribute="bottom" id="YgS-rQ-Psh"/>
                             <constraint firstItem="YhI-hh-SNy" firstAttribute="leading" secondItem="F7r-kq-0Af" secondAttribute="leading" constant="10" id="fBD-ol-bkJ"/>
-                            <constraint firstItem="sXD-TT-eFl" firstAttribute="bottom" secondItem="F7r-kq-0Af" secondAttribute="bottom" id="fb7-5N-l3Q"/>
                             <constraint firstItem="sXD-TT-eFl" firstAttribute="trailing" secondItem="F7r-kq-0Af" secondAttribute="trailing" id="hul-cy-jrp"/>
                             <constraint firstItem="sXD-TT-eFl" firstAttribute="leading" secondItem="F7r-kq-0Af" secondAttribute="leading" id="lKg-Dq-wF9"/>
                             <constraint firstItem="YhI-hh-SNy" firstAttribute="top" secondItem="F7r-kq-0Af" secondAttribute="top" constant="15" id="ooX-Jv-TgB"/>
@@ -115,21 +115,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mK4-cQ-QUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-833.59375" y="138.8671875"/>
+            <point key="canvasLocation" x="-834.375" y="138.38028169014083"/>
         </scene>
         <!--Puzzle View-->
         <scene sceneID="7au-NQ-7CX">
             <objects>
                 <viewController storyboardIdentifier="puzzleView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FLA-C4-tby" customClass="puzzleView" customModule="Kids_AR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1nz-iZ-SZV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="nUX-he-Cnq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits &amp; Vegetables" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfG-6y-gcN">
-                                <rect key="frame" x="40" y="25" width="240" height="52"/>
+                                <rect key="frame" x="40" y="37" width="295" height="26"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="26"/>
                                 <color key="textColor" red="0.015686274509803921" green="0.20000000000000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -138,19 +138,19 @@
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFP-Uk-eC1" userLabel="BorderView3">
-                                <rect key="frame" x="20.5" y="555" width="119" height="119"/>
+                                <rect key="frame" x="48" y="541" width="119" height="119"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5X-U6-TCH" userLabel="BorderView1">
-                                <rect key="frame" x="20.5" y="405" width="119" height="119"/>
+                                <rect key="frame" x="48" y="391" width="119" height="119"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afJ-cp-AMi" userLabel="BorderView4">
-                                <rect key="frame" x="180.5" y="555" width="119" height="119"/>
+                                <rect key="frame" x="208" y="541" width="119" height="119"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wM-gN-fCf" userLabel="BorderView2">
-                                <rect key="frame" x="180.5" y="405" width="119" height="119"/>
+                                <rect key="frame" x="208" y="391" width="119" height="119"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4h-DV-rag">
@@ -168,11 +168,11 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQE-ni-TNL">
-                                <rect key="frame" x="70.5" y="185" width="179" height="179"/>
+                                <rect key="frame" x="98" y="171" width="179" height="179"/>
                                 <color key="backgroundColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOG-Jf-L3n" userLabel="DropView">
-                                <rect key="frame" x="72.5" y="187" width="175" height="175"/>
+                                <rect key="frame" x="100" y="173" width="175" height="175"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="34n-88-u0U">
                                         <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
@@ -194,7 +194,7 @@
                                 </constraints>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lb-fZ-waz" customClass="MyView" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="22.5" y="407" width="115" height="115"/>
+                                <rect key="frame" x="50" y="393" width="115" height="115"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A" translatesAutoresizingMaskIntoConstraints="NO" id="e0m-kF-LtW">
                                         <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
@@ -209,7 +209,7 @@
                                 </constraints>
                             </view>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofN-hr-a08" customClass="MyView" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="182.5" y="407" width="115" height="115"/>
+                                <rect key="frame" x="210" y="393" width="115" height="115"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B" translatesAutoresizingMaskIntoConstraints="NO" id="iAy-VW-bbD">
                                         <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
@@ -224,7 +224,7 @@
                                 </constraints>
                             </view>
                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvE-yt-KjU" customClass="MyView" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="22.5" y="557" width="115" height="115"/>
+                                <rect key="frame" x="50" y="543" width="115" height="115"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="R" translatesAutoresizingMaskIntoConstraints="NO" id="fju-Dz-WdF">
                                         <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
@@ -245,7 +245,7 @@
                                 </constraints>
                             </view>
                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkW-MI-a3i" customClass="MyView" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="182.5" y="557" width="115" height="115"/>
+                                <rect key="frame" x="210" y="543" width="115" height="115"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Z" translatesAutoresizingMaskIntoConstraints="NO" id="pwU-E7-lKk">
                                         <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
@@ -260,7 +260,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzles_title" translatesAutoresizingMaskIntoConstraints="NO" id="t0D-4Q-JkK">
-                                <rect key="frame" x="5" y="97" width="310" height="60"/>
+                                <rect key="frame" x="5" y="83" width="365" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3u0-LM-f67">
                                         <variation key="heightClass=regular-widthClass=regular" constant="75"/>
@@ -268,7 +268,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIND MUSK MELON FIND MUSK MELON " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUG-Hd-989">
-                                <rect key="frame" x="15" y="104.5" width="290" height="44"/>
+                                <rect key="frame" x="15" y="90.5" width="345" height="44"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="22"/>
                                 <color key="textColor" red="1" green="0.98431372549019602" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -388,11 +388,11 @@
             <objects>
                 <viewController storyboardIdentifier="congratsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UOk-BQ-QX6" customClass="congratsView" customModule="Kids_AR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NCu-tJ-0t8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILb-8u-Cjm">
-                                <rect key="frame" x="5" y="34" width="310" height="500"/>
+                                <rect key="frame" x="32.5" y="83.5" width="310" height="500"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greet4" translatesAutoresizingMaskIntoConstraints="NO" id="y1j-TM-feV">
                                         <rect key="frame" x="80" y="113" width="150" height="150"/>
@@ -410,7 +410,7 @@
                                             <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="35"/>
                                         </variation>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zra-E6-5Nq">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zra-E6-5Nq">
                                         <rect key="frame" x="272" y="10" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="F2O-SG-YrY"/>
@@ -419,6 +419,25 @@
                                         <state key="normal" image="collectionclose"/>
                                         <connections>
                                             <action selector="close:" destination="UOk-BQ-QX6" eventType="touchUpInside" id="vMh-TN-UZv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAG-dc-1YZ">
+                                        <rect key="frame" x="45" y="340" width="220" height="45"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="WVL-aR-1o6">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="45" id="gTg-Pq-YuS">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="55"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="23"/>
+                                        <state key="normal" title="EXIT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="exitFromView:" destination="UOk-BQ-QX6" eventType="touchUpInside" id="w39-RO-rCV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -435,10 +454,10 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmX-An-7oy">
-                                <rect key="frame" x="60" y="434" width="200" height="45"/>
+                                <rect key="frame" x="77.5" y="483.5" width="220" height="45"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.86274509799999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="FZF-7V-VI1">
+                                    <constraint firstAttribute="width" constant="220" id="FZF-7V-VI1">
                                         <variation key="heightClass=regular-widthClass=regular" constant="300"/>
                                     </constraint>
                                     <constraint firstAttribute="height" constant="45" id="tqz-Xy-RrD">
@@ -461,7 +480,9 @@
                             </constraint>
                             <constraint firstItem="ILb-8u-Cjm" firstAttribute="centerX" secondItem="NCu-tJ-0t8" secondAttribute="centerX" id="7r7-jo-Sty"/>
                             <constraint firstItem="ILb-8u-Cjm" firstAttribute="centerY" secondItem="NCu-tJ-0t8" secondAttribute="centerY" id="IXP-wu-kBo"/>
+                            <constraint firstItem="xmX-An-7oy" firstAttribute="top" secondItem="cAG-dc-1YZ" secondAttribute="bottom" constant="15" id="UVG-nD-qe9"/>
                             <constraint firstItem="xmX-An-7oy" firstAttribute="centerX" secondItem="NCu-tJ-0t8" secondAttribute="centerX" id="qcx-2I-Fy7"/>
+                            <constraint firstItem="cAG-dc-1YZ" firstAttribute="leading" secondItem="xmX-An-7oy" secondAttribute="leading" id="qzO-cY-c3r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2kv-2k-wU7"/>
                     </view>
@@ -490,7 +511,7 @@
         <image name="collectionclose" width="512" height="512"/>
         <image name="greet4" width="600" height="600"/>
         <image name="puzzle_animals" width="1000" height="650"/>
-        <image name="puzzle_background" width="1242" height="2208"/>
+        <image name="puzzles_header" width="1000" height="500"/>
         <image name="puzzles_title" width="1000" height="100"/>
     </resources>
     <color key="tintColor" red="0.35294117650000001" green="0.79215686269999996" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>

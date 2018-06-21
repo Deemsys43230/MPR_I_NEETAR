@@ -20,14 +20,6 @@
 #include "il2cpp-object-internals.h"
 
 
-// System.Char[]
-struct CharU5BU5D_t3528271667;
-// Mono.Globalization.Unicode.TailoringInfo[]
-struct TailoringInfoU5BU5D_t1797664499;
-// System.Collections.Generic.Dictionary`2<System.String,System.Int32>
-struct Dictionary_2_t2736202052;
-// System.Byte
-struct Byte_t1134296376;
 // System.Byte[]
 struct ByteU5BU5D_t4116647657;
 // System.Collections.IEnumerator
@@ -42,6 +34,8 @@ struct ArrayList_t2718874744;
 struct IntPtrU5BU5D_t4013366056;
 // System.Collections.IDictionary
 struct IDictionary_t1363984059;
+// Mono.Security.PKCS7/ContentInfo
+struct ContentInfo_t3218159895;
 // System.Security.Cryptography.RSA
 struct RSA_t2385438082;
 // Mono.Xml.SmallXmlParser/IContentHandler
@@ -52,8 +46,12 @@ struct TextReader_t283511965;
 struct Stack_t2329662280;
 // System.Text.StringBuilder
 struct StringBuilder_t;
+// System.Char[]
+struct CharU5BU5D_t3528271667;
 // Mono.Xml.SmallXmlParser/AttrListImpl
 struct AttrListImpl_t567962447;
+// System.Collections.Generic.Dictionary`2<System.String,System.Int32>
+struct Dictionary_2_t2736202052;
 // System.Object[]
 struct ObjectU5BU5D_t2843939325;
 // System.Int32[]
@@ -88,10 +86,12 @@ struct KeySizesU5BU5D_t722666473;
 struct X509CertificateCollection_t1542168549;
 // System.Security.Cryptography.RandomNumberGenerator
 struct RandomNumberGenerator_t386037858;
-// Mono.Security.PKCS7/ContentInfo
-struct ContentInfo_t3218159895;
 // System.Security.Cryptography.SymmetricAlgorithm
 struct SymmetricAlgorithm_t4254223087;
+// Mono.Globalization.Unicode.TailoringInfo[]
+struct TailoringInfoU5BU5D_t1797664499;
+// System.Byte
+struct Byte_t1134296376;
 // Mono.Globalization.Unicode.CodePointIndexer
 struct CodePointIndexer_t4134431086;
 // Mono.Globalization.Unicode.Contraction[]
@@ -110,26 +110,26 @@ struct CspParameters_t239852639;
 struct Void_t1185182177;
 // System.Security.SecurityElement
 struct SecurityElement_t1046076091;
-// Mono.Security.Cryptography.DSAManaged/KeyGeneratedEventHandler
-struct KeyGeneratedEventHandler_t3828027274;
-// Mono.Security.Cryptography.RSAManaged/KeyGeneratedEventHandler
-struct KeyGeneratedEventHandler_t3064139577;
 // System.Reflection.MethodInfo
 struct MethodInfo_t;
 // System.DelegateData
 struct DelegateData_t1677132599;
+// Mono.Security.Cryptography.RSAManaged/KeyGeneratedEventHandler
+struct KeyGeneratedEventHandler_t3064139577;
+// Mono.Security.Cryptography.DSAManaged/KeyGeneratedEventHandler
+struct KeyGeneratedEventHandler_t3828027274;
 // System.String[]
 struct StringU5BU5D_t1281789340;
-// System.Security.Cryptography.DSA
-struct DSA_t2386879874;
-// Mono.Security.X509.X509ExtensionCollection
-struct X509ExtensionCollection_t609554708;
 // System.EventArgs
 struct EventArgs_t3591816995;
 // System.IAsyncResult
 struct IAsyncResult_t767004451;
 // System.AsyncCallback
 struct AsyncCallback_t3962456242;
+// System.Security.Cryptography.DSA
+struct DSA_t2386879874;
+// Mono.Security.X509.X509ExtensionCollection
+struct X509ExtensionCollection_t609554708;
 
 
 
@@ -148,258 +148,43 @@ struct AsyncCallback_t3962456242;
 #pragma clang diagnostic pop
 #endif
 #endif // RUNTIMEOBJECT_H
-#ifndef MSCOMPATUNICODETABLE_T1453885583_H
-#define MSCOMPATUNICODETABLE_T1453885583_H
+#ifndef LEVEL2MAPCOMPARER_T1716225294_H
+#define LEVEL2MAPCOMPARER_T1716225294_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// Mono.Globalization.Unicode.MSCompatUnicodeTable
-struct  MSCompatUnicodeTable_t1453885583  : public RuntimeObject
+// Mono.Globalization.Unicode.Level2MapComparer
+struct  Level2MapComparer_t1716225294  : public RuntimeObject
 {
 public:
 
 public:
 };
 
-struct MSCompatUnicodeTable_t1453885583_StaticFields
+struct Level2MapComparer_t1716225294_StaticFields
 {
 public:
-	// System.Int32 Mono.Globalization.Unicode.MSCompatUnicodeTable::MaxExpansionLength
-	int32_t ___MaxExpansionLength_0;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::ignorableFlags
-	uint8_t* ___ignorableFlags_1;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::categories
-	uint8_t* ___categories_2;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::level1
-	uint8_t* ___level1_3;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::level2
-	uint8_t* ___level2_4;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::level3
-	uint8_t* ___level3_5;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkCHScategory
-	uint8_t* ___cjkCHScategory_6;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkCHTcategory
-	uint8_t* ___cjkCHTcategory_7;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkJAcategory
-	uint8_t* ___cjkJAcategory_8;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkKOcategory
-	uint8_t* ___cjkKOcategory_9;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkCHSlv1
-	uint8_t* ___cjkCHSlv1_10;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkCHTlv1
-	uint8_t* ___cjkCHTlv1_11;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkJAlv1
-	uint8_t* ___cjkJAlv1_12;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkKOlv1
-	uint8_t* ___cjkKOlv1_13;
-	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkKOlv2
-	uint8_t* ___cjkKOlv2_14;
-	// System.Char[] Mono.Globalization.Unicode.MSCompatUnicodeTable::tailoringArr
-	CharU5BU5D_t3528271667* ___tailoringArr_15;
-	// Mono.Globalization.Unicode.TailoringInfo[] Mono.Globalization.Unicode.MSCompatUnicodeTable::tailoringInfos
-	TailoringInfoU5BU5D_t1797664499* ___tailoringInfos_16;
-	// System.Object Mono.Globalization.Unicode.MSCompatUnicodeTable::forLock
-	RuntimeObject * ___forLock_17;
-	// System.Boolean Mono.Globalization.Unicode.MSCompatUnicodeTable::isReady
-	bool ___isReady_18;
-	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> Mono.Globalization.Unicode.MSCompatUnicodeTable::<>f__switch$map2
-	Dictionary_2_t2736202052 * ___U3CU3Ef__switchU24map2_19;
-	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> Mono.Globalization.Unicode.MSCompatUnicodeTable::<>f__switch$map3
-	Dictionary_2_t2736202052 * ___U3CU3Ef__switchU24map3_20;
-	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> Mono.Globalization.Unicode.MSCompatUnicodeTable::<>f__switch$map4
-	Dictionary_2_t2736202052 * ___U3CU3Ef__switchU24map4_21;
+	// Mono.Globalization.Unicode.Level2MapComparer Mono.Globalization.Unicode.Level2MapComparer::Instance
+	Level2MapComparer_t1716225294 * ___Instance_0;
 
 public:
-	inline static int32_t get_offset_of_MaxExpansionLength_0() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___MaxExpansionLength_0)); }
-	inline int32_t get_MaxExpansionLength_0() const { return ___MaxExpansionLength_0; }
-	inline int32_t* get_address_of_MaxExpansionLength_0() { return &___MaxExpansionLength_0; }
-	inline void set_MaxExpansionLength_0(int32_t value)
+	inline static int32_t get_offset_of_Instance_0() { return static_cast<int32_t>(offsetof(Level2MapComparer_t1716225294_StaticFields, ___Instance_0)); }
+	inline Level2MapComparer_t1716225294 * get_Instance_0() const { return ___Instance_0; }
+	inline Level2MapComparer_t1716225294 ** get_address_of_Instance_0() { return &___Instance_0; }
+	inline void set_Instance_0(Level2MapComparer_t1716225294 * value)
 	{
-		___MaxExpansionLength_0 = value;
-	}
-
-	inline static int32_t get_offset_of_ignorableFlags_1() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___ignorableFlags_1)); }
-	inline uint8_t* get_ignorableFlags_1() const { return ___ignorableFlags_1; }
-	inline uint8_t** get_address_of_ignorableFlags_1() { return &___ignorableFlags_1; }
-	inline void set_ignorableFlags_1(uint8_t* value)
-	{
-		___ignorableFlags_1 = value;
-	}
-
-	inline static int32_t get_offset_of_categories_2() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___categories_2)); }
-	inline uint8_t* get_categories_2() const { return ___categories_2; }
-	inline uint8_t** get_address_of_categories_2() { return &___categories_2; }
-	inline void set_categories_2(uint8_t* value)
-	{
-		___categories_2 = value;
-	}
-
-	inline static int32_t get_offset_of_level1_3() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___level1_3)); }
-	inline uint8_t* get_level1_3() const { return ___level1_3; }
-	inline uint8_t** get_address_of_level1_3() { return &___level1_3; }
-	inline void set_level1_3(uint8_t* value)
-	{
-		___level1_3 = value;
-	}
-
-	inline static int32_t get_offset_of_level2_4() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___level2_4)); }
-	inline uint8_t* get_level2_4() const { return ___level2_4; }
-	inline uint8_t** get_address_of_level2_4() { return &___level2_4; }
-	inline void set_level2_4(uint8_t* value)
-	{
-		___level2_4 = value;
-	}
-
-	inline static int32_t get_offset_of_level3_5() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___level3_5)); }
-	inline uint8_t* get_level3_5() const { return ___level3_5; }
-	inline uint8_t** get_address_of_level3_5() { return &___level3_5; }
-	inline void set_level3_5(uint8_t* value)
-	{
-		___level3_5 = value;
-	}
-
-	inline static int32_t get_offset_of_cjkCHScategory_6() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkCHScategory_6)); }
-	inline uint8_t* get_cjkCHScategory_6() const { return ___cjkCHScategory_6; }
-	inline uint8_t** get_address_of_cjkCHScategory_6() { return &___cjkCHScategory_6; }
-	inline void set_cjkCHScategory_6(uint8_t* value)
-	{
-		___cjkCHScategory_6 = value;
-	}
-
-	inline static int32_t get_offset_of_cjkCHTcategory_7() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkCHTcategory_7)); }
-	inline uint8_t* get_cjkCHTcategory_7() const { return ___cjkCHTcategory_7; }
-	inline uint8_t** get_address_of_cjkCHTcategory_7() { return &___cjkCHTcategory_7; }
-	inline void set_cjkCHTcategory_7(uint8_t* value)
-	{
-		___cjkCHTcategory_7 = value;
-	}
-
-	inline static int32_t get_offset_of_cjkJAcategory_8() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkJAcategory_8)); }
-	inline uint8_t* get_cjkJAcategory_8() const { return ___cjkJAcategory_8; }
-	inline uint8_t** get_address_of_cjkJAcategory_8() { return &___cjkJAcategory_8; }
-	inline void set_cjkJAcategory_8(uint8_t* value)
-	{
-		___cjkJAcategory_8 = value;
-	}
-
-	inline static int32_t get_offset_of_cjkKOcategory_9() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkKOcategory_9)); }
-	inline uint8_t* get_cjkKOcategory_9() const { return ___cjkKOcategory_9; }
-	inline uint8_t** get_address_of_cjkKOcategory_9() { return &___cjkKOcategory_9; }
-	inline void set_cjkKOcategory_9(uint8_t* value)
-	{
-		___cjkKOcategory_9 = value;
-	}
-
-	inline static int32_t get_offset_of_cjkCHSlv1_10() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkCHSlv1_10)); }
-	inline uint8_t* get_cjkCHSlv1_10() const { return ___cjkCHSlv1_10; }
-	inline uint8_t** get_address_of_cjkCHSlv1_10() { return &___cjkCHSlv1_10; }
-	inline void set_cjkCHSlv1_10(uint8_t* value)
-	{
-		___cjkCHSlv1_10 = value;
-	}
-
-	inline static int32_t get_offset_of_cjkCHTlv1_11() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkCHTlv1_11)); }
-	inline uint8_t* get_cjkCHTlv1_11() const { return ___cjkCHTlv1_11; }
-	inline uint8_t** get_address_of_cjkCHTlv1_11() { return &___cjkCHTlv1_11; }
-	inline void set_cjkCHTlv1_11(uint8_t* value)
-	{
-		___cjkCHTlv1_11 = value;
-	}
-
-	inline static int32_t get_offset_of_cjkJAlv1_12() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkJAlv1_12)); }
-	inline uint8_t* get_cjkJAlv1_12() const { return ___cjkJAlv1_12; }
-	inline uint8_t** get_address_of_cjkJAlv1_12() { return &___cjkJAlv1_12; }
-	inline void set_cjkJAlv1_12(uint8_t* value)
-	{
-		___cjkJAlv1_12 = value;
-	}
-
-	inline static int32_t get_offset_of_cjkKOlv1_13() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkKOlv1_13)); }
-	inline uint8_t* get_cjkKOlv1_13() const { return ___cjkKOlv1_13; }
-	inline uint8_t** get_address_of_cjkKOlv1_13() { return &___cjkKOlv1_13; }
-	inline void set_cjkKOlv1_13(uint8_t* value)
-	{
-		___cjkKOlv1_13 = value;
-	}
-
-	inline static int32_t get_offset_of_cjkKOlv2_14() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkKOlv2_14)); }
-	inline uint8_t* get_cjkKOlv2_14() const { return ___cjkKOlv2_14; }
-	inline uint8_t** get_address_of_cjkKOlv2_14() { return &___cjkKOlv2_14; }
-	inline void set_cjkKOlv2_14(uint8_t* value)
-	{
-		___cjkKOlv2_14 = value;
-	}
-
-	inline static int32_t get_offset_of_tailoringArr_15() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___tailoringArr_15)); }
-	inline CharU5BU5D_t3528271667* get_tailoringArr_15() const { return ___tailoringArr_15; }
-	inline CharU5BU5D_t3528271667** get_address_of_tailoringArr_15() { return &___tailoringArr_15; }
-	inline void set_tailoringArr_15(CharU5BU5D_t3528271667* value)
-	{
-		___tailoringArr_15 = value;
-		Il2CppCodeGenWriteBarrier((&___tailoringArr_15), value);
-	}
-
-	inline static int32_t get_offset_of_tailoringInfos_16() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___tailoringInfos_16)); }
-	inline TailoringInfoU5BU5D_t1797664499* get_tailoringInfos_16() const { return ___tailoringInfos_16; }
-	inline TailoringInfoU5BU5D_t1797664499** get_address_of_tailoringInfos_16() { return &___tailoringInfos_16; }
-	inline void set_tailoringInfos_16(TailoringInfoU5BU5D_t1797664499* value)
-	{
-		___tailoringInfos_16 = value;
-		Il2CppCodeGenWriteBarrier((&___tailoringInfos_16), value);
-	}
-
-	inline static int32_t get_offset_of_forLock_17() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___forLock_17)); }
-	inline RuntimeObject * get_forLock_17() const { return ___forLock_17; }
-	inline RuntimeObject ** get_address_of_forLock_17() { return &___forLock_17; }
-	inline void set_forLock_17(RuntimeObject * value)
-	{
-		___forLock_17 = value;
-		Il2CppCodeGenWriteBarrier((&___forLock_17), value);
-	}
-
-	inline static int32_t get_offset_of_isReady_18() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___isReady_18)); }
-	inline bool get_isReady_18() const { return ___isReady_18; }
-	inline bool* get_address_of_isReady_18() { return &___isReady_18; }
-	inline void set_isReady_18(bool value)
-	{
-		___isReady_18 = value;
-	}
-
-	inline static int32_t get_offset_of_U3CU3Ef__switchU24map2_19() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___U3CU3Ef__switchU24map2_19)); }
-	inline Dictionary_2_t2736202052 * get_U3CU3Ef__switchU24map2_19() const { return ___U3CU3Ef__switchU24map2_19; }
-	inline Dictionary_2_t2736202052 ** get_address_of_U3CU3Ef__switchU24map2_19() { return &___U3CU3Ef__switchU24map2_19; }
-	inline void set_U3CU3Ef__switchU24map2_19(Dictionary_2_t2736202052 * value)
-	{
-		___U3CU3Ef__switchU24map2_19 = value;
-		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__switchU24map2_19), value);
-	}
-
-	inline static int32_t get_offset_of_U3CU3Ef__switchU24map3_20() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___U3CU3Ef__switchU24map3_20)); }
-	inline Dictionary_2_t2736202052 * get_U3CU3Ef__switchU24map3_20() const { return ___U3CU3Ef__switchU24map3_20; }
-	inline Dictionary_2_t2736202052 ** get_address_of_U3CU3Ef__switchU24map3_20() { return &___U3CU3Ef__switchU24map3_20; }
-	inline void set_U3CU3Ef__switchU24map3_20(Dictionary_2_t2736202052 * value)
-	{
-		___U3CU3Ef__switchU24map3_20 = value;
-		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__switchU24map3_20), value);
-	}
-
-	inline static int32_t get_offset_of_U3CU3Ef__switchU24map4_21() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___U3CU3Ef__switchU24map4_21)); }
-	inline Dictionary_2_t2736202052 * get_U3CU3Ef__switchU24map4_21() const { return ___U3CU3Ef__switchU24map4_21; }
-	inline Dictionary_2_t2736202052 ** get_address_of_U3CU3Ef__switchU24map4_21() { return &___U3CU3Ef__switchU24map4_21; }
-	inline void set_U3CU3Ef__switchU24map4_21(Dictionary_2_t2736202052 * value)
-	{
-		___U3CU3Ef__switchU24map4_21 = value;
-		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__switchU24map4_21), value);
+		___Instance_0 = value;
+		Il2CppCodeGenWriteBarrier((&___Instance_0), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // MSCOMPATUNICODETABLE_T1453885583_H
+#endif // LEVEL2MAPCOMPARER_T1716225294_H
 #ifndef X501_T1758824425_H
 #define X501_T1758824425_H
 #ifdef __clang__
@@ -783,47 +568,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PKCS7_T1860834338_H
-#ifndef CONTENTINFO_T3218159895_H
-#define CONTENTINFO_T3218159895_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// Mono.Security.PKCS7/ContentInfo
-struct  ContentInfo_t3218159895  : public RuntimeObject
-{
-public:
-	// System.String Mono.Security.PKCS7/ContentInfo::contentType
-	String_t* ___contentType_0;
-	// Mono.Security.ASN1 Mono.Security.PKCS7/ContentInfo::content
-	ASN1_t2114160832 * ___content_1;
-
-public:
-	inline static int32_t get_offset_of_contentType_0() { return static_cast<int32_t>(offsetof(ContentInfo_t3218159895, ___contentType_0)); }
-	inline String_t* get_contentType_0() const { return ___contentType_0; }
-	inline String_t** get_address_of_contentType_0() { return &___contentType_0; }
-	inline void set_contentType_0(String_t* value)
-	{
-		___contentType_0 = value;
-		Il2CppCodeGenWriteBarrier((&___contentType_0), value);
-	}
-
-	inline static int32_t get_offset_of_content_1() { return static_cast<int32_t>(offsetof(ContentInfo_t3218159895, ___content_1)); }
-	inline ASN1_t2114160832 * get_content_1() const { return ___content_1; }
-	inline ASN1_t2114160832 ** get_address_of_content_1() { return &___content_1; }
-	inline void set_content_1(ASN1_t2114160832 * value)
-	{
-		___content_1 = value;
-		Il2CppCodeGenWriteBarrier((&___content_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // CONTENTINFO_T3218159895_H
 #ifndef EXCEPTION_T_H
 #define EXCEPTION_T_H
 #ifdef __clang__
@@ -962,6 +706,68 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // EXCEPTION_T_H
+#ifndef ENCRYPTEDDATA_T3577548732_H
+#define ENCRYPTEDDATA_T3577548732_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Mono.Security.PKCS7/EncryptedData
+struct  EncryptedData_t3577548732  : public RuntimeObject
+{
+public:
+	// System.Byte Mono.Security.PKCS7/EncryptedData::_version
+	uint8_t ____version_0;
+	// Mono.Security.PKCS7/ContentInfo Mono.Security.PKCS7/EncryptedData::_content
+	ContentInfo_t3218159895 * ____content_1;
+	// Mono.Security.PKCS7/ContentInfo Mono.Security.PKCS7/EncryptedData::_encryptionAlgorithm
+	ContentInfo_t3218159895 * ____encryptionAlgorithm_2;
+	// System.Byte[] Mono.Security.PKCS7/EncryptedData::_encrypted
+	ByteU5BU5D_t4116647657* ____encrypted_3;
+
+public:
+	inline static int32_t get_offset_of__version_0() { return static_cast<int32_t>(offsetof(EncryptedData_t3577548732, ____version_0)); }
+	inline uint8_t get__version_0() const { return ____version_0; }
+	inline uint8_t* get_address_of__version_0() { return &____version_0; }
+	inline void set__version_0(uint8_t value)
+	{
+		____version_0 = value;
+	}
+
+	inline static int32_t get_offset_of__content_1() { return static_cast<int32_t>(offsetof(EncryptedData_t3577548732, ____content_1)); }
+	inline ContentInfo_t3218159895 * get__content_1() const { return ____content_1; }
+	inline ContentInfo_t3218159895 ** get_address_of__content_1() { return &____content_1; }
+	inline void set__content_1(ContentInfo_t3218159895 * value)
+	{
+		____content_1 = value;
+		Il2CppCodeGenWriteBarrier((&____content_1), value);
+	}
+
+	inline static int32_t get_offset_of__encryptionAlgorithm_2() { return static_cast<int32_t>(offsetof(EncryptedData_t3577548732, ____encryptionAlgorithm_2)); }
+	inline ContentInfo_t3218159895 * get__encryptionAlgorithm_2() const { return ____encryptionAlgorithm_2; }
+	inline ContentInfo_t3218159895 ** get_address_of__encryptionAlgorithm_2() { return &____encryptionAlgorithm_2; }
+	inline void set__encryptionAlgorithm_2(ContentInfo_t3218159895 * value)
+	{
+		____encryptionAlgorithm_2 = value;
+		Il2CppCodeGenWriteBarrier((&____encryptionAlgorithm_2), value);
+	}
+
+	inline static int32_t get_offset_of__encrypted_3() { return static_cast<int32_t>(offsetof(EncryptedData_t3577548732, ____encrypted_3)); }
+	inline ByteU5BU5D_t4116647657* get__encrypted_3() const { return ____encrypted_3; }
+	inline ByteU5BU5D_t4116647657** get_address_of__encrypted_3() { return &____encrypted_3; }
+	inline void set__encrypted_3(ByteU5BU5D_t4116647657* value)
+	{
+		____encrypted_3 = value;
+		Il2CppCodeGenWriteBarrier((&____encrypted_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ENCRYPTEDDATA_T3577548732_H
 #ifndef STRONGNAME_T4093849377_H
 #define STRONGNAME_T4093849377_H
 #ifdef __clang__
@@ -2392,68 +2198,47 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PKCS12_T4101533060_H
-#ifndef ENCRYPTEDDATA_T3577548732_H
-#define ENCRYPTEDDATA_T3577548732_H
+#ifndef CONTENTINFO_T3218159895_H
+#define CONTENTINFO_T3218159895_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// Mono.Security.PKCS7/EncryptedData
-struct  EncryptedData_t3577548732  : public RuntimeObject
+// Mono.Security.PKCS7/ContentInfo
+struct  ContentInfo_t3218159895  : public RuntimeObject
 {
 public:
-	// System.Byte Mono.Security.PKCS7/EncryptedData::_version
-	uint8_t ____version_0;
-	// Mono.Security.PKCS7/ContentInfo Mono.Security.PKCS7/EncryptedData::_content
-	ContentInfo_t3218159895 * ____content_1;
-	// Mono.Security.PKCS7/ContentInfo Mono.Security.PKCS7/EncryptedData::_encryptionAlgorithm
-	ContentInfo_t3218159895 * ____encryptionAlgorithm_2;
-	// System.Byte[] Mono.Security.PKCS7/EncryptedData::_encrypted
-	ByteU5BU5D_t4116647657* ____encrypted_3;
+	// System.String Mono.Security.PKCS7/ContentInfo::contentType
+	String_t* ___contentType_0;
+	// Mono.Security.ASN1 Mono.Security.PKCS7/ContentInfo::content
+	ASN1_t2114160832 * ___content_1;
 
 public:
-	inline static int32_t get_offset_of__version_0() { return static_cast<int32_t>(offsetof(EncryptedData_t3577548732, ____version_0)); }
-	inline uint8_t get__version_0() const { return ____version_0; }
-	inline uint8_t* get_address_of__version_0() { return &____version_0; }
-	inline void set__version_0(uint8_t value)
+	inline static int32_t get_offset_of_contentType_0() { return static_cast<int32_t>(offsetof(ContentInfo_t3218159895, ___contentType_0)); }
+	inline String_t* get_contentType_0() const { return ___contentType_0; }
+	inline String_t** get_address_of_contentType_0() { return &___contentType_0; }
+	inline void set_contentType_0(String_t* value)
 	{
-		____version_0 = value;
+		___contentType_0 = value;
+		Il2CppCodeGenWriteBarrier((&___contentType_0), value);
 	}
 
-	inline static int32_t get_offset_of__content_1() { return static_cast<int32_t>(offsetof(EncryptedData_t3577548732, ____content_1)); }
-	inline ContentInfo_t3218159895 * get__content_1() const { return ____content_1; }
-	inline ContentInfo_t3218159895 ** get_address_of__content_1() { return &____content_1; }
-	inline void set__content_1(ContentInfo_t3218159895 * value)
+	inline static int32_t get_offset_of_content_1() { return static_cast<int32_t>(offsetof(ContentInfo_t3218159895, ___content_1)); }
+	inline ASN1_t2114160832 * get_content_1() const { return ___content_1; }
+	inline ASN1_t2114160832 ** get_address_of_content_1() { return &___content_1; }
+	inline void set_content_1(ASN1_t2114160832 * value)
 	{
-		____content_1 = value;
-		Il2CppCodeGenWriteBarrier((&____content_1), value);
-	}
-
-	inline static int32_t get_offset_of__encryptionAlgorithm_2() { return static_cast<int32_t>(offsetof(EncryptedData_t3577548732, ____encryptionAlgorithm_2)); }
-	inline ContentInfo_t3218159895 * get__encryptionAlgorithm_2() const { return ____encryptionAlgorithm_2; }
-	inline ContentInfo_t3218159895 ** get_address_of__encryptionAlgorithm_2() { return &____encryptionAlgorithm_2; }
-	inline void set__encryptionAlgorithm_2(ContentInfo_t3218159895 * value)
-	{
-		____encryptionAlgorithm_2 = value;
-		Il2CppCodeGenWriteBarrier((&____encryptionAlgorithm_2), value);
-	}
-
-	inline static int32_t get_offset_of__encrypted_3() { return static_cast<int32_t>(offsetof(EncryptedData_t3577548732, ____encrypted_3)); }
-	inline ByteU5BU5D_t4116647657* get__encrypted_3() const { return ____encrypted_3; }
-	inline ByteU5BU5D_t4116647657** get_address_of__encrypted_3() { return &____encrypted_3; }
-	inline void set__encrypted_3(ByteU5BU5D_t4116647657* value)
-	{
-		____encrypted_3 = value;
-		Il2CppCodeGenWriteBarrier((&____encrypted_3), value);
+		___content_1 = value;
+		Il2CppCodeGenWriteBarrier((&___content_1), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // ENCRYPTEDDATA_T3577548732_H
+#endif // CONTENTINFO_T3218159895_H
 #ifndef SYMMETRICTRANSFORM_T3802591842_H
 #define SYMMETRICTRANSFORM_T3802591842_H
 #ifdef __clang__
@@ -2599,6 +2384,258 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SYMMETRICTRANSFORM_T3802591842_H
+#ifndef MSCOMPATUNICODETABLE_T1453885583_H
+#define MSCOMPATUNICODETABLE_T1453885583_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Mono.Globalization.Unicode.MSCompatUnicodeTable
+struct  MSCompatUnicodeTable_t1453885583  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct MSCompatUnicodeTable_t1453885583_StaticFields
+{
+public:
+	// System.Int32 Mono.Globalization.Unicode.MSCompatUnicodeTable::MaxExpansionLength
+	int32_t ___MaxExpansionLength_0;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::ignorableFlags
+	uint8_t* ___ignorableFlags_1;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::categories
+	uint8_t* ___categories_2;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::level1
+	uint8_t* ___level1_3;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::level2
+	uint8_t* ___level2_4;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::level3
+	uint8_t* ___level3_5;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkCHScategory
+	uint8_t* ___cjkCHScategory_6;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkCHTcategory
+	uint8_t* ___cjkCHTcategory_7;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkJAcategory
+	uint8_t* ___cjkJAcategory_8;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkKOcategory
+	uint8_t* ___cjkKOcategory_9;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkCHSlv1
+	uint8_t* ___cjkCHSlv1_10;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkCHTlv1
+	uint8_t* ___cjkCHTlv1_11;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkJAlv1
+	uint8_t* ___cjkJAlv1_12;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkKOlv1
+	uint8_t* ___cjkKOlv1_13;
+	// System.Byte* Mono.Globalization.Unicode.MSCompatUnicodeTable::cjkKOlv2
+	uint8_t* ___cjkKOlv2_14;
+	// System.Char[] Mono.Globalization.Unicode.MSCompatUnicodeTable::tailoringArr
+	CharU5BU5D_t3528271667* ___tailoringArr_15;
+	// Mono.Globalization.Unicode.TailoringInfo[] Mono.Globalization.Unicode.MSCompatUnicodeTable::tailoringInfos
+	TailoringInfoU5BU5D_t1797664499* ___tailoringInfos_16;
+	// System.Object Mono.Globalization.Unicode.MSCompatUnicodeTable::forLock
+	RuntimeObject * ___forLock_17;
+	// System.Boolean Mono.Globalization.Unicode.MSCompatUnicodeTable::isReady
+	bool ___isReady_18;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> Mono.Globalization.Unicode.MSCompatUnicodeTable::<>f__switch$map2
+	Dictionary_2_t2736202052 * ___U3CU3Ef__switchU24map2_19;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> Mono.Globalization.Unicode.MSCompatUnicodeTable::<>f__switch$map3
+	Dictionary_2_t2736202052 * ___U3CU3Ef__switchU24map3_20;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> Mono.Globalization.Unicode.MSCompatUnicodeTable::<>f__switch$map4
+	Dictionary_2_t2736202052 * ___U3CU3Ef__switchU24map4_21;
+
+public:
+	inline static int32_t get_offset_of_MaxExpansionLength_0() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___MaxExpansionLength_0)); }
+	inline int32_t get_MaxExpansionLength_0() const { return ___MaxExpansionLength_0; }
+	inline int32_t* get_address_of_MaxExpansionLength_0() { return &___MaxExpansionLength_0; }
+	inline void set_MaxExpansionLength_0(int32_t value)
+	{
+		___MaxExpansionLength_0 = value;
+	}
+
+	inline static int32_t get_offset_of_ignorableFlags_1() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___ignorableFlags_1)); }
+	inline uint8_t* get_ignorableFlags_1() const { return ___ignorableFlags_1; }
+	inline uint8_t** get_address_of_ignorableFlags_1() { return &___ignorableFlags_1; }
+	inline void set_ignorableFlags_1(uint8_t* value)
+	{
+		___ignorableFlags_1 = value;
+	}
+
+	inline static int32_t get_offset_of_categories_2() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___categories_2)); }
+	inline uint8_t* get_categories_2() const { return ___categories_2; }
+	inline uint8_t** get_address_of_categories_2() { return &___categories_2; }
+	inline void set_categories_2(uint8_t* value)
+	{
+		___categories_2 = value;
+	}
+
+	inline static int32_t get_offset_of_level1_3() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___level1_3)); }
+	inline uint8_t* get_level1_3() const { return ___level1_3; }
+	inline uint8_t** get_address_of_level1_3() { return &___level1_3; }
+	inline void set_level1_3(uint8_t* value)
+	{
+		___level1_3 = value;
+	}
+
+	inline static int32_t get_offset_of_level2_4() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___level2_4)); }
+	inline uint8_t* get_level2_4() const { return ___level2_4; }
+	inline uint8_t** get_address_of_level2_4() { return &___level2_4; }
+	inline void set_level2_4(uint8_t* value)
+	{
+		___level2_4 = value;
+	}
+
+	inline static int32_t get_offset_of_level3_5() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___level3_5)); }
+	inline uint8_t* get_level3_5() const { return ___level3_5; }
+	inline uint8_t** get_address_of_level3_5() { return &___level3_5; }
+	inline void set_level3_5(uint8_t* value)
+	{
+		___level3_5 = value;
+	}
+
+	inline static int32_t get_offset_of_cjkCHScategory_6() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkCHScategory_6)); }
+	inline uint8_t* get_cjkCHScategory_6() const { return ___cjkCHScategory_6; }
+	inline uint8_t** get_address_of_cjkCHScategory_6() { return &___cjkCHScategory_6; }
+	inline void set_cjkCHScategory_6(uint8_t* value)
+	{
+		___cjkCHScategory_6 = value;
+	}
+
+	inline static int32_t get_offset_of_cjkCHTcategory_7() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkCHTcategory_7)); }
+	inline uint8_t* get_cjkCHTcategory_7() const { return ___cjkCHTcategory_7; }
+	inline uint8_t** get_address_of_cjkCHTcategory_7() { return &___cjkCHTcategory_7; }
+	inline void set_cjkCHTcategory_7(uint8_t* value)
+	{
+		___cjkCHTcategory_7 = value;
+	}
+
+	inline static int32_t get_offset_of_cjkJAcategory_8() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkJAcategory_8)); }
+	inline uint8_t* get_cjkJAcategory_8() const { return ___cjkJAcategory_8; }
+	inline uint8_t** get_address_of_cjkJAcategory_8() { return &___cjkJAcategory_8; }
+	inline void set_cjkJAcategory_8(uint8_t* value)
+	{
+		___cjkJAcategory_8 = value;
+	}
+
+	inline static int32_t get_offset_of_cjkKOcategory_9() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkKOcategory_9)); }
+	inline uint8_t* get_cjkKOcategory_9() const { return ___cjkKOcategory_9; }
+	inline uint8_t** get_address_of_cjkKOcategory_9() { return &___cjkKOcategory_9; }
+	inline void set_cjkKOcategory_9(uint8_t* value)
+	{
+		___cjkKOcategory_9 = value;
+	}
+
+	inline static int32_t get_offset_of_cjkCHSlv1_10() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkCHSlv1_10)); }
+	inline uint8_t* get_cjkCHSlv1_10() const { return ___cjkCHSlv1_10; }
+	inline uint8_t** get_address_of_cjkCHSlv1_10() { return &___cjkCHSlv1_10; }
+	inline void set_cjkCHSlv1_10(uint8_t* value)
+	{
+		___cjkCHSlv1_10 = value;
+	}
+
+	inline static int32_t get_offset_of_cjkCHTlv1_11() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkCHTlv1_11)); }
+	inline uint8_t* get_cjkCHTlv1_11() const { return ___cjkCHTlv1_11; }
+	inline uint8_t** get_address_of_cjkCHTlv1_11() { return &___cjkCHTlv1_11; }
+	inline void set_cjkCHTlv1_11(uint8_t* value)
+	{
+		___cjkCHTlv1_11 = value;
+	}
+
+	inline static int32_t get_offset_of_cjkJAlv1_12() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkJAlv1_12)); }
+	inline uint8_t* get_cjkJAlv1_12() const { return ___cjkJAlv1_12; }
+	inline uint8_t** get_address_of_cjkJAlv1_12() { return &___cjkJAlv1_12; }
+	inline void set_cjkJAlv1_12(uint8_t* value)
+	{
+		___cjkJAlv1_12 = value;
+	}
+
+	inline static int32_t get_offset_of_cjkKOlv1_13() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkKOlv1_13)); }
+	inline uint8_t* get_cjkKOlv1_13() const { return ___cjkKOlv1_13; }
+	inline uint8_t** get_address_of_cjkKOlv1_13() { return &___cjkKOlv1_13; }
+	inline void set_cjkKOlv1_13(uint8_t* value)
+	{
+		___cjkKOlv1_13 = value;
+	}
+
+	inline static int32_t get_offset_of_cjkKOlv2_14() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___cjkKOlv2_14)); }
+	inline uint8_t* get_cjkKOlv2_14() const { return ___cjkKOlv2_14; }
+	inline uint8_t** get_address_of_cjkKOlv2_14() { return &___cjkKOlv2_14; }
+	inline void set_cjkKOlv2_14(uint8_t* value)
+	{
+		___cjkKOlv2_14 = value;
+	}
+
+	inline static int32_t get_offset_of_tailoringArr_15() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___tailoringArr_15)); }
+	inline CharU5BU5D_t3528271667* get_tailoringArr_15() const { return ___tailoringArr_15; }
+	inline CharU5BU5D_t3528271667** get_address_of_tailoringArr_15() { return &___tailoringArr_15; }
+	inline void set_tailoringArr_15(CharU5BU5D_t3528271667* value)
+	{
+		___tailoringArr_15 = value;
+		Il2CppCodeGenWriteBarrier((&___tailoringArr_15), value);
+	}
+
+	inline static int32_t get_offset_of_tailoringInfos_16() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___tailoringInfos_16)); }
+	inline TailoringInfoU5BU5D_t1797664499* get_tailoringInfos_16() const { return ___tailoringInfos_16; }
+	inline TailoringInfoU5BU5D_t1797664499** get_address_of_tailoringInfos_16() { return &___tailoringInfos_16; }
+	inline void set_tailoringInfos_16(TailoringInfoU5BU5D_t1797664499* value)
+	{
+		___tailoringInfos_16 = value;
+		Il2CppCodeGenWriteBarrier((&___tailoringInfos_16), value);
+	}
+
+	inline static int32_t get_offset_of_forLock_17() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___forLock_17)); }
+	inline RuntimeObject * get_forLock_17() const { return ___forLock_17; }
+	inline RuntimeObject ** get_address_of_forLock_17() { return &___forLock_17; }
+	inline void set_forLock_17(RuntimeObject * value)
+	{
+		___forLock_17 = value;
+		Il2CppCodeGenWriteBarrier((&___forLock_17), value);
+	}
+
+	inline static int32_t get_offset_of_isReady_18() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___isReady_18)); }
+	inline bool get_isReady_18() const { return ___isReady_18; }
+	inline bool* get_address_of_isReady_18() { return &___isReady_18; }
+	inline void set_isReady_18(bool value)
+	{
+		___isReady_18 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3Ef__switchU24map2_19() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___U3CU3Ef__switchU24map2_19)); }
+	inline Dictionary_2_t2736202052 * get_U3CU3Ef__switchU24map2_19() const { return ___U3CU3Ef__switchU24map2_19; }
+	inline Dictionary_2_t2736202052 ** get_address_of_U3CU3Ef__switchU24map2_19() { return &___U3CU3Ef__switchU24map2_19; }
+	inline void set_U3CU3Ef__switchU24map2_19(Dictionary_2_t2736202052 * value)
+	{
+		___U3CU3Ef__switchU24map2_19 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__switchU24map2_19), value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3Ef__switchU24map3_20() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___U3CU3Ef__switchU24map3_20)); }
+	inline Dictionary_2_t2736202052 * get_U3CU3Ef__switchU24map3_20() const { return ___U3CU3Ef__switchU24map3_20; }
+	inline Dictionary_2_t2736202052 ** get_address_of_U3CU3Ef__switchU24map3_20() { return &___U3CU3Ef__switchU24map3_20; }
+	inline void set_U3CU3Ef__switchU24map3_20(Dictionary_2_t2736202052 * value)
+	{
+		___U3CU3Ef__switchU24map3_20 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__switchU24map3_20), value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3Ef__switchU24map4_21() { return static_cast<int32_t>(offsetof(MSCompatUnicodeTable_t1453885583_StaticFields, ___U3CU3Ef__switchU24map4_21)); }
+	inline Dictionary_2_t2736202052 * get_U3CU3Ef__switchU24map4_21() const { return ___U3CU3Ef__switchU24map4_21; }
+	inline Dictionary_2_t2736202052 ** get_address_of_U3CU3Ef__switchU24map4_21() { return &___U3CU3Ef__switchU24map4_21; }
+	inline void set_U3CU3Ef__switchU24map4_21(Dictionary_2_t2736202052 * value)
+	{
+		___U3CU3Ef__switchU24map4_21 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__switchU24map4_21), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MSCOMPATUNICODETABLE_T1453885583_H
 #ifndef MSCOMPATUNICODETABLEUTIL_T88013251_H
 #define MSCOMPATUNICODETABLEUTIL_T88013251_H
 #ifdef __clang__
@@ -3192,6 +3229,190 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PRIMALITYTESTS_T1538473975_H
+#ifndef KEYPAIRPERSISTENCE_T2094547461_H
+#define KEYPAIRPERSISTENCE_T2094547461_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Mono.Security.Cryptography.KeyPairPersistence
+struct  KeyPairPersistence_t2094547461  : public RuntimeObject
+{
+public:
+	// System.Security.Cryptography.CspParameters Mono.Security.Cryptography.KeyPairPersistence::_params
+	CspParameters_t239852639 * ____params_4;
+	// System.String Mono.Security.Cryptography.KeyPairPersistence::_keyvalue
+	String_t* ____keyvalue_5;
+	// System.String Mono.Security.Cryptography.KeyPairPersistence::_filename
+	String_t* ____filename_6;
+	// System.String Mono.Security.Cryptography.KeyPairPersistence::_container
+	String_t* ____container_7;
+
+public:
+	inline static int32_t get_offset_of__params_4() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461, ____params_4)); }
+	inline CspParameters_t239852639 * get__params_4() const { return ____params_4; }
+	inline CspParameters_t239852639 ** get_address_of__params_4() { return &____params_4; }
+	inline void set__params_4(CspParameters_t239852639 * value)
+	{
+		____params_4 = value;
+		Il2CppCodeGenWriteBarrier((&____params_4), value);
+	}
+
+	inline static int32_t get_offset_of__keyvalue_5() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461, ____keyvalue_5)); }
+	inline String_t* get__keyvalue_5() const { return ____keyvalue_5; }
+	inline String_t** get_address_of__keyvalue_5() { return &____keyvalue_5; }
+	inline void set__keyvalue_5(String_t* value)
+	{
+		____keyvalue_5 = value;
+		Il2CppCodeGenWriteBarrier((&____keyvalue_5), value);
+	}
+
+	inline static int32_t get_offset_of__filename_6() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461, ____filename_6)); }
+	inline String_t* get__filename_6() const { return ____filename_6; }
+	inline String_t** get_address_of__filename_6() { return &____filename_6; }
+	inline void set__filename_6(String_t* value)
+	{
+		____filename_6 = value;
+		Il2CppCodeGenWriteBarrier((&____filename_6), value);
+	}
+
+	inline static int32_t get_offset_of__container_7() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461, ____container_7)); }
+	inline String_t* get__container_7() const { return ____container_7; }
+	inline String_t** get_address_of__container_7() { return &____container_7; }
+	inline void set__container_7(String_t* value)
+	{
+		____container_7 = value;
+		Il2CppCodeGenWriteBarrier((&____container_7), value);
+	}
+};
+
+struct KeyPairPersistence_t2094547461_StaticFields
+{
+public:
+	// System.Boolean Mono.Security.Cryptography.KeyPairPersistence::_userPathExists
+	bool ____userPathExists_0;
+	// System.String Mono.Security.Cryptography.KeyPairPersistence::_userPath
+	String_t* ____userPath_1;
+	// System.Boolean Mono.Security.Cryptography.KeyPairPersistence::_machinePathExists
+	bool ____machinePathExists_2;
+	// System.String Mono.Security.Cryptography.KeyPairPersistence::_machinePath
+	String_t* ____machinePath_3;
+	// System.Object Mono.Security.Cryptography.KeyPairPersistence::lockobj
+	RuntimeObject * ___lockobj_8;
+
+public:
+	inline static int32_t get_offset_of__userPathExists_0() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461_StaticFields, ____userPathExists_0)); }
+	inline bool get__userPathExists_0() const { return ____userPathExists_0; }
+	inline bool* get_address_of__userPathExists_0() { return &____userPathExists_0; }
+	inline void set__userPathExists_0(bool value)
+	{
+		____userPathExists_0 = value;
+	}
+
+	inline static int32_t get_offset_of__userPath_1() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461_StaticFields, ____userPath_1)); }
+	inline String_t* get__userPath_1() const { return ____userPath_1; }
+	inline String_t** get_address_of__userPath_1() { return &____userPath_1; }
+	inline void set__userPath_1(String_t* value)
+	{
+		____userPath_1 = value;
+		Il2CppCodeGenWriteBarrier((&____userPath_1), value);
+	}
+
+	inline static int32_t get_offset_of__machinePathExists_2() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461_StaticFields, ____machinePathExists_2)); }
+	inline bool get__machinePathExists_2() const { return ____machinePathExists_2; }
+	inline bool* get_address_of__machinePathExists_2() { return &____machinePathExists_2; }
+	inline void set__machinePathExists_2(bool value)
+	{
+		____machinePathExists_2 = value;
+	}
+
+	inline static int32_t get_offset_of__machinePath_3() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461_StaticFields, ____machinePath_3)); }
+	inline String_t* get__machinePath_3() const { return ____machinePath_3; }
+	inline String_t** get_address_of__machinePath_3() { return &____machinePath_3; }
+	inline void set__machinePath_3(String_t* value)
+	{
+		____machinePath_3 = value;
+		Il2CppCodeGenWriteBarrier((&____machinePath_3), value);
+	}
+
+	inline static int32_t get_offset_of_lockobj_8() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461_StaticFields, ___lockobj_8)); }
+	inline RuntimeObject * get_lockobj_8() const { return ___lockobj_8; }
+	inline RuntimeObject ** get_address_of_lockobj_8() { return &___lockobj_8; }
+	inline void set_lockobj_8(RuntimeObject * value)
+	{
+		___lockobj_8 = value;
+		Il2CppCodeGenWriteBarrier((&___lockobj_8), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // KEYPAIRPERSISTENCE_T2094547461_H
+#ifndef PRIVATEKEYINFO_T668027992_H
+#define PRIVATEKEYINFO_T668027992_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Mono.Security.Cryptography.PKCS8/PrivateKeyInfo
+struct  PrivateKeyInfo_t668027992  : public RuntimeObject
+{
+public:
+	// System.Int32 Mono.Security.Cryptography.PKCS8/PrivateKeyInfo::_version
+	int32_t ____version_0;
+	// System.String Mono.Security.Cryptography.PKCS8/PrivateKeyInfo::_algorithm
+	String_t* ____algorithm_1;
+	// System.Byte[] Mono.Security.Cryptography.PKCS8/PrivateKeyInfo::_key
+	ByteU5BU5D_t4116647657* ____key_2;
+	// System.Collections.ArrayList Mono.Security.Cryptography.PKCS8/PrivateKeyInfo::_list
+	ArrayList_t2718874744 * ____list_3;
+
+public:
+	inline static int32_t get_offset_of__version_0() { return static_cast<int32_t>(offsetof(PrivateKeyInfo_t668027992, ____version_0)); }
+	inline int32_t get__version_0() const { return ____version_0; }
+	inline int32_t* get_address_of__version_0() { return &____version_0; }
+	inline void set__version_0(int32_t value)
+	{
+		____version_0 = value;
+	}
+
+	inline static int32_t get_offset_of__algorithm_1() { return static_cast<int32_t>(offsetof(PrivateKeyInfo_t668027992, ____algorithm_1)); }
+	inline String_t* get__algorithm_1() const { return ____algorithm_1; }
+	inline String_t** get_address_of__algorithm_1() { return &____algorithm_1; }
+	inline void set__algorithm_1(String_t* value)
+	{
+		____algorithm_1 = value;
+		Il2CppCodeGenWriteBarrier((&____algorithm_1), value);
+	}
+
+	inline static int32_t get_offset_of__key_2() { return static_cast<int32_t>(offsetof(PrivateKeyInfo_t668027992, ____key_2)); }
+	inline ByteU5BU5D_t4116647657* get__key_2() const { return ____key_2; }
+	inline ByteU5BU5D_t4116647657** get_address_of__key_2() { return &____key_2; }
+	inline void set__key_2(ByteU5BU5D_t4116647657* value)
+	{
+		____key_2 = value;
+		Il2CppCodeGenWriteBarrier((&____key_2), value);
+	}
+
+	inline static int32_t get_offset_of__list_3() { return static_cast<int32_t>(offsetof(PrivateKeyInfo_t668027992, ____list_3)); }
+	inline ArrayList_t2718874744 * get__list_3() const { return ____list_3; }
+	inline ArrayList_t2718874744 ** get_address_of__list_3() { return &____list_3; }
+	inline void set__list_3(ArrayList_t2718874744 * value)
+	{
+		____list_3 = value;
+		Il2CppCodeGenWriteBarrier((&____list_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PRIVATEKEYINFO_T668027992_H
 #ifndef MACALGORITHM_T2441219148_H
 #define MACALGORITHM_T2441219148_H
 #ifdef __clang__
@@ -3354,128 +3575,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PKCS8_T696280612_H
-#ifndef KEYPAIRPERSISTENCE_T2094547461_H
-#define KEYPAIRPERSISTENCE_T2094547461_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// Mono.Security.Cryptography.KeyPairPersistence
-struct  KeyPairPersistence_t2094547461  : public RuntimeObject
-{
-public:
-	// System.Security.Cryptography.CspParameters Mono.Security.Cryptography.KeyPairPersistence::_params
-	CspParameters_t239852639 * ____params_4;
-	// System.String Mono.Security.Cryptography.KeyPairPersistence::_keyvalue
-	String_t* ____keyvalue_5;
-	// System.String Mono.Security.Cryptography.KeyPairPersistence::_filename
-	String_t* ____filename_6;
-	// System.String Mono.Security.Cryptography.KeyPairPersistence::_container
-	String_t* ____container_7;
-
-public:
-	inline static int32_t get_offset_of__params_4() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461, ____params_4)); }
-	inline CspParameters_t239852639 * get__params_4() const { return ____params_4; }
-	inline CspParameters_t239852639 ** get_address_of__params_4() { return &____params_4; }
-	inline void set__params_4(CspParameters_t239852639 * value)
-	{
-		____params_4 = value;
-		Il2CppCodeGenWriteBarrier((&____params_4), value);
-	}
-
-	inline static int32_t get_offset_of__keyvalue_5() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461, ____keyvalue_5)); }
-	inline String_t* get__keyvalue_5() const { return ____keyvalue_5; }
-	inline String_t** get_address_of__keyvalue_5() { return &____keyvalue_5; }
-	inline void set__keyvalue_5(String_t* value)
-	{
-		____keyvalue_5 = value;
-		Il2CppCodeGenWriteBarrier((&____keyvalue_5), value);
-	}
-
-	inline static int32_t get_offset_of__filename_6() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461, ____filename_6)); }
-	inline String_t* get__filename_6() const { return ____filename_6; }
-	inline String_t** get_address_of__filename_6() { return &____filename_6; }
-	inline void set__filename_6(String_t* value)
-	{
-		____filename_6 = value;
-		Il2CppCodeGenWriteBarrier((&____filename_6), value);
-	}
-
-	inline static int32_t get_offset_of__container_7() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461, ____container_7)); }
-	inline String_t* get__container_7() const { return ____container_7; }
-	inline String_t** get_address_of__container_7() { return &____container_7; }
-	inline void set__container_7(String_t* value)
-	{
-		____container_7 = value;
-		Il2CppCodeGenWriteBarrier((&____container_7), value);
-	}
-};
-
-struct KeyPairPersistence_t2094547461_StaticFields
-{
-public:
-	// System.Boolean Mono.Security.Cryptography.KeyPairPersistence::_userPathExists
-	bool ____userPathExists_0;
-	// System.String Mono.Security.Cryptography.KeyPairPersistence::_userPath
-	String_t* ____userPath_1;
-	// System.Boolean Mono.Security.Cryptography.KeyPairPersistence::_machinePathExists
-	bool ____machinePathExists_2;
-	// System.String Mono.Security.Cryptography.KeyPairPersistence::_machinePath
-	String_t* ____machinePath_3;
-	// System.Object Mono.Security.Cryptography.KeyPairPersistence::lockobj
-	RuntimeObject * ___lockobj_8;
-
-public:
-	inline static int32_t get_offset_of__userPathExists_0() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461_StaticFields, ____userPathExists_0)); }
-	inline bool get__userPathExists_0() const { return ____userPathExists_0; }
-	inline bool* get_address_of__userPathExists_0() { return &____userPathExists_0; }
-	inline void set__userPathExists_0(bool value)
-	{
-		____userPathExists_0 = value;
-	}
-
-	inline static int32_t get_offset_of__userPath_1() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461_StaticFields, ____userPath_1)); }
-	inline String_t* get__userPath_1() const { return ____userPath_1; }
-	inline String_t** get_address_of__userPath_1() { return &____userPath_1; }
-	inline void set__userPath_1(String_t* value)
-	{
-		____userPath_1 = value;
-		Il2CppCodeGenWriteBarrier((&____userPath_1), value);
-	}
-
-	inline static int32_t get_offset_of__machinePathExists_2() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461_StaticFields, ____machinePathExists_2)); }
-	inline bool get__machinePathExists_2() const { return ____machinePathExists_2; }
-	inline bool* get_address_of__machinePathExists_2() { return &____machinePathExists_2; }
-	inline void set__machinePathExists_2(bool value)
-	{
-		____machinePathExists_2 = value;
-	}
-
-	inline static int32_t get_offset_of__machinePath_3() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461_StaticFields, ____machinePath_3)); }
-	inline String_t* get__machinePath_3() const { return ____machinePath_3; }
-	inline String_t** get_address_of__machinePath_3() { return &____machinePath_3; }
-	inline void set__machinePath_3(String_t* value)
-	{
-		____machinePath_3 = value;
-		Il2CppCodeGenWriteBarrier((&____machinePath_3), value);
-	}
-
-	inline static int32_t get_offset_of_lockobj_8() { return static_cast<int32_t>(offsetof(KeyPairPersistence_t2094547461_StaticFields, ___lockobj_8)); }
-	inline RuntimeObject * get_lockobj_8() const { return ___lockobj_8; }
-	inline RuntimeObject ** get_address_of_lockobj_8() { return &___lockobj_8; }
-	inline void set_lockobj_8(RuntimeObject * value)
-	{
-		___lockobj_8 = value;
-		Il2CppCodeGenWriteBarrier((&___lockobj_8), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // KEYPAIRPERSISTENCE_T2094547461_H
 #ifndef ENCRYPTEDPRIVATEKEYINFO_T862116835_H
 #define ENCRYPTEDPRIVATEKEYINFO_T862116835_H
 #ifdef __clang__
@@ -3538,198 +3637,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ENCRYPTEDPRIVATEKEYINFO_T862116835_H
-#ifndef PRIVATEKEYINFO_T668027992_H
-#define PRIVATEKEYINFO_T668027992_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// Mono.Security.Cryptography.PKCS8/PrivateKeyInfo
-struct  PrivateKeyInfo_t668027992  : public RuntimeObject
-{
-public:
-	// System.Int32 Mono.Security.Cryptography.PKCS8/PrivateKeyInfo::_version
-	int32_t ____version_0;
-	// System.String Mono.Security.Cryptography.PKCS8/PrivateKeyInfo::_algorithm
-	String_t* ____algorithm_1;
-	// System.Byte[] Mono.Security.Cryptography.PKCS8/PrivateKeyInfo::_key
-	ByteU5BU5D_t4116647657* ____key_2;
-	// System.Collections.ArrayList Mono.Security.Cryptography.PKCS8/PrivateKeyInfo::_list
-	ArrayList_t2718874744 * ____list_3;
-
-public:
-	inline static int32_t get_offset_of__version_0() { return static_cast<int32_t>(offsetof(PrivateKeyInfo_t668027992, ____version_0)); }
-	inline int32_t get__version_0() const { return ____version_0; }
-	inline int32_t* get_address_of__version_0() { return &____version_0; }
-	inline void set__version_0(int32_t value)
-	{
-		____version_0 = value;
-	}
-
-	inline static int32_t get_offset_of__algorithm_1() { return static_cast<int32_t>(offsetof(PrivateKeyInfo_t668027992, ____algorithm_1)); }
-	inline String_t* get__algorithm_1() const { return ____algorithm_1; }
-	inline String_t** get_address_of__algorithm_1() { return &____algorithm_1; }
-	inline void set__algorithm_1(String_t* value)
-	{
-		____algorithm_1 = value;
-		Il2CppCodeGenWriteBarrier((&____algorithm_1), value);
-	}
-
-	inline static int32_t get_offset_of__key_2() { return static_cast<int32_t>(offsetof(PrivateKeyInfo_t668027992, ____key_2)); }
-	inline ByteU5BU5D_t4116647657* get__key_2() const { return ____key_2; }
-	inline ByteU5BU5D_t4116647657** get_address_of__key_2() { return &____key_2; }
-	inline void set__key_2(ByteU5BU5D_t4116647657* value)
-	{
-		____key_2 = value;
-		Il2CppCodeGenWriteBarrier((&____key_2), value);
-	}
-
-	inline static int32_t get_offset_of__list_3() { return static_cast<int32_t>(offsetof(PrivateKeyInfo_t668027992, ____list_3)); }
-	inline ArrayList_t2718874744 * get__list_3() const { return ____list_3; }
-	inline ArrayList_t2718874744 ** get_address_of__list_3() { return &____list_3; }
-	inline void set__list_3(ArrayList_t2718874744 * value)
-	{
-		____list_3 = value;
-		Il2CppCodeGenWriteBarrier((&____list_3), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // PRIVATEKEYINFO_T668027992_H
-#ifndef INTPTR_T_H
-#define INTPTR_T_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.IntPtr
-struct  IntPtr_t 
-{
-public:
-	// System.Void* System.IntPtr::m_value
-	void* ___m_value_0;
-
-public:
-	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(IntPtr_t, ___m_value_0)); }
-	inline void* get_m_value_0() const { return ___m_value_0; }
-	inline void** get_address_of_m_value_0() { return &___m_value_0; }
-	inline void set_m_value_0(void* value)
-	{
-		___m_value_0 = value;
-	}
-};
-
-struct IntPtr_t_StaticFields
-{
-public:
-	// System.IntPtr System.IntPtr::Zero
-	intptr_t ___Zero_1;
-
-public:
-	inline static int32_t get_offset_of_Zero_1() { return static_cast<int32_t>(offsetof(IntPtr_t_StaticFields, ___Zero_1)); }
-	inline intptr_t get_Zero_1() const { return ___Zero_1; }
-	inline intptr_t* get_address_of_Zero_1() { return &___Zero_1; }
-	inline void set_Zero_1(intptr_t value)
-	{
-		___Zero_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // INTPTR_T_H
-#ifndef X509CERTIFICATECOLLECTION_T1542168549_H
-#define X509CERTIFICATECOLLECTION_T1542168549_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// Mono.Security.X509.X509CertificateCollection
-struct  X509CertificateCollection_t1542168549  : public CollectionBase_t2727926298
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // X509CERTIFICATECOLLECTION_T1542168549_H
-#ifndef TIMESPAN_T881159249_H
-#define TIMESPAN_T881159249_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.TimeSpan
-struct  TimeSpan_t881159249 
-{
-public:
-	// System.Int64 System.TimeSpan::_ticks
-	int64_t ____ticks_3;
-
-public:
-	inline static int32_t get_offset_of__ticks_3() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249, ____ticks_3)); }
-	inline int64_t get__ticks_3() const { return ____ticks_3; }
-	inline int64_t* get_address_of__ticks_3() { return &____ticks_3; }
-	inline void set__ticks_3(int64_t value)
-	{
-		____ticks_3 = value;
-	}
-};
-
-struct TimeSpan_t881159249_StaticFields
-{
-public:
-	// System.TimeSpan System.TimeSpan::MaxValue
-	TimeSpan_t881159249  ___MaxValue_0;
-	// System.TimeSpan System.TimeSpan::MinValue
-	TimeSpan_t881159249  ___MinValue_1;
-	// System.TimeSpan System.TimeSpan::Zero
-	TimeSpan_t881159249  ___Zero_2;
-
-public:
-	inline static int32_t get_offset_of_MaxValue_0() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ___MaxValue_0)); }
-	inline TimeSpan_t881159249  get_MaxValue_0() const { return ___MaxValue_0; }
-	inline TimeSpan_t881159249 * get_address_of_MaxValue_0() { return &___MaxValue_0; }
-	inline void set_MaxValue_0(TimeSpan_t881159249  value)
-	{
-		___MaxValue_0 = value;
-	}
-
-	inline static int32_t get_offset_of_MinValue_1() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ___MinValue_1)); }
-	inline TimeSpan_t881159249  get_MinValue_1() const { return ___MinValue_1; }
-	inline TimeSpan_t881159249 * get_address_of_MinValue_1() { return &___MinValue_1; }
-	inline void set_MinValue_1(TimeSpan_t881159249  value)
-	{
-		___MinValue_1 = value;
-	}
-
-	inline static int32_t get_offset_of_Zero_2() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ___Zero_2)); }
-	inline TimeSpan_t881159249  get_Zero_2() const { return ___Zero_2; }
-	inline TimeSpan_t881159249 * get_address_of_Zero_2() { return &___Zero_2; }
-	inline void set_Zero_2(TimeSpan_t881159249  value)
-	{
-		___Zero_2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // TIMESPAN_T881159249_H
 #ifndef DICTIONARYENTRY_T3123975638_H
 #define DICTIONARYENTRY_T3123975638_H
 #ifdef __clang__
@@ -3783,6 +3690,26 @@ struct DictionaryEntry_t3123975638_marshaled_com
 	Il2CppIUnknown* ____value_1;
 };
 #endif // DICTIONARYENTRY_T3123975638_H
+#ifndef X509CERTIFICATECOLLECTION_T1542168549_H
+#define X509CERTIFICATECOLLECTION_T1542168549_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Mono.Security.X509.X509CertificateCollection
+struct  X509CertificateCollection_t1542168549  : public CollectionBase_t2727926298
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // X509CERTIFICATECOLLECTION_T1542168549_H
 #ifndef SLOT_T3975888750_H
 #define SLOT_T3975888750_H
 #ifdef __clang__
@@ -3836,172 +3763,6 @@ struct Slot_t3975888750_marshaled_com
 	Il2CppIUnknown* ___value_1;
 };
 #endif // SLOT_T3975888750_H
-#ifndef PREVIOUSINFO_T2148130204_H
-#define PREVIOUSINFO_T2148130204_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// Mono.Globalization.Unicode.SimpleCollator/PreviousInfo
-struct  PreviousInfo_t2148130204 
-{
-public:
-	// System.Int32 Mono.Globalization.Unicode.SimpleCollator/PreviousInfo::Code
-	int32_t ___Code_0;
-	// System.Byte* Mono.Globalization.Unicode.SimpleCollator/PreviousInfo::SortKey
-	uint8_t* ___SortKey_1;
-
-public:
-	inline static int32_t get_offset_of_Code_0() { return static_cast<int32_t>(offsetof(PreviousInfo_t2148130204, ___Code_0)); }
-	inline int32_t get_Code_0() const { return ___Code_0; }
-	inline int32_t* get_address_of_Code_0() { return &___Code_0; }
-	inline void set_Code_0(int32_t value)
-	{
-		___Code_0 = value;
-	}
-
-	inline static int32_t get_offset_of_SortKey_1() { return static_cast<int32_t>(offsetof(PreviousInfo_t2148130204, ___SortKey_1)); }
-	inline uint8_t* get_SortKey_1() const { return ___SortKey_1; }
-	inline uint8_t** get_address_of_SortKey_1() { return &___SortKey_1; }
-	inline void set_SortKey_1(uint8_t* value)
-	{
-		___SortKey_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-// Native definition for P/Invoke marshalling of Mono.Globalization.Unicode.SimpleCollator/PreviousInfo
-struct PreviousInfo_t2148130204_marshaled_pinvoke
-{
-	int32_t ___Code_0;
-	uint8_t* ___SortKey_1;
-};
-// Native definition for COM marshalling of Mono.Globalization.Unicode.SimpleCollator/PreviousInfo
-struct PreviousInfo_t2148130204_marshaled_com
-{
-	int32_t ___Code_0;
-	uint8_t* ___SortKey_1;
-};
-#endif // PREVIOUSINFO_T2148130204_H
-#ifndef SYNCHASHTABLE_T3569774773_H
-#define SYNCHASHTABLE_T3569774773_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Hashtable/SyncHashtable
-struct  SyncHashtable_t3569774773  : public Hashtable_t1853889766
-{
-public:
-	// System.Collections.Hashtable System.Collections.Hashtable/SyncHashtable::host
-	Hashtable_t1853889766 * ___host_14;
-
-public:
-	inline static int32_t get_offset_of_host_14() { return static_cast<int32_t>(offsetof(SyncHashtable_t3569774773, ___host_14)); }
-	inline Hashtable_t1853889766 * get_host_14() const { return ___host_14; }
-	inline Hashtable_t1853889766 ** get_address_of_host_14() { return &___host_14; }
-	inline void set_host_14(Hashtable_t1853889766 * value)
-	{
-		___host_14 = value;
-		Il2CppCodeGenWriteBarrier((&___host_14), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // SYNCHASHTABLE_T3569774773_H
-#ifndef SYSTEMEXCEPTION_T176217640_H
-#define SYSTEMEXCEPTION_T176217640_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.SystemException
-struct  SystemException_t176217640  : public Exception_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // SYSTEMEXCEPTION_T176217640_H
-#ifndef ENUM_T4135868527_H
-#define ENUM_T4135868527_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Enum
-struct  Enum_t4135868527  : public ValueType_t3640485471
-{
-public:
-
-public:
-};
-
-struct Enum_t4135868527_StaticFields
-{
-public:
-	// System.Char[] System.Enum::split_char
-	CharU5BU5D_t3528271667* ___split_char_0;
-
-public:
-	inline static int32_t get_offset_of_split_char_0() { return static_cast<int32_t>(offsetof(Enum_t4135868527_StaticFields, ___split_char_0)); }
-	inline CharU5BU5D_t3528271667* get_split_char_0() const { return ___split_char_0; }
-	inline CharU5BU5D_t3528271667** get_address_of_split_char_0() { return &___split_char_0; }
-	inline void set_split_char_0(CharU5BU5D_t3528271667* value)
-	{
-		___split_char_0 = value;
-		Il2CppCodeGenWriteBarrier((&___split_char_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-// Native definition for P/Invoke marshalling of System.Enum
-struct Enum_t4135868527_marshaled_pinvoke
-{
-};
-// Native definition for COM marshalling of System.Enum
-struct Enum_t4135868527_marshaled_com
-{
-};
-#endif // ENUM_T4135868527_H
-#ifndef DSA_T2386879874_H
-#define DSA_T2386879874_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Security.Cryptography.DSA
-struct  DSA_t2386879874  : public AsymmetricAlgorithm_t932037087
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DSA_T2386879874_H
 #ifndef ESCAPE_T3294788190_H
 #define ESCAPE_T3294788190_H
 #ifdef __clang__
@@ -4090,26 +3851,57 @@ struct Escape_t3294788190_marshaled_com
 	int32_t ___Optional_4;
 };
 #endif // ESCAPE_T3294788190_H
-#ifndef SEQUENTIALSEARCHPRIMEGENERATORBASE_T2996090508_H
-#define SEQUENTIALSEARCHPRIMEGENERATORBASE_T2996090508_H
+#ifndef PREVIOUSINFO_T2148130204_H
+#define PREVIOUSINFO_T2148130204_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// Mono.Math.Prime.Generator.SequentialSearchPrimeGeneratorBase
-struct  SequentialSearchPrimeGeneratorBase_t2996090508  : public PrimeGeneratorBase_t446028866
+// Mono.Globalization.Unicode.SimpleCollator/PreviousInfo
+struct  PreviousInfo_t2148130204 
 {
 public:
+	// System.Int32 Mono.Globalization.Unicode.SimpleCollator/PreviousInfo::Code
+	int32_t ___Code_0;
+	// System.Byte* Mono.Globalization.Unicode.SimpleCollator/PreviousInfo::SortKey
+	uint8_t* ___SortKey_1;
 
 public:
+	inline static int32_t get_offset_of_Code_0() { return static_cast<int32_t>(offsetof(PreviousInfo_t2148130204, ___Code_0)); }
+	inline int32_t get_Code_0() const { return ___Code_0; }
+	inline int32_t* get_address_of_Code_0() { return &___Code_0; }
+	inline void set_Code_0(int32_t value)
+	{
+		___Code_0 = value;
+	}
+
+	inline static int32_t get_offset_of_SortKey_1() { return static_cast<int32_t>(offsetof(PreviousInfo_t2148130204, ___SortKey_1)); }
+	inline uint8_t* get_SortKey_1() const { return ___SortKey_1; }
+	inline uint8_t** get_address_of_SortKey_1() { return &___SortKey_1; }
+	inline void set_SortKey_1(uint8_t* value)
+	{
+		___SortKey_1 = value;
+	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // SEQUENTIALSEARCHPRIMEGENERATORBASE_T2996090508_H
+// Native definition for P/Invoke marshalling of Mono.Globalization.Unicode.SimpleCollator/PreviousInfo
+struct PreviousInfo_t2148130204_marshaled_pinvoke
+{
+	int32_t ___Code_0;
+	uint8_t* ___SortKey_1;
+};
+// Native definition for COM marshalling of Mono.Globalization.Unicode.SimpleCollator/PreviousInfo
+struct PreviousInfo_t2148130204_marshaled_com
+{
+	int32_t ___Code_0;
+	uint8_t* ___SortKey_1;
+};
+#endif // PREVIOUSINFO_T2148130204_H
 #ifndef VOID_T1185182177_H
 #define VOID_T1185182177_H
 #ifdef __clang__
@@ -4130,35 +3922,241 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // VOID_T1185182177_H
-#ifndef X509EXTENSIONCOLLECTION_T609554708_H
-#define X509EXTENSIONCOLLECTION_T609554708_H
+#ifndef DSA_T2386879874_H
+#define DSA_T2386879874_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// Mono.Security.X509.X509ExtensionCollection
-struct  X509ExtensionCollection_t609554708  : public CollectionBase_t2727926298
+// System.Security.Cryptography.DSA
+struct  DSA_t2386879874  : public AsymmetricAlgorithm_t932037087
 {
 public:
-	// System.Boolean Mono.Security.X509.X509ExtensionCollection::readOnly
-	bool ___readOnly_1;
 
 public:
-	inline static int32_t get_offset_of_readOnly_1() { return static_cast<int32_t>(offsetof(X509ExtensionCollection_t609554708, ___readOnly_1)); }
-	inline bool get_readOnly_1() const { return ___readOnly_1; }
-	inline bool* get_address_of_readOnly_1() { return &___readOnly_1; }
-	inline void set_readOnly_1(bool value)
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DSA_T2386879874_H
+#ifndef RSA_T2385438082_H
+#define RSA_T2385438082_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Security.Cryptography.RSA
+struct  RSA_t2385438082  : public AsymmetricAlgorithm_t932037087
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // RSA_T2385438082_H
+#ifndef SYSTEMEXCEPTION_T176217640_H
+#define SYSTEMEXCEPTION_T176217640_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.SystemException
+struct  SystemException_t176217640  : public Exception_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SYSTEMEXCEPTION_T176217640_H
+#ifndef TIMESPAN_T881159249_H
+#define TIMESPAN_T881159249_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.TimeSpan
+struct  TimeSpan_t881159249 
+{
+public:
+	// System.Int64 System.TimeSpan::_ticks
+	int64_t ____ticks_3;
+
+public:
+	inline static int32_t get_offset_of__ticks_3() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249, ____ticks_3)); }
+	inline int64_t get__ticks_3() const { return ____ticks_3; }
+	inline int64_t* get_address_of__ticks_3() { return &____ticks_3; }
+	inline void set__ticks_3(int64_t value)
 	{
-		___readOnly_1 = value;
+		____ticks_3 = value;
+	}
+};
+
+struct TimeSpan_t881159249_StaticFields
+{
+public:
+	// System.TimeSpan System.TimeSpan::MaxValue
+	TimeSpan_t881159249  ___MaxValue_0;
+	// System.TimeSpan System.TimeSpan::MinValue
+	TimeSpan_t881159249  ___MinValue_1;
+	// System.TimeSpan System.TimeSpan::Zero
+	TimeSpan_t881159249  ___Zero_2;
+
+public:
+	inline static int32_t get_offset_of_MaxValue_0() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ___MaxValue_0)); }
+	inline TimeSpan_t881159249  get_MaxValue_0() const { return ___MaxValue_0; }
+	inline TimeSpan_t881159249 * get_address_of_MaxValue_0() { return &___MaxValue_0; }
+	inline void set_MaxValue_0(TimeSpan_t881159249  value)
+	{
+		___MaxValue_0 = value;
+	}
+
+	inline static int32_t get_offset_of_MinValue_1() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ___MinValue_1)); }
+	inline TimeSpan_t881159249  get_MinValue_1() const { return ___MinValue_1; }
+	inline TimeSpan_t881159249 * get_address_of_MinValue_1() { return &___MinValue_1; }
+	inline void set_MinValue_1(TimeSpan_t881159249  value)
+	{
+		___MinValue_1 = value;
+	}
+
+	inline static int32_t get_offset_of_Zero_2() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ___Zero_2)); }
+	inline TimeSpan_t881159249  get_Zero_2() const { return ___Zero_2; }
+	inline TimeSpan_t881159249 * get_address_of_Zero_2() { return &___Zero_2; }
+	inline void set_Zero_2(TimeSpan_t881159249  value)
+	{
+		___Zero_2 = value;
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // X509EXTENSIONCOLLECTION_T609554708_H
+#endif // TIMESPAN_T881159249_H
+#ifndef ENUM_T4135868527_H
+#define ENUM_T4135868527_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Enum
+struct  Enum_t4135868527  : public ValueType_t3640485471
+{
+public:
+
+public:
+};
+
+struct Enum_t4135868527_StaticFields
+{
+public:
+	// System.Char[] System.Enum::split_char
+	CharU5BU5D_t3528271667* ___split_char_0;
+
+public:
+	inline static int32_t get_offset_of_split_char_0() { return static_cast<int32_t>(offsetof(Enum_t4135868527_StaticFields, ___split_char_0)); }
+	inline CharU5BU5D_t3528271667* get_split_char_0() const { return ___split_char_0; }
+	inline CharU5BU5D_t3528271667** get_address_of_split_char_0() { return &___split_char_0; }
+	inline void set_split_char_0(CharU5BU5D_t3528271667* value)
+	{
+		___split_char_0 = value;
+		Il2CppCodeGenWriteBarrier((&___split_char_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Native definition for P/Invoke marshalling of System.Enum
+struct Enum_t4135868527_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.Enum
+struct Enum_t4135868527_marshaled_com
+{
+};
+#endif // ENUM_T4135868527_H
+#ifndef SEQUENTIALSEARCHPRIMEGENERATORBASE_T2996090508_H
+#define SEQUENTIALSEARCHPRIMEGENERATORBASE_T2996090508_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Mono.Math.Prime.Generator.SequentialSearchPrimeGeneratorBase
+struct  SequentialSearchPrimeGeneratorBase_t2996090508  : public PrimeGeneratorBase_t446028866
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SEQUENTIALSEARCHPRIMEGENERATORBASE_T2996090508_H
+#ifndef INTPTR_T_H
+#define INTPTR_T_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.IntPtr
+struct  IntPtr_t 
+{
+public:
+	// System.Void* System.IntPtr::m_value
+	void* ___m_value_0;
+
+public:
+	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(IntPtr_t, ___m_value_0)); }
+	inline void* get_m_value_0() const { return ___m_value_0; }
+	inline void** get_address_of_m_value_0() { return &___m_value_0; }
+	inline void set_m_value_0(void* value)
+	{
+		___m_value_0 = value;
+	}
+};
+
+struct IntPtr_t_StaticFields
+{
+public:
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+
+public:
+	inline static int32_t get_offset_of_Zero_1() { return static_cast<int32_t>(offsetof(IntPtr_t_StaticFields, ___Zero_1)); }
+	inline intptr_t get_Zero_1() const { return ___Zero_1; }
+	inline intptr_t* get_address_of_Zero_1() { return &___Zero_1; }
+	inline void set_Zero_1(intptr_t value)
+	{
+		___Zero_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // INTPTR_T_H
 #ifndef SECURITYPARSER_T4124480077_H
 #define SECURITYPARSER_T4124480077_H
 #ifdef __clang__
@@ -4211,36 +4209,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SECURITYPARSER_T4124480077_H
-#ifndef ARRAYLISTWRAPPER_T240606758_H
-#define ARRAYLISTWRAPPER_T240606758_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.ArrayList/ArrayListWrapper
-struct  ArrayListWrapper_t240606758  : public ArrayList_t2718874744
-{
-public:
-	// System.Collections.ArrayList System.Collections.ArrayList/ArrayListWrapper::m_InnerArrayList
-	ArrayList_t2718874744 * ___m_InnerArrayList_5;
-
-public:
-	inline static int32_t get_offset_of_m_InnerArrayList_5() { return static_cast<int32_t>(offsetof(ArrayListWrapper_t240606758, ___m_InnerArrayList_5)); }
-	inline ArrayList_t2718874744 * get_m_InnerArrayList_5() const { return ___m_InnerArrayList_5; }
-	inline ArrayList_t2718874744 ** get_address_of_m_InnerArrayList_5() { return &___m_InnerArrayList_5; }
-	inline void set_m_InnerArrayList_5(ArrayList_t2718874744 * value)
-	{
-		___m_InnerArrayList_5 = value;
-		Il2CppCodeGenWriteBarrier((&___m_InnerArrayList_5), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // ARRAYLISTWRAPPER_T240606758_H
 #ifndef LINK_T544317964_H
 #define LINK_T544317964_H
 #ifdef __clang__
@@ -4280,184 +4248,65 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // LINK_T544317964_H
-#ifndef RSA_T2385438082_H
-#define RSA_T2385438082_H
+#ifndef X509EXTENSIONCOLLECTION_T609554708_H
+#define X509EXTENSIONCOLLECTION_T609554708_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Security.Cryptography.RSA
-struct  RSA_t2385438082  : public AsymmetricAlgorithm_t932037087
+// Mono.Security.X509.X509ExtensionCollection
+struct  X509ExtensionCollection_t609554708  : public CollectionBase_t2727926298
 {
 public:
+	// System.Boolean Mono.Security.X509.X509ExtensionCollection::readOnly
+	bool ___readOnly_1;
 
 public:
+	inline static int32_t get_offset_of_readOnly_1() { return static_cast<int32_t>(offsetof(X509ExtensionCollection_t609554708, ___readOnly_1)); }
+	inline bool get_readOnly_1() const { return ___readOnly_1; }
+	inline bool* get_address_of_readOnly_1() { return &___readOnly_1; }
+	inline void set_readOnly_1(bool value)
+	{
+		___readOnly_1 = value;
+	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // RSA_T2385438082_H
-#ifndef DSAMANAGED_T2800260182_H
-#define DSAMANAGED_T2800260182_H
+#endif // X509EXTENSIONCOLLECTION_T609554708_H
+#ifndef ARRAYLISTWRAPPER_T240606758_H
+#define ARRAYLISTWRAPPER_T240606758_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// Mono.Security.Cryptography.DSAManaged
-struct  DSAManaged_t2800260182  : public DSA_t2386879874
+// System.Collections.ArrayList/ArrayListWrapper
+struct  ArrayListWrapper_t240606758  : public ArrayList_t2718874744
 {
 public:
-	// System.Boolean Mono.Security.Cryptography.DSAManaged::keypairGenerated
-	bool ___keypairGenerated_2;
-	// System.Boolean Mono.Security.Cryptography.DSAManaged::m_disposed
-	bool ___m_disposed_3;
-	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::p
-	BigInteger_t2902905089 * ___p_4;
-	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::q
-	BigInteger_t2902905089 * ___q_5;
-	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::g
-	BigInteger_t2902905089 * ___g_6;
-	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::x
-	BigInteger_t2902905089 * ___x_7;
-	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::y
-	BigInteger_t2902905089 * ___y_8;
-	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::j
-	BigInteger_t2902905089 * ___j_9;
-	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::seed
-	BigInteger_t2902905089 * ___seed_10;
-	// System.Int32 Mono.Security.Cryptography.DSAManaged::counter
-	int32_t ___counter_11;
-	// System.Boolean Mono.Security.Cryptography.DSAManaged::j_missing
-	bool ___j_missing_12;
-	// System.Security.Cryptography.RandomNumberGenerator Mono.Security.Cryptography.DSAManaged::rng
-	RandomNumberGenerator_t386037858 * ___rng_13;
-	// Mono.Security.Cryptography.DSAManaged/KeyGeneratedEventHandler Mono.Security.Cryptography.DSAManaged::KeyGenerated
-	KeyGeneratedEventHandler_t3828027274 * ___KeyGenerated_14;
+	// System.Collections.ArrayList System.Collections.ArrayList/ArrayListWrapper::m_InnerArrayList
+	ArrayList_t2718874744 * ___m_InnerArrayList_5;
 
 public:
-	inline static int32_t get_offset_of_keypairGenerated_2() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___keypairGenerated_2)); }
-	inline bool get_keypairGenerated_2() const { return ___keypairGenerated_2; }
-	inline bool* get_address_of_keypairGenerated_2() { return &___keypairGenerated_2; }
-	inline void set_keypairGenerated_2(bool value)
+	inline static int32_t get_offset_of_m_InnerArrayList_5() { return static_cast<int32_t>(offsetof(ArrayListWrapper_t240606758, ___m_InnerArrayList_5)); }
+	inline ArrayList_t2718874744 * get_m_InnerArrayList_5() const { return ___m_InnerArrayList_5; }
+	inline ArrayList_t2718874744 ** get_address_of_m_InnerArrayList_5() { return &___m_InnerArrayList_5; }
+	inline void set_m_InnerArrayList_5(ArrayList_t2718874744 * value)
 	{
-		___keypairGenerated_2 = value;
-	}
-
-	inline static int32_t get_offset_of_m_disposed_3() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___m_disposed_3)); }
-	inline bool get_m_disposed_3() const { return ___m_disposed_3; }
-	inline bool* get_address_of_m_disposed_3() { return &___m_disposed_3; }
-	inline void set_m_disposed_3(bool value)
-	{
-		___m_disposed_3 = value;
-	}
-
-	inline static int32_t get_offset_of_p_4() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___p_4)); }
-	inline BigInteger_t2902905089 * get_p_4() const { return ___p_4; }
-	inline BigInteger_t2902905089 ** get_address_of_p_4() { return &___p_4; }
-	inline void set_p_4(BigInteger_t2902905089 * value)
-	{
-		___p_4 = value;
-		Il2CppCodeGenWriteBarrier((&___p_4), value);
-	}
-
-	inline static int32_t get_offset_of_q_5() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___q_5)); }
-	inline BigInteger_t2902905089 * get_q_5() const { return ___q_5; }
-	inline BigInteger_t2902905089 ** get_address_of_q_5() { return &___q_5; }
-	inline void set_q_5(BigInteger_t2902905089 * value)
-	{
-		___q_5 = value;
-		Il2CppCodeGenWriteBarrier((&___q_5), value);
-	}
-
-	inline static int32_t get_offset_of_g_6() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___g_6)); }
-	inline BigInteger_t2902905089 * get_g_6() const { return ___g_6; }
-	inline BigInteger_t2902905089 ** get_address_of_g_6() { return &___g_6; }
-	inline void set_g_6(BigInteger_t2902905089 * value)
-	{
-		___g_6 = value;
-		Il2CppCodeGenWriteBarrier((&___g_6), value);
-	}
-
-	inline static int32_t get_offset_of_x_7() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___x_7)); }
-	inline BigInteger_t2902905089 * get_x_7() const { return ___x_7; }
-	inline BigInteger_t2902905089 ** get_address_of_x_7() { return &___x_7; }
-	inline void set_x_7(BigInteger_t2902905089 * value)
-	{
-		___x_7 = value;
-		Il2CppCodeGenWriteBarrier((&___x_7), value);
-	}
-
-	inline static int32_t get_offset_of_y_8() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___y_8)); }
-	inline BigInteger_t2902905089 * get_y_8() const { return ___y_8; }
-	inline BigInteger_t2902905089 ** get_address_of_y_8() { return &___y_8; }
-	inline void set_y_8(BigInteger_t2902905089 * value)
-	{
-		___y_8 = value;
-		Il2CppCodeGenWriteBarrier((&___y_8), value);
-	}
-
-	inline static int32_t get_offset_of_j_9() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___j_9)); }
-	inline BigInteger_t2902905089 * get_j_9() const { return ___j_9; }
-	inline BigInteger_t2902905089 ** get_address_of_j_9() { return &___j_9; }
-	inline void set_j_9(BigInteger_t2902905089 * value)
-	{
-		___j_9 = value;
-		Il2CppCodeGenWriteBarrier((&___j_9), value);
-	}
-
-	inline static int32_t get_offset_of_seed_10() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___seed_10)); }
-	inline BigInteger_t2902905089 * get_seed_10() const { return ___seed_10; }
-	inline BigInteger_t2902905089 ** get_address_of_seed_10() { return &___seed_10; }
-	inline void set_seed_10(BigInteger_t2902905089 * value)
-	{
-		___seed_10 = value;
-		Il2CppCodeGenWriteBarrier((&___seed_10), value);
-	}
-
-	inline static int32_t get_offset_of_counter_11() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___counter_11)); }
-	inline int32_t get_counter_11() const { return ___counter_11; }
-	inline int32_t* get_address_of_counter_11() { return &___counter_11; }
-	inline void set_counter_11(int32_t value)
-	{
-		___counter_11 = value;
-	}
-
-	inline static int32_t get_offset_of_j_missing_12() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___j_missing_12)); }
-	inline bool get_j_missing_12() const { return ___j_missing_12; }
-	inline bool* get_address_of_j_missing_12() { return &___j_missing_12; }
-	inline void set_j_missing_12(bool value)
-	{
-		___j_missing_12 = value;
-	}
-
-	inline static int32_t get_offset_of_rng_13() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___rng_13)); }
-	inline RandomNumberGenerator_t386037858 * get_rng_13() const { return ___rng_13; }
-	inline RandomNumberGenerator_t386037858 ** get_address_of_rng_13() { return &___rng_13; }
-	inline void set_rng_13(RandomNumberGenerator_t386037858 * value)
-	{
-		___rng_13 = value;
-		Il2CppCodeGenWriteBarrier((&___rng_13), value);
-	}
-
-	inline static int32_t get_offset_of_KeyGenerated_14() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___KeyGenerated_14)); }
-	inline KeyGeneratedEventHandler_t3828027274 * get_KeyGenerated_14() const { return ___KeyGenerated_14; }
-	inline KeyGeneratedEventHandler_t3828027274 ** get_address_of_KeyGenerated_14() { return &___KeyGenerated_14; }
-	inline void set_KeyGenerated_14(KeyGeneratedEventHandler_t3828027274 * value)
-	{
-		___KeyGenerated_14 = value;
-		Il2CppCodeGenWriteBarrier((&___KeyGenerated_14), value);
+		___m_InnerArrayList_5 = value;
+		Il2CppCodeGenWriteBarrier((&___m_InnerArrayList_5), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DSAMANAGED_T2800260182_H
+#endif // ARRAYLISTWRAPPER_T240606758_H
 #ifndef COMPAREOPTIONS_T4130014775_H
 #define COMPAREOPTIONS_T4130014775_H
 #ifdef __clang__
@@ -4487,6 +4336,148 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COMPAREOPTIONS_T4130014775_H
+#ifndef DATETIMEKIND_T3468814247_H
+#define DATETIMEKIND_T3468814247_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.DateTimeKind
+struct  DateTimeKind_t3468814247 
+{
+public:
+	// System.Int32 System.DateTimeKind::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(DateTimeKind_t3468814247, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATETIMEKIND_T3468814247_H
+#ifndef DELEGATE_T1188392813_H
+#define DELEGATE_T1188392813_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Delegate
+struct  Delegate_t1188392813  : public RuntimeObject
+{
+public:
+	// System.IntPtr System.Delegate::method_ptr
+	Il2CppMethodPointer ___method_ptr_0;
+	// System.IntPtr System.Delegate::invoke_impl
+	intptr_t ___invoke_impl_1;
+	// System.Object System.Delegate::m_target
+	RuntimeObject * ___m_target_2;
+	// System.IntPtr System.Delegate::method
+	intptr_t ___method_3;
+	// System.IntPtr System.Delegate::delegate_trampoline
+	intptr_t ___delegate_trampoline_4;
+	// System.IntPtr System.Delegate::method_code
+	intptr_t ___method_code_5;
+	// System.Reflection.MethodInfo System.Delegate::method_info
+	MethodInfo_t * ___method_info_6;
+	// System.Reflection.MethodInfo System.Delegate::original_method_info
+	MethodInfo_t * ___original_method_info_7;
+	// System.DelegateData System.Delegate::data
+	DelegateData_t1677132599 * ___data_8;
+
+public:
+	inline static int32_t get_offset_of_method_ptr_0() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_ptr_0)); }
+	inline Il2CppMethodPointer get_method_ptr_0() const { return ___method_ptr_0; }
+	inline Il2CppMethodPointer* get_address_of_method_ptr_0() { return &___method_ptr_0; }
+	inline void set_method_ptr_0(Il2CppMethodPointer value)
+	{
+		___method_ptr_0 = value;
+	}
+
+	inline static int32_t get_offset_of_invoke_impl_1() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___invoke_impl_1)); }
+	inline intptr_t get_invoke_impl_1() const { return ___invoke_impl_1; }
+	inline intptr_t* get_address_of_invoke_impl_1() { return &___invoke_impl_1; }
+	inline void set_invoke_impl_1(intptr_t value)
+	{
+		___invoke_impl_1 = value;
+	}
+
+	inline static int32_t get_offset_of_m_target_2() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___m_target_2)); }
+	inline RuntimeObject * get_m_target_2() const { return ___m_target_2; }
+	inline RuntimeObject ** get_address_of_m_target_2() { return &___m_target_2; }
+	inline void set_m_target_2(RuntimeObject * value)
+	{
+		___m_target_2 = value;
+		Il2CppCodeGenWriteBarrier((&___m_target_2), value);
+	}
+
+	inline static int32_t get_offset_of_method_3() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_3)); }
+	inline intptr_t get_method_3() const { return ___method_3; }
+	inline intptr_t* get_address_of_method_3() { return &___method_3; }
+	inline void set_method_3(intptr_t value)
+	{
+		___method_3 = value;
+	}
+
+	inline static int32_t get_offset_of_delegate_trampoline_4() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___delegate_trampoline_4)); }
+	inline intptr_t get_delegate_trampoline_4() const { return ___delegate_trampoline_4; }
+	inline intptr_t* get_address_of_delegate_trampoline_4() { return &___delegate_trampoline_4; }
+	inline void set_delegate_trampoline_4(intptr_t value)
+	{
+		___delegate_trampoline_4 = value;
+	}
+
+	inline static int32_t get_offset_of_method_code_5() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_code_5)); }
+	inline intptr_t get_method_code_5() const { return ___method_code_5; }
+	inline intptr_t* get_address_of_method_code_5() { return &___method_code_5; }
+	inline void set_method_code_5(intptr_t value)
+	{
+		___method_code_5 = value;
+	}
+
+	inline static int32_t get_offset_of_method_info_6() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_info_6)); }
+	inline MethodInfo_t * get_method_info_6() const { return ___method_info_6; }
+	inline MethodInfo_t ** get_address_of_method_info_6() { return &___method_info_6; }
+	inline void set_method_info_6(MethodInfo_t * value)
+	{
+		___method_info_6 = value;
+		Il2CppCodeGenWriteBarrier((&___method_info_6), value);
+	}
+
+	inline static int32_t get_offset_of_original_method_info_7() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___original_method_info_7)); }
+	inline MethodInfo_t * get_original_method_info_7() const { return ___original_method_info_7; }
+	inline MethodInfo_t ** get_address_of_original_method_info_7() { return &___original_method_info_7; }
+	inline void set_original_method_info_7(MethodInfo_t * value)
+	{
+		___original_method_info_7 = value;
+		Il2CppCodeGenWriteBarrier((&___original_method_info_7), value);
+	}
+
+	inline static int32_t get_offset_of_data_8() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___data_8)); }
+	inline DelegateData_t1677132599 * get_data_8() const { return ___data_8; }
+	inline DelegateData_t1677132599 ** get_address_of_data_8() { return &___data_8; }
+	inline void set_data_8(DelegateData_t1677132599 * value)
+	{
+		___data_8 = value;
+		Il2CppCodeGenWriteBarrier((&___data_8), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DELEGATE_T1188392813_H
 #ifndef SMALLXMLPARSEREXCEPTION_T1329648272_H
 #define SMALLXMLPARSEREXCEPTION_T1329648272_H
 #ifdef __clang__
@@ -4546,6 +4537,64 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // KEYNOTFOUNDEXCEPTION_T2292407383_H
+#ifndef SIGN_T3338384038_H
+#define SIGN_T3338384038_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Mono.Math.BigInteger/Sign
+struct  Sign_t3338384038 
+{
+public:
+	// System.Int32 Mono.Math.BigInteger/Sign::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(Sign_t3338384038, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SIGN_T3338384038_H
+#ifndef CONFIDENCEFACTOR_T2516000285_H
+#define CONFIDENCEFACTOR_T2516000285_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Mono.Math.Prime.ConfidenceFactor
+struct  ConfidenceFactor_t2516000285 
+{
+public:
+	// System.Int32 Mono.Math.Prime.ConfidenceFactor::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(ConfidenceFactor_t2516000285, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // CONFIDENCEFACTOR_T2516000285_H
 #ifndef RSAMANAGED_T1757093819_H
 #define RSAMANAGED_T1757093819_H
 #ifdef __clang__
@@ -4704,6 +4753,164 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // RSAMANAGED_T1757093819_H
+#ifndef DSAMANAGED_T2800260182_H
+#define DSAMANAGED_T2800260182_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Mono.Security.Cryptography.DSAManaged
+struct  DSAManaged_t2800260182  : public DSA_t2386879874
+{
+public:
+	// System.Boolean Mono.Security.Cryptography.DSAManaged::keypairGenerated
+	bool ___keypairGenerated_2;
+	// System.Boolean Mono.Security.Cryptography.DSAManaged::m_disposed
+	bool ___m_disposed_3;
+	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::p
+	BigInteger_t2902905089 * ___p_4;
+	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::q
+	BigInteger_t2902905089 * ___q_5;
+	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::g
+	BigInteger_t2902905089 * ___g_6;
+	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::x
+	BigInteger_t2902905089 * ___x_7;
+	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::y
+	BigInteger_t2902905089 * ___y_8;
+	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::j
+	BigInteger_t2902905089 * ___j_9;
+	// Mono.Math.BigInteger Mono.Security.Cryptography.DSAManaged::seed
+	BigInteger_t2902905089 * ___seed_10;
+	// System.Int32 Mono.Security.Cryptography.DSAManaged::counter
+	int32_t ___counter_11;
+	// System.Boolean Mono.Security.Cryptography.DSAManaged::j_missing
+	bool ___j_missing_12;
+	// System.Security.Cryptography.RandomNumberGenerator Mono.Security.Cryptography.DSAManaged::rng
+	RandomNumberGenerator_t386037858 * ___rng_13;
+	// Mono.Security.Cryptography.DSAManaged/KeyGeneratedEventHandler Mono.Security.Cryptography.DSAManaged::KeyGenerated
+	KeyGeneratedEventHandler_t3828027274 * ___KeyGenerated_14;
+
+public:
+	inline static int32_t get_offset_of_keypairGenerated_2() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___keypairGenerated_2)); }
+	inline bool get_keypairGenerated_2() const { return ___keypairGenerated_2; }
+	inline bool* get_address_of_keypairGenerated_2() { return &___keypairGenerated_2; }
+	inline void set_keypairGenerated_2(bool value)
+	{
+		___keypairGenerated_2 = value;
+	}
+
+	inline static int32_t get_offset_of_m_disposed_3() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___m_disposed_3)); }
+	inline bool get_m_disposed_3() const { return ___m_disposed_3; }
+	inline bool* get_address_of_m_disposed_3() { return &___m_disposed_3; }
+	inline void set_m_disposed_3(bool value)
+	{
+		___m_disposed_3 = value;
+	}
+
+	inline static int32_t get_offset_of_p_4() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___p_4)); }
+	inline BigInteger_t2902905089 * get_p_4() const { return ___p_4; }
+	inline BigInteger_t2902905089 ** get_address_of_p_4() { return &___p_4; }
+	inline void set_p_4(BigInteger_t2902905089 * value)
+	{
+		___p_4 = value;
+		Il2CppCodeGenWriteBarrier((&___p_4), value);
+	}
+
+	inline static int32_t get_offset_of_q_5() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___q_5)); }
+	inline BigInteger_t2902905089 * get_q_5() const { return ___q_5; }
+	inline BigInteger_t2902905089 ** get_address_of_q_5() { return &___q_5; }
+	inline void set_q_5(BigInteger_t2902905089 * value)
+	{
+		___q_5 = value;
+		Il2CppCodeGenWriteBarrier((&___q_5), value);
+	}
+
+	inline static int32_t get_offset_of_g_6() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___g_6)); }
+	inline BigInteger_t2902905089 * get_g_6() const { return ___g_6; }
+	inline BigInteger_t2902905089 ** get_address_of_g_6() { return &___g_6; }
+	inline void set_g_6(BigInteger_t2902905089 * value)
+	{
+		___g_6 = value;
+		Il2CppCodeGenWriteBarrier((&___g_6), value);
+	}
+
+	inline static int32_t get_offset_of_x_7() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___x_7)); }
+	inline BigInteger_t2902905089 * get_x_7() const { return ___x_7; }
+	inline BigInteger_t2902905089 ** get_address_of_x_7() { return &___x_7; }
+	inline void set_x_7(BigInteger_t2902905089 * value)
+	{
+		___x_7 = value;
+		Il2CppCodeGenWriteBarrier((&___x_7), value);
+	}
+
+	inline static int32_t get_offset_of_y_8() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___y_8)); }
+	inline BigInteger_t2902905089 * get_y_8() const { return ___y_8; }
+	inline BigInteger_t2902905089 ** get_address_of_y_8() { return &___y_8; }
+	inline void set_y_8(BigInteger_t2902905089 * value)
+	{
+		___y_8 = value;
+		Il2CppCodeGenWriteBarrier((&___y_8), value);
+	}
+
+	inline static int32_t get_offset_of_j_9() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___j_9)); }
+	inline BigInteger_t2902905089 * get_j_9() const { return ___j_9; }
+	inline BigInteger_t2902905089 ** get_address_of_j_9() { return &___j_9; }
+	inline void set_j_9(BigInteger_t2902905089 * value)
+	{
+		___j_9 = value;
+		Il2CppCodeGenWriteBarrier((&___j_9), value);
+	}
+
+	inline static int32_t get_offset_of_seed_10() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___seed_10)); }
+	inline BigInteger_t2902905089 * get_seed_10() const { return ___seed_10; }
+	inline BigInteger_t2902905089 ** get_address_of_seed_10() { return &___seed_10; }
+	inline void set_seed_10(BigInteger_t2902905089 * value)
+	{
+		___seed_10 = value;
+		Il2CppCodeGenWriteBarrier((&___seed_10), value);
+	}
+
+	inline static int32_t get_offset_of_counter_11() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___counter_11)); }
+	inline int32_t get_counter_11() const { return ___counter_11; }
+	inline int32_t* get_address_of_counter_11() { return &___counter_11; }
+	inline void set_counter_11(int32_t value)
+	{
+		___counter_11 = value;
+	}
+
+	inline static int32_t get_offset_of_j_missing_12() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___j_missing_12)); }
+	inline bool get_j_missing_12() const { return ___j_missing_12; }
+	inline bool* get_address_of_j_missing_12() { return &___j_missing_12; }
+	inline void set_j_missing_12(bool value)
+	{
+		___j_missing_12 = value;
+	}
+
+	inline static int32_t get_offset_of_rng_13() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___rng_13)); }
+	inline RandomNumberGenerator_t386037858 * get_rng_13() const { return ___rng_13; }
+	inline RandomNumberGenerator_t386037858 ** get_address_of_rng_13() { return &___rng_13; }
+	inline void set_rng_13(RandomNumberGenerator_t386037858 * value)
+	{
+		___rng_13 = value;
+		Il2CppCodeGenWriteBarrier((&___rng_13), value);
+	}
+
+	inline static int32_t get_offset_of_KeyGenerated_14() { return static_cast<int32_t>(offsetof(DSAManaged_t2800260182, ___KeyGenerated_14)); }
+	inline KeyGeneratedEventHandler_t3828027274 * get_KeyGenerated_14() const { return ___KeyGenerated_14; }
+	inline KeyGeneratedEventHandler_t3828027274 ** get_address_of_KeyGenerated_14() { return &___KeyGenerated_14; }
+	inline void set_KeyGenerated_14(KeyGeneratedEventHandler_t3828027274 * value)
+	{
+		___KeyGenerated_14 = value;
+		Il2CppCodeGenWriteBarrier((&___KeyGenerated_14), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DSAMANAGED_T2800260182_H
 #ifndef ENUMERATORMODE_T1442366820_H
 #define ENUMERATORMODE_T1442366820_H
 #ifdef __clang__
@@ -4733,35 +4940,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ENUMERATORMODE_T1442366820_H
-#ifndef EXTENDERTYPE_T2449612322_H
-#define EXTENDERTYPE_T2449612322_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// Mono.Globalization.Unicode.SimpleCollator/ExtenderType
-struct  ExtenderType_t2449612322 
-{
-public:
-	// System.Int32 Mono.Globalization.Unicode.SimpleCollator/ExtenderType::value__
-	int32_t ___value___1;
-
-public:
-	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(ExtenderType_t2449612322, ___value___1)); }
-	inline int32_t get_value___1() const { return ___value___1; }
-	inline int32_t* get_address_of_value___1() { return &___value___1; }
-	inline void set_value___1(int32_t value)
-	{
-		___value___1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // EXTENDERTYPE_T2449612322_H
 #ifndef SYNCHRONIZEDARRAYLISTWRAPPER_T2283757095_H
 #define SYNCHRONIZEDARRAYLISTWRAPPER_T2283757095_H
 #ifdef __clang__
@@ -4812,23 +4990,23 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // FIXEDSIZEARRAYLISTWRAPPER_T220909481_H
-#ifndef DATETIMEKIND_T3468814247_H
-#define DATETIMEKIND_T3468814247_H
+#ifndef EXTENDERTYPE_T2449612322_H
+#define EXTENDERTYPE_T2449612322_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.DateTimeKind
-struct  DateTimeKind_t3468814247 
+// Mono.Globalization.Unicode.SimpleCollator/ExtenderType
+struct  ExtenderType_t2449612322 
 {
 public:
-	// System.Int32 System.DateTimeKind::value__
+	// System.Int32 Mono.Globalization.Unicode.SimpleCollator/ExtenderType::value__
 	int32_t ___value___1;
 
 public:
-	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(DateTimeKind_t3468814247, ___value___1)); }
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(ExtenderType_t2449612322, ___value___1)); }
 	inline int32_t get_value___1() const { return ___value___1; }
 	inline int32_t* get_address_of_value___1() { return &___value___1; }
 	inline void set_value___1(int32_t value)
@@ -4840,178 +5018,280 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DATETIMEKIND_T3468814247_H
-#ifndef SIGN_T3338384038_H
-#define SIGN_T3338384038_H
+#endif // EXTENDERTYPE_T2449612322_H
+#ifndef CONTEXT_T1744531130_H
+#define CONTEXT_T1744531130_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// Mono.Math.BigInteger/Sign
-struct  Sign_t3338384038 
+// Mono.Globalization.Unicode.SimpleCollator/Context
+struct  Context_t1744531130 
 {
 public:
-	// System.Int32 Mono.Math.BigInteger/Sign::value__
-	int32_t ___value___1;
+	// System.Globalization.CompareOptions Mono.Globalization.Unicode.SimpleCollator/Context::Option
+	int32_t ___Option_0;
+	// System.Byte* Mono.Globalization.Unicode.SimpleCollator/Context::NeverMatchFlags
+	uint8_t* ___NeverMatchFlags_1;
+	// System.Byte* Mono.Globalization.Unicode.SimpleCollator/Context::AlwaysMatchFlags
+	uint8_t* ___AlwaysMatchFlags_2;
+	// System.Byte* Mono.Globalization.Unicode.SimpleCollator/Context::Buffer1
+	uint8_t* ___Buffer1_3;
+	// System.Byte* Mono.Globalization.Unicode.SimpleCollator/Context::Buffer2
+	uint8_t* ___Buffer2_4;
+	// System.Int32 Mono.Globalization.Unicode.SimpleCollator/Context::PrevCode
+	int32_t ___PrevCode_5;
+	// System.Byte* Mono.Globalization.Unicode.SimpleCollator/Context::PrevSortKey
+	uint8_t* ___PrevSortKey_6;
+	// System.Boolean Mono.Globalization.Unicode.SimpleCollator/Context::QuickCheckPossible
+	bool ___QuickCheckPossible_7;
 
 public:
-	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(Sign_t3338384038, ___value___1)); }
-	inline int32_t get_value___1() const { return ___value___1; }
-	inline int32_t* get_address_of_value___1() { return &___value___1; }
-	inline void set_value___1(int32_t value)
+	inline static int32_t get_offset_of_Option_0() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___Option_0)); }
+	inline int32_t get_Option_0() const { return ___Option_0; }
+	inline int32_t* get_address_of_Option_0() { return &___Option_0; }
+	inline void set_Option_0(int32_t value)
 	{
-		___value___1 = value;
+		___Option_0 = value;
+	}
+
+	inline static int32_t get_offset_of_NeverMatchFlags_1() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___NeverMatchFlags_1)); }
+	inline uint8_t* get_NeverMatchFlags_1() const { return ___NeverMatchFlags_1; }
+	inline uint8_t** get_address_of_NeverMatchFlags_1() { return &___NeverMatchFlags_1; }
+	inline void set_NeverMatchFlags_1(uint8_t* value)
+	{
+		___NeverMatchFlags_1 = value;
+	}
+
+	inline static int32_t get_offset_of_AlwaysMatchFlags_2() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___AlwaysMatchFlags_2)); }
+	inline uint8_t* get_AlwaysMatchFlags_2() const { return ___AlwaysMatchFlags_2; }
+	inline uint8_t** get_address_of_AlwaysMatchFlags_2() { return &___AlwaysMatchFlags_2; }
+	inline void set_AlwaysMatchFlags_2(uint8_t* value)
+	{
+		___AlwaysMatchFlags_2 = value;
+	}
+
+	inline static int32_t get_offset_of_Buffer1_3() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___Buffer1_3)); }
+	inline uint8_t* get_Buffer1_3() const { return ___Buffer1_3; }
+	inline uint8_t** get_address_of_Buffer1_3() { return &___Buffer1_3; }
+	inline void set_Buffer1_3(uint8_t* value)
+	{
+		___Buffer1_3 = value;
+	}
+
+	inline static int32_t get_offset_of_Buffer2_4() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___Buffer2_4)); }
+	inline uint8_t* get_Buffer2_4() const { return ___Buffer2_4; }
+	inline uint8_t** get_address_of_Buffer2_4() { return &___Buffer2_4; }
+	inline void set_Buffer2_4(uint8_t* value)
+	{
+		___Buffer2_4 = value;
+	}
+
+	inline static int32_t get_offset_of_PrevCode_5() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___PrevCode_5)); }
+	inline int32_t get_PrevCode_5() const { return ___PrevCode_5; }
+	inline int32_t* get_address_of_PrevCode_5() { return &___PrevCode_5; }
+	inline void set_PrevCode_5(int32_t value)
+	{
+		___PrevCode_5 = value;
+	}
+
+	inline static int32_t get_offset_of_PrevSortKey_6() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___PrevSortKey_6)); }
+	inline uint8_t* get_PrevSortKey_6() const { return ___PrevSortKey_6; }
+	inline uint8_t** get_address_of_PrevSortKey_6() { return &___PrevSortKey_6; }
+	inline void set_PrevSortKey_6(uint8_t* value)
+	{
+		___PrevSortKey_6 = value;
+	}
+
+	inline static int32_t get_offset_of_QuickCheckPossible_7() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___QuickCheckPossible_7)); }
+	inline bool get_QuickCheckPossible_7() const { return ___QuickCheckPossible_7; }
+	inline bool* get_address_of_QuickCheckPossible_7() { return &___QuickCheckPossible_7; }
+	inline void set_QuickCheckPossible_7(bool value)
+	{
+		___QuickCheckPossible_7 = value;
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // SIGN_T3338384038_H
-#ifndef DELEGATE_T1188392813_H
-#define DELEGATE_T1188392813_H
+// Native definition for P/Invoke marshalling of Mono.Globalization.Unicode.SimpleCollator/Context
+struct Context_t1744531130_marshaled_pinvoke
+{
+	int32_t ___Option_0;
+	uint8_t* ___NeverMatchFlags_1;
+	uint8_t* ___AlwaysMatchFlags_2;
+	uint8_t* ___Buffer1_3;
+	uint8_t* ___Buffer2_4;
+	int32_t ___PrevCode_5;
+	uint8_t* ___PrevSortKey_6;
+	int32_t ___QuickCheckPossible_7;
+};
+// Native definition for COM marshalling of Mono.Globalization.Unicode.SimpleCollator/Context
+struct Context_t1744531130_marshaled_com
+{
+	int32_t ___Option_0;
+	uint8_t* ___NeverMatchFlags_1;
+	uint8_t* ___AlwaysMatchFlags_2;
+	uint8_t* ___Buffer1_3;
+	uint8_t* ___Buffer2_4;
+	int32_t ___PrevCode_5;
+	uint8_t* ___PrevSortKey_6;
+	int32_t ___QuickCheckPossible_7;
+};
+#endif // CONTEXT_T1744531130_H
+#ifndef ENUMERATOR_T661358686_H
+#define ENUMERATOR_T661358686_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Delegate
-struct  Delegate_t1188392813  : public RuntimeObject
+// System.Collections.Hashtable/Enumerator
+struct  Enumerator_t661358686  : public RuntimeObject
 {
 public:
-	// System.IntPtr System.Delegate::method_ptr
-	Il2CppMethodPointer ___method_ptr_0;
-	// System.IntPtr System.Delegate::invoke_impl
-	intptr_t ___invoke_impl_1;
-	// System.Object System.Delegate::m_target
-	RuntimeObject * ___m_target_2;
-	// System.IntPtr System.Delegate::method
-	intptr_t ___method_3;
-	// System.IntPtr System.Delegate::delegate_trampoline
-	intptr_t ___delegate_trampoline_4;
-	// System.IntPtr System.Delegate::method_code
-	intptr_t ___method_code_5;
-	// System.Reflection.MethodInfo System.Delegate::method_info
-	MethodInfo_t * ___method_info_6;
-	// System.Reflection.MethodInfo System.Delegate::original_method_info
-	MethodInfo_t * ___original_method_info_7;
-	// System.DelegateData System.Delegate::data
-	DelegateData_t1677132599 * ___data_8;
+	// System.Collections.Hashtable System.Collections.Hashtable/Enumerator::host
+	Hashtable_t1853889766 * ___host_0;
+	// System.Int32 System.Collections.Hashtable/Enumerator::stamp
+	int32_t ___stamp_1;
+	// System.Int32 System.Collections.Hashtable/Enumerator::pos
+	int32_t ___pos_2;
+	// System.Int32 System.Collections.Hashtable/Enumerator::size
+	int32_t ___size_3;
+	// System.Collections.Hashtable/EnumeratorMode System.Collections.Hashtable/Enumerator::mode
+	int32_t ___mode_4;
+	// System.Object System.Collections.Hashtable/Enumerator::currentKey
+	RuntimeObject * ___currentKey_5;
+	// System.Object System.Collections.Hashtable/Enumerator::currentValue
+	RuntimeObject * ___currentValue_6;
 
 public:
-	inline static int32_t get_offset_of_method_ptr_0() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_ptr_0)); }
-	inline Il2CppMethodPointer get_method_ptr_0() const { return ___method_ptr_0; }
-	inline Il2CppMethodPointer* get_address_of_method_ptr_0() { return &___method_ptr_0; }
-	inline void set_method_ptr_0(Il2CppMethodPointer value)
+	inline static int32_t get_offset_of_host_0() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___host_0)); }
+	inline Hashtable_t1853889766 * get_host_0() const { return ___host_0; }
+	inline Hashtable_t1853889766 ** get_address_of_host_0() { return &___host_0; }
+	inline void set_host_0(Hashtable_t1853889766 * value)
 	{
-		___method_ptr_0 = value;
+		___host_0 = value;
+		Il2CppCodeGenWriteBarrier((&___host_0), value);
 	}
 
-	inline static int32_t get_offset_of_invoke_impl_1() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___invoke_impl_1)); }
-	inline intptr_t get_invoke_impl_1() const { return ___invoke_impl_1; }
-	inline intptr_t* get_address_of_invoke_impl_1() { return &___invoke_impl_1; }
-	inline void set_invoke_impl_1(intptr_t value)
+	inline static int32_t get_offset_of_stamp_1() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___stamp_1)); }
+	inline int32_t get_stamp_1() const { return ___stamp_1; }
+	inline int32_t* get_address_of_stamp_1() { return &___stamp_1; }
+	inline void set_stamp_1(int32_t value)
 	{
-		___invoke_impl_1 = value;
+		___stamp_1 = value;
 	}
 
-	inline static int32_t get_offset_of_m_target_2() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___m_target_2)); }
-	inline RuntimeObject * get_m_target_2() const { return ___m_target_2; }
-	inline RuntimeObject ** get_address_of_m_target_2() { return &___m_target_2; }
-	inline void set_m_target_2(RuntimeObject * value)
+	inline static int32_t get_offset_of_pos_2() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___pos_2)); }
+	inline int32_t get_pos_2() const { return ___pos_2; }
+	inline int32_t* get_address_of_pos_2() { return &___pos_2; }
+	inline void set_pos_2(int32_t value)
 	{
-		___m_target_2 = value;
-		Il2CppCodeGenWriteBarrier((&___m_target_2), value);
+		___pos_2 = value;
 	}
 
-	inline static int32_t get_offset_of_method_3() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_3)); }
-	inline intptr_t get_method_3() const { return ___method_3; }
-	inline intptr_t* get_address_of_method_3() { return &___method_3; }
-	inline void set_method_3(intptr_t value)
+	inline static int32_t get_offset_of_size_3() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___size_3)); }
+	inline int32_t get_size_3() const { return ___size_3; }
+	inline int32_t* get_address_of_size_3() { return &___size_3; }
+	inline void set_size_3(int32_t value)
 	{
-		___method_3 = value;
+		___size_3 = value;
 	}
 
-	inline static int32_t get_offset_of_delegate_trampoline_4() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___delegate_trampoline_4)); }
-	inline intptr_t get_delegate_trampoline_4() const { return ___delegate_trampoline_4; }
-	inline intptr_t* get_address_of_delegate_trampoline_4() { return &___delegate_trampoline_4; }
-	inline void set_delegate_trampoline_4(intptr_t value)
+	inline static int32_t get_offset_of_mode_4() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___mode_4)); }
+	inline int32_t get_mode_4() const { return ___mode_4; }
+	inline int32_t* get_address_of_mode_4() { return &___mode_4; }
+	inline void set_mode_4(int32_t value)
 	{
-		___delegate_trampoline_4 = value;
+		___mode_4 = value;
 	}
 
-	inline static int32_t get_offset_of_method_code_5() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_code_5)); }
-	inline intptr_t get_method_code_5() const { return ___method_code_5; }
-	inline intptr_t* get_address_of_method_code_5() { return &___method_code_5; }
-	inline void set_method_code_5(intptr_t value)
+	inline static int32_t get_offset_of_currentKey_5() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___currentKey_5)); }
+	inline RuntimeObject * get_currentKey_5() const { return ___currentKey_5; }
+	inline RuntimeObject ** get_address_of_currentKey_5() { return &___currentKey_5; }
+	inline void set_currentKey_5(RuntimeObject * value)
 	{
-		___method_code_5 = value;
+		___currentKey_5 = value;
+		Il2CppCodeGenWriteBarrier((&___currentKey_5), value);
 	}
 
-	inline static int32_t get_offset_of_method_info_6() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_info_6)); }
-	inline MethodInfo_t * get_method_info_6() const { return ___method_info_6; }
-	inline MethodInfo_t ** get_address_of_method_info_6() { return &___method_info_6; }
-	inline void set_method_info_6(MethodInfo_t * value)
+	inline static int32_t get_offset_of_currentValue_6() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___currentValue_6)); }
+	inline RuntimeObject * get_currentValue_6() const { return ___currentValue_6; }
+	inline RuntimeObject ** get_address_of_currentValue_6() { return &___currentValue_6; }
+	inline void set_currentValue_6(RuntimeObject * value)
 	{
-		___method_info_6 = value;
-		Il2CppCodeGenWriteBarrier((&___method_info_6), value);
+		___currentValue_6 = value;
+		Il2CppCodeGenWriteBarrier((&___currentValue_6), value);
 	}
+};
 
-	inline static int32_t get_offset_of_original_method_info_7() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___original_method_info_7)); }
-	inline MethodInfo_t * get_original_method_info_7() const { return ___original_method_info_7; }
-	inline MethodInfo_t ** get_address_of_original_method_info_7() { return &___original_method_info_7; }
-	inline void set_original_method_info_7(MethodInfo_t * value)
-	{
-		___original_method_info_7 = value;
-		Il2CppCodeGenWriteBarrier((&___original_method_info_7), value);
-	}
+struct Enumerator_t661358686_StaticFields
+{
+public:
+	// System.String System.Collections.Hashtable/Enumerator::xstr
+	String_t* ___xstr_7;
 
-	inline static int32_t get_offset_of_data_8() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___data_8)); }
-	inline DelegateData_t1677132599 * get_data_8() const { return ___data_8; }
-	inline DelegateData_t1677132599 ** get_address_of_data_8() { return &___data_8; }
-	inline void set_data_8(DelegateData_t1677132599 * value)
+public:
+	inline static int32_t get_offset_of_xstr_7() { return static_cast<int32_t>(offsetof(Enumerator_t661358686_StaticFields, ___xstr_7)); }
+	inline String_t* get_xstr_7() const { return ___xstr_7; }
+	inline String_t** get_address_of_xstr_7() { return &___xstr_7; }
+	inline void set_xstr_7(String_t* value)
 	{
-		___data_8 = value;
-		Il2CppCodeGenWriteBarrier((&___data_8), value);
+		___xstr_7 = value;
+		Il2CppCodeGenWriteBarrier((&___xstr_7), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DELEGATE_T1188392813_H
-#ifndef CONFIDENCEFACTOR_T2516000285_H
-#define CONFIDENCEFACTOR_T2516000285_H
+#endif // ENUMERATOR_T661358686_H
+#ifndef MULTICASTDELEGATE_T_H
+#define MULTICASTDELEGATE_T_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// Mono.Math.Prime.ConfidenceFactor
-struct  ConfidenceFactor_t2516000285 
+// System.MulticastDelegate
+struct  MulticastDelegate_t  : public Delegate_t1188392813
 {
 public:
-	// System.Int32 Mono.Math.Prime.ConfidenceFactor::value__
-	int32_t ___value___1;
+	// System.MulticastDelegate System.MulticastDelegate::prev
+	MulticastDelegate_t * ___prev_9;
+	// System.MulticastDelegate System.MulticastDelegate::kpm_next
+	MulticastDelegate_t * ___kpm_next_10;
 
 public:
-	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(ConfidenceFactor_t2516000285, ___value___1)); }
-	inline int32_t get_value___1() const { return ___value___1; }
-	inline int32_t* get_address_of_value___1() { return &___value___1; }
-	inline void set_value___1(int32_t value)
+	inline static int32_t get_offset_of_prev_9() { return static_cast<int32_t>(offsetof(MulticastDelegate_t, ___prev_9)); }
+	inline MulticastDelegate_t * get_prev_9() const { return ___prev_9; }
+	inline MulticastDelegate_t ** get_address_of_prev_9() { return &___prev_9; }
+	inline void set_prev_9(MulticastDelegate_t * value)
 	{
-		___value___1 = value;
+		___prev_9 = value;
+		Il2CppCodeGenWriteBarrier((&___prev_9), value);
+	}
+
+	inline static int32_t get_offset_of_kpm_next_10() { return static_cast<int32_t>(offsetof(MulticastDelegate_t, ___kpm_next_10)); }
+	inline MulticastDelegate_t * get_kpm_next_10() const { return ___kpm_next_10; }
+	inline MulticastDelegate_t ** get_address_of_kpm_next_10() { return &___kpm_next_10; }
+	inline void set_kpm_next_10(MulticastDelegate_t * value)
+	{
+		___kpm_next_10 = value;
+		Il2CppCodeGenWriteBarrier((&___kpm_next_10), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // CONFIDENCEFACTOR_T2516000285_H
+#endif // MULTICASTDELEGATE_T_H
 #ifndef DATETIME_T3738529785_H
 #define DATETIME_T3738529785_H
 #ifdef __clang__
@@ -5258,238 +5538,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SORTKEY_T3955336732_H
-#ifndef CONTEXT_T1744531130_H
-#define CONTEXT_T1744531130_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// Mono.Globalization.Unicode.SimpleCollator/Context
-struct  Context_t1744531130 
-{
-public:
-	// System.Globalization.CompareOptions Mono.Globalization.Unicode.SimpleCollator/Context::Option
-	int32_t ___Option_0;
-	// System.Byte* Mono.Globalization.Unicode.SimpleCollator/Context::NeverMatchFlags
-	uint8_t* ___NeverMatchFlags_1;
-	// System.Byte* Mono.Globalization.Unicode.SimpleCollator/Context::AlwaysMatchFlags
-	uint8_t* ___AlwaysMatchFlags_2;
-	// System.Byte* Mono.Globalization.Unicode.SimpleCollator/Context::Buffer1
-	uint8_t* ___Buffer1_3;
-	// System.Byte* Mono.Globalization.Unicode.SimpleCollator/Context::Buffer2
-	uint8_t* ___Buffer2_4;
-	// System.Int32 Mono.Globalization.Unicode.SimpleCollator/Context::PrevCode
-	int32_t ___PrevCode_5;
-	// System.Byte* Mono.Globalization.Unicode.SimpleCollator/Context::PrevSortKey
-	uint8_t* ___PrevSortKey_6;
-	// System.Boolean Mono.Globalization.Unicode.SimpleCollator/Context::QuickCheckPossible
-	bool ___QuickCheckPossible_7;
-
-public:
-	inline static int32_t get_offset_of_Option_0() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___Option_0)); }
-	inline int32_t get_Option_0() const { return ___Option_0; }
-	inline int32_t* get_address_of_Option_0() { return &___Option_0; }
-	inline void set_Option_0(int32_t value)
-	{
-		___Option_0 = value;
-	}
-
-	inline static int32_t get_offset_of_NeverMatchFlags_1() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___NeverMatchFlags_1)); }
-	inline uint8_t* get_NeverMatchFlags_1() const { return ___NeverMatchFlags_1; }
-	inline uint8_t** get_address_of_NeverMatchFlags_1() { return &___NeverMatchFlags_1; }
-	inline void set_NeverMatchFlags_1(uint8_t* value)
-	{
-		___NeverMatchFlags_1 = value;
-	}
-
-	inline static int32_t get_offset_of_AlwaysMatchFlags_2() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___AlwaysMatchFlags_2)); }
-	inline uint8_t* get_AlwaysMatchFlags_2() const { return ___AlwaysMatchFlags_2; }
-	inline uint8_t** get_address_of_AlwaysMatchFlags_2() { return &___AlwaysMatchFlags_2; }
-	inline void set_AlwaysMatchFlags_2(uint8_t* value)
-	{
-		___AlwaysMatchFlags_2 = value;
-	}
-
-	inline static int32_t get_offset_of_Buffer1_3() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___Buffer1_3)); }
-	inline uint8_t* get_Buffer1_3() const { return ___Buffer1_3; }
-	inline uint8_t** get_address_of_Buffer1_3() { return &___Buffer1_3; }
-	inline void set_Buffer1_3(uint8_t* value)
-	{
-		___Buffer1_3 = value;
-	}
-
-	inline static int32_t get_offset_of_Buffer2_4() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___Buffer2_4)); }
-	inline uint8_t* get_Buffer2_4() const { return ___Buffer2_4; }
-	inline uint8_t** get_address_of_Buffer2_4() { return &___Buffer2_4; }
-	inline void set_Buffer2_4(uint8_t* value)
-	{
-		___Buffer2_4 = value;
-	}
-
-	inline static int32_t get_offset_of_PrevCode_5() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___PrevCode_5)); }
-	inline int32_t get_PrevCode_5() const { return ___PrevCode_5; }
-	inline int32_t* get_address_of_PrevCode_5() { return &___PrevCode_5; }
-	inline void set_PrevCode_5(int32_t value)
-	{
-		___PrevCode_5 = value;
-	}
-
-	inline static int32_t get_offset_of_PrevSortKey_6() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___PrevSortKey_6)); }
-	inline uint8_t* get_PrevSortKey_6() const { return ___PrevSortKey_6; }
-	inline uint8_t** get_address_of_PrevSortKey_6() { return &___PrevSortKey_6; }
-	inline void set_PrevSortKey_6(uint8_t* value)
-	{
-		___PrevSortKey_6 = value;
-	}
-
-	inline static int32_t get_offset_of_QuickCheckPossible_7() { return static_cast<int32_t>(offsetof(Context_t1744531130, ___QuickCheckPossible_7)); }
-	inline bool get_QuickCheckPossible_7() const { return ___QuickCheckPossible_7; }
-	inline bool* get_address_of_QuickCheckPossible_7() { return &___QuickCheckPossible_7; }
-	inline void set_QuickCheckPossible_7(bool value)
-	{
-		___QuickCheckPossible_7 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-// Native definition for P/Invoke marshalling of Mono.Globalization.Unicode.SimpleCollator/Context
-struct Context_t1744531130_marshaled_pinvoke
-{
-	int32_t ___Option_0;
-	uint8_t* ___NeverMatchFlags_1;
-	uint8_t* ___AlwaysMatchFlags_2;
-	uint8_t* ___Buffer1_3;
-	uint8_t* ___Buffer2_4;
-	int32_t ___PrevCode_5;
-	uint8_t* ___PrevSortKey_6;
-	int32_t ___QuickCheckPossible_7;
-};
-// Native definition for COM marshalling of Mono.Globalization.Unicode.SimpleCollator/Context
-struct Context_t1744531130_marshaled_com
-{
-	int32_t ___Option_0;
-	uint8_t* ___NeverMatchFlags_1;
-	uint8_t* ___AlwaysMatchFlags_2;
-	uint8_t* ___Buffer1_3;
-	uint8_t* ___Buffer2_4;
-	int32_t ___PrevCode_5;
-	uint8_t* ___PrevSortKey_6;
-	int32_t ___QuickCheckPossible_7;
-};
-#endif // CONTEXT_T1744531130_H
-#ifndef ENUMERATOR_T661358686_H
-#define ENUMERATOR_T661358686_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Hashtable/Enumerator
-struct  Enumerator_t661358686  : public RuntimeObject
-{
-public:
-	// System.Collections.Hashtable System.Collections.Hashtable/Enumerator::host
-	Hashtable_t1853889766 * ___host_0;
-	// System.Int32 System.Collections.Hashtable/Enumerator::stamp
-	int32_t ___stamp_1;
-	// System.Int32 System.Collections.Hashtable/Enumerator::pos
-	int32_t ___pos_2;
-	// System.Int32 System.Collections.Hashtable/Enumerator::size
-	int32_t ___size_3;
-	// System.Collections.Hashtable/EnumeratorMode System.Collections.Hashtable/Enumerator::mode
-	int32_t ___mode_4;
-	// System.Object System.Collections.Hashtable/Enumerator::currentKey
-	RuntimeObject * ___currentKey_5;
-	// System.Object System.Collections.Hashtable/Enumerator::currentValue
-	RuntimeObject * ___currentValue_6;
-
-public:
-	inline static int32_t get_offset_of_host_0() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___host_0)); }
-	inline Hashtable_t1853889766 * get_host_0() const { return ___host_0; }
-	inline Hashtable_t1853889766 ** get_address_of_host_0() { return &___host_0; }
-	inline void set_host_0(Hashtable_t1853889766 * value)
-	{
-		___host_0 = value;
-		Il2CppCodeGenWriteBarrier((&___host_0), value);
-	}
-
-	inline static int32_t get_offset_of_stamp_1() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___stamp_1)); }
-	inline int32_t get_stamp_1() const { return ___stamp_1; }
-	inline int32_t* get_address_of_stamp_1() { return &___stamp_1; }
-	inline void set_stamp_1(int32_t value)
-	{
-		___stamp_1 = value;
-	}
-
-	inline static int32_t get_offset_of_pos_2() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___pos_2)); }
-	inline int32_t get_pos_2() const { return ___pos_2; }
-	inline int32_t* get_address_of_pos_2() { return &___pos_2; }
-	inline void set_pos_2(int32_t value)
-	{
-		___pos_2 = value;
-	}
-
-	inline static int32_t get_offset_of_size_3() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___size_3)); }
-	inline int32_t get_size_3() const { return ___size_3; }
-	inline int32_t* get_address_of_size_3() { return &___size_3; }
-	inline void set_size_3(int32_t value)
-	{
-		___size_3 = value;
-	}
-
-	inline static int32_t get_offset_of_mode_4() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___mode_4)); }
-	inline int32_t get_mode_4() const { return ___mode_4; }
-	inline int32_t* get_address_of_mode_4() { return &___mode_4; }
-	inline void set_mode_4(int32_t value)
-	{
-		___mode_4 = value;
-	}
-
-	inline static int32_t get_offset_of_currentKey_5() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___currentKey_5)); }
-	inline RuntimeObject * get_currentKey_5() const { return ___currentKey_5; }
-	inline RuntimeObject ** get_address_of_currentKey_5() { return &___currentKey_5; }
-	inline void set_currentKey_5(RuntimeObject * value)
-	{
-		___currentKey_5 = value;
-		Il2CppCodeGenWriteBarrier((&___currentKey_5), value);
-	}
-
-	inline static int32_t get_offset_of_currentValue_6() { return static_cast<int32_t>(offsetof(Enumerator_t661358686, ___currentValue_6)); }
-	inline RuntimeObject * get_currentValue_6() const { return ___currentValue_6; }
-	inline RuntimeObject ** get_address_of_currentValue_6() { return &___currentValue_6; }
-	inline void set_currentValue_6(RuntimeObject * value)
-	{
-		___currentValue_6 = value;
-		Il2CppCodeGenWriteBarrier((&___currentValue_6), value);
-	}
-};
-
-struct Enumerator_t661358686_StaticFields
-{
-public:
-	// System.String System.Collections.Hashtable/Enumerator::xstr
-	String_t* ___xstr_7;
-
-public:
-	inline static int32_t get_offset_of_xstr_7() { return static_cast<int32_t>(offsetof(Enumerator_t661358686_StaticFields, ___xstr_7)); }
-	inline String_t* get_xstr_7() const { return ___xstr_7; }
-	inline String_t** get_address_of_xstr_7() { return &___xstr_7; }
-	inline void set_xstr_7(String_t* value)
-	{
-		___xstr_7 = value;
-		Il2CppCodeGenWriteBarrier((&___xstr_7), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // ENUMERATOR_T661358686_H
 #ifndef SORTKEYBUFFER_T2945275270_H
 #define SORTKEYBUFFER_T2945275270_H
 #ifdef __clang__
@@ -5758,47 +5806,46 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // READONLYARRAYLISTWRAPPER_T3401315650_H
-#ifndef MULTICASTDELEGATE_T_H
-#define MULTICASTDELEGATE_T_H
+#ifndef KEYGENERATEDEVENTHANDLER_T3064139577_H
+#define KEYGENERATEDEVENTHANDLER_T3064139577_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.MulticastDelegate
-struct  MulticastDelegate_t  : public Delegate_t1188392813
+// Mono.Security.Cryptography.RSAManaged/KeyGeneratedEventHandler
+struct  KeyGeneratedEventHandler_t3064139577  : public MulticastDelegate_t
 {
 public:
-	// System.MulticastDelegate System.MulticastDelegate::prev
-	MulticastDelegate_t * ___prev_9;
-	// System.MulticastDelegate System.MulticastDelegate::kpm_next
-	MulticastDelegate_t * ___kpm_next_10;
 
 public:
-	inline static int32_t get_offset_of_prev_9() { return static_cast<int32_t>(offsetof(MulticastDelegate_t, ___prev_9)); }
-	inline MulticastDelegate_t * get_prev_9() const { return ___prev_9; }
-	inline MulticastDelegate_t ** get_address_of_prev_9() { return &___prev_9; }
-	inline void set_prev_9(MulticastDelegate_t * value)
-	{
-		___prev_9 = value;
-		Il2CppCodeGenWriteBarrier((&___prev_9), value);
-	}
-
-	inline static int32_t get_offset_of_kpm_next_10() { return static_cast<int32_t>(offsetof(MulticastDelegate_t, ___kpm_next_10)); }
-	inline MulticastDelegate_t * get_kpm_next_10() const { return ___kpm_next_10; }
-	inline MulticastDelegate_t ** get_address_of_kpm_next_10() { return &___kpm_next_10; }
-	inline void set_kpm_next_10(MulticastDelegate_t * value)
-	{
-		___kpm_next_10 = value;
-		Il2CppCodeGenWriteBarrier((&___kpm_next_10), value);
-	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // MULTICASTDELEGATE_T_H
+#endif // KEYGENERATEDEVENTHANDLER_T3064139577_H
+#ifndef KEYGENERATEDEVENTHANDLER_T3828027274_H
+#define KEYGENERATEDEVENTHANDLER_T3828027274_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Mono.Security.Cryptography.DSAManaged/KeyGeneratedEventHandler
+struct  KeyGeneratedEventHandler_t3828027274  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // KEYGENERATEDEVENTHANDLER_T3828027274_H
 #ifndef X509CERTIFICATE_T489243024_H
 #define X509CERTIFICATE_T489243024_H
 #ifdef __clang__
@@ -6052,58 +6099,23 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // X509CERTIFICATE_T489243024_H
-#ifndef KEYGENERATEDEVENTHANDLER_T3064139577_H
-#define KEYGENERATEDEVENTHANDLER_T3064139577_H
+
+
+
+
+
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-
-// Mono.Security.Cryptography.RSAManaged/KeyGeneratedEventHandler
-struct  KeyGeneratedEventHandler_t3064139577  : public MulticastDelegate_t
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize100 = { sizeof (Level2MapComparer_t1716225294), -1, sizeof(Level2MapComparer_t1716225294_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable100[1] = 
 {
-public:
-
-public:
+	Level2MapComparer_t1716225294_StaticFields::get_offset_of_Instance_0(),
 };
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // KEYGENERATEDEVENTHANDLER_T3064139577_H
-#ifndef KEYGENERATEDEVENTHANDLER_T3828027274_H
-#define KEYGENERATEDEVENTHANDLER_T3828027274_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// Mono.Security.Cryptography.DSAManaged/KeyGeneratedEventHandler
-struct  KeyGeneratedEventHandler_t3828027274  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // KEYGENERATEDEVENTHANDLER_T3828027274_H
-
-
-
-
-
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize100 = { sizeof (MSCompatUnicodeTable_t1453885583), -1, sizeof(MSCompatUnicodeTable_t1453885583_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable100[22] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize101 = { sizeof (MSCompatUnicodeTable_t1453885583), -1, sizeof(MSCompatUnicodeTable_t1453885583_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable101[22] = 
 {
 	MSCompatUnicodeTable_t1453885583_StaticFields::get_offset_of_MaxExpansionLength_0(),
 	MSCompatUnicodeTable_t1453885583_StaticFields::get_offset_of_ignorableFlags_1(),
@@ -6128,8 +6140,8 @@ extern const int32_t g_FieldOffsetTable100[22] =
 	MSCompatUnicodeTable_t1453885583_StaticFields::get_offset_of_U3CU3Ef__switchU24map3_20(),
 	MSCompatUnicodeTable_t1453885583_StaticFields::get_offset_of_U3CU3Ef__switchU24map4_21(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize101 = { sizeof (MSCompatUnicodeTableUtil_t88013251), -1, sizeof(MSCompatUnicodeTableUtil_t88013251_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable101[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize102 = { sizeof (MSCompatUnicodeTableUtil_t88013251), -1, sizeof(MSCompatUnicodeTableUtil_t88013251_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable102[7] = 
 {
 	MSCompatUnicodeTableUtil_t88013251_StaticFields::get_offset_of_Ignorable_0(),
 	MSCompatUnicodeTableUtil_t88013251_StaticFields::get_offset_of_Category_1(),
@@ -6139,8 +6151,8 @@ extern const int32_t g_FieldOffsetTable101[7] =
 	MSCompatUnicodeTableUtil_t88013251_StaticFields::get_offset_of_CjkCHS_5(),
 	MSCompatUnicodeTableUtil_t88013251_StaticFields::get_offset_of_Cjk_6(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize102 = { sizeof (SimpleCollator_t2877834729), -1, sizeof(SimpleCollator_t2877834729_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable102[13] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize103 = { sizeof (SimpleCollator_t2877834729), -1, sizeof(SimpleCollator_t2877834729_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable103[13] = 
 {
 	SimpleCollator_t2877834729_StaticFields::get_offset_of_QuickCheckDisabled_0(),
 	SimpleCollator_t2877834729_StaticFields::get_offset_of_invariant_1(),
@@ -6156,8 +6168,8 @@ extern const int32_t g_FieldOffsetTable102[13] =
 	SimpleCollator_t2877834729::get_offset_of_level2Maps_11(),
 	SimpleCollator_t2877834729::get_offset_of_unsafeFlags_12(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize103 = { sizeof (Context_t1744531130)+ sizeof (RuntimeObject), sizeof(Context_t1744531130_marshaled_pinvoke), 0, 0 };
-extern const int32_t g_FieldOffsetTable103[8] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize104 = { sizeof (Context_t1744531130)+ sizeof (RuntimeObject), sizeof(Context_t1744531130_marshaled_pinvoke), 0, 0 };
+extern const int32_t g_FieldOffsetTable104[8] = 
 {
 	Context_t1744531130::get_offset_of_Option_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Context_t1744531130::get_offset_of_NeverMatchFlags_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
@@ -6168,14 +6180,14 @@ extern const int32_t g_FieldOffsetTable103[8] =
 	Context_t1744531130::get_offset_of_PrevSortKey_6() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Context_t1744531130::get_offset_of_QuickCheckPossible_7() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize104 = { sizeof (PreviousInfo_t2148130204)+ sizeof (RuntimeObject), sizeof(PreviousInfo_t2148130204_marshaled_pinvoke), 0, 0 };
-extern const int32_t g_FieldOffsetTable104[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize105 = { sizeof (PreviousInfo_t2148130204)+ sizeof (RuntimeObject), sizeof(PreviousInfo_t2148130204_marshaled_pinvoke), 0, 0 };
+extern const int32_t g_FieldOffsetTable105[2] = 
 {
 	PreviousInfo_t2148130204::get_offset_of_Code_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	PreviousInfo_t2148130204::get_offset_of_SortKey_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize105 = { sizeof (Escape_t3294788190)+ sizeof (RuntimeObject), sizeof(Escape_t3294788190_marshaled_pinvoke), 0, 0 };
-extern const int32_t g_FieldOffsetTable105[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize106 = { sizeof (Escape_t3294788190)+ sizeof (RuntimeObject), sizeof(Escape_t3294788190_marshaled_pinvoke), 0, 0 };
+extern const int32_t g_FieldOffsetTable106[5] = 
 {
 	Escape_t3294788190::get_offset_of_Source_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Escape_t3294788190::get_offset_of_Index_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
@@ -6183,8 +6195,8 @@ extern const int32_t g_FieldOffsetTable105[5] =
 	Escape_t3294788190::get_offset_of_End_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Escape_t3294788190::get_offset_of_Optional_4() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize106 = { sizeof (ExtenderType_t2449612322)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable106[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize107 = { sizeof (ExtenderType_t2449612322)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable107[6] = 
 {
 	ExtenderType_t2449612322::get_offset_of_value___1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
@@ -6193,16 +6205,16 @@ extern const int32_t g_FieldOffsetTable106[6] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize107 = { sizeof (SortKey_t3955336732), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable107[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize108 = { sizeof (SortKey_t3955336732), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable108[4] = 
 {
 	SortKey_t3955336732::get_offset_of_source_0(),
 	SortKey_t3955336732::get_offset_of_options_1(),
 	SortKey_t3955336732::get_offset_of_key_2(),
 	SortKey_t3955336732::get_offset_of_lcid_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize108 = { sizeof (SortKeyBuffer_t2945275270), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable108[22] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize109 = { sizeof (SortKeyBuffer_t2945275270), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable109[22] = 
 {
 	SortKeyBuffer_t2945275270::get_offset_of_l1_0(),
 	SortKeyBuffer_t2945275270::get_offset_of_l2_1(),
@@ -6227,10 +6239,10 @@ extern const int32_t g_FieldOffsetTable108[22] =
 	SortKeyBuffer_t2945275270::get_offset_of_lcid_20(),
 	SortKeyBuffer_t2945275270::get_offset_of_options_21(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize109 = { sizeof (PrimeGeneratorBase_t446028866), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize110 = { sizeof (SequentialSearchPrimeGeneratorBase_t2996090508), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize111 = { sizeof (ConfidenceFactor_t2516000285)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable111[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize110 = { sizeof (PrimeGeneratorBase_t446028866), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize111 = { sizeof (SequentialSearchPrimeGeneratorBase_t2996090508), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize112 = { sizeof (ConfidenceFactor_t2516000285)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable112[7] = 
 {
 	ConfidenceFactor_t2516000285::get_offset_of_value___1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
@@ -6240,46 +6252,46 @@ extern const int32_t g_FieldOffsetTable111[7] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize112 = { sizeof (PrimalityTests_t1538473975), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize113 = { sizeof (BigInteger_t2902905089), -1, sizeof(BigInteger_t2902905089_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable113[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize113 = { sizeof (PrimalityTests_t1538473975), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize114 = { sizeof (BigInteger_t2902905089), -1, sizeof(BigInteger_t2902905089_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable114[4] = 
 {
 	BigInteger_t2902905089::get_offset_of_length_0(),
 	BigInteger_t2902905089::get_offset_of_data_1(),
 	BigInteger_t2902905089_StaticFields::get_offset_of_smallPrimes_2(),
 	BigInteger_t2902905089_StaticFields::get_offset_of_rng_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize114 = { sizeof (Sign_t3338384038)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable114[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize115 = { sizeof (Sign_t3338384038)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable115[4] = 
 {
 	Sign_t3338384038::get_offset_of_value___1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize115 = { sizeof (ModulusRing_t596511504), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable115[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize116 = { sizeof (ModulusRing_t596511504), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable116[2] = 
 {
 	ModulusRing_t596511504::get_offset_of_mod_0(),
 	ModulusRing_t596511504::get_offset_of_constant_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize116 = { sizeof (Kernel_t1402667219), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize117 = { sizeof (CryptoConvert_t610933156), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize118 = { sizeof (KeyBuilder_t2049230354), -1, sizeof(KeyBuilder_t2049230354_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable118[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize117 = { sizeof (Kernel_t1402667219), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize118 = { sizeof (CryptoConvert_t610933156), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize119 = { sizeof (KeyBuilder_t2049230354), -1, sizeof(KeyBuilder_t2049230354_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable119[1] = 
 {
 	KeyBuilder_t2049230354_StaticFields::get_offset_of_rng_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize119 = { sizeof (BlockProcessor_t1851031225), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable119[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize120 = { sizeof (BlockProcessor_t1851031225), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable120[4] = 
 {
 	BlockProcessor_t1851031225::get_offset_of_transform_0(),
 	BlockProcessor_t1851031225::get_offset_of_block_1(),
 	BlockProcessor_t1851031225::get_offset_of_blockSize_2(),
 	BlockProcessor_t1851031225::get_offset_of_blockCount_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize120 = { sizeof (DSAManaged_t2800260182), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable120[13] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize121 = { sizeof (DSAManaged_t2800260182), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable121[13] = 
 {
 	DSAManaged_t2800260182::get_offset_of_keypairGenerated_2(),
 	DSAManaged_t2800260182::get_offset_of_m_disposed_3(),
@@ -6295,9 +6307,9 @@ extern const int32_t g_FieldOffsetTable120[13] =
 	DSAManaged_t2800260182::get_offset_of_rng_13(),
 	DSAManaged_t2800260182::get_offset_of_KeyGenerated_14(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize121 = { sizeof (KeyGeneratedEventHandler_t3828027274), sizeof(Il2CppMethodPointer), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize122 = { sizeof (KeyPairPersistence_t2094547461), -1, sizeof(KeyPairPersistence_t2094547461_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable122[9] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize122 = { sizeof (KeyGeneratedEventHandler_t3828027274), sizeof(Il2CppMethodPointer), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize123 = { sizeof (KeyPairPersistence_t2094547461), -1, sizeof(KeyPairPersistence_t2094547461_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable123[9] = 
 {
 	KeyPairPersistence_t2094547461_StaticFields::get_offset_of__userPathExists_0(),
 	KeyPairPersistence_t2094547461_StaticFields::get_offset_of__userPath_1(),
@@ -6309,8 +6321,8 @@ extern const int32_t g_FieldOffsetTable122[9] =
 	KeyPairPersistence_t2094547461::get_offset_of__container_7(),
 	KeyPairPersistence_t2094547461_StaticFields::get_offset_of_lockobj_8(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize123 = { sizeof (MACAlgorithm_t2441219148), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable123[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize124 = { sizeof (MACAlgorithm_t2441219148), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable124[5] = 
 {
 	MACAlgorithm_t2441219148::get_offset_of_algo_0(),
 	MACAlgorithm_t2441219148::get_offset_of_enc_1(),
@@ -6318,33 +6330,33 @@ extern const int32_t g_FieldOffsetTable123[5] =
 	MACAlgorithm_t2441219148::get_offset_of_blockSize_3(),
 	MACAlgorithm_t2441219148::get_offset_of_blockCount_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize124 = { sizeof (PKCS1_t1505584676), -1, sizeof(PKCS1_t1505584676_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable124[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize125 = { sizeof (PKCS1_t1505584676), -1, sizeof(PKCS1_t1505584676_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable125[4] = 
 {
 	PKCS1_t1505584676_StaticFields::get_offset_of_emptySHA1_0(),
 	PKCS1_t1505584676_StaticFields::get_offset_of_emptySHA256_1(),
 	PKCS1_t1505584676_StaticFields::get_offset_of_emptySHA384_2(),
 	PKCS1_t1505584676_StaticFields::get_offset_of_emptySHA512_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize125 = { sizeof (PKCS8_t696280612), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize126 = { sizeof (PrivateKeyInfo_t668027992), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable126[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize126 = { sizeof (PKCS8_t696280612), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize127 = { sizeof (PrivateKeyInfo_t668027992), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable127[4] = 
 {
 	PrivateKeyInfo_t668027992::get_offset_of__version_0(),
 	PrivateKeyInfo_t668027992::get_offset_of__algorithm_1(),
 	PrivateKeyInfo_t668027992::get_offset_of__key_2(),
 	PrivateKeyInfo_t668027992::get_offset_of__list_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize127 = { sizeof (EncryptedPrivateKeyInfo_t862116835), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable127[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize128 = { sizeof (EncryptedPrivateKeyInfo_t862116835), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable128[4] = 
 {
 	EncryptedPrivateKeyInfo_t862116835::get_offset_of__algorithm_0(),
 	EncryptedPrivateKeyInfo_t862116835::get_offset_of__salt_1(),
 	EncryptedPrivateKeyInfo_t862116835::get_offset_of__iterations_2(),
 	EncryptedPrivateKeyInfo_t862116835::get_offset_of__data_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize128 = { sizeof (RSAManaged_t1757093819), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable128[13] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize129 = { sizeof (RSAManaged_t1757093819), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable129[13] = 
 {
 	RSAManaged_t1757093819::get_offset_of_isCRTpossible_2(),
 	RSAManaged_t1757093819::get_offset_of_keyBlinding_3(),
@@ -6360,9 +6372,9 @@ extern const int32_t g_FieldOffsetTable128[13] =
 	RSAManaged_t1757093819::get_offset_of_e_13(),
 	RSAManaged_t1757093819::get_offset_of_KeyGenerated_14(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize129 = { sizeof (KeyGeneratedEventHandler_t3064139577), sizeof(Il2CppMethodPointer), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize130 = { sizeof (SymmetricTransform_t3802591842), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable130[12] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize130 = { sizeof (KeyGeneratedEventHandler_t3064139577), sizeof(Il2CppMethodPointer), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize131 = { sizeof (SymmetricTransform_t3802591842), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable131[12] = 
 {
 	SymmetricTransform_t3802591842::get_offset_of_algo_0(),
 	SymmetricTransform_t3802591842::get_offset_of_encrypt_1(),
@@ -6377,14 +6389,14 @@ extern const int32_t g_FieldOffsetTable130[12] =
 	SymmetricTransform_t3802591842::get_offset_of_lastBlock_10(),
 	SymmetricTransform_t3802591842::get_offset_of__rng_11(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize131 = { sizeof (SafeBag_t3961248199), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable131[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize132 = { sizeof (SafeBag_t3961248199), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable132[2] = 
 {
 	SafeBag_t3961248199::get_offset_of__bagOID_0(),
 	SafeBag_t3961248199::get_offset_of__asn1_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize132 = { sizeof (PKCS12_t4101533060), -1, sizeof(PKCS12_t4101533060_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable132[17] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize133 = { sizeof (PKCS12_t4101533060), -1, sizeof(PKCS12_t4101533060_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable133[17] = 
 {
 	PKCS12_t4101533060_StaticFields::get_offset_of_recommendedIterationCount_0(),
 	PKCS12_t4101533060::get_offset_of__password_1(),
@@ -6404,8 +6416,8 @@ extern const int32_t g_FieldOffsetTable132[17] =
 	PKCS12_t4101533060_StaticFields::get_offset_of_U3CU3Ef__switchU24mapB_15(),
 	PKCS12_t4101533060_StaticFields::get_offset_of_U3CU3Ef__switchU24mapF_16(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize133 = { sizeof (DeriveBytes_t1492915135), -1, sizeof(DeriveBytes_t1492915135_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable133[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize134 = { sizeof (DeriveBytes_t1492915135), -1, sizeof(DeriveBytes_t1492915135_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable134[7] = 
 {
 	DeriveBytes_t1492915135_StaticFields::get_offset_of_keyDiversifier_0(),
 	DeriveBytes_t1492915135_StaticFields::get_offset_of_ivDiversifier_1(),
@@ -6415,8 +6427,8 @@ extern const int32_t g_FieldOffsetTable133[7] =
 	DeriveBytes_t1492915135::get_offset_of__password_5(),
 	DeriveBytes_t1492915135::get_offset_of__salt_6(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize134 = { sizeof (X501_t1758824425), -1, sizeof(X501_t1758824425_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable134[15] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize135 = { sizeof (X501_t1758824425), -1, sizeof(X501_t1758824425_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable135[15] = 
 {
 	X501_t1758824425_StaticFields::get_offset_of_countryName_0(),
 	X501_t1758824425_StaticFields::get_offset_of_organizationName_1(),
@@ -6434,8 +6446,8 @@ extern const int32_t g_FieldOffsetTable134[15] =
 	X501_t1758824425_StaticFields::get_offset_of_givenName_13(),
 	X501_t1758824425_StaticFields::get_offset_of_initial_14(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize135 = { sizeof (X509Certificate_t489243024), -1, sizeof(X509Certificate_t489243024_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable135[21] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize136 = { sizeof (X509Certificate_t489243024), -1, sizeof(X509Certificate_t489243024_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable136[21] = 
 {
 	X509Certificate_t489243024::get_offset_of_decoder_0(),
 	X509Certificate_t489243024::get_offset_of_m_encodedcert_1(),
@@ -6459,50 +6471,50 @@ extern const int32_t g_FieldOffsetTable135[21] =
 	X509Certificate_t489243024::get_offset_of_extensions_19(),
 	X509Certificate_t489243024_StaticFields::get_offset_of_encoding_error_20(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize136 = { sizeof (X509CertificateCollection_t1542168549), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize137 = { sizeof (X509CertificateEnumerator_t3515934697), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable137[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize137 = { sizeof (X509CertificateCollection_t1542168549), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize138 = { sizeof (X509CertificateEnumerator_t3515934697), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable138[1] = 
 {
 	X509CertificateEnumerator_t3515934697::get_offset_of_enumerator_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize138 = { sizeof (X509Extension_t3173393652), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable138[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize139 = { sizeof (X509Extension_t3173393652), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable139[3] = 
 {
 	X509Extension_t3173393652::get_offset_of_extnOid_0(),
 	X509Extension_t3173393652::get_offset_of_extnCritical_1(),
 	X509Extension_t3173393652::get_offset_of_extnValue_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize139 = { sizeof (X509ExtensionCollection_t609554708), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable139[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize140 = { sizeof (X509ExtensionCollection_t609554708), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable140[1] = 
 {
 	X509ExtensionCollection_t609554708::get_offset_of_readOnly_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize140 = { sizeof (ASN1_t2114160832), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable140[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize141 = { sizeof (ASN1_t2114160832), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable141[3] = 
 {
 	ASN1_t2114160832::get_offset_of_m_nTag_0(),
 	ASN1_t2114160832::get_offset_of_m_aValue_1(),
 	ASN1_t2114160832::get_offset_of_elist_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize141 = { sizeof (ASN1Convert_t2839890152), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize142 = { sizeof (BitConverterLE_t2108532978), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize143 = { sizeof (PKCS7_t1860834338), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize144 = { sizeof (ContentInfo_t3218159895), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable144[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize142 = { sizeof (ASN1Convert_t2839890152), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize143 = { sizeof (BitConverterLE_t2108532978), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize144 = { sizeof (PKCS7_t1860834338), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize145 = { sizeof (ContentInfo_t3218159895), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable145[2] = 
 {
 	ContentInfo_t3218159895::get_offset_of_contentType_0(),
 	ContentInfo_t3218159895::get_offset_of_content_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize145 = { sizeof (EncryptedData_t3577548732), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable145[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize146 = { sizeof (EncryptedData_t3577548732), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable146[4] = 
 {
 	EncryptedData_t3577548732::get_offset_of__version_0(),
 	EncryptedData_t3577548732::get_offset_of__content_1(),
 	EncryptedData_t3577548732::get_offset_of__encryptionAlgorithm_2(),
 	EncryptedData_t3577548732::get_offset_of__encrypted_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize146 = { sizeof (StrongName_t4093849377), -1, sizeof(StrongName_t4093849377_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable146[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize147 = { sizeof (StrongName_t4093849377), -1, sizeof(StrongName_t4093849377_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable147[6] = 
 {
 	StrongName_t4093849377::get_offset_of_rsa_0(),
 	StrongName_t4093849377::get_offset_of_publicKey_1(),
@@ -6511,15 +6523,15 @@ extern const int32_t g_FieldOffsetTable146[6] =
 	StrongName_t4093849377_StaticFields::get_offset_of_lockObject_4(),
 	StrongName_t4093849377_StaticFields::get_offset_of_initialized_5(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize147 = { sizeof (SecurityParser_t4124480077), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable147[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize148 = { sizeof (SecurityParser_t4124480077), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable148[3] = 
 {
 	SecurityParser_t4124480077::get_offset_of_root_13(),
 	SecurityParser_t4124480077::get_offset_of_current_14(),
 	SecurityParser_t4124480077::get_offset_of_stack_15(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize148 = { sizeof (SmallXmlParser_t973787839), -1, sizeof(SmallXmlParser_t973787839_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable148[13] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize149 = { sizeof (SmallXmlParser_t973787839), -1, sizeof(SmallXmlParser_t973787839_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable149[13] = 
 {
 	SmallXmlParser_t973787839::get_offset_of_handler_0(),
 	SmallXmlParser_t973787839::get_offset_of_reader_1(),
@@ -6535,72 +6547,67 @@ extern const int32_t g_FieldOffsetTable148[13] =
 	SmallXmlParser_t973787839::get_offset_of_resetColumn_11(),
 	SmallXmlParser_t973787839_StaticFields::get_offset_of_U3CU3Ef__switchU24map18_12(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize149 = { 0, -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize150 = { 0, -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize151 = { sizeof (AttrListImpl_t567962447), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable151[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize151 = { 0, -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize152 = { sizeof (AttrListImpl_t567962447), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable152[2] = 
 {
 	AttrListImpl_t567962447::get_offset_of_attrNames_0(),
 	AttrListImpl_t567962447::get_offset_of_attrValues_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize152 = { sizeof (SmallXmlParserException_t1329648272), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable152[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize153 = { sizeof (SmallXmlParserException_t1329648272), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable153[2] = 
 {
 	SmallXmlParserException_t1329648272::get_offset_of_line_11(),
 	SmallXmlParserException_t1329648272::get_offset_of_column_12(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize153 = { sizeof (Runtime_t3174508158), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize154 = { 0, 0, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize154 = { sizeof (Runtime_t3174508158), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize155 = { 0, 0, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize156 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable156[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize157 = { 0, 0, 0, 0 };
+extern const int32_t g_FieldOffsetTable157[1] = 
 {
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize157 = { 0, 0, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize158 = { 0, 0, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize159 = { sizeof (Link_t544317964)+ sizeof (RuntimeObject), sizeof(Link_t544317964 ), 0, 0 };
-extern const int32_t g_FieldOffsetTable159[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize159 = { 0, 0, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize160 = { sizeof (Link_t544317964)+ sizeof (RuntimeObject), sizeof(Link_t544317964 ), 0, 0 };
+extern const int32_t g_FieldOffsetTable160[2] = 
 {
 	Link_t544317964::get_offset_of_HashCode_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Link_t544317964::get_offset_of_Next_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize160 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable160[16] = 
-{
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-};
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize161 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable161[1] = 
+extern const int32_t g_FieldOffsetTable161[16] = 
 {
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
 	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize162 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable162[4] = 
+extern const int32_t g_FieldOffsetTable162[1] = 
 {
-	0,
-	0,
-	0,
 	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize163 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable163[1] = 
+extern const int32_t g_FieldOffsetTable163[4] = 
 {
+	0,
+	0,
+	0,
 	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize164 = { 0, 0, 0, 0 };
@@ -6609,53 +6616,58 @@ extern const int32_t g_FieldOffsetTable164[1] =
 	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize165 = { 0, 0, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize166 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable166[1] = 
+extern const int32_t g_FieldOffsetTable165[1] = 
 {
 	0,
 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize166 = { 0, 0, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize167 = { 0, 0, 0, 0 };
+extern const int32_t g_FieldOffsetTable167[1] = 
+{
+	0,
+};
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize168 = { 0, 0, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize169 = { 0, 0, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize170 = { 0, 0, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize171 = { 0, 0, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize172 = { sizeof (KeyNotFoundException_t2292407383), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize173 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable173[2] = 
-{
-	0,
-	0,
-};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize172 = { 0, 0, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize173 = { sizeof (KeyNotFoundException_t2292407383), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize174 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable174[5] = 
+extern const int32_t g_FieldOffsetTable174[2] = 
 {
-	0,
-	0,
-	0,
 	0,
 	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize175 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable175[4] = 
+extern const int32_t g_FieldOffsetTable175[5] = 
 {
+	0,
 	0,
 	0,
 	0,
 	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize176 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable176[2] = 
+extern const int32_t g_FieldOffsetTable176[4] = 
 {
+	0,
+	0,
 	0,
 	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize177 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable177[1] = 
+extern const int32_t g_FieldOffsetTable177[2] = 
+{
+	0,
+	0,
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize178 = { 0, 0, 0, 0 };
+extern const int32_t g_FieldOffsetTable178[1] = 
 {
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize178 = { sizeof (ArrayList_t2718874744), -1, sizeof(ArrayList_t2718874744_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable178[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize179 = { sizeof (ArrayList_t2718874744), -1, sizeof(ArrayList_t2718874744_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable179[5] = 
 {
 	0,
 	ArrayList_t2718874744::get_offset_of__size_1(),
@@ -6663,8 +6675,8 @@ extern const int32_t g_FieldOffsetTable178[5] =
 	ArrayList_t2718874744::get_offset_of__version_3(),
 	ArrayList_t2718874744_StaticFields::get_offset_of_EmptyArray_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize179 = { sizeof (SimpleEnumerator_t4287166116), -1, sizeof(SimpleEnumerator_t4287166116_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable179[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize180 = { sizeof (SimpleEnumerator_t4287166116), -1, sizeof(SimpleEnumerator_t4287166116_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable180[5] = 
 {
 	SimpleEnumerator_t4287166116::get_offset_of_list_0(),
 	SimpleEnumerator_t4287166116::get_offset_of_index_1(),
@@ -6672,68 +6684,68 @@ extern const int32_t g_FieldOffsetTable179[5] =
 	SimpleEnumerator_t4287166116::get_offset_of_currentElement_3(),
 	SimpleEnumerator_t4287166116_StaticFields::get_offset_of_endFlag_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize180 = { sizeof (ArrayListWrapper_t240606758), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable180[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize181 = { sizeof (ArrayListWrapper_t240606758), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable181[1] = 
 {
 	ArrayListWrapper_t240606758::get_offset_of_m_InnerArrayList_5(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize181 = { sizeof (SynchronizedArrayListWrapper_t2283757095), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable181[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize182 = { sizeof (SynchronizedArrayListWrapper_t2283757095), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable182[1] = 
 {
 	SynchronizedArrayListWrapper_t2283757095::get_offset_of_m_SyncRoot_6(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize182 = { sizeof (FixedSizeArrayListWrapper_t220909481), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize183 = { sizeof (ReadOnlyArrayListWrapper_t3401315650), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize184 = { sizeof (BitArray_t4087883509), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable184[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize183 = { sizeof (FixedSizeArrayListWrapper_t220909481), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize184 = { sizeof (ReadOnlyArrayListWrapper_t3401315650), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize185 = { sizeof (BitArray_t4087883509), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable185[3] = 
 {
 	BitArray_t4087883509::get_offset_of_m_array_0(),
 	BitArray_t4087883509::get_offset_of_m_length_1(),
 	BitArray_t4087883509::get_offset_of__version_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize185 = { sizeof (BitArrayEnumerator_t893496218), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable185[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize186 = { sizeof (BitArrayEnumerator_t893496218), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable186[4] = 
 {
 	BitArrayEnumerator_t893496218::get_offset_of__bitArray_0(),
 	BitArrayEnumerator_t893496218::get_offset_of__current_1(),
 	BitArrayEnumerator_t893496218::get_offset_of__index_2(),
 	BitArrayEnumerator_t893496218::get_offset_of__version_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize186 = { sizeof (CaseInsensitiveComparer_t3670035800), -1, sizeof(CaseInsensitiveComparer_t3670035800_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable186[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize187 = { sizeof (CaseInsensitiveComparer_t3670035800), -1, sizeof(CaseInsensitiveComparer_t3670035800_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable187[3] = 
 {
 	CaseInsensitiveComparer_t3670035800_StaticFields::get_offset_of_defaultComparer_0(),
 	CaseInsensitiveComparer_t3670035800_StaticFields::get_offset_of_defaultInvariantComparer_1(),
 	CaseInsensitiveComparer_t3670035800::get_offset_of_culture_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize187 = { sizeof (CaseInsensitiveHashCodeProvider_t1962629119), -1, sizeof(CaseInsensitiveHashCodeProvider_t1962629119_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable187[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize188 = { sizeof (CaseInsensitiveHashCodeProvider_t1962629119), -1, sizeof(CaseInsensitiveHashCodeProvider_t1962629119_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable188[3] = 
 {
 	CaseInsensitiveHashCodeProvider_t1962629119_StaticFields::get_offset_of_singletonInvariant_0(),
 	CaseInsensitiveHashCodeProvider_t1962629119_StaticFields::get_offset_of_sync_1(),
 	CaseInsensitiveHashCodeProvider_t1962629119::get_offset_of_m_text_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize188 = { sizeof (CollectionBase_t2727926298), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable188[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize189 = { sizeof (CollectionBase_t2727926298), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable189[1] = 
 {
 	CollectionBase_t2727926298::get_offset_of_list_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize189 = { sizeof (CollectionDebuggerView_t390662535), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize190 = { sizeof (Comparer_t1912461351), -1, sizeof(Comparer_t1912461351_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable190[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize190 = { sizeof (CollectionDebuggerView_t390662535), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize191 = { sizeof (Comparer_t1912461351), -1, sizeof(Comparer_t1912461351_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable191[3] = 
 {
 	Comparer_t1912461351_StaticFields::get_offset_of_Default_0(),
 	Comparer_t1912461351_StaticFields::get_offset_of_DefaultInvariant_1(),
 	Comparer_t1912461351::get_offset_of_m_compareInfo_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize191 = { sizeof (DictionaryEntry_t3123975638)+ sizeof (RuntimeObject), sizeof(DictionaryEntry_t3123975638_marshaled_pinvoke), 0, 0 };
-extern const int32_t g_FieldOffsetTable191[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize192 = { sizeof (DictionaryEntry_t3123975638)+ sizeof (RuntimeObject), sizeof(DictionaryEntry_t3123975638_marshaled_pinvoke), 0, 0 };
+extern const int32_t g_FieldOffsetTable192[2] = 
 {
 	DictionaryEntry_t3123975638::get_offset_of__key_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	DictionaryEntry_t3123975638::get_offset_of__value_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize192 = { sizeof (Hashtable_t1853889766), -1, sizeof(Hashtable_t1853889766_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable192[14] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize193 = { sizeof (Hashtable_t1853889766), -1, sizeof(Hashtable_t1853889766_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable193[14] = 
 {
 	0,
 	Hashtable_t1853889766::get_offset_of_inUse_1(),
@@ -6750,27 +6762,27 @@ extern const int32_t g_FieldOffsetTable192[14] =
 	Hashtable_t1853889766::get_offset_of_equalityComparer_12(),
 	Hashtable_t1853889766_StaticFields::get_offset_of_primeTbl_13(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize193 = { sizeof (Slot_t3975888750)+ sizeof (RuntimeObject), sizeof(Slot_t3975888750_marshaled_pinvoke), 0, 0 };
-extern const int32_t g_FieldOffsetTable193[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize194 = { sizeof (Slot_t3975888750)+ sizeof (RuntimeObject), sizeof(Slot_t3975888750_marshaled_pinvoke), 0, 0 };
+extern const int32_t g_FieldOffsetTable194[2] = 
 {
 	Slot_t3975888750::get_offset_of_key_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	Slot_t3975888750::get_offset_of_value_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize194 = { sizeof (KeyMarker_t2496412495), -1, sizeof(KeyMarker_t2496412495_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable194[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize195 = { sizeof (KeyMarker_t2496412495), -1, sizeof(KeyMarker_t2496412495_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable195[1] = 
 {
 	KeyMarker_t2496412495_StaticFields::get_offset_of_Removed_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize195 = { sizeof (EnumeratorMode_t1442366820)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable195[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize196 = { sizeof (EnumeratorMode_t1442366820)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable196[4] = 
 {
 	EnumeratorMode_t1442366820::get_offset_of_value___1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize196 = { sizeof (Enumerator_t661358686), -1, sizeof(Enumerator_t661358686_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable196[8] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize197 = { sizeof (Enumerator_t661358686), -1, sizeof(Enumerator_t661358686_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable197[8] = 
 {
 	Enumerator_t661358686::get_offset_of_host_0(),
 	Enumerator_t661358686::get_offset_of_stamp_1(),
@@ -6781,20 +6793,15 @@ extern const int32_t g_FieldOffsetTable196[8] =
 	Enumerator_t661358686::get_offset_of_currentValue_6(),
 	Enumerator_t661358686_StaticFields::get_offset_of_xstr_7(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize197 = { sizeof (HashKeys_t1568156503), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable197[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize198 = { sizeof (HashKeys_t1568156503), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable198[1] = 
 {
 	HashKeys_t1568156503::get_offset_of_host_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize198 = { sizeof (HashValues_t618387445), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable198[1] = 
-{
-	HashValues_t618387445::get_offset_of_host_0(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize199 = { sizeof (SyncHashtable_t3569774773), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize199 = { sizeof (HashValues_t618387445), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable199[1] = 
 {
-	SyncHashtable_t3569774773::get_offset_of_host_14(),
+	HashValues_t618387445::get_offset_of_host_0(),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop

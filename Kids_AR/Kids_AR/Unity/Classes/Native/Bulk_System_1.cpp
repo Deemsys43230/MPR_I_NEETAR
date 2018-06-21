@@ -542,6 +542,8 @@ extern RuntimeClass* RegexOptions_t92845595_il2cpp_TypeInfo_var;
 extern const uint32_t Regex_System_Runtime_Serialization_ISerializable_GetObjectData_m4061390789_MetadataUsageId;
 extern const uint32_t Regex_IsMatch_m3266004395_MetadataUsageId;
 extern const uint32_t Regex_IsMatch_m3454586611_MetadataUsageId;
+extern const uint32_t Regex_Match_m2057380353_MetadataUsageId;
+extern const uint32_t Regex_Match_m1018904447_MetadataUsageId;
 extern const RuntimeMethod* Regex_validate_options_m3221650569_RuntimeMethod_var;
 extern const uint32_t Regex_validate_options_m3221650569_MetadataUsageId;
 extern RuntimeClass* IMachineFactory_t1209798546_il2cpp_TypeInfo_var;
@@ -7558,6 +7560,10 @@ extern "C"  int32_t Regex_get_Options_m3142641900 (Regex_t3657309853 * __this, c
 extern "C"  bool Regex_IsMatch_m3454586611 (RuntimeObject * __this /* static, unused */, String_t* ___input0, String_t* ___pattern1, int32_t ___options2, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Text.RegularExpressions.Regex::IsMatch(System.String)
 extern "C"  bool Regex_IsMatch_m4067478295 (Regex_t3657309853 * __this, String_t* ___input0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Text.RegularExpressions.Match System.Text.RegularExpressions.Regex::Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+extern "C"  Match_t3408321083 * Regex_Match_m1018904447 (RuntimeObject * __this /* static, unused */, String_t* ___input0, String_t* ___pattern1, int32_t ___options2, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Text.RegularExpressions.Match System.Text.RegularExpressions.Regex::Match(System.String)
+extern "C"  Match_t3408321083 * Regex_Match_m2255756165 (Regex_t3657309853 * __this, String_t* ___input0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Text.RegularExpressions.IMachineFactory System.Text.RegularExpressions.FactoryCache::Lookup(System.String,System.Text.RegularExpressions.RegexOptions)
 extern "C"  RuntimeObject* FactoryCache_Lookup_m2646822264 (FactoryCache_t2327118887 * __this, String_t* ___pattern0, int32_t ___options1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.Regex::InitNewRegex()
@@ -12920,6 +12926,46 @@ extern "C"  bool Regex_IsMatch_m3454586611 (RuntimeObject * __this /* static, un
 		return L_5;
 	}
 }
+// System.Text.RegularExpressions.Match System.Text.RegularExpressions.Regex::Match(System.String,System.String)
+extern "C"  Match_t3408321083 * Regex_Match_m2057380353 (RuntimeObject * __this /* static, unused */, String_t* ___input0, String_t* ___pattern1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Regex_Match_m2057380353_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___input0;
+		String_t* L_1 = ___pattern1;
+		IL2CPP_RUNTIME_CLASS_INIT(Regex_t3657309853_il2cpp_TypeInfo_var);
+		Match_t3408321083 * L_2 = Regex_Match_m1018904447(NULL /*static, unused*/, L_0, L_1, 0, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.Text.RegularExpressions.Match System.Text.RegularExpressions.Regex::Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+extern "C"  Match_t3408321083 * Regex_Match_m1018904447 (RuntimeObject * __this /* static, unused */, String_t* ___input0, String_t* ___pattern1, int32_t ___options2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Regex_Match_m1018904447_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Regex_t3657309853 * V_0 = NULL;
+	{
+		String_t* L_0 = ___pattern1;
+		int32_t L_1 = ___options2;
+		Regex_t3657309853 * L_2 = (Regex_t3657309853 *)il2cpp_codegen_object_new(Regex_t3657309853_il2cpp_TypeInfo_var);
+		Regex__ctor_m1728442805(L_2, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		Regex_t3657309853 * L_3 = V_0;
+		String_t* L_4 = ___input0;
+		NullCheck(L_3);
+		Match_t3408321083 * L_5 = Regex_Match_m2255756165(L_3, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
 // System.Void System.Text.RegularExpressions.Regex::validate_options(System.Text.RegularExpressions.RegexOptions)
 extern "C"  void Regex_validate_options_m3221650569 (RuntimeObject * __this /* static, unused */, int32_t ___options0, const RuntimeMethod* method)
 {
@@ -13246,6 +13292,17 @@ extern "C"  bool Regex_IsMatch_m2113092601 (Regex_t3657309853 * __this, String_t
 		Match_t3408321083 * L_2 = Regex_Match_m4145799399(__this, L_0, L_1, /*hidden argument*/NULL);
 		NullCheck(L_2);
 		bool L_3 = Group_get_Success_m1492300455(L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// System.Text.RegularExpressions.Match System.Text.RegularExpressions.Regex::Match(System.String)
+extern "C"  Match_t3408321083 * Regex_Match_m2255756165 (Regex_t3657309853 * __this, String_t* ___input0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___input0;
+		String_t* L_1 = ___input0;
+		int32_t L_2 = Regex_default_startat_m4206401165(__this, L_1, /*hidden argument*/NULL);
+		Match_t3408321083 * L_3 = Regex_Match_m4145799399(__this, L_0, L_2, /*hidden argument*/NULL);
 		return L_3;
 	}
 }

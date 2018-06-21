@@ -15,10 +15,19 @@ class augmentViewController: UIViewController, popupDelegate {
     @IBOutlet var hintView: UIView!
     @IBOutlet var hintSubView: UIView!
     
+    @IBOutlet var indicator: UIActivityIndicatorView!
+    @IBOutlet var indicatorLabel: UILabel!
+    @IBOutlet var indicatorParentView: UIView!
+    
+    
+    @IBOutlet var fruitsheaderImage: UIImageView!
+    
+    
     var unityView: UIView?
     
     @IBOutlet var hintHeight: NSLayoutConstraint!
     
+    @IBOutlet var openColl: UIButton!
     
     @IBOutlet var modeltitle: UILabel!
     
@@ -27,25 +36,38 @@ class augmentViewController: UIViewController, popupDelegate {
     @objc public var index:Int = 0
     
     var speakerButton:UIButton!
- var cameraButton:UIButton!
+    var cameraButton:UIButton!
+    
+    var sceneloadingCount:Int = 0
     
     var viewname:[String] = ["alphabetsScene","animalsScene","fruitsScene"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.indicator.startAnimating()
+        self.indicatorParentView.isHidden = false
+        
+        
+        NotificationCenter.default.addObserver(self,selector: #selector(handleAnimalButtons(notfication:)), name:.animalNotifi, object:nil)
+        
         NotificationCenter.default.addObserver(self, selector: #selector(showButtons(notfication:)), name: .postNotifi, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleLoading(notfication:)), name: .loadedNotifi, object: nil)
         
         if index == 0{
             self.modeltitle.text = "Alphabets"
+            self.fruitsheaderImage.image = #imageLiteral(resourceName: "alphabet_header")
         }
         else if index == 1{
             self.modeltitle.text = "ALLIGATOR"
         }
         else if index == 2{
             self.modeltitle.text = "APPLE"
+            self.fruitsheaderImage.image = #imageLiteral(resourceName: "fruits_header")
         }
         
+        self.fruitsheaderImage.contentMode = .top
         
         let cameraMediaType = AVMediaType.video
         let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: cameraMediaType)
@@ -76,15 +98,17 @@ class augmentViewController: UIViewController, popupDelegate {
             self.startUnity()
         }
     }
-  
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         UnityPostMessage("GameObject", "clearScene", "")
         NotificationCenter.default.removeObserver(self, name: .postNotifi, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .loadedNotifi, object: nil)
     }
     
-    
-    
+    @objc func handleAnimalButtons(notfication: NSNotification){
+        
+    }
     @objc func showButtons(notfication: NSNotification) {
         if self.cameraButton.isHidden == true {
             self.cameraButton.isHidden = false
@@ -98,7 +122,36 @@ class augmentViewController: UIViewController, popupDelegate {
         }
     }
     
-    
+    @objc func handleLoading(notfication: NSNotification){
+        print(notfication.userInfo!["text"])
+        let currentView = notfication.userInfo!["text"] as! String
+        let choosenView = self.viewname[self.index]
+        if choosenView == currentView {
+            print("SCENE LOADED")
+            
+            self.indicator.stopAnimating()
+            self.indicatorParentView.isHidden = true
+            enable_disableAllViews(status: true)
+            
+            let instructionsShowed = UserDefaults.standard.value(forKey: "instructionsShowed") as! Bool
+            
+            if instructionsShowed == true{
+                if sceneloadingCount == 0{
+                self.openCollections()
+                }
+                sceneloadingCount = sceneloadingCount + 1
+            }
+            else{
+                showHintAlert()
+            }
+        }
+        else{
+            // SHOW INDICATOR
+            self.indicator.startAnimating()
+            self.indicatorParentView.isHidden = false
+            enable_disableAllViews(status: false)
+        }
+    }
     
     func didSelectModel(withName: String, audioName: String, modelID: String) {
         
@@ -111,7 +164,7 @@ class augmentViewController: UIViewController, popupDelegate {
         self.isAudioPlayed = false
         
         if index != 0{
-           
+            
             self.modeltitle.text = withName
         }
         
@@ -123,15 +176,15 @@ class augmentViewController: UIViewController, popupDelegate {
             // Show rate us alert
             let alert:UIAlertController = UIAlertController(title: "Rate us", message: "Hope you enjoyed using our app! Would you like to rate us?", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
-            alert.addAction(UIAlertAction(title: Constants.alert.ok.rawValue, style: .default, handler: { (action) in
+            alert.addAction(UIAlertAction(title: "Rate", style: .default, handler: { (action) in
                 // redirect to appstore
                 settingsViewController().openUrl(Constants.appurl)
             }))
             self.present(alert, animated: true, completion: nil)
         }
         if val <= 13{
-        UserDefaults.standard.set(val, forKey: "rateus")
-        UserDefaults.standard.synchronize()
+            UserDefaults.standard.set(val, forKey: "rateus")
+            UserDefaults.standard.synchronize()
         }
     }
     
@@ -140,6 +193,10 @@ class augmentViewController: UIViewController, popupDelegate {
     }
     
     func openCollections(){
+        
+        if let topController = UIApplication.topViewController(), (topController is PopUpViewController) {
+            return
+        }
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.pausePlaying = true
@@ -176,14 +233,13 @@ class augmentViewController: UIViewController, popupDelegate {
         if  AVAudioSession.sharedInstance().outputVolume == 0  {
             Toast.showNegativeMessage(message: "For the application to work correctly, you must increase 'Media Volume'. If you did not, you can not hear the music.")
         }
-       
+        
         
         UnityPostMessage("GameObject", "playMusic", "")
         
         
     }
     @objc  func startUnity() {
-        
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
@@ -194,9 +250,7 @@ class augmentViewController: UIViewController, popupDelegate {
         appDelegate.startUnity()
         
         unityView = UnityGetGLView()!
-        
-        
-        
+        enable_disableAllViews(status: false)
         
         if self.view == nil{
             print("self.view is null")
@@ -204,6 +258,7 @@ class augmentViewController: UIViewController, popupDelegate {
                 self.startUnity()
             }
         }
+        unityView?.frame = CGRect(x: 0, y: 85, width: self.view.frame.width, height: self.view.frame.height - 85)
         self.view!.addSubview(unityView!)
         unityView!.translatesAutoresizingMaskIntoConstraints = false
         
@@ -213,10 +268,10 @@ class augmentViewController: UIViewController, popupDelegate {
         }
         
         // look, non-full screen unity content!
-        let views = ["view": unityView]
-        let w = NSLayoutConstraint.constraints(withVisualFormat: "|-0-[view]-0-|", options: [], metrics: nil, views: views)
-        let h = NSLayoutConstraint.constraints(withVisualFormat: "V:|-70-[view]-0-|", options: [], metrics: nil, views: views)
-        view.addConstraints(w + h)
+        //        let views = ["view": unityView]
+        //        let w = NSLayoutConstraint.constraints(withVisualFormat: "|-0-[view]-0-|", options: [], metrics: nil, views: views)
+        //        let h = NSLayoutConstraint.constraints(withVisualFormat: "V:|-85-[view]-0-|", options: [], metrics: nil, views: views)
+        //        view.addConstraints(w + h)
         
         
         speakerButton = UIButton(type: .custom)
@@ -250,28 +305,15 @@ class augmentViewController: UIViewController, popupDelegate {
         self.cameraButton.isHidden = true
         self.speakerButton.isHidden = true
         
-        
-        let instructionsShowed = UserDefaults.standard.value(forKey: "instructionsShowed") as! Bool
-        
-        if instructionsShowed == true{
-            
-            self.openCollections()
-        }
-        else{
-            showHintAlert()
-           /*let alert:UIAlertController = UIAlertController(title: "Info", message: "Point your device to a surface with detailed texture.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: Constants.alert.ok.rawValue, style: .default, handler: { (action) in
-                // Collections  show
-                
-            }))
-            self.present(alert, animated: true, completion: nil)*/
-            
-        }
+       
     }
     
     @IBAction func closeView(_ sender: Any) {
-            self.hintView.removeFromSuperview()
-        self.openCollections()
+        self.hintView.removeFromSuperview()
+        if sceneloadingCount == 0{
+            self.openCollections()
+        }
+        sceneloadingCount = sceneloadingCount + 1
         UserDefaults.standard.set(true, forKey: "instructionsShowed")
         UserDefaults.standard.synchronize()
     }
@@ -285,13 +327,20 @@ class augmentViewController: UIViewController, popupDelegate {
         self.hintSubView.layer.cornerRadius = 5
         if self.view.frame.width == 320{
             self.hintHeight.constant = 350
-           // self.hintSubView.layoutIfNeeded()
+            // self.hintSubView.layoutIfNeeded()
             self.hintView.layoutIfNeeded()
             
         }
         
         UIApplication.shared.keyWindow?.addSubview(self.hintView)
-         
+        
+    }
+    
+    func enable_disableAllViews(status:Bool){
+        
+            self.unityView?.isUserInteractionEnabled = status
+            self.openColl.isUserInteractionEnabled = status
+        
     }
     
     
@@ -313,6 +362,9 @@ class augmentViewController: UIViewController, popupDelegate {
 
 extension Notification.Name {
     static let postNotifi = Notification.Name("UnityObjectPlaced")
+    static let loadedNotifi = Notification.Name("UnitySceneLoaded")
+    static let animalNotifi = Notification.Name("AnimalAnimationPlaying")
 }
+
 
 

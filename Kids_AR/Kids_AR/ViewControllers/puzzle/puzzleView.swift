@@ -427,4 +427,7 @@ class puzzleView : UIViewController, congratsDelegate{
     func nextQuestion() {
         self.makeRandom()
     }
+    func gotoExit() {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

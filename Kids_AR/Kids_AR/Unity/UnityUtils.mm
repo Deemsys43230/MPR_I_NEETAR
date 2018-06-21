@@ -40,3 +40,15 @@ extern "C" void _rp_UnityObjectPlaced()
   //  NSDictionary* dict = @{ @"isOn": @(isOn) };
     [[NSNotificationCenter defaultCenter] postNotificationName: @"UnityObjectPlaced" object:nil userInfo:nil];
 }
+extern "C" void _rp_UnitySceneLoaded(const char* stringValue)
+{
+    //  NSDictionary* dict = @{ @"isOn": @(isOn) };
+    NSLog(@"Passed string value: %s", stringValue);
+   NSDictionary* di = @{ @"text" : [NSString stringWithUTF8String:stringValue] };
+    [[NSNotificationCenter defaultCenter] postNotificationName: @"UnitySceneLoaded" object:nil userInfo:di];
+}
+
+extern "C" void _rp_AnimationPlaying(const char* stringValue){
+     NSDictionary* di = @{ @"text" : [NSString stringWithUTF8String:stringValue] };
+    [[NSNotificationCenter defaultCenter] postNotificationName: @"AnimalAnimationPlaying" object:nil userInfo:di];
+}

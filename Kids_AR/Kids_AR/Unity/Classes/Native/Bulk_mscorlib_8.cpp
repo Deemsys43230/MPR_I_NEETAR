@@ -1108,8 +1108,10 @@ extern String_t* _stringLiteral1327129032;
 extern const uint32_t String_LastIndexOf_m3228770703_MetadataUsageId;
 extern const RuntimeMethod* String_LastIndexOf_m95398196_RuntimeMethod_var;
 extern const uint32_t String_LastIndexOf_m95398196_MetadataUsageId;
-extern const RuntimeMethod* String_PadRight_m50345030_RuntimeMethod_var;
+extern const RuntimeMethod* String_PadLeft_m1263950263_RuntimeMethod_var;
 extern String_t* _stringLiteral1314554310;
+extern const uint32_t String_PadLeft_m1263950263_MetadataUsageId;
+extern const RuntimeMethod* String_PadRight_m50345030_RuntimeMethod_var;
 extern const uint32_t String_PadRight_m50345030_MetadataUsageId;
 extern const RuntimeMethod* String_StartsWith_m1759067526_RuntimeMethod_var;
 extern const uint32_t String_StartsWith_m1759067526_MetadataUsageId;
@@ -36480,6 +36482,102 @@ IL_0011:
 IL_0012:
 	{
 		return (bool)G_B3_0;
+	}
+}
+// System.String System.String::PadLeft(System.Int32,System.Char)
+extern "C"  String_t* String_PadLeft_m1263950263 (String_t* __this, int32_t ___totalWidth0, Il2CppChar ___paddingChar1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (String_PadLeft_m1263950263_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	Il2CppChar* V_1 = NULL;
+	Il2CppChar* V_2 = NULL;
+	Il2CppChar* V_3 = NULL;
+	Il2CppChar* V_4 = NULL;
+	String_t* V_5 = NULL;
+	String_t* V_6 = NULL;
+	{
+		int32_t L_0 = ___totalWidth0;
+		if ((((int32_t)L_0) >= ((int32_t)0)))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t777629997 * L_1 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m282481429(L_1, _stringLiteral1314554310, _stringLiteral3073595182, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, String_PadLeft_m1263950263_RuntimeMethod_var);
+	}
+
+IL_0017:
+	{
+		int32_t L_2 = ___totalWidth0;
+		int32_t L_3 = __this->get_length_0();
+		if ((((int32_t)L_2) >= ((int32_t)L_3)))
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		return __this;
+	}
+
+IL_0025:
+	{
+		int32_t L_4 = ___totalWidth0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_5 = String_InternalAllocateStr_m1198086868(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		String_t* L_6 = V_0;
+		V_5 = L_6;
+		String_t* L_7 = V_5;
+		int32_t L_8 = RuntimeHelpers_get_OffsetToStringData_m2192601476(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_1 = (Il2CppChar*)((intptr_t)il2cpp_codegen_add((intptr_t)(((intptr_t)L_7)), (int32_t)L_8));
+		V_6 = __this;
+		String_t* L_9 = V_6;
+		int32_t L_10 = RuntimeHelpers_get_OffsetToStringData_m2192601476(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_2 = (Il2CppChar*)((intptr_t)il2cpp_codegen_add((intptr_t)(((intptr_t)L_9)), (int32_t)L_10));
+		Il2CppChar* L_11 = V_1;
+		V_3 = (Il2CppChar*)L_11;
+		Il2CppChar* L_12 = V_1;
+		int32_t L_13 = ___totalWidth0;
+		int32_t L_14 = __this->get_length_0();
+		V_4 = (Il2CppChar*)((Il2CppChar*)il2cpp_codegen_add((intptr_t)L_12, (int32_t)((int32_t)il2cpp_codegen_multiply((int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_13, (int32_t)L_14)), (int32_t)2))));
+		goto IL_0063;
+	}
+
+IL_005b:
+	{
+		Il2CppChar* L_15 = V_3;
+		Il2CppChar* L_16 = (Il2CppChar*)L_15;
+		V_3 = (Il2CppChar*)((Il2CppChar*)il2cpp_codegen_add((intptr_t)L_16, (intptr_t)(((intptr_t)2))));
+		Il2CppChar L_17 = ___paddingChar1;
+		*((int16_t*)(L_16)) = (int16_t)L_17;
+	}
+
+IL_0063:
+	{
+		Il2CppChar* L_18 = V_3;
+		Il2CppChar* L_19 = V_4;
+		if ((!(((uintptr_t)L_18) == ((uintptr_t)L_19))))
+		{
+			goto IL_005b;
+		}
+	}
+	{
+		Il2CppChar* L_20 = V_4;
+		Il2CppChar* L_21 = V_2;
+		int32_t L_22 = __this->get_length_0();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_CharCopy_m98228993(NULL /*static, unused*/, (Il2CppChar*)(Il2CppChar*)L_20, (Il2CppChar*)(Il2CppChar*)L_21, L_22, /*hidden argument*/NULL);
+		V_5 = (String_t*)NULL;
+		V_6 = (String_t*)NULL;
+		String_t* L_23 = V_0;
+		return L_23;
 	}
 }
 // System.String System.String::PadRight(System.Int32,System.Char)

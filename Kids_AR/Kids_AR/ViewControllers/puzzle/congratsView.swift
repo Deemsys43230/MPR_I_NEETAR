@@ -14,6 +14,7 @@ import AVFoundation
 protocol congratsDelegate {
     
     func nextQuestion()
+    func gotoExit()
 }
  
 
@@ -169,6 +170,16 @@ class congratsView : UIViewController{
             self.cheerBeep?.currentTime = 0
             self.cheerBeep = nil
         }
+    }
+    @IBAction func exitFromView(_ sender: Any) {
+        self.confettiView.stopConfetti()
+        self.removeAnimate()
+        if self.cheerBeep != nil{
+            self.cheerBeep?.stop()
+            self.cheerBeep?.currentTime = 0
+            self.cheerBeep = nil
+        }
+       delegate?.gotoExit()
     }
     @IBAction func playNext(_ sender: Any) {
         self.confettiView.stopConfetti()

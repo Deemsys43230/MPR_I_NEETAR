@@ -365,9 +365,9 @@
       },
       {
         "modelId": "com.deemsysinc.kidsar.basicmodels",
-        "modelName": "GRAPE",
-        "modelImage": "grapes",
-        "audioName": "audio_grape"
+        "modelName": "GUAVA",
+        "modelImage": "guava",
+        "audioName": "audio_guava"
       },
       {
         "modelId": "com.deemsysinc.kidsar.basicmodels",

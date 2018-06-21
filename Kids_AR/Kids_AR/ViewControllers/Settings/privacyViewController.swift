@@ -22,7 +22,10 @@ class privacyViewController : UIViewController, UIWebViewDelegate {
     
     override func viewDidLoad() {
         
-        self.copyright.text = Constants.copyright
+        let year = Calendar.current.component(Calendar.Component.year, from: Date())
+        
+         let copyright="Copyright © \(year) Deemsys Inc. All Rights Reserved."
+        self.copyright.text = copyright
         webView.backgroundColor = .clear
         webView.isOpaque = false
        webView.delegate = self

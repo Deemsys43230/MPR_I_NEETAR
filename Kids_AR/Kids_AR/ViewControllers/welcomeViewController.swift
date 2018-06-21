@@ -93,6 +93,15 @@ class welcomeViewController: UIViewController,UITableViewDataSource, UITableView
             self.navigationController?.pushViewController(vc, animated: true)
             return;
         }
+        if indexPath.row == 1{
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.pausePlaying = true
+            appDelegate.pauseSound()
+            let vc =  UIStoryboard.init(name: "UnityStoryboard", bundle: nil).instantiateViewController(withIdentifier: "animalsAR") as! animalsAR
+            vc.index = indexPath.row
+            self.navigationController?.pushViewController(vc, animated: true)
+            return;
+        }
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.pausePlaying = true
         appDelegate.pauseSound()
