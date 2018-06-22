@@ -47,9 +47,7 @@ class augmentViewController: UIViewController, popupDelegate {
         
         self.indicator.startAnimating()
         self.indicatorParentView.isHidden = false
-        
-        
-        NotificationCenter.default.addObserver(self,selector: #selector(handleAnimalButtons(notfication:)), name:.animalNotifi, object:nil)
+         
         
         NotificationCenter.default.addObserver(self, selector: #selector(showButtons(notfication:)), name: .postNotifi, object: nil)
         
@@ -61,6 +59,7 @@ class augmentViewController: UIViewController, popupDelegate {
         }
         else if index == 1{
             self.modeltitle.text = "ALLIGATOR"
+            self.fruitsheaderImage.image = #imageLiteral(resourceName: "animals_header")
         }
         else if index == 2{
             self.modeltitle.text = "APPLE"
@@ -102,13 +101,16 @@ class augmentViewController: UIViewController, popupDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         UnityPostMessage("GameObject", "clearScene", "")
-        NotificationCenter.default.removeObserver(self, name: .postNotifi, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .loadedNotifi, object: nil)
     }
     
-    @objc func handleAnimalButtons(notfication: NSNotification){
+    deinit {
+        
+        NotificationCenter.default.removeObserver(self, name: .postNotifi, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .loadedNotifi, object: nil)
         
     }
+    
+    
     @objc func showButtons(notfication: NSNotification) {
         if self.cameraButton.isHidden == true {
             self.cameraButton.isHidden = false
@@ -231,7 +233,7 @@ class augmentViewController: UIViewController, popupDelegate {
         // print(AVAudioSession.sharedInstance().outputVolume)
         
         if  AVAudioSession.sharedInstance().outputVolume == 0  {
-            Toast.showNegativeMessage(message: "For the application to work correctly, you must increase 'Media Volume'. If you did not, you can not hear the music.")
+            Toast.showNegativeMessage(message: "The application is with music. Increase \"Media Volume\" to hear the music.")
         }
         
         

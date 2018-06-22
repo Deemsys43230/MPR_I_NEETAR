@@ -88,12 +88,14 @@ class animalsAR: UIViewController, popupDelegate {
             self.startUnity()
         }
     }
-    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .animalNotifi, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .postNotifi, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .loadedNotifi, object: nil)
+    }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         UnityPostMessage("GameObject", "clearScene", "")
-        NotificationCenter.default.removeObserver(self, name: .postNotifi, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .loadedNotifi, object: nil)
     }
     
     @objc func handleAnimalButtons(notfication: NSNotification){
@@ -235,7 +237,7 @@ class animalsAR: UIViewController, popupDelegate {
         // print(AVAudioSession.sharedInstance().outputVolume)
         
         if  AVAudioSession.sharedInstance().outputVolume == 0  {
-            Toast.showNegativeMessage(message: "For the application to work correctly, you must increase 'Media Volume'. If you did not, you can not hear the music.")
+            Toast.showNegativeMessage(message: "The application is with music. Increase \"Media Volume\" to hear the music.")
         }
         
         

@@ -110,7 +110,7 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
             store.restore()
         }
         else{
-            let alertView = UIAlertController(title: "Warning!", message: "Please wait for the current transaction get complete.", preferredStyle: .alert)
+            let alertView = UIAlertController(title: "Warning!", message: "Please wait for the current transaction to be completed.", preferredStyle: .alert)
             alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             present(alertView, animated: true, completion: nil)
         }
@@ -198,7 +198,7 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
         }
         else{
             self.view.isUserInteractionEnabled = true
-            let alertView = UIAlertController(title: "Warning!", message: "Please wait for the current transaction get complete.", preferredStyle: .alert)
+            let alertView = UIAlertController(title: "Warning!", message: "Please wait for the current transaction to be completed.", preferredStyle: .alert)
             alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             present(alertView, animated: true, completion: nil)
         }

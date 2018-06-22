@@ -66,6 +66,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         for id in productIDs{
             let status = UserDefaults.standard.bool(forKey: (id))
             if !status{
+              // TEMPORARY PURCCHASE
+              //  UserDefaults.standard.set(true, forKey: id)
                 UserDefaults.standard.set(false, forKey: id)
             }
         }
