@@ -103,7 +103,10 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
             imageHeight.constant = 105
             self.logoView.layoutIfNeeded()
         }
+         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
         
+                 self.present((self.storyboard?.instantiateViewController(withIdentifier: "helpViewController"))!, animated: false, completion: nil)
+        }
         
     }
         override func viewWillAppear(_ animated: Bool) {
@@ -138,6 +141,8 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: .UIKeyboardWillShow, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: .UIKeyboardWillHide, object: nil)
+            
+   
     }
     
     override func viewWillDisappear(_ animated: Bool) {

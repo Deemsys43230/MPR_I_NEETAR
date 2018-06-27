@@ -10,6 +10,7 @@
 		0042343E20CFB313007E5B30 /* negativeTone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0042343C20CFB313007E5B30 /* negativeTone.mp3 */; };
 		0042343F20CFB313007E5B30 /* positiveTone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0042343D20CFB313007E5B30 /* positiveTone.mp3 */; };
 		0042344120CFB8D0007E5B30 /* kidsCheer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0042344020CFB8CF007E5B30 /* kidsCheer.mp3 */; };
+		0045F8F220DD0DB500D3DC74 /* MetalHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 007A9E9720C2621B00DB7112 /* MetalHelper.mm */; };
 		0061170820B54EB1008E4FB4 /* slowbackgroundmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0061170720B54EB1008E4FB4 /* slowbackgroundmusic.mp3 */; };
 		0061170A20B57C52008E4FB4 /* privacyPolicy.html in Resources */ = {isa = PBXBuildFile; fileRef = 0061170920B57C52008E4FB4 /* privacyPolicy.html */; };
 		006413B020C027F8000BEBC9 /* UnityUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 006413AB20C027F7000BEBC9 /* UnityUtils.mm */; };
@@ -138,7 +139,6 @@
 		007AA12A20C2621B00DB7112 /* FullScreenVideoPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 007A9E8F20C2621B00DB7112 /* FullScreenVideoPlayer.mm */; };
 		007AA12B20C2621B00DB7112 /* GlesHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 007A9E9120C2621B00DB7112 /* GlesHelper.mm */; };
 		007AA12C20C2621B00DB7112 /* InternalProfiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 007A9E9220C2621B00DB7112 /* InternalProfiler.cpp */; };
-		007AA12D20C2621B00DB7112 /* MetalHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 007A9E9720C2621B00DB7112 /* MetalHelper.mm */; };
 		007AA12E20C2621B00DB7112 /* OnDemandResources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 007A9E9920C2621B00DB7112 /* OnDemandResources.mm */; };
 		007AA12F20C2621B00DB7112 /* UnityReplayKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 007A9E9F20C2621B00DB7112 /* UnityReplayKit.mm */; };
 		007AA13020C2621B00DB7112 /* UnityReplayKit_Scripting.mm in Sources */ = {isa = PBXBuildFile; fileRef = 007A9EA020C2621B00DB7112 /* UnityReplayKit_Scripting.mm */; };
@@ -197,9 +197,9 @@
 		0099FA0B20CE932600454DC1 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099FA0A20CE932600454DC1 /* MyView.swift */; };
 		009B3A1420AD504000FA9BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1320AD504000FA9BC3 /* AppDelegate.swift */; };
 		009B3A1620AD504000FA9BC3 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1520AD504000FA9BC3 /* NameViewController.swift */; };
-		009B3A1920AD504000FA9BC3 = {isa = PBXBuildFile; fileRef = 009B3A1720AD504000FA9BC3 /* Main.storyboard */; };
+		009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1720AD504000FA9BC3 /* Main.storyboard */; };
 		009B3A1B20AD504F00FA9BC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1A20AD504F00FA9BC3 /* Assets.xcassets */; };
-		009B3A1E20AD504F00FA9BC3 = {isa = PBXBuildFile; fileRef = 009B3A1C20AD504F00FA9BC3 /* LaunchScreen.storyboard */; };
+		009B3A1E20AD504F00FA9BC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1C20AD504F00FA9BC3 /* LaunchScreen.storyboard */; };
 		009B3A2920AD505000FA9BC3 /* Kids_ARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A2820AD505000FA9BC3 /* Kids_ARTests.swift */; };
 		009B3A3420AD505000FA9BC3 /* Kids_ARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A3320AD505000FA9BC3 /* Kids_ARUITests.swift */; };
 		009B3A4620AD5FE600FA9BC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A4520AD5FE600FA9BC3 /* Constants.swift */; };
@@ -207,6 +207,8 @@
 		009B3A6020ADA54200FA9BC3 /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */; };
 		009B3A6420ADBA2B00FA9BC3 /* tableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A6320ADBA2B00FA9BC3 /* tableCell.swift */; };
 		00B74E7F20B7FCA800EBF380 /* Rechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B74E7E20B7FCA800EBF380 /* Rechability.swift */; };
+		00C245AB20E21D97006F7166 /* finaldemo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 00C245AA20E216AF006F7166 /* finaldemo.mp4 */; };
+		00C245AD20E276D2006F7166 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C245AC20E276D2006F7166 /* screenshot.png */; };
 		00C5229420B3EFC100C38255 /* HSK_CFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5228F20B3EFC100C38255 /* HSK_CFUtilities.m */; };
 		00C5229520B3EFC100C38255 /* NSStream+SKPSMTPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5229120B3EFC100C38255 /* NSStream+SKPSMTPExtensions.m */; };
 		00C5229620B3EFC100C38255 /* SKPSMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C5229320B3EFC100C38255 /* SKPSMTPMessage.m */; };
@@ -920,6 +922,8 @@
 		009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
 		009B3A6320ADBA2B00FA9BC3 /* tableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableCell.swift; sourceTree = "<group>"; };
 		00B74E7E20B7FCA800EBF380 /* Rechability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rechability.swift; sourceTree = "<group>"; };
+		00C245AA20E216AF006F7166 /* finaldemo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = finaldemo.mp4; sourceTree = "<group>"; };
+		00C245AC20E276D2006F7166 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 		00C5228E20B3EFC100C38255 /* HSK_CFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSK_CFUtilities.h; sourceTree = "<group>"; };
 		00C5228F20B3EFC100C38255 /* HSK_CFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSK_CFUtilities.m; sourceTree = "<group>"; };
 		00C5229020B3EFC100C38255 /* NSStream+SKPSMTPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStream+SKPSMTPExtensions.h"; sourceTree = "<group>"; };
@@ -2376,6 +2380,7 @@
 		0099F9F220CE916600454DC1 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				008ADF1E20B0033E00E7A642 /* helpViewController.swift */,
 				007C938B20B292AE00019114 /* settingsViewController.swift */,
 				007C939120B2B3BA00019114 /* contactViewController.swift */,
 				007C938F20B2B3B900019114 /* privacyViewController.swift */,
@@ -2474,6 +2479,8 @@
 		009B3A4120AD5ECA00FA9BC3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				00C245AC20E276D2006F7166 /* screenshot.png */,
+				00C245AA20E216AF006F7166 /* finaldemo.mp4 */,
 				007AA14D20C2653E00DB7112 /* appIcon.png */,
 				007AA14C20C2653E00DB7112 /* background.jpg */,
 				0061170920B57C52008E4FB4 /* privacyPolicy.html */,
@@ -2523,7 +2530,6 @@
 				009B3A1520AD504000FA9BC3 /* NameViewController.swift */,
 				009B3A5F20ADA54200FA9BC3 /* welcomeViewController.swift */,
 				009B3A1720AD504000FA9BC3 /* Main.storyboard */,
-				008ADF1E20B0033E00E7A642 /* helpViewController.swift */,
 				0099F9F020CE912500454DC1 /* puzzle */,
 			);
 			path = ViewControllers;
@@ -2639,7 +2645,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Unity-iPhone" */;
+			buildConfigurationList = 009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Kids_AR" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -2648,7 +2654,7 @@
 				Base,
 			);
 			mainGroup = 009B3A0720AD504000FA9BC3;
-			productRefGroup = 009B3A1120AD504000FA9BC3;
+			productRefGroup = 009B3A1120AD504000FA9BC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -2664,6 +2670,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C245AB20E21D97006F7166 /* finaldemo.mp4 in Resources */,
 				006413B220C027F8000BEBC9 /* Unity.xcconfig in Resources */,
 				0064173B20C034BD000BEBC9 /* rsync_exclude in Resources */,
 				0061170A20B57C52008E4FB4 /* privacyPolicy.html in Resources */,
@@ -2673,7 +2680,7 @@
 				0099FA0320CE92A300454DC1 /* diamond.png in Resources */,
 				0042343F20CFB313007E5B30 /* positiveTone.mp3 in Resources */,
 				007AA14F20C2653E00DB7112 /* appIcon.png in Resources */,
-				009B3A1E20AD504F00FA9BC3,
+				009B3A1E20AD504F00FA9BC3 /* LaunchScreen.storyboard in Resources */,
 				006DFE3A20C51D84005CC585 /* kids.json in Resources */,
 				009B3A1B20AD504F00FA9BC3 /* Assets.xcassets in Resources */,
 				0099FA0420CE92A300454DC1 /* star.png in Resources */,
@@ -2688,7 +2695,8 @@
 				0095E55720C67EAE00E847BB /* GothamRounded-Medium.otf in Resources */,
 				0099FA0520CE92A300454DC1 /* triangle.png in Resources */,
 				007AA14E20C2653E00DB7112 /* background.jpg in Resources */,
-				009B3A1920AD504000FA9BC3,
+				00C245AD20E276D2006F7166 /* screenshot.png in Resources */,
+				009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2742,6 +2750,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0045F8F220DD0DB500D3DC74 /* MetalHelper.mm in Sources */,
 				007AA13720C2621C00DB7112 /* Il2CppOptions.cpp in Sources */,
 				007AA10420C2621B00DB7112 /* Il2CppGenericInstDefinitions.cpp in Sources */,
 				007AA13520C2621C00DB7112 /* UnityAppController+UnityInterface.mm in Sources */,
@@ -2767,7 +2776,6 @@
 				006B3DAF20D7BB290044520D /* animalsAR.swift in Sources */,
 				007AA13620C2621C00DB7112 /* UnityAppController.mm in Sources */,
 				00C5229520B3EFC100C38255 /* NSStream+SKPSMTPExtensions.m in Sources */,
-				007AA12D20C2621B00DB7112 /* MetalHelper.mm in Sources */,
 				007AA11B20C2621B00DB7112 /* UnityAppController+ViewHandling.mm in Sources */,
 				007AA15320C2700700DB7112 /* toast.swift in Sources */,
 				007AA0EC20C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_11Table.cpp in Sources */,
@@ -2967,7 +2975,7 @@
 /* Begin XCBuildConfiguration section */
 		009B3A3620AD505000FA9BC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 006413AD20C027F8000BEBC9;
+			baseConfigurationReference = 006413AD20C027F8000BEBC9 /* Unity.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -3030,7 +3038,7 @@
 		};
 		009B3A3720AD505000FA9BC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 006413AD20C027F8000BEBC9;
+			baseConfigurationReference = 006413AD20C027F8000BEBC9 /* Unity.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -3092,6 +3100,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
 				INFOPLIST_FILE = "$(SRCROOT)/Kids_AR/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -3225,7 +3234,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Unity-iPhone" */ = {
+		009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Kids_AR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				009B3A3620AD505000FA9BC3 /* Debug */,

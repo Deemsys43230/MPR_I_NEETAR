@@ -83,7 +83,9 @@ class Constants {
     
  
  static let helpArray = [
-    "Welcome to our augmented reality kids AR app.",
+   "How to use 3d models?",
+   "How to use 3d models?",
+   "INSTRUCTIONS",
     "To get started, give your name on the welcome screen to explore the fun of augmented realities.",
     "To start, choose a category on your home screen.",
     "Try our free models. Locked models are for purchase.",
@@ -91,12 +93,7 @@ class Constants {
     "For unlocking all models go to Settings -> Purchase -> Buy.",
     "For restoring your purchases on a new device or reinstalling app go to Settings -> Purchase -> Restore.",
     "Any queries? Please go to Settings -> Contact us.\n",
-    "How to use 3d models?",
-    "To simulate a 3d model, press the menu button above your camera screen and choose a model from the list.",
-    "Hold your camera still while we detect flat surfaces for placing models.",
-    "Once the detected surface is seen, Tap on the surface to place your models.",
-    "To zoom your models use two-finger pinch gesture.",
-    "To rotate your models use a single finger and slide left or right.",
+    
     "\nHappy Learning!\n"
                    ]
   

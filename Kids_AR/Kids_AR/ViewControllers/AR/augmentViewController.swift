@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import AVFoundation
+import Photos
 
 class augmentViewController: UIViewController, popupDelegate {
     
@@ -47,7 +48,7 @@ class augmentViewController: UIViewController, popupDelegate {
         
         self.indicator.startAnimating()
         self.indicatorParentView.isHidden = false
-         
+        
         
         NotificationCenter.default.addObserver(self, selector: #selector(showButtons(notfication:)), name: .postNotifi, object: nil)
         
@@ -101,6 +102,9 @@ class augmentViewController: UIViewController, popupDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         UnityPostMessage("GameObject", "clearScene", "")
+        if isMovingToParentViewController{
+            self.unityView?.removeFromSuperview()
+        }
     }
     
     deinit {
@@ -217,11 +221,43 @@ class augmentViewController: UIViewController, popupDelegate {
         self.openCollections()
         
     }
-    
+    func checkPhotoLibraryPermission() {
+        let status = PHPhotoLibrary.authorizationStatus()
+        switch status {
+        case .authorized:
+            UnityPostMessage("GameObject", "captureScreen", "")
+            Toast.showMessage(message: "Image saved! Tap the Photos icon to view the image")
+            break
+        //handle authorized status
+        case .denied, .restricted :
+            //handle denied status
+             Toast.showNegativeMessage(message: "Please enable \"Photos\" permission to save image. To enable access, go to Settings -> Kids AR -> Photos -> Read and Write")
+            break
+        
+        case .notDetermined:
+            // ask for permissions
+            PHPhotoLibrary.requestAuthorization() { status in
+                switch status {
+                case .authorized:
+                // as above
+                    UnityPostMessage("GameObject", "captureScreen", "")
+                    Toast.showMessage(message: "Image saved! Tap the Photos icon to view the image")
+                    break
+                case .denied, .restricted:
+                // as above
+                    Toast.showNegativeMessage(message: "Please enable \"Photos\" permission to save image. To enable access, go to Settings -> Kids AR -> Photos -> Read and Write")
+                    break
+                case .notDetermined:
+                    // won't happen but still
+                    break;
+                }
+            }
+        }
+    }
     @IBAction func captureScreen(_ sender: Any) {
         
-        UnityPostMessage("GameObject", "captureScreen", "")
-        Toast.showMessage(message: "Image saved! Tap the Photos icon to view the image")
+        checkPhotoLibraryPermission()
+        
     }
     
     

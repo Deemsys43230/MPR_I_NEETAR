@@ -436,7 +436,6 @@ void ShowSplashScreen(UIWindow* window)
     [window makeKeyAndVisible];
 }
 
-
 void HideSplashScreen()
 {
     if (_splash)

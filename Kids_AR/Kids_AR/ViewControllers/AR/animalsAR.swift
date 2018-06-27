@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import AVFoundation
+import Photos
 
 class animalsAR: UIViewController, popupDelegate {
     
@@ -96,7 +97,11 @@ class animalsAR: UIViewController, popupDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         UnityPostMessage("GameObject", "clearScene", "")
+        if isMovingToParentViewController{
+            self.unityView?.removeFromSuperview()
+        }
     }
+
     
     @objc func handleAnimalButtons(notfication: NSNotification){
        // print("Animation Status :::: \(notfication.userInfo!["text"])")
@@ -221,10 +226,45 @@ class animalsAR: UIViewController, popupDelegate {
         
     }
     
+    func checkPhotoLibraryPermission() {
+        let status = PHPhotoLibrary.authorizationStatus()
+        switch status {
+        case .authorized:
+            UnityPostMessage("GameObject", "captureScreen", "")
+            Toast.showMessage(message: "Image saved! Tap the Photos icon to view the image")
+            break
+        //handle authorized status
+        case .denied, .restricted :
+            //handle denied status
+            Toast.showNegativeMessage(message: "Please enable \"Photos\" permission to save image. To enable access, go to Settings -> Kids AR -> Photos -> Read and Write")
+            break
+            
+        case .notDetermined:
+            // ask for permissions
+            PHPhotoLibrary.requestAuthorization() { status in
+                switch status {
+                case .authorized:
+                    // as above
+                    UnityPostMessage("GameObject", "captureScreen", "")
+                    Toast.showMessage(message: "Image saved! Tap the Photos icon to view the image")
+                    break
+                case .denied, .restricted:
+                    // as above
+                     Toast.showNegativeMessage(message: "Please enable \"Photos\" permission to save image. To enable access, go to Settings -> Kids AR -> Photos -> Read and Write")
+                    break
+                case .notDetermined:
+                    // won't happen but still
+                    break;
+                }
+            }
+        }
+    }
+    
+    
     @IBAction func captureScreen(_ sender: Any) {
         
-        UnityPostMessage("GameObject", "captureScreen", "")
-        Toast.showMessage(message: "Image saved! Tap the Photos icon to view the image")
+        checkPhotoLibraryPermission()
+        
     }
     
     
@@ -331,6 +371,9 @@ class animalsAR: UIViewController, popupDelegate {
     }
     
     @objc func playAnimation(_ sender: UIButton){
+        if let topController = UIApplication.topViewController(), !(topController is animalsAR) {
+            return
+        }
         if sender.titleLabel?.text == "START"{
             self.animationButton.setTitle("STOP", for: .normal)
             UnityPostMessage("GameObject", "PlayAnimation", "")
