@@ -24,7 +24,7 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
         contentList.dataSource = self
         
         contentList.tableFooterView = UIView()
-        self.prepareAlert()
+      //  self.prepareAlert()
         
     }
     
@@ -161,6 +161,7 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
             break;
         case 7:
             // "Name"
+            self.prepareAlert()
             self.present(alertController, animated: true, completion: nil)
             break;
         case 9:
@@ -205,6 +206,9 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
             let textRange = Range(range, in: text) {
             let updatedText = text.replacingCharacters(in: textRange,
                                                        with: string)
+            
+            let maxLength = 18
+            return updatedText.characters.count <= maxLength
             
         }
         return true

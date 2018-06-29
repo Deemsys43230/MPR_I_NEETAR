@@ -34,7 +34,7 @@ class collectionCell: UICollectionViewCell {
     
     func setCircularImageView() {
         self.imageView.layer.cornerRadius = CGFloat(roundf(Float(self.imageView.frame.size.width / 2.0)))
-        self.imageView.layer.borderWidth = 1.0
+        self.imageView.layer.borderWidth = 2.0
          self.imageView.layer.borderColor = UIColor.white.cgColor
         
     }

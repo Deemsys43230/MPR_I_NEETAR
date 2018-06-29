@@ -8,14 +8,18 @@
 
 import Foundation
 
+class  ToastLabel: UILabel {
+    
+}
 
 class Toast
 {
-    class private func showAlert(backgroundColor:UIColor, textColor:UIColor, message:String)
+  
+     func showAlert(backgroundColor:UIColor, textColor:UIColor, message:String)
     {
         
         let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        let label = UILabel(frame: CGRect.zero)
+        let label = ToastLabel(frame: CGRect.zero)
         label.textAlignment = NSTextAlignment.center
         label.text = message
         label.font = UIFont(name: Constants.FontName.Regular.rawValue, size: 15)
@@ -33,7 +37,11 @@ class Toast
         
         label.alpha = 1
         
+       
+        
         appDelegate.window!.addSubview(label)
+        
+    
         
         var basketTopFrame: CGRect = label.frame;
         basketTopFrame.origin.x = 0;
@@ -50,16 +58,26 @@ class Toast
                 label.removeFromSuperview()
             })
         })
+        
+       
     }
-    class func showMessage(message:String)
+    func removeLabel(){
+       
+        let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        for case let label as ToastLabel in appDelegate.window!.subviews {
+            label.removeFromSuperview()
+        }
+        
+    }
+    func showMessage(message:String)
     {
         showAlert(backgroundColor: UIColor.init(red: 122/255, green: 177/255, blue: 224/255, alpha: 0.7), textColor: UIColor.white, message: message)
     }
-    class func showPositiveMessage(message:String)
+     func showPositiveMessage(message:String)
     {
         showAlert(backgroundColor: UIColor.green.withAlphaComponent(0.7), textColor: UIColor.white, message: message)
     }
-    class func showNegativeMessage(message:String)
+     func showNegativeMessage(message:String)
     {
         showAlert(backgroundColor: UIColor.red.withAlphaComponent(0.7), textColor: UIColor.white, message: message)
     }

@@ -103,7 +103,7 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
             imageHeight.constant = 105
             self.logoView.layoutIfNeeded()
         }
-         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
         
                  self.present((self.storyboard?.instantiateViewController(withIdentifier: "helpViewController"))!, animated: false, completion: nil)
         }
@@ -213,8 +213,16 @@ class NameViewController: UIViewController, UITextFieldDelegate,AVSpeechSynthesi
             let textRange = Range(range, in: text) {
             let updatedText = text.replacingCharacters(in: textRange,
                                                        with: string)
+            
+            
             if updatedText.characters.count > 0{
-                showButton()
+                
+                let maxLength = 18
+                if updatedText.characters.count <= maxLength{
+                    showButton()
+                    return true
+                }
+                return false
             }
             else{
                 hideButton()

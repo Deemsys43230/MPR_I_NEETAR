@@ -195,7 +195,9 @@ class augmentViewController: UIViewController, popupDelegate {
     }
     
     @IBAction func backAction(sender: UIButton) {
+        Toast().removeLabel()
         self.navigationController?.popViewController(animated: true)
+ 
     }
     
     func openCollections(){
@@ -226,12 +228,12 @@ class augmentViewController: UIViewController, popupDelegate {
         switch status {
         case .authorized:
             UnityPostMessage("GameObject", "captureScreen", "")
-            Toast.showMessage(message: "Image saved! Tap the Photos icon to view the image")
+            Toast().showMessage(message: "Image saved! Tap the Photos icon to view the image")
             break
         //handle authorized status
         case .denied, .restricted :
             //handle denied status
-             Toast.showNegativeMessage(message: "Please enable \"Photos\" permission to save image. To enable access, go to Settings -> Kids AR -> Photos -> Read and Write")
+             Toast().showNegativeMessage(message: "Please enable \"Photos\" permission to save image. To enable access, go to Settings -> Kids AR -> Photos -> Read and Write")
             break
         
         case .notDetermined:
@@ -241,11 +243,11 @@ class augmentViewController: UIViewController, popupDelegate {
                 case .authorized:
                 // as above
                     UnityPostMessage("GameObject", "captureScreen", "")
-                    Toast.showMessage(message: "Image saved! Tap the Photos icon to view the image")
+                    Toast().showMessage(message: "Image saved! Tap the Photos icon to view the image")
                     break
                 case .denied, .restricted:
                 // as above
-                    Toast.showNegativeMessage(message: "Please enable \"Photos\" permission to save image. To enable access, go to Settings -> Kids AR -> Photos -> Read and Write")
+                    Toast().showNegativeMessage(message: "Please enable \"Photos\" permission to save image. To enable access, go to Settings -> Kids AR -> Photos -> Read and Write")
                     break
                 case .notDetermined:
                     // won't happen but still
@@ -269,7 +271,7 @@ class augmentViewController: UIViewController, popupDelegate {
         // print(AVAudioSession.sharedInstance().outputVolume)
         
         if  AVAudioSession.sharedInstance().outputVolume == 0  {
-            Toast.showNegativeMessage(message: "The application is with music. Increase \"Media Volume\" to hear the music.")
+            Toast().showNegativeMessage(message: "The application is with music. Increase \"Media Volume\" to hear the music.")
         }
         
         
@@ -340,9 +342,14 @@ class augmentViewController: UIViewController, popupDelegate {
             speakerButton.widthAnchor.constraint(equalToConstant: 50),
             speakerButton.heightAnchor.constraint(equalToConstant: 50)])
         
-        self.cameraButton.isHidden = true
-        self.speakerButton.isHidden = true
         
+        if self.cameraButton != nil, let topController = UIApplication.topViewController(), !(topController is augmentViewController){
+            self.cameraButton.isHidden = true
+            self.speakerButton.isHidden = true
+        }else if self.cameraButton != nil{
+            self.cameraButton.isHidden = true
+            self.speakerButton.isHidden = true
+        }
        
     }
     
