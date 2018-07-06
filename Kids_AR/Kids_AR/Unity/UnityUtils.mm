@@ -35,10 +35,11 @@ extern "C" void UnityPostMessage(NSString* gameObject, NSString* methodName, NSS
 
 // The following functions are for demo purpose only.
 // You don't need them if your Unity code does not invoke them.
-extern "C" void _rp_UnityObjectPlaced()
+extern "C" void _rp_UnityObjectPlaced(const char* stringValue)
 {
-  //  NSDictionary* dict = @{ @"isOn": @(isOn) };
-    [[NSNotificationCenter defaultCenter] postNotificationName: @"UnityObjectPlaced" object:nil userInfo:nil];
+ // NSLog(@"Passed string value: %f", stringValue);
+   NSDictionary* di = @{ @"text" : [NSString stringWithUTF8String:stringValue] };
+    [[NSNotificationCenter defaultCenter] postNotificationName: @"UnityObjectPlaced" object:nil userInfo:di];
 }
 extern "C" void _rp_UnitySceneLoaded(const char* stringValue)
 {

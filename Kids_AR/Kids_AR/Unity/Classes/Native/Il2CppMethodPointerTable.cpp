@@ -2665,6 +2665,8 @@ extern "C" void Math_Min_m3468062251 ();
 extern "C" void Math_Min_m2427345610 ();
 extern "C" void Math_Round_m3018379666 ();
 extern "C" void Math_Round_m101670467 ();
+extern "C" void Math_Round_m3279303474 ();
+extern "C" void Math_Round2_m4049995284 ();
 extern "C" void Math_Sin_m2190801110 ();
 extern "C" void Math_Cos_m1874044299 ();
 extern "C" void Math_Atan2_m182059315 ();
@@ -12852,7 +12854,7 @@ extern "C" void U3CTakeScreenshotAndSaveU3Ec__Iterator0_System_Collections_IEnum
 extern "C" void U3CTakeScreenshotAndSaveU3Ec__Iterator0_Dispose_m317466848 ();
 extern "C" void U3CTakeScreenshotAndSaveU3Ec__Iterator0_Reset_m681126698 ();
 extern "C" void ObjectPlacerAnimals__ctor_m1678178496 ();
-extern "C" void ObjectPlacerAnimals__rp_UnityObjectPlaced_m3937459018 ();
+extern "C" void ObjectPlacerAnimals__rp_UnityObjectPlaced_m504506532 ();
 extern "C" void ObjectPlacerAnimals__rp_AnimationPlaying_m2742183519 ();
 extern "C" void ObjectPlacerAnimals__rp_UnitySceneLoaded_m3163003100 ();
 extern "C" void ObjectPlacerAnimals_clearScene_m1463859119 ();
@@ -12861,7 +12863,7 @@ extern "C" void ObjectPlacerAnimals_Awake_m3407215277 ();
 extern "C" void ObjectPlacerAnimals_OnEnable_m1547843223 ();
 extern "C" void ObjectPlacerAnimals_OnSceneLoaded_m1224615342 ();
 extern "C" void ObjectPlacerAnimals_OnDisable_m632730456 ();
-extern "C" void ObjectPlacerAnimals_postObjectStatus_m1386923332 ();
+extern "C" void ObjectPlacerAnimals_postObjectStatus_m3740493861 ();
 extern "C" void ObjectPlacerAnimals_loadAlphabet_m4144843263 ();
 extern "C" void ObjectPlacerAnimals_chooseModel_m3209889911 ();
 extern "C" void ObjectPlacerAnimals_StopAnimation_m786701864 ();
@@ -13280,7 +13282,7 @@ extern "C" void VideoFormatsExample_Start_m1615238214 ();
 extern "C" void VideoFormatsExample_OnDestroy_m541603283 ();
 extern "C" void VideoFormatsExample_PopulateVideoFormatButtons_m595526008 ();
 extern "C" void VideoFormatsExample_ExampletButtonPressed_m2588664126 ();
-extern const Il2CppMethodPointer g_MethodPointers[13261] = 
+extern const Il2CppMethodPointer g_MethodPointers[13263] = 
 {
 	Locale_GetText_m3374010885,
 	Locale_GetText_m1601577974,
@@ -15928,6 +15930,8 @@ extern const Il2CppMethodPointer g_MethodPointers[13261] =
 	Math_Min_m2427345610,
 	Math_Round_m3018379666,
 	Math_Round_m101670467,
+	Math_Round_m3279303474,
+	Math_Round2_m4049995284,
 	Math_Sin_m2190801110,
 	Math_Cos_m1874044299,
 	Math_Atan2_m182059315,
@@ -26115,7 +26119,7 @@ extern const Il2CppMethodPointer g_MethodPointers[13261] =
 	U3CTakeScreenshotAndSaveU3Ec__Iterator0_Dispose_m317466848,
 	U3CTakeScreenshotAndSaveU3Ec__Iterator0_Reset_m681126698,
 	ObjectPlacerAnimals__ctor_m1678178496,
-	ObjectPlacerAnimals__rp_UnityObjectPlaced_m3937459018,
+	ObjectPlacerAnimals__rp_UnityObjectPlaced_m504506532,
 	ObjectPlacerAnimals__rp_AnimationPlaying_m2742183519,
 	ObjectPlacerAnimals__rp_UnitySceneLoaded_m3163003100,
 	ObjectPlacerAnimals_clearScene_m1463859119,
@@ -26124,7 +26128,7 @@ extern const Il2CppMethodPointer g_MethodPointers[13261] =
 	ObjectPlacerAnimals_OnEnable_m1547843223,
 	ObjectPlacerAnimals_OnSceneLoaded_m1224615342,
 	ObjectPlacerAnimals_OnDisable_m632730456,
-	ObjectPlacerAnimals_postObjectStatus_m1386923332,
+	ObjectPlacerAnimals_postObjectStatus_m3740493861,
 	ObjectPlacerAnimals_loadAlphabet_m4144843263,
 	ObjectPlacerAnimals_chooseModel_m3209889911,
 	ObjectPlacerAnimals_StopAnimation_m786701864,

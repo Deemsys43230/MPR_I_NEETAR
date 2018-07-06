@@ -25790,6 +25790,20 @@ void* RuntimeInvoker_Int64_t3736567304_Int64_t3736567304_Int64_t3736567304 (Il2C
 	return Box(il2cpp_codegen_class_from_type (il2cpp_codegen_method_return_type(methodMetadata)), &ret);
 }
 
+void* RuntimeInvoker_Double_t594665363_Double_t594665363_Int32_t2950945753 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args)
+{
+	typedef double (*Func)(void* obj, double p1, int32_t p2, const RuntimeMethod* method);
+	double ret = ((Func)methodPointer)(obj, *((double*)args[0]), *((int32_t*)args[1]), methodMetadata);
+	return Box(il2cpp_codegen_class_from_type (il2cpp_codegen_method_return_type(methodMetadata)), &ret);
+}
+
+void* RuntimeInvoker_Double_t594665363_Double_t594665363_Int32_t2950945753_SByte_t1669577662 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args)
+{
+	typedef double (*Func)(void* obj, double p1, int32_t p2, int8_t p3, const RuntimeMethod* method);
+	double ret = ((Func)methodPointer)(obj, *((double*)args[0]), *((int32_t*)args[1]), *((int8_t*)args[2]), methodMetadata);
+	return Box(il2cpp_codegen_class_from_type (il2cpp_codegen_method_return_type(methodMetadata)), &ret);
+}
+
 void* RuntimeInvoker_TypeAttributes_t113483779_RuntimeObject (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args)
 {
 	typedef int32_t (*Func)(void* obj, RuntimeObject * p1, const RuntimeMethod* method);
@@ -36577,7 +36591,7 @@ void* RuntimeInvoker_RuntimeObject_FloatTween_t1274330004 (Il2CppMethodPointer m
 	return ret;
 }
 
-extern const InvokerMethod g_Il2CppInvokerPointers[2205] = 
+extern const InvokerMethod g_Il2CppInvokerPointers[2207] = 
 {
 	RuntimeInvoker_Void_t1185182177,
 	RuntimeInvoker_Boolean_t97287965_RuntimeObject,
@@ -37243,6 +37257,8 @@ extern const InvokerMethod g_Il2CppInvokerPointers[2205] =
 	RuntimeInvoker_Double_t594665363_Double_t594665363_Double_t594665363,
 	RuntimeInvoker_Single_t1397266774_Single_t1397266774_Single_t1397266774,
 	RuntimeInvoker_Int64_t3736567304_Int64_t3736567304_Int64_t3736567304,
+	RuntimeInvoker_Double_t594665363_Double_t594665363_Int32_t2950945753,
+	RuntimeInvoker_Double_t594665363_Double_t594665363_Int32_t2950945753_SByte_t1669577662,
 	RuntimeInvoker_TypeAttributes_t113483779_RuntimeObject,
 	RuntimeInvoker_RuntimeObject_SByte_t1669577662_SByte_t1669577662,
 	RuntimeInvoker_Void_t1185182177_UInt64U2AU26_t2260114700_Int32U2AU26_t573380253_CharU2AU26_t3321717838_CharU2AU26_t3321717838_Int64U2AU26_t569379112_Int32U2AU26_t573380253,

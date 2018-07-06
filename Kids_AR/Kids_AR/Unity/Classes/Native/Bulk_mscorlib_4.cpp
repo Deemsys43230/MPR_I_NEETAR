@@ -861,6 +861,9 @@ extern const RuntimeMethod* Math_Abs_m2270691510_RuntimeMethod_var;
 extern const uint32_t Math_Abs_m2270691510_MetadataUsageId;
 extern RuntimeClass* Decimal_t2948259380_il2cpp_TypeInfo_var;
 extern const uint32_t Math_Round_m3018379666_MetadataUsageId;
+extern const RuntimeMethod* Math_Round_m3279303474_RuntimeMethod_var;
+extern String_t* _stringLiteral2734556373;
+extern const uint32_t Math_Round_m3279303474_MetadataUsageId;
 extern String_t* _stringLiteral3423128635;
 extern const uint32_t MemberAccessException__ctor_m2501221062_MetadataUsageId;
 extern String_t* _stringLiteral982811232;
@@ -15555,6 +15558,8 @@ extern "C"  bool Decimal_op_Inequality_m3543190500 (RuntimeObject * __this /* st
 extern "C"  bool Decimal_op_GreaterThan_m627311519 (RuntimeObject * __this /* static, unused */, Decimal_t2948259380  ___d10, Decimal_t2948259380  ___d21, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Decimal System.Decimal::op_Increment(System.Decimal)
 extern "C"  Decimal_t2948259380  Decimal_op_Increment_m2045993911 (RuntimeObject * __this /* static, unused */, Decimal_t2948259380  ___d0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Double System.Math::Round2(System.Double,System.Int32,System.Boolean)
+extern "C"  double Math_Round2_m4049995284 (RuntimeObject * __this /* static, unused */, double ___value0, int32_t ___digits1, bool ___away_from_zero2, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.SystemException::.ctor(System.String)
 extern "C"  void SystemException__ctor_m3298527747 (SystemException_t176217640 * __this, String_t* ___message0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Exception::set_HResult(System.Int32)
@@ -24282,6 +24287,67 @@ IL_008c:
 extern "C"  double Math_Round_m101670467 (RuntimeObject * __this /* static, unused */, double ___a0, const RuntimeMethod* method)
 {
 	return bankers_round(___a0);
+}
+// System.Double System.Math::Round(System.Double,System.Int32)
+extern "C"  double Math_Round_m3279303474 (RuntimeObject * __this /* static, unused */, double ___value0, int32_t ___digits1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Math_Round_m3279303474_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___digits1;
+		if ((((int32_t)L_0) < ((int32_t)0)))
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		int32_t L_1 = ___digits1;
+		if ((((int32_t)L_1) <= ((int32_t)((int32_t)15))))
+		{
+			goto IL_001f;
+		}
+	}
+
+IL_000f:
+	{
+		String_t* L_2 = Locale_GetText_m3374010885(NULL /*static, unused*/, _stringLiteral2734556373, /*hidden argument*/NULL);
+		ArgumentOutOfRangeException_t777629997 * L_3 = (ArgumentOutOfRangeException_t777629997 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t777629997_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m3628145864(L_3, L_2, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, NULL, Math_Round_m3279303474_RuntimeMethod_var);
+	}
+
+IL_001f:
+	{
+		int32_t L_4 = ___digits1;
+		if (L_4)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		double L_5 = ___value0;
+		double L_6 = bankers_round(L_5);
+		return L_6;
+	}
+
+IL_002c:
+	{
+		double L_7 = ___value0;
+		int32_t L_8 = ___digits1;
+		double L_9 = Math_Round2_m4049995284(NULL /*static, unused*/, L_7, L_8, (bool)0, /*hidden argument*/NULL);
+		return L_9;
+	}
+}
+// System.Double System.Math::Round2(System.Double,System.Int32,System.Boolean)
+extern "C"  double Math_Round2_m4049995284 (RuntimeObject * __this /* static, unused */, double ___value0, int32_t ___digits1, bool ___away_from_zero2, const RuntimeMethod* method)
+{
+	typedef double (*Math_Round2_m4049995284_ftn) (double, int32_t, bool);
+	using namespace il2cpp::icalls;
+	return  ((Math_Round2_m4049995284_ftn)mscorlib::System::Math::Round2) (___value0, ___digits1, ___away_from_zero2);
 }
 // System.Double System.Math::Sin(System.Double)
 extern "C"  double Math_Sin_m2190801110 (RuntimeObject * __this /* static, unused */, double ___a0, const RuntimeMethod* method)

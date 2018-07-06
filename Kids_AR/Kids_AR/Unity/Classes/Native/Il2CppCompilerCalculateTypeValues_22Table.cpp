@@ -6370,128 +6370,184 @@ public:
 	LayerMask_t3493934918  ___collisionLayer_4;
 	// UnityEngine.GameObject[] UnityEngine.XR.iOS.ObjectPlacerAnimals::pointers
 	GameObjectU5BU5D_t3328599146* ___pointers_6;
+	// System.Double UnityEngine.XR.iOS.ObjectPlacerAnimals::rDistance
+	double ___rDistance_7;
 	// UnityEngine.Animator UnityEngine.XR.iOS.ObjectPlacerAnimals::animalAnimator
-	Animator_t434523843 * ___animalAnimator_7;
+	Animator_t434523843 * ___animalAnimator_8;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::arObject
-	GameObject_t1113636619 * ___arObject_8;
+	GameObject_t1113636619 * ___arObject_9;
 	// UnityEngine.Playables.PlayableDirector UnityEngine.XR.iOS.ObjectPlacerAnimals::director
-	PlayableDirector_t508516997 * ___director_9;
+	PlayableDirector_t508516997 * ___director_10;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_A
-	GameObject_t1113636619 * ___animal_A_10;
+	GameObject_t1113636619 * ___animal_A_11;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_B
-	GameObject_t1113636619 * ___animal_B_11;
+	GameObject_t1113636619 * ___animal_B_12;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_C
-	GameObject_t1113636619 * ___animal_C_12;
+	GameObject_t1113636619 * ___animal_C_13;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_D
-	GameObject_t1113636619 * ___animal_D_13;
+	GameObject_t1113636619 * ___animal_D_14;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_E
-	GameObject_t1113636619 * ___animal_E_14;
+	GameObject_t1113636619 * ___animal_E_15;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_F
-	GameObject_t1113636619 * ___animal_F_15;
+	GameObject_t1113636619 * ___animal_F_16;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_G
-	GameObject_t1113636619 * ___animal_G_16;
+	GameObject_t1113636619 * ___animal_G_17;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_H
-	GameObject_t1113636619 * ___animal_H_17;
+	GameObject_t1113636619 * ___animal_H_18;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_I
-	GameObject_t1113636619 * ___animal_I_18;
+	GameObject_t1113636619 * ___animal_I_19;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_J
-	GameObject_t1113636619 * ___animal_J_19;
+	GameObject_t1113636619 * ___animal_J_20;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_K
-	GameObject_t1113636619 * ___animal_K_20;
+	GameObject_t1113636619 * ___animal_K_21;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_L
-	GameObject_t1113636619 * ___animal_L_21;
+	GameObject_t1113636619 * ___animal_L_22;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_M
-	GameObject_t1113636619 * ___animal_M_22;
+	GameObject_t1113636619 * ___animal_M_23;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_N
-	GameObject_t1113636619 * ___animal_N_23;
+	GameObject_t1113636619 * ___animal_N_24;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_O
-	GameObject_t1113636619 * ___animal_O_24;
+	GameObject_t1113636619 * ___animal_O_25;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_P
-	GameObject_t1113636619 * ___animal_P_25;
+	GameObject_t1113636619 * ___animal_P_26;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_Q
-	GameObject_t1113636619 * ___animal_Q_26;
+	GameObject_t1113636619 * ___animal_Q_27;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_R
-	GameObject_t1113636619 * ___animal_R_27;
+	GameObject_t1113636619 * ___animal_R_28;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_S
-	GameObject_t1113636619 * ___animal_S_28;
+	GameObject_t1113636619 * ___animal_S_29;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_T
-	GameObject_t1113636619 * ___animal_T_29;
+	GameObject_t1113636619 * ___animal_T_30;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_U
-	GameObject_t1113636619 * ___animal_U_30;
+	GameObject_t1113636619 * ___animal_U_31;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_V
-	GameObject_t1113636619 * ___animal_V_31;
+	GameObject_t1113636619 * ___animal_V_32;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_W
-	GameObject_t1113636619 * ___animal_W_32;
+	GameObject_t1113636619 * ___animal_W_33;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_X
-	GameObject_t1113636619 * ___animal_X_33;
+	GameObject_t1113636619 * ___animal_X_34;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_Y
-	GameObject_t1113636619 * ___animal_Y_34;
+	GameObject_t1113636619 * ___animal_Y_35;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_Z
-	GameObject_t1113636619 * ___animal_Z_35;
+	GameObject_t1113636619 * ___animal_Z_36;
 	// System.String UnityEngine.XR.iOS.ObjectPlacerAnimals::currentalphabet
-	String_t* ___currentalphabet_36;
+	String_t* ___currentalphabet_37;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_A
-	AudioClip_t3680889665 * ___audioClip_A_37;
+	AudioClip_t3680889665 * ___audioClip_A_38;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_B
-	AudioClip_t3680889665 * ___audioClip_B_38;
+	AudioClip_t3680889665 * ___audioClip_B_39;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_C
-	AudioClip_t3680889665 * ___audioClip_C_39;
+	AudioClip_t3680889665 * ___audioClip_C_40;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_D
-	AudioClip_t3680889665 * ___audioClip_D_40;
+	AudioClip_t3680889665 * ___audioClip_D_41;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_E
-	AudioClip_t3680889665 * ___audioClip_E_41;
+	AudioClip_t3680889665 * ___audioClip_E_42;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_F
-	AudioClip_t3680889665 * ___audioClip_F_42;
+	AudioClip_t3680889665 * ___audioClip_F_43;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_G
-	AudioClip_t3680889665 * ___audioClip_G_43;
+	AudioClip_t3680889665 * ___audioClip_G_44;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_H
-	AudioClip_t3680889665 * ___audioClip_H_44;
+	AudioClip_t3680889665 * ___audioClip_H_45;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_I
-	AudioClip_t3680889665 * ___audioClip_I_45;
+	AudioClip_t3680889665 * ___audioClip_I_46;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_J
-	AudioClip_t3680889665 * ___audioClip_J_46;
+	AudioClip_t3680889665 * ___audioClip_J_47;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_K
-	AudioClip_t3680889665 * ___audioClip_K_47;
+	AudioClip_t3680889665 * ___audioClip_K_48;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_L
-	AudioClip_t3680889665 * ___audioClip_L_48;
+	AudioClip_t3680889665 * ___audioClip_L_49;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_M
-	AudioClip_t3680889665 * ___audioClip_M_49;
+	AudioClip_t3680889665 * ___audioClip_M_50;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_N
-	AudioClip_t3680889665 * ___audioClip_N_50;
+	AudioClip_t3680889665 * ___audioClip_N_51;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_O
-	AudioClip_t3680889665 * ___audioClip_O_51;
+	AudioClip_t3680889665 * ___audioClip_O_52;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_P
-	AudioClip_t3680889665 * ___audioClip_P_52;
+	AudioClip_t3680889665 * ___audioClip_P_53;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_Q
-	AudioClip_t3680889665 * ___audioClip_Q_53;
+	AudioClip_t3680889665 * ___audioClip_Q_54;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_R
-	AudioClip_t3680889665 * ___audioClip_R_54;
+	AudioClip_t3680889665 * ___audioClip_R_55;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_S
-	AudioClip_t3680889665 * ___audioClip_S_55;
+	AudioClip_t3680889665 * ___audioClip_S_56;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_T
-	AudioClip_t3680889665 * ___audioClip_T_56;
+	AudioClip_t3680889665 * ___audioClip_T_57;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_U
-	AudioClip_t3680889665 * ___audioClip_U_57;
+	AudioClip_t3680889665 * ___audioClip_U_58;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_V
-	AudioClip_t3680889665 * ___audioClip_V_58;
+	AudioClip_t3680889665 * ___audioClip_V_59;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_W
-	AudioClip_t3680889665 * ___audioClip_W_59;
+	AudioClip_t3680889665 * ___audioClip_W_60;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_X
-	AudioClip_t3680889665 * ___audioClip_X_60;
+	AudioClip_t3680889665 * ___audioClip_X_61;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_Y
-	AudioClip_t3680889665 * ___audioClip_Y_61;
+	AudioClip_t3680889665 * ___audioClip_Y_62;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_Z
-	AudioClip_t3680889665 * ___audioClip_Z_62;
+	AudioClip_t3680889665 * ___audioClip_Z_63;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_A
+	float ___scale_A_64;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_B
+	float ___scale_B_65;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_C
+	float ___scale_C_66;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_D
+	float ___scale_D_67;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_E
+	float ___scale_E_68;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_F
+	float ___scale_F_69;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_G
+	float ___scale_G_70;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_H
+	float ___scale_H_71;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_I
+	float ___scale_I_72;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_J
+	float ___scale_J_73;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_K
+	float ___scale_K_74;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_L
+	float ___scale_L_75;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_M
+	float ___scale_M_76;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_N
+	float ___scale_N_77;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_O
+	float ___scale_O_78;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_P
+	float ___scale_P_79;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_Q
+	float ___scale_Q_80;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_R
+	float ___scale_R_81;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_S
+	float ___scale_S_82;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_T
+	float ___scale_T_83;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_U
+	float ___scale_U_84;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_V
+	float ___scale_V_85;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_W
+	float ___scale_W_86;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_X
+	float ___scale_X_87;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_Y
+	float ___scale_Y_88;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_Z
+	float ___scale_Z_89;
 	// UnityEngine.AudioSource UnityEngine.XR.iOS.ObjectPlacerAnimals::audioSource
-	AudioSource_t3935305588 * ___audioSource_63;
+	AudioSource_t3935305588 * ___audioSource_90;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioclip
-	AudioClip_t3680889665 * ___audioclip_64;
+	AudioClip_t3680889665 * ___audioclip_91;
 	// UnityEngine.Vector3 UnityEngine.XR.iOS.ObjectPlacerAnimals::startFingerPos
-	Vector3_t3722313464  ___startFingerPos_65;
+	Vector3_t3722313464  ___startFingerPos_92;
 	// System.Boolean UnityEngine.XR.iOS.ObjectPlacerAnimals::animationPlayingStatus
-	bool ___animationPlayingStatus_66;
+	bool ___animationPlayingStatus_93;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::animalScale
+	float ___animalScale_94;
 	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::duration
-	float ___duration_67;
+	float ___duration_95;
 
 public:
 	inline static int32_t get_offset_of_m_HitTransform_2() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___m_HitTransform_2)); }
@@ -6528,550 +6584,774 @@ public:
 		Il2CppCodeGenWriteBarrier((&___pointers_6), value);
 	}
 
-	inline static int32_t get_offset_of_animalAnimator_7() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animalAnimator_7)); }
-	inline Animator_t434523843 * get_animalAnimator_7() const { return ___animalAnimator_7; }
-	inline Animator_t434523843 ** get_address_of_animalAnimator_7() { return &___animalAnimator_7; }
-	inline void set_animalAnimator_7(Animator_t434523843 * value)
+	inline static int32_t get_offset_of_rDistance_7() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___rDistance_7)); }
+	inline double get_rDistance_7() const { return ___rDistance_7; }
+	inline double* get_address_of_rDistance_7() { return &___rDistance_7; }
+	inline void set_rDistance_7(double value)
 	{
-		___animalAnimator_7 = value;
-		Il2CppCodeGenWriteBarrier((&___animalAnimator_7), value);
+		___rDistance_7 = value;
 	}
 
-	inline static int32_t get_offset_of_arObject_8() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___arObject_8)); }
-	inline GameObject_t1113636619 * get_arObject_8() const { return ___arObject_8; }
-	inline GameObject_t1113636619 ** get_address_of_arObject_8() { return &___arObject_8; }
-	inline void set_arObject_8(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animalAnimator_8() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animalAnimator_8)); }
+	inline Animator_t434523843 * get_animalAnimator_8() const { return ___animalAnimator_8; }
+	inline Animator_t434523843 ** get_address_of_animalAnimator_8() { return &___animalAnimator_8; }
+	inline void set_animalAnimator_8(Animator_t434523843 * value)
 	{
-		___arObject_8 = value;
-		Il2CppCodeGenWriteBarrier((&___arObject_8), value);
+		___animalAnimator_8 = value;
+		Il2CppCodeGenWriteBarrier((&___animalAnimator_8), value);
 	}
 
-	inline static int32_t get_offset_of_director_9() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___director_9)); }
-	inline PlayableDirector_t508516997 * get_director_9() const { return ___director_9; }
-	inline PlayableDirector_t508516997 ** get_address_of_director_9() { return &___director_9; }
-	inline void set_director_9(PlayableDirector_t508516997 * value)
+	inline static int32_t get_offset_of_arObject_9() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___arObject_9)); }
+	inline GameObject_t1113636619 * get_arObject_9() const { return ___arObject_9; }
+	inline GameObject_t1113636619 ** get_address_of_arObject_9() { return &___arObject_9; }
+	inline void set_arObject_9(GameObject_t1113636619 * value)
 	{
-		___director_9 = value;
-		Il2CppCodeGenWriteBarrier((&___director_9), value);
+		___arObject_9 = value;
+		Il2CppCodeGenWriteBarrier((&___arObject_9), value);
 	}
 
-	inline static int32_t get_offset_of_animal_A_10() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_A_10)); }
-	inline GameObject_t1113636619 * get_animal_A_10() const { return ___animal_A_10; }
-	inline GameObject_t1113636619 ** get_address_of_animal_A_10() { return &___animal_A_10; }
-	inline void set_animal_A_10(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_director_10() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___director_10)); }
+	inline PlayableDirector_t508516997 * get_director_10() const { return ___director_10; }
+	inline PlayableDirector_t508516997 ** get_address_of_director_10() { return &___director_10; }
+	inline void set_director_10(PlayableDirector_t508516997 * value)
 	{
-		___animal_A_10 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_A_10), value);
+		___director_10 = value;
+		Il2CppCodeGenWriteBarrier((&___director_10), value);
 	}
 
-	inline static int32_t get_offset_of_animal_B_11() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_B_11)); }
-	inline GameObject_t1113636619 * get_animal_B_11() const { return ___animal_B_11; }
-	inline GameObject_t1113636619 ** get_address_of_animal_B_11() { return &___animal_B_11; }
-	inline void set_animal_B_11(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_A_11() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_A_11)); }
+	inline GameObject_t1113636619 * get_animal_A_11() const { return ___animal_A_11; }
+	inline GameObject_t1113636619 ** get_address_of_animal_A_11() { return &___animal_A_11; }
+	inline void set_animal_A_11(GameObject_t1113636619 * value)
 	{
-		___animal_B_11 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_B_11), value);
+		___animal_A_11 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_A_11), value);
 	}
 
-	inline static int32_t get_offset_of_animal_C_12() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_C_12)); }
-	inline GameObject_t1113636619 * get_animal_C_12() const { return ___animal_C_12; }
-	inline GameObject_t1113636619 ** get_address_of_animal_C_12() { return &___animal_C_12; }
-	inline void set_animal_C_12(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_B_12() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_B_12)); }
+	inline GameObject_t1113636619 * get_animal_B_12() const { return ___animal_B_12; }
+	inline GameObject_t1113636619 ** get_address_of_animal_B_12() { return &___animal_B_12; }
+	inline void set_animal_B_12(GameObject_t1113636619 * value)
 	{
-		___animal_C_12 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_C_12), value);
+		___animal_B_12 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_B_12), value);
 	}
 
-	inline static int32_t get_offset_of_animal_D_13() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_D_13)); }
-	inline GameObject_t1113636619 * get_animal_D_13() const { return ___animal_D_13; }
-	inline GameObject_t1113636619 ** get_address_of_animal_D_13() { return &___animal_D_13; }
-	inline void set_animal_D_13(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_C_13() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_C_13)); }
+	inline GameObject_t1113636619 * get_animal_C_13() const { return ___animal_C_13; }
+	inline GameObject_t1113636619 ** get_address_of_animal_C_13() { return &___animal_C_13; }
+	inline void set_animal_C_13(GameObject_t1113636619 * value)
 	{
-		___animal_D_13 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_D_13), value);
+		___animal_C_13 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_C_13), value);
 	}
 
-	inline static int32_t get_offset_of_animal_E_14() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_E_14)); }
-	inline GameObject_t1113636619 * get_animal_E_14() const { return ___animal_E_14; }
-	inline GameObject_t1113636619 ** get_address_of_animal_E_14() { return &___animal_E_14; }
-	inline void set_animal_E_14(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_D_14() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_D_14)); }
+	inline GameObject_t1113636619 * get_animal_D_14() const { return ___animal_D_14; }
+	inline GameObject_t1113636619 ** get_address_of_animal_D_14() { return &___animal_D_14; }
+	inline void set_animal_D_14(GameObject_t1113636619 * value)
 	{
-		___animal_E_14 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_E_14), value);
+		___animal_D_14 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_D_14), value);
 	}
 
-	inline static int32_t get_offset_of_animal_F_15() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_F_15)); }
-	inline GameObject_t1113636619 * get_animal_F_15() const { return ___animal_F_15; }
-	inline GameObject_t1113636619 ** get_address_of_animal_F_15() { return &___animal_F_15; }
-	inline void set_animal_F_15(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_E_15() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_E_15)); }
+	inline GameObject_t1113636619 * get_animal_E_15() const { return ___animal_E_15; }
+	inline GameObject_t1113636619 ** get_address_of_animal_E_15() { return &___animal_E_15; }
+	inline void set_animal_E_15(GameObject_t1113636619 * value)
 	{
-		___animal_F_15 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_F_15), value);
+		___animal_E_15 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_E_15), value);
 	}
 
-	inline static int32_t get_offset_of_animal_G_16() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_G_16)); }
-	inline GameObject_t1113636619 * get_animal_G_16() const { return ___animal_G_16; }
-	inline GameObject_t1113636619 ** get_address_of_animal_G_16() { return &___animal_G_16; }
-	inline void set_animal_G_16(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_F_16() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_F_16)); }
+	inline GameObject_t1113636619 * get_animal_F_16() const { return ___animal_F_16; }
+	inline GameObject_t1113636619 ** get_address_of_animal_F_16() { return &___animal_F_16; }
+	inline void set_animal_F_16(GameObject_t1113636619 * value)
 	{
-		___animal_G_16 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_G_16), value);
+		___animal_F_16 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_F_16), value);
 	}
 
-	inline static int32_t get_offset_of_animal_H_17() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_H_17)); }
-	inline GameObject_t1113636619 * get_animal_H_17() const { return ___animal_H_17; }
-	inline GameObject_t1113636619 ** get_address_of_animal_H_17() { return &___animal_H_17; }
-	inline void set_animal_H_17(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_G_17() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_G_17)); }
+	inline GameObject_t1113636619 * get_animal_G_17() const { return ___animal_G_17; }
+	inline GameObject_t1113636619 ** get_address_of_animal_G_17() { return &___animal_G_17; }
+	inline void set_animal_G_17(GameObject_t1113636619 * value)
 	{
-		___animal_H_17 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_H_17), value);
+		___animal_G_17 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_G_17), value);
 	}
 
-	inline static int32_t get_offset_of_animal_I_18() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_I_18)); }
-	inline GameObject_t1113636619 * get_animal_I_18() const { return ___animal_I_18; }
-	inline GameObject_t1113636619 ** get_address_of_animal_I_18() { return &___animal_I_18; }
-	inline void set_animal_I_18(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_H_18() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_H_18)); }
+	inline GameObject_t1113636619 * get_animal_H_18() const { return ___animal_H_18; }
+	inline GameObject_t1113636619 ** get_address_of_animal_H_18() { return &___animal_H_18; }
+	inline void set_animal_H_18(GameObject_t1113636619 * value)
 	{
-		___animal_I_18 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_I_18), value);
+		___animal_H_18 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_H_18), value);
 	}
 
-	inline static int32_t get_offset_of_animal_J_19() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_J_19)); }
-	inline GameObject_t1113636619 * get_animal_J_19() const { return ___animal_J_19; }
-	inline GameObject_t1113636619 ** get_address_of_animal_J_19() { return &___animal_J_19; }
-	inline void set_animal_J_19(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_I_19() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_I_19)); }
+	inline GameObject_t1113636619 * get_animal_I_19() const { return ___animal_I_19; }
+	inline GameObject_t1113636619 ** get_address_of_animal_I_19() { return &___animal_I_19; }
+	inline void set_animal_I_19(GameObject_t1113636619 * value)
 	{
-		___animal_J_19 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_J_19), value);
+		___animal_I_19 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_I_19), value);
 	}
 
-	inline static int32_t get_offset_of_animal_K_20() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_K_20)); }
-	inline GameObject_t1113636619 * get_animal_K_20() const { return ___animal_K_20; }
-	inline GameObject_t1113636619 ** get_address_of_animal_K_20() { return &___animal_K_20; }
-	inline void set_animal_K_20(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_J_20() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_J_20)); }
+	inline GameObject_t1113636619 * get_animal_J_20() const { return ___animal_J_20; }
+	inline GameObject_t1113636619 ** get_address_of_animal_J_20() { return &___animal_J_20; }
+	inline void set_animal_J_20(GameObject_t1113636619 * value)
 	{
-		___animal_K_20 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_K_20), value);
+		___animal_J_20 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_J_20), value);
 	}
 
-	inline static int32_t get_offset_of_animal_L_21() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_L_21)); }
-	inline GameObject_t1113636619 * get_animal_L_21() const { return ___animal_L_21; }
-	inline GameObject_t1113636619 ** get_address_of_animal_L_21() { return &___animal_L_21; }
-	inline void set_animal_L_21(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_K_21() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_K_21)); }
+	inline GameObject_t1113636619 * get_animal_K_21() const { return ___animal_K_21; }
+	inline GameObject_t1113636619 ** get_address_of_animal_K_21() { return &___animal_K_21; }
+	inline void set_animal_K_21(GameObject_t1113636619 * value)
 	{
-		___animal_L_21 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_L_21), value);
+		___animal_K_21 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_K_21), value);
 	}
 
-	inline static int32_t get_offset_of_animal_M_22() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_M_22)); }
-	inline GameObject_t1113636619 * get_animal_M_22() const { return ___animal_M_22; }
-	inline GameObject_t1113636619 ** get_address_of_animal_M_22() { return &___animal_M_22; }
-	inline void set_animal_M_22(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_L_22() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_L_22)); }
+	inline GameObject_t1113636619 * get_animal_L_22() const { return ___animal_L_22; }
+	inline GameObject_t1113636619 ** get_address_of_animal_L_22() { return &___animal_L_22; }
+	inline void set_animal_L_22(GameObject_t1113636619 * value)
 	{
-		___animal_M_22 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_M_22), value);
+		___animal_L_22 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_L_22), value);
 	}
 
-	inline static int32_t get_offset_of_animal_N_23() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_N_23)); }
-	inline GameObject_t1113636619 * get_animal_N_23() const { return ___animal_N_23; }
-	inline GameObject_t1113636619 ** get_address_of_animal_N_23() { return &___animal_N_23; }
-	inline void set_animal_N_23(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_M_23() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_M_23)); }
+	inline GameObject_t1113636619 * get_animal_M_23() const { return ___animal_M_23; }
+	inline GameObject_t1113636619 ** get_address_of_animal_M_23() { return &___animal_M_23; }
+	inline void set_animal_M_23(GameObject_t1113636619 * value)
 	{
-		___animal_N_23 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_N_23), value);
+		___animal_M_23 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_M_23), value);
 	}
 
-	inline static int32_t get_offset_of_animal_O_24() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_O_24)); }
-	inline GameObject_t1113636619 * get_animal_O_24() const { return ___animal_O_24; }
-	inline GameObject_t1113636619 ** get_address_of_animal_O_24() { return &___animal_O_24; }
-	inline void set_animal_O_24(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_N_24() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_N_24)); }
+	inline GameObject_t1113636619 * get_animal_N_24() const { return ___animal_N_24; }
+	inline GameObject_t1113636619 ** get_address_of_animal_N_24() { return &___animal_N_24; }
+	inline void set_animal_N_24(GameObject_t1113636619 * value)
 	{
-		___animal_O_24 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_O_24), value);
+		___animal_N_24 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_N_24), value);
 	}
 
-	inline static int32_t get_offset_of_animal_P_25() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_P_25)); }
-	inline GameObject_t1113636619 * get_animal_P_25() const { return ___animal_P_25; }
-	inline GameObject_t1113636619 ** get_address_of_animal_P_25() { return &___animal_P_25; }
-	inline void set_animal_P_25(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_O_25() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_O_25)); }
+	inline GameObject_t1113636619 * get_animal_O_25() const { return ___animal_O_25; }
+	inline GameObject_t1113636619 ** get_address_of_animal_O_25() { return &___animal_O_25; }
+	inline void set_animal_O_25(GameObject_t1113636619 * value)
 	{
-		___animal_P_25 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_P_25), value);
+		___animal_O_25 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_O_25), value);
 	}
 
-	inline static int32_t get_offset_of_animal_Q_26() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_Q_26)); }
-	inline GameObject_t1113636619 * get_animal_Q_26() const { return ___animal_Q_26; }
-	inline GameObject_t1113636619 ** get_address_of_animal_Q_26() { return &___animal_Q_26; }
-	inline void set_animal_Q_26(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_P_26() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_P_26)); }
+	inline GameObject_t1113636619 * get_animal_P_26() const { return ___animal_P_26; }
+	inline GameObject_t1113636619 ** get_address_of_animal_P_26() { return &___animal_P_26; }
+	inline void set_animal_P_26(GameObject_t1113636619 * value)
 	{
-		___animal_Q_26 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_Q_26), value);
+		___animal_P_26 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_P_26), value);
 	}
 
-	inline static int32_t get_offset_of_animal_R_27() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_R_27)); }
-	inline GameObject_t1113636619 * get_animal_R_27() const { return ___animal_R_27; }
-	inline GameObject_t1113636619 ** get_address_of_animal_R_27() { return &___animal_R_27; }
-	inline void set_animal_R_27(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_Q_27() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_Q_27)); }
+	inline GameObject_t1113636619 * get_animal_Q_27() const { return ___animal_Q_27; }
+	inline GameObject_t1113636619 ** get_address_of_animal_Q_27() { return &___animal_Q_27; }
+	inline void set_animal_Q_27(GameObject_t1113636619 * value)
 	{
-		___animal_R_27 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_R_27), value);
+		___animal_Q_27 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_Q_27), value);
 	}
 
-	inline static int32_t get_offset_of_animal_S_28() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_S_28)); }
-	inline GameObject_t1113636619 * get_animal_S_28() const { return ___animal_S_28; }
-	inline GameObject_t1113636619 ** get_address_of_animal_S_28() { return &___animal_S_28; }
-	inline void set_animal_S_28(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_R_28() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_R_28)); }
+	inline GameObject_t1113636619 * get_animal_R_28() const { return ___animal_R_28; }
+	inline GameObject_t1113636619 ** get_address_of_animal_R_28() { return &___animal_R_28; }
+	inline void set_animal_R_28(GameObject_t1113636619 * value)
 	{
-		___animal_S_28 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_S_28), value);
+		___animal_R_28 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_R_28), value);
 	}
 
-	inline static int32_t get_offset_of_animal_T_29() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_T_29)); }
-	inline GameObject_t1113636619 * get_animal_T_29() const { return ___animal_T_29; }
-	inline GameObject_t1113636619 ** get_address_of_animal_T_29() { return &___animal_T_29; }
-	inline void set_animal_T_29(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_S_29() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_S_29)); }
+	inline GameObject_t1113636619 * get_animal_S_29() const { return ___animal_S_29; }
+	inline GameObject_t1113636619 ** get_address_of_animal_S_29() { return &___animal_S_29; }
+	inline void set_animal_S_29(GameObject_t1113636619 * value)
 	{
-		___animal_T_29 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_T_29), value);
+		___animal_S_29 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_S_29), value);
 	}
 
-	inline static int32_t get_offset_of_animal_U_30() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_U_30)); }
-	inline GameObject_t1113636619 * get_animal_U_30() const { return ___animal_U_30; }
-	inline GameObject_t1113636619 ** get_address_of_animal_U_30() { return &___animal_U_30; }
-	inline void set_animal_U_30(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_T_30() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_T_30)); }
+	inline GameObject_t1113636619 * get_animal_T_30() const { return ___animal_T_30; }
+	inline GameObject_t1113636619 ** get_address_of_animal_T_30() { return &___animal_T_30; }
+	inline void set_animal_T_30(GameObject_t1113636619 * value)
 	{
-		___animal_U_30 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_U_30), value);
+		___animal_T_30 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_T_30), value);
 	}
 
-	inline static int32_t get_offset_of_animal_V_31() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_V_31)); }
-	inline GameObject_t1113636619 * get_animal_V_31() const { return ___animal_V_31; }
-	inline GameObject_t1113636619 ** get_address_of_animal_V_31() { return &___animal_V_31; }
-	inline void set_animal_V_31(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_U_31() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_U_31)); }
+	inline GameObject_t1113636619 * get_animal_U_31() const { return ___animal_U_31; }
+	inline GameObject_t1113636619 ** get_address_of_animal_U_31() { return &___animal_U_31; }
+	inline void set_animal_U_31(GameObject_t1113636619 * value)
 	{
-		___animal_V_31 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_V_31), value);
+		___animal_U_31 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_U_31), value);
 	}
 
-	inline static int32_t get_offset_of_animal_W_32() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_W_32)); }
-	inline GameObject_t1113636619 * get_animal_W_32() const { return ___animal_W_32; }
-	inline GameObject_t1113636619 ** get_address_of_animal_W_32() { return &___animal_W_32; }
-	inline void set_animal_W_32(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_V_32() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_V_32)); }
+	inline GameObject_t1113636619 * get_animal_V_32() const { return ___animal_V_32; }
+	inline GameObject_t1113636619 ** get_address_of_animal_V_32() { return &___animal_V_32; }
+	inline void set_animal_V_32(GameObject_t1113636619 * value)
 	{
-		___animal_W_32 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_W_32), value);
+		___animal_V_32 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_V_32), value);
 	}
 
-	inline static int32_t get_offset_of_animal_X_33() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_X_33)); }
-	inline GameObject_t1113636619 * get_animal_X_33() const { return ___animal_X_33; }
-	inline GameObject_t1113636619 ** get_address_of_animal_X_33() { return &___animal_X_33; }
-	inline void set_animal_X_33(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_W_33() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_W_33)); }
+	inline GameObject_t1113636619 * get_animal_W_33() const { return ___animal_W_33; }
+	inline GameObject_t1113636619 ** get_address_of_animal_W_33() { return &___animal_W_33; }
+	inline void set_animal_W_33(GameObject_t1113636619 * value)
 	{
-		___animal_X_33 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_X_33), value);
+		___animal_W_33 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_W_33), value);
 	}
 
-	inline static int32_t get_offset_of_animal_Y_34() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_Y_34)); }
-	inline GameObject_t1113636619 * get_animal_Y_34() const { return ___animal_Y_34; }
-	inline GameObject_t1113636619 ** get_address_of_animal_Y_34() { return &___animal_Y_34; }
-	inline void set_animal_Y_34(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_X_34() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_X_34)); }
+	inline GameObject_t1113636619 * get_animal_X_34() const { return ___animal_X_34; }
+	inline GameObject_t1113636619 ** get_address_of_animal_X_34() { return &___animal_X_34; }
+	inline void set_animal_X_34(GameObject_t1113636619 * value)
 	{
-		___animal_Y_34 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_Y_34), value);
+		___animal_X_34 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_X_34), value);
 	}
 
-	inline static int32_t get_offset_of_animal_Z_35() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_Z_35)); }
-	inline GameObject_t1113636619 * get_animal_Z_35() const { return ___animal_Z_35; }
-	inline GameObject_t1113636619 ** get_address_of_animal_Z_35() { return &___animal_Z_35; }
-	inline void set_animal_Z_35(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_Y_35() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_Y_35)); }
+	inline GameObject_t1113636619 * get_animal_Y_35() const { return ___animal_Y_35; }
+	inline GameObject_t1113636619 ** get_address_of_animal_Y_35() { return &___animal_Y_35; }
+	inline void set_animal_Y_35(GameObject_t1113636619 * value)
 	{
-		___animal_Z_35 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_Z_35), value);
+		___animal_Y_35 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_Y_35), value);
 	}
 
-	inline static int32_t get_offset_of_currentalphabet_36() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___currentalphabet_36)); }
-	inline String_t* get_currentalphabet_36() const { return ___currentalphabet_36; }
-	inline String_t** get_address_of_currentalphabet_36() { return &___currentalphabet_36; }
-	inline void set_currentalphabet_36(String_t* value)
+	inline static int32_t get_offset_of_animal_Z_36() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_Z_36)); }
+	inline GameObject_t1113636619 * get_animal_Z_36() const { return ___animal_Z_36; }
+	inline GameObject_t1113636619 ** get_address_of_animal_Z_36() { return &___animal_Z_36; }
+	inline void set_animal_Z_36(GameObject_t1113636619 * value)
 	{
-		___currentalphabet_36 = value;
-		Il2CppCodeGenWriteBarrier((&___currentalphabet_36), value);
+		___animal_Z_36 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_Z_36), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_A_37() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_A_37)); }
-	inline AudioClip_t3680889665 * get_audioClip_A_37() const { return ___audioClip_A_37; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_A_37() { return &___audioClip_A_37; }
-	inline void set_audioClip_A_37(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_currentalphabet_37() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___currentalphabet_37)); }
+	inline String_t* get_currentalphabet_37() const { return ___currentalphabet_37; }
+	inline String_t** get_address_of_currentalphabet_37() { return &___currentalphabet_37; }
+	inline void set_currentalphabet_37(String_t* value)
 	{
-		___audioClip_A_37 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_A_37), value);
+		___currentalphabet_37 = value;
+		Il2CppCodeGenWriteBarrier((&___currentalphabet_37), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_B_38() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_B_38)); }
-	inline AudioClip_t3680889665 * get_audioClip_B_38() const { return ___audioClip_B_38; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_B_38() { return &___audioClip_B_38; }
-	inline void set_audioClip_B_38(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_A_38() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_A_38)); }
+	inline AudioClip_t3680889665 * get_audioClip_A_38() const { return ___audioClip_A_38; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_A_38() { return &___audioClip_A_38; }
+	inline void set_audioClip_A_38(AudioClip_t3680889665 * value)
 	{
-		___audioClip_B_38 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_B_38), value);
+		___audioClip_A_38 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_A_38), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_C_39() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_C_39)); }
-	inline AudioClip_t3680889665 * get_audioClip_C_39() const { return ___audioClip_C_39; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_C_39() { return &___audioClip_C_39; }
-	inline void set_audioClip_C_39(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_B_39() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_B_39)); }
+	inline AudioClip_t3680889665 * get_audioClip_B_39() const { return ___audioClip_B_39; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_B_39() { return &___audioClip_B_39; }
+	inline void set_audioClip_B_39(AudioClip_t3680889665 * value)
 	{
-		___audioClip_C_39 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_C_39), value);
+		___audioClip_B_39 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_B_39), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_D_40() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_D_40)); }
-	inline AudioClip_t3680889665 * get_audioClip_D_40() const { return ___audioClip_D_40; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_D_40() { return &___audioClip_D_40; }
-	inline void set_audioClip_D_40(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_C_40() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_C_40)); }
+	inline AudioClip_t3680889665 * get_audioClip_C_40() const { return ___audioClip_C_40; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_C_40() { return &___audioClip_C_40; }
+	inline void set_audioClip_C_40(AudioClip_t3680889665 * value)
 	{
-		___audioClip_D_40 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_D_40), value);
+		___audioClip_C_40 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_C_40), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_E_41() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_E_41)); }
-	inline AudioClip_t3680889665 * get_audioClip_E_41() const { return ___audioClip_E_41; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_E_41() { return &___audioClip_E_41; }
-	inline void set_audioClip_E_41(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_D_41() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_D_41)); }
+	inline AudioClip_t3680889665 * get_audioClip_D_41() const { return ___audioClip_D_41; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_D_41() { return &___audioClip_D_41; }
+	inline void set_audioClip_D_41(AudioClip_t3680889665 * value)
 	{
-		___audioClip_E_41 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_E_41), value);
+		___audioClip_D_41 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_D_41), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_F_42() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_F_42)); }
-	inline AudioClip_t3680889665 * get_audioClip_F_42() const { return ___audioClip_F_42; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_F_42() { return &___audioClip_F_42; }
-	inline void set_audioClip_F_42(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_E_42() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_E_42)); }
+	inline AudioClip_t3680889665 * get_audioClip_E_42() const { return ___audioClip_E_42; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_E_42() { return &___audioClip_E_42; }
+	inline void set_audioClip_E_42(AudioClip_t3680889665 * value)
 	{
-		___audioClip_F_42 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_F_42), value);
+		___audioClip_E_42 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_E_42), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_G_43() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_G_43)); }
-	inline AudioClip_t3680889665 * get_audioClip_G_43() const { return ___audioClip_G_43; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_G_43() { return &___audioClip_G_43; }
-	inline void set_audioClip_G_43(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_F_43() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_F_43)); }
+	inline AudioClip_t3680889665 * get_audioClip_F_43() const { return ___audioClip_F_43; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_F_43() { return &___audioClip_F_43; }
+	inline void set_audioClip_F_43(AudioClip_t3680889665 * value)
 	{
-		___audioClip_G_43 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_G_43), value);
+		___audioClip_F_43 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_F_43), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_H_44() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_H_44)); }
-	inline AudioClip_t3680889665 * get_audioClip_H_44() const { return ___audioClip_H_44; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_H_44() { return &___audioClip_H_44; }
-	inline void set_audioClip_H_44(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_G_44() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_G_44)); }
+	inline AudioClip_t3680889665 * get_audioClip_G_44() const { return ___audioClip_G_44; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_G_44() { return &___audioClip_G_44; }
+	inline void set_audioClip_G_44(AudioClip_t3680889665 * value)
 	{
-		___audioClip_H_44 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_H_44), value);
+		___audioClip_G_44 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_G_44), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_I_45() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_I_45)); }
-	inline AudioClip_t3680889665 * get_audioClip_I_45() const { return ___audioClip_I_45; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_I_45() { return &___audioClip_I_45; }
-	inline void set_audioClip_I_45(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_H_45() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_H_45)); }
+	inline AudioClip_t3680889665 * get_audioClip_H_45() const { return ___audioClip_H_45; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_H_45() { return &___audioClip_H_45; }
+	inline void set_audioClip_H_45(AudioClip_t3680889665 * value)
 	{
-		___audioClip_I_45 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_I_45), value);
+		___audioClip_H_45 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_H_45), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_J_46() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_J_46)); }
-	inline AudioClip_t3680889665 * get_audioClip_J_46() const { return ___audioClip_J_46; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_J_46() { return &___audioClip_J_46; }
-	inline void set_audioClip_J_46(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_I_46() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_I_46)); }
+	inline AudioClip_t3680889665 * get_audioClip_I_46() const { return ___audioClip_I_46; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_I_46() { return &___audioClip_I_46; }
+	inline void set_audioClip_I_46(AudioClip_t3680889665 * value)
 	{
-		___audioClip_J_46 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_J_46), value);
+		___audioClip_I_46 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_I_46), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_K_47() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_K_47)); }
-	inline AudioClip_t3680889665 * get_audioClip_K_47() const { return ___audioClip_K_47; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_K_47() { return &___audioClip_K_47; }
-	inline void set_audioClip_K_47(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_J_47() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_J_47)); }
+	inline AudioClip_t3680889665 * get_audioClip_J_47() const { return ___audioClip_J_47; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_J_47() { return &___audioClip_J_47; }
+	inline void set_audioClip_J_47(AudioClip_t3680889665 * value)
 	{
-		___audioClip_K_47 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_K_47), value);
+		___audioClip_J_47 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_J_47), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_L_48() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_L_48)); }
-	inline AudioClip_t3680889665 * get_audioClip_L_48() const { return ___audioClip_L_48; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_L_48() { return &___audioClip_L_48; }
-	inline void set_audioClip_L_48(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_K_48() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_K_48)); }
+	inline AudioClip_t3680889665 * get_audioClip_K_48() const { return ___audioClip_K_48; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_K_48() { return &___audioClip_K_48; }
+	inline void set_audioClip_K_48(AudioClip_t3680889665 * value)
 	{
-		___audioClip_L_48 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_L_48), value);
+		___audioClip_K_48 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_K_48), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_M_49() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_M_49)); }
-	inline AudioClip_t3680889665 * get_audioClip_M_49() const { return ___audioClip_M_49; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_M_49() { return &___audioClip_M_49; }
-	inline void set_audioClip_M_49(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_L_49() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_L_49)); }
+	inline AudioClip_t3680889665 * get_audioClip_L_49() const { return ___audioClip_L_49; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_L_49() { return &___audioClip_L_49; }
+	inline void set_audioClip_L_49(AudioClip_t3680889665 * value)
 	{
-		___audioClip_M_49 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_M_49), value);
+		___audioClip_L_49 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_L_49), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_N_50() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_N_50)); }
-	inline AudioClip_t3680889665 * get_audioClip_N_50() const { return ___audioClip_N_50; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_N_50() { return &___audioClip_N_50; }
-	inline void set_audioClip_N_50(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_M_50() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_M_50)); }
+	inline AudioClip_t3680889665 * get_audioClip_M_50() const { return ___audioClip_M_50; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_M_50() { return &___audioClip_M_50; }
+	inline void set_audioClip_M_50(AudioClip_t3680889665 * value)
 	{
-		___audioClip_N_50 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_N_50), value);
+		___audioClip_M_50 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_M_50), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_O_51() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_O_51)); }
-	inline AudioClip_t3680889665 * get_audioClip_O_51() const { return ___audioClip_O_51; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_O_51() { return &___audioClip_O_51; }
-	inline void set_audioClip_O_51(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_N_51() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_N_51)); }
+	inline AudioClip_t3680889665 * get_audioClip_N_51() const { return ___audioClip_N_51; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_N_51() { return &___audioClip_N_51; }
+	inline void set_audioClip_N_51(AudioClip_t3680889665 * value)
 	{
-		___audioClip_O_51 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_O_51), value);
+		___audioClip_N_51 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_N_51), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_P_52() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_P_52)); }
-	inline AudioClip_t3680889665 * get_audioClip_P_52() const { return ___audioClip_P_52; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_P_52() { return &___audioClip_P_52; }
-	inline void set_audioClip_P_52(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_O_52() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_O_52)); }
+	inline AudioClip_t3680889665 * get_audioClip_O_52() const { return ___audioClip_O_52; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_O_52() { return &___audioClip_O_52; }
+	inline void set_audioClip_O_52(AudioClip_t3680889665 * value)
 	{
-		___audioClip_P_52 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_P_52), value);
+		___audioClip_O_52 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_O_52), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_Q_53() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_Q_53)); }
-	inline AudioClip_t3680889665 * get_audioClip_Q_53() const { return ___audioClip_Q_53; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_Q_53() { return &___audioClip_Q_53; }
-	inline void set_audioClip_Q_53(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_P_53() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_P_53)); }
+	inline AudioClip_t3680889665 * get_audioClip_P_53() const { return ___audioClip_P_53; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_P_53() { return &___audioClip_P_53; }
+	inline void set_audioClip_P_53(AudioClip_t3680889665 * value)
 	{
-		___audioClip_Q_53 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_Q_53), value);
+		___audioClip_P_53 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_P_53), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_R_54() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_R_54)); }
-	inline AudioClip_t3680889665 * get_audioClip_R_54() const { return ___audioClip_R_54; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_R_54() { return &___audioClip_R_54; }
-	inline void set_audioClip_R_54(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_Q_54() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_Q_54)); }
+	inline AudioClip_t3680889665 * get_audioClip_Q_54() const { return ___audioClip_Q_54; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_Q_54() { return &___audioClip_Q_54; }
+	inline void set_audioClip_Q_54(AudioClip_t3680889665 * value)
 	{
-		___audioClip_R_54 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_R_54), value);
+		___audioClip_Q_54 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_Q_54), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_S_55() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_S_55)); }
-	inline AudioClip_t3680889665 * get_audioClip_S_55() const { return ___audioClip_S_55; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_S_55() { return &___audioClip_S_55; }
-	inline void set_audioClip_S_55(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_R_55() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_R_55)); }
+	inline AudioClip_t3680889665 * get_audioClip_R_55() const { return ___audioClip_R_55; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_R_55() { return &___audioClip_R_55; }
+	inline void set_audioClip_R_55(AudioClip_t3680889665 * value)
 	{
-		___audioClip_S_55 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_S_55), value);
+		___audioClip_R_55 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_R_55), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_T_56() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_T_56)); }
-	inline AudioClip_t3680889665 * get_audioClip_T_56() const { return ___audioClip_T_56; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_T_56() { return &___audioClip_T_56; }
-	inline void set_audioClip_T_56(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_S_56() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_S_56)); }
+	inline AudioClip_t3680889665 * get_audioClip_S_56() const { return ___audioClip_S_56; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_S_56() { return &___audioClip_S_56; }
+	inline void set_audioClip_S_56(AudioClip_t3680889665 * value)
 	{
-		___audioClip_T_56 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_T_56), value);
+		___audioClip_S_56 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_S_56), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_U_57() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_U_57)); }
-	inline AudioClip_t3680889665 * get_audioClip_U_57() const { return ___audioClip_U_57; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_U_57() { return &___audioClip_U_57; }
-	inline void set_audioClip_U_57(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_T_57() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_T_57)); }
+	inline AudioClip_t3680889665 * get_audioClip_T_57() const { return ___audioClip_T_57; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_T_57() { return &___audioClip_T_57; }
+	inline void set_audioClip_T_57(AudioClip_t3680889665 * value)
 	{
-		___audioClip_U_57 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_U_57), value);
+		___audioClip_T_57 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_T_57), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_V_58() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_V_58)); }
-	inline AudioClip_t3680889665 * get_audioClip_V_58() const { return ___audioClip_V_58; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_V_58() { return &___audioClip_V_58; }
-	inline void set_audioClip_V_58(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_U_58() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_U_58)); }
+	inline AudioClip_t3680889665 * get_audioClip_U_58() const { return ___audioClip_U_58; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_U_58() { return &___audioClip_U_58; }
+	inline void set_audioClip_U_58(AudioClip_t3680889665 * value)
 	{
-		___audioClip_V_58 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_V_58), value);
+		___audioClip_U_58 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_U_58), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_W_59() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_W_59)); }
-	inline AudioClip_t3680889665 * get_audioClip_W_59() const { return ___audioClip_W_59; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_W_59() { return &___audioClip_W_59; }
-	inline void set_audioClip_W_59(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_V_59() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_V_59)); }
+	inline AudioClip_t3680889665 * get_audioClip_V_59() const { return ___audioClip_V_59; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_V_59() { return &___audioClip_V_59; }
+	inline void set_audioClip_V_59(AudioClip_t3680889665 * value)
 	{
-		___audioClip_W_59 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_W_59), value);
+		___audioClip_V_59 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_V_59), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_X_60() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_X_60)); }
-	inline AudioClip_t3680889665 * get_audioClip_X_60() const { return ___audioClip_X_60; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_X_60() { return &___audioClip_X_60; }
-	inline void set_audioClip_X_60(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_W_60() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_W_60)); }
+	inline AudioClip_t3680889665 * get_audioClip_W_60() const { return ___audioClip_W_60; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_W_60() { return &___audioClip_W_60; }
+	inline void set_audioClip_W_60(AudioClip_t3680889665 * value)
 	{
-		___audioClip_X_60 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_X_60), value);
+		___audioClip_W_60 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_W_60), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_Y_61() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_Y_61)); }
-	inline AudioClip_t3680889665 * get_audioClip_Y_61() const { return ___audioClip_Y_61; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_Y_61() { return &___audioClip_Y_61; }
-	inline void set_audioClip_Y_61(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_X_61() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_X_61)); }
+	inline AudioClip_t3680889665 * get_audioClip_X_61() const { return ___audioClip_X_61; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_X_61() { return &___audioClip_X_61; }
+	inline void set_audioClip_X_61(AudioClip_t3680889665 * value)
 	{
-		___audioClip_Y_61 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_Y_61), value);
+		___audioClip_X_61 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_X_61), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_Z_62() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_Z_62)); }
-	inline AudioClip_t3680889665 * get_audioClip_Z_62() const { return ___audioClip_Z_62; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_Z_62() { return &___audioClip_Z_62; }
-	inline void set_audioClip_Z_62(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_Y_62() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_Y_62)); }
+	inline AudioClip_t3680889665 * get_audioClip_Y_62() const { return ___audioClip_Y_62; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_Y_62() { return &___audioClip_Y_62; }
+	inline void set_audioClip_Y_62(AudioClip_t3680889665 * value)
 	{
-		___audioClip_Z_62 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_Z_62), value);
+		___audioClip_Y_62 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_Y_62), value);
 	}
 
-	inline static int32_t get_offset_of_audioSource_63() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioSource_63)); }
-	inline AudioSource_t3935305588 * get_audioSource_63() const { return ___audioSource_63; }
-	inline AudioSource_t3935305588 ** get_address_of_audioSource_63() { return &___audioSource_63; }
-	inline void set_audioSource_63(AudioSource_t3935305588 * value)
+	inline static int32_t get_offset_of_audioClip_Z_63() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_Z_63)); }
+	inline AudioClip_t3680889665 * get_audioClip_Z_63() const { return ___audioClip_Z_63; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_Z_63() { return &___audioClip_Z_63; }
+	inline void set_audioClip_Z_63(AudioClip_t3680889665 * value)
 	{
-		___audioSource_63 = value;
-		Il2CppCodeGenWriteBarrier((&___audioSource_63), value);
+		___audioClip_Z_63 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_Z_63), value);
 	}
 
-	inline static int32_t get_offset_of_audioclip_64() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioclip_64)); }
-	inline AudioClip_t3680889665 * get_audioclip_64() const { return ___audioclip_64; }
-	inline AudioClip_t3680889665 ** get_address_of_audioclip_64() { return &___audioclip_64; }
-	inline void set_audioclip_64(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_scale_A_64() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_A_64)); }
+	inline float get_scale_A_64() const { return ___scale_A_64; }
+	inline float* get_address_of_scale_A_64() { return &___scale_A_64; }
+	inline void set_scale_A_64(float value)
 	{
-		___audioclip_64 = value;
-		Il2CppCodeGenWriteBarrier((&___audioclip_64), value);
+		___scale_A_64 = value;
 	}
 
-	inline static int32_t get_offset_of_startFingerPos_65() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___startFingerPos_65)); }
-	inline Vector3_t3722313464  get_startFingerPos_65() const { return ___startFingerPos_65; }
-	inline Vector3_t3722313464 * get_address_of_startFingerPos_65() { return &___startFingerPos_65; }
-	inline void set_startFingerPos_65(Vector3_t3722313464  value)
+	inline static int32_t get_offset_of_scale_B_65() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_B_65)); }
+	inline float get_scale_B_65() const { return ___scale_B_65; }
+	inline float* get_address_of_scale_B_65() { return &___scale_B_65; }
+	inline void set_scale_B_65(float value)
 	{
-		___startFingerPos_65 = value;
+		___scale_B_65 = value;
 	}
 
-	inline static int32_t get_offset_of_animationPlayingStatus_66() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animationPlayingStatus_66)); }
-	inline bool get_animationPlayingStatus_66() const { return ___animationPlayingStatus_66; }
-	inline bool* get_address_of_animationPlayingStatus_66() { return &___animationPlayingStatus_66; }
-	inline void set_animationPlayingStatus_66(bool value)
+	inline static int32_t get_offset_of_scale_C_66() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_C_66)); }
+	inline float get_scale_C_66() const { return ___scale_C_66; }
+	inline float* get_address_of_scale_C_66() { return &___scale_C_66; }
+	inline void set_scale_C_66(float value)
 	{
-		___animationPlayingStatus_66 = value;
+		___scale_C_66 = value;
 	}
 
-	inline static int32_t get_offset_of_duration_67() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___duration_67)); }
-	inline float get_duration_67() const { return ___duration_67; }
-	inline float* get_address_of_duration_67() { return &___duration_67; }
-	inline void set_duration_67(float value)
+	inline static int32_t get_offset_of_scale_D_67() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_D_67)); }
+	inline float get_scale_D_67() const { return ___scale_D_67; }
+	inline float* get_address_of_scale_D_67() { return &___scale_D_67; }
+	inline void set_scale_D_67(float value)
 	{
-		___duration_67 = value;
+		___scale_D_67 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_E_68() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_E_68)); }
+	inline float get_scale_E_68() const { return ___scale_E_68; }
+	inline float* get_address_of_scale_E_68() { return &___scale_E_68; }
+	inline void set_scale_E_68(float value)
+	{
+		___scale_E_68 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_F_69() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_F_69)); }
+	inline float get_scale_F_69() const { return ___scale_F_69; }
+	inline float* get_address_of_scale_F_69() { return &___scale_F_69; }
+	inline void set_scale_F_69(float value)
+	{
+		___scale_F_69 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_G_70() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_G_70)); }
+	inline float get_scale_G_70() const { return ___scale_G_70; }
+	inline float* get_address_of_scale_G_70() { return &___scale_G_70; }
+	inline void set_scale_G_70(float value)
+	{
+		___scale_G_70 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_H_71() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_H_71)); }
+	inline float get_scale_H_71() const { return ___scale_H_71; }
+	inline float* get_address_of_scale_H_71() { return &___scale_H_71; }
+	inline void set_scale_H_71(float value)
+	{
+		___scale_H_71 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_I_72() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_I_72)); }
+	inline float get_scale_I_72() const { return ___scale_I_72; }
+	inline float* get_address_of_scale_I_72() { return &___scale_I_72; }
+	inline void set_scale_I_72(float value)
+	{
+		___scale_I_72 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_J_73() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_J_73)); }
+	inline float get_scale_J_73() const { return ___scale_J_73; }
+	inline float* get_address_of_scale_J_73() { return &___scale_J_73; }
+	inline void set_scale_J_73(float value)
+	{
+		___scale_J_73 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_K_74() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_K_74)); }
+	inline float get_scale_K_74() const { return ___scale_K_74; }
+	inline float* get_address_of_scale_K_74() { return &___scale_K_74; }
+	inline void set_scale_K_74(float value)
+	{
+		___scale_K_74 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_L_75() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_L_75)); }
+	inline float get_scale_L_75() const { return ___scale_L_75; }
+	inline float* get_address_of_scale_L_75() { return &___scale_L_75; }
+	inline void set_scale_L_75(float value)
+	{
+		___scale_L_75 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_M_76() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_M_76)); }
+	inline float get_scale_M_76() const { return ___scale_M_76; }
+	inline float* get_address_of_scale_M_76() { return &___scale_M_76; }
+	inline void set_scale_M_76(float value)
+	{
+		___scale_M_76 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_N_77() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_N_77)); }
+	inline float get_scale_N_77() const { return ___scale_N_77; }
+	inline float* get_address_of_scale_N_77() { return &___scale_N_77; }
+	inline void set_scale_N_77(float value)
+	{
+		___scale_N_77 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_O_78() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_O_78)); }
+	inline float get_scale_O_78() const { return ___scale_O_78; }
+	inline float* get_address_of_scale_O_78() { return &___scale_O_78; }
+	inline void set_scale_O_78(float value)
+	{
+		___scale_O_78 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_P_79() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_P_79)); }
+	inline float get_scale_P_79() const { return ___scale_P_79; }
+	inline float* get_address_of_scale_P_79() { return &___scale_P_79; }
+	inline void set_scale_P_79(float value)
+	{
+		___scale_P_79 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_Q_80() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_Q_80)); }
+	inline float get_scale_Q_80() const { return ___scale_Q_80; }
+	inline float* get_address_of_scale_Q_80() { return &___scale_Q_80; }
+	inline void set_scale_Q_80(float value)
+	{
+		___scale_Q_80 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_R_81() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_R_81)); }
+	inline float get_scale_R_81() const { return ___scale_R_81; }
+	inline float* get_address_of_scale_R_81() { return &___scale_R_81; }
+	inline void set_scale_R_81(float value)
+	{
+		___scale_R_81 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_S_82() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_S_82)); }
+	inline float get_scale_S_82() const { return ___scale_S_82; }
+	inline float* get_address_of_scale_S_82() { return &___scale_S_82; }
+	inline void set_scale_S_82(float value)
+	{
+		___scale_S_82 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_T_83() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_T_83)); }
+	inline float get_scale_T_83() const { return ___scale_T_83; }
+	inline float* get_address_of_scale_T_83() { return &___scale_T_83; }
+	inline void set_scale_T_83(float value)
+	{
+		___scale_T_83 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_U_84() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_U_84)); }
+	inline float get_scale_U_84() const { return ___scale_U_84; }
+	inline float* get_address_of_scale_U_84() { return &___scale_U_84; }
+	inline void set_scale_U_84(float value)
+	{
+		___scale_U_84 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_V_85() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_V_85)); }
+	inline float get_scale_V_85() const { return ___scale_V_85; }
+	inline float* get_address_of_scale_V_85() { return &___scale_V_85; }
+	inline void set_scale_V_85(float value)
+	{
+		___scale_V_85 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_W_86() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_W_86)); }
+	inline float get_scale_W_86() const { return ___scale_W_86; }
+	inline float* get_address_of_scale_W_86() { return &___scale_W_86; }
+	inline void set_scale_W_86(float value)
+	{
+		___scale_W_86 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_X_87() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_X_87)); }
+	inline float get_scale_X_87() const { return ___scale_X_87; }
+	inline float* get_address_of_scale_X_87() { return &___scale_X_87; }
+	inline void set_scale_X_87(float value)
+	{
+		___scale_X_87 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_Y_88() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_Y_88)); }
+	inline float get_scale_Y_88() const { return ___scale_Y_88; }
+	inline float* get_address_of_scale_Y_88() { return &___scale_Y_88; }
+	inline void set_scale_Y_88(float value)
+	{
+		___scale_Y_88 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_Z_89() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_Z_89)); }
+	inline float get_scale_Z_89() const { return ___scale_Z_89; }
+	inline float* get_address_of_scale_Z_89() { return &___scale_Z_89; }
+	inline void set_scale_Z_89(float value)
+	{
+		___scale_Z_89 = value;
+	}
+
+	inline static int32_t get_offset_of_audioSource_90() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioSource_90)); }
+	inline AudioSource_t3935305588 * get_audioSource_90() const { return ___audioSource_90; }
+	inline AudioSource_t3935305588 ** get_address_of_audioSource_90() { return &___audioSource_90; }
+	inline void set_audioSource_90(AudioSource_t3935305588 * value)
+	{
+		___audioSource_90 = value;
+		Il2CppCodeGenWriteBarrier((&___audioSource_90), value);
+	}
+
+	inline static int32_t get_offset_of_audioclip_91() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioclip_91)); }
+	inline AudioClip_t3680889665 * get_audioclip_91() const { return ___audioclip_91; }
+	inline AudioClip_t3680889665 ** get_address_of_audioclip_91() { return &___audioclip_91; }
+	inline void set_audioclip_91(AudioClip_t3680889665 * value)
+	{
+		___audioclip_91 = value;
+		Il2CppCodeGenWriteBarrier((&___audioclip_91), value);
+	}
+
+	inline static int32_t get_offset_of_startFingerPos_92() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___startFingerPos_92)); }
+	inline Vector3_t3722313464  get_startFingerPos_92() const { return ___startFingerPos_92; }
+	inline Vector3_t3722313464 * get_address_of_startFingerPos_92() { return &___startFingerPos_92; }
+	inline void set_startFingerPos_92(Vector3_t3722313464  value)
+	{
+		___startFingerPos_92 = value;
+	}
+
+	inline static int32_t get_offset_of_animationPlayingStatus_93() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animationPlayingStatus_93)); }
+	inline bool get_animationPlayingStatus_93() const { return ___animationPlayingStatus_93; }
+	inline bool* get_address_of_animationPlayingStatus_93() { return &___animationPlayingStatus_93; }
+	inline void set_animationPlayingStatus_93(bool value)
+	{
+		___animationPlayingStatus_93 = value;
+	}
+
+	inline static int32_t get_offset_of_animalScale_94() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animalScale_94)); }
+	inline float get_animalScale_94() const { return ___animalScale_94; }
+	inline float* get_address_of_animalScale_94() { return &___animalScale_94; }
+	inline void set_animalScale_94(float value)
+	{
+		___animalScale_94 = value;
+	}
+
+	inline static int32_t get_offset_of_duration_95() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___duration_95)); }
+	inline float get_duration_95() const { return ___duration_95; }
+	inline float* get_address_of_duration_95() { return &___duration_95; }
+	inline void set_duration_95(float value)
+	{
+		___duration_95 = value;
 	}
 };
 
@@ -7079,16 +7359,16 @@ struct ObjectPlacerAnimals_t560344624_StaticFields
 {
 public:
 	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> UnityEngine.XR.iOS.ObjectPlacerAnimals::<>f__switch$map2
-	Dictionary_2_t2736202052 * ___U3CU3Ef__switchU24map2_68;
+	Dictionary_2_t2736202052 * ___U3CU3Ef__switchU24map2_96;
 
 public:
-	inline static int32_t get_offset_of_U3CU3Ef__switchU24map2_68() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624_StaticFields, ___U3CU3Ef__switchU24map2_68)); }
-	inline Dictionary_2_t2736202052 * get_U3CU3Ef__switchU24map2_68() const { return ___U3CU3Ef__switchU24map2_68; }
-	inline Dictionary_2_t2736202052 ** get_address_of_U3CU3Ef__switchU24map2_68() { return &___U3CU3Ef__switchU24map2_68; }
-	inline void set_U3CU3Ef__switchU24map2_68(Dictionary_2_t2736202052 * value)
+	inline static int32_t get_offset_of_U3CU3Ef__switchU24map2_96() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624_StaticFields, ___U3CU3Ef__switchU24map2_96)); }
+	inline Dictionary_2_t2736202052 * get_U3CU3Ef__switchU24map2_96() const { return ___U3CU3Ef__switchU24map2_96; }
+	inline Dictionary_2_t2736202052 ** get_address_of_U3CU3Ef__switchU24map2_96() { return &___U3CU3Ef__switchU24map2_96; }
+	inline void set_U3CU3Ef__switchU24map2_96(Dictionary_2_t2736202052 * value)
 	{
-		___U3CU3Ef__switchU24map2_68 = value;
-		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__switchU24map2_68), value);
+		___U3CU3Ef__switchU24map2_96 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__switchU24map2_96), value);
 	}
 };
 
@@ -11068,75 +11348,103 @@ extern const int32_t g_FieldOffsetTable2206[5] =
 	U3CTakeScreenshotAndSaveU3Ec__Iterator0_t1245214444::get_offset_of_U24PC_4(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2207 = { sizeof (ObjectPlacerAnimals_t560344624), -1, sizeof(ObjectPlacerAnimals_t560344624_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable2207[67] = 
+extern const int32_t g_FieldOffsetTable2207[95] = 
 {
 	ObjectPlacerAnimals_t560344624::get_offset_of_m_HitTransform_2(),
 	ObjectPlacerAnimals_t560344624::get_offset_of_maxRayDistance_3(),
 	ObjectPlacerAnimals_t560344624::get_offset_of_collisionLayer_4(),
 	0,
 	ObjectPlacerAnimals_t560344624::get_offset_of_pointers_6(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animalAnimator_7(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_arObject_8(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_director_9(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_A_10(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_B_11(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_C_12(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_D_13(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_E_14(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_F_15(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_G_16(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_H_17(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_I_18(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_J_19(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_K_20(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_L_21(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_M_22(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_N_23(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_O_24(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_P_25(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_Q_26(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_R_27(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_S_28(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_T_29(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_U_30(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_V_31(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_W_32(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_X_33(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_Y_34(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animal_Z_35(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_currentalphabet_36(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_A_37(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_B_38(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_C_39(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_D_40(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_E_41(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_F_42(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_G_43(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_H_44(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_I_45(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_J_46(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_K_47(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_L_48(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_M_49(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_N_50(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_O_51(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_P_52(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_Q_53(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_R_54(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_S_55(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_T_56(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_U_57(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_V_58(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_W_59(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_X_60(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_Y_61(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_Z_62(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioSource_63(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_audioclip_64(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_startFingerPos_65(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_animationPlayingStatus_66(),
-	ObjectPlacerAnimals_t560344624::get_offset_of_duration_67(),
-	ObjectPlacerAnimals_t560344624_StaticFields::get_offset_of_U3CU3Ef__switchU24map2_68(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_rDistance_7(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animalAnimator_8(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_arObject_9(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_director_10(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_A_11(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_B_12(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_C_13(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_D_14(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_E_15(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_F_16(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_G_17(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_H_18(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_I_19(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_J_20(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_K_21(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_L_22(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_M_23(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_N_24(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_O_25(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_P_26(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_Q_27(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_R_28(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_S_29(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_T_30(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_U_31(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_V_32(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_W_33(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_X_34(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_Y_35(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animal_Z_36(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_currentalphabet_37(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_A_38(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_B_39(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_C_40(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_D_41(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_E_42(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_F_43(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_G_44(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_H_45(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_I_46(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_J_47(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_K_48(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_L_49(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_M_50(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_N_51(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_O_52(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_P_53(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_Q_54(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_R_55(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_S_56(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_T_57(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_U_58(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_V_59(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_W_60(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_X_61(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_Y_62(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioClip_Z_63(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_A_64(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_B_65(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_C_66(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_D_67(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_E_68(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_F_69(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_G_70(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_H_71(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_I_72(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_J_73(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_K_74(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_L_75(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_M_76(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_N_77(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_O_78(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_P_79(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_Q_80(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_R_81(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_S_82(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_T_83(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_U_84(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_V_85(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_W_86(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_X_87(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_Y_88(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_scale_Z_89(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioSource_90(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_audioclip_91(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_startFingerPos_92(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animationPlayingStatus_93(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_animalScale_94(),
+	ObjectPlacerAnimals_t560344624::get_offset_of_duration_95(),
+	ObjectPlacerAnimals_t560344624_StaticFields::get_offset_of_U3CU3Ef__switchU24map2_96(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2208 = { sizeof (U3CTakeScreenshotAndSaveU3Ec__Iterator0_t808000212), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable2208[5] = 

@@ -128,7 +128,9 @@ class animalsAR: UIViewController, popupDelegate {
         if self.animationButton.isHidden == true {
             self.animationButton.isHidden = false
         }
-        
+        print(notfication.userInfo!["text"])
+        let currentView = notfication.userInfo!["text"] as! String
+     //   Toast().showMessage(message: "Distance : \(currentView)")
     }
     
     @objc func handleLoading(notfication: NSNotification){

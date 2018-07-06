@@ -1557,6 +1557,14 @@ extern const uint32_t ObjectPlacerAnimals_loadAlphabet_m4144843263_MetadataUsage
 extern RuntimeClass* ObjectPlacerAnimals_t560344624_il2cpp_TypeInfo_var;
 extern const RuntimeMethod* GameObject_GetComponent_TisAnimator_t434523843_m440019408_RuntimeMethod_var;
 extern const RuntimeMethod* GameObject_GetComponent_TisPlayableDirector_t508516997_m1944561993_RuntimeMethod_var;
+extern String_t* _stringLiteral2151652593;
+extern String_t* _stringLiteral1099041182;
+extern String_t* _stringLiteral763915734;
+extern String_t* _stringLiteral879581960;
+extern String_t* _stringLiteral776121636;
+extern String_t* _stringLiteral3082488388;
+extern String_t* _stringLiteral2828523309;
+extern String_t* _stringLiteral3452614528;
 extern const uint32_t ObjectPlacerAnimals_chooseModel_m3209889911_MetadataUsageId;
 extern String_t* _stringLiteral183326553;
 extern String_t* _stringLiteral1494025550;
@@ -15181,128 +15189,184 @@ public:
 	LayerMask_t3493934918  ___collisionLayer_4;
 	// UnityEngine.GameObject[] UnityEngine.XR.iOS.ObjectPlacerAnimals::pointers
 	GameObjectU5BU5D_t3328599146* ___pointers_6;
+	// System.Double UnityEngine.XR.iOS.ObjectPlacerAnimals::rDistance
+	double ___rDistance_7;
 	// UnityEngine.Animator UnityEngine.XR.iOS.ObjectPlacerAnimals::animalAnimator
-	Animator_t434523843 * ___animalAnimator_7;
+	Animator_t434523843 * ___animalAnimator_8;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::arObject
-	GameObject_t1113636619 * ___arObject_8;
+	GameObject_t1113636619 * ___arObject_9;
 	// UnityEngine.Playables.PlayableDirector UnityEngine.XR.iOS.ObjectPlacerAnimals::director
-	PlayableDirector_t508516997 * ___director_9;
+	PlayableDirector_t508516997 * ___director_10;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_A
-	GameObject_t1113636619 * ___animal_A_10;
+	GameObject_t1113636619 * ___animal_A_11;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_B
-	GameObject_t1113636619 * ___animal_B_11;
+	GameObject_t1113636619 * ___animal_B_12;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_C
-	GameObject_t1113636619 * ___animal_C_12;
+	GameObject_t1113636619 * ___animal_C_13;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_D
-	GameObject_t1113636619 * ___animal_D_13;
+	GameObject_t1113636619 * ___animal_D_14;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_E
-	GameObject_t1113636619 * ___animal_E_14;
+	GameObject_t1113636619 * ___animal_E_15;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_F
-	GameObject_t1113636619 * ___animal_F_15;
+	GameObject_t1113636619 * ___animal_F_16;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_G
-	GameObject_t1113636619 * ___animal_G_16;
+	GameObject_t1113636619 * ___animal_G_17;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_H
-	GameObject_t1113636619 * ___animal_H_17;
+	GameObject_t1113636619 * ___animal_H_18;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_I
-	GameObject_t1113636619 * ___animal_I_18;
+	GameObject_t1113636619 * ___animal_I_19;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_J
-	GameObject_t1113636619 * ___animal_J_19;
+	GameObject_t1113636619 * ___animal_J_20;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_K
-	GameObject_t1113636619 * ___animal_K_20;
+	GameObject_t1113636619 * ___animal_K_21;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_L
-	GameObject_t1113636619 * ___animal_L_21;
+	GameObject_t1113636619 * ___animal_L_22;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_M
-	GameObject_t1113636619 * ___animal_M_22;
+	GameObject_t1113636619 * ___animal_M_23;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_N
-	GameObject_t1113636619 * ___animal_N_23;
+	GameObject_t1113636619 * ___animal_N_24;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_O
-	GameObject_t1113636619 * ___animal_O_24;
+	GameObject_t1113636619 * ___animal_O_25;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_P
-	GameObject_t1113636619 * ___animal_P_25;
+	GameObject_t1113636619 * ___animal_P_26;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_Q
-	GameObject_t1113636619 * ___animal_Q_26;
+	GameObject_t1113636619 * ___animal_Q_27;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_R
-	GameObject_t1113636619 * ___animal_R_27;
+	GameObject_t1113636619 * ___animal_R_28;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_S
-	GameObject_t1113636619 * ___animal_S_28;
+	GameObject_t1113636619 * ___animal_S_29;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_T
-	GameObject_t1113636619 * ___animal_T_29;
+	GameObject_t1113636619 * ___animal_T_30;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_U
-	GameObject_t1113636619 * ___animal_U_30;
+	GameObject_t1113636619 * ___animal_U_31;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_V
-	GameObject_t1113636619 * ___animal_V_31;
+	GameObject_t1113636619 * ___animal_V_32;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_W
-	GameObject_t1113636619 * ___animal_W_32;
+	GameObject_t1113636619 * ___animal_W_33;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_X
-	GameObject_t1113636619 * ___animal_X_33;
+	GameObject_t1113636619 * ___animal_X_34;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_Y
-	GameObject_t1113636619 * ___animal_Y_34;
+	GameObject_t1113636619 * ___animal_Y_35;
 	// UnityEngine.GameObject UnityEngine.XR.iOS.ObjectPlacerAnimals::animal_Z
-	GameObject_t1113636619 * ___animal_Z_35;
+	GameObject_t1113636619 * ___animal_Z_36;
 	// System.String UnityEngine.XR.iOS.ObjectPlacerAnimals::currentalphabet
-	String_t* ___currentalphabet_36;
+	String_t* ___currentalphabet_37;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_A
-	AudioClip_t3680889665 * ___audioClip_A_37;
+	AudioClip_t3680889665 * ___audioClip_A_38;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_B
-	AudioClip_t3680889665 * ___audioClip_B_38;
+	AudioClip_t3680889665 * ___audioClip_B_39;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_C
-	AudioClip_t3680889665 * ___audioClip_C_39;
+	AudioClip_t3680889665 * ___audioClip_C_40;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_D
-	AudioClip_t3680889665 * ___audioClip_D_40;
+	AudioClip_t3680889665 * ___audioClip_D_41;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_E
-	AudioClip_t3680889665 * ___audioClip_E_41;
+	AudioClip_t3680889665 * ___audioClip_E_42;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_F
-	AudioClip_t3680889665 * ___audioClip_F_42;
+	AudioClip_t3680889665 * ___audioClip_F_43;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_G
-	AudioClip_t3680889665 * ___audioClip_G_43;
+	AudioClip_t3680889665 * ___audioClip_G_44;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_H
-	AudioClip_t3680889665 * ___audioClip_H_44;
+	AudioClip_t3680889665 * ___audioClip_H_45;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_I
-	AudioClip_t3680889665 * ___audioClip_I_45;
+	AudioClip_t3680889665 * ___audioClip_I_46;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_J
-	AudioClip_t3680889665 * ___audioClip_J_46;
+	AudioClip_t3680889665 * ___audioClip_J_47;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_K
-	AudioClip_t3680889665 * ___audioClip_K_47;
+	AudioClip_t3680889665 * ___audioClip_K_48;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_L
-	AudioClip_t3680889665 * ___audioClip_L_48;
+	AudioClip_t3680889665 * ___audioClip_L_49;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_M
-	AudioClip_t3680889665 * ___audioClip_M_49;
+	AudioClip_t3680889665 * ___audioClip_M_50;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_N
-	AudioClip_t3680889665 * ___audioClip_N_50;
+	AudioClip_t3680889665 * ___audioClip_N_51;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_O
-	AudioClip_t3680889665 * ___audioClip_O_51;
+	AudioClip_t3680889665 * ___audioClip_O_52;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_P
-	AudioClip_t3680889665 * ___audioClip_P_52;
+	AudioClip_t3680889665 * ___audioClip_P_53;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_Q
-	AudioClip_t3680889665 * ___audioClip_Q_53;
+	AudioClip_t3680889665 * ___audioClip_Q_54;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_R
-	AudioClip_t3680889665 * ___audioClip_R_54;
+	AudioClip_t3680889665 * ___audioClip_R_55;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_S
-	AudioClip_t3680889665 * ___audioClip_S_55;
+	AudioClip_t3680889665 * ___audioClip_S_56;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_T
-	AudioClip_t3680889665 * ___audioClip_T_56;
+	AudioClip_t3680889665 * ___audioClip_T_57;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_U
-	AudioClip_t3680889665 * ___audioClip_U_57;
+	AudioClip_t3680889665 * ___audioClip_U_58;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_V
-	AudioClip_t3680889665 * ___audioClip_V_58;
+	AudioClip_t3680889665 * ___audioClip_V_59;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_W
-	AudioClip_t3680889665 * ___audioClip_W_59;
+	AudioClip_t3680889665 * ___audioClip_W_60;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_X
-	AudioClip_t3680889665 * ___audioClip_X_60;
+	AudioClip_t3680889665 * ___audioClip_X_61;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_Y
-	AudioClip_t3680889665 * ___audioClip_Y_61;
+	AudioClip_t3680889665 * ___audioClip_Y_62;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioClip_Z
-	AudioClip_t3680889665 * ___audioClip_Z_62;
+	AudioClip_t3680889665 * ___audioClip_Z_63;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_A
+	float ___scale_A_64;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_B
+	float ___scale_B_65;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_C
+	float ___scale_C_66;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_D
+	float ___scale_D_67;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_E
+	float ___scale_E_68;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_F
+	float ___scale_F_69;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_G
+	float ___scale_G_70;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_H
+	float ___scale_H_71;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_I
+	float ___scale_I_72;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_J
+	float ___scale_J_73;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_K
+	float ___scale_K_74;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_L
+	float ___scale_L_75;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_M
+	float ___scale_M_76;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_N
+	float ___scale_N_77;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_O
+	float ___scale_O_78;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_P
+	float ___scale_P_79;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_Q
+	float ___scale_Q_80;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_R
+	float ___scale_R_81;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_S
+	float ___scale_S_82;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_T
+	float ___scale_T_83;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_U
+	float ___scale_U_84;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_V
+	float ___scale_V_85;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_W
+	float ___scale_W_86;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_X
+	float ___scale_X_87;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_Y
+	float ___scale_Y_88;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::scale_Z
+	float ___scale_Z_89;
 	// UnityEngine.AudioSource UnityEngine.XR.iOS.ObjectPlacerAnimals::audioSource
-	AudioSource_t3935305588 * ___audioSource_63;
+	AudioSource_t3935305588 * ___audioSource_90;
 	// UnityEngine.AudioClip UnityEngine.XR.iOS.ObjectPlacerAnimals::audioclip
-	AudioClip_t3680889665 * ___audioclip_64;
+	AudioClip_t3680889665 * ___audioclip_91;
 	// UnityEngine.Vector3 UnityEngine.XR.iOS.ObjectPlacerAnimals::startFingerPos
-	Vector3_t3722313464  ___startFingerPos_65;
+	Vector3_t3722313464  ___startFingerPos_92;
 	// System.Boolean UnityEngine.XR.iOS.ObjectPlacerAnimals::animationPlayingStatus
-	bool ___animationPlayingStatus_66;
+	bool ___animationPlayingStatus_93;
+	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::animalScale
+	float ___animalScale_94;
 	// System.Single UnityEngine.XR.iOS.ObjectPlacerAnimals::duration
-	float ___duration_67;
+	float ___duration_95;
 
 public:
 	inline static int32_t get_offset_of_m_HitTransform_2() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___m_HitTransform_2)); }
@@ -15339,550 +15403,774 @@ public:
 		Il2CppCodeGenWriteBarrier((&___pointers_6), value);
 	}
 
-	inline static int32_t get_offset_of_animalAnimator_7() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animalAnimator_7)); }
-	inline Animator_t434523843 * get_animalAnimator_7() const { return ___animalAnimator_7; }
-	inline Animator_t434523843 ** get_address_of_animalAnimator_7() { return &___animalAnimator_7; }
-	inline void set_animalAnimator_7(Animator_t434523843 * value)
+	inline static int32_t get_offset_of_rDistance_7() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___rDistance_7)); }
+	inline double get_rDistance_7() const { return ___rDistance_7; }
+	inline double* get_address_of_rDistance_7() { return &___rDistance_7; }
+	inline void set_rDistance_7(double value)
 	{
-		___animalAnimator_7 = value;
-		Il2CppCodeGenWriteBarrier((&___animalAnimator_7), value);
+		___rDistance_7 = value;
 	}
 
-	inline static int32_t get_offset_of_arObject_8() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___arObject_8)); }
-	inline GameObject_t1113636619 * get_arObject_8() const { return ___arObject_8; }
-	inline GameObject_t1113636619 ** get_address_of_arObject_8() { return &___arObject_8; }
-	inline void set_arObject_8(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animalAnimator_8() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animalAnimator_8)); }
+	inline Animator_t434523843 * get_animalAnimator_8() const { return ___animalAnimator_8; }
+	inline Animator_t434523843 ** get_address_of_animalAnimator_8() { return &___animalAnimator_8; }
+	inline void set_animalAnimator_8(Animator_t434523843 * value)
 	{
-		___arObject_8 = value;
-		Il2CppCodeGenWriteBarrier((&___arObject_8), value);
+		___animalAnimator_8 = value;
+		Il2CppCodeGenWriteBarrier((&___animalAnimator_8), value);
 	}
 
-	inline static int32_t get_offset_of_director_9() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___director_9)); }
-	inline PlayableDirector_t508516997 * get_director_9() const { return ___director_9; }
-	inline PlayableDirector_t508516997 ** get_address_of_director_9() { return &___director_9; }
-	inline void set_director_9(PlayableDirector_t508516997 * value)
+	inline static int32_t get_offset_of_arObject_9() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___arObject_9)); }
+	inline GameObject_t1113636619 * get_arObject_9() const { return ___arObject_9; }
+	inline GameObject_t1113636619 ** get_address_of_arObject_9() { return &___arObject_9; }
+	inline void set_arObject_9(GameObject_t1113636619 * value)
 	{
-		___director_9 = value;
-		Il2CppCodeGenWriteBarrier((&___director_9), value);
+		___arObject_9 = value;
+		Il2CppCodeGenWriteBarrier((&___arObject_9), value);
 	}
 
-	inline static int32_t get_offset_of_animal_A_10() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_A_10)); }
-	inline GameObject_t1113636619 * get_animal_A_10() const { return ___animal_A_10; }
-	inline GameObject_t1113636619 ** get_address_of_animal_A_10() { return &___animal_A_10; }
-	inline void set_animal_A_10(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_director_10() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___director_10)); }
+	inline PlayableDirector_t508516997 * get_director_10() const { return ___director_10; }
+	inline PlayableDirector_t508516997 ** get_address_of_director_10() { return &___director_10; }
+	inline void set_director_10(PlayableDirector_t508516997 * value)
 	{
-		___animal_A_10 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_A_10), value);
+		___director_10 = value;
+		Il2CppCodeGenWriteBarrier((&___director_10), value);
 	}
 
-	inline static int32_t get_offset_of_animal_B_11() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_B_11)); }
-	inline GameObject_t1113636619 * get_animal_B_11() const { return ___animal_B_11; }
-	inline GameObject_t1113636619 ** get_address_of_animal_B_11() { return &___animal_B_11; }
-	inline void set_animal_B_11(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_A_11() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_A_11)); }
+	inline GameObject_t1113636619 * get_animal_A_11() const { return ___animal_A_11; }
+	inline GameObject_t1113636619 ** get_address_of_animal_A_11() { return &___animal_A_11; }
+	inline void set_animal_A_11(GameObject_t1113636619 * value)
 	{
-		___animal_B_11 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_B_11), value);
+		___animal_A_11 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_A_11), value);
 	}
 
-	inline static int32_t get_offset_of_animal_C_12() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_C_12)); }
-	inline GameObject_t1113636619 * get_animal_C_12() const { return ___animal_C_12; }
-	inline GameObject_t1113636619 ** get_address_of_animal_C_12() { return &___animal_C_12; }
-	inline void set_animal_C_12(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_B_12() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_B_12)); }
+	inline GameObject_t1113636619 * get_animal_B_12() const { return ___animal_B_12; }
+	inline GameObject_t1113636619 ** get_address_of_animal_B_12() { return &___animal_B_12; }
+	inline void set_animal_B_12(GameObject_t1113636619 * value)
 	{
-		___animal_C_12 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_C_12), value);
+		___animal_B_12 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_B_12), value);
 	}
 
-	inline static int32_t get_offset_of_animal_D_13() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_D_13)); }
-	inline GameObject_t1113636619 * get_animal_D_13() const { return ___animal_D_13; }
-	inline GameObject_t1113636619 ** get_address_of_animal_D_13() { return &___animal_D_13; }
-	inline void set_animal_D_13(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_C_13() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_C_13)); }
+	inline GameObject_t1113636619 * get_animal_C_13() const { return ___animal_C_13; }
+	inline GameObject_t1113636619 ** get_address_of_animal_C_13() { return &___animal_C_13; }
+	inline void set_animal_C_13(GameObject_t1113636619 * value)
 	{
-		___animal_D_13 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_D_13), value);
+		___animal_C_13 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_C_13), value);
 	}
 
-	inline static int32_t get_offset_of_animal_E_14() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_E_14)); }
-	inline GameObject_t1113636619 * get_animal_E_14() const { return ___animal_E_14; }
-	inline GameObject_t1113636619 ** get_address_of_animal_E_14() { return &___animal_E_14; }
-	inline void set_animal_E_14(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_D_14() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_D_14)); }
+	inline GameObject_t1113636619 * get_animal_D_14() const { return ___animal_D_14; }
+	inline GameObject_t1113636619 ** get_address_of_animal_D_14() { return &___animal_D_14; }
+	inline void set_animal_D_14(GameObject_t1113636619 * value)
 	{
-		___animal_E_14 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_E_14), value);
+		___animal_D_14 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_D_14), value);
 	}
 
-	inline static int32_t get_offset_of_animal_F_15() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_F_15)); }
-	inline GameObject_t1113636619 * get_animal_F_15() const { return ___animal_F_15; }
-	inline GameObject_t1113636619 ** get_address_of_animal_F_15() { return &___animal_F_15; }
-	inline void set_animal_F_15(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_E_15() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_E_15)); }
+	inline GameObject_t1113636619 * get_animal_E_15() const { return ___animal_E_15; }
+	inline GameObject_t1113636619 ** get_address_of_animal_E_15() { return &___animal_E_15; }
+	inline void set_animal_E_15(GameObject_t1113636619 * value)
 	{
-		___animal_F_15 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_F_15), value);
+		___animal_E_15 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_E_15), value);
 	}
 
-	inline static int32_t get_offset_of_animal_G_16() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_G_16)); }
-	inline GameObject_t1113636619 * get_animal_G_16() const { return ___animal_G_16; }
-	inline GameObject_t1113636619 ** get_address_of_animal_G_16() { return &___animal_G_16; }
-	inline void set_animal_G_16(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_F_16() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_F_16)); }
+	inline GameObject_t1113636619 * get_animal_F_16() const { return ___animal_F_16; }
+	inline GameObject_t1113636619 ** get_address_of_animal_F_16() { return &___animal_F_16; }
+	inline void set_animal_F_16(GameObject_t1113636619 * value)
 	{
-		___animal_G_16 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_G_16), value);
+		___animal_F_16 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_F_16), value);
 	}
 
-	inline static int32_t get_offset_of_animal_H_17() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_H_17)); }
-	inline GameObject_t1113636619 * get_animal_H_17() const { return ___animal_H_17; }
-	inline GameObject_t1113636619 ** get_address_of_animal_H_17() { return &___animal_H_17; }
-	inline void set_animal_H_17(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_G_17() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_G_17)); }
+	inline GameObject_t1113636619 * get_animal_G_17() const { return ___animal_G_17; }
+	inline GameObject_t1113636619 ** get_address_of_animal_G_17() { return &___animal_G_17; }
+	inline void set_animal_G_17(GameObject_t1113636619 * value)
 	{
-		___animal_H_17 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_H_17), value);
+		___animal_G_17 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_G_17), value);
 	}
 
-	inline static int32_t get_offset_of_animal_I_18() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_I_18)); }
-	inline GameObject_t1113636619 * get_animal_I_18() const { return ___animal_I_18; }
-	inline GameObject_t1113636619 ** get_address_of_animal_I_18() { return &___animal_I_18; }
-	inline void set_animal_I_18(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_H_18() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_H_18)); }
+	inline GameObject_t1113636619 * get_animal_H_18() const { return ___animal_H_18; }
+	inline GameObject_t1113636619 ** get_address_of_animal_H_18() { return &___animal_H_18; }
+	inline void set_animal_H_18(GameObject_t1113636619 * value)
 	{
-		___animal_I_18 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_I_18), value);
+		___animal_H_18 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_H_18), value);
 	}
 
-	inline static int32_t get_offset_of_animal_J_19() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_J_19)); }
-	inline GameObject_t1113636619 * get_animal_J_19() const { return ___animal_J_19; }
-	inline GameObject_t1113636619 ** get_address_of_animal_J_19() { return &___animal_J_19; }
-	inline void set_animal_J_19(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_I_19() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_I_19)); }
+	inline GameObject_t1113636619 * get_animal_I_19() const { return ___animal_I_19; }
+	inline GameObject_t1113636619 ** get_address_of_animal_I_19() { return &___animal_I_19; }
+	inline void set_animal_I_19(GameObject_t1113636619 * value)
 	{
-		___animal_J_19 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_J_19), value);
+		___animal_I_19 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_I_19), value);
 	}
 
-	inline static int32_t get_offset_of_animal_K_20() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_K_20)); }
-	inline GameObject_t1113636619 * get_animal_K_20() const { return ___animal_K_20; }
-	inline GameObject_t1113636619 ** get_address_of_animal_K_20() { return &___animal_K_20; }
-	inline void set_animal_K_20(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_J_20() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_J_20)); }
+	inline GameObject_t1113636619 * get_animal_J_20() const { return ___animal_J_20; }
+	inline GameObject_t1113636619 ** get_address_of_animal_J_20() { return &___animal_J_20; }
+	inline void set_animal_J_20(GameObject_t1113636619 * value)
 	{
-		___animal_K_20 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_K_20), value);
+		___animal_J_20 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_J_20), value);
 	}
 
-	inline static int32_t get_offset_of_animal_L_21() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_L_21)); }
-	inline GameObject_t1113636619 * get_animal_L_21() const { return ___animal_L_21; }
-	inline GameObject_t1113636619 ** get_address_of_animal_L_21() { return &___animal_L_21; }
-	inline void set_animal_L_21(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_K_21() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_K_21)); }
+	inline GameObject_t1113636619 * get_animal_K_21() const { return ___animal_K_21; }
+	inline GameObject_t1113636619 ** get_address_of_animal_K_21() { return &___animal_K_21; }
+	inline void set_animal_K_21(GameObject_t1113636619 * value)
 	{
-		___animal_L_21 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_L_21), value);
+		___animal_K_21 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_K_21), value);
 	}
 
-	inline static int32_t get_offset_of_animal_M_22() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_M_22)); }
-	inline GameObject_t1113636619 * get_animal_M_22() const { return ___animal_M_22; }
-	inline GameObject_t1113636619 ** get_address_of_animal_M_22() { return &___animal_M_22; }
-	inline void set_animal_M_22(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_L_22() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_L_22)); }
+	inline GameObject_t1113636619 * get_animal_L_22() const { return ___animal_L_22; }
+	inline GameObject_t1113636619 ** get_address_of_animal_L_22() { return &___animal_L_22; }
+	inline void set_animal_L_22(GameObject_t1113636619 * value)
 	{
-		___animal_M_22 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_M_22), value);
+		___animal_L_22 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_L_22), value);
 	}
 
-	inline static int32_t get_offset_of_animal_N_23() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_N_23)); }
-	inline GameObject_t1113636619 * get_animal_N_23() const { return ___animal_N_23; }
-	inline GameObject_t1113636619 ** get_address_of_animal_N_23() { return &___animal_N_23; }
-	inline void set_animal_N_23(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_M_23() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_M_23)); }
+	inline GameObject_t1113636619 * get_animal_M_23() const { return ___animal_M_23; }
+	inline GameObject_t1113636619 ** get_address_of_animal_M_23() { return &___animal_M_23; }
+	inline void set_animal_M_23(GameObject_t1113636619 * value)
 	{
-		___animal_N_23 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_N_23), value);
+		___animal_M_23 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_M_23), value);
 	}
 
-	inline static int32_t get_offset_of_animal_O_24() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_O_24)); }
-	inline GameObject_t1113636619 * get_animal_O_24() const { return ___animal_O_24; }
-	inline GameObject_t1113636619 ** get_address_of_animal_O_24() { return &___animal_O_24; }
-	inline void set_animal_O_24(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_N_24() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_N_24)); }
+	inline GameObject_t1113636619 * get_animal_N_24() const { return ___animal_N_24; }
+	inline GameObject_t1113636619 ** get_address_of_animal_N_24() { return &___animal_N_24; }
+	inline void set_animal_N_24(GameObject_t1113636619 * value)
 	{
-		___animal_O_24 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_O_24), value);
+		___animal_N_24 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_N_24), value);
 	}
 
-	inline static int32_t get_offset_of_animal_P_25() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_P_25)); }
-	inline GameObject_t1113636619 * get_animal_P_25() const { return ___animal_P_25; }
-	inline GameObject_t1113636619 ** get_address_of_animal_P_25() { return &___animal_P_25; }
-	inline void set_animal_P_25(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_O_25() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_O_25)); }
+	inline GameObject_t1113636619 * get_animal_O_25() const { return ___animal_O_25; }
+	inline GameObject_t1113636619 ** get_address_of_animal_O_25() { return &___animal_O_25; }
+	inline void set_animal_O_25(GameObject_t1113636619 * value)
 	{
-		___animal_P_25 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_P_25), value);
+		___animal_O_25 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_O_25), value);
 	}
 
-	inline static int32_t get_offset_of_animal_Q_26() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_Q_26)); }
-	inline GameObject_t1113636619 * get_animal_Q_26() const { return ___animal_Q_26; }
-	inline GameObject_t1113636619 ** get_address_of_animal_Q_26() { return &___animal_Q_26; }
-	inline void set_animal_Q_26(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_P_26() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_P_26)); }
+	inline GameObject_t1113636619 * get_animal_P_26() const { return ___animal_P_26; }
+	inline GameObject_t1113636619 ** get_address_of_animal_P_26() { return &___animal_P_26; }
+	inline void set_animal_P_26(GameObject_t1113636619 * value)
 	{
-		___animal_Q_26 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_Q_26), value);
+		___animal_P_26 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_P_26), value);
 	}
 
-	inline static int32_t get_offset_of_animal_R_27() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_R_27)); }
-	inline GameObject_t1113636619 * get_animal_R_27() const { return ___animal_R_27; }
-	inline GameObject_t1113636619 ** get_address_of_animal_R_27() { return &___animal_R_27; }
-	inline void set_animal_R_27(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_Q_27() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_Q_27)); }
+	inline GameObject_t1113636619 * get_animal_Q_27() const { return ___animal_Q_27; }
+	inline GameObject_t1113636619 ** get_address_of_animal_Q_27() { return &___animal_Q_27; }
+	inline void set_animal_Q_27(GameObject_t1113636619 * value)
 	{
-		___animal_R_27 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_R_27), value);
+		___animal_Q_27 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_Q_27), value);
 	}
 
-	inline static int32_t get_offset_of_animal_S_28() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_S_28)); }
-	inline GameObject_t1113636619 * get_animal_S_28() const { return ___animal_S_28; }
-	inline GameObject_t1113636619 ** get_address_of_animal_S_28() { return &___animal_S_28; }
-	inline void set_animal_S_28(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_R_28() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_R_28)); }
+	inline GameObject_t1113636619 * get_animal_R_28() const { return ___animal_R_28; }
+	inline GameObject_t1113636619 ** get_address_of_animal_R_28() { return &___animal_R_28; }
+	inline void set_animal_R_28(GameObject_t1113636619 * value)
 	{
-		___animal_S_28 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_S_28), value);
+		___animal_R_28 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_R_28), value);
 	}
 
-	inline static int32_t get_offset_of_animal_T_29() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_T_29)); }
-	inline GameObject_t1113636619 * get_animal_T_29() const { return ___animal_T_29; }
-	inline GameObject_t1113636619 ** get_address_of_animal_T_29() { return &___animal_T_29; }
-	inline void set_animal_T_29(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_S_29() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_S_29)); }
+	inline GameObject_t1113636619 * get_animal_S_29() const { return ___animal_S_29; }
+	inline GameObject_t1113636619 ** get_address_of_animal_S_29() { return &___animal_S_29; }
+	inline void set_animal_S_29(GameObject_t1113636619 * value)
 	{
-		___animal_T_29 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_T_29), value);
+		___animal_S_29 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_S_29), value);
 	}
 
-	inline static int32_t get_offset_of_animal_U_30() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_U_30)); }
-	inline GameObject_t1113636619 * get_animal_U_30() const { return ___animal_U_30; }
-	inline GameObject_t1113636619 ** get_address_of_animal_U_30() { return &___animal_U_30; }
-	inline void set_animal_U_30(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_T_30() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_T_30)); }
+	inline GameObject_t1113636619 * get_animal_T_30() const { return ___animal_T_30; }
+	inline GameObject_t1113636619 ** get_address_of_animal_T_30() { return &___animal_T_30; }
+	inline void set_animal_T_30(GameObject_t1113636619 * value)
 	{
-		___animal_U_30 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_U_30), value);
+		___animal_T_30 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_T_30), value);
 	}
 
-	inline static int32_t get_offset_of_animal_V_31() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_V_31)); }
-	inline GameObject_t1113636619 * get_animal_V_31() const { return ___animal_V_31; }
-	inline GameObject_t1113636619 ** get_address_of_animal_V_31() { return &___animal_V_31; }
-	inline void set_animal_V_31(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_U_31() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_U_31)); }
+	inline GameObject_t1113636619 * get_animal_U_31() const { return ___animal_U_31; }
+	inline GameObject_t1113636619 ** get_address_of_animal_U_31() { return &___animal_U_31; }
+	inline void set_animal_U_31(GameObject_t1113636619 * value)
 	{
-		___animal_V_31 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_V_31), value);
+		___animal_U_31 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_U_31), value);
 	}
 
-	inline static int32_t get_offset_of_animal_W_32() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_W_32)); }
-	inline GameObject_t1113636619 * get_animal_W_32() const { return ___animal_W_32; }
-	inline GameObject_t1113636619 ** get_address_of_animal_W_32() { return &___animal_W_32; }
-	inline void set_animal_W_32(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_V_32() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_V_32)); }
+	inline GameObject_t1113636619 * get_animal_V_32() const { return ___animal_V_32; }
+	inline GameObject_t1113636619 ** get_address_of_animal_V_32() { return &___animal_V_32; }
+	inline void set_animal_V_32(GameObject_t1113636619 * value)
 	{
-		___animal_W_32 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_W_32), value);
+		___animal_V_32 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_V_32), value);
 	}
 
-	inline static int32_t get_offset_of_animal_X_33() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_X_33)); }
-	inline GameObject_t1113636619 * get_animal_X_33() const { return ___animal_X_33; }
-	inline GameObject_t1113636619 ** get_address_of_animal_X_33() { return &___animal_X_33; }
-	inline void set_animal_X_33(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_W_33() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_W_33)); }
+	inline GameObject_t1113636619 * get_animal_W_33() const { return ___animal_W_33; }
+	inline GameObject_t1113636619 ** get_address_of_animal_W_33() { return &___animal_W_33; }
+	inline void set_animal_W_33(GameObject_t1113636619 * value)
 	{
-		___animal_X_33 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_X_33), value);
+		___animal_W_33 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_W_33), value);
 	}
 
-	inline static int32_t get_offset_of_animal_Y_34() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_Y_34)); }
-	inline GameObject_t1113636619 * get_animal_Y_34() const { return ___animal_Y_34; }
-	inline GameObject_t1113636619 ** get_address_of_animal_Y_34() { return &___animal_Y_34; }
-	inline void set_animal_Y_34(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_X_34() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_X_34)); }
+	inline GameObject_t1113636619 * get_animal_X_34() const { return ___animal_X_34; }
+	inline GameObject_t1113636619 ** get_address_of_animal_X_34() { return &___animal_X_34; }
+	inline void set_animal_X_34(GameObject_t1113636619 * value)
 	{
-		___animal_Y_34 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_Y_34), value);
+		___animal_X_34 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_X_34), value);
 	}
 
-	inline static int32_t get_offset_of_animal_Z_35() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_Z_35)); }
-	inline GameObject_t1113636619 * get_animal_Z_35() const { return ___animal_Z_35; }
-	inline GameObject_t1113636619 ** get_address_of_animal_Z_35() { return &___animal_Z_35; }
-	inline void set_animal_Z_35(GameObject_t1113636619 * value)
+	inline static int32_t get_offset_of_animal_Y_35() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_Y_35)); }
+	inline GameObject_t1113636619 * get_animal_Y_35() const { return ___animal_Y_35; }
+	inline GameObject_t1113636619 ** get_address_of_animal_Y_35() { return &___animal_Y_35; }
+	inline void set_animal_Y_35(GameObject_t1113636619 * value)
 	{
-		___animal_Z_35 = value;
-		Il2CppCodeGenWriteBarrier((&___animal_Z_35), value);
+		___animal_Y_35 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_Y_35), value);
 	}
 
-	inline static int32_t get_offset_of_currentalphabet_36() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___currentalphabet_36)); }
-	inline String_t* get_currentalphabet_36() const { return ___currentalphabet_36; }
-	inline String_t** get_address_of_currentalphabet_36() { return &___currentalphabet_36; }
-	inline void set_currentalphabet_36(String_t* value)
+	inline static int32_t get_offset_of_animal_Z_36() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animal_Z_36)); }
+	inline GameObject_t1113636619 * get_animal_Z_36() const { return ___animal_Z_36; }
+	inline GameObject_t1113636619 ** get_address_of_animal_Z_36() { return &___animal_Z_36; }
+	inline void set_animal_Z_36(GameObject_t1113636619 * value)
 	{
-		___currentalphabet_36 = value;
-		Il2CppCodeGenWriteBarrier((&___currentalphabet_36), value);
+		___animal_Z_36 = value;
+		Il2CppCodeGenWriteBarrier((&___animal_Z_36), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_A_37() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_A_37)); }
-	inline AudioClip_t3680889665 * get_audioClip_A_37() const { return ___audioClip_A_37; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_A_37() { return &___audioClip_A_37; }
-	inline void set_audioClip_A_37(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_currentalphabet_37() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___currentalphabet_37)); }
+	inline String_t* get_currentalphabet_37() const { return ___currentalphabet_37; }
+	inline String_t** get_address_of_currentalphabet_37() { return &___currentalphabet_37; }
+	inline void set_currentalphabet_37(String_t* value)
 	{
-		___audioClip_A_37 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_A_37), value);
+		___currentalphabet_37 = value;
+		Il2CppCodeGenWriteBarrier((&___currentalphabet_37), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_B_38() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_B_38)); }
-	inline AudioClip_t3680889665 * get_audioClip_B_38() const { return ___audioClip_B_38; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_B_38() { return &___audioClip_B_38; }
-	inline void set_audioClip_B_38(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_A_38() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_A_38)); }
+	inline AudioClip_t3680889665 * get_audioClip_A_38() const { return ___audioClip_A_38; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_A_38() { return &___audioClip_A_38; }
+	inline void set_audioClip_A_38(AudioClip_t3680889665 * value)
 	{
-		___audioClip_B_38 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_B_38), value);
+		___audioClip_A_38 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_A_38), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_C_39() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_C_39)); }
-	inline AudioClip_t3680889665 * get_audioClip_C_39() const { return ___audioClip_C_39; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_C_39() { return &___audioClip_C_39; }
-	inline void set_audioClip_C_39(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_B_39() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_B_39)); }
+	inline AudioClip_t3680889665 * get_audioClip_B_39() const { return ___audioClip_B_39; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_B_39() { return &___audioClip_B_39; }
+	inline void set_audioClip_B_39(AudioClip_t3680889665 * value)
 	{
-		___audioClip_C_39 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_C_39), value);
+		___audioClip_B_39 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_B_39), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_D_40() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_D_40)); }
-	inline AudioClip_t3680889665 * get_audioClip_D_40() const { return ___audioClip_D_40; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_D_40() { return &___audioClip_D_40; }
-	inline void set_audioClip_D_40(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_C_40() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_C_40)); }
+	inline AudioClip_t3680889665 * get_audioClip_C_40() const { return ___audioClip_C_40; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_C_40() { return &___audioClip_C_40; }
+	inline void set_audioClip_C_40(AudioClip_t3680889665 * value)
 	{
-		___audioClip_D_40 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_D_40), value);
+		___audioClip_C_40 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_C_40), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_E_41() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_E_41)); }
-	inline AudioClip_t3680889665 * get_audioClip_E_41() const { return ___audioClip_E_41; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_E_41() { return &___audioClip_E_41; }
-	inline void set_audioClip_E_41(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_D_41() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_D_41)); }
+	inline AudioClip_t3680889665 * get_audioClip_D_41() const { return ___audioClip_D_41; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_D_41() { return &___audioClip_D_41; }
+	inline void set_audioClip_D_41(AudioClip_t3680889665 * value)
 	{
-		___audioClip_E_41 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_E_41), value);
+		___audioClip_D_41 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_D_41), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_F_42() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_F_42)); }
-	inline AudioClip_t3680889665 * get_audioClip_F_42() const { return ___audioClip_F_42; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_F_42() { return &___audioClip_F_42; }
-	inline void set_audioClip_F_42(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_E_42() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_E_42)); }
+	inline AudioClip_t3680889665 * get_audioClip_E_42() const { return ___audioClip_E_42; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_E_42() { return &___audioClip_E_42; }
+	inline void set_audioClip_E_42(AudioClip_t3680889665 * value)
 	{
-		___audioClip_F_42 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_F_42), value);
+		___audioClip_E_42 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_E_42), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_G_43() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_G_43)); }
-	inline AudioClip_t3680889665 * get_audioClip_G_43() const { return ___audioClip_G_43; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_G_43() { return &___audioClip_G_43; }
-	inline void set_audioClip_G_43(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_F_43() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_F_43)); }
+	inline AudioClip_t3680889665 * get_audioClip_F_43() const { return ___audioClip_F_43; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_F_43() { return &___audioClip_F_43; }
+	inline void set_audioClip_F_43(AudioClip_t3680889665 * value)
 	{
-		___audioClip_G_43 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_G_43), value);
+		___audioClip_F_43 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_F_43), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_H_44() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_H_44)); }
-	inline AudioClip_t3680889665 * get_audioClip_H_44() const { return ___audioClip_H_44; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_H_44() { return &___audioClip_H_44; }
-	inline void set_audioClip_H_44(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_G_44() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_G_44)); }
+	inline AudioClip_t3680889665 * get_audioClip_G_44() const { return ___audioClip_G_44; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_G_44() { return &___audioClip_G_44; }
+	inline void set_audioClip_G_44(AudioClip_t3680889665 * value)
 	{
-		___audioClip_H_44 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_H_44), value);
+		___audioClip_G_44 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_G_44), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_I_45() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_I_45)); }
-	inline AudioClip_t3680889665 * get_audioClip_I_45() const { return ___audioClip_I_45; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_I_45() { return &___audioClip_I_45; }
-	inline void set_audioClip_I_45(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_H_45() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_H_45)); }
+	inline AudioClip_t3680889665 * get_audioClip_H_45() const { return ___audioClip_H_45; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_H_45() { return &___audioClip_H_45; }
+	inline void set_audioClip_H_45(AudioClip_t3680889665 * value)
 	{
-		___audioClip_I_45 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_I_45), value);
+		___audioClip_H_45 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_H_45), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_J_46() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_J_46)); }
-	inline AudioClip_t3680889665 * get_audioClip_J_46() const { return ___audioClip_J_46; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_J_46() { return &___audioClip_J_46; }
-	inline void set_audioClip_J_46(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_I_46() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_I_46)); }
+	inline AudioClip_t3680889665 * get_audioClip_I_46() const { return ___audioClip_I_46; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_I_46() { return &___audioClip_I_46; }
+	inline void set_audioClip_I_46(AudioClip_t3680889665 * value)
 	{
-		___audioClip_J_46 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_J_46), value);
+		___audioClip_I_46 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_I_46), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_K_47() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_K_47)); }
-	inline AudioClip_t3680889665 * get_audioClip_K_47() const { return ___audioClip_K_47; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_K_47() { return &___audioClip_K_47; }
-	inline void set_audioClip_K_47(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_J_47() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_J_47)); }
+	inline AudioClip_t3680889665 * get_audioClip_J_47() const { return ___audioClip_J_47; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_J_47() { return &___audioClip_J_47; }
+	inline void set_audioClip_J_47(AudioClip_t3680889665 * value)
 	{
-		___audioClip_K_47 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_K_47), value);
+		___audioClip_J_47 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_J_47), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_L_48() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_L_48)); }
-	inline AudioClip_t3680889665 * get_audioClip_L_48() const { return ___audioClip_L_48; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_L_48() { return &___audioClip_L_48; }
-	inline void set_audioClip_L_48(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_K_48() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_K_48)); }
+	inline AudioClip_t3680889665 * get_audioClip_K_48() const { return ___audioClip_K_48; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_K_48() { return &___audioClip_K_48; }
+	inline void set_audioClip_K_48(AudioClip_t3680889665 * value)
 	{
-		___audioClip_L_48 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_L_48), value);
+		___audioClip_K_48 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_K_48), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_M_49() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_M_49)); }
-	inline AudioClip_t3680889665 * get_audioClip_M_49() const { return ___audioClip_M_49; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_M_49() { return &___audioClip_M_49; }
-	inline void set_audioClip_M_49(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_L_49() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_L_49)); }
+	inline AudioClip_t3680889665 * get_audioClip_L_49() const { return ___audioClip_L_49; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_L_49() { return &___audioClip_L_49; }
+	inline void set_audioClip_L_49(AudioClip_t3680889665 * value)
 	{
-		___audioClip_M_49 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_M_49), value);
+		___audioClip_L_49 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_L_49), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_N_50() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_N_50)); }
-	inline AudioClip_t3680889665 * get_audioClip_N_50() const { return ___audioClip_N_50; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_N_50() { return &___audioClip_N_50; }
-	inline void set_audioClip_N_50(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_M_50() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_M_50)); }
+	inline AudioClip_t3680889665 * get_audioClip_M_50() const { return ___audioClip_M_50; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_M_50() { return &___audioClip_M_50; }
+	inline void set_audioClip_M_50(AudioClip_t3680889665 * value)
 	{
-		___audioClip_N_50 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_N_50), value);
+		___audioClip_M_50 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_M_50), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_O_51() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_O_51)); }
-	inline AudioClip_t3680889665 * get_audioClip_O_51() const { return ___audioClip_O_51; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_O_51() { return &___audioClip_O_51; }
-	inline void set_audioClip_O_51(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_N_51() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_N_51)); }
+	inline AudioClip_t3680889665 * get_audioClip_N_51() const { return ___audioClip_N_51; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_N_51() { return &___audioClip_N_51; }
+	inline void set_audioClip_N_51(AudioClip_t3680889665 * value)
 	{
-		___audioClip_O_51 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_O_51), value);
+		___audioClip_N_51 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_N_51), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_P_52() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_P_52)); }
-	inline AudioClip_t3680889665 * get_audioClip_P_52() const { return ___audioClip_P_52; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_P_52() { return &___audioClip_P_52; }
-	inline void set_audioClip_P_52(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_O_52() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_O_52)); }
+	inline AudioClip_t3680889665 * get_audioClip_O_52() const { return ___audioClip_O_52; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_O_52() { return &___audioClip_O_52; }
+	inline void set_audioClip_O_52(AudioClip_t3680889665 * value)
 	{
-		___audioClip_P_52 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_P_52), value);
+		___audioClip_O_52 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_O_52), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_Q_53() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_Q_53)); }
-	inline AudioClip_t3680889665 * get_audioClip_Q_53() const { return ___audioClip_Q_53; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_Q_53() { return &___audioClip_Q_53; }
-	inline void set_audioClip_Q_53(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_P_53() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_P_53)); }
+	inline AudioClip_t3680889665 * get_audioClip_P_53() const { return ___audioClip_P_53; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_P_53() { return &___audioClip_P_53; }
+	inline void set_audioClip_P_53(AudioClip_t3680889665 * value)
 	{
-		___audioClip_Q_53 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_Q_53), value);
+		___audioClip_P_53 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_P_53), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_R_54() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_R_54)); }
-	inline AudioClip_t3680889665 * get_audioClip_R_54() const { return ___audioClip_R_54; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_R_54() { return &___audioClip_R_54; }
-	inline void set_audioClip_R_54(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_Q_54() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_Q_54)); }
+	inline AudioClip_t3680889665 * get_audioClip_Q_54() const { return ___audioClip_Q_54; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_Q_54() { return &___audioClip_Q_54; }
+	inline void set_audioClip_Q_54(AudioClip_t3680889665 * value)
 	{
-		___audioClip_R_54 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_R_54), value);
+		___audioClip_Q_54 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_Q_54), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_S_55() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_S_55)); }
-	inline AudioClip_t3680889665 * get_audioClip_S_55() const { return ___audioClip_S_55; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_S_55() { return &___audioClip_S_55; }
-	inline void set_audioClip_S_55(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_R_55() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_R_55)); }
+	inline AudioClip_t3680889665 * get_audioClip_R_55() const { return ___audioClip_R_55; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_R_55() { return &___audioClip_R_55; }
+	inline void set_audioClip_R_55(AudioClip_t3680889665 * value)
 	{
-		___audioClip_S_55 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_S_55), value);
+		___audioClip_R_55 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_R_55), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_T_56() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_T_56)); }
-	inline AudioClip_t3680889665 * get_audioClip_T_56() const { return ___audioClip_T_56; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_T_56() { return &___audioClip_T_56; }
-	inline void set_audioClip_T_56(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_S_56() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_S_56)); }
+	inline AudioClip_t3680889665 * get_audioClip_S_56() const { return ___audioClip_S_56; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_S_56() { return &___audioClip_S_56; }
+	inline void set_audioClip_S_56(AudioClip_t3680889665 * value)
 	{
-		___audioClip_T_56 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_T_56), value);
+		___audioClip_S_56 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_S_56), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_U_57() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_U_57)); }
-	inline AudioClip_t3680889665 * get_audioClip_U_57() const { return ___audioClip_U_57; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_U_57() { return &___audioClip_U_57; }
-	inline void set_audioClip_U_57(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_T_57() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_T_57)); }
+	inline AudioClip_t3680889665 * get_audioClip_T_57() const { return ___audioClip_T_57; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_T_57() { return &___audioClip_T_57; }
+	inline void set_audioClip_T_57(AudioClip_t3680889665 * value)
 	{
-		___audioClip_U_57 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_U_57), value);
+		___audioClip_T_57 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_T_57), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_V_58() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_V_58)); }
-	inline AudioClip_t3680889665 * get_audioClip_V_58() const { return ___audioClip_V_58; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_V_58() { return &___audioClip_V_58; }
-	inline void set_audioClip_V_58(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_U_58() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_U_58)); }
+	inline AudioClip_t3680889665 * get_audioClip_U_58() const { return ___audioClip_U_58; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_U_58() { return &___audioClip_U_58; }
+	inline void set_audioClip_U_58(AudioClip_t3680889665 * value)
 	{
-		___audioClip_V_58 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_V_58), value);
+		___audioClip_U_58 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_U_58), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_W_59() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_W_59)); }
-	inline AudioClip_t3680889665 * get_audioClip_W_59() const { return ___audioClip_W_59; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_W_59() { return &___audioClip_W_59; }
-	inline void set_audioClip_W_59(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_V_59() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_V_59)); }
+	inline AudioClip_t3680889665 * get_audioClip_V_59() const { return ___audioClip_V_59; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_V_59() { return &___audioClip_V_59; }
+	inline void set_audioClip_V_59(AudioClip_t3680889665 * value)
 	{
-		___audioClip_W_59 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_W_59), value);
+		___audioClip_V_59 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_V_59), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_X_60() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_X_60)); }
-	inline AudioClip_t3680889665 * get_audioClip_X_60() const { return ___audioClip_X_60; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_X_60() { return &___audioClip_X_60; }
-	inline void set_audioClip_X_60(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_W_60() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_W_60)); }
+	inline AudioClip_t3680889665 * get_audioClip_W_60() const { return ___audioClip_W_60; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_W_60() { return &___audioClip_W_60; }
+	inline void set_audioClip_W_60(AudioClip_t3680889665 * value)
 	{
-		___audioClip_X_60 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_X_60), value);
+		___audioClip_W_60 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_W_60), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_Y_61() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_Y_61)); }
-	inline AudioClip_t3680889665 * get_audioClip_Y_61() const { return ___audioClip_Y_61; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_Y_61() { return &___audioClip_Y_61; }
-	inline void set_audioClip_Y_61(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_X_61() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_X_61)); }
+	inline AudioClip_t3680889665 * get_audioClip_X_61() const { return ___audioClip_X_61; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_X_61() { return &___audioClip_X_61; }
+	inline void set_audioClip_X_61(AudioClip_t3680889665 * value)
 	{
-		___audioClip_Y_61 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_Y_61), value);
+		___audioClip_X_61 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_X_61), value);
 	}
 
-	inline static int32_t get_offset_of_audioClip_Z_62() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_Z_62)); }
-	inline AudioClip_t3680889665 * get_audioClip_Z_62() const { return ___audioClip_Z_62; }
-	inline AudioClip_t3680889665 ** get_address_of_audioClip_Z_62() { return &___audioClip_Z_62; }
-	inline void set_audioClip_Z_62(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_audioClip_Y_62() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_Y_62)); }
+	inline AudioClip_t3680889665 * get_audioClip_Y_62() const { return ___audioClip_Y_62; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_Y_62() { return &___audioClip_Y_62; }
+	inline void set_audioClip_Y_62(AudioClip_t3680889665 * value)
 	{
-		___audioClip_Z_62 = value;
-		Il2CppCodeGenWriteBarrier((&___audioClip_Z_62), value);
+		___audioClip_Y_62 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_Y_62), value);
 	}
 
-	inline static int32_t get_offset_of_audioSource_63() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioSource_63)); }
-	inline AudioSource_t3935305588 * get_audioSource_63() const { return ___audioSource_63; }
-	inline AudioSource_t3935305588 ** get_address_of_audioSource_63() { return &___audioSource_63; }
-	inline void set_audioSource_63(AudioSource_t3935305588 * value)
+	inline static int32_t get_offset_of_audioClip_Z_63() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioClip_Z_63)); }
+	inline AudioClip_t3680889665 * get_audioClip_Z_63() const { return ___audioClip_Z_63; }
+	inline AudioClip_t3680889665 ** get_address_of_audioClip_Z_63() { return &___audioClip_Z_63; }
+	inline void set_audioClip_Z_63(AudioClip_t3680889665 * value)
 	{
-		___audioSource_63 = value;
-		Il2CppCodeGenWriteBarrier((&___audioSource_63), value);
+		___audioClip_Z_63 = value;
+		Il2CppCodeGenWriteBarrier((&___audioClip_Z_63), value);
 	}
 
-	inline static int32_t get_offset_of_audioclip_64() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioclip_64)); }
-	inline AudioClip_t3680889665 * get_audioclip_64() const { return ___audioclip_64; }
-	inline AudioClip_t3680889665 ** get_address_of_audioclip_64() { return &___audioclip_64; }
-	inline void set_audioclip_64(AudioClip_t3680889665 * value)
+	inline static int32_t get_offset_of_scale_A_64() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_A_64)); }
+	inline float get_scale_A_64() const { return ___scale_A_64; }
+	inline float* get_address_of_scale_A_64() { return &___scale_A_64; }
+	inline void set_scale_A_64(float value)
 	{
-		___audioclip_64 = value;
-		Il2CppCodeGenWriteBarrier((&___audioclip_64), value);
+		___scale_A_64 = value;
 	}
 
-	inline static int32_t get_offset_of_startFingerPos_65() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___startFingerPos_65)); }
-	inline Vector3_t3722313464  get_startFingerPos_65() const { return ___startFingerPos_65; }
-	inline Vector3_t3722313464 * get_address_of_startFingerPos_65() { return &___startFingerPos_65; }
-	inline void set_startFingerPos_65(Vector3_t3722313464  value)
+	inline static int32_t get_offset_of_scale_B_65() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_B_65)); }
+	inline float get_scale_B_65() const { return ___scale_B_65; }
+	inline float* get_address_of_scale_B_65() { return &___scale_B_65; }
+	inline void set_scale_B_65(float value)
 	{
-		___startFingerPos_65 = value;
+		___scale_B_65 = value;
 	}
 
-	inline static int32_t get_offset_of_animationPlayingStatus_66() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animationPlayingStatus_66)); }
-	inline bool get_animationPlayingStatus_66() const { return ___animationPlayingStatus_66; }
-	inline bool* get_address_of_animationPlayingStatus_66() { return &___animationPlayingStatus_66; }
-	inline void set_animationPlayingStatus_66(bool value)
+	inline static int32_t get_offset_of_scale_C_66() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_C_66)); }
+	inline float get_scale_C_66() const { return ___scale_C_66; }
+	inline float* get_address_of_scale_C_66() { return &___scale_C_66; }
+	inline void set_scale_C_66(float value)
 	{
-		___animationPlayingStatus_66 = value;
+		___scale_C_66 = value;
 	}
 
-	inline static int32_t get_offset_of_duration_67() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___duration_67)); }
-	inline float get_duration_67() const { return ___duration_67; }
-	inline float* get_address_of_duration_67() { return &___duration_67; }
-	inline void set_duration_67(float value)
+	inline static int32_t get_offset_of_scale_D_67() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_D_67)); }
+	inline float get_scale_D_67() const { return ___scale_D_67; }
+	inline float* get_address_of_scale_D_67() { return &___scale_D_67; }
+	inline void set_scale_D_67(float value)
 	{
-		___duration_67 = value;
+		___scale_D_67 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_E_68() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_E_68)); }
+	inline float get_scale_E_68() const { return ___scale_E_68; }
+	inline float* get_address_of_scale_E_68() { return &___scale_E_68; }
+	inline void set_scale_E_68(float value)
+	{
+		___scale_E_68 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_F_69() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_F_69)); }
+	inline float get_scale_F_69() const { return ___scale_F_69; }
+	inline float* get_address_of_scale_F_69() { return &___scale_F_69; }
+	inline void set_scale_F_69(float value)
+	{
+		___scale_F_69 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_G_70() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_G_70)); }
+	inline float get_scale_G_70() const { return ___scale_G_70; }
+	inline float* get_address_of_scale_G_70() { return &___scale_G_70; }
+	inline void set_scale_G_70(float value)
+	{
+		___scale_G_70 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_H_71() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_H_71)); }
+	inline float get_scale_H_71() const { return ___scale_H_71; }
+	inline float* get_address_of_scale_H_71() { return &___scale_H_71; }
+	inline void set_scale_H_71(float value)
+	{
+		___scale_H_71 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_I_72() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_I_72)); }
+	inline float get_scale_I_72() const { return ___scale_I_72; }
+	inline float* get_address_of_scale_I_72() { return &___scale_I_72; }
+	inline void set_scale_I_72(float value)
+	{
+		___scale_I_72 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_J_73() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_J_73)); }
+	inline float get_scale_J_73() const { return ___scale_J_73; }
+	inline float* get_address_of_scale_J_73() { return &___scale_J_73; }
+	inline void set_scale_J_73(float value)
+	{
+		___scale_J_73 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_K_74() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_K_74)); }
+	inline float get_scale_K_74() const { return ___scale_K_74; }
+	inline float* get_address_of_scale_K_74() { return &___scale_K_74; }
+	inline void set_scale_K_74(float value)
+	{
+		___scale_K_74 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_L_75() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_L_75)); }
+	inline float get_scale_L_75() const { return ___scale_L_75; }
+	inline float* get_address_of_scale_L_75() { return &___scale_L_75; }
+	inline void set_scale_L_75(float value)
+	{
+		___scale_L_75 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_M_76() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_M_76)); }
+	inline float get_scale_M_76() const { return ___scale_M_76; }
+	inline float* get_address_of_scale_M_76() { return &___scale_M_76; }
+	inline void set_scale_M_76(float value)
+	{
+		___scale_M_76 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_N_77() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_N_77)); }
+	inline float get_scale_N_77() const { return ___scale_N_77; }
+	inline float* get_address_of_scale_N_77() { return &___scale_N_77; }
+	inline void set_scale_N_77(float value)
+	{
+		___scale_N_77 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_O_78() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_O_78)); }
+	inline float get_scale_O_78() const { return ___scale_O_78; }
+	inline float* get_address_of_scale_O_78() { return &___scale_O_78; }
+	inline void set_scale_O_78(float value)
+	{
+		___scale_O_78 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_P_79() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_P_79)); }
+	inline float get_scale_P_79() const { return ___scale_P_79; }
+	inline float* get_address_of_scale_P_79() { return &___scale_P_79; }
+	inline void set_scale_P_79(float value)
+	{
+		___scale_P_79 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_Q_80() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_Q_80)); }
+	inline float get_scale_Q_80() const { return ___scale_Q_80; }
+	inline float* get_address_of_scale_Q_80() { return &___scale_Q_80; }
+	inline void set_scale_Q_80(float value)
+	{
+		___scale_Q_80 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_R_81() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_R_81)); }
+	inline float get_scale_R_81() const { return ___scale_R_81; }
+	inline float* get_address_of_scale_R_81() { return &___scale_R_81; }
+	inline void set_scale_R_81(float value)
+	{
+		___scale_R_81 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_S_82() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_S_82)); }
+	inline float get_scale_S_82() const { return ___scale_S_82; }
+	inline float* get_address_of_scale_S_82() { return &___scale_S_82; }
+	inline void set_scale_S_82(float value)
+	{
+		___scale_S_82 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_T_83() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_T_83)); }
+	inline float get_scale_T_83() const { return ___scale_T_83; }
+	inline float* get_address_of_scale_T_83() { return &___scale_T_83; }
+	inline void set_scale_T_83(float value)
+	{
+		___scale_T_83 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_U_84() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_U_84)); }
+	inline float get_scale_U_84() const { return ___scale_U_84; }
+	inline float* get_address_of_scale_U_84() { return &___scale_U_84; }
+	inline void set_scale_U_84(float value)
+	{
+		___scale_U_84 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_V_85() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_V_85)); }
+	inline float get_scale_V_85() const { return ___scale_V_85; }
+	inline float* get_address_of_scale_V_85() { return &___scale_V_85; }
+	inline void set_scale_V_85(float value)
+	{
+		___scale_V_85 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_W_86() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_W_86)); }
+	inline float get_scale_W_86() const { return ___scale_W_86; }
+	inline float* get_address_of_scale_W_86() { return &___scale_W_86; }
+	inline void set_scale_W_86(float value)
+	{
+		___scale_W_86 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_X_87() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_X_87)); }
+	inline float get_scale_X_87() const { return ___scale_X_87; }
+	inline float* get_address_of_scale_X_87() { return &___scale_X_87; }
+	inline void set_scale_X_87(float value)
+	{
+		___scale_X_87 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_Y_88() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_Y_88)); }
+	inline float get_scale_Y_88() const { return ___scale_Y_88; }
+	inline float* get_address_of_scale_Y_88() { return &___scale_Y_88; }
+	inline void set_scale_Y_88(float value)
+	{
+		___scale_Y_88 = value;
+	}
+
+	inline static int32_t get_offset_of_scale_Z_89() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___scale_Z_89)); }
+	inline float get_scale_Z_89() const { return ___scale_Z_89; }
+	inline float* get_address_of_scale_Z_89() { return &___scale_Z_89; }
+	inline void set_scale_Z_89(float value)
+	{
+		___scale_Z_89 = value;
+	}
+
+	inline static int32_t get_offset_of_audioSource_90() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioSource_90)); }
+	inline AudioSource_t3935305588 * get_audioSource_90() const { return ___audioSource_90; }
+	inline AudioSource_t3935305588 ** get_address_of_audioSource_90() { return &___audioSource_90; }
+	inline void set_audioSource_90(AudioSource_t3935305588 * value)
+	{
+		___audioSource_90 = value;
+		Il2CppCodeGenWriteBarrier((&___audioSource_90), value);
+	}
+
+	inline static int32_t get_offset_of_audioclip_91() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___audioclip_91)); }
+	inline AudioClip_t3680889665 * get_audioclip_91() const { return ___audioclip_91; }
+	inline AudioClip_t3680889665 ** get_address_of_audioclip_91() { return &___audioclip_91; }
+	inline void set_audioclip_91(AudioClip_t3680889665 * value)
+	{
+		___audioclip_91 = value;
+		Il2CppCodeGenWriteBarrier((&___audioclip_91), value);
+	}
+
+	inline static int32_t get_offset_of_startFingerPos_92() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___startFingerPos_92)); }
+	inline Vector3_t3722313464  get_startFingerPos_92() const { return ___startFingerPos_92; }
+	inline Vector3_t3722313464 * get_address_of_startFingerPos_92() { return &___startFingerPos_92; }
+	inline void set_startFingerPos_92(Vector3_t3722313464  value)
+	{
+		___startFingerPos_92 = value;
+	}
+
+	inline static int32_t get_offset_of_animationPlayingStatus_93() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animationPlayingStatus_93)); }
+	inline bool get_animationPlayingStatus_93() const { return ___animationPlayingStatus_93; }
+	inline bool* get_address_of_animationPlayingStatus_93() { return &___animationPlayingStatus_93; }
+	inline void set_animationPlayingStatus_93(bool value)
+	{
+		___animationPlayingStatus_93 = value;
+	}
+
+	inline static int32_t get_offset_of_animalScale_94() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___animalScale_94)); }
+	inline float get_animalScale_94() const { return ___animalScale_94; }
+	inline float* get_address_of_animalScale_94() { return &___animalScale_94; }
+	inline void set_animalScale_94(float value)
+	{
+		___animalScale_94 = value;
+	}
+
+	inline static int32_t get_offset_of_duration_95() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624, ___duration_95)); }
+	inline float get_duration_95() const { return ___duration_95; }
+	inline float* get_address_of_duration_95() { return &___duration_95; }
+	inline void set_duration_95(float value)
+	{
+		___duration_95 = value;
 	}
 };
 
@@ -15890,16 +16178,16 @@ struct ObjectPlacerAnimals_t560344624_StaticFields
 {
 public:
 	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> UnityEngine.XR.iOS.ObjectPlacerAnimals::<>f__switch$map2
-	Dictionary_2_t2736202052 * ___U3CU3Ef__switchU24map2_68;
+	Dictionary_2_t2736202052 * ___U3CU3Ef__switchU24map2_96;
 
 public:
-	inline static int32_t get_offset_of_U3CU3Ef__switchU24map2_68() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624_StaticFields, ___U3CU3Ef__switchU24map2_68)); }
-	inline Dictionary_2_t2736202052 * get_U3CU3Ef__switchU24map2_68() const { return ___U3CU3Ef__switchU24map2_68; }
-	inline Dictionary_2_t2736202052 ** get_address_of_U3CU3Ef__switchU24map2_68() { return &___U3CU3Ef__switchU24map2_68; }
-	inline void set_U3CU3Ef__switchU24map2_68(Dictionary_2_t2736202052 * value)
+	inline static int32_t get_offset_of_U3CU3Ef__switchU24map2_96() { return static_cast<int32_t>(offsetof(ObjectPlacerAnimals_t560344624_StaticFields, ___U3CU3Ef__switchU24map2_96)); }
+	inline Dictionary_2_t2736202052 * get_U3CU3Ef__switchU24map2_96() const { return ___U3CU3Ef__switchU24map2_96; }
+	inline Dictionary_2_t2736202052 ** get_address_of_U3CU3Ef__switchU24map2_96() { return &___U3CU3Ef__switchU24map2_96; }
+	inline void set_U3CU3Ef__switchU24map2_96(Dictionary_2_t2736202052 * value)
 	{
-		___U3CU3Ef__switchU24map2_68 = value;
-		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__switchU24map2_68), value);
+		___U3CU3Ef__switchU24map2_96 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__switchU24map2_96), value);
 	}
 };
 
@@ -23980,14 +24268,20 @@ extern "C"  int32_t NativeGallery_SaveImageToGallery_m1342837694 (RuntimeObject 
 extern "C"  void NotSupportedException__ctor_m2730133172 (NotSupportedException_t1314879016 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::_rp_UnitySceneLoaded(System.String)
 extern "C"  void ObjectPlacerAnimals__rp_UnitySceneLoaded_m3163003100 (RuntimeObject * __this /* static, unused */, String_t* ___scenename0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::_rp_UnityObjectPlaced()
-extern "C"  void ObjectPlacerAnimals__rp_UnityObjectPlaced_m3937459018 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::_rp_UnityObjectPlaced(System.String)
+extern "C"  void ObjectPlacerAnimals__rp_UnityObjectPlaced_m504506532 (RuntimeObject * __this /* static, unused */, String_t* ___distance0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Animator>()
 #define GameObject_GetComponent_TisAnimator_t434523843_m440019408(__this, method) ((  Animator_t434523843 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m2049753423_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Playables.PlayableDirector>()
 #define GameObject_GetComponent_TisPlayableDirector_t508516997_m1944561993(__this, method) ((  PlayableDirector_t508516997 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m2049753423_gshared)(__this, method)
+// System.Double System.Math::Round(System.Double,System.Int32)
+extern "C"  double Math_Round_m3279303474 (RuntimeObject * __this /* static, unused */, double p0, int32_t p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.String System.String::Format(System.String,System.Object)
+extern "C"  String_t* String_Format_m2844511972 (RuntimeObject * __this /* static, unused */, String_t* p0, RuntimeObject * p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::PlayAnimation()
 extern "C"  void ObjectPlacerAnimals_PlayAnimation_m4017390068 (ObjectPlacerAnimals_t560344624 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::postObjectStatus(System.String)
+extern "C"  void ObjectPlacerAnimals_postObjectStatus_m3740493861 (ObjectPlacerAnimals_t560344624 * __this, String_t* ___nvar0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Animator::set_speed(System.Single)
 extern "C"  void Animator_set_speed_m1181320995 (Animator_t434523843 * __this, float p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Animator::StopPlayback()
@@ -24024,8 +24318,6 @@ extern "C"  void ObjectPlacerAnimals_chooseModel_m3209889911 (ObjectPlacerAnimal
 extern "C"  bool ObjectPlacerAnimals_CheckObjectTouched_m2830404832 (ObjectPlacerAnimals_t560344624 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.XR.iOS.ObjectPlacerAnimals::HitTestWithResultType(UnityEngine.XR.iOS.ARPoint,UnityEngine.XR.iOS.ARHitTestResultType)
 extern "C"  bool ObjectPlacerAnimals_HitTestWithResultType_m124645190 (ObjectPlacerAnimals_t560344624 * __this, ARPoint_t499615819  ___point0, int64_t ___resultTypes1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::postObjectStatus()
-extern "C"  void ObjectPlacerAnimals_postObjectStatus_m1386923332 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -50244,18 +50536,53 @@ extern "C"  void ObjectPlacerAnimals__ctor_m1678178496 (ObjectPlacerAnimals_t560
 		__this->set_maxRayDistance_3((30.0f));
 		LayerMask_t3493934918  L_0 = LayerMask_op_Implicit_m90232283(NULL /*static, unused*/, ((int32_t)1024), /*hidden argument*/NULL);
 		__this->set_collisionLayer_4(L_0);
-		__this->set_currentalphabet_36(_stringLiteral3452614623);
+		__this->set_currentalphabet_37(_stringLiteral3452614623);
+		__this->set_scale_A_64((0.2f));
+		__this->set_scale_B_65((0.5f));
+		__this->set_scale_C_66((0.2f));
+		__this->set_scale_D_67((0.11f));
+		__this->set_scale_E_68((0.25f));
+		__this->set_scale_F_69((0.5f));
+		__this->set_scale_G_70((3.12f));
+		__this->set_scale_H_71((0.21f));
+		__this->set_scale_I_72((0.11f));
+		__this->set_scale_J_73((0.18f));
+		__this->set_scale_K_74((0.43f));
+		__this->set_scale_L_75((0.12f));
+		__this->set_scale_M_76((1.0f));
+		__this->set_scale_N_77((0.19f));
+		__this->set_scale_O_78((0.12f));
+		__this->set_scale_P_79((0.08f));
+		__this->set_scale_Q_80((0.18f));
+		__this->set_scale_R_81((2.0f));
+		__this->set_scale_S_82((0.15f));
+		__this->set_scale_T_83((0.37f));
+		__this->set_scale_U_84((0.06f));
+		__this->set_scale_V_85((1.0f));
+		__this->set_scale_W_86((1.18f));
+		__this->set_scale_X_87((0.68f));
+		__this->set_scale_Y_88((0.25f));
+		__this->set_scale_Z_89((0.5f));
+		__this->set_animalScale_94((0.1f));
 		MonoBehaviour__ctor_m1579109191(__this, /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::_rp_UnityObjectPlaced()
-extern "C"  void ObjectPlacerAnimals__rp_UnityObjectPlaced_m3937459018 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::_rp_UnityObjectPlaced(System.String)
+extern "C"  void ObjectPlacerAnimals__rp_UnityObjectPlaced_m504506532 (RuntimeObject * __this /* static, unused */, String_t* ___distance0, const RuntimeMethod* method)
 {
-	typedef void (DEFAULT_CALL *PInvokeFunc) ();
+	typedef void (DEFAULT_CALL *PInvokeFunc) (char*);
+
+	// Marshaling of parameter '___distance0' to native representation
+	char* ____distance0_marshaled = NULL;
+	____distance0_marshaled = il2cpp_codegen_marshal_string(___distance0);
 
 	// Native function invocation
-	reinterpret_cast<PInvokeFunc>(_rp_UnityObjectPlaced)();
+	reinterpret_cast<PInvokeFunc>(_rp_UnityObjectPlaced)(____distance0_marshaled);
+
+	// Marshaling cleanup of parameter '___distance0' native representation
+	il2cpp_codegen_marshal_free(____distance0_marshaled);
+	____distance0_marshaled = NULL;
 
 }
 extern "C" void DEFAULT_CALL _rp_AnimationPlaying(char*);
@@ -50311,7 +50638,7 @@ extern "C"  void ObjectPlacerAnimals_clearScene_m1463859119 (ObjectPlacerAnimals
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
 		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral4135400901, /*hidden argument*/NULL);
-		GameObject_t1113636619 * L_0 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_0 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_0, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
@@ -50320,7 +50647,7 @@ extern "C"  void ObjectPlacerAnimals_clearScene_m1463859119 (ObjectPlacerAnimals
 		}
 	}
 	{
-		GameObject_t1113636619 * L_2 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_2 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		Object_Destroy_m565254235(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
 	}
@@ -50358,7 +50685,7 @@ extern "C"  void ObjectPlacerAnimals_restartMentionedScene_m1918883689 (ObjectPl
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
 		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral3451534063, /*hidden argument*/NULL);
-		GameObject_t1113636619 * L_0 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_0 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_0, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
@@ -50367,7 +50694,7 @@ extern "C"  void ObjectPlacerAnimals_restartMentionedScene_m1918883689 (ObjectPl
 		}
 	}
 	{
-		GameObject_t1113636619 * L_2 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_2 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		Object_Destroy_m565254235(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
 	}
@@ -50464,11 +50791,12 @@ extern "C"  void ObjectPlacerAnimals_OnDisable_m632730456 (ObjectPlacerAnimals_t
 		return;
 	}
 }
-// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::postObjectStatus()
-extern "C"  void ObjectPlacerAnimals_postObjectStatus_m1386923332 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::postObjectStatus(System.String)
+extern "C"  void ObjectPlacerAnimals_postObjectStatus_m3740493861 (ObjectPlacerAnimals_t560344624 * __this, String_t* ___nvar0, const RuntimeMethod* method)
 {
 	{
-		ObjectPlacerAnimals__rp_UnityObjectPlaced_m3937459018(NULL /*static, unused*/, /*hidden argument*/NULL);
+		String_t* L_0 = ___nvar0;
+		ObjectPlacerAnimals__rp_UnityObjectPlaced_m504506532(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -50492,7 +50820,7 @@ extern "C"  void ObjectPlacerAnimals_loadAlphabet_m4144843263 (ObjectPlacerAnima
 		}
 	}
 	{
-		GameObject_t1113636619 * L_3 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_3 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		bool L_4 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_3, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
 		if (!L_4)
@@ -50501,14 +50829,14 @@ extern "C"  void ObjectPlacerAnimals_loadAlphabet_m4144843263 (ObjectPlacerAnima
 		}
 	}
 	{
-		GameObject_t1113636619 * L_5 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_5 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		Object_Destroy_m565254235(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
 	}
 
 IL_002c:
 	{
-		AudioSource_t3935305588 * L_6 = __this->get_audioSource_63();
+		AudioSource_t3935305588 * L_6 = __this->get_audioSource_90();
 		NullCheck(L_6);
 		bool L_7 = AudioSource_get_isPlaying_m1896551654(L_6, /*hidden argument*/NULL);
 		if (!L_7)
@@ -50517,7 +50845,7 @@ IL_002c:
 		}
 	}
 	{
-		AudioSource_t3935305588 * L_8 = __this->get_audioSource_63();
+		AudioSource_t3935305588 * L_8 = __this->get_audioSource_90();
 		NullCheck(L_8);
 		AudioSource_Stop_m2682712816(L_8, /*hidden argument*/NULL);
 	}
@@ -50525,8 +50853,8 @@ IL_002c:
 IL_0047:
 	{
 		String_t* L_9 = ___nvar0;
-		__this->set_currentalphabet_36(L_9);
-		String_t* L_10 = __this->get_currentalphabet_36();
+		__this->set_currentalphabet_37(L_9);
+		String_t* L_10 = __this->get_currentalphabet_37();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_11 = String_Concat_m3937257545(NULL /*static, unused*/, _stringLiteral3917464555, L_10, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
@@ -50558,8 +50886,13 @@ extern "C"  void ObjectPlacerAnimals_chooseModel_m3209889911 (ObjectPlacerAnimal
 	memset(&V_5, 0, sizeof(V_5));
 	Vector3_t3722313464  V_6;
 	memset(&V_6, 0, sizeof(V_6));
+	float V_7 = 0.0f;
+	String_t* V_8 = NULL;
+	String_t* V_9 = NULL;
+	String_t* V_10 = NULL;
+	String_t* V_11 = NULL;
 	{
-		GameObject_t1113636619 * L_0 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_0 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_0, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
@@ -50568,23 +50901,23 @@ extern "C"  void ObjectPlacerAnimals_chooseModel_m3209889911 (ObjectPlacerAnimal
 		}
 	}
 	{
-		GameObject_t1113636619 * L_2 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_2 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		Object_Destroy_m565254235(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
 	}
 
 IL_001c:
 	{
-		String_t* L_3 = __this->get_currentalphabet_36();
+		String_t* L_3 = __this->get_currentalphabet_37();
 		V_0 = L_3;
 		String_t* L_4 = V_0;
 		if (!L_4)
 		{
-			goto IL_0997;
+			goto IL_0acf;
 		}
 	}
 	{
-		Dictionary_2_t2736202052 * L_5 = ((ObjectPlacerAnimals_t560344624_StaticFields*)il2cpp_codegen_static_fields_for(ObjectPlacerAnimals_t560344624_il2cpp_TypeInfo_var))->get_U3CU3Ef__switchU24map2_68();
+		Dictionary_2_t2736202052 * L_5 = ((ObjectPlacerAnimals_t560344624_StaticFields*)il2cpp_codegen_static_fields_for(ObjectPlacerAnimals_t560344624_il2cpp_TypeInfo_var))->get_U3CU3Ef__switchU24map2_96();
 		if (L_5)
 		{
 			goto IL_018a;
@@ -50673,18 +51006,18 @@ IL_001c:
 		NullCheck(L_32);
 		Dictionary_2_Add_m282647386(L_32, _stringLiteral3452614646, ((int32_t)25), /*hidden argument*/Dictionary_2_Add_m282647386_RuntimeMethod_var);
 		Dictionary_2_t2736202052 * L_33 = V_1;
-		((ObjectPlacerAnimals_t560344624_StaticFields*)il2cpp_codegen_static_fields_for(ObjectPlacerAnimals_t560344624_il2cpp_TypeInfo_var))->set_U3CU3Ef__switchU24map2_68(L_33);
+		((ObjectPlacerAnimals_t560344624_StaticFields*)il2cpp_codegen_static_fields_for(ObjectPlacerAnimals_t560344624_il2cpp_TypeInfo_var))->set_U3CU3Ef__switchU24map2_96(L_33);
 	}
 
 IL_018a:
 	{
-		Dictionary_2_t2736202052 * L_34 = ((ObjectPlacerAnimals_t560344624_StaticFields*)il2cpp_codegen_static_fields_for(ObjectPlacerAnimals_t560344624_il2cpp_TypeInfo_var))->get_U3CU3Ef__switchU24map2_68();
+		Dictionary_2_t2736202052 * L_34 = ((ObjectPlacerAnimals_t560344624_StaticFields*)il2cpp_codegen_static_fields_for(ObjectPlacerAnimals_t560344624_il2cpp_TypeInfo_var))->get_U3CU3Ef__switchU24map2_96();
 		String_t* L_35 = V_0;
 		NullCheck(L_34);
 		bool L_36 = Dictionary_2_TryGetValue_m1013208020(L_34, L_35, (int32_t*)(&V_2), /*hidden argument*/Dictionary_2_TryGetValue_m1013208020_RuntimeMethod_var);
 		if (!L_36)
 		{
-			goto IL_0997;
+			goto IL_0acf;
 		}
 	}
 	{
@@ -50697,117 +51030,117 @@ IL_018a:
 			}
 			case 1:
 			{
-				goto IL_025d;
+				goto IL_0269;
 			}
 			case 2:
 			{
-				goto IL_02a7;
+				goto IL_02bf;
 			}
 			case 3:
 			{
-				goto IL_02f1;
+				goto IL_0315;
 			}
 			case 4:
 			{
-				goto IL_033b;
+				goto IL_036b;
 			}
 			case 5:
 			{
-				goto IL_0385;
+				goto IL_03c1;
 			}
 			case 6:
 			{
-				goto IL_03cf;
+				goto IL_0417;
 			}
 			case 7:
 			{
-				goto IL_0419;
+				goto IL_046d;
 			}
 			case 8:
 			{
-				goto IL_0463;
+				goto IL_04c3;
 			}
 			case 9:
 			{
-				goto IL_04ad;
+				goto IL_0519;
 			}
 			case 10:
 			{
-				goto IL_04f7;
+				goto IL_056f;
 			}
 			case 11:
 			{
-				goto IL_0541;
+				goto IL_05c5;
 			}
 			case 12:
 			{
-				goto IL_058b;
+				goto IL_061b;
 			}
 			case 13:
 			{
-				goto IL_05d5;
+				goto IL_0671;
 			}
 			case 14:
 			{
-				goto IL_061f;
+				goto IL_06c7;
 			}
 			case 15:
 			{
-				goto IL_0669;
+				goto IL_071d;
 			}
 			case 16:
 			{
-				goto IL_06b3;
+				goto IL_0773;
 			}
 			case 17:
 			{
-				goto IL_06fd;
+				goto IL_07c9;
 			}
 			case 18:
 			{
-				goto IL_0747;
+				goto IL_081f;
 			}
 			case 19:
 			{
-				goto IL_0791;
+				goto IL_0875;
 			}
 			case 20:
 			{
-				goto IL_07db;
+				goto IL_08cb;
 			}
 			case 21:
 			{
-				goto IL_0825;
+				goto IL_0921;
 			}
 			case 22:
 			{
-				goto IL_086f;
+				goto IL_0977;
 			}
 			case 23:
 			{
-				goto IL_08b9;
+				goto IL_09cd;
 			}
 			case 24:
 			{
-				goto IL_0903;
+				goto IL_0a23;
 			}
 			case 25:
 			{
-				goto IL_094d;
+				goto IL_0a79;
 			}
 			case 26:
 			{
-				goto IL_0997;
+				goto IL_0acf;
 			}
 		}
 	}
 	{
-		goto IL_0997;
+		goto IL_0acf;
 	}
 
 IL_0213:
 	{
-		GameObject_t1113636619 * L_38 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_38 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		bool L_39 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_38, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
 		if (!L_39)
@@ -50816,820 +51149,1053 @@ IL_0213:
 		}
 	}
 	{
-		GameObject_t1113636619 * L_40 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_40 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		Object_Destroy_m565254235(NULL /*static, unused*/, L_40, /*hidden argument*/NULL);
 	}
 
 IL_022f:
 	{
-		GameObject_t1113636619 * L_41 = __this->get_animal_A_10();
+		GameObject_t1113636619 * L_41 = __this->get_animal_A_11();
 		Transform_t3600365921 * L_42 = __this->get_m_HitTransform_2();
 		NullCheck(L_42);
 		Transform_t3600365921 * L_43 = Component_get_transform_m3162698980(L_42, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		GameObject_t1113636619 * L_44 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_41, L_43, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_44);
-		AudioClip_t3680889665 * L_45 = __this->get_audioClip_A_37();
-		__this->set_audioclip_64(L_45);
-		goto IL_099c;
+		__this->set_arObject_9(L_44);
+		AudioClip_t3680889665 * L_45 = __this->get_audioClip_A_38();
+		__this->set_audioclip_91(L_45);
+		float L_46 = __this->get_scale_A_64();
+		__this->set_animalScale_94(L_46);
+		goto IL_0ad4;
 	}
 
-IL_025d:
+IL_0269:
 	{
-		GameObject_t1113636619 * L_46 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_47 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_47 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_46, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_47)
+		bool L_48 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_47, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_48)
 		{
-			goto IL_0279;
+			goto IL_0285;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_48 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_49 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_48, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_49, /*hidden argument*/NULL);
 	}
 
-IL_0279:
+IL_0285:
 	{
-		GameObject_t1113636619 * L_49 = __this->get_animal_B_11();
-		Transform_t3600365921 * L_50 = __this->get_m_HitTransform_2();
-		NullCheck(L_50);
-		Transform_t3600365921 * L_51 = Component_get_transform_m3162698980(L_50, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_50 = __this->get_animal_B_12();
+		Transform_t3600365921 * L_51 = __this->get_m_HitTransform_2();
+		NullCheck(L_51);
+		Transform_t3600365921 * L_52 = Component_get_transform_m3162698980(L_51, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_52 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_49, L_51, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_52);
-		AudioClip_t3680889665 * L_53 = __this->get_audioClip_B_38();
-		__this->set_audioclip_64(L_53);
-		goto IL_099c;
+		GameObject_t1113636619 * L_53 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_50, L_52, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_53);
+		AudioClip_t3680889665 * L_54 = __this->get_audioClip_B_39();
+		__this->set_audioclip_91(L_54);
+		float L_55 = __this->get_scale_B_65();
+		__this->set_animalScale_94(L_55);
+		goto IL_0ad4;
 	}
 
-IL_02a7:
+IL_02bf:
 	{
-		GameObject_t1113636619 * L_54 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_56 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_55 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_54, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_55)
+		bool L_57 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_56, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_57)
 		{
-			goto IL_02c3;
+			goto IL_02db;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_56 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_58 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_56, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_58, /*hidden argument*/NULL);
 	}
 
-IL_02c3:
+IL_02db:
 	{
-		GameObject_t1113636619 * L_57 = __this->get_animal_C_12();
-		Transform_t3600365921 * L_58 = __this->get_m_HitTransform_2();
-		NullCheck(L_58);
-		Transform_t3600365921 * L_59 = Component_get_transform_m3162698980(L_58, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_59 = __this->get_animal_C_13();
+		Transform_t3600365921 * L_60 = __this->get_m_HitTransform_2();
+		NullCheck(L_60);
+		Transform_t3600365921 * L_61 = Component_get_transform_m3162698980(L_60, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_60 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_57, L_59, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_60);
-		AudioClip_t3680889665 * L_61 = __this->get_audioClip_C_39();
-		__this->set_audioclip_64(L_61);
-		goto IL_099c;
+		GameObject_t1113636619 * L_62 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_59, L_61, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_62);
+		AudioClip_t3680889665 * L_63 = __this->get_audioClip_C_40();
+		__this->set_audioclip_91(L_63);
+		float L_64 = __this->get_scale_C_66();
+		__this->set_animalScale_94(L_64);
+		goto IL_0ad4;
 	}
 
-IL_02f1:
+IL_0315:
 	{
-		GameObject_t1113636619 * L_62 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_65 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_63 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_62, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_63)
+		bool L_66 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_65, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_66)
 		{
-			goto IL_030d;
+			goto IL_0331;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_64 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_67 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_64, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_67, /*hidden argument*/NULL);
 	}
 
-IL_030d:
+IL_0331:
 	{
-		GameObject_t1113636619 * L_65 = __this->get_animal_D_13();
-		Transform_t3600365921 * L_66 = __this->get_m_HitTransform_2();
-		NullCheck(L_66);
-		Transform_t3600365921 * L_67 = Component_get_transform_m3162698980(L_66, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_68 = __this->get_animal_D_14();
+		Transform_t3600365921 * L_69 = __this->get_m_HitTransform_2();
+		NullCheck(L_69);
+		Transform_t3600365921 * L_70 = Component_get_transform_m3162698980(L_69, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_68 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_65, L_67, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_68);
-		AudioClip_t3680889665 * L_69 = __this->get_audioClip_D_40();
-		__this->set_audioclip_64(L_69);
-		goto IL_099c;
+		GameObject_t1113636619 * L_71 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_68, L_70, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_71);
+		AudioClip_t3680889665 * L_72 = __this->get_audioClip_D_41();
+		__this->set_audioclip_91(L_72);
+		float L_73 = __this->get_scale_D_67();
+		__this->set_animalScale_94(L_73);
+		goto IL_0ad4;
 	}
 
-IL_033b:
+IL_036b:
 	{
-		GameObject_t1113636619 * L_70 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_74 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_71 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_70, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_71)
+		bool L_75 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_74, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_75)
 		{
-			goto IL_0357;
+			goto IL_0387;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_72 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_76 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_72, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_76, /*hidden argument*/NULL);
 	}
 
-IL_0357:
+IL_0387:
 	{
-		GameObject_t1113636619 * L_73 = __this->get_animal_E_14();
-		Transform_t3600365921 * L_74 = __this->get_m_HitTransform_2();
-		NullCheck(L_74);
-		Transform_t3600365921 * L_75 = Component_get_transform_m3162698980(L_74, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_77 = __this->get_animal_E_15();
+		Transform_t3600365921 * L_78 = __this->get_m_HitTransform_2();
+		NullCheck(L_78);
+		Transform_t3600365921 * L_79 = Component_get_transform_m3162698980(L_78, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_76 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_73, L_75, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_76);
-		AudioClip_t3680889665 * L_77 = __this->get_audioClip_E_41();
-		__this->set_audioclip_64(L_77);
-		goto IL_099c;
+		GameObject_t1113636619 * L_80 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_77, L_79, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_80);
+		AudioClip_t3680889665 * L_81 = __this->get_audioClip_E_42();
+		__this->set_audioclip_91(L_81);
+		float L_82 = __this->get_scale_E_68();
+		__this->set_animalScale_94(L_82);
+		goto IL_0ad4;
 	}
 
-IL_0385:
+IL_03c1:
 	{
-		GameObject_t1113636619 * L_78 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_83 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_79 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_78, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_79)
+		bool L_84 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_83, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_84)
 		{
-			goto IL_03a1;
+			goto IL_03dd;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_80 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_85 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_80, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_85, /*hidden argument*/NULL);
 	}
 
-IL_03a1:
+IL_03dd:
 	{
-		GameObject_t1113636619 * L_81 = __this->get_animal_F_15();
-		Transform_t3600365921 * L_82 = __this->get_m_HitTransform_2();
-		NullCheck(L_82);
-		Transform_t3600365921 * L_83 = Component_get_transform_m3162698980(L_82, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_86 = __this->get_animal_F_16();
+		Transform_t3600365921 * L_87 = __this->get_m_HitTransform_2();
+		NullCheck(L_87);
+		Transform_t3600365921 * L_88 = Component_get_transform_m3162698980(L_87, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_84 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_81, L_83, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_84);
-		AudioClip_t3680889665 * L_85 = __this->get_audioClip_F_42();
-		__this->set_audioclip_64(L_85);
-		goto IL_099c;
+		GameObject_t1113636619 * L_89 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_86, L_88, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_89);
+		AudioClip_t3680889665 * L_90 = __this->get_audioClip_F_43();
+		__this->set_audioclip_91(L_90);
+		float L_91 = __this->get_scale_F_69();
+		__this->set_animalScale_94(L_91);
+		goto IL_0ad4;
 	}
 
-IL_03cf:
+IL_0417:
 	{
-		GameObject_t1113636619 * L_86 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_92 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_87 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_86, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_87)
+		bool L_93 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_92, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_93)
 		{
-			goto IL_03eb;
+			goto IL_0433;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_88 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_94 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_88, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_94, /*hidden argument*/NULL);
 	}
 
-IL_03eb:
+IL_0433:
 	{
-		GameObject_t1113636619 * L_89 = __this->get_animal_G_16();
-		Transform_t3600365921 * L_90 = __this->get_m_HitTransform_2();
-		NullCheck(L_90);
-		Transform_t3600365921 * L_91 = Component_get_transform_m3162698980(L_90, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_95 = __this->get_animal_G_17();
+		Transform_t3600365921 * L_96 = __this->get_m_HitTransform_2();
+		NullCheck(L_96);
+		Transform_t3600365921 * L_97 = Component_get_transform_m3162698980(L_96, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_92 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_89, L_91, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_92);
-		AudioClip_t3680889665 * L_93 = __this->get_audioClip_G_43();
-		__this->set_audioclip_64(L_93);
-		goto IL_099c;
+		GameObject_t1113636619 * L_98 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_95, L_97, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_98);
+		AudioClip_t3680889665 * L_99 = __this->get_audioClip_G_44();
+		__this->set_audioclip_91(L_99);
+		float L_100 = __this->get_scale_G_70();
+		__this->set_animalScale_94(L_100);
+		goto IL_0ad4;
 	}
 
-IL_0419:
+IL_046d:
 	{
-		GameObject_t1113636619 * L_94 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_101 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_95 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_94, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_95)
+		bool L_102 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_101, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_102)
 		{
-			goto IL_0435;
+			goto IL_0489;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_96 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_103 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_96, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_103, /*hidden argument*/NULL);
 	}
 
-IL_0435:
+IL_0489:
 	{
-		GameObject_t1113636619 * L_97 = __this->get_animal_H_17();
-		Transform_t3600365921 * L_98 = __this->get_m_HitTransform_2();
-		NullCheck(L_98);
-		Transform_t3600365921 * L_99 = Component_get_transform_m3162698980(L_98, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_104 = __this->get_animal_H_18();
+		Transform_t3600365921 * L_105 = __this->get_m_HitTransform_2();
+		NullCheck(L_105);
+		Transform_t3600365921 * L_106 = Component_get_transform_m3162698980(L_105, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_100 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_97, L_99, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_100);
-		AudioClip_t3680889665 * L_101 = __this->get_audioClip_H_44();
-		__this->set_audioclip_64(L_101);
-		goto IL_099c;
+		GameObject_t1113636619 * L_107 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_104, L_106, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_107);
+		AudioClip_t3680889665 * L_108 = __this->get_audioClip_H_45();
+		__this->set_audioclip_91(L_108);
+		float L_109 = __this->get_scale_H_71();
+		__this->set_animalScale_94(L_109);
+		goto IL_0ad4;
 	}
 
-IL_0463:
+IL_04c3:
 	{
-		GameObject_t1113636619 * L_102 = __this->get_arObject_8();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_103 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_102, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_103)
-		{
-			goto IL_047f;
-		}
-	}
-	{
-		GameObject_t1113636619 * L_104 = __this->get_arObject_8();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_104, /*hidden argument*/NULL);
-	}
-
-IL_047f:
-	{
-		GameObject_t1113636619 * L_105 = __this->get_animal_I_18();
-		Transform_t3600365921 * L_106 = __this->get_m_HitTransform_2();
-		NullCheck(L_106);
-		Transform_t3600365921 * L_107 = Component_get_transform_m3162698980(L_106, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_108 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_105, L_107, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_108);
-		AudioClip_t3680889665 * L_109 = __this->get_audioClip_I_45();
-		__this->set_audioclip_64(L_109);
-		goto IL_099c;
-	}
-
-IL_04ad:
-	{
-		GameObject_t1113636619 * L_110 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_110 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		bool L_111 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_110, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
 		if (!L_111)
 		{
-			goto IL_04c9;
+			goto IL_04df;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_112 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_112 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		Object_Destroy_m565254235(NULL /*static, unused*/, L_112, /*hidden argument*/NULL);
 	}
 
-IL_04c9:
+IL_04df:
 	{
-		GameObject_t1113636619 * L_113 = __this->get_animal_J_19();
+		GameObject_t1113636619 * L_113 = __this->get_animal_I_19();
 		Transform_t3600365921 * L_114 = __this->get_m_HitTransform_2();
 		NullCheck(L_114);
 		Transform_t3600365921 * L_115 = Component_get_transform_m3162698980(L_114, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		GameObject_t1113636619 * L_116 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_113, L_115, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_116);
-		AudioClip_t3680889665 * L_117 = __this->get_audioClip_J_46();
-		__this->set_audioclip_64(L_117);
-		goto IL_099c;
+		__this->set_arObject_9(L_116);
+		AudioClip_t3680889665 * L_117 = __this->get_audioClip_I_46();
+		__this->set_audioclip_91(L_117);
+		float L_118 = __this->get_scale_I_72();
+		__this->set_animalScale_94(L_118);
+		goto IL_0ad4;
 	}
 
-IL_04f7:
+IL_0519:
 	{
-		GameObject_t1113636619 * L_118 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_119 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_119 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_118, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_119)
+		bool L_120 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_119, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_120)
 		{
-			goto IL_0513;
+			goto IL_0535;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_120 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_121 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_120, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_121, /*hidden argument*/NULL);
 	}
 
-IL_0513:
+IL_0535:
 	{
-		GameObject_t1113636619 * L_121 = __this->get_animal_K_20();
-		Transform_t3600365921 * L_122 = __this->get_m_HitTransform_2();
-		NullCheck(L_122);
-		Transform_t3600365921 * L_123 = Component_get_transform_m3162698980(L_122, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_122 = __this->get_animal_J_20();
+		Transform_t3600365921 * L_123 = __this->get_m_HitTransform_2();
+		NullCheck(L_123);
+		Transform_t3600365921 * L_124 = Component_get_transform_m3162698980(L_123, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_124 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_121, L_123, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_124);
-		AudioClip_t3680889665 * L_125 = __this->get_audioClip_K_47();
-		__this->set_audioclip_64(L_125);
-		goto IL_099c;
+		GameObject_t1113636619 * L_125 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_122, L_124, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_125);
+		AudioClip_t3680889665 * L_126 = __this->get_audioClip_J_47();
+		__this->set_audioclip_91(L_126);
+		float L_127 = __this->get_scale_J_73();
+		__this->set_animalScale_94(L_127);
+		goto IL_0ad4;
 	}
 
-IL_0541:
+IL_056f:
 	{
-		GameObject_t1113636619 * L_126 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_128 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_127 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_126, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_127)
+		bool L_129 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_128, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_129)
 		{
-			goto IL_055d;
+			goto IL_058b;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_128 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_130 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_128, /*hidden argument*/NULL);
-	}
-
-IL_055d:
-	{
-		GameObject_t1113636619 * L_129 = __this->get_animal_L_21();
-		Transform_t3600365921 * L_130 = __this->get_m_HitTransform_2();
-		NullCheck(L_130);
-		Transform_t3600365921 * L_131 = Component_get_transform_m3162698980(L_130, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_132 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_129, L_131, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_132);
-		AudioClip_t3680889665 * L_133 = __this->get_audioClip_L_48();
-		__this->set_audioclip_64(L_133);
-		goto IL_099c;
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_130, /*hidden argument*/NULL);
 	}
 
 IL_058b:
 	{
-		GameObject_t1113636619 * L_134 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_131 = __this->get_animal_K_21();
+		Transform_t3600365921 * L_132 = __this->get_m_HitTransform_2();
+		NullCheck(L_132);
+		Transform_t3600365921 * L_133 = Component_get_transform_m3162698980(L_132, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_135 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_134, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_135)
+		GameObject_t1113636619 * L_134 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_131, L_133, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_134);
+		AudioClip_t3680889665 * L_135 = __this->get_audioClip_K_48();
+		__this->set_audioclip_91(L_135);
+		float L_136 = __this->get_scale_K_74();
+		__this->set_animalScale_94(L_136);
+		goto IL_0ad4;
+	}
+
+IL_05c5:
+	{
+		GameObject_t1113636619 * L_137 = __this->get_arObject_9();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		bool L_138 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_137, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_138)
 		{
-			goto IL_05a7;
+			goto IL_05e1;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_136 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_139 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_136, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_139, /*hidden argument*/NULL);
 	}
 
-IL_05a7:
+IL_05e1:
 	{
-		GameObject_t1113636619 * L_137 = __this->get_animal_M_22();
-		Transform_t3600365921 * L_138 = __this->get_m_HitTransform_2();
-		NullCheck(L_138);
-		Transform_t3600365921 * L_139 = Component_get_transform_m3162698980(L_138, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_140 = __this->get_animal_L_22();
+		Transform_t3600365921 * L_141 = __this->get_m_HitTransform_2();
+		NullCheck(L_141);
+		Transform_t3600365921 * L_142 = Component_get_transform_m3162698980(L_141, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_140 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_137, L_139, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_140);
-		AudioClip_t3680889665 * L_141 = __this->get_audioClip_M_49();
-		__this->set_audioclip_64(L_141);
-		goto IL_099c;
+		GameObject_t1113636619 * L_143 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_140, L_142, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_143);
+		AudioClip_t3680889665 * L_144 = __this->get_audioClip_L_49();
+		__this->set_audioclip_91(L_144);
+		float L_145 = __this->get_scale_L_75();
+		__this->set_animalScale_94(L_145);
+		goto IL_0ad4;
 	}
 
-IL_05d5:
+IL_061b:
 	{
-		GameObject_t1113636619 * L_142 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_146 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_143 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_142, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_143)
+		bool L_147 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_146, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_147)
 		{
-			goto IL_05f1;
+			goto IL_0637;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_144 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_148 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_144, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_148, /*hidden argument*/NULL);
 	}
 
-IL_05f1:
+IL_0637:
 	{
-		GameObject_t1113636619 * L_145 = __this->get_animal_N_23();
-		Transform_t3600365921 * L_146 = __this->get_m_HitTransform_2();
-		NullCheck(L_146);
-		Transform_t3600365921 * L_147 = Component_get_transform_m3162698980(L_146, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_149 = __this->get_animal_M_23();
+		Transform_t3600365921 * L_150 = __this->get_m_HitTransform_2();
+		NullCheck(L_150);
+		Transform_t3600365921 * L_151 = Component_get_transform_m3162698980(L_150, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_148 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_145, L_147, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_148);
-		AudioClip_t3680889665 * L_149 = __this->get_audioClip_N_50();
-		__this->set_audioclip_64(L_149);
-		goto IL_099c;
+		GameObject_t1113636619 * L_152 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_149, L_151, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_152);
+		AudioClip_t3680889665 * L_153 = __this->get_audioClip_M_50();
+		__this->set_audioclip_91(L_153);
+		float L_154 = __this->get_scale_M_76();
+		__this->set_animalScale_94(L_154);
+		goto IL_0ad4;
 	}
 
-IL_061f:
+IL_0671:
 	{
-		GameObject_t1113636619 * L_150 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_155 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_151 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_150, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_151)
+		bool L_156 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_155, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_156)
 		{
-			goto IL_063b;
+			goto IL_068d;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_152 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_157 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_152, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_157, /*hidden argument*/NULL);
 	}
 
-IL_063b:
+IL_068d:
 	{
-		GameObject_t1113636619 * L_153 = __this->get_animal_O_24();
-		Transform_t3600365921 * L_154 = __this->get_m_HitTransform_2();
-		NullCheck(L_154);
-		Transform_t3600365921 * L_155 = Component_get_transform_m3162698980(L_154, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_158 = __this->get_animal_N_24();
+		Transform_t3600365921 * L_159 = __this->get_m_HitTransform_2();
+		NullCheck(L_159);
+		Transform_t3600365921 * L_160 = Component_get_transform_m3162698980(L_159, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_156 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_153, L_155, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_156);
-		AudioClip_t3680889665 * L_157 = __this->get_audioClip_O_51();
-		__this->set_audioclip_64(L_157);
-		goto IL_099c;
+		GameObject_t1113636619 * L_161 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_158, L_160, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_161);
+		AudioClip_t3680889665 * L_162 = __this->get_audioClip_N_51();
+		__this->set_audioclip_91(L_162);
+		float L_163 = __this->get_scale_N_77();
+		__this->set_animalScale_94(L_163);
+		goto IL_0ad4;
 	}
 
-IL_0669:
+IL_06c7:
 	{
-		GameObject_t1113636619 * L_158 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_164 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_159 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_158, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_159)
+		bool L_165 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_164, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_165)
 		{
-			goto IL_0685;
+			goto IL_06e3;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_160 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_166 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_160, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_166, /*hidden argument*/NULL);
 	}
 
-IL_0685:
+IL_06e3:
 	{
-		GameObject_t1113636619 * L_161 = __this->get_animal_P_25();
-		Transform_t3600365921 * L_162 = __this->get_m_HitTransform_2();
-		NullCheck(L_162);
-		Transform_t3600365921 * L_163 = Component_get_transform_m3162698980(L_162, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_167 = __this->get_animal_O_25();
+		Transform_t3600365921 * L_168 = __this->get_m_HitTransform_2();
+		NullCheck(L_168);
+		Transform_t3600365921 * L_169 = Component_get_transform_m3162698980(L_168, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_164 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_161, L_163, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_164);
-		AudioClip_t3680889665 * L_165 = __this->get_audioClip_P_52();
-		__this->set_audioclip_64(L_165);
-		goto IL_099c;
+		GameObject_t1113636619 * L_170 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_167, L_169, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_170);
+		AudioClip_t3680889665 * L_171 = __this->get_audioClip_O_52();
+		__this->set_audioclip_91(L_171);
+		float L_172 = __this->get_scale_O_78();
+		__this->set_animalScale_94(L_172);
+		goto IL_0ad4;
 	}
 
-IL_06b3:
+IL_071d:
 	{
-		GameObject_t1113636619 * L_166 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_173 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_167 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_166, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_167)
+		bool L_174 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_173, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_174)
 		{
-			goto IL_06cf;
+			goto IL_0739;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_168 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_175 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_168, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_175, /*hidden argument*/NULL);
 	}
 
-IL_06cf:
+IL_0739:
 	{
-		GameObject_t1113636619 * L_169 = __this->get_animal_Q_26();
-		Transform_t3600365921 * L_170 = __this->get_m_HitTransform_2();
-		NullCheck(L_170);
-		Transform_t3600365921 * L_171 = Component_get_transform_m3162698980(L_170, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_176 = __this->get_animal_P_26();
+		Transform_t3600365921 * L_177 = __this->get_m_HitTransform_2();
+		NullCheck(L_177);
+		Transform_t3600365921 * L_178 = Component_get_transform_m3162698980(L_177, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_172 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_169, L_171, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_172);
-		AudioClip_t3680889665 * L_173 = __this->get_audioClip_Q_53();
-		__this->set_audioclip_64(L_173);
-		goto IL_099c;
+		GameObject_t1113636619 * L_179 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_176, L_178, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_179);
+		AudioClip_t3680889665 * L_180 = __this->get_audioClip_P_53();
+		__this->set_audioclip_91(L_180);
+		float L_181 = __this->get_scale_P_79();
+		__this->set_animalScale_94(L_181);
+		goto IL_0ad4;
 	}
 
-IL_06fd:
+IL_0773:
 	{
-		GameObject_t1113636619 * L_174 = __this->get_arObject_8();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_175 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_174, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_175)
-		{
-			goto IL_0719;
-		}
-	}
-	{
-		GameObject_t1113636619 * L_176 = __this->get_arObject_8();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_176, /*hidden argument*/NULL);
-	}
-
-IL_0719:
-	{
-		GameObject_t1113636619 * L_177 = __this->get_animal_R_27();
-		Transform_t3600365921 * L_178 = __this->get_m_HitTransform_2();
-		NullCheck(L_178);
-		Transform_t3600365921 * L_179 = Component_get_transform_m3162698980(L_178, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_180 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_177, L_179, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_180);
-		AudioClip_t3680889665 * L_181 = __this->get_audioClip_R_54();
-		__this->set_audioclip_64(L_181);
-		goto IL_099c;
-	}
-
-IL_0747:
-	{
-		GameObject_t1113636619 * L_182 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_182 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		bool L_183 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_182, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
 		if (!L_183)
 		{
-			goto IL_0763;
+			goto IL_078f;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_184 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_184 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		Object_Destroy_m565254235(NULL /*static, unused*/, L_184, /*hidden argument*/NULL);
 	}
 
-IL_0763:
+IL_078f:
 	{
-		GameObject_t1113636619 * L_185 = __this->get_animal_S_28();
+		GameObject_t1113636619 * L_185 = __this->get_animal_Q_27();
 		Transform_t3600365921 * L_186 = __this->get_m_HitTransform_2();
 		NullCheck(L_186);
 		Transform_t3600365921 * L_187 = Component_get_transform_m3162698980(L_186, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		GameObject_t1113636619 * L_188 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_185, L_187, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_188);
-		AudioClip_t3680889665 * L_189 = __this->get_audioClip_S_55();
-		__this->set_audioclip_64(L_189);
-		goto IL_099c;
+		__this->set_arObject_9(L_188);
+		AudioClip_t3680889665 * L_189 = __this->get_audioClip_Q_54();
+		__this->set_audioclip_91(L_189);
+		float L_190 = __this->get_scale_Q_80();
+		__this->set_animalScale_94(L_190);
+		goto IL_0ad4;
 	}
 
-IL_0791:
+IL_07c9:
 	{
-		GameObject_t1113636619 * L_190 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_191 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_191 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_190, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_191)
+		bool L_192 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_191, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_192)
 		{
-			goto IL_07ad;
+			goto IL_07e5;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_192 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_193 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_192, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_193, /*hidden argument*/NULL);
 	}
 
-IL_07ad:
+IL_07e5:
 	{
-		GameObject_t1113636619 * L_193 = __this->get_animal_T_29();
-		Transform_t3600365921 * L_194 = __this->get_m_HitTransform_2();
-		NullCheck(L_194);
-		Transform_t3600365921 * L_195 = Component_get_transform_m3162698980(L_194, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_194 = __this->get_animal_R_28();
+		Transform_t3600365921 * L_195 = __this->get_m_HitTransform_2();
+		NullCheck(L_195);
+		Transform_t3600365921 * L_196 = Component_get_transform_m3162698980(L_195, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_196 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_193, L_195, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_196);
-		AudioClip_t3680889665 * L_197 = __this->get_audioClip_T_56();
-		__this->set_audioclip_64(L_197);
-		goto IL_099c;
+		GameObject_t1113636619 * L_197 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_194, L_196, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_197);
+		AudioClip_t3680889665 * L_198 = __this->get_audioClip_R_55();
+		__this->set_audioclip_91(L_198);
+		float L_199 = __this->get_scale_R_81();
+		__this->set_animalScale_94(L_199);
+		goto IL_0ad4;
 	}
 
-IL_07db:
+IL_081f:
 	{
-		GameObject_t1113636619 * L_198 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_200 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_199 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_198, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_199)
+		bool L_201 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_200, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_201)
 		{
-			goto IL_07f7;
+			goto IL_083b;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_200 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_202 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_200, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_202, /*hidden argument*/NULL);
 	}
 
-IL_07f7:
+IL_083b:
 	{
-		GameObject_t1113636619 * L_201 = __this->get_animal_U_30();
-		Transform_t3600365921 * L_202 = __this->get_m_HitTransform_2();
-		NullCheck(L_202);
-		Transform_t3600365921 * L_203 = Component_get_transform_m3162698980(L_202, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_203 = __this->get_animal_S_29();
+		Transform_t3600365921 * L_204 = __this->get_m_HitTransform_2();
+		NullCheck(L_204);
+		Transform_t3600365921 * L_205 = Component_get_transform_m3162698980(L_204, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_204 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_201, L_203, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_204);
-		AudioClip_t3680889665 * L_205 = __this->get_audioClip_U_57();
-		__this->set_audioclip_64(L_205);
-		goto IL_099c;
+		GameObject_t1113636619 * L_206 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_203, L_205, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_206);
+		AudioClip_t3680889665 * L_207 = __this->get_audioClip_S_56();
+		__this->set_audioclip_91(L_207);
+		float L_208 = __this->get_scale_S_82();
+		__this->set_animalScale_94(L_208);
+		goto IL_0ad4;
 	}
 
-IL_0825:
+IL_0875:
 	{
-		GameObject_t1113636619 * L_206 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_209 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_207 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_206, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_207)
+		bool L_210 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_209, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_210)
 		{
-			goto IL_0841;
+			goto IL_0891;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_208 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_211 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_208, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_211, /*hidden argument*/NULL);
 	}
 
-IL_0841:
+IL_0891:
 	{
-		GameObject_t1113636619 * L_209 = __this->get_animal_V_31();
-		Transform_t3600365921 * L_210 = __this->get_m_HitTransform_2();
-		NullCheck(L_210);
-		Transform_t3600365921 * L_211 = Component_get_transform_m3162698980(L_210, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_212 = __this->get_animal_T_30();
+		Transform_t3600365921 * L_213 = __this->get_m_HitTransform_2();
+		NullCheck(L_213);
+		Transform_t3600365921 * L_214 = Component_get_transform_m3162698980(L_213, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_212 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_209, L_211, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_212);
-		AudioClip_t3680889665 * L_213 = __this->get_audioClip_V_58();
-		__this->set_audioclip_64(L_213);
-		goto IL_099c;
+		GameObject_t1113636619 * L_215 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_212, L_214, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_215);
+		AudioClip_t3680889665 * L_216 = __this->get_audioClip_T_57();
+		__this->set_audioclip_91(L_216);
+		float L_217 = __this->get_scale_T_83();
+		__this->set_animalScale_94(L_217);
+		goto IL_0ad4;
 	}
 
-IL_086f:
+IL_08cb:
 	{
-		GameObject_t1113636619 * L_214 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_218 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_215 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_214, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_215)
+		bool L_219 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_218, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_219)
 		{
-			goto IL_088b;
+			goto IL_08e7;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_216 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_220 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_216, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_220, /*hidden argument*/NULL);
 	}
 
-IL_088b:
+IL_08e7:
 	{
-		GameObject_t1113636619 * L_217 = __this->get_animal_W_32();
-		Transform_t3600365921 * L_218 = __this->get_m_HitTransform_2();
-		NullCheck(L_218);
-		Transform_t3600365921 * L_219 = Component_get_transform_m3162698980(L_218, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_221 = __this->get_animal_U_31();
+		Transform_t3600365921 * L_222 = __this->get_m_HitTransform_2();
+		NullCheck(L_222);
+		Transform_t3600365921 * L_223 = Component_get_transform_m3162698980(L_222, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_220 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_217, L_219, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_220);
-		AudioClip_t3680889665 * L_221 = __this->get_audioClip_W_59();
-		__this->set_audioclip_64(L_221);
-		goto IL_099c;
+		GameObject_t1113636619 * L_224 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_221, L_223, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_224);
+		AudioClip_t3680889665 * L_225 = __this->get_audioClip_U_58();
+		__this->set_audioclip_91(L_225);
+		float L_226 = __this->get_scale_U_84();
+		__this->set_animalScale_94(L_226);
+		goto IL_0ad4;
 	}
 
-IL_08b9:
+IL_0921:
 	{
-		GameObject_t1113636619 * L_222 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_227 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_223 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_222, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_223)
+		bool L_228 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_227, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_228)
 		{
-			goto IL_08d5;
+			goto IL_093d;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_224 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_229 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_224, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_229, /*hidden argument*/NULL);
 	}
 
-IL_08d5:
+IL_093d:
 	{
-		GameObject_t1113636619 * L_225 = __this->get_animal_X_33();
-		Transform_t3600365921 * L_226 = __this->get_m_HitTransform_2();
-		NullCheck(L_226);
-		Transform_t3600365921 * L_227 = Component_get_transform_m3162698980(L_226, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_230 = __this->get_animal_V_32();
+		Transform_t3600365921 * L_231 = __this->get_m_HitTransform_2();
+		NullCheck(L_231);
+		Transform_t3600365921 * L_232 = Component_get_transform_m3162698980(L_231, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_228 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_225, L_227, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_228);
-		AudioClip_t3680889665 * L_229 = __this->get_audioClip_X_60();
-		__this->set_audioclip_64(L_229);
-		goto IL_099c;
+		GameObject_t1113636619 * L_233 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_230, L_232, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_233);
+		AudioClip_t3680889665 * L_234 = __this->get_audioClip_V_59();
+		__this->set_audioclip_91(L_234);
+		float L_235 = __this->get_scale_V_85();
+		__this->set_animalScale_94(L_235);
+		goto IL_0ad4;
 	}
 
-IL_0903:
+IL_0977:
 	{
-		GameObject_t1113636619 * L_230 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_236 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_231 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_230, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_231)
+		bool L_237 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_236, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_237)
 		{
-			goto IL_091f;
+			goto IL_0993;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_232 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_238 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_232, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_238, /*hidden argument*/NULL);
 	}
 
-IL_091f:
+IL_0993:
 	{
-		GameObject_t1113636619 * L_233 = __this->get_animal_Y_34();
-		Transform_t3600365921 * L_234 = __this->get_m_HitTransform_2();
-		NullCheck(L_234);
-		Transform_t3600365921 * L_235 = Component_get_transform_m3162698980(L_234, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_239 = __this->get_animal_W_33();
+		Transform_t3600365921 * L_240 = __this->get_m_HitTransform_2();
+		NullCheck(L_240);
+		Transform_t3600365921 * L_241 = Component_get_transform_m3162698980(L_240, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_236 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_233, L_235, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_236);
-		AudioClip_t3680889665 * L_237 = __this->get_audioClip_Y_61();
-		__this->set_audioclip_64(L_237);
-		goto IL_099c;
+		GameObject_t1113636619 * L_242 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_239, L_241, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_242);
+		AudioClip_t3680889665 * L_243 = __this->get_audioClip_W_60();
+		__this->set_audioclip_91(L_243);
+		float L_244 = __this->get_scale_W_86();
+		__this->set_animalScale_94(L_244);
+		goto IL_0ad4;
 	}
 
-IL_094d:
+IL_09cd:
 	{
-		GameObject_t1113636619 * L_238 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_245 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		bool L_239 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_238, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
-		if (!L_239)
+		bool L_246 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_245, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_246)
 		{
-			goto IL_0969;
+			goto IL_09e9;
 		}
 	}
 	{
-		GameObject_t1113636619 * L_240 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_247 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_Destroy_m565254235(NULL /*static, unused*/, L_240, /*hidden argument*/NULL);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_247, /*hidden argument*/NULL);
 	}
 
-IL_0969:
+IL_09e9:
 	{
-		GameObject_t1113636619 * L_241 = __this->get_animal_Z_35();
-		Transform_t3600365921 * L_242 = __this->get_m_HitTransform_2();
-		NullCheck(L_242);
-		Transform_t3600365921 * L_243 = Component_get_transform_m3162698980(L_242, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		GameObject_t1113636619 * L_244 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_241, L_243, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
-		__this->set_arObject_8(L_244);
-		AudioClip_t3680889665 * L_245 = __this->get_audioClip_Z_62();
-		__this->set_audioclip_64(L_245);
-		goto IL_099c;
-	}
-
-IL_0997:
-	{
-		goto IL_099c;
-	}
-
-IL_099c:
-	{
-		GameObject_t1113636619 * L_246 = __this->get_arObject_8();
-		NullCheck(L_246);
-		GameObject_SetActive_m796801857(L_246, (bool)1, /*hidden argument*/NULL);
-		GameObject_t1113636619 * L_247 = __this->get_arObject_8();
-		NullCheck(L_247);
-		Animator_t434523843 * L_248 = GameObject_GetComponent_TisAnimator_t434523843_m440019408(L_247, /*hidden argument*/GameObject_GetComponent_TisAnimator_t434523843_m440019408_RuntimeMethod_var);
-		__this->set_animalAnimator_7(L_248);
-		GameObject_t1113636619 * L_249 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_248 = __this->get_animal_X_34();
+		Transform_t3600365921 * L_249 = __this->get_m_HitTransform_2();
 		NullCheck(L_249);
-		PlayableDirector_t508516997 * L_250 = GameObject_GetComponent_TisPlayableDirector_t508516997_m1944561993(L_249, /*hidden argument*/GameObject_GetComponent_TisPlayableDirector_t508516997_m1944561993_RuntimeMethod_var);
-		__this->set_director_9(L_250);
-		Camera_t4157153871 * L_251 = Camera_get_main_m3643453163(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_251);
-		Transform_t3600365921 * L_252 = Component_get_transform_m3162698980(L_251, /*hidden argument*/NULL);
-		NullCheck(L_252);
-		Vector3_t3722313464  L_253 = Transform_get_position_m36019626(L_252, /*hidden argument*/NULL);
-		V_4 = L_253;
-		float L_254 = (&V_4)->get_x_1();
-		Transform_t3600365921 * L_255 = __this->get_m_HitTransform_2();
-		NullCheck(L_255);
-		Vector3_t3722313464  L_256 = Transform_get_position_m36019626(L_255, /*hidden argument*/NULL);
-		V_5 = L_256;
-		float L_257 = (&V_5)->get_y_2();
-		Camera_t4157153871 * L_258 = Camera_get_main_m3643453163(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_250 = Component_get_transform_m3162698980(L_249, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		GameObject_t1113636619 * L_251 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_248, L_250, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_251);
+		AudioClip_t3680889665 * L_252 = __this->get_audioClip_X_61();
+		__this->set_audioclip_91(L_252);
+		float L_253 = __this->get_scale_X_87();
+		__this->set_animalScale_94(L_253);
+		goto IL_0ad4;
+	}
+
+IL_0a23:
+	{
+		GameObject_t1113636619 * L_254 = __this->get_arObject_9();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		bool L_255 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_254, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_255)
+		{
+			goto IL_0a3f;
+		}
+	}
+	{
+		GameObject_t1113636619 * L_256 = __this->get_arObject_9();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_256, /*hidden argument*/NULL);
+	}
+
+IL_0a3f:
+	{
+		GameObject_t1113636619 * L_257 = __this->get_animal_Y_35();
+		Transform_t3600365921 * L_258 = __this->get_m_HitTransform_2();
 		NullCheck(L_258);
 		Transform_t3600365921 * L_259 = Component_get_transform_m3162698980(L_258, /*hidden argument*/NULL);
-		NullCheck(L_259);
-		Vector3_t3722313464  L_260 = Transform_get_position_m36019626(L_259, /*hidden argument*/NULL);
-		V_6 = L_260;
-		float L_261 = (&V_6)->get_z_3();
-		Vector3__ctor_m3353183577((Vector3_t3722313464 *)(&V_3), L_254, L_257, L_261, /*hidden argument*/NULL);
-		GameObject_t1113636619 * L_262 = __this->get_arObject_8();
-		NullCheck(L_262);
-		Transform_t3600365921 * L_263 = GameObject_get_transform_m1369836730(L_262, /*hidden argument*/NULL);
-		Vector3_t3722313464  L_264 = V_3;
-		NullCheck(L_263);
-		Transform_LookAt_m3649447396(L_263, L_264, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		GameObject_t1113636619 * L_260 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_257, L_259, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_260);
+		AudioClip_t3680889665 * L_261 = __this->get_audioClip_Y_62();
+		__this->set_audioclip_91(L_261);
+		float L_262 = __this->get_scale_Y_88();
+		__this->set_animalScale_94(L_262);
+		goto IL_0ad4;
+	}
+
+IL_0a79:
+	{
+		GameObject_t1113636619 * L_263 = __this->get_arObject_9();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		bool L_264 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_263, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_264)
+		{
+			goto IL_0a95;
+		}
+	}
+	{
+		GameObject_t1113636619 * L_265 = __this->get_arObject_9();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		Object_Destroy_m565254235(NULL /*static, unused*/, L_265, /*hidden argument*/NULL);
+	}
+
+IL_0a95:
+	{
+		GameObject_t1113636619 * L_266 = __this->get_animal_Z_36();
+		Transform_t3600365921 * L_267 = __this->get_m_HitTransform_2();
+		NullCheck(L_267);
+		Transform_t3600365921 * L_268 = Component_get_transform_m3162698980(L_267, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		GameObject_t1113636619 * L_269 = Object_Instantiate_TisGameObject_t1113636619_m3139856272(NULL /*static, unused*/, L_266, L_268, (bool)0, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m3139856272_RuntimeMethod_var);
+		__this->set_arObject_9(L_269);
+		AudioClip_t3680889665 * L_270 = __this->get_audioClip_Z_63();
+		__this->set_audioclip_91(L_270);
+		float L_271 = __this->get_scale_Z_89();
+		__this->set_animalScale_94(L_271);
+		goto IL_0ad4;
+	}
+
+IL_0acf:
+	{
+		goto IL_0ad4;
+	}
+
+IL_0ad4:
+	{
+		GameObject_t1113636619 * L_272 = __this->get_arObject_9();
+		NullCheck(L_272);
+		GameObject_SetActive_m796801857(L_272, (bool)1, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_273 = __this->get_arObject_9();
+		NullCheck(L_273);
+		Animator_t434523843 * L_274 = GameObject_GetComponent_TisAnimator_t434523843_m440019408(L_273, /*hidden argument*/GameObject_GetComponent_TisAnimator_t434523843_m440019408_RuntimeMethod_var);
+		__this->set_animalAnimator_8(L_274);
+		GameObject_t1113636619 * L_275 = __this->get_arObject_9();
+		NullCheck(L_275);
+		PlayableDirector_t508516997 * L_276 = GameObject_GetComponent_TisPlayableDirector_t508516997_m1944561993(L_275, /*hidden argument*/GameObject_GetComponent_TisPlayableDirector_t508516997_m1944561993_RuntimeMethod_var);
+		__this->set_director_10(L_276);
+		Camera_t4157153871 * L_277 = Camera_get_main_m3643453163(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_277);
+		Transform_t3600365921 * L_278 = Component_get_transform_m3162698980(L_277, /*hidden argument*/NULL);
+		NullCheck(L_278);
+		Vector3_t3722313464  L_279 = Transform_get_position_m36019626(L_278, /*hidden argument*/NULL);
+		V_4 = L_279;
+		float L_280 = (&V_4)->get_x_1();
+		Transform_t3600365921 * L_281 = __this->get_m_HitTransform_2();
+		NullCheck(L_281);
+		Vector3_t3722313464  L_282 = Transform_get_position_m36019626(L_281, /*hidden argument*/NULL);
+		V_5 = L_282;
+		float L_283 = (&V_5)->get_y_2();
+		Camera_t4157153871 * L_284 = Camera_get_main_m3643453163(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_284);
+		Transform_t3600365921 * L_285 = Component_get_transform_m3162698980(L_284, /*hidden argument*/NULL);
+		NullCheck(L_285);
+		Vector3_t3722313464  L_286 = Transform_get_position_m36019626(L_285, /*hidden argument*/NULL);
+		V_6 = L_286;
+		float L_287 = (&V_6)->get_z_3();
+		Vector3__ctor_m3353183577((Vector3_t3722313464 *)(&V_3), L_280, L_283, L_287, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_288 = __this->get_arObject_9();
+		NullCheck(L_288);
+		Transform_t3600365921 * L_289 = GameObject_get_transform_m1369836730(L_288, /*hidden argument*/NULL);
+		Vector3_t3722313464  L_290 = V_3;
+		NullCheck(L_289);
+		Transform_LookAt_m3649447396(L_289, L_290, /*hidden argument*/NULL);
+		double L_291 = __this->get_rDistance_7();
+		double L_292 = Math_Round_m3279303474(NULL /*static, unused*/, L_291, 2, /*hidden argument*/NULL);
+		V_7 = (((float)((float)L_292)));
+		float L_293 = V_7;
+		float L_294 = L_293;
+		RuntimeObject * L_295 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_294);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_296 = String_Format_m2844511972(NULL /*static, unused*/, _stringLiteral2151652593, L_295, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+		Debug_Log_m4051431634(NULL /*static, unused*/, L_296, /*hidden argument*/NULL);
+		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral1099041182, /*hidden argument*/NULL);
+		String_t* L_297 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_2();
+		V_8 = L_297;
+		String_t* L_298 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_2();
+		V_9 = L_298;
+		float L_299 = V_7;
+		if ((!(((double)(((double)((double)L_299)))) <= ((double)(0.2)))))
+		{
+			goto IL_0bf6;
+		}
+	}
+	{
+		V_8 = _stringLiteral763915734;
+		float L_300 = __this->get_animalScale_94();
+		float L_301 = L_300;
+		RuntimeObject * L_302 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_301);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_303 = String_Format_m2844511972(NULL /*static, unused*/, _stringLiteral879581960, L_302, /*hidden argument*/NULL);
+		V_9 = L_303;
+		GameObject_t1113636619 * L_304 = __this->get_arObject_9();
+		NullCheck(L_304);
+		Transform_t3600365921 * L_305 = GameObject_get_transform_m1369836730(L_304, /*hidden argument*/NULL);
+		float L_306 = __this->get_animalScale_94();
+		float L_307 = __this->get_animalScale_94();
+		float L_308 = __this->get_animalScale_94();
+		Vector3_t3722313464  L_309;
+		memset(&L_309, 0, sizeof(L_309));
+		Vector3__ctor_m3353183577((&L_309), L_306, L_307, L_308, /*hidden argument*/NULL);
+		NullCheck(L_305);
+		Transform_set_localScale_m3053443106(L_305, L_309, /*hidden argument*/NULL);
+		goto IL_0d67;
+	}
+
+IL_0bf6:
+	{
+		float L_310 = V_7;
+		if ((!(((double)(((double)((double)L_310)))) > ((double)(0.2)))))
+		{
+			goto IL_0c7a;
+		}
+	}
+	{
+		float L_311 = V_7;
+		if ((!(((double)(((double)((double)L_311)))) <= ((double)(1.0)))))
+		{
+			goto IL_0c7a;
+		}
+	}
+	{
+		V_8 = _stringLiteral776121636;
+		float L_312 = __this->get_animalScale_94();
+		float L_313 = ((float)il2cpp_codegen_multiply((float)L_312, (float)(2.0f)));
+		RuntimeObject * L_314 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_313);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_315 = String_Format_m2844511972(NULL /*static, unused*/, _stringLiteral879581960, L_314, /*hidden argument*/NULL);
+		V_9 = L_315;
+		GameObject_t1113636619 * L_316 = __this->get_arObject_9();
+		NullCheck(L_316);
+		Transform_t3600365921 * L_317 = GameObject_get_transform_m1369836730(L_316, /*hidden argument*/NULL);
+		float L_318 = __this->get_animalScale_94();
+		float L_319 = __this->get_animalScale_94();
+		float L_320 = __this->get_animalScale_94();
+		Vector3_t3722313464  L_321;
+		memset(&L_321, 0, sizeof(L_321));
+		Vector3__ctor_m3353183577((&L_321), ((float)il2cpp_codegen_multiply((float)L_318, (float)(2.0f))), ((float)il2cpp_codegen_multiply((float)L_319, (float)(2.0f))), ((float)il2cpp_codegen_multiply((float)L_320, (float)(2.0f))), /*hidden argument*/NULL);
+		NullCheck(L_317);
+		Transform_set_localScale_m3053443106(L_317, L_321, /*hidden argument*/NULL);
+		goto IL_0d67;
+	}
+
+IL_0c7a:
+	{
+		float L_322 = V_7;
+		if ((!(((double)(((double)((double)L_322)))) > ((double)(1.0)))))
+		{
+			goto IL_0cfe;
+		}
+	}
+	{
+		float L_323 = V_7;
+		if ((!(((double)(((double)((double)L_323)))) <= ((double)(2.0)))))
+		{
+			goto IL_0cfe;
+		}
+	}
+	{
+		V_8 = _stringLiteral3082488388;
+		float L_324 = __this->get_animalScale_94();
+		float L_325 = ((float)il2cpp_codegen_multiply((float)L_324, (float)(4.0f)));
+		RuntimeObject * L_326 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_325);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_327 = String_Format_m2844511972(NULL /*static, unused*/, _stringLiteral879581960, L_326, /*hidden argument*/NULL);
+		V_9 = L_327;
+		GameObject_t1113636619 * L_328 = __this->get_arObject_9();
+		NullCheck(L_328);
+		Transform_t3600365921 * L_329 = GameObject_get_transform_m1369836730(L_328, /*hidden argument*/NULL);
+		float L_330 = __this->get_animalScale_94();
+		float L_331 = __this->get_animalScale_94();
+		float L_332 = __this->get_animalScale_94();
+		Vector3_t3722313464  L_333;
+		memset(&L_333, 0, sizeof(L_333));
+		Vector3__ctor_m3353183577((&L_333), ((float)il2cpp_codegen_multiply((float)L_330, (float)(4.0f))), ((float)il2cpp_codegen_multiply((float)L_331, (float)(4.0f))), ((float)il2cpp_codegen_multiply((float)L_332, (float)(4.0f))), /*hidden argument*/NULL);
+		NullCheck(L_329);
+		Transform_set_localScale_m3053443106(L_329, L_333, /*hidden argument*/NULL);
+		goto IL_0d67;
+	}
+
+IL_0cfe:
+	{
+		float L_334 = V_7;
+		if ((!(((float)L_334) > ((float)(2.0f)))))
+		{
+			goto IL_0d67;
+		}
+	}
+	{
+		V_8 = _stringLiteral2828523309;
+		float L_335 = __this->get_animalScale_94();
+		float L_336 = ((float)il2cpp_codegen_multiply((float)L_335, (float)(8.0f)));
+		RuntimeObject * L_337 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_336);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_338 = String_Format_m2844511972(NULL /*static, unused*/, _stringLiteral879581960, L_337, /*hidden argument*/NULL);
+		V_9 = L_338;
+		GameObject_t1113636619 * L_339 = __this->get_arObject_9();
+		NullCheck(L_339);
+		Transform_t3600365921 * L_340 = GameObject_get_transform_m1369836730(L_339, /*hidden argument*/NULL);
+		float L_341 = __this->get_animalScale_94();
+		float L_342 = __this->get_animalScale_94();
+		float L_343 = __this->get_animalScale_94();
+		Vector3_t3722313464  L_344;
+		memset(&L_344, 0, sizeof(L_344));
+		Vector3__ctor_m3353183577((&L_344), ((float)il2cpp_codegen_multiply((float)L_341, (float)(8.0f))), ((float)il2cpp_codegen_multiply((float)L_342, (float)(8.0f))), ((float)il2cpp_codegen_multiply((float)L_343, (float)(8.0f))), /*hidden argument*/NULL);
+		NullCheck(L_340);
+		Transform_set_localScale_m3053443106(L_340, L_344, /*hidden argument*/NULL);
+	}
+
+IL_0d67:
+	{
+		float L_345 = V_7;
+		float L_346 = L_345;
+		RuntimeObject * L_347 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_346);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_348 = String_Format_m2844511972(NULL /*static, unused*/, _stringLiteral2151652593, L_347, /*hidden argument*/NULL);
+		V_10 = L_348;
+		StringU5BU5D_t1281789340* L_349 = ((StringU5BU5D_t1281789340*)SZArrayNew(StringU5BU5D_t1281789340_il2cpp_TypeInfo_var, (uint32_t)5));
+		String_t* L_350 = V_10;
+		NullCheck(L_349);
+		ArrayElementTypeCheck (L_349, L_350);
+		(L_349)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_350);
+		StringU5BU5D_t1281789340* L_351 = L_349;
+		NullCheck(L_351);
+		ArrayElementTypeCheck (L_351, _stringLiteral3452614528);
+		(L_351)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral3452614528);
+		StringU5BU5D_t1281789340* L_352 = L_351;
+		String_t* L_353 = V_8;
+		NullCheck(L_352);
+		ArrayElementTypeCheck (L_352, L_353);
+		(L_352)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)L_353);
+		StringU5BU5D_t1281789340* L_354 = L_352;
+		NullCheck(L_354);
+		ArrayElementTypeCheck (L_354, _stringLiteral3452614528);
+		(L_354)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral3452614528);
+		StringU5BU5D_t1281789340* L_355 = L_354;
+		String_t* L_356 = V_9;
+		NullCheck(L_355);
+		ArrayElementTypeCheck (L_355, L_356);
+		(L_355)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_356);
+		String_t* L_357 = String_Concat_m1809518182(NULL /*static, unused*/, L_355, /*hidden argument*/NULL);
+		V_11 = L_357;
 		ObjectPlacerAnimals_PlayAnimation_m4017390068(__this, /*hidden argument*/NULL);
+		String_t* L_358 = V_11;
+		ObjectPlacerAnimals_postObjectStatus_m3740493861(__this, L_358, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -51645,7 +52211,7 @@ extern "C"  void ObjectPlacerAnimals_StopAnimation_m786701864 (ObjectPlacerAnima
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
 		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral183326553, /*hidden argument*/NULL);
-		GameObject_t1113636619 * L_0 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_0 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Equality_m1810815630(NULL /*static, unused*/, L_0, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
@@ -51661,13 +52227,13 @@ extern "C"  void ObjectPlacerAnimals_StopAnimation_m786701864 (ObjectPlacerAnima
 
 IL_0026:
 	{
-		Animator_t434523843 * L_2 = __this->get_animalAnimator_7();
+		Animator_t434523843 * L_2 = __this->get_animalAnimator_8();
 		NullCheck(L_2);
 		Animator_set_speed_m1181320995(L_2, (10000.0f), /*hidden argument*/NULL);
-		Animator_t434523843 * L_3 = __this->get_animalAnimator_7();
+		Animator_t434523843 * L_3 = __this->get_animalAnimator_8();
 		NullCheck(L_3);
 		Animator_StopPlayback_m3399889712(L_3, /*hidden argument*/NULL);
-		PlayableDirector_t508516997 * L_4 = __this->get_director_9();
+		PlayableDirector_t508516997 * L_4 = __this->get_director_10();
 		NullCheck(L_4);
 		PlayableDirector_Stop_m3931046518(L_4, /*hidden argument*/NULL);
 		ObjectPlacerAnimals__rp_AnimationPlaying_m2742183519(NULL /*static, unused*/, _stringLiteral3875954633, /*hidden argument*/NULL);
@@ -51686,7 +52252,7 @@ extern "C"  void ObjectPlacerAnimals_PlayAnimation_m4017390068 (ObjectPlacerAnim
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
 		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral1202732442, /*hidden argument*/NULL);
-		GameObject_t1113636619 * L_0 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_0 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Equality_m1810815630(NULL /*static, unused*/, L_0, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
@@ -51702,7 +52268,7 @@ extern "C"  void ObjectPlacerAnimals_PlayAnimation_m4017390068 (ObjectPlacerAnim
 
 IL_0026:
 	{
-		AudioSource_t3935305588 * L_2 = __this->get_audioSource_63();
+		AudioSource_t3935305588 * L_2 = __this->get_audioSource_90();
 		NullCheck(L_2);
 		bool L_3 = AudioSource_get_isPlaying_m1896551654(L_2, /*hidden argument*/NULL);
 		if (!L_3)
@@ -51711,20 +52277,20 @@ IL_0026:
 		}
 	}
 	{
-		AudioSource_t3935305588 * L_4 = __this->get_audioSource_63();
+		AudioSource_t3935305588 * L_4 = __this->get_audioSource_90();
 		NullCheck(L_4);
 		AudioSource_Stop_m2682712816(L_4, /*hidden argument*/NULL);
 	}
 
 IL_0041:
 	{
-		Animator_t434523843 * L_5 = __this->get_animalAnimator_7();
+		Animator_t434523843 * L_5 = __this->get_animalAnimator_8();
 		NullCheck(L_5);
 		Animator_set_speed_m1181320995(L_5, (1.0f), /*hidden argument*/NULL);
-		Animator_t434523843 * L_6 = __this->get_animalAnimator_7();
+		Animator_t434523843 * L_6 = __this->get_animalAnimator_8();
 		NullCheck(L_6);
 		Animator_Rebind_m4018473738(L_6, /*hidden argument*/NULL);
-		PlayableDirector_t508516997 * L_7 = __this->get_director_9();
+		PlayableDirector_t508516997 * L_7 = __this->get_director_10();
 		NullCheck(L_7);
 		PlayableDirector_Play_m3047544225(L_7, /*hidden argument*/NULL);
 		ObjectPlacerAnimals__rp_AnimationPlaying_m2742183519(NULL /*static, unused*/, _stringLiteral4002445229, /*hidden argument*/NULL);
@@ -51849,19 +52415,19 @@ extern "C"  void ObjectPlacerAnimals_playMusic_m2572539234 (ObjectPlacerAnimals_
 		}
 	}
 	{
-		__this->set_animationPlayingStatus_66((bool)1);
+		__this->set_animationPlayingStatus_93((bool)1);
 		ObjectPlacerAnimals_StopAnimation_m786701864(__this, /*hidden argument*/NULL);
 		goto IL_002e;
 	}
 
 IL_0027:
 	{
-		__this->set_animationPlayingStatus_66((bool)0);
+		__this->set_animationPlayingStatus_93((bool)0);
 	}
 
 IL_002e:
 	{
-		AudioSource_t3935305588 * L_1 = __this->get_audioSource_63();
+		AudioSource_t3935305588 * L_1 = __this->get_audioSource_90();
 		NullCheck(L_1);
 		bool L_2 = AudioSource_get_isPlaying_m1896551654(L_1, /*hidden argument*/NULL);
 		if (L_2)
@@ -51870,17 +52436,17 @@ IL_002e:
 		}
 	}
 	{
-		AudioSource_t3935305588 * L_3 = __this->get_audioSource_63();
-		AudioClip_t3680889665 * L_4 = __this->get_audioclip_64();
+		AudioSource_t3935305588 * L_3 = __this->get_audioSource_90();
+		AudioClip_t3680889665 * L_4 = __this->get_audioclip_91();
 		NullCheck(L_3);
 		AudioSource_set_clip_m31653938(L_3, L_4, /*hidden argument*/NULL);
-		AudioSource_t3935305588 * L_5 = __this->get_audioSource_63();
+		AudioSource_t3935305588 * L_5 = __this->get_audioSource_90();
 		NullCheck(L_5);
 		AudioSource_Play_m48294159(L_5, /*hidden argument*/NULL);
-		AudioClip_t3680889665 * L_6 = __this->get_audioclip_64();
+		AudioClip_t3680889665 * L_6 = __this->get_audioclip_91();
 		NullCheck(L_6);
 		float L_7 = AudioClip_get_length_m4269890037(L_6, /*hidden argument*/NULL);
-		__this->set_duration_67(L_7);
+		__this->set_duration_95(L_7);
 	}
 
 IL_006b:
@@ -51900,7 +52466,7 @@ extern "C"  bool ObjectPlacerAnimals_AnimatorIsPlaying_m2292456591 (ObjectPlacer
 	AnimatorStateInfo_t509032636  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		Animator_t434523843 * L_0 = __this->get_animalAnimator_7();
+		Animator_t434523843 * L_0 = __this->get_animalAnimator_8();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Equality_m1810815630(NULL /*static, unused*/, L_0, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
@@ -51914,7 +52480,7 @@ extern "C"  bool ObjectPlacerAnimals_AnimatorIsPlaying_m2292456591 (ObjectPlacer
 
 IL_0013:
 	{
-		GameObject_t1113636619 * L_2 = __this->get_arObject_8();
+		GameObject_t1113636619 * L_2 = __this->get_arObject_9();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		bool L_3 = Object_op_Equality_m1810815630(NULL /*static, unused*/, L_2, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
 		if (!L_3)
@@ -51928,7 +52494,7 @@ IL_0013:
 
 IL_0026:
 	{
-		Animator_t434523843 * L_4 = __this->get_animalAnimator_7();
+		Animator_t434523843 * L_4 = __this->get_animalAnimator_8();
 		NullCheck(L_4);
 		AnimatorStateInfo_t509032636  L_5 = Animator_GetCurrentAnimatorStateInfo_m18694920(L_4, 0, /*hidden argument*/NULL);
 		V_0 = L_5;
@@ -51939,7 +52505,7 @@ IL_0026:
 		}
 	}
 	{
-		Animator_t434523843 * L_7 = __this->get_animalAnimator_7();
+		Animator_t434523843 * L_7 = __this->get_animalAnimator_8();
 		NullCheck(L_7);
 		bool L_8 = Animator_IsInTransition_m2711427730(L_7, 0, /*hidden argument*/NULL);
 		if (L_8)
@@ -52071,7 +52637,7 @@ extern "C"  bool ObjectPlacerAnimals_HitTestWithResultType_m124645190 (ObjectPla
 		int32_t L_5 = List_1_get_Count_m2045149193(L_4, /*hidden argument*/List_1_get_Count_m2045149193_RuntimeMethod_var);
 		if ((((int32_t)L_5) <= ((int32_t)0)))
 		{
-			goto IL_00eb;
+			goto IL_00f8;
 		}
 	}
 	{
@@ -52085,7 +52651,7 @@ IL_0020:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_00cc;
+			goto IL_00d9;
 		}
 
 IL_0025:
@@ -52128,52 +52694,54 @@ IL_0025:
 			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 			String_t* L_30 = String_Format_m3339413201(NULL /*static, unused*/, _stringLiteral94848434, L_19, L_24, L_29, /*hidden argument*/NULL);
 			Debug_Log_m4051431634(NULL /*static, unused*/, L_30, /*hidden argument*/NULL);
+			double L_31 = (&V_1)->get_distance_1();
+			__this->set_rDistance_7(L_31);
 			ObjectPlacerAnimals_chooseModel_m3209889911(__this, /*hidden argument*/NULL);
 			V_6 = (bool)1;
-			IL2CPP_LEAVE(0xED, FINALLY_00dd);
+			IL2CPP_LEAVE(0xFA, FINALLY_00ea);
 		}
 
-IL_00cc:
+IL_00d9:
 		{
-			bool L_31 = Enumerator_MoveNext_m3228882039((Enumerator_t345375253 *)(&V_2), /*hidden argument*/Enumerator_MoveNext_m3228882039_RuntimeMethod_var);
-			if (L_31)
+			bool L_32 = Enumerator_MoveNext_m3228882039((Enumerator_t345375253 *)(&V_2), /*hidden argument*/Enumerator_MoveNext_m3228882039_RuntimeMethod_var);
+			if (L_32)
 			{
 				goto IL_0025;
 			}
 		}
 
-IL_00d8:
+IL_00e5:
 		{
-			IL2CPP_LEAVE(0xEB, FINALLY_00dd);
+			IL2CPP_LEAVE(0xF8, FINALLY_00ea);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_00dd;
+		goto FINALLY_00ea;
 	}
 
-FINALLY_00dd:
+FINALLY_00ea:
 	{ // begin finally (depth: 1)
 		Enumerator_Dispose_m2925904114((Enumerator_t345375253 *)(&V_2), /*hidden argument*/Enumerator_Dispose_m2925904114_RuntimeMethod_var);
-		IL2CPP_END_FINALLY(221)
+		IL2CPP_END_FINALLY(234)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(221)
+	IL2CPP_CLEANUP(234)
 	{
-		IL2CPP_JUMP_TBL(0xED, IL_00ed)
-		IL2CPP_JUMP_TBL(0xEB, IL_00eb)
+		IL2CPP_JUMP_TBL(0xFA, IL_00fa)
+		IL2CPP_JUMP_TBL(0xF8, IL_00f8)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
 	}
 
-IL_00eb:
+IL_00f8:
 	{
 		return (bool)0;
 	}
 
-IL_00ed:
+IL_00fa:
 	{
-		bool L_32 = V_6;
-		return L_32;
+		bool L_33 = V_6;
+		return L_33;
 	}
 }
 // System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::Start()
@@ -52187,7 +52755,7 @@ extern "C"  void ObjectPlacerAnimals_Start_m2198075760 (ObjectPlacerAnimals_t560
 	}
 	{
 		AudioSource_t3935305588 * L_0 = Component_GetComponent_TisAudioSource_t3935305588_m1977431131(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t3935305588_m1977431131_RuntimeMethod_var);
-		__this->set_audioSource_63(L_0);
+		__this->set_audioSource_90(L_0);
 		return;
 	}
 }
@@ -52238,7 +52806,7 @@ IL_0024:
 		int32_t L_2 = Input_get_touchCount_m3403849067(NULL /*static, unused*/, /*hidden argument*/NULL);
 		if ((((int32_t)L_2) <= ((int32_t)0)))
 		{
-			goto IL_0157;
+			goto IL_0152;
 		}
 	}
 	{
@@ -52247,14 +52815,14 @@ IL_0024:
 		bool L_4 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_3, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
 		if (!L_4)
 		{
-			goto IL_0157;
+			goto IL_0152;
 		}
 	}
 	{
 		bool L_5 = V_0;
 		if (L_5)
 		{
-			goto IL_0157;
+			goto IL_0152;
 		}
 	}
 	{
@@ -52264,7 +52832,7 @@ IL_0024:
 		int32_t L_7 = Touch_get_phase_m214549210((Touch_t1921856868 *)(&V_1), /*hidden argument*/NULL);
 		if (L_7)
 		{
-			goto IL_00eb;
+			goto IL_00e6;
 		}
 	}
 	{
@@ -52289,7 +52857,7 @@ IL_0024:
 		ARHitTestResultTypeU5BU5D_t2695410291* L_16 = V_5;
 		V_7 = L_16;
 		V_8 = 0;
-		goto IL_00db;
+		goto IL_00d6;
 	}
 
 IL_00ba:
@@ -52305,21 +52873,20 @@ IL_00ba:
 		bool L_23 = ObjectPlacerAnimals_HitTestWithResultType_m124645190(__this, L_21, L_22, /*hidden argument*/NULL);
 		if (!L_23)
 		{
-			goto IL_00d5;
+			goto IL_00d0;
 		}
 	}
 	{
-		ObjectPlacerAnimals_postObjectStatus_m1386923332(NULL /*static, unused*/, /*hidden argument*/NULL);
 		return;
 	}
 
-IL_00d5:
+IL_00d0:
 	{
 		int32_t L_24 = V_8;
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_24, (int32_t)1));
 	}
 
-IL_00db:
+IL_00d6:
 	{
 		int32_t L_25 = V_8;
 		ARHitTestResultTypeU5BU5D_t2695410291* L_26 = V_7;
@@ -52330,15 +52897,15 @@ IL_00db:
 		}
 	}
 	{
-		goto IL_0157;
+		goto IL_0152;
 	}
 
-IL_00eb:
+IL_00e6:
 	{
 		int32_t L_27 = Touch_get_phase_m214549210((Touch_t1921856868 *)(&V_1), /*hidden argument*/NULL);
 		if ((!(((uint32_t)L_27) == ((uint32_t)1))))
 		{
-			goto IL_0157;
+			goto IL_0152;
 		}
 	}
 	{
@@ -52346,20 +52913,20 @@ IL_00eb:
 		int32_t L_28 = Input_get_touchCount_m3403849067(NULL /*static, unused*/, /*hidden argument*/NULL);
 		if ((!(((uint32_t)L_28) == ((uint32_t)1))))
 		{
-			goto IL_0157;
+			goto IL_0152;
 		}
 	}
 	{
 		Vector2_t2156229523  L_29 = Touch_get_deltaPosition_m2389653382((Touch_t1921856868 *)(&V_1), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Vector2_t2156229523_il2cpp_TypeInfo_var);
 		Vector3_t3722313464  L_30 = Vector2_op_Implicit_m1860157806(NULL /*static, unused*/, L_29, /*hidden argument*/NULL);
-		__this->set_startFingerPos_65(L_30);
-		GameObject_t1113636619 * L_31 = __this->get_arObject_8();
+		__this->set_startFingerPos_92(L_30);
+		GameObject_t1113636619 * L_31 = __this->get_arObject_9();
 		NullCheck(L_31);
 		Transform_t3600365921 * L_32 = GameObject_get_transform_m1369836730(L_31, /*hidden argument*/NULL);
-		Vector3_t3722313464 * L_33 = __this->get_address_of_startFingerPos_65();
+		Vector3_t3722313464 * L_33 = __this->get_address_of_startFingerPos_92();
 		float L_34 = L_33->get_x_1();
-		Vector3_t3722313464 * L_35 = __this->get_address_of_startFingerPos_65();
+		Vector3_t3722313464 * L_35 = __this->get_address_of_startFingerPos_92();
 		float L_36 = L_35->get_z_3();
 		Vector3_t3722313464  L_37;
 		memset(&L_37, 0, sizeof(L_37));
@@ -52370,7 +52937,7 @@ IL_00eb:
 		Transform_Rotate_m1886816857(L_32, L_38, 0, /*hidden argument*/NULL);
 	}
 
-IL_0157:
+IL_0152:
 	{
 		return;
 	}
