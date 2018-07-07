@@ -12854,7 +12854,7 @@ extern "C" void U3CTakeScreenshotAndSaveU3Ec__Iterator0_System_Collections_IEnum
 extern "C" void U3CTakeScreenshotAndSaveU3Ec__Iterator0_Dispose_m317466848 ();
 extern "C" void U3CTakeScreenshotAndSaveU3Ec__Iterator0_Reset_m681126698 ();
 extern "C" void ObjectPlacerAnimals__ctor_m1678178496 ();
-extern "C" void ObjectPlacerAnimals__rp_UnityObjectPlaced_m504506532 ();
+extern "C" void ObjectPlacerAnimals__rp_UnityObjectPlaced_m3937459018 ();
 extern "C" void ObjectPlacerAnimals__rp_AnimationPlaying_m2742183519 ();
 extern "C" void ObjectPlacerAnimals__rp_UnitySceneLoaded_m3163003100 ();
 extern "C" void ObjectPlacerAnimals_clearScene_m1463859119 ();
@@ -12863,7 +12863,7 @@ extern "C" void ObjectPlacerAnimals_Awake_m3407215277 ();
 extern "C" void ObjectPlacerAnimals_OnEnable_m1547843223 ();
 extern "C" void ObjectPlacerAnimals_OnSceneLoaded_m1224615342 ();
 extern "C" void ObjectPlacerAnimals_OnDisable_m632730456 ();
-extern "C" void ObjectPlacerAnimals_postObjectStatus_m3740493861 ();
+extern "C" void ObjectPlacerAnimals_postObjectStatus_m1386923332 ();
 extern "C" void ObjectPlacerAnimals_loadAlphabet_m4144843263 ();
 extern "C" void ObjectPlacerAnimals_chooseModel_m3209889911 ();
 extern "C" void ObjectPlacerAnimals_StopAnimation_m786701864 ();
@@ -26119,7 +26119,7 @@ extern const Il2CppMethodPointer g_MethodPointers[13263] =
 	U3CTakeScreenshotAndSaveU3Ec__Iterator0_Dispose_m317466848,
 	U3CTakeScreenshotAndSaveU3Ec__Iterator0_Reset_m681126698,
 	ObjectPlacerAnimals__ctor_m1678178496,
-	ObjectPlacerAnimals__rp_UnityObjectPlaced_m504506532,
+	ObjectPlacerAnimals__rp_UnityObjectPlaced_m3937459018,
 	ObjectPlacerAnimals__rp_AnimationPlaying_m2742183519,
 	ObjectPlacerAnimals__rp_UnitySceneLoaded_m3163003100,
 	ObjectPlacerAnimals_clearScene_m1463859119,
@@ -26128,7 +26128,7 @@ extern const Il2CppMethodPointer g_MethodPointers[13263] =
 	ObjectPlacerAnimals_OnEnable_m1547843223,
 	ObjectPlacerAnimals_OnSceneLoaded_m1224615342,
 	ObjectPlacerAnimals_OnDisable_m632730456,
-	ObjectPlacerAnimals_postObjectStatus_m3740493861,
+	ObjectPlacerAnimals_postObjectStatus_m1386923332,
 	ObjectPlacerAnimals_loadAlphabet_m4144843263,
 	ObjectPlacerAnimals_chooseModel_m3209889911,
 	ObjectPlacerAnimals_StopAnimation_m786701864,

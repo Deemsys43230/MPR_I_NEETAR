@@ -24268,8 +24268,8 @@ extern "C"  int32_t NativeGallery_SaveImageToGallery_m1342837694 (RuntimeObject 
 extern "C"  void NotSupportedException__ctor_m2730133172 (NotSupportedException_t1314879016 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::_rp_UnitySceneLoaded(System.String)
 extern "C"  void ObjectPlacerAnimals__rp_UnitySceneLoaded_m3163003100 (RuntimeObject * __this /* static, unused */, String_t* ___scenename0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::_rp_UnityObjectPlaced(System.String)
-extern "C"  void ObjectPlacerAnimals__rp_UnityObjectPlaced_m504506532 (RuntimeObject * __this /* static, unused */, String_t* ___distance0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::_rp_UnityObjectPlaced()
+extern "C"  void ObjectPlacerAnimals__rp_UnityObjectPlaced_m3937459018 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Animator>()
 #define GameObject_GetComponent_TisAnimator_t434523843_m440019408(__this, method) ((  Animator_t434523843 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m2049753423_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Playables.PlayableDirector>()
@@ -24280,8 +24280,6 @@ extern "C"  double Math_Round_m3279303474 (RuntimeObject * __this /* static, unu
 extern "C"  String_t* String_Format_m2844511972 (RuntimeObject * __this /* static, unused */, String_t* p0, RuntimeObject * p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::PlayAnimation()
 extern "C"  void ObjectPlacerAnimals_PlayAnimation_m4017390068 (ObjectPlacerAnimals_t560344624 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::postObjectStatus(System.String)
-extern "C"  void ObjectPlacerAnimals_postObjectStatus_m3740493861 (ObjectPlacerAnimals_t560344624 * __this, String_t* ___nvar0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Animator::set_speed(System.Single)
 extern "C"  void Animator_set_speed_m1181320995 (Animator_t434523843 * __this, float p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Animator::StopPlayback()
@@ -24318,6 +24316,8 @@ extern "C"  void ObjectPlacerAnimals_chooseModel_m3209889911 (ObjectPlacerAnimal
 extern "C"  bool ObjectPlacerAnimals_CheckObjectTouched_m2830404832 (ObjectPlacerAnimals_t560344624 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.XR.iOS.ObjectPlacerAnimals::HitTestWithResultType(UnityEngine.XR.iOS.ARPoint,UnityEngine.XR.iOS.ARHitTestResultType)
 extern "C"  bool ObjectPlacerAnimals_HitTestWithResultType_m124645190 (ObjectPlacerAnimals_t560344624 * __this, ARPoint_t499615819  ___point0, int64_t ___resultTypes1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::postObjectStatus()
+extern "C"  void ObjectPlacerAnimals_postObjectStatus_m1386923332 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -50568,21 +50568,13 @@ extern "C"  void ObjectPlacerAnimals__ctor_m1678178496 (ObjectPlacerAnimals_t560
 		return;
 	}
 }
-// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::_rp_UnityObjectPlaced(System.String)
-extern "C"  void ObjectPlacerAnimals__rp_UnityObjectPlaced_m504506532 (RuntimeObject * __this /* static, unused */, String_t* ___distance0, const RuntimeMethod* method)
+// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::_rp_UnityObjectPlaced()
+extern "C"  void ObjectPlacerAnimals__rp_UnityObjectPlaced_m3937459018 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
 {
-	typedef void (DEFAULT_CALL *PInvokeFunc) (char*);
-
-	// Marshaling of parameter '___distance0' to native representation
-	char* ____distance0_marshaled = NULL;
-	____distance0_marshaled = il2cpp_codegen_marshal_string(___distance0);
+	typedef void (DEFAULT_CALL *PInvokeFunc) ();
 
 	// Native function invocation
-	reinterpret_cast<PInvokeFunc>(_rp_UnityObjectPlaced)(____distance0_marshaled);
-
-	// Marshaling cleanup of parameter '___distance0' native representation
-	il2cpp_codegen_marshal_free(____distance0_marshaled);
-	____distance0_marshaled = NULL;
+	reinterpret_cast<PInvokeFunc>(_rp_UnityObjectPlaced)();
 
 }
 extern "C" void DEFAULT_CALL _rp_AnimationPlaying(char*);
@@ -50791,12 +50783,11 @@ extern "C"  void ObjectPlacerAnimals_OnDisable_m632730456 (ObjectPlacerAnimals_t
 		return;
 	}
 }
-// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::postObjectStatus(System.String)
-extern "C"  void ObjectPlacerAnimals_postObjectStatus_m3740493861 (ObjectPlacerAnimals_t560344624 * __this, String_t* ___nvar0, const RuntimeMethod* method)
+// System.Void UnityEngine.XR.iOS.ObjectPlacerAnimals::postObjectStatus()
+extern "C"  void ObjectPlacerAnimals_postObjectStatus_m1386923332 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
 {
 	{
-		String_t* L_0 = ___nvar0;
-		ObjectPlacerAnimals__rp_UnityObjectPlaced_m504506532(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		ObjectPlacerAnimals__rp_UnityObjectPlaced_m3937459018(NULL /*static, unused*/, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -52194,8 +52185,6 @@ IL_0d67:
 		String_t* L_357 = String_Concat_m1809518182(NULL /*static, unused*/, L_355, /*hidden argument*/NULL);
 		V_11 = L_357;
 		ObjectPlacerAnimals_PlayAnimation_m4017390068(__this, /*hidden argument*/NULL);
-		String_t* L_358 = V_11;
-		ObjectPlacerAnimals_postObjectStatus_m3740493861(__this, L_358, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -52806,7 +52795,7 @@ IL_0024:
 		int32_t L_2 = Input_get_touchCount_m3403849067(NULL /*static, unused*/, /*hidden argument*/NULL);
 		if ((((int32_t)L_2) <= ((int32_t)0)))
 		{
-			goto IL_0152;
+			goto IL_0157;
 		}
 	}
 	{
@@ -52815,14 +52804,14 @@ IL_0024:
 		bool L_4 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_3, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
 		if (!L_4)
 		{
-			goto IL_0152;
+			goto IL_0157;
 		}
 	}
 	{
 		bool L_5 = V_0;
 		if (L_5)
 		{
-			goto IL_0152;
+			goto IL_0157;
 		}
 	}
 	{
@@ -52832,7 +52821,7 @@ IL_0024:
 		int32_t L_7 = Touch_get_phase_m214549210((Touch_t1921856868 *)(&V_1), /*hidden argument*/NULL);
 		if (L_7)
 		{
-			goto IL_00e6;
+			goto IL_00eb;
 		}
 	}
 	{
@@ -52857,7 +52846,7 @@ IL_0024:
 		ARHitTestResultTypeU5BU5D_t2695410291* L_16 = V_5;
 		V_7 = L_16;
 		V_8 = 0;
-		goto IL_00d6;
+		goto IL_00db;
 	}
 
 IL_00ba:
@@ -52873,20 +52862,21 @@ IL_00ba:
 		bool L_23 = ObjectPlacerAnimals_HitTestWithResultType_m124645190(__this, L_21, L_22, /*hidden argument*/NULL);
 		if (!L_23)
 		{
-			goto IL_00d0;
+			goto IL_00d5;
 		}
 	}
 	{
+		ObjectPlacerAnimals_postObjectStatus_m1386923332(NULL /*static, unused*/, /*hidden argument*/NULL);
 		return;
 	}
 
-IL_00d0:
+IL_00d5:
 	{
 		int32_t L_24 = V_8;
 		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_24, (int32_t)1));
 	}
 
-IL_00d6:
+IL_00db:
 	{
 		int32_t L_25 = V_8;
 		ARHitTestResultTypeU5BU5D_t2695410291* L_26 = V_7;
@@ -52897,15 +52887,15 @@ IL_00d6:
 		}
 	}
 	{
-		goto IL_0152;
+		goto IL_0157;
 	}
 
-IL_00e6:
+IL_00eb:
 	{
 		int32_t L_27 = Touch_get_phase_m214549210((Touch_t1921856868 *)(&V_1), /*hidden argument*/NULL);
 		if ((!(((uint32_t)L_27) == ((uint32_t)1))))
 		{
-			goto IL_0152;
+			goto IL_0157;
 		}
 	}
 	{
@@ -52913,7 +52903,7 @@ IL_00e6:
 		int32_t L_28 = Input_get_touchCount_m3403849067(NULL /*static, unused*/, /*hidden argument*/NULL);
 		if ((!(((uint32_t)L_28) == ((uint32_t)1))))
 		{
-			goto IL_0152;
+			goto IL_0157;
 		}
 	}
 	{
@@ -52937,7 +52927,7 @@ IL_00e6:
 		Transform_Rotate_m1886816857(L_32, L_38, 0, /*hidden argument*/NULL);
 	}
 
-IL_0152:
+IL_0157:
 	{
 		return;
 	}
