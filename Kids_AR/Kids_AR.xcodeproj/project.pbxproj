@@ -197,9 +197,9 @@
 		0099FA0B20CE932600454DC1 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099FA0A20CE932600454DC1 /* MyView.swift */; };
 		009B3A1420AD504000FA9BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1320AD504000FA9BC3 /* AppDelegate.swift */; };
 		009B3A1620AD504000FA9BC3 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A1520AD504000FA9BC3 /* NameViewController.swift */; };
-		009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1720AD504000FA9BC3 /* Main.storyboard */; };
+		009B3A1920AD504000FA9BC3 = {isa = PBXBuildFile; fileRef = 009B3A1720AD504000FA9BC3 /* Main.storyboard */; };
 		009B3A1B20AD504F00FA9BC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1A20AD504F00FA9BC3 /* Assets.xcassets */; };
-		009B3A1E20AD504F00FA9BC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B3A1C20AD504F00FA9BC3 /* LaunchScreen.storyboard */; };
+		009B3A1E20AD504F00FA9BC3 = {isa = PBXBuildFile; fileRef = 009B3A1C20AD504F00FA9BC3 /* LaunchScreen.storyboard */; };
 		009B3A2920AD505000FA9BC3 /* Kids_ARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A2820AD505000FA9BC3 /* Kids_ARTests.swift */; };
 		009B3A3420AD505000FA9BC3 /* Kids_ARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A3320AD505000FA9BC3 /* Kids_ARUITests.swift */; };
 		009B3A4620AD5FE600FA9BC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3A4520AD5FE600FA9BC3 /* Constants.swift */; };
@@ -2645,7 +2645,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Kids_AR" */;
+			buildConfigurationList = 009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Unity-iPhone" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -2654,7 +2654,7 @@
 				Base,
 			);
 			mainGroup = 009B3A0720AD504000FA9BC3;
-			productRefGroup = 009B3A1120AD504000FA9BC3 /* Products */;
+			productRefGroup = 009B3A1120AD504000FA9BC3;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -2680,7 +2680,7 @@
 				0099FA0320CE92A300454DC1 /* diamond.png in Resources */,
 				0042343F20CFB313007E5B30 /* positiveTone.mp3 in Resources */,
 				007AA14F20C2653E00DB7112 /* appIcon.png in Resources */,
-				009B3A1E20AD504F00FA9BC3 /* LaunchScreen.storyboard in Resources */,
+				009B3A1E20AD504F00FA9BC3,
 				006DFE3A20C51D84005CC585 /* kids.json in Resources */,
 				009B3A1B20AD504F00FA9BC3 /* Assets.xcassets in Resources */,
 				0099FA0420CE92A300454DC1 /* star.png in Resources */,
@@ -2696,7 +2696,7 @@
 				0099FA0520CE92A300454DC1 /* triangle.png in Resources */,
 				007AA14E20C2653E00DB7112 /* background.jpg in Resources */,
 				00C245AD20E276D2006F7166 /* screenshot.png in Resources */,
-				009B3A1920AD504000FA9BC3 /* Main.storyboard in Resources */,
+				009B3A1920AD504000FA9BC3,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2975,7 +2975,7 @@
 /* Begin XCBuildConfiguration section */
 		009B3A3620AD505000FA9BC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 006413AD20C027F8000BEBC9 /* Unity.xcconfig */;
+			baseConfigurationReference = 006413AD20C027F8000BEBC9;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -3038,7 +3038,7 @@
 		};
 		009B3A3720AD505000FA9BC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 006413AD20C027F8000BEBC9 /* Unity.xcconfig */;
+			baseConfigurationReference = 006413AD20C027F8000BEBC9;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -3098,7 +3098,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
@@ -3115,8 +3115,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.kidsar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "df52a479-d074-4828-82a8-9b0250cd97de";
-				PROVISIONING_PROFILE_SPECIFIER = "kids AR adhoc provisioning profile";
+				PROVISIONING_PROFILE = "4239f7de-b568-40f9-b4af-fb8f4f6c3322";
+				PROVISIONING_PROFILE_SPECIFIER = "kids ar development provisioning profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "Kids_AR/PageViewController/Kids AR-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -3129,7 +3129,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
 				INFOPLIST_FILE = "$(SRCROOT)/Kids_AR/Info.plist";
@@ -3145,8 +3145,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.kidsar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "df52a479-d074-4828-82a8-9b0250cd97de";
-				PROVISIONING_PROFILE_SPECIFIER = "kids AR adhoc provisioning profile";
+				PROVISIONING_PROFILE = "4239f7de-b568-40f9-b4af-fb8f4f6c3322";
+				PROVISIONING_PROFILE_SPECIFIER = "kids ar development provisioning profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "Kids_AR/PageViewController/Kids AR-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3234,7 +3234,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Kids_AR" */ = {
+		009B3A0B20AD504000FA9BC3 /* Build configuration list for PBXProject "Unity-iPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				009B3A3620AD505000FA9BC3 /* Debug */,

@@ -86,12 +86,12 @@ class Constants {
    "How to use 3d models?",
    "How to use 3d models?",
    "INSTRUCTIONS",
-    "To get started, give your name on the welcome screen to explore the fun of augmented realities.",
+    "Enter your name on the welcome screen to explore the fun of augmented realities.",
     "To start, choose a category on your home screen.",
     "Try our free models. Locked models are for purchase.",
     "You can customize your app using the settings button.",
-    "For unlocking all models go to Settings -> Purchase -> Buy.",
-    "For restoring your purchases on a new device or reinstalling app go to Settings -> Purchase -> Restore.",
+    "To unlock all models, go to Settings -> Purchase -> Buy.",
+    "To restore your purchases on a new device or to reinstall the app, go to Settings -> Purchase -> Restore.",
     "Any queries? Please go to Settings -> Contact us.\n",
     
     "\nHappy Learning!\n"

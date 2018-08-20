@@ -52216,15 +52216,28 @@ extern "C"  void ObjectPlacerAnimals_StopAnimation_m786701864 (ObjectPlacerAnima
 
 IL_0026:
 	{
-		Animator_t434523843 * L_2 = __this->get_animalAnimator_8();
-		NullCheck(L_2);
-		Animator_set_speed_m1181320995(L_2, (10000.0f), /*hidden argument*/NULL);
-		Animator_t434523843 * L_3 = __this->get_animalAnimator_8();
-		NullCheck(L_3);
-		Animator_StopPlayback_m3399889712(L_3, /*hidden argument*/NULL);
-		PlayableDirector_t508516997 * L_4 = __this->get_director_10();
+		String_t* L_2 = __this->get_currentalphabet_37();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_3 = String_op_Inequality_m215368492(NULL /*static, unused*/, L_2, _stringLiteral3452614635, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_0061;
+		}
+	}
+	{
+		Animator_t434523843 * L_4 = __this->get_animalAnimator_8();
 		NullCheck(L_4);
-		PlayableDirector_Stop_m3931046518(L_4, /*hidden argument*/NULL);
+		Animator_set_speed_m1181320995(L_4, (10000.0f), /*hidden argument*/NULL);
+		Animator_t434523843 * L_5 = __this->get_animalAnimator_8();
+		NullCheck(L_5);
+		Animator_StopPlayback_m3399889712(L_5, /*hidden argument*/NULL);
+		PlayableDirector_t508516997 * L_6 = __this->get_director_10();
+		NullCheck(L_6);
+		PlayableDirector_Stop_m3931046518(L_6, /*hidden argument*/NULL);
+	}
+
+IL_0061:
+	{
 		ObjectPlacerAnimals__rp_AnimationPlaying_m2742183519(NULL /*static, unused*/, _stringLiteral3875954633, /*hidden argument*/NULL);
 		return;
 	}
@@ -52273,15 +52286,28 @@ IL_0026:
 
 IL_0041:
 	{
-		Animator_t434523843 * L_5 = __this->get_animalAnimator_8();
-		NullCheck(L_5);
-		Animator_set_speed_m1181320995(L_5, (1.0f), /*hidden argument*/NULL);
-		Animator_t434523843 * L_6 = __this->get_animalAnimator_8();
-		NullCheck(L_6);
-		Animator_Rebind_m4018473738(L_6, /*hidden argument*/NULL);
-		PlayableDirector_t508516997 * L_7 = __this->get_director_10();
+		String_t* L_5 = __this->get_currentalphabet_37();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_6 = String_op_Inequality_m215368492(NULL /*static, unused*/, L_5, _stringLiteral3452614635, /*hidden argument*/NULL);
+		if (!L_6)
+		{
+			goto IL_007c;
+		}
+	}
+	{
+		Animator_t434523843 * L_7 = __this->get_animalAnimator_8();
 		NullCheck(L_7);
-		PlayableDirector_Play_m3047544225(L_7, /*hidden argument*/NULL);
+		Animator_set_speed_m1181320995(L_7, (1.0f), /*hidden argument*/NULL);
+		Animator_t434523843 * L_8 = __this->get_animalAnimator_8();
+		NullCheck(L_8);
+		Animator_Rebind_m4018473738(L_8, /*hidden argument*/NULL);
+		PlayableDirector_t508516997 * L_9 = __this->get_director_10();
+		NullCheck(L_9);
+		PlayableDirector_Play_m3047544225(L_9, /*hidden argument*/NULL);
+	}
+
+IL_007c:
+	{
 		ObjectPlacerAnimals__rp_AnimationPlaying_m2742183519(NULL /*static, unused*/, _stringLiteral4002445229, /*hidden argument*/NULL);
 		return;
 	}

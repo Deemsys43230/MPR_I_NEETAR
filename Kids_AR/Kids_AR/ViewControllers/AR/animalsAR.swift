@@ -110,6 +110,10 @@ class animalsAR: UIViewController, popupDelegate {
         if self.animationButton == nil{
             return
         }
+        if self.modeltitle.text?.first == "U"{
+           return
+            
+        }
         
         if currentStatus == "true"{
             self.animationButton.setTitle("STOP", for: .normal)
@@ -119,6 +123,13 @@ class animalsAR: UIViewController, popupDelegate {
         
     }
     @objc func showButtons(notfication: NSNotification) {
+        if self.modeltitle.text?.first == "U"{
+            self.animationButton.isHidden = true
+            self.cameraButton.isHidden = false
+            self.speakerButton.isHidden = false
+            return
+            
+        }
         if self.cameraButton.isHidden == true {
             self.cameraButton.isHidden = false
         }
@@ -128,6 +139,8 @@ class animalsAR: UIViewController, popupDelegate {
         if self.animationButton.isHidden == true {
             self.animationButton.isHidden = false
         }
+        
+      
 //        print(notfication.userInfo!["text"])
 //        let currentView = notfication.userInfo!["text"] as! String
      //   Toast().showMessage(message: "Distance : \(currentView)")
