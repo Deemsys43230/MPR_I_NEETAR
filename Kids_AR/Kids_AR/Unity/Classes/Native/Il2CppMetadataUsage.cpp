@@ -4462,8 +4462,8 @@ const RuntimeMethod* List_1_get_Item_m2864693351_RuntimeMethod_var;
 const RuntimeMethod* Array_AsReadOnly_TisRuntimeObject_m3652082723_RuntimeMethod_var;
 const RuntimeMethod* Array_BinarySearch_TisInt32_t2950945753_m1522448592_RuntimeMethod_var;
 const RuntimeMethod* Array_BinarySearch_TisRuntimeObject_m3933462998_RuntimeMethod_var;
-const RuntimeMethod* Array_BinarySearch_TisRuntimeObject_m2948599796_RuntimeMethod_var;
 const RuntimeMethod* Array_BinarySearch_TisRuntimeObject_m1711327235_RuntimeMethod_var;
+const RuntimeMethod* Array_BinarySearch_TisRuntimeObject_m2948599796_RuntimeMethod_var;
 const RuntimeMethod* Array_compare_TisInt32_t2950945753_m580865278_RuntimeMethod_var;
 const RuntimeMethod* Array_compare_TisRuntimeObject_m1541275189_RuntimeMethod_var;
 const RuntimeMethod* Array_compare_TisCustomAttributeNamedArgument_t287865710_m2877346442_RuntimeMethod_var;
@@ -4488,12 +4488,12 @@ const RuntimeMethod* Array_FindLastIndex_TisRuntimeObject_m2929523835_RuntimeMet
 const RuntimeMethod* Array_FindLastIndex_TisRuntimeObject_m884132436_RuntimeMethod_var;
 const RuntimeMethod* Array_FindLastIndex_TisRuntimeObject_m1404930667_RuntimeMethod_var;
 const RuntimeMethod* Array_IndexOf_TisInt32_t2950945753_m3640809994_RuntimeMethod_var;
-const RuntimeMethod* Array_IndexOf_TisRuntimeObject_m865614675_RuntimeMethod_var;
 const RuntimeMethod* Array_IndexOf_TisRuntimeObject_m3944231312_RuntimeMethod_var;
-const RuntimeMethod* Array_IndexOf_TisCustomAttributeNamedArgument_t287865710_m2817957199_RuntimeMethod_var;
+const RuntimeMethod* Array_IndexOf_TisRuntimeObject_m865614675_RuntimeMethod_var;
 const RuntimeMethod* Array_IndexOf_TisCustomAttributeNamedArgument_t287865710_m3640167086_RuntimeMethod_var;
-const RuntimeMethod* Array_IndexOf_TisCustomAttributeTypedArgument_t2723150157_m2960013511_RuntimeMethod_var;
+const RuntimeMethod* Array_IndexOf_TisCustomAttributeNamedArgument_t287865710_m2817957199_RuntimeMethod_var;
 const RuntimeMethod* Array_IndexOf_TisCustomAttributeTypedArgument_t2723150157_m3158556463_RuntimeMethod_var;
+const RuntimeMethod* Array_IndexOf_TisCustomAttributeTypedArgument_t2723150157_m2960013511_RuntimeMethod_var;
 const RuntimeMethod* Array_IndexOf_TisOrderBlock_t1585977831_m623427105_RuntimeMethod_var;
 const RuntimeMethod* Array_IndexOf_TisColor32_t2600501292_m2718632137_RuntimeMethod_var;
 const RuntimeMethod* Array_IndexOf_TisRaycastResult_t3360306849_m3322053070_RuntimeMethod_var;
@@ -4584,9 +4584,9 @@ const RuntimeMethod* Array_InternalArray__IndexOf_TisUnityARAlignment_t379211971
 const RuntimeMethod* Array_InternalArray__IndexOf_TisUnityARPlaneDetection_t1367733575_m2659728377_RuntimeMethod_var;
 const RuntimeMethod* Array_InternalArray__IndexOf_TisUnityARSessionRunOption_t942967030_m466101653_RuntimeMethod_var;
 const RuntimeMethod* Array_InternalArray__IndexOf_TisUnityARVideoFormat_t1944454781_m1603820959_RuntimeMethod_var;
-const RuntimeMethod* Array_LastIndexOf_TisRuntimeObject_m2701366436_RuntimeMethod_var;
-const RuntimeMethod* Array_LastIndexOf_TisRuntimeObject_m1677937501_RuntimeMethod_var;
 const RuntimeMethod* Array_LastIndexOf_TisRuntimeObject_m1719321980_RuntimeMethod_var;
+const RuntimeMethod* Array_LastIndexOf_TisRuntimeObject_m1677937501_RuntimeMethod_var;
+const RuntimeMethod* Array_LastIndexOf_TisRuntimeObject_m2701366436_RuntimeMethod_var;
 const RuntimeMethod* Array_ForEach_TisRuntimeObject_m599801986_RuntimeMethod_var;
 const RuntimeMethod* Array_InternalArray__ICollection_Add_TisLLEntry_t1211101965_m3927520864_RuntimeMethod_var;
 const RuntimeMethod* Array_InternalArray__ICollection_Add_TisTableRange_t3332867892_m1428005761_RuntimeMethod_var;
@@ -4916,14 +4916,14 @@ const RuntimeMethod* Array_Resize_TisUnityARVideoFormat_t1944454781_m3523004184_
 const RuntimeMethod* Array_Sort_TisInt32_t2950945753_TisInt32_t2950945753_m3955828611_RuntimeMethod_var;
 const RuntimeMethod* Array_Sort_TisInt32_t2950945753_m3365933701_RuntimeMethod_var;
 const RuntimeMethod* Array_Sort_TisInt32_t2950945753_m263117253_RuntimeMethod_var;
+const RuntimeMethod* Array_Sort_TisRuntimeObject_TisRuntimeObject_m1685639929_RuntimeMethod_var;
 const RuntimeMethod* Array_Sort_TisRuntimeObject_TisRuntimeObject_m528220565_RuntimeMethod_var;
 const RuntimeMethod* Array_Sort_TisRuntimeObject_TisRuntimeObject_m879120523_RuntimeMethod_var;
-const RuntimeMethod* Array_Sort_TisRuntimeObject_TisRuntimeObject_m1685639929_RuntimeMethod_var;
+const RuntimeMethod* Array_Sort_TisRuntimeObject_m1972115694_RuntimeMethod_var;
 const RuntimeMethod* Array_Sort_TisRuntimeObject_m460813780_RuntimeMethod_var;
 const RuntimeMethod* Array_Sort_TisRuntimeObject_m4136966267_RuntimeMethod_var;
 const RuntimeMethod* Array_Sort_TisRuntimeObject_m3700318967_RuntimeMethod_var;
 const RuntimeMethod* Array_Sort_TisRuntimeObject_m2698056810_RuntimeMethod_var;
-const RuntimeMethod* Array_Sort_TisRuntimeObject_m1972115694_RuntimeMethod_var;
 const RuntimeMethod* Array_Sort_TisCustomAttributeNamedArgument_t287865710_TisCustomAttributeNamedArgument_t287865710_m1309535943_RuntimeMethod_var;
 const RuntimeMethod* Array_Sort_TisCustomAttributeNamedArgument_t287865710_m3178168269_RuntimeMethod_var;
 const RuntimeMethod* Array_Sort_TisCustomAttributeNamedArgument_t287865710_m2341269431_RuntimeMethod_var;
@@ -13520,8 +13520,8 @@ extern void** const g_MetadataUsages[9056] =
 	(void**)(&Array_AsReadOnly_TisRuntimeObject_m3652082723_RuntimeMethod_var),
 	(void**)(&Array_BinarySearch_TisInt32_t2950945753_m1522448592_RuntimeMethod_var),
 	(void**)(&Array_BinarySearch_TisRuntimeObject_m3933462998_RuntimeMethod_var),
-	(void**)(&Array_BinarySearch_TisRuntimeObject_m2948599796_RuntimeMethod_var),
 	(void**)(&Array_BinarySearch_TisRuntimeObject_m1711327235_RuntimeMethod_var),
+	(void**)(&Array_BinarySearch_TisRuntimeObject_m2948599796_RuntimeMethod_var),
 	(void**)(&Array_compare_TisInt32_t2950945753_m580865278_RuntimeMethod_var),
 	(void**)(&Array_compare_TisRuntimeObject_m1541275189_RuntimeMethod_var),
 	(void**)(&Array_compare_TisCustomAttributeNamedArgument_t287865710_m2877346442_RuntimeMethod_var),
@@ -13546,12 +13546,12 @@ extern void** const g_MetadataUsages[9056] =
 	(void**)(&Array_FindLastIndex_TisRuntimeObject_m884132436_RuntimeMethod_var),
 	(void**)(&Array_FindLastIndex_TisRuntimeObject_m1404930667_RuntimeMethod_var),
 	(void**)(&Array_IndexOf_TisInt32_t2950945753_m3640809994_RuntimeMethod_var),
-	(void**)(&Array_IndexOf_TisRuntimeObject_m865614675_RuntimeMethod_var),
 	(void**)(&Array_IndexOf_TisRuntimeObject_m3944231312_RuntimeMethod_var),
-	(void**)(&Array_IndexOf_TisCustomAttributeNamedArgument_t287865710_m2817957199_RuntimeMethod_var),
+	(void**)(&Array_IndexOf_TisRuntimeObject_m865614675_RuntimeMethod_var),
 	(void**)(&Array_IndexOf_TisCustomAttributeNamedArgument_t287865710_m3640167086_RuntimeMethod_var),
-	(void**)(&Array_IndexOf_TisCustomAttributeTypedArgument_t2723150157_m2960013511_RuntimeMethod_var),
+	(void**)(&Array_IndexOf_TisCustomAttributeNamedArgument_t287865710_m2817957199_RuntimeMethod_var),
 	(void**)(&Array_IndexOf_TisCustomAttributeTypedArgument_t2723150157_m3158556463_RuntimeMethod_var),
+	(void**)(&Array_IndexOf_TisCustomAttributeTypedArgument_t2723150157_m2960013511_RuntimeMethod_var),
 	(void**)(&Array_IndexOf_TisOrderBlock_t1585977831_m623427105_RuntimeMethod_var),
 	(void**)(&Array_IndexOf_TisColor32_t2600501292_m2718632137_RuntimeMethod_var),
 	(void**)(&Array_IndexOf_TisRaycastResult_t3360306849_m3322053070_RuntimeMethod_var),
@@ -13642,9 +13642,9 @@ extern void** const g_MetadataUsages[9056] =
 	(void**)(&Array_InternalArray__IndexOf_TisUnityARPlaneDetection_t1367733575_m2659728377_RuntimeMethod_var),
 	(void**)(&Array_InternalArray__IndexOf_TisUnityARSessionRunOption_t942967030_m466101653_RuntimeMethod_var),
 	(void**)(&Array_InternalArray__IndexOf_TisUnityARVideoFormat_t1944454781_m1603820959_RuntimeMethod_var),
-	(void**)(&Array_LastIndexOf_TisRuntimeObject_m2701366436_RuntimeMethod_var),
-	(void**)(&Array_LastIndexOf_TisRuntimeObject_m1677937501_RuntimeMethod_var),
 	(void**)(&Array_LastIndexOf_TisRuntimeObject_m1719321980_RuntimeMethod_var),
+	(void**)(&Array_LastIndexOf_TisRuntimeObject_m1677937501_RuntimeMethod_var),
+	(void**)(&Array_LastIndexOf_TisRuntimeObject_m2701366436_RuntimeMethod_var),
 	(void**)(&Array_ForEach_TisRuntimeObject_m599801986_RuntimeMethod_var),
 	(void**)(&Array_InternalArray__ICollection_Add_TisLLEntry_t1211101965_m3927520864_RuntimeMethod_var),
 	(void**)(&Array_InternalArray__ICollection_Add_TisTableRange_t3332867892_m1428005761_RuntimeMethod_var),
@@ -13974,14 +13974,14 @@ extern void** const g_MetadataUsages[9056] =
 	(void**)(&Array_Sort_TisInt32_t2950945753_TisInt32_t2950945753_m3955828611_RuntimeMethod_var),
 	(void**)(&Array_Sort_TisInt32_t2950945753_m3365933701_RuntimeMethod_var),
 	(void**)(&Array_Sort_TisInt32_t2950945753_m263117253_RuntimeMethod_var),
+	(void**)(&Array_Sort_TisRuntimeObject_TisRuntimeObject_m1685639929_RuntimeMethod_var),
 	(void**)(&Array_Sort_TisRuntimeObject_TisRuntimeObject_m528220565_RuntimeMethod_var),
 	(void**)(&Array_Sort_TisRuntimeObject_TisRuntimeObject_m879120523_RuntimeMethod_var),
-	(void**)(&Array_Sort_TisRuntimeObject_TisRuntimeObject_m1685639929_RuntimeMethod_var),
+	(void**)(&Array_Sort_TisRuntimeObject_m1972115694_RuntimeMethod_var),
 	(void**)(&Array_Sort_TisRuntimeObject_m460813780_RuntimeMethod_var),
 	(void**)(&Array_Sort_TisRuntimeObject_m4136966267_RuntimeMethod_var),
 	(void**)(&Array_Sort_TisRuntimeObject_m3700318967_RuntimeMethod_var),
 	(void**)(&Array_Sort_TisRuntimeObject_m2698056810_RuntimeMethod_var),
-	(void**)(&Array_Sort_TisRuntimeObject_m1972115694_RuntimeMethod_var),
 	(void**)(&Array_Sort_TisCustomAttributeNamedArgument_t287865710_TisCustomAttributeNamedArgument_t287865710_m1309535943_RuntimeMethod_var),
 	(void**)(&Array_Sort_TisCustomAttributeNamedArgument_t287865710_m3178168269_RuntimeMethod_var),
 	(void**)(&Array_Sort_TisCustomAttributeNamedArgument_t287865710_m2341269431_RuntimeMethod_var),

@@ -1257,10 +1257,10 @@ extern "C" void Array_compare_TisVector4_t3319028937_m1974066282_gshared ();
 extern "C" void Array_compare_TisARHitTestResult_t1279023930_m2712290270_gshared ();
 extern "C" void Array_compare_TisUnityARVideoFormat_t1944454781_m4251758371_gshared ();
 extern "C" void Array_IndexOf_TisInt32_t2950945753_m3640809994_gshared ();
-extern "C" void Array_IndexOf_TisCustomAttributeNamedArgument_t287865710_m2817957199_gshared ();
 extern "C" void Array_IndexOf_TisCustomAttributeNamedArgument_t287865710_m3640167086_gshared ();
-extern "C" void Array_IndexOf_TisCustomAttributeTypedArgument_t2723150157_m2960013511_gshared ();
+extern "C" void Array_IndexOf_TisCustomAttributeNamedArgument_t287865710_m2817957199_gshared ();
 extern "C" void Array_IndexOf_TisCustomAttributeTypedArgument_t2723150157_m3158556463_gshared ();
+extern "C" void Array_IndexOf_TisCustomAttributeTypedArgument_t2723150157_m2960013511_gshared ();
 extern "C" void Array_IndexOf_TisOrderBlock_t1585977831_m623427105_gshared ();
 extern "C" void Array_IndexOf_TisColor32_t2600501292_m2718632137_gshared ();
 extern "C" void Array_IndexOf_TisRaycastResult_t3360306849_m3322053070_gshared ();
@@ -1691,38 +1691,38 @@ extern "C" void Array_qsort_TisARHitTestResult_t1279023930_TisARHitTestResult_t1
 extern "C" void Array_qsort_TisARHitTestResult_t1279023930_m3155620_gshared ();
 extern "C" void Array_qsort_TisUnityARVideoFormat_t1944454781_TisUnityARVideoFormat_t1944454781_m4080323182_gshared ();
 extern "C" void Array_qsort_TisUnityARVideoFormat_t1944454781_m2623567753_gshared ();
-extern "C" void Array_Resize_TisInt32_t2950945753_m18578417_gshared ();
 extern "C" void Array_Resize_TisInt32_t2950945753_m2286572300_gshared ();
-extern "C" void Array_Resize_TisCustomAttributeNamedArgument_t287865710_m885566878_gshared ();
+extern "C" void Array_Resize_TisInt32_t2950945753_m18578417_gshared ();
 extern "C" void Array_Resize_TisCustomAttributeNamedArgument_t287865710_m2861489985_gshared ();
-extern "C" void Array_Resize_TisCustomAttributeTypedArgument_t2723150157_m3021884250_gshared ();
+extern "C" void Array_Resize_TisCustomAttributeNamedArgument_t287865710_m885566878_gshared ();
 extern "C" void Array_Resize_TisCustomAttributeTypedArgument_t2723150157_m877658765_gshared ();
-extern "C" void Array_Resize_TisOrderBlock_t1585977831_m2784259641_gshared ();
+extern "C" void Array_Resize_TisCustomAttributeTypedArgument_t2723150157_m3021884250_gshared ();
 extern "C" void Array_Resize_TisOrderBlock_t1585977831_m3449774576_gshared ();
-extern "C" void Array_Resize_TisColor32_t2600501292_m2781660956_gshared ();
+extern "C" void Array_Resize_TisOrderBlock_t1585977831_m2784259641_gshared ();
 extern "C" void Array_Resize_TisColor32_t2600501292_m2984087822_gshared ();
-extern "C" void Array_Resize_TisRaycastResult_t3360306849_m1811054291_gshared ();
+extern "C" void Array_Resize_TisColor32_t2600501292_m2781660956_gshared ();
 extern "C" void Array_Resize_TisRaycastResult_t3360306849_m1277390301_gshared ();
-extern "C" void Array_Resize_TisPlayable_t459825607_m330742323_gshared ();
+extern "C" void Array_Resize_TisRaycastResult_t3360306849_m1811054291_gshared ();
 extern "C" void Array_Resize_TisPlayable_t459825607_m3179481675_gshared ();
-extern "C" void Array_Resize_TisWeightInfo_t1982677921_m3378621083_gshared ();
+extern "C" void Array_Resize_TisPlayable_t459825607_m330742323_gshared ();
 extern "C" void Array_Resize_TisWeightInfo_t1982677921_m15334789_gshared ();
-extern "C" void Array_Resize_TisUICharInfo_t75501106_m3903846016_gshared ();
+extern "C" void Array_Resize_TisWeightInfo_t1982677921_m3378621083_gshared ();
 extern "C" void Array_Resize_TisUICharInfo_t75501106_m3926798054_gshared ();
-extern "C" void Array_Resize_TisUILineInfo_t4195266810_m3763058392_gshared ();
+extern "C" void Array_Resize_TisUICharInfo_t75501106_m3903846016_gshared ();
 extern "C" void Array_Resize_TisUILineInfo_t4195266810_m2197625248_gshared ();
-extern "C" void Array_Resize_TisUIVertex_t4057497605_m2412004271_gshared ();
+extern "C" void Array_Resize_TisUILineInfo_t4195266810_m3763058392_gshared ();
 extern "C" void Array_Resize_TisUIVertex_t4057497605_m1219201596_gshared ();
-extern "C" void Array_Resize_TisVector2_t2156229523_m3382835435_gshared ();
+extern "C" void Array_Resize_TisUIVertex_t4057497605_m2412004271_gshared ();
 extern "C" void Array_Resize_TisVector2_t2156229523_m1564542050_gshared ();
-extern "C" void Array_Resize_TisVector3_t3722313464_m3912253972_gshared ();
+extern "C" void Array_Resize_TisVector2_t2156229523_m3382835435_gshared ();
 extern "C" void Array_Resize_TisVector3_t3722313464_m1245103517_gshared ();
-extern "C" void Array_Resize_TisVector4_t3319028937_m3264241945_gshared ();
+extern "C" void Array_Resize_TisVector3_t3722313464_m3912253972_gshared ();
 extern "C" void Array_Resize_TisVector4_t3319028937_m1507893064_gshared ();
-extern "C" void Array_Resize_TisARHitTestResult_t1279023930_m3264421844_gshared ();
+extern "C" void Array_Resize_TisVector4_t3319028937_m3264241945_gshared ();
 extern "C" void Array_Resize_TisARHitTestResult_t1279023930_m802353244_gshared ();
-extern "C" void Array_Resize_TisUnityARVideoFormat_t1944454781_m3523004184_gshared ();
+extern "C" void Array_Resize_TisARHitTestResult_t1279023930_m3264421844_gshared ();
 extern "C" void Array_Resize_TisUnityARVideoFormat_t1944454781_m1386168217_gshared ();
+extern "C" void Array_Resize_TisUnityARVideoFormat_t1944454781_m3523004184_gshared ();
 extern "C" void Array_Sort_TisInt32_t2950945753_TisInt32_t2950945753_m3955828611_gshared ();
 extern "C" void Array_Sort_TisInt32_t2950945753_m3365933701_gshared ();
 extern "C" void Array_Sort_TisInt32_t2950945753_m263117253_gshared ();
@@ -7008,10 +7008,10 @@ extern const Il2CppMethodPointer g_Il2CppGenericMethodPointers[5749] =
 	(Il2CppMethodPointer)&Array_compare_TisARHitTestResult_t1279023930_m2712290270_gshared/* 1229*/,
 	(Il2CppMethodPointer)&Array_compare_TisUnityARVideoFormat_t1944454781_m4251758371_gshared/* 1230*/,
 	(Il2CppMethodPointer)&Array_IndexOf_TisInt32_t2950945753_m3640809994_gshared/* 1231*/,
-	(Il2CppMethodPointer)&Array_IndexOf_TisCustomAttributeNamedArgument_t287865710_m2817957199_gshared/* 1232*/,
-	(Il2CppMethodPointer)&Array_IndexOf_TisCustomAttributeNamedArgument_t287865710_m3640167086_gshared/* 1233*/,
-	(Il2CppMethodPointer)&Array_IndexOf_TisCustomAttributeTypedArgument_t2723150157_m2960013511_gshared/* 1234*/,
-	(Il2CppMethodPointer)&Array_IndexOf_TisCustomAttributeTypedArgument_t2723150157_m3158556463_gshared/* 1235*/,
+	(Il2CppMethodPointer)&Array_IndexOf_TisCustomAttributeNamedArgument_t287865710_m3640167086_gshared/* 1232*/,
+	(Il2CppMethodPointer)&Array_IndexOf_TisCustomAttributeNamedArgument_t287865710_m2817957199_gshared/* 1233*/,
+	(Il2CppMethodPointer)&Array_IndexOf_TisCustomAttributeTypedArgument_t2723150157_m3158556463_gshared/* 1234*/,
+	(Il2CppMethodPointer)&Array_IndexOf_TisCustomAttributeTypedArgument_t2723150157_m2960013511_gshared/* 1235*/,
 	(Il2CppMethodPointer)&Array_IndexOf_TisOrderBlock_t1585977831_m623427105_gshared/* 1236*/,
 	(Il2CppMethodPointer)&Array_IndexOf_TisColor32_t2600501292_m2718632137_gshared/* 1237*/,
 	(Il2CppMethodPointer)&Array_IndexOf_TisRaycastResult_t3360306849_m3322053070_gshared/* 1238*/,
@@ -7442,38 +7442,38 @@ extern const Il2CppMethodPointer g_Il2CppGenericMethodPointers[5749] =
 	(Il2CppMethodPointer)&Array_qsort_TisARHitTestResult_t1279023930_m3155620_gshared/* 1663*/,
 	(Il2CppMethodPointer)&Array_qsort_TisUnityARVideoFormat_t1944454781_TisUnityARVideoFormat_t1944454781_m4080323182_gshared/* 1664*/,
 	(Il2CppMethodPointer)&Array_qsort_TisUnityARVideoFormat_t1944454781_m2623567753_gshared/* 1665*/,
-	(Il2CppMethodPointer)&Array_Resize_TisInt32_t2950945753_m18578417_gshared/* 1666*/,
-	(Il2CppMethodPointer)&Array_Resize_TisInt32_t2950945753_m2286572300_gshared/* 1667*/,
-	(Il2CppMethodPointer)&Array_Resize_TisCustomAttributeNamedArgument_t287865710_m885566878_gshared/* 1668*/,
-	(Il2CppMethodPointer)&Array_Resize_TisCustomAttributeNamedArgument_t287865710_m2861489985_gshared/* 1669*/,
-	(Il2CppMethodPointer)&Array_Resize_TisCustomAttributeTypedArgument_t2723150157_m3021884250_gshared/* 1670*/,
-	(Il2CppMethodPointer)&Array_Resize_TisCustomAttributeTypedArgument_t2723150157_m877658765_gshared/* 1671*/,
-	(Il2CppMethodPointer)&Array_Resize_TisOrderBlock_t1585977831_m2784259641_gshared/* 1672*/,
-	(Il2CppMethodPointer)&Array_Resize_TisOrderBlock_t1585977831_m3449774576_gshared/* 1673*/,
-	(Il2CppMethodPointer)&Array_Resize_TisColor32_t2600501292_m2781660956_gshared/* 1674*/,
-	(Il2CppMethodPointer)&Array_Resize_TisColor32_t2600501292_m2984087822_gshared/* 1675*/,
-	(Il2CppMethodPointer)&Array_Resize_TisRaycastResult_t3360306849_m1811054291_gshared/* 1676*/,
-	(Il2CppMethodPointer)&Array_Resize_TisRaycastResult_t3360306849_m1277390301_gshared/* 1677*/,
-	(Il2CppMethodPointer)&Array_Resize_TisPlayable_t459825607_m330742323_gshared/* 1678*/,
-	(Il2CppMethodPointer)&Array_Resize_TisPlayable_t459825607_m3179481675_gshared/* 1679*/,
-	(Il2CppMethodPointer)&Array_Resize_TisWeightInfo_t1982677921_m3378621083_gshared/* 1680*/,
-	(Il2CppMethodPointer)&Array_Resize_TisWeightInfo_t1982677921_m15334789_gshared/* 1681*/,
-	(Il2CppMethodPointer)&Array_Resize_TisUICharInfo_t75501106_m3903846016_gshared/* 1682*/,
-	(Il2CppMethodPointer)&Array_Resize_TisUICharInfo_t75501106_m3926798054_gshared/* 1683*/,
-	(Il2CppMethodPointer)&Array_Resize_TisUILineInfo_t4195266810_m3763058392_gshared/* 1684*/,
-	(Il2CppMethodPointer)&Array_Resize_TisUILineInfo_t4195266810_m2197625248_gshared/* 1685*/,
-	(Il2CppMethodPointer)&Array_Resize_TisUIVertex_t4057497605_m2412004271_gshared/* 1686*/,
-	(Il2CppMethodPointer)&Array_Resize_TisUIVertex_t4057497605_m1219201596_gshared/* 1687*/,
-	(Il2CppMethodPointer)&Array_Resize_TisVector2_t2156229523_m3382835435_gshared/* 1688*/,
-	(Il2CppMethodPointer)&Array_Resize_TisVector2_t2156229523_m1564542050_gshared/* 1689*/,
-	(Il2CppMethodPointer)&Array_Resize_TisVector3_t3722313464_m3912253972_gshared/* 1690*/,
-	(Il2CppMethodPointer)&Array_Resize_TisVector3_t3722313464_m1245103517_gshared/* 1691*/,
-	(Il2CppMethodPointer)&Array_Resize_TisVector4_t3319028937_m3264241945_gshared/* 1692*/,
-	(Il2CppMethodPointer)&Array_Resize_TisVector4_t3319028937_m1507893064_gshared/* 1693*/,
-	(Il2CppMethodPointer)&Array_Resize_TisARHitTestResult_t1279023930_m3264421844_gshared/* 1694*/,
-	(Il2CppMethodPointer)&Array_Resize_TisARHitTestResult_t1279023930_m802353244_gshared/* 1695*/,
-	(Il2CppMethodPointer)&Array_Resize_TisUnityARVideoFormat_t1944454781_m3523004184_gshared/* 1696*/,
-	(Il2CppMethodPointer)&Array_Resize_TisUnityARVideoFormat_t1944454781_m1386168217_gshared/* 1697*/,
+	(Il2CppMethodPointer)&Array_Resize_TisInt32_t2950945753_m2286572300_gshared/* 1666*/,
+	(Il2CppMethodPointer)&Array_Resize_TisInt32_t2950945753_m18578417_gshared/* 1667*/,
+	(Il2CppMethodPointer)&Array_Resize_TisCustomAttributeNamedArgument_t287865710_m2861489985_gshared/* 1668*/,
+	(Il2CppMethodPointer)&Array_Resize_TisCustomAttributeNamedArgument_t287865710_m885566878_gshared/* 1669*/,
+	(Il2CppMethodPointer)&Array_Resize_TisCustomAttributeTypedArgument_t2723150157_m877658765_gshared/* 1670*/,
+	(Il2CppMethodPointer)&Array_Resize_TisCustomAttributeTypedArgument_t2723150157_m3021884250_gshared/* 1671*/,
+	(Il2CppMethodPointer)&Array_Resize_TisOrderBlock_t1585977831_m3449774576_gshared/* 1672*/,
+	(Il2CppMethodPointer)&Array_Resize_TisOrderBlock_t1585977831_m2784259641_gshared/* 1673*/,
+	(Il2CppMethodPointer)&Array_Resize_TisColor32_t2600501292_m2984087822_gshared/* 1674*/,
+	(Il2CppMethodPointer)&Array_Resize_TisColor32_t2600501292_m2781660956_gshared/* 1675*/,
+	(Il2CppMethodPointer)&Array_Resize_TisRaycastResult_t3360306849_m1277390301_gshared/* 1676*/,
+	(Il2CppMethodPointer)&Array_Resize_TisRaycastResult_t3360306849_m1811054291_gshared/* 1677*/,
+	(Il2CppMethodPointer)&Array_Resize_TisPlayable_t459825607_m3179481675_gshared/* 1678*/,
+	(Il2CppMethodPointer)&Array_Resize_TisPlayable_t459825607_m330742323_gshared/* 1679*/,
+	(Il2CppMethodPointer)&Array_Resize_TisWeightInfo_t1982677921_m15334789_gshared/* 1680*/,
+	(Il2CppMethodPointer)&Array_Resize_TisWeightInfo_t1982677921_m3378621083_gshared/* 1681*/,
+	(Il2CppMethodPointer)&Array_Resize_TisUICharInfo_t75501106_m3926798054_gshared/* 1682*/,
+	(Il2CppMethodPointer)&Array_Resize_TisUICharInfo_t75501106_m3903846016_gshared/* 1683*/,
+	(Il2CppMethodPointer)&Array_Resize_TisUILineInfo_t4195266810_m2197625248_gshared/* 1684*/,
+	(Il2CppMethodPointer)&Array_Resize_TisUILineInfo_t4195266810_m3763058392_gshared/* 1685*/,
+	(Il2CppMethodPointer)&Array_Resize_TisUIVertex_t4057497605_m1219201596_gshared/* 1686*/,
+	(Il2CppMethodPointer)&Array_Resize_TisUIVertex_t4057497605_m2412004271_gshared/* 1687*/,
+	(Il2CppMethodPointer)&Array_Resize_TisVector2_t2156229523_m1564542050_gshared/* 1688*/,
+	(Il2CppMethodPointer)&Array_Resize_TisVector2_t2156229523_m3382835435_gshared/* 1689*/,
+	(Il2CppMethodPointer)&Array_Resize_TisVector3_t3722313464_m1245103517_gshared/* 1690*/,
+	(Il2CppMethodPointer)&Array_Resize_TisVector3_t3722313464_m3912253972_gshared/* 1691*/,
+	(Il2CppMethodPointer)&Array_Resize_TisVector4_t3319028937_m1507893064_gshared/* 1692*/,
+	(Il2CppMethodPointer)&Array_Resize_TisVector4_t3319028937_m3264241945_gshared/* 1693*/,
+	(Il2CppMethodPointer)&Array_Resize_TisARHitTestResult_t1279023930_m802353244_gshared/* 1694*/,
+	(Il2CppMethodPointer)&Array_Resize_TisARHitTestResult_t1279023930_m3264421844_gshared/* 1695*/,
+	(Il2CppMethodPointer)&Array_Resize_TisUnityARVideoFormat_t1944454781_m1386168217_gshared/* 1696*/,
+	(Il2CppMethodPointer)&Array_Resize_TisUnityARVideoFormat_t1944454781_m3523004184_gshared/* 1697*/,
 	(Il2CppMethodPointer)&Array_Sort_TisInt32_t2950945753_TisInt32_t2950945753_m3955828611_gshared/* 1698*/,
 	(Il2CppMethodPointer)&Array_Sort_TisInt32_t2950945753_m3365933701_gshared/* 1699*/,
 	(Il2CppMethodPointer)&Array_Sort_TisInt32_t2950945753_m263117253_gshared/* 1700*/,
