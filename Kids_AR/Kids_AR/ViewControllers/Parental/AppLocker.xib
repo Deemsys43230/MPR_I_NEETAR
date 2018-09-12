@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -27,47 +27,50 @@
                 <viewControllerLayoutGuide type="bottom" id="lR7-xf-1EX"/>
             </layoutGuides>
             <view key="view" contentMode="scaleToFill" id="IOf-8m-rm3">
-                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="LTA-Vo-kpD">
-                        <rect key="frame" x="0.0" y="-5" width="768" height="1029"/>
+                        <rect key="frame" x="0.0" y="-5" width="320" height="573"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4o-Ks-4Ii">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="341.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="189.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Parental Passcode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiA-iv-5oK">
-                                <rect key="frame" x="20" y="156" width="728" height="30.5"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="26"/>
+                                <rect key="frame" x="20" y="84.5" width="280" height="22"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="26"/>
+                                </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kS-ba-3rR">
-                                <rect key="frame" x="8" y="243" width="752" height="42.5"/>
+                                <rect key="frame" x="8" y="158.5" width="304" height="23"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y48-OI-bV6" userLabel="first" customClass="Indicator" customModule="Kids_AR" customModuleProvider="target">
-                                        <rect key="frame" x="302.5" y="10" width="21.5" height="21.5"/>
+                                        <rect key="frame" x="97.5" y="5.5" width="12" height="12"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="y48-OI-bV6" secondAttribute="height" multiplier="1:1" id="cHE-Dp-W1T"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EvL-fK-aNd" userLabel="second" customClass="Indicator" customModule="Kids_AR" customModuleProvider="target">
-                                        <rect key="frame" x="344.5" y="10" width="21.5" height="21.5"/>
+                                        <rect key="frame" x="130" y="5.5" width="12" height="12"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="EvL-fK-aNd" secondAttribute="height" multiplier="1:1" id="mWJ-SV-lPQ"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ty0-rX-vyo" userLabel="third" customClass="Indicator" customModule="Kids_AR" customModuleProvider="target">
-                                        <rect key="frame" x="386" y="10" width="21.5" height="21.5"/>
+                                        <rect key="frame" x="162" y="5.5" width="12" height="12"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ty0-rX-vyo" secondAttribute="height" multiplier="1:1" id="Bb2-Nk-aDy"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQv-Y6-U7g" userLabel="four" customClass="Indicator" customModule="Kids_AR" customModuleProvider="target">
-                                        <rect key="frame" x="427" y="10" width="21.5" height="21.5"/>
+                                        <rect key="frame" x="193.5" y="5.5" width="12" height="12"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="nQv-Y6-U7g" secondAttribute="height" multiplier="1:1" id="XIl-Rp-NHx"/>
@@ -91,10 +94,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your passcode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yc-zm-CFr">
-                                <rect key="frame" x="8" y="211.5" width="752" height="23.5"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="20"/>
+                                <rect key="frame" x="8" y="131.5" width="304" height="19"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="20"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,10 +119,10 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRu-9U-A1v" userLabel="keyboard">
-                        <rect key="frame" x="0.0" y="341.5" width="768" height="682.5"/>
+                        <rect key="frame" x="0.0" y="189.5" width="320" height="378.5"/>
                         <subviews>
                             <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxb-3y-6MP" customClass="Button" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="229.5" y="128.5" width="90" height="90"/>
+                                <rect key="frame" x="44" y="28.5" width="64" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -129,7 +135,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJZ-BT-9eb" customClass="Button" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="339.5" y="128.5" width="90.5" height="90"/>
+                                <rect key="frame" x="128" y="28.5" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HJZ-BT-9eb" secondAttribute="height" multiplier="1:1" id="1VR-Td-HwG"/>
                                     <constraint firstAttribute="width" constant="90" id="9s5-Oo-3tS"/>
@@ -159,7 +165,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cog-Nd-UYd" customClass="Button" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="450" y="128.5" width="90" height="90"/>
+                                <rect key="frame" x="212" y="28.5" width="64" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -172,7 +178,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJn-a6-MYe" customClass="Button" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="229.5" y="235" width="90" height="90.5"/>
+                                <rect key="frame" x="44" y="109" width="64" height="64.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -185,7 +191,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sva-ss-Jmv" customClass="Button" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="339" y="235" width="90.5" height="90.5"/>
+                                <rect key="frame" x="127.5" y="109" width="64" height="64.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -198,7 +204,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uve-ti-7ya" customClass="Button" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="450" y="235" width="90" height="90.5"/>
+                                <rect key="frame" x="212" y="109" width="64" height="64.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="6">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -211,7 +217,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAE-1L-zxN" customClass="Button" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="229.5" y="341.5" width="90" height="90.5"/>
+                                <rect key="frame" x="44" y="189.5" width="64" height="64.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="7">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -224,7 +230,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abq-s3-wbI" customClass="Button" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="339" y="341.5" width="90.5" height="90.5"/>
+                                <rect key="frame" x="128.5" y="189.5" width="64" height="64.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="8">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -237,7 +243,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKD-qE-N40" customClass="Button" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="450" y="341.5" width="90" height="90.5"/>
+                                <rect key="frame" x="212" y="189.5" width="64" height="64.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="9">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -250,7 +256,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEL-KO-vKM">
-                                <rect key="frame" x="449.5" y="448.5" width="90" height="90"/>
+                                <rect key="frame" x="212.5" y="270.5" width="64" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Delete">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -263,7 +269,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQB-bP-FZg" customClass="Button" customModule="Kids_AR" customModuleProvider="target">
-                                <rect key="frame" x="339" y="448" width="90.5" height="90.5"/>
+                                <rect key="frame" x="128.5" y="270" width="64" height="64.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="0">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -276,7 +282,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIU-9Q-OSg">
-                                <rect key="frame" x="229" y="448.5" width="90" height="90"/>
+                                <rect key="frame" x="44.5" y="270.5" width="64" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -376,6 +382,6 @@
         </viewController>
     </objects>
     <resources>
-        <image name="welcome" width="2048" height="2732"/>
+        <image name="welcome" width="1242" height="2208"/>
     </resources>
 </document>
