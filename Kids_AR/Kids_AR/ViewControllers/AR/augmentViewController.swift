@@ -20,7 +20,7 @@ class augmentViewController: UIViewController, popupDelegate {
     @IBOutlet var indicatorLabel: UILabel!
     @IBOutlet var indicatorParentView: UIView!
     
-    
+    public var isPasscodeSuccessful:Bool!
     @IBOutlet var fruitsheaderImage: UIImageView!
     
     
@@ -45,6 +45,10 @@ class augmentViewController: UIViewController, popupDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(pinSuccessful), name: NSNotification.Name(rawValue: "successLocker"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didCancelScreen), name: NSNotification.Name(rawValue: "cancelLocker"), object: nil)
+        self.isPasscodeSuccessful = false
         
         self.indicator.startAnimating()
         self.indicatorParentView.isHidden = false
@@ -105,12 +109,22 @@ class augmentViewController: UIViewController, popupDelegate {
         if isMovingToParentViewController{
             self.unityView?.removeFromSuperview()
         }
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "successLocker"))
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "cancelLocker"))
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        NotificationCenter.default.addObserver(self, selector: #selector(pinSuccessful), name: NSNotification.Name(rawValue: "successLocker"), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(didCancelScreen), name: NSNotification.Name(rawValue: "cancelLocker"), object: nil)
+//        self.isPasscodeSuccessful = false
     }
     
     deinit {
         
         NotificationCenter.default.removeObserver(self, name: .postNotifi, object: nil)
         NotificationCenter.default.removeObserver(self, name: .loadedNotifi, object: nil)
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "successLocker"))
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "cancelLocker"))
         
     }
     
@@ -184,7 +198,8 @@ class augmentViewController: UIViewController, popupDelegate {
             alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
             alert.addAction(UIAlertAction(title: "Rate", style: .default, handler: { (action) in
                 // redirect to appstore
-                settingsViewController().openUrl(Constants.appurl)
+                self.isPasscodeSuccessful = false
+                self.pin(.validate)
             }))
             self.present(alert, animated: true, completion: nil)
         }
@@ -205,7 +220,10 @@ class augmentViewController: UIViewController, popupDelegate {
         if let topController = UIApplication.topViewController(), (topController is PopUpViewController) {
             return
         }
-        
+        if let topController = UIApplication.topViewController(), (topController is AppLocker) {
+            return
+        }
+        self.isPasscodeSuccessful = true
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.pausePlaying = true
         appDelegate.pauseSound()
@@ -401,6 +419,36 @@ class augmentViewController: UIViewController, popupDelegate {
     //
     //    }
     //
+    
+    func pin(_ mode: ALMode) {
+        
+        var appearance = ALAppearance()
+        // appearance.title = "Set Parental Passcode"
+        if mode == ALMode.validate{
+            appearance.title = "Enter Parental Passcode"
+        }else{
+            appearance.title = "Set Parental Passcode"
+        }
+        
+        appearance.isSensorsEnabled = false
+        AppLocker.present(with: mode, and: appearance)
+    }
+    @objc func pinSuccessful() {
+        print("pinSuccessful - AUGMENTVC - SHARE")
+        if self.isPasscodeSuccessful == true{
+            return
+        }
+        if let topController = UIApplication.topViewController(), (topController is PopUpViewController) {
+            return
+        }
+        if self.isPasscodeSuccessful == false{
+            self.isPasscodeSuccessful = true
+            settingsViewController().openUrl(Constants.appurl)
+        }
+    }
+    @objc  func didCancelScreen() {
+        print("SCREEN CACNCELLED")
+    }
     
 }
 

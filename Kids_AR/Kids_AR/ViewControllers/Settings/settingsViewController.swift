@@ -16,6 +16,7 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     var alertController:UIAlertController!
     
+    var fromIndex:Int = 0
     
     override func viewDidLoad() {
 
@@ -30,8 +31,13 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        NotificationCenter.default.addObserver(self, selector: #selector(pinSuccessful), name: NSNotification.Name(rawValue: "successLocker"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didCancelScreen), name: NSNotification.Name(rawValue: "cancelLocker"), object: nil)
     }
-    
+    deinit{
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "successLocker"))
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "cancelLocker"))
+    }
     
     @IBAction func backAction(sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
@@ -41,7 +47,7 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
     // TableView Delegates
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 14;
+        return 16;
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -83,11 +89,13 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
                 cell.subTitle.isHidden = true
                 break;
             case 3:
+                
                 cell.title.text = "Purchase"
                 cell.musicON.isHidden = true
                 cell.subTitle.isHidden = true
                 break;
             case 5:
+               
                 cell.title.text = "Rate us"
                 cell.musicON.isHidden = true
                 cell.subTitle.isHidden = true
@@ -110,6 +118,12 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
                 break;
             case 13:
                 cell.title.text = "Privacy"
+                cell.musicON.isHidden = true
+                cell.subTitle.isHidden = true
+                break;
+            case 15:
+               
+                cell.title.text = "Reset Passcode"
                 cell.musicON.isHidden = true
                 cell.subTitle.isHidden = true
                 break;
@@ -149,13 +163,16 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
         switch indexPath.row {
         case 3:
             // "Purchase"
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "purchaseViewController")
-            self.present(vc!, animated: true, completion: nil)
+            self.fromIndex = 3
+            self.pin(.validate)
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "purchaseViewController")
+//            self.present(vc!, animated: true, completion: nil)
             break;
         case 5:
             // "Rate us"
-            
-            openUrl(Constants.appurl)
+            self.fromIndex = 5
+            pin(.validate)
+//            openUrl(Constants.appurl)
         
         
             break;
@@ -180,6 +197,10 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "privacyViewController")
             self.present(vc!, animated: true, completion: nil)
             break;
+        case 15:
+            self.fromIndex = 15
+            // "Reset Passcode"
+             pin(.create)
         default:
             break;
         }
@@ -311,5 +332,47 @@ class settingsViewController: UIViewController, UITableViewDataSource, UITableVi
             UIApplication.shared.openURL(url)
         }
     }
-    
+    func pin(_ mode: ALMode) {
+        
+        var appearance = ALAppearance()
+       // appearance.title = "Set Parental Passcode"
+        if mode == ALMode.validate{
+            appearance.title = "Enter Parental Passcode"
+        }else{
+            appearance.title = "Set Parental Passcode"
+        }
+        
+        
+        appearance.isSensorsEnabled = false
+        AppLocker.present(with: mode, and: appearance)
+    }
+    @objc func pinSuccessful() {
+        print("pinSuccessful - SettingsVC")
+        switch self.fromIndex {
+        case 3:
+            // "Purchase"
+            self.fromIndex = 0
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "purchaseViewController")
+                self.present(vc!, animated: true, completion: nil)
+  }
+           
+            break;
+        case 5:
+            // "Rate us"
+            self.fromIndex = 0
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.openUrl(Constants.appurl)
+            }
+            break;
+        case 15:
+            // "Reset Passcode"
+            self.fromIndex = 0
+        default:
+            break;
+        }
+    }
+    @objc  func didCancelScreen() {
+        print("SCREEN CACNCELLED")
+    }
 }

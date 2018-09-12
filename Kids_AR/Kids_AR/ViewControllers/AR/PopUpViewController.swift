@@ -20,6 +20,7 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
     @IBOutlet var collectionView: UICollectionView!
     public var index:Int = 0
     var chapters:[String:Any] =  [:]
+    public var isPasscodeSuccessful:Bool!
     
     var selectedIndexPath:Int = 0
     
@@ -39,6 +40,7 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        self.isPasscodeSuccessful = false
         
         NotificationCenter.default.addObserver(self, selector: #selector(purchaseViewController.handleNotification(_:)),
                                                name: IAPHelper.IAPProductNotification,
@@ -46,6 +48,9 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
         NotificationCenter.default.addObserver(self, selector: #selector(purchaseViewController.handleNotification(_:)),
                                                name: IAPHelper.IAPTransactNotification,
                                                object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(pinSuccessful), name: NSNotification.Name(rawValue: "successLocker"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didCancelScreen), name: NSNotification.Name(rawValue: "cancelLocker"), object: nil)
         
         switch index+1 {
         case 1:
@@ -120,6 +125,28 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
 //        NotificationCenter.default.removeObserver(self, name: IAPHelper.IAPTransactNotification, object: nil) 
 //        NotificationCenter.default.removeObserver(self, name: IAPHelper.IAPProductNotification, object: nil)
 //    }
+    deinit{
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "successLocker"))
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "cancelLocker"))
+    }
+    @objc func pinSuccessful() {
+        print("Pop up VC - BUY")
+        if self.isPasscodeSuccessful == true{
+            return
+        }
+        if self.isPasscodeSuccessful == false{
+            self.isPasscodeSuccessful = true
+            self.view.isUserInteractionEnabled = false
+            if self.index+1 == 1 || self.index+1 == 3{
+                self.buy(itemIndex: 0)
+            }else{
+                self.buy(itemIndex: 1)
+            }
+        }
+    }
+    @objc  func didCancelScreen() {
+        print("SCREEN CACNCELLED")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         loadJSONFile()
@@ -263,6 +290,7 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
         
         if self.isPurchased  == true || indexPath.row == 0 || indexPath.row == 1{
             // purchased
+            self.isPasscodeSuccessful = true
             self.removeAnimate()
             delegate?.didSelectModel(withName: itemValues["modelName"] as! String, audioName: itemValues["audioName"] as! String, modelID: itemValues["modelId"] as! String)
         }else{
@@ -274,13 +302,16 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
             }))
             alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action) in
                 // MAKE PAYMENT
+                
                 self.selectedIndexPath = indexPath.row
-                self.view.isUserInteractionEnabled = false
-                if self.index+1 == 1 || self.index+1 == 3{
-                    self.buy(itemIndex: 0)
-                }else{
-                    self.buy(itemIndex: 1)
-                }
+                self.isPasscodeSuccessful = false
+//                self.view.isUserInteractionEnabled = false
+//                if self.index+1 == 1 || self.index+1 == 3{
+//                    self.buy(itemIndex: 0)
+//                }else{
+//                    self.buy(itemIndex: 1)
+//                }
+                self.pin(.validate)
             }))
             
             self.present(alert, animated: true, completion: nil)
@@ -288,7 +319,19 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
         }
     }
     
-    
+    func pin(_ mode: ALMode) {
+        
+        var appearance = ALAppearance()
+        // appearance.title = "Set Parental Passcode"
+        if mode == ALMode.validate{
+            appearance.title = "Enter Parental Passcode"
+        }else{
+            appearance.title = "Set Parental Passcode"
+        }
+        
+        appearance.isSensorsEnabled = false
+        AppLocker.present(with: mode, and: appearance)
+    }
     /*    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
      super.traitCollectionDidChange(previousTraitCollection)
      

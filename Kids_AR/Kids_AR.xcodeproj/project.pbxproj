@@ -19,6 +19,9 @@
 		006413B720C0298D000BEBC9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006413B620C0298D000BEBC9 /* AssetsLibrary.framework */; };
 		006413B920C02992000BEBC9 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006413B820C02992000BEBC9 /* ARKit.framework */; };
 		0064173B20C034BD000BEBC9 /* rsync_exclude in Resources */ = {isa = PBXBuildFile; fileRef = 0064173A20C034BD000BEBC9 /* rsync_exclude */; };
+		00680A902148ED2400833BE1 /* AppLocker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00680A8E2148ED2400833BE1 /* AppLocker.xib */; };
+		00680A912148ED2400833BE1 /* AppLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00680A8F2148ED2400833BE1 /* AppLocker.swift */; };
+		00680A932148ED2B00833BE1 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00680A922148ED2B00833BE1 /* UI.swift */; };
 		006B3DAF20D7BB290044520D /* animalsAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006B3DAE20D7BB290044520D /* animalsAR.swift */; };
 		006DFE3820C50D3E005CC585 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006DFE3720C50D3E005CC585 /* PopUpViewController.swift */; };
 		006DFE3A20C51D84005CC585 /* kids.json in Resources */ = {isa = PBXBuildFile; fileRef = 006DFE3920C51D84005CC585 /* kids.json */; };
@@ -250,6 +253,9 @@
 		006413B620C0298D000BEBC9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		006413B820C02992000BEBC9 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		0064173A20C034BD000BEBC9 /* rsync_exclude */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = rsync_exclude; path = ../../../../../../../Desktop/testDemo/ios/iosDemo/iosDemo/Unity/rsync_exclude; sourceTree = "<group>"; };
+		00680A8E2148ED2400833BE1 /* AppLocker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppLocker.xib; sourceTree = "<group>"; };
+		00680A8F2148ED2400833BE1 /* AppLocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLocker.swift; sourceTree = "<group>"; };
+		00680A922148ED2B00833BE1 /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
 		006B3DAE20D7BB290044520D /* animalsAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalsAR.swift; sourceTree = "<group>"; };
 		006DFE3720C50D3E005CC585 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		006DFE3920C51D84005CC585 /* kids.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kids.json; sourceTree = "<group>"; };
@@ -986,6 +992,16 @@
 				007A9EB120C2621B00DB7112 /* Libraries */,
 			);
 			path = Unity;
+			sourceTree = "<group>";
+		};
+		00680A8D2148ED1300833BE1 /* Parental */ = {
+			isa = PBXGroup;
+			children = (
+				00680A922148ED2B00833BE1 /* UI.swift */,
+				00680A8F2148ED2400833BE1 /* AppLocker.swift */,
+				00680A8E2148ED2400833BE1 /* AppLocker.xib */,
+			);
+			path = Parental;
 			sourceTree = "<group>";
 		};
 		007A9DFC20C2621A00DB7112 /* Classes */ = {
@@ -2523,6 +2539,7 @@
 		009B3A6120ADA55200FA9BC3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				00680A8D2148ED1300833BE1 /* Parental */,
 				0099F9F320CE91A500454DC1 /* Utils */,
 				0095E54620C6667C00E847BB /* Purchase */,
 				0099F9F120CE914700454DC1 /* AR */,
@@ -2693,6 +2710,7 @@
 				007AA15420C2700700DB7112 /* UnityStoryboard.storyboard in Resources */,
 				0095E55520C67EAE00E847BB /* GothamRounded-Book.otf in Resources */,
 				0095E55720C67EAE00E847BB /* GothamRounded-Medium.otf in Resources */,
+				00680A902148ED2400833BE1 /* AppLocker.xib in Resources */,
 				0099FA0520CE92A300454DC1 /* triangle.png in Resources */,
 				007AA14E20C2653E00DB7112 /* background.jpg in Resources */,
 				00C245AD20E276D2006F7166 /* screenshot.png in Resources */,
@@ -2759,6 +2777,7 @@
 				007AA0B720C2621B00DB7112 /* CrashReporter.mm in Sources */,
 				007AA12220C2621B00DB7112 /* AVCapture.mm in Sources */,
 				006DFE3820C50D3E005CC585 /* PopUpViewController.swift in Sources */,
+				00680A912148ED2400833BE1 /* AppLocker.swift in Sources */,
 				007AA0BF20C2621B00DB7112 /* Bulk_Generics_2.cpp in Sources */,
 				007AA13420C2621B00DB7112 /* UnityAppController+Rendering.mm in Sources */,
 				007AA12420C2621B00DB7112 /* CMVideoSampling.mm in Sources */,
@@ -2823,6 +2842,7 @@
 				007AA13220C2621B00DB7112 /* WWWConnection.mm in Sources */,
 				007AA0D220C2621B00DB7112 /* Bulk_UnityEngine.AnimationModule_0.cpp in Sources */,
 				007AA11720C2621B00DB7112 /* Keyboard.mm in Sources */,
+				00680A932148ED2B00833BE1 /* UI.swift in Sources */,
 				007AA13C20C2621C00DB7112 /* NativeGallery.mm in Sources */,
 				007AA12320C2621B00DB7112 /* CameraCapture.mm in Sources */,
 				0099F9F920CE91E900454DC1 /* congratsView.swift in Sources */,

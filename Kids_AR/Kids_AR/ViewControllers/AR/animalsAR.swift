@@ -19,7 +19,7 @@ class animalsAR: UIViewController, popupDelegate {
     @IBOutlet var indicator: UIActivityIndicatorView!
     @IBOutlet var indicatorLabel: UILabel!
     @IBOutlet var indicatorParentView: UIView!
-    
+    public var isPasscodeSuccessful:Bool!
     var unityView: UIView?
     
     @IBOutlet var hintHeight: NSLayoutConstraint!
@@ -40,9 +40,14 @@ class animalsAR: UIViewController, popupDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(pinSuccessful), name: NSNotification.Name(rawValue: "successLocker"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didCancelScreen), name: NSNotification.Name(rawValue: "cancelLocker"), object: nil)
+        self.isPasscodeSuccessful = false
+        
         self.indicator.startAnimating()
         self.indicatorParentView.isHidden = false
-        
+       
         NotificationCenter.default.addObserver(self,selector: #selector(handleAnimalButtons(notfication:)), name:.animalNotifi, object:nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(showButtons(notfication:)), name: .postNotifi, object: nil)
@@ -93,6 +98,9 @@ class animalsAR: UIViewController, popupDelegate {
         NotificationCenter.default.removeObserver(self, name: .animalNotifi, object: nil)
         NotificationCenter.default.removeObserver(self, name: .postNotifi, object: nil)
         NotificationCenter.default.removeObserver(self, name: .loadedNotifi, object: nil)
+        
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "successLocker"))
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "cancelLocker"))
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
@@ -100,8 +108,15 @@ class animalsAR: UIViewController, popupDelegate {
         if isMovingToParentViewController{
             self.unityView?.removeFromSuperview()
         }
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "successLocker"))
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "cancelLocker"))
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        NotificationCenter.default.addObserver(self, selector: #selector(pinSuccessful), name: NSNotification.Name(rawValue: "successLocker"), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(didCancelScreen), name: NSNotification.Name(rawValue: "cancelLocker"), object: nil)
+//        self.isPasscodeSuccessful = false
+    }
     
     @objc func handleAnimalButtons(notfication: NSNotification){
        // print("Animation Status :::: \(notfication.userInfo!["text"])")
@@ -203,7 +218,8 @@ class animalsAR: UIViewController, popupDelegate {
             alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
             alert.addAction(UIAlertAction(title: "Rate", style: .default, handler: { (action) in
                 // redirect to appstore
-                settingsViewController().openUrl(Constants.appurl)
+                self.isPasscodeSuccessful = false
+                self.pin(.validate)
             }))
             self.present(alert, animated: true, completion: nil)
         }
@@ -223,7 +239,10 @@ class animalsAR: UIViewController, popupDelegate {
         if let topController = UIApplication.topViewController(), (topController is PopUpViewController) {
             return
         }
-        
+        if let topController = UIApplication.topViewController(), (topController is AppLocker) {
+            return
+        }
+        self.isPasscodeSuccessful = true
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.pausePlaying = true
         appDelegate.pauseSound()
@@ -448,7 +467,36 @@ class animalsAR: UIViewController, popupDelegate {
     //
     //    }
     //
-    
+    func pin(_ mode: ALMode) {
+        
+        var appearance = ALAppearance()
+        // appearance.title = "Set Parental Passcode"
+        if mode == ALMode.validate{
+            appearance.title = "Enter Parental Passcode"
+        }else{
+            appearance.title = "Set Parental Passcode"
+        }
+        
+        appearance.isSensorsEnabled = false
+        AppLocker.present(with: mode, and: appearance)
+    }
+    @objc func pinSuccessful() {
+        print("pinSuccessful - AnimalsVC - Share")
+        if let topController = UIApplication.topViewController(), (topController is PopUpViewController) {
+            return
+        }
+        if self.isPasscodeSuccessful == true{
+            return
+        }
+        
+        if self.isPasscodeSuccessful == false{
+            self.isPasscodeSuccessful = true
+            settingsViewController().openUrl(Constants.appurl)
+        }
+    }
+    @objc  func didCancelScreen() {
+        print("SCREEN CACNCELLED")
+    }
 }
 
 
