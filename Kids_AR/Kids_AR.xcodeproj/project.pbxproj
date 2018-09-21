@@ -2587,6 +2587,7 @@
 				009B3A0D20AD504000FA9BC3 /* Frameworks */,
 				009B3A0E20AD504000FA9BC3 /* Resources */,
 				006413BA20C029AA000BEBC9 /* ShellScript */,
+				0045F17D2153CD7A002B188B /* Increment Build */,
 			);
 			buildRules = (
 			);
@@ -2735,6 +2736,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0045F17D2153CD7A002B188B /* Increment Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${INFOPLIST_FILE}\"";
+		};
 		006413B520C0294E000BEBC9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3118,7 +3133,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
@@ -3135,8 +3150,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.kidsar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4239f7de-b568-40f9-b4af-fb8f4f6c3322";
-				PROVISIONING_PROFILE_SPECIFIER = "kids ar development provisioning profile";
+				PROVISIONING_PROFILE = "f3a726d8-3872-4033-b7d7-d010f98dd423";
+				PROVISIONING_PROFILE_SPECIFIER = "kids ar distribution provisioning profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "Kids_AR/PageViewController/Kids AR-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -3149,7 +3164,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
 				INFOPLIST_FILE = "$(SRCROOT)/Kids_AR/Info.plist";
@@ -3165,8 +3180,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.kidsar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4239f7de-b568-40f9-b4af-fb8f4f6c3322";
-				PROVISIONING_PROFILE_SPECIFIER = "kids ar development provisioning profile";
+				PROVISIONING_PROFILE = "f3a726d8-3872-4033-b7d7-d010f98dd423";
+				PROVISIONING_PROFILE_SPECIFIER = "kids ar distribution provisioning profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "Kids_AR/PageViewController/Kids AR-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -40,11 +40,130 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+//        self.isPasscodeSuccessful = false
+//
+//        NotificationCenter.default.addObserver(self, selector: #selector(purchaseViewController.handleNotification(_:)),
+//                                               name: IAPHelper.IAPProductNotification,
+//                                               object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(purchaseViewController.handleNotification(_:)),
+//                                               name: IAPHelper.IAPTransactNotification,
+//                                               object: nil)
+//
+//        NotificationCenter.default.addObserver(self, selector: #selector(pinSuccessful), name: NSNotification.Name(rawValue: "successLocker"), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(didCancelScreen), name: NSNotification.Name(rawValue: "cancelLocker"), object: nil)
+//
+//        switch index+1 {
+//        case 1:
+//            // Alphabets
+//            self.themeImage.image = #imageLiteral(resourceName: "alphabets_theme")
+//            self.colorView.backgroundColor = UIColor.init(red: 57/255, green: 93/255, blue: 21/255, alpha: 0.5)
+//
+//            break
+//        case 2:
+//            // animals
+//            self.themeImage.image = #imageLiteral(resourceName: "animals_theme")
+//            self.colorView.backgroundColor = UIColor.init(red: 124/255, green: 179/255, blue: 100/255, alpha: 0.5)
+//            break
+//        case 3:
+//            // fruits
+//            self.themeImage.image = #imageLiteral(resourceName: "veggs_theme")
+//            self.colorView.backgroundColor = UIColor.init(red: 158/255, green: 158/255, blue: 158/255, alpha: 0.5)
+//            break
+//        default:
+//            break
+//        }
+//        if  index+1 == 1 || index+1 == 3 {
+//            let purchased = UserDefaults.standard.bool(forKey: appdelegate.productIDs[0])
+//            if purchased{
+//                self.isPurchased = true
+//            }else{
+//                self.isPurchased = false
+//            }
+//        }
+//        else{
+//            let purchased = UserDefaults.standard.bool(forKey: appdelegate.productIDs[1])
+//            if purchased{
+//                self.isPurchased = true
+//            }else{
+//                self.isPurchased = false
+//            }
+//        }
+//
+//        if self.isPurchased == false{
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
+//
+//                if self.checkNetworkConnection(showAlert: false) == true{
+//                    self.store.requestProductInfo()
+//                }
+//            }
+//        }
+        
+        if UIDevice.current.model == "iPhone"{
+            
+            if self.view.frame.width == 320{
+                viewWidth.constant = 300
+                viewHeight.constant = 495
+                self.menuView.layoutIfNeeded()
+            }else{
+                viewWidth.constant = 360
+                viewHeight.constant = 595
+                self.menuView.layoutIfNeeded()
+                
+            }
+        }
+        else{
+            viewWidth.constant = 560
+            viewHeight.constant = 795
+            self.menuView.layoutIfNeeded()
+        }
+        self.view.isUserInteractionEnabled = true
+        self.collectionView.reloadData()
+    }
+//    override func viewDidDisappear(_ animated: Bool) {
+//        
+//        super.viewDidDisappear(true)
+//        NotificationCenter.default.removeObserver(self, name: IAPHelper.IAPTransactNotification, object: nil) 
+//        NotificationCenter.default.removeObserver(self, name: IAPHelper.IAPProductNotification, object: nil)
+//    }
+    deinit{
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "successLocker"))
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "cancelLocker"))
+        self.store.emptyQueue()
+        NotificationCenter.default.removeObserver(self)
+    }
+    @objc func pinSuccessful() {
+        print("Pop up VC - BUY")
+        if self.isPasscodeSuccessful == true{
+            return
+        }
+        if self.isPasscodeSuccessful == false{
+            self.isPasscodeSuccessful = true
+            self.view.isUserInteractionEnabled = false
+            if self.index+1 == 1 || self.index+1 == 3{
+                self.buy(itemIndex: 0)
+            }else{
+                self.buy(itemIndex: 1)
+            }
+        }
+    }
+    @objc  func didCancelScreen() {
+        print("SCREEN CACNCELLED")
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        loadJSONFile()
+        
+        definesPresentationContext = true
+        
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        
+     //   self.showAnimate()
+        
         self.isPasscodeSuccessful = false
         
         NotificationCenter.default.addObserver(self, selector: #selector(purchaseViewController.handleNotification(_:)),
                                                name: IAPHelper.IAPProductNotification,
-                                               object: nil) 
+                                               object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(purchaseViewController.handleNotification(_:)),
                                                name: IAPHelper.IAPTransactNotification,
                                                object: nil)
@@ -97,64 +216,6 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
                 }
             }
         }
-        
-        if UIDevice.current.model == "iPhone"{
-            
-            if self.view.frame.width == 320{
-                viewWidth.constant = 300
-                viewHeight.constant = 495
-                self.menuView.layoutIfNeeded()
-            }else{
-                viewWidth.constant = 360
-                viewHeight.constant = 595
-                self.menuView.layoutIfNeeded()
-                
-            }
-        }
-        else{
-            viewWidth.constant = 560
-            viewHeight.constant = 795
-            self.menuView.layoutIfNeeded()
-        }
-        self.view.isUserInteractionEnabled = true
-        self.collectionView.reloadData()
-    }
-//    override func viewDidDisappear(_ animated: Bool) {
-//        
-//        super.viewDidDisappear(true)
-//        NotificationCenter.default.removeObserver(self, name: IAPHelper.IAPTransactNotification, object: nil) 
-//        NotificationCenter.default.removeObserver(self, name: IAPHelper.IAPProductNotification, object: nil)
-//    }
-    deinit{
-        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "successLocker"))
-        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "cancelLocker"))
-    }
-    @objc func pinSuccessful() {
-        print("Pop up VC - BUY")
-        if self.isPasscodeSuccessful == true{
-            return
-        }
-        if self.isPasscodeSuccessful == false{
-            self.isPasscodeSuccessful = true
-            self.view.isUserInteractionEnabled = false
-            if self.index+1 == 1 || self.index+1 == 3{
-                self.buy(itemIndex: 0)
-            }else{
-                self.buy(itemIndex: 1)
-            }
-        }
-    }
-    @objc  func didCancelScreen() {
-        print("SCREEN CACNCELLED")
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        loadJSONFile()
-        
-        
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
-        
-        self.showAnimate()
         
         
     }
@@ -231,16 +292,19 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
     
     func showAnimate()
     {
-        self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
-        self.view.alpha = 0.0;
-        UIView.animate(withDuration: 0.25, animations: {
-            self.view.alpha = 1.0
-            self.view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-        });
+//        self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+//        self.view.alpha = 0.0;
+//        UIView.animate(withDuration: 0.25, animations: {
+//            self.view.alpha = 1.0
+//            self.view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+//        });
     }
     
     func removeAnimate()
     {
+       /* NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "successLocker"))
+        NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "cancelLocker"))
+        NotificationCenter.default.removeObserver(self)
         UIView.animate(withDuration: 0.25, animations: {
             self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
             self.view.alpha = 0.0;
@@ -248,8 +312,10 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
             if (finished)
             {
                 self.view.removeFromSuperview()
+                NotificationCenter.default.removeObserver(self)
             }
-        });
+        }); */
+        self.dismiss(animated: true, completion: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView,

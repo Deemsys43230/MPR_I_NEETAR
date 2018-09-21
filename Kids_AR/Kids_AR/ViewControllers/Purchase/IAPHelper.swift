@@ -74,7 +74,7 @@ extension IAPHelper:SKProductsRequestDelegate{
         }
         else {
             print("There are no products.")
-            NotificationCenter.default.post(name: IAPHelper.IAPProductNotification, object:nil,userInfo:["message":"failure"])
+            NotificationCenter.default.post(name: IAPHelper.IAPProductNotification, object:nil,userInfo:["message":"No products available for purchase!"])
         }
         
         if response.invalidProductIdentifiers.count != 0 {
@@ -109,7 +109,7 @@ extension IAPHelper:SKPaymentTransactionObserver{
             case .failed:
                 print("Transaction Failed");
                 SKPaymentQueue.default().finishTransaction(transaction)
-                NotificationCenter.default.post(name: IAPHelper.IAPTransactNotification, object:nil,userInfo:["message":"failure"])
+                NotificationCenter.default.post(name: IAPHelper.IAPTransactNotification, object:nil,userInfo:["message":"User cancelled the transaction or Failure!"])
                 
             case .purchasing:
                 print ("ongoing transaction");

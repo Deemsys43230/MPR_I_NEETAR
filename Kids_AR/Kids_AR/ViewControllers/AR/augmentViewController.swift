@@ -45,10 +45,11 @@ class augmentViewController: UIViewController, popupDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        definesPresentationContext = true
         
-        NotificationCenter.default.addObserver(self, selector: #selector(pinSuccessful), name: NSNotification.Name(rawValue: "successLocker"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(didCancelScreen), name: NSNotification.Name(rawValue: "cancelLocker"), object: nil)
-        self.isPasscodeSuccessful = false
+//        NotificationCenter.default.addObserver(self, selector: #selector(pinSuccessful), name: NSNotification.Name(rawValue: "successLocker"), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(didCancelScreen), name: NSNotification.Name(rawValue: "cancelLocker"), object: nil)
+//        self.isPasscodeSuccessful = false
         
         self.indicator.startAnimating()
         self.indicatorParentView.isHidden = false
@@ -111,12 +112,13 @@ class augmentViewController: UIViewController, popupDelegate {
         }
         NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "successLocker"))
         NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "cancelLocker"))
+//        NotificationCenter.default.removeObserver(self)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        NotificationCenter.default.addObserver(self, selector: #selector(pinSuccessful), name: NSNotification.Name(rawValue: "successLocker"), object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(didCancelScreen), name: NSNotification.Name(rawValue: "cancelLocker"), object: nil)
-//        self.isPasscodeSuccessful = false
+        NotificationCenter.default.addObserver(self, selector: #selector(pinSuccessful), name: NSNotification.Name(rawValue: "successLocker"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didCancelScreen), name: NSNotification.Name(rawValue: "cancelLocker"), object: nil)
+        self.isPasscodeSuccessful = false
     }
     
     deinit {
@@ -125,7 +127,7 @@ class augmentViewController: UIViewController, popupDelegate {
         NotificationCenter.default.removeObserver(self, name: .loadedNotifi, object: nil)
         NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "successLocker"))
         NotificationCenter.default.removeObserver(NSNotification.Name(rawValue: "cancelLocker"))
-        
+        NotificationCenter.default.removeObserver(self)
     }
     
     
@@ -223,6 +225,11 @@ class augmentViewController: UIViewController, popupDelegate {
         if let topController = UIApplication.topViewController(), (topController is AppLocker) {
             return
         }
+        if let topController = UIApplication.topViewController(), (topController is augmentViewController) {
+            // continue
+        }else{
+            return
+        }
         self.isPasscodeSuccessful = true
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.pausePlaying = true
@@ -230,10 +237,11 @@ class augmentViewController: UIViewController, popupDelegate {
         let popOverVC = UIStoryboard(name: "UnityStoryboard", bundle: nil).instantiateViewController(withIdentifier: "PopUpViewController") as! PopUpViewController
         popOverVC.index = self.index
         popOverVC.delegate = self
-        self.addChildViewController(popOverVC)
-        popOverVC.view.frame = self.view.frame
-        self.view.addSubview(popOverVC.view)
-        popOverVC.didMove(toParentViewController: self)
+        self.present(popOverVC, animated: true, completion: nil)
+        //        self.addChildViewController(popOverVC)
+        //        popOverVC.view.frame = self.view.frame
+        //        self.view.addSubview(popOverVC.view)
+        //        popOverVC.didMove(toParentViewController: self)
     }
     
     @IBAction func showAlphabet(_ sender: UIButton) {
