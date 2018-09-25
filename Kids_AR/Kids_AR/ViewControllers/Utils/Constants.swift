@@ -19,11 +19,11 @@ class Constants {
         case Regular = "GothamRounded-Book"
         case Medium = "GothamRounded-Medium"
         case Light = "GothamRounded-Light"
-//        case Bold = "GillSans-Bold"
-//        case BoldItalic = "GillSans-BoldItalic"
-//        case SemiBold = "GillSans-SemiBold"
-//        case SemiBoldItalic = "GillSans-SemiBoldItalic"
-//        case Italic = "GillSans-Italic"
+        //        case Bold = "GillSans-Bold"
+        //        case BoldItalic = "GillSans-BoldItalic"
+        //        case SemiBold = "GillSans-SemiBold"
+        //        case SemiBoldItalic = "GillSans-SemiBoldItalic"
+        //        case Italic = "GillSans-Italic"
     }
     
     //    MARK: - FontSizes
@@ -60,20 +60,23 @@ class Constants {
     
     static let lockColor:UIColor = UIColor(red: 247/255, green: 220/255, blue: 71/255, alpha: 1.0)
     
-     
+    
     
     static let fromEmail:String = "deemmobtest@gmail.com"
     static let fromEmailPwd:String = "deemsys@123"
     
     
     // Production
-    //static let toEmail:String = "incdeemsys@gmail.com"
+    // static let toEmail:String = "incdeemsys@gmail.com"
+    // static let receiptVerifyURL = "https://iap.deemsysinc.com/verifyReceipt/kidsar"
     
     // Developement
-   // static let toEmail:String = "deemmobtest@gmail.com"
+    static let toEmail:String = "deemmobtest@gmail.com"
+    static let receiptVerifyURL = "http://192.168.1.2:8000/verifyReceipt/kidsar"
     
     // Testing
-    static let toEmail:String = "deemsystesting@gmail.com"
+    // static let toEmail:String = "deemsystesting@gmail.com"
+    // static let receiptVerifyURL = "http://192.168.1.2:8000/verifyReceipt/kidsar"
     
     
     static let relayHost:String = "smtp.gmail.com"
@@ -81,25 +84,26 @@ class Constants {
     static let requiresAuth:Bool = true
     static let wantsSecure:Bool = true
     
- 
- static let helpArray = [
-   "How to use 3d models?",
-   "How to use 3d models?",
-   "INSTRUCTIONS",
-    "Enter your name on the welcome screen to explore the fun of augmented realities.",
-    "To start, choose a category on your home screen.",
-    "Try our free models. Locked models are for purchase.",
-    "You can customize your app using the settings button.",
-    "To unlock all models, go to Settings -> Purchase -> Buy.",
-    "To restore your purchases on a new device or to reinstall the app, go to Settings -> Purchase -> Restore.",
-    "Any queries? Please go to Settings -> Contact us.\n",
     
-    "\nHappy Learning!\n"
-                   ]
-  
-   
+    static let helpArray = [
+        "How to use 3d models?",
+        "How to use 3d models?",
+        "INSTRUCTIONS",
+        "Enter your name on the welcome screen to explore the fun of augmented realities.",
+        "To start, choose a category on your home screen.",
+        "Try our free models. Locked models are for purchase.",
+        "You can customize your app using the settings button.",
+        "To unlock all models, go to Settings -> Purchase -> Buy.",
+        "To restore your purchases on a new device or to reinstall the app, go to Settings -> Purchase -> Restore.",
+        "Any queries? Please go to Settings -> Contact us.\n",
+        
+        "\nHappy Learning!\n"
+    ]
     
-   
+    
+    
+    
     
 }
+
 

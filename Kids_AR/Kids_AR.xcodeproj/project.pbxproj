@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0012CD85212ED5F000A232FF /* finaldemo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0012CD84212ED5DB00A232FF /* finaldemo.mp4 */; };
+		003DC5BD2158FD9100B72EA7 /* SwiftyStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5A82158FD8E00B72EA7 /* SwiftyStoreKit.swift */; };
+		003DC5BE2158FD9100B72EA7 /* ProductsInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5A92158FD8E00B72EA7 /* ProductsInfoController.swift */; };
+		003DC5BF2158FD9100B72EA7 /* InAppReceiptVerificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5AA2158FD8E00B72EA7 /* InAppReceiptVerificator.swift */; };
+		003DC5C02158FD9100B72EA7 /* SwiftyStoreKit+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5AB2158FD8F00B72EA7 /* SwiftyStoreKit+Types.swift */; };
+		003DC5C12158FD9100B72EA7 /* InAppProductQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5AC2158FD8F00B72EA7 /* InAppProductQueryRequest.swift */; };
+		003DC5C22158FD9100B72EA7 /* RestorePurchasesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5AD2158FD8F00B72EA7 /* RestorePurchasesController.swift */; };
+		003DC5C32158FD9100B72EA7 /* OS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5AE2158FD8F00B72EA7 /* OS.swift */; };
+		003DC5C42158FD9100B72EA7 /* SKProduct+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5AF2158FD8F00B72EA7 /* SKProduct+LocalizedPrice.swift */; };
+		003DC5C52158FD9100B72EA7 /* CompleteTransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5B02158FD9000B72EA7 /* CompleteTransactionsController.swift */; };
+		003DC5C62158FD9100B72EA7 /* InAppReceiptRefreshRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5B12158FD9000B72EA7 /* InAppReceiptRefreshRequest.swift */; };
+		003DC5CA2158FD9100B72EA7 /* InAppReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5B92158FD9000B72EA7 /* InAppReceipt.swift */; };
+		003DC5CB2158FD9100B72EA7 /* PaymentQueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5BA2158FD9000B72EA7 /* PaymentQueueController.swift */; };
+		003DC5CC2158FD9100B72EA7 /* PaymentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5BB2158FD9000B72EA7 /* PaymentsController.swift */; };
+		003DC5CD2158FD9100B72EA7 /* AppleReceiptValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DC5BC2158FD9100B72EA7 /* AppleReceiptValidator.swift */; };
 		0042343E20CFB313007E5B30 /* negativeTone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0042343C20CFB313007E5B30 /* negativeTone.mp3 */; };
 		0042343F20CFB313007E5B30 /* positiveTone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0042343D20CFB313007E5B30 /* positiveTone.mp3 */; };
 		0042344120CFB8D0007E5B30 /* kidsCheer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0042344020CFB8CF007E5B30 /* kidsCheer.mp3 */; };
@@ -241,6 +255,20 @@
 
 /* Begin PBXFileReference section */
 		0012CD84212ED5DB00A232FF /* finaldemo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = finaldemo.mp4; sourceTree = "<group>"; };
+		003DC5A82158FD8E00B72EA7 /* SwiftyStoreKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyStoreKit.swift; sourceTree = "<group>"; };
+		003DC5A92158FD8E00B72EA7 /* ProductsInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsInfoController.swift; sourceTree = "<group>"; };
+		003DC5AA2158FD8E00B72EA7 /* InAppReceiptVerificator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceiptVerificator.swift; sourceTree = "<group>"; };
+		003DC5AB2158FD8F00B72EA7 /* SwiftyStoreKit+Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyStoreKit+Types.swift"; sourceTree = "<group>"; };
+		003DC5AC2158FD8F00B72EA7 /* InAppProductQueryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppProductQueryRequest.swift; sourceTree = "<group>"; };
+		003DC5AD2158FD8F00B72EA7 /* RestorePurchasesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestorePurchasesController.swift; sourceTree = "<group>"; };
+		003DC5AE2158FD8F00B72EA7 /* OS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OS.swift; sourceTree = "<group>"; };
+		003DC5AF2158FD8F00B72EA7 /* SKProduct+LocalizedPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProduct+LocalizedPrice.swift"; sourceTree = "<group>"; };
+		003DC5B02158FD9000B72EA7 /* CompleteTransactionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTransactionsController.swift; sourceTree = "<group>"; };
+		003DC5B12158FD9000B72EA7 /* InAppReceiptRefreshRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceiptRefreshRequest.swift; sourceTree = "<group>"; };
+		003DC5B92158FD9000B72EA7 /* InAppReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceipt.swift; sourceTree = "<group>"; };
+		003DC5BA2158FD9000B72EA7 /* PaymentQueueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentQueueController.swift; sourceTree = "<group>"; };
+		003DC5BB2158FD9000B72EA7 /* PaymentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsController.swift; sourceTree = "<group>"; };
+		003DC5BC2158FD9100B72EA7 /* AppleReceiptValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleReceiptValidator.swift; sourceTree = "<group>"; };
 		0042343C20CFB313007E5B30 /* negativeTone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = negativeTone.mp3; sourceTree = "<group>"; };
 		0042343D20CFB313007E5B30 /* positiveTone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = positiveTone.mp3; sourceTree = "<group>"; };
 		0042344020CFB8CF007E5B30 /* kidsCheer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kidsCheer.mp3; sourceTree = "<group>"; };
@@ -980,6 +1008,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		003DC5A72158FD7700B72EA7 /* SwiftyStoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				003DC5BC2158FD9100B72EA7 /* AppleReceiptValidator.swift */,
+				003DC5B02158FD9000B72EA7 /* CompleteTransactionsController.swift */,
+				003DC5AC2158FD8F00B72EA7 /* InAppProductQueryRequest.swift */,
+				003DC5B92158FD9000B72EA7 /* InAppReceipt.swift */,
+				003DC5B12158FD9000B72EA7 /* InAppReceiptRefreshRequest.swift */,
+				003DC5AA2158FD8E00B72EA7 /* InAppReceiptVerificator.swift */,
+				003DC5AE2158FD8F00B72EA7 /* OS.swift */,
+				003DC5BA2158FD9000B72EA7 /* PaymentQueueController.swift */,
+				003DC5BB2158FD9000B72EA7 /* PaymentsController.swift */,
+				003DC5A92158FD8E00B72EA7 /* ProductsInfoController.swift */,
+				003DC5AD2158FD8F00B72EA7 /* RestorePurchasesController.swift */,
+				003DC5AF2158FD8F00B72EA7 /* SKProduct+LocalizedPrice.swift */,
+				003DC5A82158FD8E00B72EA7 /* SwiftyStoreKit.swift */,
+				003DC5AB2158FD8F00B72EA7 /* SwiftyStoreKit+Types.swift */,
+			);
+			path = SwiftyStoreKit;
+			sourceTree = "<group>";
+		};
 		006413AA20C027E1000BEBC9 /* Unity */ = {
 			isa = PBXGroup;
 			children = (
@@ -2511,6 +2560,7 @@
 		009B3A4420AD5FC000FA9BC3 /* Additional Resources */ = {
 			isa = PBXGroup;
 			children = (
+				003DC5A72158FD7700B72EA7 /* SwiftyStoreKit */,
 				0099FA0620CE92AF00454DC1 /* DCAnimation */,
 				0099F9FD20CE928A00454DC1 /* Confetti */,
 				0095E54F20C6793C00E847BB /* Fonts */,
@@ -2587,7 +2637,7 @@
 				009B3A0D20AD504000FA9BC3 /* Frameworks */,
 				009B3A0E20AD504000FA9BC3 /* Resources */,
 				006413BA20C029AA000BEBC9 /* ShellScript */,
-				0045F17D2153CD7A002B188B /* Increment Build */,
+				00362E17215A792D00C28498 /* Increment Build */,
 			);
 			buildRules = (
 			);
@@ -2736,9 +2786,9 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0045F17D2153CD7A002B188B /* Increment Build */ = {
+		00362E17215A792D00C28498 /* Increment Build */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
@@ -2797,6 +2847,7 @@
 				007AA13420C2621B00DB7112 /* UnityAppController+Rendering.mm in Sources */,
 				007AA12420C2621B00DB7112 /* CMVideoSampling.mm in Sources */,
 				007AA0D020C2621B00DB7112 /* Bulk_System_0.cpp in Sources */,
+				003DC5C22158FD9100B72EA7 /* RestorePurchasesController.swift in Sources */,
 				007AA11220C2621B00DB7112 /* AppDelegateListener.mm in Sources */,
 				007AA0E820C2621B00DB7112 /* Il2CppAttributes.cpp in Sources */,
 				007AA10A20C2621B00DB7112 /* Il2CppMetadataRegistration.cpp in Sources */,
@@ -2811,6 +2862,7 @@
 				007AA13620C2621C00DB7112 /* UnityAppController.mm in Sources */,
 				00C5229520B3EFC100C38255 /* NSStream+SKPSMTPExtensions.m in Sources */,
 				007AA11B20C2621B00DB7112 /* UnityAppController+ViewHandling.mm in Sources */,
+				003DC5C32158FD9100B72EA7 /* OS.swift in Sources */,
 				007AA15320C2700700DB7112 /* toast.swift in Sources */,
 				007AA0EC20C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_11Table.cpp in Sources */,
 				007AA10620C2621B00DB7112 /* Il2CppGenericMethodPointerTable.cpp in Sources */,
@@ -2829,6 +2881,7 @@
 				007AA0CC20C2621B00DB7112 /* Bulk_mscorlib_7.cpp in Sources */,
 				007AA0D520C2621B00DB7112 /* Bulk_UnityEngine.CoreModule_1.cpp in Sources */,
 				007AA0CB20C2621B00DB7112 /* Bulk_mscorlib_6.cpp in Sources */,
+				003DC5BF2158FD9100B72EA7 /* InAppReceiptVerificator.swift in Sources */,
 				007AA10C20C2621B00DB7112 /* Il2CppMethodPointerTable.cpp in Sources */,
 				007AA0BC20C2621B00DB7112 /* Bulk_Assembly-CSharp_1.cpp in Sources */,
 				007C939220B2B3BA00019114 /* privacyViewController.swift in Sources */,
@@ -2845,7 +2898,11 @@
 				007AA0BB20C2621B00DB7112 /* Bulk_Assembly-CSharp_0.cpp in Sources */,
 				0095E54B20C6668D00E847BB /* IAPHelper.swift in Sources */,
 				007AA0F020C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_15Table.cpp in Sources */,
+				003DC5BE2158FD9100B72EA7 /* ProductsInfoController.swift in Sources */,
+				003DC5BD2158FD9100B72EA7 /* SwiftyStoreKit.swift in Sources */,
+				003DC5C12158FD9100B72EA7 /* InAppProductQueryRequest.swift in Sources */,
 				007AA11D20C2621B00DB7112 /* UnityView+tvOS.mm in Sources */,
+				003DC5C52158FD9100B72EA7 /* CompleteTransactionsController.swift in Sources */,
 				006413B020C027F8000BEBC9 /* UnityUtils.mm in Sources */,
 				007AA0C720C2621B00DB7112 /* Bulk_mscorlib_2.cpp in Sources */,
 				007AA12920C2621B00DB7112 /* Filesystem.mm in Sources */,
@@ -2876,13 +2933,16 @@
 				007AA0F420C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_19Table.cpp in Sources */,
 				00B74E7F20B7FCA800EBF380 /* Rechability.swift in Sources */,
 				007AA10E20C2621B00DB7112 /* Il2CppTypeDefinitions.cpp in Sources */,
+				003DC5CD2158FD9100B72EA7 /* AppleReceiptValidator.swift in Sources */,
 				007AA0FC20C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_5Table.cpp in Sources */,
 				007AA11F20C2621B00DB7112 /* UnityViewControllerBase+iOS.mm in Sources */,
 				007AA12020C2621B00DB7112 /* UnityViewControllerBase+tvOS.mm in Sources */,
 				007AA11520C2621B00DB7112 /* UnityViewControllerListener.mm in Sources */,
+				003DC5C62158FD9100B72EA7 /* InAppReceiptRefreshRequest.swift in Sources */,
 				007AA0B820C2621B00DB7112 /* iPhone_Sensors.mm in Sources */,
 				007AA0F220C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_17Table.cpp in Sources */,
 				007AA0CF20C2621B00DB7112 /* Bulk_System.Core_0.cpp in Sources */,
+				003DC5C02158FD9100B72EA7 /* SwiftyStoreKit+Types.swift in Sources */,
 				007AA0FD20C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_6Table.cpp in Sources */,
 				007AA0C420C2621B00DB7112 /* Bulk_mscorlib_0.cpp in Sources */,
 				007AA12C20C2621B00DB7112 /* InternalProfiler.cpp in Sources */,
@@ -2923,6 +2983,7 @@
 				007C93A420B2F94C00019114 /* CRViewController.m in Sources */,
 				007AA13020C2621B00DB7112 /* UnityReplayKit_Scripting.mm in Sources */,
 				007AA10720C2621B00DB7112 /* Il2CppGenericMethodTable.cpp in Sources */,
+				003DC5CA2158FD9100B72EA7 /* InAppReceipt.swift in Sources */,
 				00C5229620B3EFC100C38255 /* SKPSMTPMessage.m in Sources */,
 				007AA0BA20C2621B00DB7112 /* Bulk_Assembly-CSharp-firstpass_0.cpp in Sources */,
 				007AA12720C2621B00DB7112 /* DisplayManager.mm in Sources */,
@@ -2937,11 +2998,14 @@
 				007C939B20B2EB5700019114 /* CRPageViewController.m in Sources */,
 				007AA0EE20C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_13Table.cpp in Sources */,
 				007AA12520C2621B00DB7112 /* CVTextureCache.mm in Sources */,
+				003DC5CB2158FD9100B72EA7 /* PaymentQueueController.swift in Sources */,
 				007AA0D620C2621B00DB7112 /* Bulk_UnityEngine.GameCenterModule_0.cpp in Sources */,
 				007AA11620C2621B00DB7112 /* ActivityIndicator.mm in Sources */,
 				007AA0E320C2621B00DB7112 /* Bulk_UnityEngine.UnityWebRequestModule_0.cpp in Sources */,
+				003DC5CC2158FD9100B72EA7 /* PaymentsController.swift in Sources */,
 				007AA13E20C2621C00DB7112 /* RegisterMonoModules.cpp in Sources */,
 				007AA0EB20C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_10Table.cpp in Sources */,
+				003DC5C42158FD9100B72EA7 /* SKProduct+LocalizedPrice.swift in Sources */,
 				007AA0D920C2621B00DB7112 /* Bulk_UnityEngine.ParticleSystemModule_0.cpp in Sources */,
 				007AA13320C2621B00DB7112 /* UnityAdsUnityWrapper.mm in Sources */,
 				007AA0F520C2621B00DB7112 /* Il2CppCompilerCalculateTypeValues_1Table.cpp in Sources */,
@@ -3133,7 +3197,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
@@ -3150,8 +3214,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.kidsar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f3a726d8-3872-4033-b7d7-d010f98dd423";
-				PROVISIONING_PROFILE_SPECIFIER = "kids ar distribution provisioning profile";
+				PROVISIONING_PROFILE = "4239f7de-b568-40f9-b4af-fb8f4f6c3322";
+				PROVISIONING_PROFILE_SPECIFIER = "kids ar development provisioning profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "Kids_AR/PageViewController/Kids AR-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -3164,7 +3228,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6N5EE6FZH9;
 				INFOPLIST_FILE = "$(SRCROOT)/Kids_AR/Info.plist";
@@ -3180,8 +3244,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deemsysinc.kidsar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f3a726d8-3872-4033-b7d7-d010f98dd423";
-				PROVISIONING_PROFILE_SPECIFIER = "kids ar distribution provisioning profile";
+				PROVISIONING_PROFILE = "4239f7de-b568-40f9-b4af-fb8f4f6c3322";
+				PROVISIONING_PROFILE_SPECIFIER = "kids ar development provisioning profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "Kids_AR/PageViewController/Kids AR-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

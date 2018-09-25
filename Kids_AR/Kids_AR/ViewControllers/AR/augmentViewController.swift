@@ -33,6 +33,7 @@ class augmentViewController: UIViewController, popupDelegate {
     @IBOutlet var modeltitle: UILabel!
     
     var isAudioPlayed:Bool = false;
+    var actualShare:Bool = true; // SET FALSE when we initiate share functionality
     
     @objc public var index:Int = 0
     
@@ -118,7 +119,7 @@ class augmentViewController: UIViewController, popupDelegate {
         super.viewWillAppear(animated)
         NotificationCenter.default.addObserver(self, selector: #selector(pinSuccessful), name: NSNotification.Name(rawValue: "successLocker"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(didCancelScreen), name: NSNotification.Name(rawValue: "cancelLocker"), object: nil)
-        self.isPasscodeSuccessful = false
+        self.isPasscodeSuccessful = true
     }
     
     deinit {
@@ -201,6 +202,7 @@ class augmentViewController: UIViewController, popupDelegate {
             alert.addAction(UIAlertAction(title: "Rate", style: .default, handler: { (action) in
                 // redirect to appstore
                 self.isPasscodeSuccessful = false
+                self.actualShare = false
                 self.pin(.validate)
             }))
             self.present(alert, animated: true, completion: nil)
@@ -443,14 +445,16 @@ class augmentViewController: UIViewController, popupDelegate {
     }
     @objc func pinSuccessful() {
         print("pinSuccessful - AUGMENTVC - SHARE")
-        if self.isPasscodeSuccessful == true{
+        
+        if self.isPasscodeSuccessful == true && self.actualShare == true{
             return
         }
         if let topController = UIApplication.topViewController(), (topController is PopUpViewController) {
             return
         }
-        if self.isPasscodeSuccessful == false{
+        if self.actualShare == false{
             self.isPasscodeSuccessful = true
+            self.actualShare = true
             settingsViewController().openUrl(Constants.appurl)
         }
     }

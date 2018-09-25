@@ -13,8 +13,28 @@ protocol popupDelegate {
     
     func didSelectModel(withName:String, audioName:String, modelID:String)
 }
-
+extension Bundle {
+    
+    var appName: String {
+        return infoDictionary?["CFBundleName"] as! String
+    }
+    
+    var bundleId: String {
+        return bundleIdentifier!
+    }
+    
+    var versionNumber: String {
+        return infoDictionary?["CFBundleShortVersionString"] as! String
+    }
+    
+    var buildNumber: String {
+        return infoDictionary?["CFBundleVersion"] as! String
+    }
+    
+}
 class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    var alert:UIAlertView!
     
     @IBOutlet var levelname: UILabel!
     @IBOutlet var collectionView: UICollectionView!
@@ -442,6 +462,10 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
             return;
         }
         if(appdelegate.productsArray.count == 0){
+            let alertView = UIAlertController(title: "Error!", message: "No products found. Kindly relaunch the catalogue!", preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(alertView, animated: true, completion: nil)
+            
             self.view.isUserInteractionEnabled = true
             return
         }
@@ -483,29 +507,23 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
         case IAPHelper.IAPTransactNotification:
             
             if notification.userInfo!["message"] as! String == "success"{
-                transactionInProgress = false
-                if  index+1 == 1 || index+1 == 3 {
-                    let purchased = UserDefaults.standard.bool(forKey: appdelegate.productIDs[0])
-                    if purchased{
-                        self.isPurchased = true
-                    }else{
-                        self.isPurchased = false
-                    }
-                }
-                else{
-                    let purchased = UserDefaults.standard.bool(forKey: appdelegate.productIDs[1])
-                    if purchased{
-                        self.isPurchased = true
-                    }else{
-                        self.isPurchased = false
-                    }
-                }
-                self.view.isUserInteractionEnabled = true
-                self.collectionView.reloadData()
-//                let model = self.chapters["models"] as! [[String:Any]]
-//                let itemValues = model[self.selectedIndexPath]
-//                self.removeAnimate()
-//                delegate?.didSelectModel(withName: itemValues["modelName"] as! String, audioName: itemValues["audioName"] as! String, modelID: itemValues["modelId"] as! String)
+                
+                self.alert = UIAlertView(title: "Verifying Purchase", message: "Please wait...", delegate: nil, cancelButtonTitle: nil);
+                
+                
+                var loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 50, y: 10, width: 37, height: 37)) as UIActivityIndicatorView
+                loadingIndicator.center = self.view.center;
+                loadingIndicator.hidesWhenStopped = true
+                loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+                loadingIndicator.startAnimating();
+                
+                self.alert.setValue(loadingIndicator, forKey: "accessoryView")
+                loadingIndicator.startAnimating()
+                
+                self.alert.show();
+                
+                self.loadReceipts()
+                
             }
             else if notification.userInfo!["message"] as! String == "progress"{
                 print("Progressing")
@@ -521,11 +539,165 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
             break
         }
         
+    }
+    func completePaymentWork(){
+        DispatchQueue(label:"completePaymentWork").async {
+            
+            DispatchQueue.main.async {
+                self.transactionInProgress = false
+                if  self.index+1 == 1 || self.index+1 == 3 {
+                    let purchased = UserDefaults.standard.bool(forKey: self.appdelegate.productIDs[0])
+                    if purchased{
+                        self.isPurchased = true
+                    }else{
+                        self.isPurchased = false
+                    }
+                }
+                else{
+                    let purchased = UserDefaults.standard.bool(forKey: self.appdelegate.productIDs[1])
+                    if purchased{
+                        self.isPurchased = true
+                    }else{
+                        self.isPurchased = false
+                    }
+                }
+                self.view.isUserInteractionEnabled = true
+                self.collectionView.reloadData()
+                
+            }
+        }
+    }
+    func loadReceipts(){
         
-        
-        
+        SwiftyStoreKit.fetchReceipt(forceRefresh: false) { result in
+            switch result {
+            case .success(let receiptData):
+                let encryptedReceipt = receiptData.base64EncodedString(options: [])
+                if  self.index+1 == 1 || self.index+1 == 3 {
+                    self.verifyReceipt(productid: self.appdelegate.productIDs[0], encryptedData: encryptedReceipt)
+                }else{
+                    self.verifyReceipt(productid: self.appdelegate.productIDs[1], encryptedData: encryptedReceipt)
+                }
+                
+                print("Fetch receipt success:\n\(encryptedReceipt)")
+            case .error(let error):
+                print("Fetch receipt failed: \(error)")
+            }
+        }
         
     }
+    // MARK : API RECEIPT VERIFICATION
+    
+    func verifyReceipt(productid: String, encryptedData: String){
+        let verifyEndpoint: String = Constants.receiptVerifyURL
+        guard let verifyURL = URL(string: verifyEndpoint) else {
+            print("Error: cannot create URL")
+            return
+        }
+        var verifyUrlRequest = URLRequest(url: verifyURL)
+        verifyUrlRequest.httpMethod = "POST"
+        let params: [String: Any] = ["receiptdata": encryptedData, "version": "\(Bundle.main.versionNumber)", "bundleid": "\(Bundle.main.bundleId)", "build": "\(Bundle.main.buildNumber)", "productid": productid]
+        let jsonData: Data
+        do {
+            jsonData = try JSONSerialization.data(withJSONObject: params, options: [])
+            verifyUrlRequest.httpBody = jsonData
+        } catch {
+            print("Error: cannot create JSON from Data")
+            return
+        }
+        
+        let session = URLSession.shared
+        
+        let task = session.dataTask(with: verifyUrlRequest) {
+            (data, response, error) in
+            
+            var msgTitle = ""
+            var msgDescription = ""
+            
+            guard error == nil else {
+                print("error calling POST on /verifyReceipt")
+                msgTitle = "Error!"
+                msgDescription = "Receipt verification failed with error \(error!.localizedDescription)"
+                print(error!)
+                return
+            }
+            guard let response = response as? HTTPURLResponse else {
+                
+                msgTitle = "Error!"
+                msgDescription = "Receipt verification failed with internal error"
+                return
+            }
+           if response.statusCode == 405{
+            
+            msgTitle = "Error!"
+            msgDescription = "Receipt verification failed with server error"
+                return
+            }
+           else if response.statusCode == 500{
+            
+            msgTitle = "Error!"
+            msgDescription = "Receipt verification failed with server error"
+            return
+            }
+           else if response.statusCode == 503{
+            
+            msgTitle = "Error!"
+            msgDescription = "Receipt verification failed with server error"
+            return
+            }
+           
+            guard let responseData = data else {
+                print("Error: did not receive data")
+                msgTitle = "Error!"
+                msgDescription = "Receipt verification failed with empty response data"
+                return
+            }
+            
+            // parse the result as JSON, since that's what the API provides
+            do {
+                guard let receivedData = try JSONSerialization.jsonObject(with: responseData,
+                                                                          options: []) as? [String: Any] else {
+                                                                            print("Could not get JSON from responseData as dictionary")
+                                                                            return
+                }
+                print("The Data is: " + receivedData.description)
+                
+                guard let statusStr = receivedData["status"] as? String else {
+                    print("Could not get statusStr")
+                    
+                    msgTitle = "Error!"
+                    msgDescription = "Receipt verification failed with invalid data"
+                    return
+                }
+                print("The statusStr is: \(statusStr)")
+                if statusStr == "success"{
+                    msgTitle = "Success"
+                    msgDescription = "Receipt verification done"
+                    self.completePaymentWork()
+                }else{
+                    msgTitle = "Error!"
+                    msgDescription = "Receipt verification failed"
+                }
+            } catch  {
+                print("error parsing response from POST on /verifyReceipt")
+                
+                msgTitle = "Error!"
+                msgDescription = "Receipt verification failed with parsing error"
+                return
+            }
+            if msgTitle == ""{
+                msgTitle = "Error!"
+                msgDescription = "Receipt verification failed"
+            }
+            self.alert.dismiss(withClickedButtonIndex: 0, animated: false)
+            let alertView = UIAlertController(title: msgTitle, message: msgDescription, preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alertView, animated: true, completion: nil)
+            
+        }
+        task.resume()
+    }
+    
 }
 
 

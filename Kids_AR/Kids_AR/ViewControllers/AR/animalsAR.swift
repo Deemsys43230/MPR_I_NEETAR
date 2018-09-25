@@ -24,7 +24,7 @@ class animalsAR: UIViewController, popupDelegate {
     
     @IBOutlet var hintHeight: NSLayoutConstraint!
     
-    
+    var actualShare:Bool = true; // SET FALSE when we initiate share functionality
     @IBOutlet var modeltitle: UILabel!
     
     
@@ -118,7 +118,7 @@ class animalsAR: UIViewController, popupDelegate {
         super.viewWillAppear(animated)
         NotificationCenter.default.addObserver(self, selector: #selector(pinSuccessful), name: NSNotification.Name(rawValue: "successLocker"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(didCancelScreen), name: NSNotification.Name(rawValue: "cancelLocker"), object: nil)
-        self.isPasscodeSuccessful = false
+        self.isPasscodeSuccessful = true
     }
     
     @objc func handleAnimalButtons(notfication: NSNotification){
@@ -222,6 +222,7 @@ class animalsAR: UIViewController, popupDelegate {
             alert.addAction(UIAlertAction(title: "Rate", style: .default, handler: { (action) in
                 // redirect to appstore
                 self.isPasscodeSuccessful = false
+                self.actualShare = false
                 self.pin(.validate)
             }))
             self.present(alert, animated: true, completion: nil)
@@ -492,15 +493,16 @@ class animalsAR: UIViewController, popupDelegate {
     }
     @objc func pinSuccessful() {
         print("pinSuccessful - AnimalsVC - Share")
+        if self.isPasscodeSuccessful == true && self.actualShare == true{
+            return
+        }
         if let topController = UIApplication.topViewController(), (topController is PopUpViewController) {
             return
         }
-        if self.isPasscodeSuccessful == true{
-            return
-        }
         
-        if self.isPasscodeSuccessful == false{
+        if self.actualShare == false{
             self.isPasscodeSuccessful = true
+            self.actualShare = true
             settingsViewController().openUrl(Constants.appurl)
         }
     }

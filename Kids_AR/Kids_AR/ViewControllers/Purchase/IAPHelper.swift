@@ -54,10 +54,12 @@ class IAPHelper: NSObject {
     // MARK: Restore delegate and implementation
     func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
         print("restore completed");
+        NotificationCenter.default.post(name: IAPHelper.IAPRestoreNotification, object:nil,userInfo:["message":"success"])
     }
     
     func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
          print("restore failed");
+        NotificationCenter.default.post(name: IAPHelper.IAPRestoreNotification, object:nil,userInfo:["message":error.localizedDescription])
     }
 }
 
@@ -124,11 +126,11 @@ extension IAPHelper:SKPaymentTransactionObserver{
                 case "com.deemsysinc.kidsar.basicmodels":
                     UserDefaults.standard.set(true, forKey: productId!)
                     UserDefaults.standard.synchronize()
-                    NotificationCenter.default.post(name: IAPHelper.IAPRestoreNotification, object:nil,userInfo:["message":"success"])
+                  //  NotificationCenter.default.post(name: IAPHelper.IAPRestoreNotification, object:nil,userInfo:["message":"success"])
                 case "com.deemsysinc.kidsar.premiummodel":
                     UserDefaults.standard.set(true, forKey: productId!)
                     UserDefaults.standard.synchronize()
-                    NotificationCenter.default.post(name: IAPHelper.IAPRestoreNotification, object:nil,userInfo:["message":"success"])
+                   // NotificationCenter.default.post(name: IAPHelper.IAPRestoreNotification, object:nil,userInfo:["message":"success"])
                 default:
                     break
                 }
