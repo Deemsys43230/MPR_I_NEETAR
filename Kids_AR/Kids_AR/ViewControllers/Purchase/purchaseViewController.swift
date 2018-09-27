@@ -24,6 +24,11 @@ class productCell: UITableViewCell {
 class purchaseViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
     var alert:UIAlertView!
     
+    var isRestoreInvoked:Bool = false
+    var restoreCount:Int = 0
+    var restoredProducts:[String] = []
+    
+    @IBOutlet var restoreLoadingView: UIView!
     @IBOutlet var restoreButton: UIButton!
     @IBOutlet var closeButton: UIButton!
     
@@ -48,6 +53,7 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
         restoreButton.layer.cornerRadius = 5;
         restoreButton.clipsToBounds = true;
         
+        self.restoreLoadingView.isHidden = true
         
         contentList.delegate = self
         contentList.dataSource = self
@@ -107,7 +113,7 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
             return;
         }
         if(delegate.productsArray.count == 0){
-            let alertView = UIAlertController(title: "Error!", message: "No products found. Kindly reload the page!", preferredStyle: .alert)
+            let alertView = UIAlertController(title: "Error!", message: "No products found. Please reload the page!", preferredStyle: .alert)
             alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             present(alertView, animated: true, completion: nil)
             
@@ -115,12 +121,16 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
             return
         }
         if !transactionInProgress{
-            transactionInProgress = true
+            self.view.isUserInteractionEnabled = false
+            self.transactionInProgress = true
             self.indicator.startAnimating()
+//            self.isRestoreInvoked = true
+//            self.restoreCount = 0
+//            self.restoredProducts.removeAll()
             store.restore()
         }
         else{
-            let alertView = UIAlertController(title: "Warning!", message: "Please wait for the current transaction to be completed.", preferredStyle: .alert)
+            let alertView = UIAlertController(title: "Warning!", message: "Please wait for the current transaction to complete.", preferredStyle: .alert)
             alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             present(alertView, animated: true, completion: nil)
         }
@@ -201,7 +211,18 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
                 self.view.isUserInteractionEnabled = false
                 self.transactionInProgress = true
                 self.indicator.startAnimating()
+                
                 //  print("namr \(p.localizedTitle) namr \(p.price)")
+                
+                        // RESET RESTORE FUNCTION
+                
+                        self.restoreLoadingView.isHidden = true
+                        self.restoreCount = 0
+                        self.restoredProducts.removeAll()
+                        self.isRestoreInvoked = false
+                
+                        ///////////////
+                
                 self.store.buy(p: product!)
             }
             else{
@@ -210,7 +231,7 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
         }
         else{
             self.view.isUserInteractionEnabled = true
-            let alertView = UIAlertController(title: "Warning!", message: "Please wait for the current transaction to be completed.", preferredStyle: .alert)
+            let alertView = UIAlertController(title: "Warning!", message: "Please wait for the current transaction to complete.", preferredStyle: .alert)
             alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             present(alertView, animated: true, completion: nil)
         }
@@ -274,6 +295,9 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
         case IAPHelper.IAPTransactNotification:
             
             if notification.userInfo!["message"] as! String == "success"{
+                if self.alert != nil{
+                    self.alert.dismiss(withClickedButtonIndex: 0, animated: false)
+                }
                 self.alert = UIAlertView(title: "Verifying Purchase", message: "Please wait...", delegate: nil, cancelButtonTitle: nil);
                 
                 
@@ -289,17 +313,14 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
                 if self.alert.isVisible == false{
                     self.alert.show();
                 }
-                self.loadReceipts()
+                self.loadReceipts(productid: notification.userInfo!["productid"] as! String)
                 
             }
             else if notification.userInfo!["message"] as! String == "progress"{
                 print("Progressing")
             }
             else{
-                self.view.isUserInteractionEnabled = true
-                transactionInProgress = false
-                self.indicator.stopAnimating()
-                contentList.reloadData()
+                self.completePaymentWork()
             }
             
         case IAPHelper.IAPRestoreNotification:
@@ -308,6 +329,8 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
 //            self.indicator.stopAnimating()
 //            contentList.reloadData()
             if notification.userInfo!["message"] as! String == "success"{
+                
+                // Dont delete , may cause crash in dismiss method
                 self.alert = UIAlertView(title: "Verifying Purchase", message: "Please wait...", delegate: nil, cancelButtonTitle: nil);
                 
                 
@@ -319,12 +342,18 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
                 
                 self.alert.setValue(loadingIndicator, forKey: "accessoryView")
                 loadingIndicator.startAnimating()
+               // self.alert.show();
                 
-                if self.alert.isVisible == false{
-                    self.alert.show();
-                }
-                
-                self.loadReceipts()
+                // temp View for Loading
+               
+                self.restoreCount = 0
+                self.restoredProducts.removeAll()
+                self.isRestoreInvoked = true
+                self.restoreLoadingView.isHidden = false
+                self.restoredProducts = notification.userInfo!["productids"] as! [String]
+                self.loadRestoreReceipts(productids: self.restoredProducts)
+            }else{
+                self.completePaymentWork()
             }
         default:
             break
@@ -346,24 +375,134 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
             }
         }
     }
-    func loadReceipts(){
+    func loadReceipts(productid: String){
         
         SwiftyStoreKit.fetchReceipt(forceRefresh: false) { result in
             switch result {
             case .success(let receiptData):
                 let encryptedReceipt = receiptData.base64EncodedString(options: [])
-                for product in self.delegate.productIDs{
-                    let purchasedStatus = UserDefaults.standard.bool(forKey: product)
-                    if purchasedStatus == true{
-                        self.verifyReceipt(productid: product, encryptedData: encryptedReceipt)
-                    }
-                }
+//                for product in self.delegate.productIDs{
+//                    let purchasedStatus = UserDefaults.standard.bool(forKey: product)
+//                    if purchasedStatus == true{
+                        self.verifyReceipt(productid: productid, encryptedData: encryptedReceipt)
+//                    }
+//                }
                 print("Fetch receipt success:\n\(encryptedReceipt)")
             case .error(let error):
+                let msgTitle = "Failed!"
+                let msgDescription = "We are unable to verify your purchase"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 print("Fetch receipt failed: \(error)")
             }
         }
         
+    }
+    func loadRestoreReceipts(productids: [String]){
+        
+        SwiftyStoreKit.fetchReceipt(forceRefresh: false) { result in
+            switch result {
+            case .success(let receiptData):
+                let encryptedReceipt = receiptData.base64EncodedString(options: [])
+                for product in productids{
+                    
+                        self.verifyReceipt(productid: product, encryptedData: encryptedReceipt)
+                    
+                }
+                print("Fetch receipt success:\n\(encryptedReceipt)")
+            case .error(let error):
+                let msgTitle = "Failed!"
+                let msgDescription = "We are unable to verify your purchase"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
+                print("Fetch receipt failed: \(error)")
+            }
+        }
+        
+    }
+    func dismissAndShowAlert(msgTitle:String, msgDescription:String){
+        if self.isRestoreInvoked == true{
+            // RESTORE function INVOKED
+            if self.restoreCount == self.restoredProducts.count - 1{
+                // Done Restoration
+                DispatchQueue.main.sync {
+                    self.restoreLoadingView.isHidden = true
+                    self.restoreCount = 0
+                    self.restoredProducts.removeAll()
+                    self.isRestoreInvoked = false
+                    self.transactionInProgress = false
+                    self.view.isUserInteractionEnabled = true
+                    self.indicator.stopAnimating()
+                    self.contentList.reloadData()
+                    
+                    let alertView = UIAlertController(title: "Success!", message: "Products restored", preferredStyle: .alert)
+                    alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                    self.present(alertView, animated: true, completion: nil)
+                    
+                }
+                
+                
+                
+                
+            }else if self.restoreCount >= self.restoredProducts.count{
+                // Exceptional case
+                DispatchQueue.main.sync {
+                    self.restoreLoadingView.isHidden = true
+                    self.restoreCount = 0
+                    self.restoredProducts.removeAll()
+                    self.isRestoreInvoked = false
+                    self.transactionInProgress = false
+                    self.view.isUserInteractionEnabled = true
+                    self.indicator.stopAnimating()
+                    self.contentList.reloadData()
+                    
+                }
+            } else{
+                // Restoration is in progress
+                self.restoreCount = self.restoreCount + 1
+            }
+            
+        }
+        else{
+            
+            // Single Item Purchase
+            DispatchQueue.main.sync {
+                self.alert.dismiss(withClickedButtonIndex: 0, animated: false)
+                
+                self.completePaymentWork()
+                
+                let alertView = UIAlertController(title: msgTitle, message: msgDescription, preferredStyle: .alert)
+                alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                
+                if self.presentedViewController == nil {
+                    // do your presentation of the UIAlertController
+                    self.present(alertView, animated: true, completion: nil)
+                } else {
+                    // either the Alert is already presented, or any other view controller
+                    // is active (e.g. a PopOver)
+                    
+                    let thePresentedVC : UIViewController? = self.presentedViewController as UIViewController?
+                    
+                    if thePresentedVC != nil {
+                        if let thePresentedVCAsAlertController : UIAlertController = thePresentedVC as? UIAlertController {
+                            // nothing to do , AlertController already active
+                            thePresentedVCAsAlertController.dismiss(animated: false, completion: nil)
+                            print("Alert not necessary, already on the screen !")
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1)  { 
+                                self.present(alertView, animated: true, completion: nil)
+                            }
+                            
+                            
+                        } else {
+                            // there is another ViewController presented
+                            // but it is not an UIAlertController, so do
+                            // your UIAlertController-Presentation with
+                            
+                            print("Alert comes up via another presented VC, e.g. a PopOver")
+                        }
+                    }
+                }
+                
+            }
+        }
     }
     // MARK : API RECEIPT VERIFICATION
     
@@ -396,39 +535,45 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
             guard error == nil else {
                 print("error calling POST on /verifyReceipt")
                 msgTitle = "Error!"
-                msgDescription = "Receipt verification failed with error \(error!.localizedDescription)"
+                msgDescription = "Receipt verification failed with error \(error!.localizedDescription) Please try later!"
                 print(error!)
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 return
             }
             guard let response = response as? HTTPURLResponse else {
                 
                 msgTitle = "Error!"
-                msgDescription = "Receipt verification failed with internal error"
+                msgDescription = "Receipt verification failed with internal error. Please try later!"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 return
             }
             if response.statusCode == 405{
                 
                 msgTitle = "Error!"
-                msgDescription = "Receipt verification failed with server error"
+                msgDescription = "Receipt verification failed with server error. Please try later!"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 return
             }
             else if response.statusCode == 500{
                 
                 msgTitle = "Error!"
-                msgDescription = "Receipt verification failed with server error"
+                msgDescription = "Receipt verification failed with server error. Please try later!"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 return
             }
             else if response.statusCode == 503{
                 
                 msgTitle = "Error!"
-                msgDescription = "Receipt verification failed with server error"
+                msgDescription = "Receipt verification failed with server error. Please try later!"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 return
             }
             
             guard let responseData = data else {
                 print("Error: did not receive data")
                 msgTitle = "Error!"
-                msgDescription = "Receipt verification failed with empty response data"
+                msgDescription = "Receipt verification failed. Please try later!"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 return
             }
             
@@ -445,62 +590,44 @@ class purchaseViewController : UIViewController, UITableViewDataSource, UITableV
                     print("Could not get statusStr")
                     
                     msgTitle = "Error!"
-                    msgDescription = "Receipt verification failed with invalid data"
+                    msgDescription = "Receipt verification failed with invalid data. Please try later!"
+                    self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                     return
                 }
                 print("The statusStr is: \(statusStr)")
                 if statusStr == "success"{
-                    msgTitle = "Success"
-                    msgDescription = "Receipt verification done"
-                    self.completePaymentWork()
+                    msgTitle = "Success!"
+                    msgDescription = "Your purchase is verified"
+                    UserDefaults.standard.set(true, forKey: productid)
+                    UserDefaults.standard.synchronize()
+                    self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 }else{
-                    msgTitle = "Error!"
-                    msgDescription = "Receipt verification failed"
+                    msgTitle = "Failed!"
+                    msgDescription = "We are unable to verify your purchase"
+                    UserDefaults.standard.set(false, forKey: productid)
+                    UserDefaults.standard.synchronize()
+                    self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 }
             } catch  {
                 print("error parsing response from POST on /verifyReceipt")
                 
                 msgTitle = "Error!"
-                msgDescription = "Receipt verification failed with parsing error"
+                msgDescription = "Receipt verification failed with parsing error. Please try later!"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 return
             }
             if msgTitle == ""{
                 msgTitle = "Error!"
                 msgDescription = "Receipt verification failed"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
             }
-            self.alert.dismiss(withClickedButtonIndex: 0, animated: false)
-            let alertView = UIAlertController(title: msgTitle, message: msgDescription, preferredStyle: .alert)
-            alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             
-            if self.presentedViewController == nil {
-                // do your presentation of the UIAlertController
-                self.present(alertView, animated: true, completion: nil)
-            } else {
-                // either the Alert is already presented, or any other view controller
-                // is active (e.g. a PopOver)
-               
-                let thePresentedVC : UIViewController? = self.presentedViewController as UIViewController?
-                
-                if thePresentedVC != nil {
-                    if let thePresentedVCAsAlertController : UIAlertController = thePresentedVC as? UIAlertController {
-                        // nothing to do , AlertController already active
-                       // thePresentedVCAsAlertController.dismiss(animated: false, completion: nil)
-                        print("Alert not necessary, already on the screen !")
-                       // self.present(alertView, animated: true, completion: nil)
-                        
-                    } else {
-                        // there is another ViewController presented
-                        // but it is not an UIAlertController, so do
-                        // your UIAlertController-Presentation with
-                       
-                        print("Alert comes up via another presented VC, e.g. a PopOver")
-                    }
-                }
-            }
             
             
         }
         task.resume()
     }
+    
+    
 }
 

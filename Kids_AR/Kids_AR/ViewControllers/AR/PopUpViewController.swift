@@ -462,7 +462,7 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
             return;
         }
         if(appdelegate.productsArray.count == 0){
-            let alertView = UIAlertController(title: "Error!", message: "No products found. Kindly relaunch the catalogue!", preferredStyle: .alert)
+            let alertView = UIAlertController(title: "Error!", message: "No products found. Please relaunch the catalogue!", preferredStyle: .alert)
             alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             present(alertView, animated: true, completion: nil)
             
@@ -476,7 +476,7 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
         }
         else{
             self.view.isUserInteractionEnabled = true
-            let alertView = UIAlertController(title: "Warning!", message: "Please wait for the current transaction to be completed.", preferredStyle: .alert)
+            let alertView = UIAlertController(title: "Warning!", message: "Please wait for the current transaction to complete.", preferredStyle: .alert)
             alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             present(alertView, animated: true, completion: nil)
         }
@@ -529,10 +529,7 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
                 print("Progressing")
             }
             else{
-                transactionInProgress = false
-                self.view.isUserInteractionEnabled = true
-                // self.indicator.stopAnimating()
-                collectionView.reloadData()
+                self.completePaymentWork()
             }
             
         default:
@@ -581,12 +578,24 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
                 
                 print("Fetch receipt success:\n\(encryptedReceipt)")
             case .error(let error):
+                let msgTitle = "Failed!"
+                let msgDescription = "We are unable to verify your purchase"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 print("Fetch receipt failed: \(error)")
             }
         }
         
     }
+    func dismissAndShowAlert(msgTitle:String, msgDescription:String){
+        self.alert.dismiss(withClickedButtonIndex: 0, animated: false)
+        completePaymentWork()
+        let alertView = UIAlertController(title: msgTitle, message: msgDescription, preferredStyle: .alert)
+        alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alertView, animated: true, completion: nil)
+    }
     // MARK : API RECEIPT VERIFICATION
+    
+    
     
     func verifyReceipt(productid: String, encryptedData: String){
         let verifyEndpoint: String = Constants.receiptVerifyURL
@@ -617,39 +626,45 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
             guard error == nil else {
                 print("error calling POST on /verifyReceipt")
                 msgTitle = "Error!"
-                msgDescription = "Receipt verification failed with error \(error!.localizedDescription)"
+                msgDescription = "Receipt verification failed with error \(error!.localizedDescription) Please try later!"
                 print(error!)
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 return
             }
             guard let response = response as? HTTPURLResponse else {
                 
                 msgTitle = "Error!"
-                msgDescription = "Receipt verification failed with internal error"
+                msgDescription = "Receipt verification failed with internal error. Please try later!"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 return
             }
            if response.statusCode == 405{
             
             msgTitle = "Error!"
-            msgDescription = "Receipt verification failed with server error"
+            msgDescription = "Receipt verification failed with server error. Please try later!"
+            self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 return
             }
            else if response.statusCode == 500{
             
             msgTitle = "Error!"
-            msgDescription = "Receipt verification failed with server error"
+            msgDescription = "Receipt verification failed with server error. Please try later!"
+            self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
             return
             }
            else if response.statusCode == 503{
             
             msgTitle = "Error!"
-            msgDescription = "Receipt verification failed with server error"
+            msgDescription = "Receipt verification failed with server error. Please try later!"
+            self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
             return
             }
            
             guard let responseData = data else {
                 print("Error: did not receive data")
                 msgTitle = "Error!"
-                msgDescription = "Receipt verification failed with empty response data"
+                msgDescription = "Receipt verification failed. Please try later!"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 return
             }
             
@@ -666,34 +681,37 @@ class PopUpViewController:UIViewController,UICollectionViewDataSource, UICollect
                     print("Could not get statusStr")
                     
                     msgTitle = "Error!"
-                    msgDescription = "Receipt verification failed with invalid data"
+                    msgDescription = "Receipt verification failed with invalid data. Please try later!"
+                    self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                     return
                 }
                 print("The statusStr is: \(statusStr)")
                 if statusStr == "success"{
-                    msgTitle = "Success"
-                    msgDescription = "Receipt verification done"
-                    self.completePaymentWork()
+                    msgTitle = "Success!"
+                    msgDescription = "Your purchase is verified"
+                    UserDefaults.standard.set(true, forKey: productid)
+                    UserDefaults.standard.synchronize()
+                    self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 }else{
-                    msgTitle = "Error!"
-                    msgDescription = "Receipt verification failed"
+                    msgTitle = "Failed!"
+                    msgDescription = "We are unable to verify your purchase"
+                    UserDefaults.standard.set(false, forKey: productid)
+                    UserDefaults.standard.synchronize()
+                    self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 }
             } catch  {
                 print("error parsing response from POST on /verifyReceipt")
                 
                 msgTitle = "Error!"
-                msgDescription = "Receipt verification failed with parsing error"
+                msgDescription = "Receipt verification failed with parsing error. Please try later!"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
                 return
             }
             if msgTitle == ""{
                 msgTitle = "Error!"
                 msgDescription = "Receipt verification failed"
+                self.dismissAndShowAlert(msgTitle: msgTitle, msgDescription: msgDescription)
             }
-            self.alert.dismiss(withClickedButtonIndex: 0, animated: false)
-            let alertView = UIAlertController(title: msgTitle, message: msgDescription, preferredStyle: .alert)
-            alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-            self.present(alertView, animated: true, completion: nil)
-            
         }
         task.resume()
     }

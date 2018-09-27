@@ -15,6 +15,8 @@ class IAPHelper: NSObject {
     static let IAPTransactNotification = Notification.Name("IAPTransactNotification")
     static let IAPRestoreNotification = Notification.Name("IAPRestoreNotification")
     
+    var tempProducts:[String] = []
+    
     // request for product information from store using product id's
     func requestProductInfo() {
         // CHECK INTERNET CONNECTION
@@ -41,6 +43,7 @@ class IAPHelper: NSObject {
     
     // Restoring all purchased products
     func restore(){
+        tempProducts.removeAll()
         SKPaymentQueue.default().add(self)
         SKPaymentQueue.default().restoreCompletedTransactions()
     }
@@ -54,7 +57,7 @@ class IAPHelper: NSObject {
     // MARK: Restore delegate and implementation
     func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
         print("restore completed");
-        NotificationCenter.default.post(name: IAPHelper.IAPRestoreNotification, object:nil,userInfo:["message":"success"])
+        NotificationCenter.default.post(name: IAPHelper.IAPRestoreNotification, object:nil,userInfo:["message":"success", "productids": self.tempProducts])
     }
     
     func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
@@ -98,13 +101,13 @@ extension IAPHelper:SKPaymentTransactionObserver{
                 let productId = transaction.payment.productIdentifier
                 switch productId{
                 case "com.deemsysinc.kidsar.basicmodels":
-                    UserDefaults.standard.set(true, forKey: productId)
-                    UserDefaults.standard.synchronize()
-                    NotificationCenter.default.post(name: IAPHelper.IAPTransactNotification, object:nil,userInfo:["message":"success"])
+//                    UserDefaults.standard.set(true, forKey: productId)
+//                    UserDefaults.standard.synchronize()
+                    NotificationCenter.default.post(name: IAPHelper.IAPTransactNotification, object:nil,userInfo:["message":"success", "productid": "com.deemsysinc.kidsar.basicmodels"])
                 case "com.deemsysinc.kidsar.premiummodel":
-                    UserDefaults.standard.set(true, forKey: productId)
-                    UserDefaults.standard.synchronize()
-                    NotificationCenter.default.post(name: IAPHelper.IAPTransactNotification, object:nil,userInfo:["message":"success"])
+//                    UserDefaults.standard.set(true, forKey: productId)
+//                    UserDefaults.standard.synchronize()
+                    NotificationCenter.default.post(name: IAPHelper.IAPTransactNotification, object:nil,userInfo:["message":"success","productid": "com.deemsysinc.kidsar.premiummodel"])
                 default:
                     break
                 }
@@ -122,18 +125,19 @@ extension IAPHelper:SKPaymentTransactionObserver{
                 print("restored transactions");
                 SKPaymentQueue.default().finishTransaction(transaction)
                 let productId = transaction.original?.payment.productIdentifier
-                switch productId{
-                case "com.deemsysinc.kidsar.basicmodels":
-                    UserDefaults.standard.set(true, forKey: productId!)
-                    UserDefaults.standard.synchronize()
-                  //  NotificationCenter.default.post(name: IAPHelper.IAPRestoreNotification, object:nil,userInfo:["message":"success"])
-                case "com.deemsysinc.kidsar.premiummodel":
-                    UserDefaults.standard.set(true, forKey: productId!)
-                    UserDefaults.standard.synchronize()
-                   // NotificationCenter.default.post(name: IAPHelper.IAPRestoreNotification, object:nil,userInfo:["message":"success"])
-                default:
-                    break
-                }
+                tempProducts.append(productId!)
+//                switch productId{
+//                case "com.deemsysinc.kidsar.basicmodels":
+////                    UserDefaults.standard.set(true, forKey: productId!)
+////                    UserDefaults.standard.synchronize()
+//                    NotificationCenter.default.post(name: IAPHelper.IAPRestoreNotification, object:nil,userInfo:["message":"success", "productid": "com.deemsysinc.kidsar.basicmodels"])
+//                case "com.deemsysinc.kidsar.premiummodel":
+////                    UserDefaults.standard.set(true, forKey: productId!)
+////                    UserDefaults.standard.synchronize()
+//                    NotificationCenter.default.post(name: IAPHelper.IAPRestoreNotification, object:nil,userInfo:["message":"success","productid": "com.deemsysinc.kidsar.premiummodel"])
+//                default:
+//                    break
+//                }
                 
             default:
                 print(transaction.transactionState.rawValue)
