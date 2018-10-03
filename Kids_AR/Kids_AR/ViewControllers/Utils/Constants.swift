@@ -67,12 +67,12 @@ class Constants {
     
     
     // Production
-    // static let toEmail:String = "incdeemsys@gmail.com"
-    // static let receiptVerifyURL = "https://iap.deemsysinc.com/verifyReceipt/kidsar"
+     static let toEmail:String = "incdeemsys@gmail.com"
+     static let receiptVerifyURL = "https://iap.deemsysinc.com/verifyReceipt/kidsar"
     
     // Developement
-    static let toEmail:String = "deemmobtest@gmail.com"
-    static let receiptVerifyURL = "http://192.168.1.2:8000/verifyReceipt/kidsar"
+//    static let toEmail:String = "deemmobtest@gmail.com"
+//    static let receiptVerifyURL = "https://iap.deemsysinc.com/verifyReceipt/kidsar"
     
     // Testing
     // static let toEmail:String = "deemsystesting@gmail.com"
