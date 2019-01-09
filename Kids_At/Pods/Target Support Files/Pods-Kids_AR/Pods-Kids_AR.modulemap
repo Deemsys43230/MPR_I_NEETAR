@@ -1,0 +1,6 @@
+framework module Pods_Kids_AR {
+  umbrella header "Pods-Kids_AR-umbrella.h"
+
+  export *
+  module * { export * }
+}
