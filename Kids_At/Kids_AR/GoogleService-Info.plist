@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>627614230665-v20gbpj5636trb2gv3an8h8v3v5ekggc.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.627614230665-v20gbpj5636trb2gv3an8h8v3v5ekggc</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>627614230665-787btkk170dk3rvosm3etulkfs4tgm9t.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDm6eLJKPxeVorg1c3oh249py08yQdYJGQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>627614230665</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.deemsysinc.kidsar</string>
+	<key>PROJECT_ID</key>
+	<string>kids-alphabets-ar</string>
+	<key>STORAGE_BUCKET</key>
+	<string>kids-alphabets-ar.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:627614230665:ios:8a53fb84acb1d2a2</string>
+	<key>DATABASE_URL</key>
+	<string>https://kids-alphabets-ar.firebaseio.com</string>
+</dict>
+</plist>
